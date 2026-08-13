@@ -26,7 +26,7 @@ código — os tokens ficam em Secrets, que continuam privados mesmo em repo
 público.
 
 ```bash
-gh repo create waldeapps-divulgacao --public --source=. --push
+gh repo create divulgacao --public --source=. --push
 ```
 
 Prefere manter privado? Então use um bucket público do Supabase para as imagens:
@@ -164,7 +164,7 @@ O Threads expira em 60 dias e o refresh do TikTok rotaciona a cada uso. Para o
 sistema atualizar os próprios secrets sem você:
 
 1. https://github.com/settings/tokens → **Fine-grained token**.
-2. Repositório: só o `waldeapps-divulgacao`. Permissão: **Secrets: Read and write**.
+2. Repositório: só o `divulgacao`. Permissão: **Secrets: Read and write**.
 3. Salve como secret `GH_PAT`.
 
 Sem isso nada quebra — o workflow apenas **abre uma issue** avisando que um token

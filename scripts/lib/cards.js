@@ -27,8 +27,14 @@ function escapar(s) {
     .replace(/"/g, "&quot;");
 }
 
-/** Quebra o texto em linhas que caibam na largura, medindo por largura média do glifo. */
-function quebrar(texto, larguraDisponivel, tamanhoFonte, fatorGlifo = 0.54) {
+/**
+ * Quebra o texto em linhas que caibam na largura, medindo por largura média do
+ * glifo. O fator é calibrado para a DejaVu Sans — a fonte que o runner do
+ * GitHub Actions usa, e a mais larga entre as candidatas. No macOS a rasterização
+ * cai na Helvetica, mais estreita, então o mesmo fator sobra folga em vez de
+ * estourar a margem.
+ */
+function quebrar(texto, larguraDisponivel, tamanhoFonte, fatorGlifo = 0.6) {
   const maxChars = Math.max(8, Math.floor(larguraDisponivel / (tamanhoFonte * fatorGlifo)));
   const linhas = [];
   let atual = "";

@@ -1,0 +1,64 @@
+{
+  "id": "vaidarquanto",
+  "nome": "Vai dar quanto?",
+  "url": "https://vaidarquanto.com.br",
+  "marca": {
+    "emoji": "🛒",
+    "fundoA": "#0d1117",
+    "fundoB": "#1f2937",
+    "destaque": "#fbbf24",
+    "texto": "#ffffff",
+    "apoio": "#d1c4a0"
+  },
+  "hashtags": ["#vaidarquanto", "#supermercado", "#economiadomestica", "#compras", "#financaspessoais"],
+  "posts": [
+    {
+      "id": "susto-no-caixa",
+      "card": { "titulo": "Chegou no caixa e levou susto?", "sub": "Saiba o total antes de fechar a conta." },
+      "texto": "Já chegou no caixa do mercado e ficou surpreso com o total? 😅\n\nO \"Vai dar quanto?\" resolve: você dita os produtos por voz e ele mostra o total em tempo real, enquanto você anda pelos corredores.\n\nSem instalar nada — abre no navegador.\n\n👉 {link}",
+      "curto": "Já levou susto com o total no caixa? Dite os produtos e veja o total em tempo real, antes de fechar a conta: {link}"
+    },
+    {
+      "id": "por-voz",
+      "card": { "titulo": "Fale, não digite", "sub": "Carrinho cheio, mãos ocupadas." },
+      "texto": "Empurrar carrinho com uma mão e digitar preço com a outra: não dá. 🤷\n\nNo \"Vai dar quanto?\" você fala — \"arroz, doze e noventa\" — e o total se atualiza sozinho. É o jeito de usar que funciona com o carrinho cheio.\n\n👉 {link}",
+      "curto": "Carrinho cheio, mãos ocupadas: fale \"arroz, doze e noventa\" e o total se atualiza sozinho. {link}"
+    },
+    {
+      "id": "orcamento",
+      "card": { "titulo": "Defina o teto antes de entrar", "sub": "E veja quanto ainda cabe." },
+      "texto": "Coloque quanto pode gastar ANTES de entrar no mercado. 💰\n\nO app mostra quanto ainda cabe no orçamento a cada item que entra no carrinho — e avisa quando você está chegando no limite. Nada de descobrir só na fatura.\n\nGrátis 👉 {link}",
+      "curto": "Defina o teto antes de entrar no mercado e veja quanto ainda cabe a cada item. Grátis: {link}"
+    },
+    {
+      "id": "sem-anuncio",
+      "card": { "titulo": "Sem anúncio, sem rastreamento", "sub": "Sua lista de compras é sua." },
+      "texto": "Um app de lista de compras que não vende o que você compra. 🙅\n\nSem anúncio, sem rastreador, sem pedir cadastro pra testar. Abre, usa, funciona.\n\n👉 {link}",
+      "curto": "Um app de lista de compras que não vende o que você compra: sem anúncio, sem rastreador. {link}"
+    },
+    {
+      "id": "fim-do-mes",
+      "card": { "titulo": "A compra do mês não pode surpreender", "sub": "Total em tempo real, corredor por corredor." },
+      "texto": "Compra do mês é o gasto que mais pesa e o que menos se acompanha. 📉\n\nCom o total em tempo real, você decide no corredor: troca a marca, tira um item, ajusta. Chega no caixa sabendo exatamente quanto vai dar.\n\n👉 {link}",
+      "curto": "A compra do mês pesa e ninguém acompanha. Com o total em tempo real você ajusta no corredor: {link}"
+    },
+    {
+      "id": "sem-baixar",
+      "card": { "titulo": "Nada de baixar da loja", "sub": "Abre no navegador em 5 segundos." },
+      "texto": "Você não vai baixar um app de 80 MB pra somar compras. Nem precisa. 🙂\n\nO \"Vai dar quanto?\" abre no navegador do celular e pode ser instalado com um toque, se quiser. Teste na próxima ida ao mercado.\n\n👉 {link}",
+      "curto": "Não precisa baixar 80 MB pra somar compras: o \"Vai dar quanto?\" abre no navegador. {link}"
+    },
+    {
+      "id": "familia",
+      "card": { "titulo": "\"Compra só o que está na lista\"", "sub": "Agora dá pra provar." },
+      "texto": "Mandaram você no mercado com uma lista e um limite? 😄\n\nDite os itens, acompanhe o total e volte com a prova de que ficou dentro do combinado. Funciona melhor que a memória — e evita discussão.\n\n👉 {link}",
+      "curto": "Mandaram você no mercado com lista e limite? Dite os itens e volte com a prova de que ficou dentro: {link}"
+    },
+    {
+      "id": "precos-subindo",
+      "card": { "titulo": "O preço mudou de novo", "sub": "Você percebe na hora, não na fatura." },
+      "texto": "Os preços mudam toda semana e a gente só percebe no total. 😐\n\nAcompanhando item por item, você vê na hora o que subiu — e decide trocar antes de colocar no carrinho.\n\nComece grátis 👉 {link}",
+      "curto": "Os preços mudam toda semana e a gente só percebe no total. Acompanhe item por item: {link}"
+    }
+  ]
+}

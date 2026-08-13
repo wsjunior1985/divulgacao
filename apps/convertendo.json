@@ -1,0 +1,64 @@
+{
+  "id": "convertendo",
+  "nome": "Convertendo",
+  "url": "https://convertendo.app.br",
+  "marca": {
+    "emoji": "💱",
+    "fundoA": "#050d1a",
+    "fundoB": "#0b1b33",
+    "destaque": "#22d3ee",
+    "texto": "#ffffff",
+    "apoio": "#9fb8d9"
+  },
+  "hashtags": ["#convertendo", "#viagem", "#dolar", "#iof", "#compraseternacionais"],
+  "posts": [
+    {
+      "id": "quanto-em-reais",
+      "card": { "titulo": "US$ 149 = quanto em reais?", "sub": "Com IOF e spread, não a cotação de blog." },
+      "texto": "US$ 149 dá quanto em reais? 🤨\n\nDepende do IOF e do spread do SEU cartão — não da cotação que aparece no Google. O Convertendo mostra o custo real antes de você pagar.\n\nGrátis 👉 {link}",
+      "curto": "US$ 149 dá quanto em reais? Depende do IOF e do spread do seu cartão, não da cotação do Google. {link}"
+    },
+    {
+      "id": "iof-338",
+      "card": { "titulo": "3,38% de IOF", "sub": "Cartão de crédito internacional." },
+      "texto": "Cartão de crédito internacional paga 3,38% de IOF. Uma remessa paga 0,38%. 💸\n\nNuma compra de US$ 1.000, a diferença passa de R$ 150 — só pela forma de pagar.\n\nCompare antes 👉 {link}",
+      "curto": "Crédito internacional: 3,38% de IOF. Remessa: 0,38%. Em US$ 1.000, a diferença passa de R$ 150. {link}"
+    },
+    {
+      "id": "sete-formas",
+      "card": { "titulo": "7 formas de pagar, 1 vencedora", "sub": "Compare antes de passar o cartão." },
+      "texto": "Crédito, pré-pago, remessa, dinheiro, cripto... 🤯\n\nO Convertendo compara as formas de pagamento lado a lado e mostra onde você economiza — às vezes 3% da compra inteira.\n\nTeste agora 👉 {link}",
+      "curto": "Crédito, pré-pago, remessa, dinheiro: o Convertendo compara lado a lado e mostra onde você economiza. {link}"
+    },
+    {
+      "id": "scanner-etiqueta",
+      "card": { "titulo": "Aponta a câmera na etiqueta", "sub": "O preço aparece em reais." },
+      "texto": "Na loja lá fora, aponte a câmera na etiqueta. 📸\n\nO Convertendo lê o preço e mostra quanto é em reais — já com IOF. Sem calculadora, sem conta de cabeça, sem \"depois eu vejo\".\n\n👉 {link}",
+      "curto": "Aponte a câmera na etiqueta e veja o preço em reais, já com IOF. Sem conta de cabeça: {link}"
+    },
+    {
+      "id": "so-na-fatura",
+      "card": { "titulo": "Descobriu o valor só na fatura?", "sub": "Não precisa ser assim." },
+      "texto": "Fez compra internacional e só viu o valor em reais quando a fatura chegou? 😵\n\nO Convertendo mostra o custo total ANTES: cotação, IOF, spread e qual forma de pagamento sai mais barata.\n\nComece grátis 👉 {link}",
+      "curto": "Só descobriu o valor em reais quando a fatura chegou? O Convertendo mostra o custo total antes: {link}"
+    },
+    {
+      "id": "franquia",
+      "card": { "titulo": "Quanto dá pra trazer sem imposto?", "sub": "Franquia alfandegária na prática." },
+      "texto": "Voltando de viagem com compras? A franquia tem limite — e o excedente é taxado. ✈️\n\nEntenda quanto dá pra trazer, como calcular o imposto do que passar e o que declarar, sem juridiquês.\n\n👉 {link}",
+      "curto": "Voltando de viagem com compras? Entenda a franquia, o imposto do excedente e o que declarar: {link}"
+    },
+    {
+      "id": "cotacao-nao-e-preco",
+      "card": { "titulo": "A cotação não é o que você paga", "sub": "Comercial, turismo e spread." },
+      "texto": "A cotação do dólar que você vê no jornal é a comercial. Você paga a de turismo — mais spread, mais IOF. 📊\n\nA diferença passa de 8% em alguns casos. O Convertendo usa a conta certa, a do seu bolso.\n\n👉 {link}",
+      "curto": "A cotação do jornal é a comercial; você paga turismo + spread + IOF. A diferença passa de 8%. {link}"
+    },
+    {
+      "id": "medidas",
+      "card": { "titulo": "Libras, milhas, Fahrenheit", "sub": "Tudo convertido no mesmo app." },
+      "texto": "Viajar é converter o tempo todo: moeda, peso, distância, temperatura, tamanho de roupa. 🌎\n\nO Convertendo faz tudo isso offline, num app só, sem anúncio no meio do caminho.\n\n👉 {link}",
+      "curto": "Viajar é converter o tempo todo: moeda, peso, distância, temperatura. Tudo num app só: {link}"
+    }
+  ]
+}

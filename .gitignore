@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.local
+.DS_Store
+
+# Os cards publicados PRECISAM ser versionados: é o commit deles que gera a URL
+# pública que as redes baixam (MEDIA_MODE=git). Só os previews locais ficam fora.
+assets/cards/preview-*
+assets/tmp/
+pendencias.md

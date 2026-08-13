@@ -1,0 +1,64 @@
+{
+  "id": "aieat",
+  "nome": "AI-Eat",
+  "url": "https://aieat.app.br",
+  "marca": {
+    "emoji": "🍽️",
+    "fundoA": "#0f0a1e",
+    "fundoB": "#2a1b45",
+    "destaque": "#a78bfa",
+    "texto": "#ffffff",
+    "apoio": "#c4b5e8"
+  },
+  "hashtags": ["#aieat", "#alimentacao", "#calorias", "#rotina", "#inteligenciaartificial"],
+  "posts": [
+    {
+      "id": "foto-do-prato",
+      "card": { "titulo": "Tire a foto do prato", "sub": "A IA estima calorias e macros." },
+      "texto": "Registrar refeição costuma dar tanto trabalho que a gente desiste na terceira. 📸\n\nNo AI-Eat você tira a foto do prato e a IA estima calorias, proteínas, carboidratos e gorduras. O total do dia se atualiza sozinho.\n\nTeste grátis 👉 {link}",
+      "curto": "Registrar refeição dá tanto trabalho que a gente desiste. No AI-Eat, é foto do prato e pronto: {link}"
+    },
+    {
+      "id": "sem-pesar",
+      "card": { "titulo": "Sem balança, sem tabela", "sub": "Registro em segundos, não em minutos." },
+      "texto": "Pesar cada ingrediente e procurar na tabela? Ninguém mantém isso por duas semanas. ⚖️\n\nO AI-Eat troca esse ritual por uma foto. Não é laboratório — é uma estimativa boa o suficiente pra você enxergar seu padrão e seguir em frente.\n\n👉 {link}",
+      "curto": "Pesar ingrediente e procurar na tabela ninguém mantém. Troque por uma foto: {link}"
+    },
+    {
+      "id": "padrao-da-semana",
+      "card": { "titulo": "O que a sua semana revela", "sub": "O padrão aparece no histórico." },
+      "texto": "Um dia não diz nada. Uma semana diz tudo. 📊\n\nCom os registros do AI-Eat, dá pra ver onde a conta desanda: o lanche das 16h, o fim de semana, a bebida que ninguém contava.\n\nComece grátis 👉 {link}",
+      "curto": "Um dia não diz nada; uma semana diz tudo. Veja onde a conta desanda: {link}"
+    },
+    {
+      "id": "meta-diaria",
+      "card": { "titulo": "Sua meta, do seu jeito", "sub": "Sem plano genérico de revista." },
+      "texto": "Você define a meta do dia e o AI-Eat mostra quanto já foi e quanto falta — sem plano genérico, sem sermão. 🎯\n\nO app organiza a informação; as escolhas continuam sendo suas.\n\n👉 {link}",
+      "curto": "Defina sua meta do dia e veja quanto já foi e quanto falta — sem plano genérico, sem sermão. {link}"
+    },
+    {
+      "id": "comida-brasileira",
+      "card": { "titulo": "Feijoada, PF, açaí", "sub": "Comida de verdade, não só salada." },
+      "texto": "A maioria dos apps foi treinada com salada de quinoa. 🥗\n\nO AI-Eat entende prato feito, feijoada, pastel de feira e açaí — a comida que a gente come de verdade, no Brasil.\n\nTeste com o seu almoço 👉 {link}",
+      "curto": "A maioria dos apps só entende salada de quinoa. O AI-Eat reconhece PF, feijoada e açaí: {link}"
+    },
+    {
+      "id": "gratis-testar",
+      "card": { "titulo": "Testa antes de assinar", "sub": "Sem cartão para começar." },
+      "texto": "Dá pra testar o scanner e o registro sem colocar cartão. 💜\n\nSe fizer sentido pra sua rotina, o Premium libera scans ilimitados, histórico completo e relatórios. Se não fizer, você não perdeu nada.\n\n👉 {link}",
+      "curto": "Dá pra testar o scanner e o registro sem colocar cartão. Se não fizer sentido, você não perdeu nada: {link}"
+    },
+    {
+      "id": "fora-de-casa",
+      "card": { "titulo": "Comeu fora e não sabe o que contar?", "sub": "Foto resolve." },
+      "texto": "Restaurante não vem com rótulo nutricional. 🍝\n\nFoto do prato, estimativa na hora, registro feito. É o cenário em que todo diário alimentar costuma morrer — e o que o AI-Eat resolve melhor.\n\n👉 {link}",
+      "curto": "Restaurante não vem com rótulo. Foto do prato, estimativa na hora, registro feito: {link}"
+    },
+    {
+      "id": "consistencia",
+      "card": { "titulo": "O que funciona é continuar", "sub": "Registro fácil é registro que dura." },
+      "texto": "Nenhum método de registro funciona se você abandona em cinco dias. ⏳\n\nO AI-Eat aposta no caminho mais curto: foto, confere, salva. Menos atrito, mais chance de virar hábito.\n\nComece hoje 👉 {link}",
+      "curto": "Nenhum registro funciona se você abandona em cinco dias. Foto, confere, salva — menos atrito: {link}"
+    }
+  ]
+}

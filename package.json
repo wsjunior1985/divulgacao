@@ -1,0 +1,22 @@
+{
+  "name": "divulgacao",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Divulgação automática dos apps do portfólio no Instagram, Facebook, TikTok, Threads e Bluesky.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "publicar": "node scripts/publicar.mjs",
+    "dry": "node scripts/publicar.mjs --dry-run",
+    "agenda": "node scripts/agenda.mjs",
+    "cards": "node scripts/cards.mjs",
+    "verificar": "node scripts/verificar.mjs",
+    "renovar": "node scripts/renovar-tokens.mjs"
+  },
+  "dependencies": {
+    "libsodium-wrappers": "^0.8.4",
+    "sharp": "^0.33.5"
+  }
+}

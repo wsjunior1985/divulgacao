@@ -1,0 +1,64 @@
+{
+  "id": "gasonol",
+  "nome": "GASONOL",
+  "url": "https://gasonol.com.br",
+  "marca": {
+    "emoji": "⛽",
+    "fundoA": "#04131f",
+    "fundoB": "#0a2b3d",
+    "destaque": "#22c55e",
+    "texto": "#ffffff",
+    "apoio": "#93c5b5"
+  },
+  "hashtags": ["#gasonol", "#etanolougasolina", "#carroflex", "#economia", "#motorista"],
+  "posts": [
+    {
+      "id": "regra-70",
+      "card": { "titulo": "A regra dos 70% está errada pro seu carro", "sub": "O consumo real decide, não o chute." },
+      "texto": "Etanol ou gasolina? O que compensa NÃO é 70%.\n\nA regra ignora o SEU carro. Um flex que faz 8 km/l no etanol e 12 na gasolina tem paridade diferente de um que faz 6 e 11.\n\nO GASONOL usa o consumo oficial do seu veículo (INMETRO/PBEV), cruza com o preço do posto e responde em segundos.\n\nCalcule grátis 👉 {link}",
+      "curto": "Etanol ou gasolina? O que compensa não é 70% — é o consumo real do SEU carro. O GASONOL usa os dados oficiais do INMETRO e responde na hora. Grátis: {link}"
+    },
+    {
+      "id": "voz-na-bomba",
+      "card": { "titulo": "Sem tirar a mão do volante", "sub": "Fale os preços, ele calcula." },
+      "texto": "Chegou no posto e não quer digitar nada?\n\nFale os dois preços em voz alta e o GASONOL responde na hora qual abastecer compensa. Instala como app no celular e funciona até com a tela suja de combustível. 😄\n\nGrátis para começar 👉 {link}",
+      "curto": "No posto, fale os dois preços em voz alta: o GASONOL responde na hora qual compensa. Grátis: {link}"
+    },
+    {
+      "id": "preco-limite",
+      "card": { "titulo": "Qual o preço-limite do etanol?", "sub": "Descubra o do seu carro." },
+      "texto": "Existe um preço em que o etanol deixa de valer a pena — e ele é diferente pra cada carro.\n\nO GASONOL calcula esse limite pro SEU veículo. Aí é só olhar a placa do posto e saber na hora, sem fazer conta.\n\nDescubra o seu 👉 {link}",
+      "curto": "Existe um preço em que o etanol deixa de compensar — e ele muda de carro pra carro. Descubra o do seu: {link}"
+    },
+    {
+      "id": "quanto-economiza",
+      "card": { "titulo": "Quanto isso dá no fim do mês?", "sub": "Escolher certo em todo abastecimento." },
+      "texto": "Errar a escolha do combustível custa pouco por tanque. Só que são 4, 5, 6 tanques por mês. 🙃\n\nO GASONOL acerta a conta toda vez, com o consumo real do seu carro. Em um ano, dá pra pagar bem mais que um tanque cheio.\n\nComece grátis 👉 {link}",
+      "curto": "Errar o combustível custa pouco por tanque — mas são 5 tanques por mês. O GASONOL acerta a conta toda vez: {link}"
+    },
+    {
+      "id": "sem-instalar",
+      "card": { "titulo": "Abre no navegador", "sub": "Sem baixar, sem cadastro pra testar." },
+      "texto": "Não precisa baixar nada da loja.\n\nO GASONOL abre direto no navegador do celular e você pode instalar como app com um toque. Testa em 10 segundos, no próximo posto.\n\n👉 {link}",
+      "curto": "O GASONOL abre direto no navegador — sem baixar da loja. Testa no próximo posto: {link}"
+    },
+    {
+      "id": "consumo-oficial",
+      "card": { "titulo": "O consumo do seu carro, oficial", "sub": "Base INMETRO/PBEV, não estimativa." },
+      "texto": "Muita calculadora de combustível pede o consumo do carro — e quem sabe isso de cabeça? 🤔\n\nO GASONOL já tem: base oficial do INMETRO/PBEV com o consumo do seu modelo em etanol e gasolina. Você escolhe o carro e pronto.\n\nExperimente 👉 {link}",
+      "curto": "Não sabe o consumo do seu carro de cabeça? O GASONOL já tem — base oficial do INMETRO. Só escolher o modelo: {link}"
+    },
+    {
+      "id": "mito-etanol",
+      "card": { "titulo": "\"Etanol estraga o motor\"", "sub": "Mito. Seu carro é flex por projeto." },
+      "texto": "\"Etanol estraga o motor.\" 🚫\n\nCarro flex foi projetado pros dois. O que muda de verdade é o custo por quilômetro — e isso depende do preço do dia e do consumo do seu modelo.\n\nO GASONOL faz essa conta em segundos, sempre que você parar num posto.\n\n👉 {link}",
+      "curto": "\"Etanol estraga o motor\" é mito: flex foi feito pros dois. O que muda é o custo por km — e o GASONOL calcula: {link}"
+    },
+    {
+      "id": "indique",
+      "card": { "titulo": "Indique e os dois ganham", "sub": "30 dias de Premium para cada um." },
+      "texto": "Todo mundo tem um amigo que ainda usa a regra dos 70%. 😅\n\nManda o GASONOL pra ele: quem assina pelo seu link ganha 30 dias grátis — e você ganha 30 dias também.\n\n👉 {link}",
+      "curto": "Todo mundo tem um amigo que ainda usa a regra dos 70%. Manda o GASONOL pra ele — os dois ganham 30 dias: {link}"
+    }
+  ]
+}

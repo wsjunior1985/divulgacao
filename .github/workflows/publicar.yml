@@ -72,6 +72,16 @@ jobs:
           if [ -n "${{ inputs.slot }}" ]; then argumentos="$argumentos --slot ${{ inputs.slot }}"; fi
           node scripts/publicar.mjs $argumentos
 
+      # No dry-run os cards não são commitados, então ficam aqui para você abrir
+      # e conferir o visual antes de deixar o cron publicar.
+      - name: Guardar os cards para conferência
+        if: ${{ inputs.dry_run == true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cards
+          path: assets/cards/*.jpg
+          retention-days: 7
+
       - name: Guardar o registro do que foi publicado
         if: ${{ inputs.dry_run != true }}
         run: |

@@ -74,6 +74,20 @@ function cortar(texto, limite) {
 }
 
 /**
+ * Corta o CORPO e reanexa o link inteiro. Cortar o texto já montado poderia
+ * decepar a URL no meio e matar o clique — que é a única coisa que o post
+ * precisa entregar.
+ */
+function cortarPreservandoLink(modelo, link, limite) {
+  const completo = modelo.replaceAll("{link}", link);
+  if (!modelo.includes("{link}")) return cortar(completo, limite);
+  if (completo.length <= limite) return completo;
+  const [antes, depois = ""] = modelo.split("{link}");
+  const sobra = limite - link.length - depois.length - 1;
+  return `${cortar(antes.trim(), Math.max(20, sobra))} ${link}${depois}`.trim();
+}
+
+/**
  * Texto final por canal. Cada rede tem limite e etiqueta própria:
  *  - instagram: legenda longa + hashtags (link não é clicável, mas informa)
  *  - facebook:  legenda longa, link vira preview
@@ -92,21 +106,12 @@ export function montarTexto({ app, post, canal, campanha }) {
       return { texto: cortar(`${base}\n\n${tags}`, 2200), link };
     case "facebook":
       return { texto: cortar(base, 5000), link };
-    case "threads": {
-      // O link vai em link_attachment, então sai do corpo para caber nos 500.
-      const semLink = post.texto.replaceAll("{link}", "").replace(/\s*👉\s*$/m, "").trim();
-      return { texto: cortar(semLink, 500), link };
-    }
-    case "bluesky": {
-      // Cortar o texto inteiro em 300 poderia decepar a URL no meio e matar o
-      // clique. Então o corte cai só no corpo, e o link é reanexado inteiro.
-      const modelo = post.curto ?? post.texto;
-      if (!modelo.includes("{link}")) return { texto: cortar(curto, 300), link };
-      const [antes, depois = ""] = modelo.split("{link}");
-      const sobra = 300 - link.length - depois.length - 1;
-      const corpo = cortar(antes.trim(), Math.max(20, sobra));
-      return { texto: `${corpo} ${link}${depois}`.trim(), link };
-    }
+    case "threads":
+      // O link vai no CORPO, não em link_attachment: a Threads API só aceita
+      // link_attachment em post de texto puro, e os nossos sempre levam card.
+      return { texto: cortarPreservandoLink(post.texto, link, 500), link };
+    case "bluesky":
+      return { texto: cortarPreservandoLink(post.curto ?? post.texto, link, 300), link };
     case "tiktok":
       return { texto: cortar(`${curto}\n\n${tags}`, 2200), link };
     default:

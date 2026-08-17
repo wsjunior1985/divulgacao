@@ -39,7 +39,8 @@ export async function publicar({ texto, imagens, link }) {
     media_type: imagem ? "IMAGE" : "TEXT",
     ...(imagem ? { image_url: imagem } : {}),
     text: texto,
-    // link_attachment só vale para posts de texto; com imagem, o link fica no corpo.
+    // link_attachment só existe para media_type=TEXT. Como todo post nosso leva
+    // card, o link viaja dentro do próprio texto (ver montarTexto).
     ...(link && !imagem ? { link_attachment: link } : {}),
     access_token: token,
   });

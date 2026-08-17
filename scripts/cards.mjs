@@ -27,8 +27,7 @@ for (const app of apps) {
   for (const post of posts) {
     const { relativo, bytes } = await gerarCard({
       app,
-      titulo: post.card.titulo,
-      sub: post.card.sub,
+      post,
       formato,
       nome: `preview-${app.id}-${post.id}-${formato}`,
     });

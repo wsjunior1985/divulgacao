@@ -24,6 +24,17 @@ const DESTINO = resolve(RAIZ, "assets/capturas");
 const EMAIL = env("CAPTURAS_EMAIL");
 const SENHA = env("CAPTURAS_SENHA");
 
+// Modo escuro por app: a chave de localStorage que cada app usa para decidir o
+// tema. Some ao `colorScheme: "dark"` do contexto (que cobre quem usa
+// prefers-color-scheme, como o Convertendo).
+const TEMA_ESCURO = {
+  gasonol: [["theme", "dark"]],
+  remedin: [["remedin-theme", "dark"]],
+  aieat: [["aieat.theme", "dark"]],
+  convertendo: [],
+  vaidarquanto: [["vdq-app-dark", "true"]],
+};
+
 // ---------------------------------------------------------------------------
 // Cenários do GASONOL (sem login). A tela de cálculo é progressiva: selecionar
 // veículo → calculadora → resultado. Cada passo é uma captura diferente.
@@ -123,7 +134,16 @@ async function capturarApp(browser, app) {
     deviceScaleFactor: DPR,
     isMobile: true,
     hasTouch: true,
+    colorScheme: "dark",
   });
+
+  const pares = TEMA_ESCURO[app.id] ?? [];
+  if (pares.length) {
+    await context.addInitScript((tema) => {
+      for (const [chave, valor] of tema) localStorage.setItem(chave, valor);
+    }, pares);
+  }
+
   const page = await context.newPage();
 
   try {

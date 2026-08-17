@@ -79,6 +79,20 @@ async function renovarThreads() {
 
 async function renovarTikTok() {
   if (!tiktok.pronto().ok) return log("tiktok: sem credenciais — nada a renovar");
+
+  // O refresh do TikTok ROTACIONA: usar o atual invalida ele e devolve outro.
+  // Sem onde gravar o novo, renovar seria trocar um token válido por um token
+  // perdido — pior que não renovar. Só seguimos se dá para persistir.
+  if (!pat || !repo) {
+    aviso("tiktok: pulando a renovação — sem GH_PAT o refresh token novo se perderia e o acesso quebraria");
+    pendencias.push(
+      "**TikTok**: a renovação automática está desligada porque falta o secret `GH_PAT` " +
+        "(o refresh token do TikTok rotaciona a cada uso e precisa ser gravado de volta). " +
+        "Configure o GH_PAT — SETUP.md, bloco 5 — ou renove à mão pelo painel.",
+    );
+    return;
+  }
+
   try {
     const novo = await tiktok.renovarToken();
     if (!novo?.token) return aviso("tiktok: a API não devolveu token novo");

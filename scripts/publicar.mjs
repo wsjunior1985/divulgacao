@@ -140,12 +140,13 @@ async function main() {
 
   // Cards: um retrato para o feed, um vertical se o TikTok estiver no páreo.
   const variacao = ((slot.indice % 3) + 3) % 3;
-  const cardFeed = await gerarCard({ app, post, formato: "feed", nome: `${identificador}-feed`, variacao });
+  const lado = ((slot.indice % 2) + 2) % 2;
+  const cardFeed = await gerarCard({ app, post, formato: "feed", nome: `${identificador}-feed`, variacao, lado });
   log(`card feed: ${cardFeed.relativo} (${Math.round(cardFeed.bytes / 1024)} KB)`);
 
   let cardVertical = null;
   if (alvos.includes("tiktok")) {
-    cardVertical = await gerarCard({ app, post, formato: "vertical", nome: `${identificador}-vertical`, variacao });
+    cardVertical = await gerarCard({ app, post, formato: "vertical", nome: `${identificador}-vertical`, variacao, lado });
     log(`card vertical: ${cardVertical.relativo} (${Math.round(cardVertical.bytes / 1024)} KB)`);
   }
 

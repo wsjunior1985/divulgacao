@@ -31,6 +31,7 @@ npm run dry               # o post de agora, sem publicar
 npm run verificar         # testa cada credencial com uma chamada real de leitura
 npm run cards             # gera cards para conferir o visual
 npm run capturar          # refotografa as telas reais dos apps
+npm run semear            # semeia dados de exemplo nas contas (telas "vivas")
 npm run publicar          # publica o slot atual
 npm run renovar           # renova os tokens que expiram
 ```
@@ -94,6 +95,11 @@ chat nem no código. Para recapturar na sua máquina:
 npm run capturar            # todos os apps
 npm run capturar -- --app gasonol
 ```
+
+Contas novas saem com telas vazias. O `npm run semear` preenche dados de exemplo
+(medicamentos no Remedin, itens no carrinho do Vai dar quanto?, hidratação no
+AI-Eat) para os cards saírem com as telas "vivas" — rode uma vez, e de novo só
+se os dados forem apagados.
 
 Se uma captura falhar ou o Chromium não estiver instalado, o card cai de volta
 no layout só de texto — a publicação nunca é bloqueada por isso.

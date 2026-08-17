@@ -32,6 +32,7 @@ for (const app of apps) {
       formato,
       nome: `preview-${app.id}-${post.id}-${formato}`,
       variacao: i % 3,
+      lado: i % 2,
     });
     log(`${relativo} (${Math.round(bytes / 1024)} KB)`);
     gerados++;

@@ -13,6 +13,7 @@
     "agenda": "node scripts/agenda.mjs",
     "cards": "node scripts/cards.mjs",
     "capturar": "node scripts/capturar.mjs",
+    "semear": "node scripts/semear.mjs",
     "verificar": "node scripts/verificar.mjs",
     "renovar": "node scripts/renovar-tokens.mjs"
   },

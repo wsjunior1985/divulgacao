@@ -43,6 +43,35 @@ node scripts/cards.mjs --app gasonol --todos
 node scripts/agenda.mjs --dias 30
 ```
 
+## O card
+
+Cada post vira uma imagem gerada na hora, com a identidade real do app:
+
+- **Logo oficial**, tirada do PWA de cada projeto (`assets/logos/`).
+- **Paleta da marca**, convertida do `index.css` de cada app — os projetos
+  declaram cor em `oklch` e o `lib/cor.js` traduz para sRGB. Nenhuma cor é
+  escolhida no olho, e o contraste do texto é verificado.
+- **Tipografia embarcada** (Inter, licença OFL, em `assets/fontes/`). O
+  renderizador recebe os arquivos da fonte, então o card sai idêntico no seu
+  Mac e no runner do GitHub. Antes disso o resultado mudava de máquina para
+  máquina — Helvetica de um lado, DejaVu do outro.
+- **Largura medida no arquivo da fonte** (opentype.js), não estimada: é o que
+  garante que o título nunca vaze a margem.
+
+Três layouts, escolhidos pelo conteúdo do post:
+
+| Layout | Quando é usado | Campo no JSON |
+|---|---|---|
+| `manchete` | padrão: título grande, subtítulo e chips de funcionalidade | — |
+| `recursos` | lista com os quatro recursos do app | `"layout": "recursos"` |
+| `destaque` | um número é o argumento (3,38%, 8/8h, 0 MB) | `"destaque": "3,38%"` |
+
+Para conferir sem publicar:
+
+```bash
+npm run cards -- --app gasonol --todos
+```
+
 ## Mudar o conteúdo
 
 Tudo vive em `apps/<app>.json`: pitch, cores da marca, hashtags e a lista de

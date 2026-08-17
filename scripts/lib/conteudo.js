@@ -112,6 +112,10 @@ export function montarTexto({ app, post, canal, campanha }) {
       return { texto: cortarPreservandoLink(post.texto, link, 500), link };
     case "bluesky":
       return { texto: cortarPreservandoLink(post.curto ?? post.texto, link, 300), link };
+    case "x":
+      // 280 é o limite da conta gratuita. O X conta qualquer URL como 23
+      // caracteres, mas cortar pelo tamanho real só deixa margem — nunca falta.
+      return { texto: cortarPreservandoLink(post.curto ?? post.texto, link, 280), link };
     case "tiktok":
       return { texto: cortar(`${curto}\n\n${tags}`, 2200), link };
     default:

@@ -18,10 +18,12 @@ import * as meta from "./canais/meta.js";
 import * as threads from "./canais/threads.js";
 import * as bluesky from "./canais/bluesky.js";
 import * as tiktok from "./canais/tiktok.js";
+import * as buffer from "./canais/buffer.js";
 
 carregarEnv();
 
-const CANAIS = ["instagram", "facebook", "threads", "bluesky", "tiktok"];
+// "x" não fala com a API do X (que é paga): sai pelo Buffer, que publica de graça.
+const CANAIS = ["instagram", "facebook", "threads", "bluesky", "tiktok", "x"];
 const ARQUIVO_ESTADO = "estado/publicados.json";
 
 /** Horários do dia, em hora cheia BRT. O cron do Actions dispara nesses horários. */
@@ -78,6 +80,12 @@ async function publicarCanal(canal, { textoPorCanal, urlsCard, cardFeed, cardVer
       };
     case "tiktok":
       return { canal, status: "ok", ...(await tiktok.publicar({ texto, imagens: [urlsCard.vertical], link })) };
+    case "x":
+      return {
+        canal,
+        status: "ok",
+        ...(await buffer.publicar({ texto, imagens: [urlsCard.feed], servicos: ["twitter"] })),
+      };
     default:
       throw new Error(`canal sem adapter: ${canal}`);
   }
@@ -88,6 +96,7 @@ function prontidao(canal) {
   if (canal === "threads") return threads.pronto();
   if (canal === "bluesky") return bluesky.pronto();
   if (canal === "tiktok") return tiktok.pronto();
+  if (canal === "x") return buffer.pronto();
   return { ok: false, motivo: "canal desconhecido" };
 }
 

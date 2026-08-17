@@ -1,8 +1,8 @@
 # Divulgação automática
 
 Publica sozinho os cinco apps — **Vai dar quanto?, AI-Eat, GASONOL, Convertendo e
-Remedin** — no **Instagram, Facebook, Threads, Bluesky e TikTok**, em rodízio, de
-graça, sem ninguém apertar botão.
+Remedin** — no **Instagram, Facebook, Threads, Bluesky, TikTok e X**, em rodízio,
+de graça, sem ninguém apertar botão.
 
 Depois do [SETUP.md](SETUP.md), a sua participação é: nenhuma.
 
@@ -65,10 +65,14 @@ API a cada 24h; Threads, 250.
 
 ## Custo
 
-Zero. GitHub Actions grátis em repositório público, e as cinco APIs são
-gratuitas. O X (Twitter) ficou de fora porque acabou o tier gratuito em fevereiro
-de 2026: hoje custa US$ 0,015 por post e US$ 0,20 se houver link. O Bluesky e o
-Threads entraram no lugar dele.
+Zero. GitHub Actions é grátis em repositório público, e todos os canais são
+gratuitos.
+
+O X merece explicação: a **API direta** do X é paga desde fevereiro de 2026
+(US$ 0,015 por post, US$ 0,20 com link), e por isso não a usamos. O canal `x`
+daqui sai pelo **Buffer**, que publica no X sem cobrar porque a cota de API é
+dele. O Buffer gratuito limita canais e fila, então cada execução enfileira
+apenas o post do slot, poucos minutos à frente — a fila fica curta e nunca seca.
 
 ## O que ainda precisa de você
 

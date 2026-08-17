@@ -1,0 +1,38 @@
+[
+  {
+    "ig_user_id": "<IG_USER_ID>",
+    "media_type": "REEL",
+    "caption": "Contar caloria na mão é chato. No AI-Eat você tira a foto e a IA faz o trabalho: calorias + macros na hora. Plano Free já libera 3 análises por dia.\n\n#emagrecimento #ia #nutricao #dieta #aieat\n\nLink na bio: https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=scanner",
+    "video_url": "<URL_DO_VIDEO>",
+    "access_token": "<INSTAGRAM_GRAPH_API_TOKEN>",
+    "scheduled_publish_time": 1786885200,
+    "link": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=scanner"
+  },
+  {
+    "ig_user_id": "<IG_USER_ID>",
+    "media_type": "REEL",
+    "caption": "Emagrecer é matemática, não sofrimento. O AI-Eat calcula IMC, TMB e sua meta calórica em 1 minuto — sem planilha, sem nutrição cara.\n\n#imc #tmb #metacalorica #emagrecercomsaude #aieat\n\nLink na bio: https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=metas",
+    "video_url": "<URL_DO_VIDEO>",
+    "access_token": "<INSTAGRAM_GRAPH_API_TOKEN>",
+    "scheduled_publish_time": 1787403600,
+    "link": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=metas"
+  },
+  {
+    "ig_user_id": "<IG_USER_ID>",
+    "media_type": "REEL",
+    "caption": "Hidratação é metade da disciplina. O AI-Eat manda lembretes de água no intervalo que você quiser — você só bebe e marca.\n\n#hidratacao #saudavel #dicasdesaude #aieat #bemestar\n\nLink na bio: https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=hidratacao",
+    "video_url": "<URL_DO_VIDEO>",
+    "access_token": "<INSTAGRAM_GRAPH_API_TOKEN>",
+    "scheduled_publish_time": 1787922000,
+    "link": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=hidratacao"
+  },
+  {
+    "ig_user_id": "<IG_USER_ID>",
+    "media_type": "REEL",
+    "caption": "Contar caloria na mão é chato. No AI-Eat você tira a foto e a IA faz o trabalho: calorias + macros na hora. Plano Free já libera 3 análises por dia.\n\n#emagrecimento #ia #nutricao #dieta #aieat\n\nLink na bio: https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=scanner",
+    "video_url": "<URL_DO_VIDEO>",
+    "access_token": "<INSTAGRAM_GRAPH_API_TOKEN>",
+    "scheduled_publish_time": 1788440400,
+    "link": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=alwayson&utm_content=scanner"
+  }
+]

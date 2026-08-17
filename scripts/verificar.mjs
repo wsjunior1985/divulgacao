@@ -13,6 +13,7 @@ import * as meta from "./canais/meta.js";
 import * as threads from "./canais/threads.js";
 import * as bluesky from "./canais/bluesky.js";
 import * as tiktok from "./canais/tiktok.js";
+import * as buffer from "./canais/buffer.js";
 import { carregarApps } from "./lib/conteudo.js";
 
 carregarEnv();
@@ -109,6 +110,28 @@ async function checarTikTok() {
   }
 }
 
+async function checarBuffer() {
+  const pronto = buffer.pronto();
+  if (!pronto.ok) return registrar("x (buffer)", "off", pronto.motivo);
+  try {
+    const org = await buffer.organizacao();
+    const canais = await buffer.canais(org.id);
+    const twitter = canais.find((c) => c.service.toLowerCase() === "twitter");
+    if (!twitter) {
+      return registrar("x (buffer)", "erro", `nenhum canal do X conectado (há: ${canais.map((c) => c.service).join(", ") || "nenhum"})`);
+    }
+    const fila = await buffer.agendados(org.id, twitter.id);
+    const proximo = fila.map((p) => p.dueAt).sort()[0];
+    registrar(
+      "x (buffer)",
+      twitter.isQueuePaused ? "parcial" : "ok",
+      `@${twitter.displayName || twitter.name}${twitter.isQueuePaused ? " · FILA PAUSADA no painel" : ""} · ${fila.length} na fila${proximo ? ` · próximo ${proximo.slice(0, 16)}` : ""}`,
+    );
+  } catch (e) {
+    registrar("x (buffer)", "erro", e.message);
+  }
+}
+
 function checarConteudo() {
   try {
     const apps = carregarApps();
@@ -154,6 +177,7 @@ await checarMeta();
 await checarThreads();
 await checarBluesky();
 await checarTikTok();
+await checarBuffer();
 
 console.log();
 const simbolo = { ok: "✓", parcial: "◐", off: "·", erro: "✗" };

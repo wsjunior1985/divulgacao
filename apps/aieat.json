@@ -4,8 +4,8 @@
   "url": "https://aieat.app.br",
   "marca": {
     "emoji": "🍽️",
-    "fundoA": "#0b1410",
-    "destaque": "#00c49f"
+    "fundoA": "#120818",
+    "destaque": "#cd46b7"
   },
   "recursos": [
     "Foto do prato e a IA estima as calorias",
@@ -29,8 +29,8 @@
     {
       "id": "foto-do-prato",
       "card": {
-        "titulo": "Tire a foto do prato",
-        "sub": "e o registro da refeição está feito.",
+        "titulo": "e o registro está feito",
+        "sub": "Sem balança, sem tabela, sem digitar.",
         "destaque": "1 foto"
       },
       "texto": "Registrar refeição costuma dar tanto trabalho que a gente desiste na terceira. 📸\n\nNo AI-Eat você tira a foto do prato e a IA estima calorias, proteínas, carboidratos e gorduras. O total do dia se atualiza sozinho.\n\nTeste grátis 👉 {link}",

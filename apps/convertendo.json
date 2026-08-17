@@ -38,8 +38,8 @@
     {
       "id": "iof-338",
       "card": {
-        "titulo": "3,38% de IOF",
-        "sub": "Cartão de crédito internacional.",
+        "titulo": "de IOF no cartão de crédito",
+        "sub": "Uma remessa paga 0,38%. Compare antes.",
         "destaque": "3,38%"
       },
       "texto": "Cartão de crédito internacional paga 3,38% de IOF. Uma remessa paga 0,38%. 💸\n\nNuma compra de US$ 1.000, a diferença passa de R$ 150 — só pela forma de pagar.\n\nCompare antes 👉 {link}",
@@ -48,7 +48,7 @@
     {
       "id": "sete-formas",
       "card": {
-        "titulo": "7 formas de pagar, 1 vencedora",
+        "titulo": "formas de pagar, 1 vencedora",
         "sub": "Compare antes de passar o cartão.",
         "destaque": "7"
       },

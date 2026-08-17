@@ -179,6 +179,43 @@ precisa de você.
 
 ---
 
+## Bloco 6 — Captura das telas dos apps (opcional, recomendado)
+
+Os cards mostram um celular com a **tela interna real** de cada app. Essas telas
+são fotografadas pelo `scripts/capturar.mjs` (Playwright) e commitadas em
+`assets/capturas/`. O workflow `capturar` refaz isso semanalmente.
+
+Como Remedin, AI-Eat, Convertendo e Vai dar quanto? exigem conta para mostrar o
+interior, a captura precisa autenticar. Use uma conta sua (a mesma dos apps):
+
+1. Em `Settings → Secrets and variables → Actions`, crie dois secrets:
+
+| Secret | Valor |
+|---|---|
+| `CAPTURAS_EMAIL` | e-mail da conta (ex.: `waldeapps@gmail.com`) |
+| `CAPTURAS_SENHA` | senha dessa conta |
+
+2. Localmente, coloque os mesmos valores em `.env.local`:
+
+```
+CAPTURAS_EMAIL=waldeapps@gmail.com
+CAPTURAS_SENHA=...
+```
+
+Para recapturar na sua máquina (o Chromium do Playwright precisa estar
+instalado: `npx playwright install chromium`):
+
+```bash
+npm run capturar            # todos os apps
+npm run capturar -- --app gasonol
+```
+
+O GASONOL não pede login e é capturado por um fluxo (seletor → calculadora →
+resultado). Os demais navegam nas rotas internas após autenticar. Se a captura
+falhar, os cards usam as telas anteriores — publicar nunca quebra por isso.
+
+---
+
 ## Conferir tudo
 
 Local (crie um `.env.local` a partir do `.env.example`):

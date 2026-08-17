@@ -1,0 +1,54 @@
+name: capturar
+
+# Recaptura as telas reais dos apps (scripts/capturar.mjs) e commita em
+# assets/capturas/. O pipeline de publicar usa essas telas commitadas — então a
+# captura roda FORA do fluxo crítico: se falhar (login mudou, app fora do ar),
+# as telas anteriores continuam valendo e a publicação não é afetada.
+on:
+  schedule:
+    - cron: "30 11 * * 1" # segundas, 08:30 BRT
+  workflow_dispatch:
+    inputs:
+      app:
+        description: "Capturar só um app (ex.: gasonol). Vazio = todos."
+        type: string
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  capturar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CAPTURAS_EMAIL: ${{ secrets.CAPTURAS_EMAIL }}
+      CAPTURAS_SENHA: ${{ secrets.CAPTURAS_SENHA }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Baixar o Chromium do Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Capturar telas
+        id: capturar
+        run: |
+          argumentos=""
+          if [ -n "${{ inputs.app }}" ]; then argumentos="--app ${{ inputs.app }}"; fi
+          node scripts/capturar.mjs $argumentos
+
+      - name: Commit das telas
+        run: |
+          git config user.name "divulgacao-bot"
+          git config user.email "divulgacao-bot@users.noreply.github.com"
+          git add assets/capturas || true
+          git diff --cached --quiet || git commit -m "chore: telas dos apps [skip ci]"
+          git pull --rebase origin ${{ github.ref_name }} || true
+          git push origin HEAD:${{ github.ref_name }}

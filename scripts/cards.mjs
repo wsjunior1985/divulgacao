@@ -24,12 +24,14 @@ if (!apps.length) throw new Error(`app não encontrado: ${apenasApp}`);
 let gerados = 0;
 for (const app of apps) {
   const posts = todos || apenasApp ? app.posts : app.posts.slice(0, 1);
-  for (const post of posts) {
+  for (let i = 0; i < posts.length; i++) {
+    const post = posts[i];
     const { relativo, bytes } = await gerarCard({
       app,
       post,
       formato,
       nome: `preview-${app.id}-${post.id}-${formato}`,
+      variacao: i % 3,
     });
     log(`${relativo} (${Math.round(bytes / 1024)} KB)`);
     gerados++;

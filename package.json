@@ -12,6 +12,7 @@
     "dry": "node scripts/publicar.mjs --dry-run",
     "agenda": "node scripts/agenda.mjs",
     "cards": "node scripts/cards.mjs",
+    "capturar": "node scripts/capturar.mjs",
     "verificar": "node scripts/verificar.mjs",
     "renovar": "node scripts/renovar-tokens.mjs"
   },
@@ -20,5 +21,8 @@
     "libsodium-wrappers": "^0.8.4",
     "opentype.js": "^2.0.0",
     "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
   }
 }

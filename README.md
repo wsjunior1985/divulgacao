@@ -30,6 +30,7 @@ npm run agenda            # o que sai nos próximos 7 dias (previsão exata)
 npm run dry               # o post de agora, sem publicar
 npm run verificar         # testa cada credencial com uma chamada real de leitura
 npm run cards             # gera cards para conferir o visual
+npm run capturar          # refotografa as telas reais dos apps
 npm run publicar          # publica o slot atual
 npm run renovar           # renova os tokens que expiram
 ```
@@ -57,20 +58,45 @@ Cada post vira uma imagem gerada na hora, com a identidade real do app:
   máquina — Helvetica de um lado, DejaVu do outro.
 - **Largura medida no arquivo da fonte** (opentype.js), não estimada: é o que
   garante que o título nunca vaze a margem.
+- **Hero com o app real**: um mockup de celular mostra uma **captura da tela
+  interna** do app (não a landing, não a tela de login). As capturas vivem em
+  `assets/capturas/` e são refotografadas semanalmente pelo workflow `capturar`
+  — a publicação usa as já commitadas, então uma captura que falha não derruba
+  nada.
 
 Três layouts, escolhidos pelo conteúdo do post:
 
 | Layout | Quando é usado | Campo no JSON |
 |---|---|---|
-| `manchete` | padrão: título grande, subtítulo e chips de funcionalidade | — |
-| `recursos` | lista com os quatro recursos do app | `"layout": "recursos"` |
-| `destaque` | um número é o argumento (3,38%, 8/8h, 0 MB) | `"destaque": "3,38%"` |
+| `manchete` | padrão: celular + título grande, subtítulo e chips | — |
+| `recursos` | celular + lista com os recursos do app | `"layout": "recursos"` |
+| `destaque` | celular + um número é o argumento (3,38%, 8/8h, 0 MB) | `"destaque": "3,38%"` |
 
 Para conferir sem publicar:
 
 ```bash
 npm run cards -- --app gasonol --todos
 ```
+
+## As capturas dos apps
+
+As telas internas são fotografadas pelo `scripts/capturar.mjs` (Playwright):
+
+- **GASONOL** não exige login: o script percorre o fluxo real (seletor de
+  veículo → calculadora → resultado) e captura os três estados.
+- **Remedin, AI-Eat, Convertendo e Vai dar quanto?** exigem conta: o script
+  autentica com `CAPTURAS_EMAIL`/`CAPTURAS_SENHA` e navega nas rotas internas.
+
+As credenciais ficam em `.env.local` (local) e em Secrets no GitHub — nunca no
+chat nem no código. Para recapturar na sua máquina:
+
+```bash
+npm run capturar            # todos os apps
+npm run capturar -- --app gasonol
+```
+
+Se uma captura falhar ou o Chromium não estiver instalado, o card cai de volta
+no layout só de texto — a publicação nunca é bloqueada por isso.
 
 ## Mudar o conteúdo
 

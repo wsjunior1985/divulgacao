@@ -14,7 +14,7 @@
 // 3. LAYOUTS. Um card só para tudo cansa o feed. Aqui há três, escolhidos pelo
 //    conteúdo do post: manchete, recursos e destaque numérico.
 
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { createRequire } from "node:module";
 import { RAIZ } from "./base.js";
@@ -37,6 +37,32 @@ function logoBase64(app) {
   const caminho = resolve(RAIZ, `assets/logos/${app.id}.png`);
   const dados = `data:image/png;base64,${readFileSync(caminho).toString("base64")}`;
   cacheLogo.set(app.id, dados);
+  return dados;
+}
+
+// Capturas reais das telas dos apps (scripts/capturar.mjs → assets/capturas/).
+// Um app tem 3 variações (0, 1, 2); a variação escolhida roda determinística
+// pelo slot. Sem captura, o card cai de volta no layout só de texto.
+const cacheCaptura = new Map();
+
+function capturaBase64(app, variacao) {
+  const chave = `${app.id}:${variacao}`;
+  if (cacheCaptura.has(chave)) return cacheCaptura.get(chave);
+
+  const candidatos = Array.from({ length: 3 }, (_, i) => `assets/capturas/${app.id}-${i}.png`);
+  // Nomeia as capturas do gasonol pelo fluxo (seletor/calculadora/resultado),
+  // então descobre o arquivo por prefixo, em vez de assumir o sufixo numérico.
+  const dirCapturas = resolve(RAIZ, "assets/capturas");
+  const prefixos = existsSync(dirCapturas)
+    ? readdirSync(dirCapturas).filter((f) => f.startsWith(`${app.id}-`) && f.endsWith(".png"))
+    : [];
+  const alvos = prefixos.length
+    ? prefixos.map((f) => `assets/capturas/${f}`)
+    : candidatos.filter((c) => existsSync(resolve(RAIZ, c)));
+
+  const caminho = alvos.length ? alvos[((variacao ?? 0) % alvos.length + alvos.length) % alvos.length] : null;
+  const dados = caminho ? `data:image/png;base64,${readFileSync(resolve(RAIZ, caminho)).toString("base64")}` : null;
+  cacheCaptura.set(chave, dados);
   return dados;
 }
 
@@ -364,7 +390,158 @@ function layoutDestaque({ app, p, L, A, margem, destaque, titulo, sub }) {
   ${blocoSub}`;
 }
 
-export function montarSvg({ app, post, formato = "feed" }) {
+const ASPECTO_TELA = 844 / 390; // 9:19.5 do viewport de captura
+
+/**
+ * Mockup premium de celular com a captura real do app dentro. Moldura metálica,
+ * botões laterais, reflexo de vidro e brilho na cor da marca — tudo em
+ * gradientes, sem depender de filtros do resvg (que têm suporte irregular).
+ */
+function telefone(app, p, captura, cx, cy, w) {
+  if (!captura) return "";
+  const id = `tel-${app.id}`;
+  const h = w * ASPECTO_TELA;
+  const b = Math.max(8, Math.round(w * 0.032));
+  const W = Math.round(w + b * 2);
+  const H = Math.round(h + b * 2);
+  const R = Math.round(w * 0.1);
+  const r = Math.max(12, R - b);
+  const x = Math.round(cx - W / 2);
+  const y = Math.round(cy - H / 2);
+
+  return `
+  <g>
+    <defs>
+      <linearGradient id="${id}-corpo" x1="0" y1="0" x2="0.5" y2="1">
+        <stop offset="0" stop-color="#3b3b44"/>
+        <stop offset="0.5" stop-color="#1a1a20"/>
+        <stop offset="1" stop-color="#0c0c10"/>
+      </linearGradient>
+      <linearGradient id="${id}-borda" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+        <stop offset="0.2" stop-color="#ffffff" stop-opacity="0.12"/>
+        <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+      </linearGradient>
+      <linearGradient id="${id}-reflexo" x1="0" y1="0" x2="0.45" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+        <stop offset="0.4" stop-color="#ffffff" stop-opacity="0"/>
+      </linearGradient>
+      <radialGradient id="${id}-glow" cx="0.5" cy="0.42" r="0.62">
+        <stop offset="0" stop-color="${p.marca}" stop-opacity="0.34"/>
+        <stop offset="0.6" stop-color="${p.marca}" stop-opacity="0.08"/>
+        <stop offset="1" stop-color="${p.marca}" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="${id}-tela">
+        <rect x="${x + b}" y="${y + b}" width="${w}" height="${h}" rx="${r}"/>
+      </clipPath>
+    </defs>
+
+    <rect x="${x - 70}" y="${y - 60}" width="${W + 140}" height="${H + 120}" fill="url(#${id}-glow)"/>
+    <rect x="${x}" y="${y + 22}" width="${W}" height="${H}" rx="${R}" fill="#000000" fill-opacity="0.28"/>
+    <rect x="${x}" y="${y + 40}" width="${W}" height="${H}" rx="${R}" fill="#000000" fill-opacity="0.12"/>
+
+    <rect x="${x}" y="${y}" width="${W}" height="${H}" rx="${R}" fill="url(#${id}-corpo)"/>
+    <rect x="${x + 1.5}" y="${y + 1.5}" width="${W - 3}" height="${H - 3}" rx="${R - 1.5}" fill="none" stroke="url(#${id}-borda)" stroke-width="1.5"/>
+
+    <rect x="${x + W}" y="${y + Math.round(H * 0.3)}" width="${Math.round(b * 1.6)}" height="${Math.round(H * 0.08)}" rx="${Math.round(b * 0.8)}" fill="#0a0a0e"/>
+    <rect x="${x - Math.round(b * 1.6)}" y="${y + Math.round(H * 0.22)}" width="${Math.round(b * 1.6)}" height="${Math.round(H * 0.06)}" rx="${Math.round(b * 0.8)}" fill="#0a0a0e"/>
+    <rect x="${x - Math.round(b * 1.6)}" y="${y + Math.round(H * 0.3)}" width="${Math.round(b * 1.6)}" height="${Math.round(H * 0.06)}" rx="${Math.round(b * 0.8)}" fill="#0a0a0e"/>
+
+    <rect x="${x + b}" y="${y + b}" width="${w}" height="${h}" rx="${r}" fill="#000000"/>
+    <g clip-path="url(#${id}-tela)">
+      <image href="${captura}" x="${x + b}" y="${y + b}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>
+      <rect x="${x + b}" y="${y + b}" width="${w}" height="${h}" fill="url(#${id}-reflexo)"/>
+    </g>
+    <rect x="${x + b}" y="${y + b}" width="${w}" height="${h}" rx="${r}" fill="none" stroke="#000000" stroke-opacity="0.4" stroke-width="1.5"/>
+  </g>`;
+}
+
+/** Lista compacta de recursos (1 linha por item), para a base do card com celular. */
+function blocoRecursosCompacto(app, p, L, margem, yBase, recursos) {
+  const util = L - margem * 2;
+  const lista = recursos.slice(0, 3);
+  const tam = 28;
+  const altItem = 52;
+  const altura = lista.length * altItem;
+  const svg = lista
+    .map((item, i) => {
+      const linha = quebrar(item, util - 88, tam, "corpo")[0] ?? item;
+      const y = yBase - altura + i * altItem;
+      return `<g transform="translate(${margem}, ${y})">
+      <circle cx="20" cy="26" r="20" fill="${p.marca}" fill-opacity="0.16"/>
+      <path d="M12 26 l6 7 l12 -14" fill="none" stroke="${p.marca}" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="54" y="35" font-family="${CORPO}" font-size="${tam}" font-weight="500" fill="${p.titulo}">${escapar(linha)}</text>
+    </g>`;
+    })
+    .join("\n  ");
+  return { svg, altura };
+}
+
+/**
+ * Manchete + hero conciliados: o celular com o app real é o visual central, e o
+ * título/subtítulo crescem na base — com chips (padrão), lista de recursos ou o
+ * número em destaque conforme o card.
+ */
+function layoutHero(contexto, captura) {
+  const { app, p, L, A, margem, titulo, sub, recursos, destaque } = contexto;
+  const util = L - margem * 2;
+  const base = baseDoConteudo(A, margem);
+  const fimCabecalho = margem + 112;
+
+  let baixo = { svg: "", altura: 0 };
+  if (!destaque) {
+    baixo = recursos.length ? blocoRecursosCompacto(app, p, L, margem, base, recursos) : chips(app, p, L, margem, base);
+  }
+  const yDepoisBaixo = base - baixo.altura - (baixo.altura ? 26 : 0);
+
+  const tamSub = 30;
+  const linhasSub = quebrar(sub, util, tamSub, "corpo").slice(0, 2);
+  const alturaSub = linhasSub.length * tamSub * 1.32;
+
+  const alturaStat = destaque ? 92 : 0;
+
+  const { tamanho, linhas } = ajustarTitulo(titulo, util, 64, 44, 2);
+  const alturaTitulo = linhas.length * tamanho * 1.1;
+  const alturaRegua = 40;
+
+  const subTop = yDepoisBaixo - alturaSub;
+  const yRegua = subTop - alturaRegua;
+  const titleTop = yRegua - alturaTitulo;
+  const textoTop = titleTop - alturaStat;
+
+  const phoneBottom = textoTop - 18;
+  const phoneTop = fimCabecalho + 14;
+  const regiaoH = phoneBottom - phoneTop;
+
+  let pw = Math.floor(regiaoH / ASPECTO_TELA);
+  pw = Math.min(pw, Math.floor(util * 0.58));
+  const cx = margem + util / 2;
+  const cy = phoneTop + regiaoH / 2;
+
+  const blocoTitulo = linhas
+    .map((linha, i) =>
+      `<text x="${margem}" y="${titleTop + i * tamanho * 1.1 + tamanho * 0.82}" font-family="${TITULO}" font-size="${tamanho}" font-weight="800" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
+    .join("\n  ");
+
+  const blocoSub = linhasSub
+    .map((linha, i) =>
+      `<text x="${margem}" y="${subTop + i * tamSub * 1.32 + tamSub * 0.8}" font-family="${CORPO}" font-size="${tamSub}" font-weight="500" fill="${p.apoio}">${escapar(linha)}</text>`)
+    .join("\n  ");
+
+  const blocoStat = destaque
+    ? `<text x="${margem}" y="${textoTop + 66}" font-family="${TITULO}" font-size="72" font-weight="800" letter-spacing="-3" fill="${p.marca}">${escapar(destaque)}</text>
+  <rect x="${margem}" y="${textoTop + 78}" width="88" height="7" rx="3.5" fill="${p.apoio}" fill-opacity="0.55"/>`
+    : "";
+
+  return `${telefone(app, p, captura, cx, cy, pw)}
+  ${blocoStat}
+  ${blocoTitulo}
+  <rect x="${margem}" y="${yRegua}" width="88" height="7" rx="3.5" fill="${p.marca}"/>
+  ${blocoSub}
+  ${baixo.svg}`;
+}
+
+export function montarSvg({ app, post, formato = "feed", variacao = 0 }) {
   const { largura: L, altura: A } = FORMATOS[formato] ?? FORMATOS.feed;
   const p = paleta(app);
   const margem = Math.round(L * 0.082);
@@ -382,10 +559,18 @@ export function montarSvg({ app, post, formato = "feed" }) {
     destaque: card.destaque,
   };
 
+  const captura = capturaBase64(app, variacao);
+
   let corpo;
-  if (card.destaque) corpo = layoutDestaque(contexto);
-  else if (card.layout === "recursos" && contexto.recursos.length) corpo = layoutRecursos(contexto);
-  else corpo = layoutManchete(contexto);
+  if (captura) {
+    corpo = layoutHero(contexto, captura);
+  } else if (card.destaque) {
+    corpo = layoutDestaque(contexto);
+  } else if (card.layout === "recursos" && contexto.recursos.length) {
+    corpo = layoutRecursos(contexto);
+  } else {
+    corpo = layoutManchete(contexto);
+  }
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${L}" height="${A}" viewBox="0 0 ${L} ${A}">
   ${fundo(L, A, p)}
@@ -396,10 +581,10 @@ export function montarSvg({ app, post, formato = "feed" }) {
 }
 
 /** Rasteriza com resvg, que recebe as fontes do repositório — sem depender do sistema. */
-export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub }) {
+export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub, variacao = 0 }) {
   const { Resvg } = await import("@resvg/resvg-js");
   const postFinal = post ?? { card: { titulo, sub } };
-  const svg = montarSvg({ app, post: postFinal, formato });
+  const svg = montarSvg({ app, post: postFinal, formato, variacao });
 
   const resvg = new Resvg(svg, {
     fitTo: { mode: "width", value: FORMATOS[formato]?.largura ?? 1080 },

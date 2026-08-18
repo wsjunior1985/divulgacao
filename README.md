@@ -113,12 +113,13 @@ temas. Cada tema tem o texto longo (Instagram/Facebook/Threads), a versão `curt
 UTM do canal.
 
 Acrescentar um tema aumenta o ciclo sem repetição — hoje são 8 por app, 40 no
-total, o que dá **20 dias sem repetir nada** publicando 2×/dia.
+total, o que dá **8 dias sem repetir nada** publicando 5×/dia (1 post por app).
 
 ## Ritmo
 
-Padrão: **2 posts por dia** (10h e 18h BRT), cada app aparecendo a cada 2,5 dias.
-Para mudar, ajuste a variável `HORARIOS` (ex.: `9,13,19`) e os `cron` de
+Padrão: **5 posts por dia** (08h, 11h, 14h, 17h e 20h BRT), um por app — na
+ordem Remedin, AI-Eat, Vai dar quanto?, GASONOL e Convertendo. Para mudar,
+ajuste a variável `HORARIOS` (ex.: `9,13,19`) e os `cron` de
 [.github/workflows/publicar.yml](.github/workflows/publicar.yml) — os dois
 precisam bater.
 

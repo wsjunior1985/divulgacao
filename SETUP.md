@@ -210,8 +210,10 @@ npm run capturar            # todos os apps
 npm run capturar -- --app gasonol
 ```
 
-O GASONOL não pede login e é capturado por um fluxo (seletor → calculadora →
-resultado). Os demais navegam nas rotas internas após autenticar. Se a captura
+Todos os apps autenticam com a mesma conta (`CAPTURAS_EMAIL`/`CAPTURAS_SENHA`),
+para as capturas saírem com o estado real (premium no GASONOL, dados do usuário
+nos demais). O GASONOL é capturado por um fluxo (seletor → calculadora →
+resultado); os demais navegam nas rotas internas após autenticar. Se a captura
 falhar, os cards usam as telas anteriores — publicar nunca quebra por isso.
 
 ---

@@ -83,8 +83,9 @@ npm run cards -- --app gasonol --todos
 
 As telas internas são fotografadas pelo `scripts/capturar.mjs` (Playwright):
 
-- **GASONOL** não exige login: o script percorre o fluxo real (seletor de
-  veículo → calculadora → resultado) e captura os três estados.
+- **GASONOL** entra com a conta (para capturar o estado premium) e percorre o
+  fluxo real (seletor de veículo → calculadora → resultado), capturando os três
+  estados.
 - **Remedin, AI-Eat, Convertendo e Vai dar quanto?** exigem conta: o script
   autentica com `CAPTURAS_EMAIL`/`CAPTURAS_SENHA` e navega nas rotas internas.
 

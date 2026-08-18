@@ -108,7 +108,7 @@ async function main() {
 
   const slot = args.slot !== null ? { indice: args.slot, dia: agoraBRT().dia } : slotDeAgora();
   const pauta = escolherPauta(slot.indice, apps);
-  const { app, post } = pauta;
+  const { app, post, ciclo } = pauta;
   const identificador = idDoPost(pauta);
 
   const estado = lerJson(ARQUIVO_ESTADO, { posts: {} });
@@ -137,7 +137,7 @@ async function main() {
   }
 
   const textoPorCanal = Object.fromEntries(
-    alvos.map((canal) => [canal, montarTexto({ app, post, canal, campanha: env("CAMPANHA", "alwayson") })]),
+    alvos.map((canal) => [canal, montarTexto({ app, post, canal, campanha: env("CAMPANHA", "alwayson"), ciclo })]),
   );
 
   // Cards: um retrato para o feed, um vertical se o TikTok estiver no páreo.

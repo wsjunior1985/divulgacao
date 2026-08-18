@@ -48,7 +48,10 @@ export function escolherPauta(indice, apps) {
   const volta = Math.floor(indice / total);
   const app = apps[i];
   const voltaPositiva = ((volta % app.posts.length) + app.posts.length) % app.posts.length;
-  return { app, post: app.posts[voltaPositiva], indice };
+  // Qual ciclo completo de temas do app estamos: avança a cada app.posts.length
+  // voltas. É o contador usado para variar os textos (combinatório).
+  const ciclo = Math.floor(volta / app.posts.length);
+  return { app, post: app.posts[voltaPositiva], indice, ciclo };
 }
 
 /** Link do app com UTM do canal — é o que separa um canal do outro no funil. */
@@ -100,6 +103,36 @@ function cortarPreservandoLink(modelo, link, limite) {
 }
 
 /**
+ * Monta o texto LONGO do tema. No formato combinatório (ganchos/corpos/ctas),
+ * combina um fragmento de cada bloco por enumeração mista — o combo só repete
+ * depois de esgotar todas as combinações (ganchos × corpos × ctas). Mantém o
+ * formato antigo (`texto`) como fallback.
+ */
+function montarLongo(post, ciclo = 0) {
+  const g = post.ganchos ?? [];
+  const c = post.corpos ?? [];
+  const t = post.ctas ?? [];
+  if (!g.length && !c.length && !t.length) return post.texto ?? "";
+
+  const G = Math.max(1, g.length);
+  const C = Math.max(1, c.length);
+  const T = Math.max(1, t.length);
+  const total = G * C * T;
+  const combo = ((ciclo % total) + total) % total;
+  const gi = combo % G;
+  const ci = Math.floor(combo / G) % C;
+  const ti = Math.floor(combo / (G * C)) % T;
+  return [g[gi], c[ci], t[ti]].filter(Boolean).join("\n\n");
+}
+
+/** Versão curta (Bluesky/X/TikTok): escolhe uma das `curtos` pelo ciclo. */
+function montarCurto(post, ciclo = 0) {
+  const curtos = post.curtos ?? [];
+  if (curtos.length) return curtos[((ciclo % curtos.length) + curtos.length) % curtos.length];
+  return post.curto ?? post.texto ?? "";
+}
+
+/**
  * Texto final por canal. Cada rede tem limite e etiqueta própria:
  *  - instagram: legenda longa + hashtags (link não é clicável, mas informa)
  *  - facebook:  legenda longa, link vira preview
@@ -107,13 +140,15 @@ function cortarPreservandoLink(modelo, link, limite) {
  *  - bluesky:   300 caracteres — usa a versão curta do template
  *  - tiktok:    título do post em modo foto, hashtags ajudam a distribuição
  */
-export function montarTexto({ app, post, canal, campanha }) {
+export function montarTexto({ app, post, canal, campanha, ciclo = 0 }) {
   const link = linkComUtm(app, canal, campanha); // URL completa com UTM (facet/clique)
-  const limpo = linkExibicao(app); // ex.: https://vaidarquanto.com.br
+  const limpo = linkExibicao(app); // ex.: vaidarquanto.com.br
   const tags = hashtags(app, post);
 
-  const base = post.texto.replaceAll("{link}", limpo);
-  const curto = (post.curto ?? post.texto).replaceAll("{link}", limpo);
+  const longo = montarLongo(post, ciclo);
+  const curto = montarCurto(post, ciclo);
+  const base = longo.replaceAll("{link}", limpo);
+  const curtoComLink = curto.replaceAll("{link}", limpo);
 
   switch (canal) {
     case "instagram":
@@ -123,13 +158,13 @@ export function montarTexto({ app, post, canal, campanha }) {
     case "threads":
       // O link vai no CORPO, não em link_attachment: a Threads API só aceita
       // link_attachment em post de texto puro, e os nossos sempre levam card.
-      return { texto: cortarPreservandoLink(post.texto, limpo, 500), link };
+      return { texto: cortarPreservandoLink(longo, limpo, 500), link };
     case "bluesky": {
       // O Bluesky mostra só o domínio (sem protocolo, para o facet não duplicar)
       // e o clique vai para a URL completa com UTM.
       const semProtocolo = limpo.replace(/^https?:\/\//, "");
       return {
-        texto: cortarPreservandoLink(post.curto ?? post.texto, semProtocolo, 300),
+        texto: cortarPreservandoLink(curto, semProtocolo, 300),
         link,
         linkLimpo: semProtocolo,
       };
@@ -137,9 +172,9 @@ export function montarTexto({ app, post, canal, campanha }) {
     case "x":
       // 280 é o limite da conta gratuita. O X conta qualquer URL como 23
       // caracteres, mas cortar pelo tamanho real só deixa margem — nunca falta.
-      return { texto: cortarPreservandoLink(post.curto ?? post.texto, limpo, 280), link };
+      return { texto: cortarPreservandoLink(curto, limpo, 280), link };
     case "tiktok":
-      return { texto: cortar(`${curto}\n\n${tags}`, 2200), link };
+      return { texto: cortar(`${curtoComLink}\n\n${tags}`, 2200), link };
     default:
       throw new Error(`canal sem formatação definida: ${canal}`);
   }

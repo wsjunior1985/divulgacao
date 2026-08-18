@@ -32,8 +32,28 @@
         "titulo": "Você tomou o remédio hoje?",
         "sub": "Se precisou pensar, já é sinal."
       },
-      "texto": "\"Será que eu tomei o da manhã?\" 🤔\n\nSe você já ficou nessa dúvida, o Remedin resolve: lembrete na hora certa, um toque em \"tomei\" e o histórico fica registrado.\n\nAté 3 medicamentos grátis, para sempre.\n\n👉 {link}",
-      "curto": "\"Será que eu tomei o da manhã?\" O Remedin lembra na hora e guarda o histórico. Até 3 remédios grátis: {link}"
+      "ganchos": [
+        "\"Será que eu tomei o da manhã?\" 🤔",
+        "Já bateu aquela dúvida antes de dormir: tomei ou não tomei? 😵‍💫",
+        "Remédio tomado no piloto automático — e a dúvida chega depois.",
+        "Se você precisa PENSAR pra saber se tomou o remédio, já é um sinal."
+      ],
+      "corpos": [
+        "O Remedin resolve: lembrete na hora certa, um toque em \"tomei\" e o histórico fica registrado.",
+        "Com o Remedin, cada dose é lembrada e registrada. Você marca \"tomei\" e a dúvida desaparece.",
+        "Ele avisa na hora certa e guarda o histórico de cada dose — sem planilha, sem caderninho.",
+        "Lembrete no momento exato e registro automático do que já foi tomado."
+      ],
+      "ctas": [
+        "Até 3 medicamentos grátis, para sempre.\n\n👉 {link}",
+        "Comece grátis hoje.\n\n👉 {link}",
+        "Grátis para os seus 3 primeiros medicamentos.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "\"Será que eu tomei o da manhã?\" O Remedin lembra na hora e guarda o histórico. Até 3 remédios grátis: {link}",
+        "Dúvida se tomou o remédio? O Remedin lembra na hora e registra cada dose. Grátis: {link}",
+        "Não lembra se tomou? O Remedin avisa no horário e guarda o histórico: {link}"
+      ]
     },
     {
       "id": "cuidador",
@@ -41,8 +61,28 @@
         "titulo": "Modo Cuidador",
         "sub": "Você fica sabendo se a dose foi esquecida."
       },
-      "texto": "Se você cuida de alguém — pai, mãe, avó — esse post é pra você. 🤍\n\nO Remedin avisa a dose na hora certa e, se ela for esquecida, VOCÊ recebe o aviso pelo Modo Cuidador. Cuidado à distância, sem ligar cinco vezes por dia.\n\nGrátis 👉 {link}",
-      "curto": "Cuida de alguém à distância? O Modo Cuidador do Remedin te avisa quando a dose é esquecida. Grátis: {link}"
+      "ganchos": [
+        "Se você cuida de alguém — pai, mãe, avó — esse post é pra você. 🤍",
+        "Quem cuida à distância vive com o celular na mão, preocupado.",
+        "Mãe, pai ou avô tomando remédio sozinho? O coração aperta.",
+        "Cuidar de quem a gente ama também é cuidar da medicação."
+      ],
+      "corpos": [
+        "O Remedin avisa a dose na hora certa e, se ela for esquecida, VOCÊ recebe o aviso pelo Modo Cuidador. Cuidado à distância, sem ligar cinco vezes por dia.",
+        "O Modo Cuidador do Remedin te avisa quando a dose é esquecida. Você acompanha de longe, sem sufocar.",
+        "Com o Modo Cuidador, se a dose não for confirmada, o aviso chega até você. Paz de espírito sem ligações em cima.",
+        "O Remedin lembra o paciente e, se algo sair do combinado, avisa o cuidador. Simples e discreto."
+      ],
+      "ctas": [
+        "Grátis 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Cuida de alguém à distância? O Modo Cuidador do Remedin te avisa quando a dose é esquecida. Grátis: {link}",
+        "O Modo Cuidador do Remedin avisa você se a dose for esquecida. Cuide à distância: {link}",
+        "Cuidando de alguém? O Remedin avisa quando a dose é esquecida, direto pra você: {link}"
+      ]
     },
     {
       "id": "estoque",
@@ -50,8 +90,28 @@
         "titulo": "A cartela acabou no domingo",
         "sub": "O Remedin avisa antes."
       },
-      "texto": "A cartela sempre acaba no domingo à noite, né? 😩\n\nO Remedin controla o estoque de cada medicamento e avisa com antecedência: \"restam 3 dias\". Dá tempo de comprar sem correria e sem pular dose.\n\n👉 {link}",
-      "curto": "A cartela sempre acaba no domingo à noite. O Remedin controla o estoque e avisa antes: {link}"
+      "ganchos": [
+        "A cartela sempre acaba no domingo à noite, né? 😩",
+        "Domingo, farmácia fechada e a última dose foi embora.",
+        "A gente só descobre que o remédio acabou na pior hora possível.",
+        "Ficar sem remédio não deveria ser uma surpresa."
+      ],
+      "corpos": [
+        "O Remedin controla o estoque de cada medicamento e avisa com antecedência: \"restam 3 dias\". Dá tempo de comprar sem correria e sem pular dose.",
+        "Ele conta as doses restantes e avisa antes de acabar. Você compra com calma e não pula nenhuma.",
+        "O Remedin acompanha o estoque e te avisa quando está perto do fim. Adeus, correria de domingo.",
+        "Controle de estoque automático: o app avisa quando faltam poucas doses, antes da farmácia fechar."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "A cartela sempre acaba no domingo à noite. O Remedin controla o estoque e avisa antes: {link}",
+        "Remédio acabando? O Remedin controla o estoque e avisa com antecedência: {link}",
+        "O Remedin avisa quando o remédio está perto de acabar, antes do aperto: {link}"
+      ]
     },
     {
       "id": "idoso",
@@ -60,8 +120,28 @@
         "sub": "Uma rotina que cabe na tela.",
         "layout": "recursos"
       },
-      "texto": "Quem toma 5 medicamentos em 3 horários diferentes não precisa de mais um papel na geladeira. 📋\n\nO Remedin organiza tudo numa tela só: o que tomar agora, o que já foi e o que vem depois. Letra grande, sem enrolação.\n\n👉 {link}",
-      "curto": "5 remédios em 3 horários não cabem num papel na geladeira. O Remedin organiza numa tela só: {link}"
+      "ganchos": [
+        "Quem toma 5 medicamentos em 3 horários não precisa de mais um papel na geladeira. 📋",
+        "Bilhete na geladeira, alarme no celular, caderno na bolsa… chega.",
+        "Medicação de idoso costuma virar um quebra-cabeça de papéis.",
+        "5 remédios, 3 horários: impossível decorar sem errar."
+      ],
+      "corpos": [
+        "O Remedin organiza tudo numa tela só: o que tomar agora, o que já foi e o que vem depois. Letra grande, sem enrolação.",
+        "Numa tela só, ele mostra o que tomar agora e o que já foi tomado. Letra grande, pensado pra quem precisa.",
+        "O Remedin reúne a rotina inteira de medicamentos em uma tela simples, com letra grande e passos claros.",
+        "Nada de papéis espalhados: o Remedin organiza horários e doses numa única tela fácil de ler."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Veja como funciona 👉 {link}"
+      ],
+      "curtos": [
+        "5 remédios em 3 horários não cabem num papel na geladeira. O Remedin organiza numa tela só: {link}",
+        "Rotina de remédios bagunçada? O Remedin organiza tudo numa tela só: {link}",
+        "Chega de papel na geladeira: o Remedin organiza horários e doses numa tela: {link}"
+      ]
     },
     {
       "id": "relatorio",
@@ -69,8 +149,28 @@
         "titulo": "Leve o histórico na consulta",
         "sub": "Relatório de adesão em PDF."
       },
-      "texto": "\"Está tomando certinho?\" — e você tenta lembrar dos últimos 30 dias ali na hora. 😅\n\nO Remedin registra cada dose e gera um relatório pra mostrar no consultório. O médico enxerga o tratamento de verdade, não a sua memória.\n\n👉 {link}",
-      "curto": "Na consulta, mostre o histórico real do tratamento — não a sua memória. O Remedin registra cada dose: {link}"
+      "ganchos": [
+        "\"Está tomando certinho?\" — e você tenta lembrar dos últimos 30 dias ali na hora. 😅",
+        "No consultório, a memória falha na hora de contar como foi o tratamento.",
+        "\"Tomei quase todos os dias…\" não convence médico nenhum.",
+        "Contar de cabeça o histórico do tratamento é furada."
+      ],
+      "corpos": [
+        "O Remedin registra cada dose e gera um relatório pra mostrar no consultório. O médico enxerga o tratamento de verdade, não a sua memória.",
+        "Ele registra cada dose e monta um relatório em PDF. Você chega na consulta com dados, não com achismo.",
+        "O Remedin guarda o histórico completo e gera um relatório de adesão. A consulta fica objetiva.",
+        "Relatório de adesão em PDF: mostre ao médico exatamente o que foi tomado e quando."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Na consulta, mostre o histórico real do tratamento — não a sua memória. O Remedin registra cada dose: {link}",
+        "Leve um relatório de adesão em PDF na próxima consulta. O Remedin registra tudo: {link}",
+        "O médico quer saber como foi o tratamento? O Remedin gera o relatório de cada dose: {link}"
+      ]
     },
     {
       "id": "ia",
@@ -78,8 +178,28 @@
         "titulo": "Assistente que entende bula",
         "sub": "Pergunte em português, sem jargão."
       },
-      "texto": "\"Posso tomar esses dois juntos?\" \"E se eu esquecer uma dose?\" 💬\n\nO Assistente do Remedin responde em português claro sobre os medicamentos que VOCÊ cadastrou. Não substitui o médico — mas tira a dúvida das 22h.\n\n👉 {link}",
-      "curto": "\"Posso tomar esses dois juntos?\" O assistente do Remedin responde em português claro sobre os SEUS remédios: {link}"
+      "ganchos": [
+        "\"Posso tomar esses dois juntos?\" \"E se eu esquecer uma dose?\" 💬",
+        "Bula em grego e dúvida batendo às 22h.",
+        "Dúvida de remédio não tem hora pra aparecer — quase sempre de noite.",
+        "Nem toda dúvida de medicação justifica correr pro pronto-socorro."
+      ],
+      "corpos": [
+        "O Assistente do Remedin responde em português claro sobre os medicamentos que VOCÊ cadastrou. Não substitui o médico — mas tira a dúvida das 22h.",
+        "O Assistente do Remedin explica em linguagem simples, com base nos SEUS remédios. Tira a dúvida na hora.",
+        "Pergunte em português e receba resposta clara sobre a sua medicação cadastrada. Sem jargão de bula.",
+        "Um assistente que entende a sua bula e responde com clareza — na hora da dúvida, não no dia seguinte."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Teste agora 👉 {link}"
+      ],
+      "curtos": [
+        "\"Posso tomar esses dois juntos?\" O assistente do Remedin responde em português claro sobre os SEUS remédios: {link}",
+        "Dúvida sobre seus remédios? O assistente do Remedin responde em português claro: {link}",
+        "O assistente do Remedin entende a sua bula e responde sem jargão: {link}"
+      ]
     },
     {
       "id": "gratis",
@@ -88,8 +208,28 @@
         "sub": "Grátis de verdade, sem pedir cartão.",
         "destaque": "3"
       },
-      "texto": "Grátis de verdade: até 3 medicamentos, para sempre, sem pedir cartão. 💙\n\nSe um dia você precisar de mais, do Assistente IA ou dos relatórios, o Premium está lá — mas o essencial não expira.\n\n👉 {link}",
-      "curto": "Até 3 medicamentos grátis, para sempre, sem pedir cartão. O essencial do Remedin não expira: {link}"
+      "ganchos": [
+        "Grátis de verdade: até 3 medicamentos, para sempre, sem pedir cartão. 💙",
+        "\"Grátis\" que pede cartão não é grátis. O Remedin é diferente.",
+        "A gente desconfia de coisa grátis. Mas o Remedin não tem pegadinha.",
+        "O essencial do Remedin não expira. Sem trial, sem cartão."
+      ],
+      "corpos": [
+        "Se um dia você precisar de mais, do Assistente IA ou dos relatórios, o Premium está lá — mas o essencial não expira.",
+        "Lembretes, estoque e histórico ficam grátis para sempre. O Premium é só pra quem quiser mais.",
+        "Você usa o essencial de graça e só paga se quiser recursos extras, como o Assistente IA e relatórios.",
+        "Até 3 medicamentos de graça, sem prazo. O que é essencial não vira assinatura."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Comece grátis 👉 {link}",
+        "Grátis, sem cartão 👉 {link}"
+      ],
+      "curtos": [
+        "Até 3 medicamentos grátis, para sempre, sem pedir cartão. O essencial do Remedin não expira: {link}",
+        "Grátis de verdade: até 3 remédios, sem prazo e sem cartão. {link}",
+        "Sem trial e sem cartão: até 3 medicamentos grátis pra sempre no Remedin. {link}"
+      ]
     },
     {
       "id": "antibiotico",
@@ -98,8 +238,28 @@
         "sub": "Inclusive o das 3 da manhã.",
         "destaque": "8/8h"
       },
-      "texto": "Antibiótico de 8 em 8 horas significa um alarme às 3 da manhã. E é justamente esse que a gente esquece. ⏰\n\nO Remedin cuida da conta pra você: cadastra o intervalo, ele monta os horários e avisa em todos — até o tratamento acabar.\n\n👉 {link}",
-      "curto": "Antibiótico de 8/8h inclui o alarme das 3 da manhã — o que a gente sempre esquece. O Remedin avisa em todos: {link}"
+      "ganchos": [
+        "Antibiótico de 8 em 8 horas significa um alarme às 3 da manhã. ⏰",
+        "O horário que a gente sempre esquece: o do meio da madrugada.",
+        "Antibiótico não tem folga — nem de madrugada.",
+        "Pular dose de antibiótico pode estragar o tratamento inteiro."
+      ],
+      "corpos": [
+        "E é justamente esse que a gente esquece. O Remedin cuida da conta pra você: cadastra o intervalo, ele monta os horários e avisa em todos — até o tratamento acabar.",
+        "O Remedin monta os horários automaticamente a partir do intervalo e avisa em cada um, até terminar o tratamento.",
+        "Cadastre o intervalo (8/8h) e o Remedin calcula os horários e avisa em todos. Você só toma.",
+        "O Remedin assume a conta dos horários e não deixa você pular a dose das 3h."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Antibiótico de 8/8h inclui o alarme das 3 da manhã — o que a gente sempre esquece. O Remedin avisa em todos: {link}",
+        "Antibiótico de 8/8h? O Remedin monta os horários e avisa em todos, até o fim: {link}",
+        "Não pule a dose das 3h: o Remedin avisa em todos os horários do antibiótico: {link}"
+      ]
     }
   ]
 }

@@ -33,8 +33,28 @@
         "sub": "Sem balança, sem tabela, sem digitar.",
         "destaque": "1 foto"
       },
-      "texto": "Registrar refeição costuma dar tanto trabalho que a gente desiste na terceira. 📸\n\nNo AI-Eat você tira a foto do prato e a IA estima calorias, proteínas, carboidratos e gorduras. O total do dia se atualiza sozinho.\n\nTeste grátis 👉 {link}",
-      "curto": "Registrar refeição dá tanto trabalho que a gente desiste. No AI-Eat, é foto do prato e pronto: {link}"
+      "ganchos": [
+        "Registrar refeição costuma dar tanto trabalho que a gente desiste na terceira. 📸",
+        "Diário alimentar morre no terceiro dia — de tanto trabalho pra registrar.",
+        "Ninguém aguenta pesar comida e procurar em tabela por mais de uma semana.",
+        "Registrar o que comeu não deveria levar mais tempo que comer."
+      ],
+      "corpos": [
+        "No AI-Eat você tira a foto do prato e a IA estima calorias, proteínas, carboidratos e gorduras. O total do dia se atualiza sozinho.",
+        "Tire a foto do prato e a IA estima calorias e macros. O total do dia se atualiza na hora.",
+        "Uma foto do prato e pronto: a IA estima calorias, proteínas, carboidratos e gorduras.",
+        "Com o AI-Eat, foto do prato vira registro completo de calorias e macros em segundos."
+      ],
+      "ctas": [
+        "Teste grátis 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "Experimente grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Registrar refeição dá tanto trabalho que a gente desiste. No AI-Eat, é foto do prato e pronto: {link}",
+        "Foto do prato e a IA estima calorias e macros. Sem balança, sem tabela: {link}",
+        "Esquece a balança: foto do prato e o AI-Eat estima tudo sozinho: {link}"
+      ]
     },
     {
       "id": "sem-pesar",
@@ -42,8 +62,28 @@
         "titulo": "Sem balança, sem tabela",
         "sub": "Registro em segundos, não em minutos."
       },
-      "texto": "Pesar cada ingrediente e procurar na tabela? Ninguém mantém isso por duas semanas. ⚖️\n\nO AI-Eat troca esse ritual por uma foto. Não é laboratório — é uma estimativa boa o suficiente pra você enxergar seu padrão e seguir em frente.\n\n👉 {link}",
-      "curto": "Pesar ingrediente e procurar na tabela ninguém mantém. Troque por uma foto: {link}"
+      "ganchos": [
+        "Pesar cada ingrediente e procurar na tabela? Ninguém mantém isso por duas semanas. ⚖️",
+        "Balança de cozinha virou requisito pra cuidar da alimentação? Exagero.",
+        "O ritual de pesar e tabelar é o que faz todo mundo abandonar o diário.",
+        "Se registrar a comida exige balança, você vai parar na primeira semana."
+      ],
+      "corpos": [
+        "O AI-Eat troca esse ritual por uma foto. Não é laboratório — é uma estimativa boa o suficiente pra você enxergar seu padrão e seguir em frente.",
+        "Troque a balança por uma foto: estimativa boa o bastante pra enxergar o padrão, sem virar rotina de laboratório.",
+        "Uma foto substitui a balança e a tabela. É estimativa, mas suficiente pra acompanhar seu padrão.",
+        "O AI-Eat faz o registro em segundos com uma foto — sem pesar, sem digitar, sem desistir."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Teste grátis 👉 {link}",
+        "Comece hoje 👉 {link}"
+      ],
+      "curtos": [
+        "Pesar ingrediente e procurar na tabela ninguém mantém. Troque por uma foto: {link}",
+        "Balança e tabela? Troca por uma foto e o AI-Eat estima em segundos: {link}",
+        "Registro de refeição em segundos, sem balança: foto e pronto. {link}"
+      ]
     },
     {
       "id": "padrao-da-semana",
@@ -51,8 +91,28 @@
         "titulo": "O que a sua semana revela",
         "sub": "O padrão aparece no histórico."
       },
-      "texto": "Um dia não diz nada. Uma semana diz tudo. 📊\n\nCom os registros do AI-Eat, dá pra ver onde a conta desanda: o lanche das 16h, o fim de semana, a bebida que ninguém contava.\n\nComece grátis 👉 {link}",
-      "curto": "Um dia não diz nada; uma semana diz tudo. Veja onde a conta desanda: {link}"
+      "ganchos": [
+        "Um dia não diz nada. Uma semana diz tudo. 📊",
+        "Você não engorda de segunda pra terça — o padrão aparece na semana.",
+        "O problema nunca é um dia isolado; é o que a semana revela.",
+        "Olhar um dia só é enganoso. O histórico mostra o padrão de verdade."
+      ],
+      "corpos": [
+        "Com os registros do AI-Eat, dá pra ver onde a conta desanda: o lanche das 16h, o fim de semana, a bebida que ninguém contava.",
+        "Os registros do AI-Eat revelam onde a conta desanda: o lanche da tarde, o fim de semana, a bebida esquecida.",
+        "O histórico do AI-Eat mostra o que a balança não conta: o lanche das 16h, o fim de semana, o extra invisível.",
+        "Acompanhando a semana, você enxerga o padrão — e decide onde mexer."
+      ],
+      "ctas": [
+        "Comece grátis 👉 {link}",
+        "Grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Um dia não diz nada; uma semana diz tudo. Veja onde a conta desanda: {link}",
+        "O padrão aparece no histórico da semana. O AI-Eat mostra: {link}",
+        "Não é um dia, é a semana. O AI-Eat revela onde a conta desanda: {link}"
+      ]
     },
     {
       "id": "meta-diaria",
@@ -60,8 +120,28 @@
         "titulo": "Sua meta, do seu jeito",
         "sub": "Sem plano genérico de revista."
       },
-      "texto": "Você define a meta do dia e o AI-Eat mostra quanto já foi e quanto falta — sem plano genérico, sem sermão. 🎯\n\nO app organiza a informação; as escolhas continuam sendo suas.\n\n👉 {link}",
-      "curto": "Defina sua meta do dia e veja quanto já foi e quanto falta — sem plano genérico, sem sermão. {link}"
+      "ganchos": [
+        "Você define a meta do dia e o AI-Eat mostra quanto já foi e quanto falta. 🎯",
+        "Plano genérico de revista não funciona pra ninguém por muito tempo.",
+        "Meta de alimentação tem que ser a SUA — não a do app.",
+        "Acompanhar meta sem julgamento: é isso que mantém a gente no caminho."
+      ],
+      "corpos": [
+        "Sem plano genérico, sem sermão. O app organiza a informação; as escolhas continuam sendo suas.",
+        "O AI-Eat mostra o quanto já foi e o quanto falta da SUA meta. As escolhas seguem suas.",
+        "Você define a meta, o app acompanha. Informação clara, sem sermão de revista.",
+        "O AI-Eat organiza os números do dia contra a sua meta — sem plano genérico, sem culpa."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Comece grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Defina sua meta do dia e veja quanto já foi e quanto falta — sem plano genérico, sem sermão. {link}",
+        "Sua meta, do seu jeito: o AI-Eat mostra quanto falta, sem sermão. {link}",
+        "Meta diária clara, sem plano de revista: o AI-Eat acompanha por você. {link}"
+      ]
     },
     {
       "id": "comida-brasileira",
@@ -69,8 +149,28 @@
         "titulo": "Feijoada, PF, açaí",
         "sub": "Comida de verdade, não só salada."
       },
-      "texto": "A maioria dos apps foi treinada com salada de quinoa. 🥗\n\nO AI-Eat entende prato feito, feijoada, pastel de feira e açaí — a comida que a gente come de verdade, no Brasil.\n\nTeste com o seu almoço 👉 {link}",
-      "curto": "A maioria dos apps só entende salada de quinoa. O AI-Eat reconhece PF, feijoada e açaí: {link}"
+      "ganchos": [
+        "A maioria dos apps foi treinada com salada de quinoa. 🥗",
+        "App de dieta que só reconhece salada não serve pro almoço de verdade.",
+        "Sua comida é PF, feijoada e açaí — não bowl de quinoa.",
+        "Comida brasileira de verdade: a maioria dos apps não entende."
+      ],
+      "corpos": [
+        "O AI-Eat entende prato feito, feijoada, pastel de feira e açaí — a comida que a gente come de verdade, no Brasil.",
+        "O AI-Eat reconhece PF, feijoada, pastel de feira e açaí. Feito pra comida que a gente come de verdade.",
+        "Do prato feito ao açaí, o AI-Eat entende a comida brasileira — não só salada.",
+        "O AI-Eat foi pensado pro Brasil: reconhece feijoada, PF, pastel de feira e açaí."
+      ],
+      "ctas": [
+        "Teste com o seu almoço 👉 {link}",
+        "Teste com seu PF 👉 {link}",
+        "Grátis 👉 {link}"
+      ],
+      "curtos": [
+        "A maioria dos apps só entende salada de quinoa. O AI-Eat reconhece PF, feijoada e açaí: {link}",
+        "PF, feijoada e açaí: o AI-Eat entende a comida brasileira de verdade. {link}",
+        "Seu almoço não é salada: o AI-Eat reconhece PF, feijoada e açaí. {link}"
+      ]
     },
     {
       "id": "gratis-testar",
@@ -78,8 +178,28 @@
         "titulo": "Testa antes de assinar",
         "sub": "Sem cartão para começar."
       },
-      "texto": "Dá pra testar o scanner e o registro sem colocar cartão. 💜\n\nSe fizer sentido pra sua rotina, o Premium libera scans ilimitados, histórico completo e relatórios. Se não fizer, você não perdeu nada.\n\n👉 {link}",
-      "curto": "Dá pra testar o scanner e o registro sem colocar cartão. Se não fizer sentido, você não perdeu nada: {link}"
+      "ganchos": [
+        "Dá pra testar o scanner e o registro sem colocar cartão. 💜",
+        "Nada de cartão na porta de entrada: você testa de verdade.",
+        "Antes de pagar qualquer coisa, você experimenta o app de verdade.",
+        "Testar sem compromisso — é o mínimo, e o AI-Eat entrega."
+      ],
+      "corpos": [
+        "Se fizer sentido pra sua rotina, o Premium libera scans ilimitados, histórico completo e relatórios. Se não fizer, você não perdeu nada.",
+        "Se o app fizer sentido, o Premium libera mais scans, histórico completo e relatórios. Se não, você não perdeu nada.",
+        "Sem cartão pra começar: use o essencial e decida depois se o Premium vale pra você.",
+        "Teste sem cartão. Se a rotina pedir mais, o Premium libera scans ilimitados e relatórios."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Teste grátis 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Dá pra testar o scanner e o registro sem colocar cartão. Se não fizer sentido, você não perdeu nada: {link}",
+        "Teste o AI-Eat sem cartão. Sem compromisso, sem pegadinha: {link}",
+        "Sem cartão pra começar: experimente o scanner e o registro de graça. {link}"
+      ]
     },
     {
       "id": "fora-de-casa",
@@ -87,8 +207,28 @@
         "titulo": "Comeu fora e não sabe o que contar?",
         "sub": "Foto resolve."
       },
-      "texto": "Restaurante não vem com rótulo nutricional. 🍝\n\nFoto do prato, estimativa na hora, registro feito. É o cenário em que todo diário alimentar costuma morrer — e o que o AI-Eat resolve melhor.\n\n👉 {link}",
-      "curto": "Restaurante não vem com rótulo. Foto do prato, estimativa na hora, registro feito: {link}"
+      "ganchos": [
+        "Restaurante não vem com rótulo nutricional. 🍝",
+        "Comer fora quebra todo diário alimentar. O AI-Eat resolve isso.",
+        "Pratos de restaurante não têm tabela nutricional — e é aí que a gente desiste.",
+        "O cenário mais difícil de registrar é comer fora de casa."
+      ],
+      "corpos": [
+        "Foto do prato, estimativa na hora, registro feito. É o cenário em que todo diário alimentar costuma morrer — e o que o AI-Eat resolve melhor.",
+        "Tire a foto do prato, veja a estimativa e registre. O AI-Eat resolve justamente o caso que mata todo diário.",
+        "Comer fora deixa de ser o ponto fraco do registro: foto do prato e estimativa na hora.",
+        "O AI-Eat brilha justamente onde os diários morrem: o prato de restaurante."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Teste grátis 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Restaurante não vem com rótulo. Foto do prato, estimativa na hora, registro feito: {link}",
+        "Comer fora não precisa quebrar o registro. Foto do prato e pronto: {link}",
+        "Sem rótulo no restaurante? Foto do prato e o AI-Eat estima na hora: {link}"
+      ]
     },
     {
       "id": "consistencia",
@@ -97,8 +237,28 @@
         "sub": "Registro fácil é registro que dura.",
         "layout": "recursos"
       },
-      "texto": "Nenhum método de registro funciona se você abandona em cinco dias. ⏳\n\nO AI-Eat aposta no caminho mais curto: foto, confere, salva. Menos atrito, mais chance de virar hábito.\n\nComece hoje 👉 {link}",
-      "curto": "Nenhum registro funciona se você abandona em cinco dias. Foto, confere, salva — menos atrito: {link}"
+      "ganchos": [
+        "Nenhum método de registro funciona se você abandona em cinco dias. ⏳",
+        "O melhor diário alimentar é o que você consegue manter.",
+        "Registro complicado não vira hábito. Simples, sim.",
+        "Consistência vem do menor esforço possível."
+      ],
+      "corpos": [
+        "O AI-Eat aposta no caminho mais curto: foto, confere, salva. Menos atrito, mais chance de virar hábito.",
+        "Foto, confere, salva. É o caminho mais curto do registro — e o que tem mais chance de virar hábito.",
+        "Quanto menos atrito, mais chance de virar hábito. O AI-Eat reduziu o registro a três passos.",
+        "O AI-Eat elimina o atrito: foto, confere, salva. Registro que dura é registro fácil."
+      ],
+      "ctas": [
+        "Comece hoje 👉 {link}",
+        "Grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Nenhum registro funciona se você abandona em cinco dias. Foto, confere, salva — menos atrito: {link}",
+        "Registro fácil é registro que dura. Foto, confere, salva: {link}",
+        "Menos atrito, mais hábito. O AI-Eat resume o registro a uma foto: {link}"
+      ]
     }
   ]
 }

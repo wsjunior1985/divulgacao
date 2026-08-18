@@ -32,8 +32,28 @@
         "titulo": "US$ 149 = quanto em reais?",
         "sub": "Com IOF e spread, não a cotação de blog."
       },
-      "texto": "US$ 149 dá quanto em reais? 🤨\n\nDepende do IOF e do spread do SEU cartão — não da cotação que aparece no Google. O Convertendo mostra o custo real antes de você pagar.\n\nGrátis 👉 {link}",
-      "curto": "US$ 149 dá quanto em reais? Depende do IOF e do spread do seu cartão, não da cotação do Google. {link}"
+      "ganchos": [
+        "US$ 149 dá quanto em reais? 🤨",
+        "Cotação do Google não é o que você paga de verdade.",
+        "Comprar em dólar e fazer a conta errada sai caro.",
+        "O preço em reais de uma compra em dólar não é só multiplicar."
+      ],
+      "corpos": [
+        "Depende do IOF e do spread do SEU cartão — não da cotação que aparece no Google. O Convertendo mostra o custo real antes de você pagar.",
+        "O valor real depende do IOF e do spread do seu cartão. O Convertendo calcula o custo certo antes da compra.",
+        "IOF + spread + cotação: o Convertendo junta tudo e mostra o custo real em reais.",
+        "O Convertendo mostra quanto vai sair de verdade, com IOF e spread do seu cartão."
+      ],
+      "ctas": [
+        "Grátis 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "US$ 149 dá quanto em reais? Depende do IOF e do spread do seu cartão, não da cotação do Google. {link}",
+        "O custo real em reais, com IOF e spread. Não a cotação de blog: {link}",
+        "US$ 149 em reais de verdade? O Convertendo calcula com IOF e spread: {link}"
+      ]
     },
     {
       "id": "iof-338",
@@ -42,8 +62,28 @@
         "sub": "Uma remessa paga 0,38%. Compare antes.",
         "destaque": "3,38%"
       },
-      "texto": "Cartão de crédito internacional paga 3,38% de IOF. Uma remessa paga 0,38%. 💸\n\nNuma compra de US$ 1.000, a diferença passa de R$ 150 — só pela forma de pagar.\n\nCompare antes 👉 {link}",
-      "curto": "Crédito internacional: 3,38% de IOF. Remessa: 0,38%. Em US$ 1.000, a diferença passa de R$ 150. {link}"
+      "ganchos": [
+        "Cartão de crédito internacional paga 3,38% de IOF. Uma remessa paga 0,38%. 💸",
+        "A forma de pagar muda o imposto — e pouca gente compara.",
+        "3,38% contra 0,38%: a diferença é enorme e escondida.",
+        "Pagar com o cartão errado custa caro no exterior."
+      ],
+      "corpos": [
+        "Numa compra de US$ 1.000, a diferença passa de R$ 150 — só pela forma de pagar.",
+        "Em US$ 1.000, a diferença entre as formas de pagamento passa de R$ 150.",
+        "Só de escolher a forma de pagamento certa, você economiza mais de R$ 150 em US$ 1.000.",
+        "O Convertendo compara as formas e mostra onde essa diferença mora."
+      ],
+      "ctas": [
+        "Compare antes 👉 {link}",
+        "Grátis 👉 {link}",
+        "Compare grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Crédito internacional: 3,38% de IOF. Remessa: 0,38%. Em US$ 1.000, a diferença passa de R$ 150. {link}",
+        "3,38% de IOF no cartão ou 0,38% na remessa? Compare e economize: {link}",
+        "A forma de pagar muda mais de R$ 150 em US$ 1.000. Compare: {link}"
+      ]
     },
     {
       "id": "sete-formas",
@@ -52,8 +92,28 @@
         "sub": "Compare antes de passar o cartão.",
         "destaque": "7"
       },
-      "texto": "Crédito, pré-pago, remessa, dinheiro, cripto... 🤯\n\nO Convertendo compara as formas de pagamento lado a lado e mostra onde você economiza — às vezes 3% da compra inteira.\n\nTeste agora 👉 {link}",
-      "curto": "Crédito, pré-pago, remessa, dinheiro: o Convertendo compara lado a lado e mostra onde você economiza. {link}"
+      "ganchos": [
+        "Crédito, pré-pago, remessa, dinheiro, cripto... 🤯",
+        "Sete formas de pagar no exterior — e só uma compensa.",
+        "Escolher forma de pagamento no exterior é um labirinto.",
+        "Cada forma de pagar cobra uma taxa diferente e escondida."
+      ],
+      "corpos": [
+        "O Convertendo compara as formas de pagamento lado a lado e mostra onde você economiza — às vezes 3% da compra inteira.",
+        "Lado a lado, o Convertendo mostra qual forma de pagamento sai mais barata. Às vezes, 3% de diferença.",
+        "O Convertendo coloca as 7 formas de pagamento lado a lado e aponta a vencedora.",
+        "Comparar as formas de pagamento pode economizar 3% da compra inteira. O Convertendo faz isso por você."
+      ],
+      "ctas": [
+        "Teste agora 👉 {link}",
+        "Grátis 👉 {link}",
+        "Compare grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Crédito, pré-pago, remessa, dinheiro: o Convertendo compara lado a lado e mostra onde você economiza. {link}",
+        "7 formas de pagar, 1 vencedora. O Convertendo compara e aponta: {link}",
+        "Compare as formas de pagamento no exterior e economize até 3%. {link}"
+      ]
     },
     {
       "id": "scanner-etiqueta",
@@ -61,8 +121,28 @@
         "titulo": "Aponta a câmera na etiqueta",
         "sub": "O preço aparece em reais."
       },
-      "texto": "Na loja lá fora, aponte a câmera na etiqueta. 📸\n\nO Convertendo lê o preço e mostra quanto é em reais — já com IOF. Sem calculadora, sem conta de cabeça, sem \"depois eu vejo\".\n\n👉 {link}",
-      "curto": "Aponte a câmera na etiqueta e veja o preço em reais, já com IOF. Sem conta de cabeça: {link}"
+      "ganchos": [
+        "Na loja lá fora, aponte a câmera na etiqueta. 📸",
+        "Etiqueta em dólar? A câmera resolve a conta.",
+        "Sem calculadora na loja: aponte e veja em reais.",
+        "Converter preço na prateleira sem fazer conta de cabeça."
+      ],
+      "corpos": [
+        "O Convertendo lê o preço e mostra quanto é em reais — já com IOF. Sem calculadora, sem conta de cabeça, sem \"depois eu vejo\".",
+        "O scanner lê a etiqueta e mostra o valor em reais, já com IOF. Sem conta de cabeça.",
+        "Aponte a câmera, o app lê o preço e converte em reais com IOF. Pronto.",
+        "O Convertendo converte o preço da etiqueta em reais na hora, já com o imposto."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Teste grátis 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Aponte a câmera na etiqueta e veja o preço em reais, já com IOF. Sem conta de cabeça: {link}",
+        "Scanner de etiqueta: aponte e veja o preço em reais com IOF. {link}",
+        "Etiqueta em dólar? Aponte a câmera e veja em reais na hora: {link}"
+      ]
     },
     {
       "id": "so-na-fatura",
@@ -70,8 +150,28 @@
         "titulo": "Descobriu o valor só na fatura?",
         "sub": "Não precisa ser assim."
       },
-      "texto": "Fez compra internacional e só viu o valor em reais quando a fatura chegou? 😵\n\nO Convertendo mostra o custo total ANTES: cotação, IOF, spread e qual forma de pagamento sai mais barata.\n\nComece grátis 👉 {link}",
-      "curto": "Só descobriu o valor em reais quando a fatura chegou? O Convertendo mostra o custo total antes: {link}"
+      "ganchos": [
+        "Fez compra internacional e só viu o valor em reais quando a fatura chegou? 😵",
+        "A fatura chega com um valor que você não esperava.",
+        "Comprar no exterior e só descobrir o preço depois: clássico.",
+        "A surpresa da fatura internacional é previsível — dá pra evitar."
+      ],
+      "corpos": [
+        "O Convertendo mostra o custo total ANTES: cotação, IOF, spread e qual forma de pagamento sai mais barata.",
+        "Antes de comprar, o Convertendo mostra o custo total: cotação, IOF, spread e a forma mais barata.",
+        "O Convertendo antecipa o valor real da compra — sem susto na fatura.",
+        "Saiba o custo total antes de comprar, não depois, na fatura."
+      ],
+      "ctas": [
+        "Comece grátis 👉 {link}",
+        "Grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Só descobriu o valor em reais quando a fatura chegou? O Convertendo mostra o custo total antes: {link}",
+        "Sem susto na fatura: o Convertendo mostra o custo real antes da compra. {link}",
+        "Saiba o valor em reais antes de comprar, não na fatura. {link}"
+      ]
     },
     {
       "id": "franquia",
@@ -79,8 +179,28 @@
         "titulo": "Quanto dá pra trazer sem imposto?",
         "sub": "Franquia alfandegária na prática."
       },
-      "texto": "Voltando de viagem com compras? A franquia tem limite — e o excedente é taxado. ✈️\n\nEntenda quanto dá pra trazer, como calcular o imposto do que passar e o que declarar, sem juridiquês.\n\n👉 {link}",
-      "curto": "Voltando de viagem com compras? Entenda a franquia, o imposto do excedente e o que declarar: {link}"
+      "ganchos": [
+        "Voltando de viagem com compras? A franquia tem limite — e o excedente é taxado. ✈️",
+        "Franquia alfandegária confunde todo mundo na volta da viagem.",
+        "O que dá pra trazer sem imposto? E o que passa disso?",
+        "Alfândega: a dúvida que estraga o fim da viagem."
+      ],
+      "corpos": [
+        "Entenda quanto dá pra trazer, como calcular o imposto do que passar e o que declarar, sem juridiquês.",
+        "O Convertendo explica a franquia em linguagem simples: limite, imposto do excedente e declaração.",
+        "Sem juridiquês: o app mostra quanto dá pra trazer e como calcular o que passar.",
+        "Entenda a franquia, o imposto do excedente e o que declarar — tudo explicado de forma simples."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Entenda grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Voltando de viagem com compras? Entenda a franquia, o imposto do excedente e o que declarar: {link}",
+        "Franquia alfandegária sem juridiquês: entenda o limite e o imposto. {link}",
+        "Quanto dá pra trazer sem imposto? O Convertendo explica: {link}"
+      ]
     },
     {
       "id": "cotacao-nao-e-preco",
@@ -88,8 +208,28 @@
         "titulo": "A cotação não é o que você paga",
         "sub": "Comercial, turismo e spread."
       },
-      "texto": "A cotação do dólar que você vê no jornal é a comercial. Você paga a de turismo — mais spread, mais IOF. 📊\n\nA diferença passa de 8% em alguns casos. O Convertendo usa a conta certa, a do seu bolso.\n\n👉 {link}",
-      "curto": "A cotação do jornal é a comercial; você paga turismo + spread + IOF. A diferença passa de 8%. {link}"
+      "ganchos": [
+        "A cotação do dólar que você vê no jornal é a comercial. Você paga a de turismo — mais spread, mais IOF. 📊",
+        "O dólar do jornal não é o dólar do seu cartão.",
+        "Comercial, turismo, spread: são três números diferentes.",
+        "A cotação que aparece na TV não é a que sai do seu bolso."
+      ],
+      "corpos": [
+        "A diferença passa de 8% em alguns casos. O Convertendo usa a conta certa, a do seu bolso.",
+        "A diferença pode passar de 8%. O Convertendo usa a conta real, com spread e IOF.",
+        "O Convertendo calcula com a cotação que você realmente paga, não a da manchete.",
+        "Entre a cotação comercial e a que você paga, a diferença passa de 8%. O Convertendo usa a certa."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Calcule grátis 👉 {link}"
+      ],
+      "curtos": [
+        "A cotação do jornal é a comercial; você paga turismo + spread + IOF. A diferença passa de 8%. {link}",
+        "A cotação da TV não é a que você paga. O Convertendo usa a conta real: {link}",
+        "Comercial x turismo x spread: entenda o que você paga de verdade. {link}"
+      ]
     },
     {
       "id": "medidas",
@@ -98,8 +238,28 @@
         "sub": "Tudo convertido no mesmo app.",
         "layout": "recursos"
       },
-      "texto": "Viajar é converter o tempo todo: moeda, peso, distância, temperatura, tamanho de roupa. 🌎\n\nO Convertendo faz tudo isso offline, num app só, sem anúncio no meio do caminho.\n\n👉 {link}",
-      "curto": "Viajar é converter o tempo todo: moeda, peso, distância, temperatura. Tudo num app só: {link}"
+      "ganchos": [
+        "Viajar é converter o tempo todo: moeda, peso, distância, temperatura, tamanho de roupa. 🌎",
+        "Em viagem, você converte moeda, peso, distância e temperatura o tempo todo.",
+        "Um app só pra todas as conversões da viagem.",
+        "Converter medidas deveria ser tão fácil quanto converter moeda."
+      ],
+      "corpos": [
+        "O Convertendo faz tudo isso offline, num app só, sem anúncio no meio do caminho.",
+        "Moeda, peso, distância, temperatura e tamanho de roupa — tudo num app só, offline.",
+        "O Convertendo reúne todas as conversões em um app, funcionando offline e sem anúncio.",
+        "Offline e sem anúncio: todas as conversões da viagem num lugar só."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Viajar é converter o tempo todo: moeda, peso, distância, temperatura. Tudo num app só: {link}",
+        "Moeda, peso, distância e temperatura: tudo convertido num app, offline. {link}",
+        "Todas as conversões da viagem num app só, sem anúncio: {link}"
+      ]
     }
   ]
 }

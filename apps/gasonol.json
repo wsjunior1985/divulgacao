@@ -33,8 +33,28 @@
         "sub": "A paridade real depende do consumo do seu modelo.",
         "destaque": "70%"
       },
-      "texto": "Etanol ou gasolina? O que compensa NÃO é 70%.\n\nA regra ignora o SEU carro. Um flex que faz 8 km/l no etanol e 12 na gasolina tem paridade diferente de um que faz 6 e 11.\n\nO GASONOL usa o consumo oficial do seu veículo (INMETRO/PBEV), cruza com o preço do posto e responde em segundos.\n\nCalcule grátis 👉 {link}",
-      "curto": "Etanol ou gasolina? O que compensa não é 70% — é o consumo real do SEU carro. O GASONOL usa os dados oficiais do INMETRO e responde na hora. Grátis: {link}"
+      "ganchos": [
+        "Etanol ou gasolina? O que compensa NÃO é 70%.",
+        "A regra dos 70% é atalho que erra o SEU carro.",
+        "Todo mundo usa os 70% — e quase ninguém acerta.",
+        "Etanol ou gasolina? A resposta muda de carro pra carro."
+      ],
+      "corpos": [
+        "A regra ignora o SEU carro. Um flex que faz 8 km/l no etanol e 12 na gasolina tem paridade diferente de um que faz 6 e 11.",
+        "A regra dos 70% ignora o consumo do seu modelo. A paridade de verdade é outra.",
+        "Cada carro tem uma paridade própria, que depende do consumo em etanol e em gasolina.",
+        "O consumo do seu carro muda a conta — e a regra dos 70% não sabe disso."
+      ],
+      "ctas": [
+        "Calcule grátis 👉 {link}",
+        "Grátis 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Etanol ou gasolina? O que compensa não é 70% — é o consumo real do SEU carro. O GASONOL usa os dados oficiais do INMETRO e responde na hora. Grátis: {link}",
+        "A regra dos 70% erra o seu carro. O GASONOL usa o consumo real e acerta: {link}",
+        "Etanol ou gasolina? O GASONOL calcula com o consumo do SEU modelo, não com os 70%: {link}"
+      ]
     },
     {
       "id": "voz-na-bomba",
@@ -42,8 +62,28 @@
         "titulo": "Sem tirar a mão do volante",
         "sub": "Fale os preços, ele calcula."
       },
-      "texto": "Chegou no posto e não quer digitar nada?\n\nFale os dois preços em voz alta e o GASONOL responde na hora qual abastecer compensa. Instala como app no celular e funciona até com a tela suja de combustível. 😄\n\nGrátis para começar 👉 {link}",
-      "curto": "No posto, fale os dois preços em voz alta: o GASONOL responde na hora qual compensa. Grátis: {link}"
+      "ganchos": [
+        "Chegou no posto e não quer digitar nada?",
+        "Na bomba, as mãos estão ocupadas. Fala, então.",
+        "Digitar preço de combustível com pressa é pedir erro.",
+        "Posto não é lugar de ficar digitando número."
+      ],
+      "corpos": [
+        "Fale os dois preços em voz alta e o GASONOL responde na hora qual abastecer compensa. Instala como app no celular e funciona até com a tela suja de combustível. 😄",
+        "Fale os dois preços e o GASONOL responde na hora qual compensa. Sem digitar, sem erro.",
+        "Entrada por voz: você fala os preços e o app calcula na hora. Funciona até com a mão suja.",
+        "O GASONOL entende por voz os dois preços e diz qual abastecer. Prático na bomba."
+      ],
+      "ctas": [
+        "Grátis para começar 👉 {link}",
+        "Grátis 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "No posto, fale os dois preços em voz alta: o GASONOL responde na hora qual compensa. Grátis: {link}",
+        "Sem digitar na bomba: fale os preços e o GASONOL calcula. {link}",
+        "Fale os preços por voz e saiba qual compensa na hora. {link}"
+      ]
     },
     {
       "id": "preco-limite",
@@ -51,8 +91,28 @@
         "titulo": "Qual o preço-limite do etanol?",
         "sub": "Descubra o do seu carro."
       },
-      "texto": "Existe um preço em que o etanol deixa de valer a pena — e ele é diferente pra cada carro.\n\nO GASONOL calcula esse limite pro SEU veículo. Aí é só olhar a placa do posto e saber na hora, sem fazer conta.\n\nDescubra o seu 👉 {link}",
-      "curto": "Existe um preço em que o etanol deixa de compensar — e ele muda de carro pra carro. Descubra o do seu: {link}"
+      "ganchos": [
+        "Existe um preço em que o etanol deixa de valer a pena — e ele é diferente pra cada carro.",
+        "Cada carro tem um preço de etanol que vira o ponto de virada.",
+        "Acima de certo preço, o etanol deixa de compensar. Qual é o do seu carro?",
+        "O etanol vale até quanto? Depende do seu carro."
+      ],
+      "corpos": [
+        "O GASONOL calcula esse limite pro SEU veículo. Aí é só olhar a placa do posto e saber na hora, sem fazer conta.",
+        "O GASONOL calcula o preço-limite pro seu veículo. Olhou a placa, já sabe.",
+        "Com o preço-limite do seu carro na tela, a decisão na bomba vira olhar e decidir.",
+        "O app calcula o teto do etanol pro seu modelo. Sem conta de cabeça na bomba."
+      ],
+      "ctas": [
+        "Descubra o seu 👉 {link}",
+        "Grátis 👉 {link}",
+        "Calcule grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Existe um preço em que o etanol deixa de compensar — e ele muda de carro pra carro. Descubra o do seu: {link}",
+        "Qual o preço-limite do etanol pro SEU carro? O GASONOL calcula: {link}",
+        "Descubra até que preço o etanol compensa no seu modelo: {link}"
+      ]
     },
     {
       "id": "quanto-economiza",
@@ -61,8 +121,28 @@
         "sub": "tanques por mês — errar em todos custa caro.",
         "destaque": "5x"
       },
-      "texto": "Errar a escolha do combustível custa pouco por tanque. Só que são 4, 5, 6 tanques por mês. 🙃\n\nO GASONOL acerta a conta toda vez, com o consumo real do seu carro. Em um ano, dá pra pagar bem mais que um tanque cheio.\n\nComece grátis 👉 {link}",
-      "curto": "Errar o combustível custa pouco por tanque — mas são 5 tanques por mês. O GASONOL acerta a conta toda vez: {link}"
+      "ganchos": [
+        "Errar a escolha do combustível custa pouco por tanque. Só que são 4, 5, 6 tanques por mês. 🙃",
+        "Um tanque errado é pouco. Cinco errados no mês, não.",
+        "O erro de combustível parece barato — até multiplicar por 5 tanques.",
+        "Errar todo abastecimento do mês custa um tanque inteiro por ano."
+      ],
+      "corpos": [
+        "O GASONOL acerta a conta toda vez, com o consumo real do seu carro. Em um ano, dá pra pagar bem mais que um tanque cheio.",
+        "Com o GASONOL, a conta sai certa todo abastecimento. No fim do ano, a economia paga mais que um tanque.",
+        "O GASONOL usa o consumo real do seu carro e acerta sempre. O acumulado no ano impressiona.",
+        "Cada abastecimento certo vira economia no fim do mês — e no fim do ano, é um tanque cheio."
+      ],
+      "ctas": [
+        "Comece grátis 👉 {link}",
+        "Grátis 👉 {link}",
+        "Calcule grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Errar o combustível custa pouco por tanque — mas são 5 tanques por mês. O GASONOL acerta a conta toda vez: {link}",
+        "5 tanques por mês, todos errados? O GASONOL acerta a conta em cada um: {link}",
+        "Errar todo abastecimento custa caro. O GASONOL acerta sempre: {link}"
+      ]
     },
     {
       "id": "sem-instalar",
@@ -71,8 +151,28 @@
         "sub": "Sem baixar, sem cadastro pra testar.",
         "layout": "recursos"
       },
-      "texto": "Não precisa baixar nada da loja.\n\nO GASONOL abre direto no navegador do celular e você pode instalar como app com um toque. Testa em 10 segundos, no próximo posto.\n\n👉 {link}",
-      "curto": "O GASONOL abre direto no navegador — sem baixar da loja. Testa no próximo posto: {link}"
+      "ganchos": [
+        "Não precisa baixar nada da loja.",
+        "Sem instalar, sem cadastro: só abrir e usar.",
+        "Testar não deveria exigir download e conta.",
+        "Zero burocracia pra começar."
+      ],
+      "corpos": [
+        "O GASONOL abre direto no navegador do celular e você pode instalar como app com um toque. Testa em 10 segundos, no próximo posto.",
+        "Abre no navegador e, se quiser, instala como app com um toque. Em 10 segundos você testa.",
+        "Sem loja, sem download: abre no navegador e instala como app se preferir.",
+        "Teste em 10 segundos no próximo posto — sem baixar, sem cadastro."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Teste agora 👉 {link}",
+        "Grátis 👉 {link}"
+      ],
+      "curtos": [
+        "O GASONOL abre direto no navegador — sem baixar da loja. Testa no próximo posto: {link}",
+        "Sem baixar e sem cadastro: abre no navegador e usa. {link}",
+        "Teste em 10 segundos, sem instalar nada: {link}"
+      ]
     },
     {
       "id": "consumo-oficial",
@@ -80,8 +180,28 @@
         "titulo": "O consumo do seu carro, oficial",
         "sub": "Base INMETRO/PBEV, não estimativa."
       },
-      "texto": "Muita calculadora de combustível pede o consumo do carro — e quem sabe isso de cabeça? 🤔\n\nO GASONOL já tem: base oficial do INMETRO/PBEV com o consumo do seu modelo em etanol e gasolina. Você escolhe o carro e pronto.\n\nExperimente 👉 {link}",
-      "curto": "Não sabe o consumo do seu carro de cabeça? O GASONOL já tem — base oficial do INMETRO. Só escolher o modelo: {link}"
+      "ganchos": [
+        "Muita calculadora de combustível pede o consumo do carro — e quem sabe isso de cabeça? 🤔",
+        "Ninguém sabe o consumo do próprio carro de cabeça.",
+        "Pedir o consumo do carro é empurrar o trabalho pro usuário.",
+        "Consumo estimado \"no chute\" dá resultado errado."
+      ],
+      "corpos": [
+        "O GASONOL já tem: base oficial do INMETRO/PBEV com o consumo do seu modelo em etanol e gasolina. Você escolhe o carro e pronto.",
+        "O GASONOL já traz a base oficial do INMETRO/PBEV com o consumo do seu modelo. Só escolher o carro.",
+        "Nada de chute: o app usa o consumo oficial do seu veículo, da base INMETRO/PBEV.",
+        "Você escolhe o modelo e o GASONOL usa o consumo oficial — etanol e gasolina — sem estimativa."
+      ],
+      "ctas": [
+        "Experimente 👉 {link}",
+        "Grátis 👉 {link}",
+        "Calcule grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Não sabe o consumo do seu carro de cabeça? O GASONOL já tem — base oficial do INMETRO. Só escolher o modelo: {link}",
+        "Consumo oficial do seu carro, sem chute: o GASONOL usa a base INMETRO/PBEV. {link}",
+        "Escolha o modelo e o GASONOL usa o consumo oficial do INMETRO. {link}"
+      ]
     },
     {
       "id": "mito-etanol",
@@ -89,8 +209,28 @@
         "titulo": "\"Etanol estraga o motor\"",
         "sub": "Mito. Seu carro é flex por projeto."
       },
-      "texto": "\"Etanol estraga o motor.\" 🚫\n\nCarro flex foi projetado pros dois. O que muda de verdade é o custo por quilômetro — e isso depende do preço do dia e do consumo do seu modelo.\n\nO GASONOL faz essa conta em segundos, sempre que você parar num posto.\n\n👉 {link}",
-      "curto": "\"Etanol estraga o motor\" é mito: flex foi feito pros dois. O que muda é o custo por km — e o GASONOL calcula: {link}"
+      "ganchos": [
+        "\"Etanol estraga o motor.\" 🚫",
+        "Tem gente que ainda acredita que etanol estraga motor.",
+        "O mito do etanol que recusa a morrer.",
+        "\"Etanol dá problema\" — será mesmo?"
+      ],
+      "corpos": [
+        "Carro flex foi projetado pros dois. O que muda de verdade é o custo por quilômetro — e isso depende do preço do dia e do consumo do seu modelo.",
+        "Flex foi feito pra etanol e gasolina. O que muda é o custo por km, e isso o GASONOL calcula.",
+        "Seu carro é flex por projeto: aceita os dois. A conta certa é de custo por quilômetro.",
+        "O que importa não é o mito — é quanto custa rodar por km. O GASONOL calcula em segundos."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Calcule grátis 👉 {link}",
+        "Grátis 👉 {link}"
+      ],
+      "curtos": [
+        "\"Etanol estraga o motor\" é mito: flex foi feito pros dois. O que muda é o custo por km — e o GASONOL calcula: {link}",
+        "Etanol estraga motor? Mito. Flex foi feito pros dois. Calcule o custo real: {link}",
+        "Mito do etanol derrubado: o que importa é o custo por km. {link}"
+      ]
     },
     {
       "id": "indique",
@@ -98,8 +238,28 @@
         "titulo": "Indique e os dois ganham",
         "sub": "30 dias de Premium para cada um."
       },
-      "texto": "Todo mundo tem um amigo que ainda usa a regra dos 70%. 😅\n\nManda o GASONOL pra ele: quem assina pelo seu link ganha 30 dias grátis — e você ganha 30 dias também.\n\n👉 {link}",
-      "curto": "Todo mundo tem um amigo que ainda usa a regra dos 70%. Manda o GASONOL pra ele — os dois ganham 30 dias: {link}"
+      "ganchos": [
+        "Todo mundo tem um amigo que ainda usa a regra dos 70%. 😅",
+        "Conhece alguém que decide combustível na regra dos 70%?",
+        "Aquele amigo que ainda calcula errado o combustível.",
+        "Compartilhar o GASONOL faz bem pros dois."
+      ],
+      "corpos": [
+        "Manda o GASONOL pra ele: quem assina pelo seu link ganha 30 dias grátis — e você ganha 30 dias também.",
+        "Quem assinar pelo seu link ganha 30 dias grátis, e você também. Os dois saem ganhando.",
+        "Indique pelo seu link: o amigo ganha 30 dias de Premium e você ganha 30 dias também.",
+        "Seu link de indicação dá 30 dias de Premium pros dois lados. Sem pegadinha."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Indique agora 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Todo mundo tem um amigo que ainda usa a regra dos 70%. Manda o GASONOL pra ele — os dois ganham 30 dias: {link}",
+        "Indique o GASONOL e os dois ganham 30 dias de Premium: {link}",
+        "Seu amigo ainda usa a regra dos 70%? Indique e os dois ganham 30 dias: {link}"
+      ]
     }
   ]
 }

@@ -147,7 +147,44 @@
         "em": "2026-08-18T20:21:18.332Z",
         "erro": null
       }
+    },
+    "4-convertendo-quanto-em-reais": {
+      "instagram": {
+        "status": "erro",
+        "id": null,
+        "url": null,
+        "em": "2026-08-18T23:20:04.210Z",
+        "erro": "Graph API: Cannot call API for app 2493250571179999 on behalf of user 122094713967452511 (código 200)"
+      },
+      "facebook": {
+        "status": "erro",
+        "id": null,
+        "url": null,
+        "em": "2026-08-18T23:20:04.210Z",
+        "erro": "Graph API: Cannot call API for app 2493250571179999 on behalf of user 122094713967452511 (código 200)"
+      },
+      "threads": {
+        "status": "erro",
+        "id": null,
+        "url": null,
+        "em": "2026-08-18T23:20:04.210Z",
+        "erro": "Threads API: API access blocked."
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mtfe5frthr2g",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mtfe5frthr2g",
+        "em": "2026-08-18T23:20:04.210Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a84e8a45284c02bafeaab1a",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-08-18T23:20:04.210Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-08-18T20:21:18.332Z"
+  "atualizadoEm": "2026-08-18T23:20:04.210Z"
 }

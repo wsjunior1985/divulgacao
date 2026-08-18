@@ -115,9 +115,15 @@ function cortarPreservandoLink(modelo, link, limite) {
  */
 export function montarTexto({ app, post, canal, campanha }) {
   const link = linkComUtm(app, canal, campanha);
+  const limpo = linkExibicao(app);
   const tags = hashtags(app, post);
-  const base = post.texto.replaceAll("{link}", link);
-  const curto = (post.curto ?? post.texto).replaceAll("{link}", link);
+
+  // O link VISÍVEL no texto é o limpo (sem UTM), exceto onde o clique só
+  // acontece se a URL completa estiver no corpo: Threads (auto-link) e X (t.co).
+  const visivel = CANAIS_COM_LINK_COMPLETO_NO_TEXTO.has(canal) ? link : limpo;
+
+  const base = post.texto.replaceAll("{link}", visivel);
+  const curto = (post.curto ?? post.texto).replaceAll("{link}", visivel);
 
   switch (canal) {
     case "instagram":
@@ -129,7 +135,8 @@ export function montarTexto({ app, post, canal, campanha }) {
       // link_attachment em post de texto puro, e os nossos sempre levam card.
       return { texto: cortarPreservandoLink(post.texto, link, 500), link };
     case "bluesky":
-      return { texto: cortarPreservandoLink(post.curto ?? post.texto, link, 300), link };
+      // Mostra o link limpo, mas o facet clicável aponta para a URL com UTM.
+      return { texto: cortarPreservandoLink(post.curto ?? post.texto, limpo, 300), link, linkLimpo: limpo };
     case "x":
       // 280 é o limite da conta gratuita. O X conta qualquer URL como 23
       // caracteres, mas cortar pelo tamanho real só deixa margem — nunca falta.

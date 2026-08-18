@@ -55,7 +55,7 @@ function slotDeAgora() {
 }
 
 async function publicarCanal(canal, { textoPorCanal, urlsCard, cardFeed, cardVertical, app, post, dryRun }) {
-  const { texto, link } = textoPorCanal[canal];
+  const { texto, link, linkLimpo } = textoPorCanal[canal];
 
   if (dryRun) {
     log(`— ${canal} —\n${texto}\n`);
@@ -76,6 +76,8 @@ async function publicarCanal(canal, { textoPorCanal, urlsCard, cardFeed, cardVer
           texto,
           imagensLocais: [cardFeed.relativo],
           alt: `${app.nome}: ${post.card.titulo}`,
+          link,
+          linkLimpo,
         })),
       };
     case "tiktok":

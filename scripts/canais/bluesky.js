@@ -90,15 +90,30 @@ async function enviarBlob(jwt, caminhoRelativo) {
   return dados.blob;
 }
 
-export async function publicar({ texto, imagensLocais, alt }) {
+export async function publicar({ texto, imagensLocais, alt, link, linkLimpo }) {
   const { jwt, did, handle } = await sessao();
+
+  const facets = montarFacets(texto);
+  // Link limpo exibido no texto, mas o clique vai para a URL completa com UTM.
+  if (link && linkLimpo) {
+    const pos = texto.indexOf(linkLimpo);
+    if (pos >= 0) {
+      facets.push({
+        index: {
+          byteStart: bytes(texto.slice(0, pos)),
+          byteEnd: bytes(texto.slice(0, pos + linkLimpo.length)),
+        },
+        features: [{ $type: "app.bsky.richtext.facet#link", uri: link }],
+      });
+    }
+  }
 
   const registro = {
     $type: "app.bsky.feed.post",
     text: texto,
     createdAt: new Date().toISOString(),
     langs: ["pt-BR"],
-    facets: montarFacets(texto),
+    facets: facets.sort((a, b) => a.index.byteStart - b.index.byteStart),
   };
 
   if (imagensLocais?.length) {

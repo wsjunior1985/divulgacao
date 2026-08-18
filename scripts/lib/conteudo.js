@@ -61,16 +61,15 @@ export function linkComUtm(app, canal, campanha = "alwayson") {
 }
 
 /**
- * Link "limpo" pra exibir no texto — com protocolo, mas sem www. nem UTM.
- * O protocolo é mantido para o link ser reconhecido (e auto-linkado) pelas
- * redes: sem `https://` ele vira texto solto no Instagram e não encurta no
- * Threads/X.
+ * Link "limpo" pra exibir na legenda — só o domínio (sem protocolo, www. nem
+ * UTM). O link completo com UTM viaja por fora do texto: facet do Bluesky
+ * (clique) e params `link` dos demais adapters, sem poluir a legenda.
  */
 export function linkExibicao(app) {
   const url = new URL(app.url);
   const host = url.hostname.replace(/^www\./, "");
   const caminho = url.pathname === "/" ? "" : url.pathname.replace(/\/$/, "");
-  return `https://${host}${caminho}`;
+  return `${host}${caminho}`;
 }
 
 function hashtags(app, post) {

@@ -108,12 +108,18 @@ no layout só de texto — a publicação nunca é bloqueada por isso.
 ## Mudar o conteúdo
 
 Tudo vive em `apps/<app>.json`: pitch, cores da marca, hashtags e a lista de
-temas. Cada tema tem o texto longo (Instagram/Facebook/Threads), a versão `curto`
-(Bluesky/TikTok) e o par título/subtítulo do card. `{link}` vira a URL do app com
-UTM do canal.
+temas. Cada tema é **combinatório** — `ganchos` (aberturas), `corpos`
+(parágrafos), `ctas` (fechos com `{link}`) e `curtos` (versão de 1 linha para
+Bluesky/X) — e o `montarTexto` combina um de cada por enumeração mista, variando
+a cada ciclo completo sem repetir o mesmo texto no ano. O `card`
+(título/subtítulo/destaque) é fixo por tema.
 
-Acrescentar um tema aumenta o ciclo sem repetição — hoje são 8 por app, 40 no
-total, o que dá **8 dias sem repetir nada** publicando 5×/dia (1 post por app).
+`{link}` vira a URL do app com UTM do canal (no texto só o domínio aparece; o
+UTM viaja no clique).
+
+São 8 temas por app, 40 no total, o que dá **8 dias de ciclo** publicando 5×/dia
+(1 post por app). O calendário completo do ano fica em
+[`CALENDARIO-1ANO.md`](CALENDARIO-1ANO.md) (`npm run calendario`).
 
 ## Ritmo
 

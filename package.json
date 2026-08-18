@@ -15,7 +15,8 @@
     "capturar": "node scripts/capturar.mjs",
     "semear": "node scripts/semear.mjs",
     "verificar": "node scripts/verificar.mjs",
-    "renovar": "node scripts/renovar-tokens.mjs"
+    "renovar": "node scripts/renovar-tokens.mjs",
+    "apagar": "node scripts/apagar.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",

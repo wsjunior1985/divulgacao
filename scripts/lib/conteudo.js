@@ -12,7 +12,7 @@ import { RAIZ, lerJson } from "./base.js";
 export const ORDEM_APPS = ["vaidarquanto", "aieat", "gasonol", "convertendo", "remedin"];
 
 /** Época do rodízio: slot 0. Não mexa depois de publicar, ou o rodízio pula temas. */
-const EPOCA = Date.UTC(2026, 7, 1); // 2026-08-01
+const EPOCA = Date.UTC(2026, 7, 18); // 2026-08-18
 
 export function carregarApps() {
   const arquivos = readdirSync(resolve(RAIZ, "apps")).filter((f) => f.endsWith(".json"));
@@ -59,6 +59,24 @@ export function linkComUtm(app, canal, campanha = "alwayson") {
   url.searchParams.set("utm_campaign", campanha);
   return url.toString();
 }
+
+/**
+ * Versão "limpa" do link pra exibir no texto — sem protocolo, www. ou UTM.
+ * Usada nos canais onde o clique não depende dessa string estar completa
+ * (o link real com UTM viaja por outro caminho: facet do Bluesky, param
+ * `link` do Facebook, ou o link não é clicável mesmo — Instagram/TikTok).
+ */
+export function linkExibicao(app) {
+  const url = new URL(app.url);
+  const host = url.hostname.replace(/^www\./, "");
+  const caminho = url.pathname === "/" ? "" : url.pathname.replace(/\/$/, "");
+  return `${host}${caminho}`;
+}
+
+/** Canais em que o link completo com UTM precisa ficar visível no texto,
+ * porque é a única forma de o clique carregar o UTM (auto-link de URL solta
+ * no Threads, ou porque o X já encurta pra t.co sozinho). */
+const CANAIS_COM_LINK_COMPLETO_NO_TEXTO = new Set(["threads", "x"]);
 
 function hashtags(app, post) {
   const tags = post.hashtags ?? app.hashtags ?? [];

@@ -17,7 +17,9 @@ async function chamar(caminho, parametros, metodo = "POST") {
   const res =
     metodo === "GET"
       ? await buscar(`${API}${caminho}?${corpo}`)
-      : await buscar(`${API}${caminho}`, { method: "POST", body: corpo });
+      : metodo === "DELETE"
+        ? await buscar(`${API}${caminho}?${corpo}`, { method: "DELETE" })
+        : await buscar(`${API}${caminho}`, { method: "POST", body: corpo });
   const dados = await res.json().catch(() => ({}));
   if (dados.error) throw new Error(`Threads API: ${dados.error.message}`);
   if (!res.ok) throw new Error(`Threads API HTTP ${res.status}`);
@@ -54,6 +56,14 @@ export async function publicar({ texto, imagens, link }) {
   });
   log(`threads: publicado (${id})`);
   return { id, url: `https://www.threads.net/@me/post/${id}` };
+}
+
+/** Apaga um post próprio no Threads. */
+export async function apagar(id) {
+  if (!id) throw new Error("threads: sem id para apagar");
+  await chamar(`/${id}`, { access_token: env("THREADS_ACCESS_TOKEN") }, "DELETE");
+  log(`threads: apagado (${id})`);
+  return { id };
 }
 
 /** Renova o token de 60 dias. Só funciona se ele tiver ao menos 24h de vida. */

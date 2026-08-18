@@ -20,7 +20,9 @@ async function graph(caminho, parametros, metodo = "POST") {
   const res =
     metodo === "GET"
       ? await buscar(`${GRAPH}${caminho}?${corpo}`)
-      : await buscar(`${GRAPH}${caminho}`, { method: "POST", body: corpo });
+      : metodo === "DELETE"
+        ? await buscar(`${GRAPH}${caminho}?${corpo}`, { method: "DELETE" })
+        : await buscar(`${GRAPH}${caminho}`, { method: "POST", body: corpo });
   const dados = await res.json().catch(() => ({}));
   if (dados.error) {
     const e = dados.error;
@@ -153,6 +155,14 @@ export async function validadeDoToken() {
   if (expira === 0 || expira === undefined) return { expiraEm: null, permanente: true };
   const dias = Math.round((expira * 1000 - Date.now()) / 86400000);
   return { expiraEm: new Date(expira * 1000).toISOString(), dias, permanente: false };
+}
+
+/** Apaga um post próprio: Instagram (media id) ou Facebook (post id da Página). */
+export async function apagar(canal, id) {
+  if (!id) throw new Error(`meta/${canal}: sem id para apagar`);
+  await graph(`/${id}`, { access_token: credenciais().token }, "DELETE");
+  log(`${canal}: apagado (${id})`);
+  return { id };
 }
 
 export async function publicar({ canal, texto, imagens, link }) {

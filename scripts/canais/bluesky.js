@@ -121,3 +121,28 @@ export async function publicar({ texto, imagensLocais, alt }) {
   log(`bluesky: publicado (${rkey})`);
   return { id: dados.uri, url: `https://bsky.app/profile/${handle}/post/${rkey}` };
 }
+
+/** Apaga um post próprio. Aceita a URI completa (at://...) ou só o rkey. */
+export async function apagar(uri) {
+  if (!uri) throw new Error("bluesky: sem uri para apagar");
+
+  // Forma canônica: at://did:plc:.../app.bsky.feed.post/<rkey>
+  const m = uri.match(/^at:\/\/([^/]+)\/([^/]+)\/([^/]+)$/);
+  if (!m) throw new Error(`bluesky: uri inesperada (${uri})`);
+  const [, did, colecao, rkey] = m;
+  if (colecao !== "app.bsky.feed.post") throw new Error(`bluesky: coleção não é um post (${colecao})`);
+
+  const { jwt } = await sessao();
+  const res = await buscar(`${SERVICO}/xrpc/com.atproto.repo.deleteRecord`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${jwt}` },
+    body: JSON.stringify({ repo: did, collection: colecao, rkey }),
+  });
+  if (!res.ok) {
+    const dados = await res.json().catch(() => ({}));
+    throw new Error(`Bluesky deleteRecord: ${dados.message || res.status}`);
+  }
+
+  log(`bluesky: apagado (${rkey})`);
+  return { id: uri };
+}

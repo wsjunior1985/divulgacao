@@ -59,6 +59,38 @@ async function preencherPrecos(page, gasolina, etanol) {
   await page.waitForTimeout(1800);
 }
 
+// Overlays de dica/onboarding que estragam o card: janelas de "Como usar?",
+// "Dica de uso", aviso de instalação etc. São fechados antes de cada foto.
+const SELETORES_FECHAR_DICA = [
+  'button[aria-label="Fechar dica"]',
+  'button[aria-label="Fechar"]',
+  'button[aria-label="Entendi"]',
+  'button[aria-label="Pular"]',
+  'button[aria-label="Skip"]',
+];
+
+/** Fecha, um por um, os overlays de dica visíveis (o locator é re-resolvido a
+ * cada clique, porque fechar um pode re-renderizar a página). */
+async function fecharDicas(page) {
+  for (const seletor of SELETORES_FECHAR_DICA) {
+    for (let guarda = 0; guarda < 8; guarda++) {
+      const total = await page.locator(seletor).count();
+      let alvo = null;
+      for (let i = 0; i < total; i++) {
+        const el = page.locator(seletor).nth(i);
+        if (await el.isVisible().catch(() => false)) {
+          alvo = el;
+          break;
+        }
+      }
+      if (!alvo) break;
+      await alvo.click({ timeout: 1500 }).catch(() => {});
+      await page.waitForTimeout(250);
+    }
+  }
+  await page.waitForTimeout(300);
+}
+
 const APPS = [
   {
     id: "gasonol",
@@ -161,6 +193,8 @@ async function capturarApp(browser, app) {
         await page.waitForTimeout(2500);
       }
       if (tela.preparar) await tela.preparar(page);
+
+      await fecharDicas(page);
 
       const nome = typeof tela === "string" ? `${app.id}-${i}` : `${app.id}-${tela.nome}`;
       const caminho = resolve(DESTINO, `${nome}.png`);

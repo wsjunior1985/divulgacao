@@ -61,22 +61,17 @@ export function linkComUtm(app, canal, campanha = "alwayson") {
 }
 
 /**
- * Versão "limpa" do link pra exibir no texto — sem protocolo, www. ou UTM.
- * Usada nos canais onde o clique não depende dessa string estar completa
- * (o link real com UTM viaja por outro caminho: facet do Bluesky, param
- * `link` do Facebook, ou o link não é clicável mesmo — Instagram/TikTok).
+ * Link "limpo" pra exibir no texto — com protocolo, mas sem www. nem UTM.
+ * O protocolo é mantido para o link ser reconhecido (e auto-linkado) pelas
+ * redes: sem `https://` ele vira texto solto no Instagram e não encurta no
+ * Threads/X.
  */
 export function linkExibicao(app) {
   const url = new URL(app.url);
   const host = url.hostname.replace(/^www\./, "");
   const caminho = url.pathname === "/" ? "" : url.pathname.replace(/\/$/, "");
-  return `${host}${caminho}`;
+  return `https://${host}${caminho}`;
 }
-
-/** Canais em que o link completo com UTM precisa ficar visível no texto,
- * porque é a única forma de o clique carregar o UTM (auto-link de URL solta
- * no Threads, ou porque o X já encurta pra t.co sozinho). */
-const CANAIS_COM_LINK_COMPLETO_NO_TEXTO = new Set(["threads", "x"]);
 
 function hashtags(app, post) {
   const tags = post.hashtags ?? app.hashtags ?? [];
@@ -114,16 +109,12 @@ function cortarPreservandoLink(modelo, link, limite) {
  *  - tiktok:    título do post em modo foto, hashtags ajudam a distribuição
  */
 export function montarTexto({ app, post, canal, campanha }) {
-  const link = linkComUtm(app, canal, campanha);
-  const limpo = linkExibicao(app);
+  const link = linkComUtm(app, canal, campanha); // URL completa com UTM (facet/clique)
+  const limpo = linkExibicao(app); // ex.: https://vaidarquanto.com.br
   const tags = hashtags(app, post);
 
-  // O link VISÍVEL no texto é o limpo (sem UTM), exceto onde o clique só
-  // acontece se a URL completa estiver no corpo: Threads (auto-link) e X (t.co).
-  const visivel = CANAIS_COM_LINK_COMPLETO_NO_TEXTO.has(canal) ? link : limpo;
-
-  const base = post.texto.replaceAll("{link}", visivel);
-  const curto = (post.curto ?? post.texto).replaceAll("{link}", visivel);
+  const base = post.texto.replaceAll("{link}", limpo);
+  const curto = (post.curto ?? post.texto).replaceAll("{link}", limpo);
 
   switch (canal) {
     case "instagram":
@@ -133,14 +124,21 @@ export function montarTexto({ app, post, canal, campanha }) {
     case "threads":
       // O link vai no CORPO, não em link_attachment: a Threads API só aceita
       // link_attachment em post de texto puro, e os nossos sempre levam card.
-      return { texto: cortarPreservandoLink(post.texto, link, 500), link };
-    case "bluesky":
-      // Mostra o link limpo, mas o facet clicável aponta para a URL com UTM.
-      return { texto: cortarPreservandoLink(post.curto ?? post.texto, limpo, 300), link, linkLimpo: limpo };
+      return { texto: cortarPreservandoLink(post.texto, limpo, 500), link };
+    case "bluesky": {
+      // O Bluesky mostra só o domínio (sem protocolo, para o facet não duplicar)
+      // e o clique vai para a URL completa com UTM.
+      const semProtocolo = limpo.replace(/^https?:\/\//, "");
+      return {
+        texto: cortarPreservandoLink(post.curto ?? post.texto, semProtocolo, 300),
+        link,
+        linkLimpo: semProtocolo,
+      };
+    }
     case "x":
       // 280 é o limite da conta gratuita. O X conta qualquer URL como 23
       // caracteres, mas cortar pelo tamanho real só deixa margem — nunca falta.
-      return { texto: cortarPreservandoLink(post.curto ?? post.texto, link, 280), link };
+      return { texto: cortarPreservandoLink(post.curto ?? post.texto, limpo, 280), link };
     case "tiktok":
       return { texto: cortar(`${curto}\n\n${tags}`, 2200), link };
     default:

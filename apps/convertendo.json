@@ -8,10 +8,26 @@
     "destaque": "#1f92e8"
   },
   "recursos": [
-    "Custo real com IOF e spread do seu cartão",
-    "Compara 7 formas de pagamento",
-    "Scanner de etiqueta pela câmera",
-    "Medidas, peso e temperatura offline"
+    {
+      "icone": "dinheiro",
+      "titulo": "Custo real",
+      "descricao": "IOF e spread do seu cartão já embutidos na conta."
+    },
+    {
+      "icone": "cartao",
+      "titulo": "7 formas de pagar",
+      "descricao": "Compara todas e mostra qual sai mais barata."
+    },
+    {
+      "icone": "camera",
+      "titulo": "Scanner de etiqueta",
+      "descricao": "Aponte a câmera para o preço e veja em reais."
+    },
+    {
+      "icone": "regua",
+      "titulo": "Medidas offline",
+      "descricao": "Peso, distância e temperatura sem internet."
+    }
   ],
   "hashtags": [
     "#convertendo",
@@ -29,7 +45,7 @@
     {
       "id": "quanto-em-reais",
       "card": {
-        "titulo": "US$ 149 = quanto em reais?",
+        "titulo": "US$ 149 = *quanto em reais?*",
         "sub": "Com IOF e spread, não a cotação de blog."
       },
       "ganchos": [
@@ -118,7 +134,7 @@
     {
       "id": "scanner-etiqueta",
       "card": {
-        "titulo": "Aponta a câmera na etiqueta",
+        "titulo": "Aponta a câmera *na etiqueta*",
         "sub": "O preço aparece em reais."
       },
       "ganchos": [
@@ -147,7 +163,7 @@
     {
       "id": "so-na-fatura",
       "card": {
-        "titulo": "Descobriu o valor só na fatura?",
+        "titulo": "Descobriu o valor *só na fatura?*",
         "sub": "Não precisa ser assim."
       },
       "ganchos": [
@@ -176,7 +192,7 @@
     {
       "id": "franquia",
       "card": {
-        "titulo": "Quanto dá pra trazer sem imposto?",
+        "titulo": "Quanto dá pra trazer *sem imposto?*",
         "sub": "Franquia alfandegária na prática."
       },
       "ganchos": [
@@ -205,7 +221,7 @@
     {
       "id": "cotacao-nao-e-preco",
       "card": {
-        "titulo": "A cotação não é o que você paga",
+        "titulo": "A cotação *não é o que você paga*",
         "sub": "Comercial, turismo e spread."
       },
       "ganchos": [
@@ -234,7 +250,7 @@
     {
       "id": "medidas",
       "card": {
-        "titulo": "O que ele converte",
+        "titulo": "O que ele *converte*",
         "sub": "Tudo convertido no mesmo app.",
         "layout": "recursos"
       },
@@ -260,6 +276,25 @@
         "Moeda, peso, distância e temperatura: tudo convertido num app, offline. {link}",
         "Todas as conversões da viagem num app só, sem anúncio: {link}"
       ]
+    }
+  ],
+  "tagline": "Seu parceiro ideal em viagens ao exterior",
+  "emblema": [
+    "100%",
+    "GRATUITO"
+  ],
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Abre no navegador"
+    },
+    {
+      "icone": "offline",
+      "titulo": "Funciona offline"
+    },
+    {
+      "icone": "nuvem",
+      "titulo": "Sincroniza"
     }
   ]
 }

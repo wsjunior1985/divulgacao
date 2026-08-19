@@ -8,10 +8,26 @@
     "destaque": "#56b63f"
   },
   "recursos": [
-    "Lembrete na hora certa de cada dose",
-    "Modo Cuidador avisa quem cuida de você",
-    "Controle de estoque da cartela",
-    "Relatório de adesão para a consulta"
+    {
+      "icone": "sino",
+      "titulo": "Lembretes na hora",
+      "descricao": "Alerta antes do horário de cada dose."
+    },
+    {
+      "icone": "pessoas",
+      "titulo": "Modo cuidador",
+      "descricao": "Avisa quem cuida de você quando a dose passa."
+    },
+    {
+      "icone": "pilula",
+      "titulo": "Controle de estoque",
+      "descricao": "Sabe quando a cartela está perto de acabar."
+    },
+    {
+      "icone": "documento",
+      "titulo": "Relatório de adesão",
+      "descricao": "Leve o histórico pronto para a consulta."
+    }
   ],
   "hashtags": [
     "#remedin",
@@ -29,7 +45,7 @@
     {
       "id": "esqueceu",
       "card": {
-        "titulo": "Você tomou o remédio hoje?",
+        "titulo": "Você tomou o remédio *hoje?*",
         "sub": "Se precisou pensar, já é sinal."
       },
       "ganchos": [
@@ -58,7 +74,7 @@
     {
       "id": "cuidador",
       "card": {
-        "titulo": "Modo Cuidador",
+        "titulo": "*Modo Cuidador*",
         "sub": "Você fica sabendo se a dose foi esquecida."
       },
       "ganchos": [
@@ -87,7 +103,7 @@
     {
       "id": "estoque",
       "card": {
-        "titulo": "A cartela acabou no domingo",
+        "titulo": "A cartela acabou *no domingo*",
         "sub": "O Remedin avisa antes."
       },
       "ganchos": [
@@ -116,7 +132,7 @@
     {
       "id": "idoso",
       "card": {
-        "titulo": "A rotina inteira numa tela",
+        "titulo": "A rotina inteira *numa tela*",
         "sub": "Uma rotina que cabe na tela.",
         "layout": "recursos"
       },
@@ -146,7 +162,7 @@
     {
       "id": "relatorio",
       "card": {
-        "titulo": "Leve o histórico na consulta",
+        "titulo": "Leve o histórico *na consulta*",
         "sub": "Relatório de adesão em PDF."
       },
       "ganchos": [
@@ -175,7 +191,7 @@
     {
       "id": "ia",
       "card": {
-        "titulo": "Assistente que entende bula",
+        "titulo": "Assistente que *entende bula*",
         "sub": "Pergunte em português, sem jargão."
       },
       "ganchos": [
@@ -260,6 +276,25 @@
         "Antibiótico de 8/8h? O Remedin monta os horários e avisa em todos, até o fim: {link}",
         "Não pule a dose das 3h: o Remedin avisa em todos os horários do antibiótico: {link}"
       ]
+    }
+  ],
+  "tagline": "Porque cada dose conta",
+  "emblema": [
+    "100%",
+    "GRATUITO"
+  ],
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Instala como app"
+    },
+    {
+      "icone": "relogio",
+      "titulo": "Qualquer intervalo"
+    },
+    {
+      "icone": "pessoas",
+      "titulo": "Modo cuidador"
     }
   ]
 }

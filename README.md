@@ -65,13 +65,38 @@ Cada post vira uma imagem gerada na hora, com a identidade real do app:
   — a publicação usa as já commitadas, então uma captura que falha não derruba
   nada.
 
-Três layouts, escolhidos pelo conteúdo do post:
+O layout padrão é a **vitrine**, com seis elementos fixos:
+
+1. **Marca no topo** — logo em ladrilho arredondado, nome em display e a
+   `tagline` do app. O recorte arredondado existe porque nem todo logo do PWA
+   tem transparência (GASONOL e Vai dar quanto? são PNG opaco): sem ele, o
+   quadrado sólido virava uma caixa preta solta no card.
+2. **Emblema redondo** no canto direito, vindo de `emblema` (ex.: `100% /
+   GRATUITO / SEM ANÚNCIOS`).
+3. **Manchete** com a palavra-chave na cor da marca — marque-a com asteriscos no
+   título: `"Sem balança, *sem tabela*"`. Os asteriscos nunca saem no card nem no
+   texto publicado; o `alt` da imagem é limpo com `semMarcadores`.
+4. **Número em destaque** acima da manchete, quando o post tem `destaque`.
+5. **Os quatro recursos**, cada um com ícone, cor própria, título em caixa alta e
+   descrição. A cor sai de uma rampa puxada 35% para a marca, então as quatro
+   variantes seguem reconhecíveis como do mesmo app.
+6. **Dois aparelhos em perspectiva**, com duas telas reais diferentes, e o
+   **rodapé** com o CTA do domínio e os `selos`.
+
+Quando o título é longo, quem cede é o corpo da manchete (78 → 42), não a lista:
+os quatro recursos são identidade do app e aparecem em todos os 40 cards. Só se
+nem no menor corpo couber é que um recurso sai.
+
+Os layouts anteriores continuam no código como rede de segurança, escolhidos
+quando falta material:
 
 | Layout | Quando é usado | Campo no JSON |
 |---|---|---|
-| `manchete` | padrão: celular + título grande, subtítulo e chips | — |
-| `recursos` | celular + lista com os recursos do app | `"layout": "recursos"` |
-| `destaque` | celular + um número é o argumento (3,38%, 8/8h, 0 MB) | `"destaque": "3,38%"` |
+| `vitrine` | padrão — exige captura e recursos | — |
+| `hero` | há captura, mas o tema não tem recursos | — |
+| `manchete` | sem captura: título grande, subtítulo e chips | `"layout": "classico"` |
+| `recursos` | sem captura, com lista de recursos | `"layout": "recursos"` |
+| `destaque` | sem captura, um número é o argumento | `"destaque": "3,38%"` |
 
 Para conferir sem publicar:
 
@@ -107,8 +132,12 @@ no layout só de texto — a publicação nunca é bloqueada por isso.
 
 ## Mudar o conteúdo
 
-Tudo vive em `apps/<app>.json`: pitch, cores da marca, hashtags e a lista de
-temas. Cada tema é **combinatório** — `ganchos` (aberturas), `corpos`
+Tudo vive em `apps/<app>.json`: `tagline`, cores da marca, `emblema`, `recursos`
+(cada um com `icone`, `titulo` e `descricao`), `selos` do rodapé, hashtags e a
+lista de temas. Os nomes de ícone disponíveis estão em `NOMES_ICONES`, em
+[`scripts/lib/icones.js`](scripts/lib/icones.js) — são traços desenhados na mão
+na mesma grade de 24, porque o resvg não carrega SVG externo nem fonte de ícone.
+ Cada tema é **combinatório** — `ganchos` (aberturas), `corpos`
 (parágrafos), `ctas` (fechos com `{link}`) e `curtos` (versão de 1 linha para
 Bluesky/X) — e o `montarTexto` combina um de cada por enumeração mista, variando
 a cada ciclo completo sem repetir o mesmo texto no ano. O `card`

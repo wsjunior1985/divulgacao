@@ -8,10 +8,26 @@
     "destaque": "#cd46b7"
   },
   "recursos": [
-    "Foto do prato e a IA estima as calorias",
-    "Proteínas, carboidratos e gorduras",
-    "Entende PF, feijoada e açaí",
-    "Meta diária e histórico da semana"
+    {
+      "icone": "camera",
+      "titulo": "Análise por foto",
+      "descricao": "Fotografe o prato e a IA estima as calorias."
+    },
+    {
+      "icone": "grafico",
+      "titulo": "Calorias e macros",
+      "descricao": "Proteínas, carboidratos e gorduras de cada refeição."
+    },
+    {
+      "icone": "lista",
+      "titulo": "Comida brasileira",
+      "descricao": "Entende PF, feijoada e açaí — não só salada."
+    },
+    {
+      "icone": "alvo",
+      "titulo": "Meta diária",
+      "descricao": "Histórico da semana para manter a consistência."
+    }
   ],
   "hashtags": [
     "#aieat",
@@ -59,7 +75,7 @@
     {
       "id": "sem-pesar",
       "card": {
-        "titulo": "Sem balança, sem tabela",
+        "titulo": "Sem balança, *sem tabela*",
         "sub": "Registro em segundos, não em minutos."
       },
       "ganchos": [
@@ -88,7 +104,7 @@
     {
       "id": "padrao-da-semana",
       "card": {
-        "titulo": "O que a sua semana revela",
+        "titulo": "O que a sua semana *revela*",
         "sub": "O padrão aparece no histórico."
       },
       "ganchos": [
@@ -117,7 +133,7 @@
     {
       "id": "meta-diaria",
       "card": {
-        "titulo": "Sua meta, do seu jeito",
+        "titulo": "Sua meta, *do seu jeito*",
         "sub": "Sem plano genérico de revista."
       },
       "ganchos": [
@@ -146,7 +162,7 @@
     {
       "id": "comida-brasileira",
       "card": {
-        "titulo": "Feijoada, PF, açaí",
+        "titulo": "Feijoada, PF, *açaí*",
         "sub": "Comida de verdade, não só salada."
       },
       "ganchos": [
@@ -175,7 +191,7 @@
     {
       "id": "gratis-testar",
       "card": {
-        "titulo": "Testa antes de assinar",
+        "titulo": "Testa *antes de assinar*",
         "sub": "Sem cartão para começar."
       },
       "ganchos": [
@@ -204,7 +220,7 @@
     {
       "id": "fora-de-casa",
       "card": {
-        "titulo": "Comeu fora e não sabe o que contar?",
+        "titulo": "Comeu fora e não sabe *o que contar?*",
         "sub": "Foto resolve."
       },
       "ganchos": [
@@ -233,7 +249,7 @@
     {
       "id": "consistencia",
       "card": {
-        "titulo": "Por que este dura mais",
+        "titulo": "Por que este *dura mais*",
         "sub": "Registro fácil é registro que dura.",
         "layout": "recursos"
       },
@@ -259,6 +275,26 @@
         "Registro fácil é registro que dura. Foto, confere, salva: {link}",
         "Menos atrito, mais hábito. O AI-Eat resume o registro a uma foto: {link}"
       ]
+    }
+  ],
+  "tagline": "Seu nutricionista com IA no bolso",
+  "emblema": [
+    "100%",
+    "GRATUITO",
+    "SEM INSTALAR"
+  ],
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Abre no navegador"
+    },
+    {
+      "icone": "camera",
+      "titulo": "Foto e código"
+    },
+    {
+      "icone": "gota",
+      "titulo": "Hidratação"
     }
   ]
 }

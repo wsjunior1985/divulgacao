@@ -12,7 +12,7 @@
 
 import { carregarEnv, canaisHabilitados, lerJson, gravarJson, agoraBRT, log, ok, aviso, erro, env } from "./lib/base.js";
 import { carregarApps, escolherPauta, indiceDoSlot, montarTexto, idDoPost } from "./lib/conteudo.js";
-import { gerarCard } from "./lib/cards.js";
+import { gerarCard, semMarcadores } from "./lib/cards.js";
 import { publicarMidia } from "./lib/midia.js";
 import * as meta from "./canais/meta.js";
 import * as threads from "./canais/threads.js";
@@ -75,7 +75,7 @@ async function publicarCanal(canal, { textoPorCanal, urlsCard, cardFeed, cardVer
         ...(await bluesky.publicar({
           texto,
           imagensLocais: [cardFeed.relativo],
-          alt: `${app.nome}: ${post.card.titulo}`,
+          alt: `${app.nome}: ${semMarcadores(post.card.titulo)}`,
           link,
           linkLimpo,
         })),

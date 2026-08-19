@@ -1,13 +1,12 @@
 # Calendário de divulgação — 1 ano
 
-Projeção determinística de 365 dias a partir de 2026-08-18. Horários (BRT): 8h, 11h, 14h, 17h, 20h.
+Projeção determinística de 365 dias a partir de 2026-08-19. Horários (BRT): 8h, 11h, 14h, 17h, 20h.
 Seta indica o lado do celular no card (← esquerda, → direita).
 
 ## agosto de 2026
 
 Data | 08h | 11h | 14h | 17h | 20h
 -----|-----|-----|-----|-----|----
-ter., 18 | Remedin · esqueceu ← | AI-Eat · foto-do-prato → | Vai dar quanto? · susto-no-caixa ← | GASONOL · regra-70 → | Convertendo · quanto-em-reais ←
 qua., 19 | Remedin · cuidador → | AI-Eat · sem-pesar ← | Vai dar quanto? · por-voz → | GASONOL · voz-na-bomba ← | Convertendo · iof-338 →
 qui., 20 | Remedin · estoque ← | AI-Eat · padrao-da-semana → | Vai dar quanto? · orcamento ← | GASONOL · preco-limite → | Convertendo · sete-formas ←
 sex., 21 | Remedin · idoso → | AI-Eat · meta-diaria ← | Vai dar quanto? · sem-anuncio → | GASONOL · quanto-economiza ← | Convertendo · scanner-etiqueta →
@@ -432,6 +431,7 @@ sáb., 14 | Remedin · cuidador → | AI-Eat · sem-pesar ← | Vai dar quanto? 
 dom., 15 | Remedin · estoque ← | AI-Eat · padrao-da-semana → | Vai dar quanto? · orcamento ← | GASONOL · preco-limite → | Convertendo · sete-formas ←
 seg., 16 | Remedin · idoso → | AI-Eat · meta-diaria ← | Vai dar quanto? · sem-anuncio → | GASONOL · quanto-economiza ← | Convertendo · scanner-etiqueta →
 ter., 17 | Remedin · relatorio ← | AI-Eat · comida-brasileira → | Vai dar quanto? · fim-do-mes ← | GASONOL · sem-instalar → | Convertendo · so-na-fatura ←
+qua., 18 | Remedin · ia → | AI-Eat · gratis-testar ← | Vai dar quanto? · sem-baixar → | GASONOL · consumo-oficial ← | Convertendo · franquia →
 
 ---
 

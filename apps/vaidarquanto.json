@@ -8,10 +8,26 @@
     "destaque": "#c061d6"
   },
   "recursos": [
-    "Dite os produtos por voz, sem digitar",
-    "Total do carrinho em tempo real",
-    "Orçamento que avisa antes de estourar",
-    "Sem anúncio e sem rastreamento"
+    {
+      "icone": "microfone",
+      "titulo": "Some por voz",
+      "descricao": "Dite os produtos e acompanhe o total sem digitar."
+    },
+    {
+      "icone": "carrinho",
+      "titulo": "Total em tempo real",
+      "descricao": "O carrinho atualiza a cada item que entra."
+    },
+    {
+      "icone": "alvo",
+      "titulo": "Limite de gastos",
+      "descricao": "Defina um teto e receba aviso antes de estourar."
+    },
+    {
+      "icone": "escudo",
+      "titulo": "Sem anúncio",
+      "descricao": "Sem rastreamento — e funciona offline."
+    }
   ],
   "hashtags": [
     "#vaidarquanto",
@@ -29,7 +45,7 @@
     {
       "id": "susto-no-caixa",
       "card": {
-        "titulo": "Chegou no caixa e levou susto?",
+        "titulo": "Chegou no caixa e *levou susto?*",
         "sub": "Saiba o total antes de fechar a conta."
       },
       "ganchos": [
@@ -58,7 +74,7 @@
     {
       "id": "por-voz",
       "card": {
-        "titulo": "Fale, não digite",
+        "titulo": "Fale, *não digite*",
         "sub": "Carrinho cheio, mãos ocupadas."
       },
       "ganchos": [
@@ -87,7 +103,7 @@
     {
       "id": "orcamento",
       "card": {
-        "titulo": "Defina o teto antes de entrar",
+        "titulo": "Defina o teto *antes de entrar*",
         "sub": "E veja quanto ainda cabe."
       },
       "ganchos": [
@@ -116,7 +132,7 @@
     {
       "id": "sem-anuncio",
       "card": {
-        "titulo": "O que ele faz por você",
+        "titulo": "O que ele faz *por você*",
         "sub": "Sua lista de compras é sua.",
         "layout": "recursos"
       },
@@ -146,7 +162,7 @@
     {
       "id": "fim-do-mes",
       "card": {
-        "titulo": "A compra do mês não pode surpreender",
+        "titulo": "A compra do mês *não pode surpreender*",
         "sub": "Total em tempo real, corredor por corredor."
       },
       "ganchos": [
@@ -176,7 +192,7 @@
       "id": "sem-baixar",
       "card": {
         "titulo": "Nada de baixar da loja",
-        "sub": "para baixar: abre direto no navegador.",
+        "sub": "Abre direto no navegador, sem passar por loja.",
         "destaque": "0 MB"
       },
       "ganchos": [
@@ -234,7 +250,7 @@
     {
       "id": "precos-subindo",
       "card": {
-        "titulo": "O preço mudou de novo",
+        "titulo": "O preço mudou *de novo*",
         "sub": "Você percebe na hora, não na fatura."
       },
       "ganchos": [
@@ -259,6 +275,26 @@
         "Veja o que subiu na hora, não na fatura: acompanhe item por item. {link}",
         "Perceba o aumento enquanto compra — e troque antes do caixa. {link}"
       ]
+    }
+  ],
+  "tagline": "Saiba quanto vai gastar antes do caixa",
+  "emblema": [
+    "100%",
+    "GRATUITO",
+    "SEM ANÚNCIOS"
+  ],
+  "selos": [
+    {
+      "icone": "offline",
+      "titulo": "Funciona offline"
+    },
+    {
+      "icone": "celular",
+      "titulo": "Abre no navegador"
+    },
+    {
+      "icone": "pessoas",
+      "titulo": "Compras juntas"
     }
   ]
 }

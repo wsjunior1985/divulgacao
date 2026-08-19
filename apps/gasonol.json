@@ -8,10 +8,26 @@
     "destaque": "#38d080"
   },
   "recursos": [
-    "Consumo oficial do seu carro (INMETRO/PBEV)",
-    "Preço-limite do etanol para o seu modelo",
-    "Fale os preços por voz, sem digitar",
-    "Instala como app e abre offline"
+    {
+      "icone": "carro",
+      "titulo": "Consumo oficial",
+      "descricao": "Dados do INMETRO/PBEV para o seu modelo."
+    },
+    {
+      "icone": "gota",
+      "titulo": "Preço-limite",
+      "descricao": "Até quanto vale a pena abastecer com etanol."
+    },
+    {
+      "icone": "microfone",
+      "titulo": "Comando de voz",
+      "descricao": "Fale os preços da bomba, sem digitar nada."
+    },
+    {
+      "icone": "celular",
+      "titulo": "Instala como app",
+      "descricao": "Abre offline, direto da tela inicial."
+    }
   ],
   "hashtags": [
     "#gasonol",
@@ -59,7 +75,7 @@
     {
       "id": "voz-na-bomba",
       "card": {
-        "titulo": "Sem tirar a mão do volante",
+        "titulo": "Sem tirar a mão *do volante*",
         "sub": "Fale os preços, ele calcula."
       },
       "ganchos": [
@@ -88,7 +104,7 @@
     {
       "id": "preco-limite",
       "card": {
-        "titulo": "Qual o preço-limite do etanol?",
+        "titulo": "Qual o *preço-limite* do etanol?",
         "sub": "Descubra o do seu carro."
       },
       "ganchos": [
@@ -118,7 +134,7 @@
       "id": "quanto-economiza",
       "card": {
         "titulo": "Quanto isso dá no fim do mês?",
-        "sub": "tanques por mês — errar em todos custa caro.",
+        "sub": "Cinco tanques por mês, e errar em todos custa caro.",
         "destaque": "5x"
       },
       "ganchos": [
@@ -147,7 +163,7 @@
     {
       "id": "sem-instalar",
       "card": {
-        "titulo": "Tudo isso, sem baixar nada",
+        "titulo": "Tudo isso, *sem baixar nada*",
         "sub": "Sem baixar, sem cadastro pra testar.",
         "layout": "recursos"
       },
@@ -177,7 +193,7 @@
     {
       "id": "consumo-oficial",
       "card": {
-        "titulo": "O consumo do seu carro, oficial",
+        "titulo": "O consumo do seu carro, *oficial*",
         "sub": "Base INMETRO/PBEV, não estimativa."
       },
       "ganchos": [
@@ -235,7 +251,7 @@
     {
       "id": "indique",
       "card": {
-        "titulo": "Indique e os dois ganham",
+        "titulo": "Indique e *os dois ganham*",
         "sub": "30 dias de Premium para cada um."
       },
       "ganchos": [
@@ -260,6 +276,25 @@
         "Indique o GASONOL e os dois ganham 30 dias de Premium: {link}",
         "Seu amigo ainda usa a regra dos 70%? Indique e os dois ganham 30 dias: {link}"
       ]
+    }
+  ],
+  "tagline": "Gasolina ou etanol? Compare e economize",
+  "emblema": [
+    "100%",
+    "GRATUITO"
+  ],
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Instala como app"
+    },
+    {
+      "icone": "offline",
+      "titulo": "Abre offline"
+    },
+    {
+      "icone": "microfone",
+      "titulo": "Por voz"
     }
   ]
 }

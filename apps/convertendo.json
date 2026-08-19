@@ -279,10 +279,6 @@
     }
   ],
   "tagline": "Seu parceiro ideal em viagens ao exterior",
-  "emblema": [
-    "100%",
-    "GRATUITO"
-  ],
   "selos": [
     {
       "icone": "celular",
@@ -296,5 +292,6 @@
       "icone": "nuvem",
       "titulo": "Sincroniza"
     }
-  ]
+  ],
+  "fonte": "fraunces"
 }

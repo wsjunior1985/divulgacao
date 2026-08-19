@@ -25,8 +25,35 @@ import { paraHex, misturar, escurecer, clarear, textoSobre, contraste } from "./
 import { icone } from "./icones.js";
 
 const FONTES = resolve(RAIZ, "assets/fontes");
-const TITULO = "InterDisplay";
 const CORPO = "Inter";
+
+/**
+ * Fontes de display, uma por app. O rodízio publica um app por slot, então
+ * cinco posts seguidos já saem com cinco tipografias diferentes — a variedade
+ * aparece no feed sem que um mesmo app mude de cara de um post para o outro,
+ * que leria como erro e não como intenção.
+ *
+ * `familia` é o nome que o resvg enxerga (name ID 16, ou ID 1 quando não há):
+ * atenção que a Inter Display se chama "Inter Display", COM espaço. O código
+ * pedia "InterDisplay", que não casa com nada e caía no fallback da Inter de
+ * texto — media com um desenho e desenhava com outro.
+ */
+const DISPLAYS = {
+  inter: { familia: "Inter Display", arquivo: "InterDisplay-ExtraBold.ttf", peso: 800, tracking: -1.8 },
+  sora: { familia: "Sora", arquivo: "Sora-ExtraBold.ttf", peso: 800, tracking: -1.6 },
+  manrope: { familia: "Manrope", arquivo: "Manrope-ExtraBold.ttf", peso: 800, tracking: -1.8 },
+  fraunces: { familia: "Fraunces", arquivo: "Fraunces-Bold.ttf", peso: 700, tracking: -0.6 },
+  grotesk: { familia: "Space Grotesk", arquivo: "SpaceGrotesk-Bold.ttf", peso: 700, tracking: -1.4 },
+  jakarta: { familia: "Plus Jakarta Sans", arquivo: "PlusJakartaSans-ExtraBold.ttf", peso: 800, tracking: -1.8 },
+};
+
+// A fonte da vez. É estado de módulo porque `montarSvg` é síncrono e desenha um
+// card por vez: passar a família por parâmetro obrigaria a atravessá-la por
+// vinte funções de desenho sem nenhum ganho.
+let display = DISPLAYS.inter;
+const usarDisplay = (id) => {
+  display = DISPLAYS[id] ?? DISPLAYS.inter;
+};
 
 export const FORMATOS = {
   feed: { largura: 1080, altura: 1350 },
@@ -101,11 +128,11 @@ function escapar(s) {
 const cacheFonte = new Map();
 
 function carregarFonte(tipo) {
-  if (cacheFonte.has(tipo)) return cacheFonte.get(tipo);
-  const arquivo = tipo === "display" ? "InterDisplay-ExtraBold.ttf" : "Inter-Medium.ttf";
+  const arquivo = tipo === "display" ? display.arquivo : "Inter-Medium.ttf";
+  if (cacheFonte.has(arquivo)) return cacheFonte.get(arquivo);
   const opentype = createRequire(import.meta.url)("opentype.js");
   const fonte = opentype.parse(readFileSync(`${FONTES}/${arquivo}`).buffer);
-  cacheFonte.set(tipo, fonte);
+  cacheFonte.set(arquivo, fonte);
   return fonte;
 }
 
@@ -208,7 +235,12 @@ function normalizarRecursos(lista) {
       : { icone: item.icone ?? "check", titulo: item.titulo ?? null, descricao: item.descricao ?? "" });
 }
 
-/** Fundo comum a todos os layouts: gradiente da marca, brilho e uma grade discreta. */
+/**
+ * Fundo comum a todos os layouts. A barra sólida da marca no topo saiu: um
+ * filete chapado de 8px lia como aviso de sistema, não como acabamento. No
+ * lugar entram um degradê que se apaga na horizontal e uma vinheta que fecha os
+ * cantos — é ela que dá a profundidade que faltava para o card parecer impresso.
+ */
 function fundo(L, A, p) {
   return `
   <defs>
@@ -216,24 +248,34 @@ function fundo(L, A, p) {
       <stop offset="0" stop-color="${p.fundoTopo}"/>
       <stop offset="1" stop-color="${p.fundoBase}"/>
     </linearGradient>
-    <radialGradient id="brilho" cx="0.78" cy="0.06" r="0.75">
-      <stop offset="0" stop-color="${p.marca}" stop-opacity="0.42"/>
-      <stop offset="0.55" stop-color="${p.marca}" stop-opacity="0.08"/>
+    <radialGradient id="brilho" cx="0.74" cy="0.08" r="0.88">
+      <stop offset="0" stop-color="${p.marca}" stop-opacity="0.34"/>
+      <stop offset="0.45" stop-color="${p.marca}" stop-opacity="0.10"/>
       <stop offset="1" stop-color="${p.marca}" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="brilho2" cx="0.1" cy="0.92" r="0.6">
-      <stop offset="0" stop-color="${p.apoio}" stop-opacity="0.16"/>
+    <radialGradient id="brilho2" cx="0.06" cy="0.88" r="0.7">
+      <stop offset="0" stop-color="${p.apoio}" stop-opacity="0.14"/>
       <stop offset="1" stop-color="${p.apoio}" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grade" width="54" height="54" patternUnits="userSpaceOnUse">
-      <path d="M54 0H0V54" fill="none" stroke="#ffffff" stroke-opacity="0.028" stroke-width="1"/>
+    <radialGradient id="vinheta" cx="0.5" cy="0.44" r="0.78">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.42"/>
+    </radialGradient>
+    <linearGradient id="filete" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="${p.marca}" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="${p.marca}" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="${p.marca}" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grade" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#ffffff" stroke-opacity="0.022" stroke-width="1"/>
     </pattern>
   </defs>
   <rect width="${L}" height="${A}" fill="url(#g)"/>
   <rect width="${L}" height="${A}" fill="url(#grade)"/>
   <rect width="${L}" height="${A}" fill="url(#brilho)"/>
   <rect width="${L}" height="${A}" fill="url(#brilho2)"/>
-  <rect x="0" y="0" width="${L}" height="8" fill="${p.marca}"/>`;
+  <rect width="${L}" height="${A}" fill="url(#vinheta)"/>
+  <rect x="0" y="0" width="${L}" height="3" fill="url(#filete)"/>`;
 }
 
 /** Cabeçalho: logo oficial + nome + selo de gratuidade. */
@@ -345,7 +387,7 @@ function layoutManchete({ app, p, L, A, margem, titulo, sub }) {
 
   const blocoTitulo = linhas
     .map((linha, i) =>
-      `<text x="${margem}" y="${primeiraBaseline + i * tamanho * 1.1}" font-family="${TITULO}" font-size="${tamanho}" font-weight="800" letter-spacing="-2" fill="${p.titulo}">${escapar(linha)}</text>`)
+      `<text x="${margem}" y="${primeiraBaseline + i * tamanho * 1.1}" font-family="${display.familia}" font-size="${tamanho}" font-weight="${display.peso}" letter-spacing="-2" fill="${p.titulo}">${escapar(linha)}</text>`)
     .join("\n  ");
 
   const yRegua = primeiraBaseline + (linhas.length - 1) * tamanho * 1.1 + tamanho * 0.42;
@@ -383,7 +425,7 @@ function layoutRecursos({ app, p, L, A, margem, titulo, recursos }) {
 
   const blocoTitulo = linhas
     .map((linha, i) =>
-      `<text x="${margem}" y="${topoTitulo + i * tamanho * 1.12}" font-family="${TITULO}" font-size="${tamanho}" font-weight="800" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
+      `<text x="${margem}" y="${topoTitulo + i * tamanho * 1.12}" font-family="${display.familia}" font-size="${tamanho}" font-weight="${display.peso}" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
     .join("\n  ");
 
   let y = topoTitulo + (linhas.length - 1) * tamanho * 1.12 + 54 + tamanho * 0.3;
@@ -428,7 +470,7 @@ function layoutDestaque({ app, p, L, A, margem, destaque, titulo, sub }) {
 
   const blocoTitulo = linhas
     .map((linha, i) =>
-      `<text x="${margem}" y="${topoTitulo + i * tamanho * 1.12}" font-family="${TITULO}" font-size="${tamanho}" font-weight="800" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
+      `<text x="${margem}" y="${topoTitulo + i * tamanho * 1.12}" font-family="${display.familia}" font-size="${tamanho}" font-weight="${display.peso}" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
     .join("\n  ");
 
   const inicioSub = topoTitulo + (linhas.length - 1) * tamanho * 1.12 + 18 + tamSub * 1.1;
@@ -438,7 +480,7 @@ function layoutDestaque({ app, p, L, A, margem, destaque, titulo, sub }) {
     .join("\n  ");
 
   return `
-  <text x="${margem}" y="${baselineNumero}" font-family="${TITULO}" font-size="${tamNumero}" font-weight="800" letter-spacing="-8" fill="${p.marca}">${escapar(destaque)}</text>
+  <text x="${margem}" y="${baselineNumero}" font-family="${display.familia}" font-size="${tamNumero}" font-weight="${display.peso}" letter-spacing="-8" fill="${p.marca}">${escapar(destaque)}</text>
   <rect x="${margem}" y="${baselineNumero - alturaNumero - 34}" width="88" height="7" rx="3.5" fill="${p.apoio}" fill-opacity="0.55"/>
   ${blocoTitulo}
   ${blocoSub}`;
@@ -590,7 +632,7 @@ function layoutHero(contexto, captura, lado = 0) {
 
   const blocoTitulo = linhas
     .map((linha, i) =>
-      `<text x="${xTexto}" y="${titleTop + i * tamanho * 1.12 + tamanho * 0.82}" font-family="${TITULO}" font-size="${tamanho}" font-weight="800" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
+      `<text x="${xTexto}" y="${titleTop + i * tamanho * 1.12 + tamanho * 0.82}" font-family="${display.familia}" font-size="${tamanho}" font-weight="${display.peso}" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
     .join("\n  ");
 
   const blocoSub = linhasSub
@@ -599,7 +641,7 @@ function layoutHero(contexto, captura, lado = 0) {
     .join("\n  ");
 
   const blocoStat = destaque
-    ? `<text x="${xTexto}" y="${statTop + 66}" font-family="${TITULO}" font-size="72" font-weight="800" letter-spacing="-3" fill="${p.marca}">${escapar(destaque)}</text>
+    ? `<text x="${xTexto}" y="${statTop + 66}" font-family="${display.familia}" font-size="72" font-weight="${display.peso}" letter-spacing="-3" fill="${p.marca}">${escapar(destaque)}</text>
   <rect x="${xTexto}" y="${statTop + 78}" width="88" height="7" rx="3.5" fill="${p.apoio}" fill-opacity="0.55"/>`
     : "";
 
@@ -646,6 +688,10 @@ export const semMarcadores = (texto) => String(texto ?? "").replace(/\*/g, "");
  * palavra destacada encosta na anterior.
  */
 function avanco(texto, tamanho, tipo, espaco) {
+  // O espaço fica fora do tracking negativo do título: as fontes de display têm
+  // espaço estreito, e encolhê-lo ainda mais colava as palavras, que aqui são
+  // posicionadas uma a uma.
+  if (/^\s+$/.test(texto)) return larguraTexto(texto, tamanho, tipo, 0);
   return larguraTexto(texto, tamanho, tipo, espaco);
 }
 
@@ -687,7 +733,7 @@ function ajustarTituloRico(texto, larguraMax, inicial, minimo, maxLinhas, espaco
 }
 
 function desenharRico(linhas, x, primeiraBaseline, tamanho, entrelinha, opcoes = {}) {
-  const { fonte = TITULO, peso = 800, espaco = -2, cor = "#ffffff", corDestaque = "#ffffff" } = opcoes;
+  const { fonte = display.familia, peso = display.peso, espaco = -2, cor = "#ffffff", corDestaque = "#ffffff" } = opcoes;
   return linhas
     .map((linha, i) => {
       let cx = x;
@@ -704,71 +750,34 @@ function desenharRico(linhas, x, primeiraBaseline, tamanho, entrelinha, opcoes =
     .join("\n  ");
 }
 
-/** Selo redondo do canto superior direito ("100% GRATUITO / SEM CADASTRO"). */
-function emblema(p, cx, cy, r, linhas) {
-  if (!linhas?.length) return "";
-
-  // A pilha é medida antes de desenhar: estrela, primeira linha em corpo grande
-  // e as demais em corpo pequeno. Posicionar por fórmula fixa fazia o "100%"
-  // subir por cima da estrela quando o selo tinha só duas linhas.
-  const alturaEstrela = 26;
-  const tamPrimeira = linhas.length > 2 ? 36 : 40;
-  const tamDemais = 21;
-  const alturaTexto = tamPrimeira * 1.04 + (linhas.length - 1) * tamDemais * 1.24;
-  const total = alturaEstrela + 10 + alturaTexto;
-
-  let cursor = cy - total / 2;
-  const estrela = icone("estrela", { x: cx - alturaEstrela / 2, y: cursor, tamanho: alturaEstrela, cor: "#ffffff", peso: 2.2 });
-  cursor += alturaEstrela + 10;
-
-  const corpo = linhas.map((t, i) => {
-    const y = cursor + (i === 0 ? tamPrimeira * 0.8 : tamPrimeira * 1.04 + (i - 1) * tamDemais * 1.24 + tamDemais * 0.86);
-    const espaco = i === 0 ? -1 : 0.6;
-
-    // O texto tem de caber na CORDA do círculo naquela altura, não na largura
-    // total: a última linha ("SEM INSTALAR") fica longe do centro, onde o
-    // círculo já é bem mais estreito, e encostava no anel.
-    const dy = Math.min(Math.abs(y - tamDemais * 0.32 - cy), r - 12);
-    const corda = 2 * Math.sqrt(Math.max((r - 14) ** 2 - dy ** 2, 1)) * 0.98;
-    let tam = i === 0 ? tamPrimeira : tamDemais;
-    while (tam > 11 && larguraTexto(t, tam, i === 0 ? "display" : "corpo", espaco) > corda) tam -= 1;
-
-    return `<text x="${cx}" y="${y}" text-anchor="middle" font-family="${i === 0 ? TITULO : CORPO}" font-size="${tam}" font-weight="${i === 0 ? 800 : 600}" letter-spacing="${espaco}" fill="#ffffff">${escapar(t)}</text>`;
-  });
-
-  return `
-  <g>
-    <defs>
-      <linearGradient id="emblema" x1="0" y1="0" x2="0.6" y2="1">
-        <stop offset="0" stop-color="${clarear(p.marca, 0.22)}"/>
-        <stop offset="1" stop-color="${escurecer(p.marca, 0.18)}"/>
-      </linearGradient>
-    </defs>
-    <circle cx="${cx}" cy="${cy}" r="${r + 9}" fill="${p.marca}" fill-opacity="0.16"/>
-    <circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#emblema)"/>
-    <circle cx="${cx}" cy="${cy}" r="${r - 8}" fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="1.6"/>
-    ${estrela}
-    ${corpo.join("\n    ")}
-  </g>`;
-}
-
-/** Marca no topo: logo grande, nome em display e a tagline do app. */
+/**
+ * Marca no topo. Com o selo de "100% gratuito" fora, a faixa inteira ficou para
+ * a identidade: ladrilho maior, nome no maior corpo que couber e tagline com
+ * entressombra própria. É o nome do app que precisa ser lido primeiro.
+ */
 function cabecalhoVitrine(app, p, margem, larguraMax) {
   const logo = logoBase64(app);
-  const lado = 126;
-  const xTexto = margem + lado + 30;
+  const lado = 156;
+  const xTexto = margem + lado + 34;
+  const disponivel = larguraMax - lado - 34;
   const tagline = app.tagline ? String(app.tagline).toUpperCase() : "";
 
-  let tamNome = 64;
-  while (tamNome > 38 && larguraTexto(app.nome, tamNome, "display") > larguraMax - lado - 30) tamNome -= 2;
+  let tamNome = 92;
+  while (tamNome > 44 && larguraTexto(app.nome, tamNome, "display", -3) > disponivel) tamNome -= 2;
 
-  const TRACKING_TAG = 2.6;
-  const linhasTag = tagline
-    ? quebrar(tagline, larguraMax - lado - 30, 22, "corpo", TRACKING_TAG).slice(0, 2)
-    : [];
+  const TRACKING_TAG = 3.4;
+  const tamTag = 25;
+  const linhasTag = tagline ? quebrar(tagline, disponivel, tamTag, "corpo", TRACKING_TAG).slice(0, 2) : [];
+
+  // O bloco de texto é centrado na altura do ladrilho, para o nome não flutuar
+  // acima do logo quando a tagline ocupa só uma linha.
+  const alturaTexto = tamNome * 0.74 + (linhasTag.length ? 18 + linhasTag.length * 30 : 0);
+  const topoTexto = margem + (lado - alturaTexto) / 2;
+  const baseNome = topoTexto + tamNome * 0.74;
+
   const blocoTag = linhasTag
     .map((linha, i) =>
-      `<text x="${xTexto}" y="${margem + 96 + i * 28}" font-family="${CORPO}" font-size="22" font-weight="600" letter-spacing="${TRACKING_TAG}" fill="${p.apoio}">${escapar(linha)}</text>`)
+      `<text x="${xTexto}" y="${baseNome + 18 + 22 + i * 30}" font-family="${CORPO}" font-size="${tamTag}" font-weight="500" letter-spacing="${TRACKING_TAG}" fill="${p.apoio}" fill-opacity="0.88">${escapar(linha)}</text>`)
     .join("\n    ");
 
   // Nem todo logo do PWA vem com transparência — o do GASONOL e o do Vai dar
@@ -778,54 +787,79 @@ function cabecalhoVitrine(app, p, margem, larguraMax) {
   <g>
     <defs>
       <clipPath id="logo-${app.id}">
-        <rect x="${margem}" y="${margem}" width="${lado}" height="${lado}" rx="28"/>
+        <rect x="${margem}" y="${margem}" width="${lado}" height="${lado}" rx="36"/>
       </clipPath>
+      <linearGradient id="brilho-logo" x1="0" y1="0" x2="0.4" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+        <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+      </linearGradient>
     </defs>
-    <rect x="${margem - 8}" y="${margem - 8}" width="${lado + 16}" height="${lado + 16}" rx="34" fill="#ffffff" fill-opacity="0.07"/>
+    <rect x="${margem + 6}" y="${margem + 12}" width="${lado}" height="${lado}" rx="36" fill="#000000" fill-opacity="0.30"/>
     <image href="${logo}" x="${margem}" y="${margem}" width="${lado}" height="${lado}" preserveAspectRatio="xMidYMid meet" clip-path="url(#logo-${app.id})"/>
-    <text x="${xTexto}" y="${margem + (linhasTag.length ? 58 : 78)}" font-family="${TITULO}" font-size="${tamNome}" font-weight="800" letter-spacing="-1.5" fill="${p.titulo}">${escapar(app.nome)}</text>
+    <rect x="${margem}" y="${margem}" width="${lado}" height="${lado}" rx="36" fill="url(#brilho-logo)"/>
+    <rect x="${margem + 0.75}" y="${margem + 0.75}" width="${lado - 1.5}" height="${lado - 1.5}" rx="35" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
+    <text x="${xTexto}" y="${baseNome}" font-family="${display.familia}" font-size="${tamNome}" font-weight="${display.peso}" letter-spacing="-3" fill="${p.titulo}">${escapar(app.nome)}</text>
     ${blocoTag}
   </g>`;
 }
+
+const ALTURA_CABECALHO = 156;
 
 /**
  * Dois aparelhos sobrepostos e levemente girados. O de trás é menor, sem brilho
  * e com sombra fraca — é o que cria profundidade sem competir com o da frente.
  */
-// Proporções da pilha, num só lugar porque o layout precisa delas para calcular
-// a caixa que os dois aparelhos ocupam antes de saber onde centralizá-los.
-const PILHA = { escalaFundo: 0.78, desvioX: 0.46, desvioY: 0.22, meiaCaixa: 0.53 };
+// Arranjos da pilha, escolhidos pela variação do slot (0, 1, 2) — o mesmo
+// índice que já decide qual captura entra. Sem isso, os 40 cards repetiam a
+// mesma composição de aparelhos e o feed ficava monótono.
+//
+// `meiaCaixa` é a metade da largura do aparelho já com moldura e giro (0,53 da
+// largura da tela). É o que permite medir a caixa da pilha antes de desenhar.
+const MEIA_CAIXA = 0.53;
 
-/** Largura total que a pilha ocupa, em múltiplos da largura do aparelho da frente. */
-const larguraDaPilha = (dois) =>
-  dois
-    ? PILHA.meiaCaixa + PILHA.desvioX + PILHA.escalaFundo * PILHA.meiaCaixa
-    : PILHA.meiaCaixa * 2;
+const ARRANJOS = [
+  // dois aparelhos, o de trás subindo à direita
+  { dois: true, escala: 0.78, desvioX: 0.44, desvioY: -0.20, giroFrente: -3, giroFundo: 9 },
+  // um só, maior e quase reto — dá respiro entre os cards com dois
+  { dois: false, escala: 1, desvioX: 0, desvioY: 0, giroFrente: -2, giroFundo: 0 },
+  // dois aparelhos, o de trás descendo à direita
+  { dois: true, escala: 0.76, desvioX: 0.42, desvioY: 0.22, giroFrente: 3, giroFundo: -8 },
+];
 
-/** Deslocamento do centro da pilha em relação ao centro do aparelho da frente. */
-const centroDaPilha = (dois) =>
-  dois ? (PILHA.desvioX + PILHA.escalaFundo * PILHA.meiaCaixa - PILHA.meiaCaixa) / 2 : 0;
+const arranjoDaVez = (variacao, temDois) => {
+  const a = ARRANJOS[((variacao ?? 0) % ARRANJOS.length + ARRANJOS.length) % ARRANJOS.length];
+  return a.dois && !temDois ? ARRANJOS[1] : a;
+};
 
-function pilhaTelefones(app, p, capturas, cx, cy, largura) {
+/** Largura da caixa da pilha, em múltiplos da largura do aparelho da frente. */
+const larguraDaPilha = (a) =>
+  a.dois ? MEIA_CAIXA + a.desvioX + a.escala * MEIA_CAIXA : MEIA_CAIXA * 2;
+
+/** Altura da caixa da pilha, em múltiplos da ALTURA do aparelho da frente. */
+const alturaDaPilha = (a) =>
+  a.dois ? Math.max(1, 0.5 + Math.abs(a.desvioY) / ASPECTO_TELA + a.escala * 0.5) : 1;
+
+/** Deslocamento do centro da caixa em relação ao centro do aparelho da frente. */
+const centroDaPilha = (a) =>
+  a.dois ? (a.desvioX + a.escala * MEIA_CAIXA - MEIA_CAIXA) / 2 : 0;
+
+function pilhaTelefones(app, p, capturas, cx, cy, largura, a) {
   if (!capturas.length) return "";
-  const pwFrente = largura;
-  const pwFundo = Math.round(largura * PILHA.escalaFundo);
 
-  const fundo = capturas[1]
-    ? telefone(app, p, capturas[1], cx + largura * PILHA.desvioX, cy - largura * PILHA.desvioY, pwFundo, {
-        sufixo: "-b",
-        rotacao: 9,
-        sombra: 0.55,
-        brilho: 0,
-      })
-    : "";
+  const fundo =
+    a.dois && capturas[1]
+      ? telefone(app, p, capturas[1], cx + largura * a.desvioX, cy + largura * a.desvioY, Math.round(largura * a.escala), {
+          sufixo: "-b",
+          rotacao: a.giroFundo,
+          sombra: 0.55,
+          brilho: 0,
+        })
+      : "";
 
-  const frente = telefone(app, p, capturas[0], cx, cy, pwFrente, { sufixo: "-a", rotacao: -3 });
+  const frente = telefone(app, p, capturas[0], cx, cy, largura, { sufixo: "-a", rotacao: a.giroFrente });
   return `${fundo}\n  ${frente}`;
 }
 
-// Respiro entre um recurso e o próximo. Em 40 o quarto item era descartado por
-// 34px numa região de 816 — 30 mantém a fileira de quatro, como nas referências.
 const ALTURA_ITEM_BASE = 30;
 
 /** Mede a lista de recursos sem desenhar — o layout precisa da altura antes. */
@@ -850,7 +884,7 @@ function listaRecursos(p, x, y, largura, lista, tamTitulo, tamDesc) {
       const cyIcone = topo + r;
 
       const titulo = item.titulo
-        ? `<text x="92" y="${r + tamTitulo * 0.36}" font-family="${TITULO}" font-size="${tamTitulo}" font-weight="800" letter-spacing="0.2" fill="${p.titulo}">${escapar(String(item.titulo).toUpperCase())}</text>`
+        ? `<text x="92" y="${r + tamTitulo * 0.36}" font-family="${display.familia}" font-size="${tamTitulo}" font-weight="${display.peso}" letter-spacing="0.2" fill="${p.titulo}">${escapar(String(item.titulo).toUpperCase())}</text>`
         : "";
       const yDesc = (item.titulo ? r + tamTitulo * 0.36 + tamDesc * 1.24 : r + tamDesc * 0.34);
       const desc = linhasDesc
@@ -858,9 +892,19 @@ function listaRecursos(p, x, y, largura, lista, tamTitulo, tamDesc) {
           `<text x="92" y="${yDesc + j * tamDesc * 1.3}" font-family="${CORPO}" font-size="${tamDesc}" font-weight="400" fill="${p.apoio}">${escapar(linha)}</text>`)
         .join("\n      ");
 
+      // Disco com degradê e aro claro no lugar do preenchimento chapado: é o
+      // que faz o ícone parecer botão em relevo, e não adesivo colado.
       const g = `<g transform="translate(${x}, ${topo})">
-      <circle cx="${r}" cy="${r}" r="${r + 7}" fill="${cor}" fill-opacity="0.18"/>
-      <circle cx="${r}" cy="${r}" r="${r}" fill="${cor}"/>
+      <defs>
+        <linearGradient id="ac-${i}" x1="0" y1="0" x2="0.5" y2="1">
+          <stop offset="0" stop-color="${clarear(cor, 0.26)}"/>
+          <stop offset="1" stop-color="${escurecer(cor, 0.16)}"/>
+        </linearGradient>
+      </defs>
+      <circle cx="${r}" cy="${r}" r="${r + 8}" fill="${cor}" fill-opacity="0.14"/>
+      <circle cx="${r}" cy="${r + 2}" r="${r}" fill="#000000" fill-opacity="0.28"/>
+      <circle cx="${r}" cy="${r}" r="${r}" fill="url(#ac-${i})"/>
+      <circle cx="${r}" cy="${r}" r="${r - 0.8}" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.6"/>
       ${icone(item.icone, { x: r - 17, y: r - 17, tamanho: 34, cor: "#ffffff", peso: 2 })}
       ${titulo}
       ${desc}
@@ -923,12 +967,12 @@ function rodapeVitrine(app, p, L, A, margem) {
   </g>`;
 }
 
-function layoutVitrine(contexto, capturas) {
+function layoutVitrine(contexto, capturas, variacao = 0) {
   const { app, p, L, A, margem, titulo, sub, destaque } = contexto;
   const util = L - margem * 2;
   const recursos = normalizarRecursos(contexto.recursos);
 
-  const topo = margem + 126 + 66;
+  const topo = margem + ALTURA_CABECALHO + 56;
   const base = A - margem - ALTURA_RODAPE_VITRINE - 56;
   const alturaRegiao = base - topo;
 
@@ -941,7 +985,7 @@ function layoutVitrine(contexto, capturas) {
   const tamDestaque = destaque ? 86 : 0;
   const alturaDestaque = destaque ? tamDestaque * 0.92 : 0;
 
-  const espacoTitulo = -1.8;
+  const espacoTitulo = display.tracking;
   const tamSub = 27;
   const linhasSub = sub ? quebrar(semMarcadores(sub), colunaTexto, tamSub, "corpo").slice(0, 2) : [];
   const alturaSub = linhasSub.length ? linhasSub.length * tamSub * 1.3 + 22 : 0;
@@ -986,7 +1030,7 @@ function layoutVitrine(contexto, capturas) {
   const yTexto = topo + Math.max(0, (alturaRegiao - alturaBloco) / 2);
 
   const blocoDestaque = destaque
-    ? `<text x="${margem}" y="${yTexto + tamDestaque * 0.74}" font-family="${TITULO}" font-size="${tamDestaque}" font-weight="800" letter-spacing="-4" fill="${p.marca}">${escapar(destaque)}</text>`
+    ? `<text x="${margem}" y="${yTexto + tamDestaque * 0.74}" font-family="${display.familia}" font-size="${tamDestaque}" font-weight="${display.peso}" letter-spacing="-4" fill="${p.marca}">${escapar(destaque)}</text>`
     : "";
 
   const yTitulo = yTexto + alturaDestaque;
@@ -1006,19 +1050,21 @@ function layoutVitrine(contexto, capturas) {
   const blocoLista = listaRecursos(p, margem, yLista, colunaTexto, lista, tamTituloItem, tamDescItem);
 
   // Celulares: centralizados na coluna da direita, com folga para o giro.
-  // A pilha é dimensionada pelos dois limites ao mesmo tempo: a faixa que sobra
-  // à direita (deixando 20px de sangria na borda) e a altura da região. Antes
-  // saía pelo maior dos dois e o aparelho de trás terminava fora do quadro.
-  const dois = capturas.length > 1;
-  const faixaX = L + 20 - (margem + colunaTexto + gap);
+  // A pilha cabe inteira dentro da margem direita — nada de sangrar na borda,
+  // que era o que fazia o aparelho parecer cortado pelo card. Os dois limites
+  // valem ao mesmo tempo: a faixa livre à direita e a altura da região.
+  const arranjo = arranjoDaVez(variacao, capturas.length > 1);
+  const faixaX = L - margem - (margem + colunaTexto + gap);
   const larguraFone = Math.floor(
-    Math.min(faixaX / larguraDaPilha(dois), (alturaRegiao * 0.88) / ASPECTO_TELA));
+    Math.min(
+      faixaX / larguraDaPilha(arranjo),
+      (alturaRegiao * 0.94) / (ASPECTO_TELA * alturaDaPilha(arranjo))));
   // Centraliza a caixa da pilha na faixa, e não o aparelho da frente.
   const centroFaixa = margem + colunaTexto + gap + faixaX / 2;
-  const cxFone = Math.round(centroFaixa - centroDaPilha(dois) * larguraFone);
-  const cyFone = topo + alturaRegiao / 2 + larguraFone * PILHA.desvioY * 0.5;
+  const cxFone = Math.round(centroFaixa - centroDaPilha(arranjo) * larguraFone);
+  const cyFone = topo + alturaRegiao / 2 - (larguraFone * arranjo.desvioY) / 2;
 
-  return `${pilhaTelefones(app, p, capturas, cxFone, cyFone, larguraFone)}
+  return `${pilhaTelefones(app, p, capturas, cxFone, cyFone, larguraFone, arranjo)}
   ${blocoDestaque}
   ${blocoTitulo}
   ${blocoSub}
@@ -1026,6 +1072,7 @@ function layoutVitrine(contexto, capturas) {
 }
 
 export function montarSvg({ app, post, formato = "feed", variacao = 0, lado = 0 }) {
+  usarDisplay(app.fonte);
   const { largura: L, altura: A } = FORMATOS[formato] ?? FORMATOS.feed;
   const p = paleta(app);
   const margem = Math.round(L * 0.082);
@@ -1052,12 +1099,10 @@ export function montarSvg({ app, post, formato = "feed", variacao = 0, lado = 0 
 
   if (usaVitrine) {
     const capturas = capturasBase64(app, variacao, 2);
-    const raioEmblema = 76;
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${L}" height="${A}" viewBox="0 0 ${L} ${A}">
   ${fundo(L, A, p)}
-  ${cabecalhoVitrine(app, p, margem, L - margem * 2 - (app.emblema?.length ? raioEmblema * 2 + 40 : 0))}
-  ${emblema(p, L - margem - raioEmblema, margem + raioEmblema, raioEmblema, app.emblema)}
-  ${layoutVitrine(contexto, capturas)}
+  ${cabecalhoVitrine(app, p, margem, L - margem * 2)}
+  ${layoutVitrine(contexto, capturas, variacao)}
   ${rodapeVitrine(app, p, L, A, margem)}
 </svg>`;
   }
@@ -1090,13 +1135,11 @@ export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub
   const resvg = new Resvg(svg, {
     fitTo: { mode: "width", value: FORMATOS[formato]?.largura ?? 1080 },
     font: {
-      fontFiles: [
-        `${FONTES}/Inter-Regular.ttf`,
-        `${FONTES}/Inter-Medium.ttf`,
-        `${FONTES}/Inter-SemiBold.ttf`,
-        `${FONTES}/InterDisplay-Bold.ttf`,
-        `${FONTES}/InterDisplay-ExtraBold.ttf`,
-      ],
+      // Lista o diretório em vez de enumerar: cada app traz a sua display, e
+      // esquecer um arquivo aqui não daria erro — cairia calado no fallback.
+      fontFiles: readdirSync(FONTES)
+        .filter((f) => /\.(ttf|otf)$/i.test(f))
+        .map((f) => `${FONTES}/${f}`),
       loadSystemFonts: false,
       defaultFontFamily: CORPO,
     },

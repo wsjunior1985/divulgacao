@@ -278,11 +278,6 @@
     }
   ],
   "tagline": "Seu nutricionista com IA no bolso",
-  "emblema": [
-    "100%",
-    "GRATUITO",
-    "SEM INSTALAR"
-  ],
   "selos": [
     {
       "icone": "celular",
@@ -296,5 +291,6 @@
       "icone": "gota",
       "titulo": "Hidratação"
     }
-  ]
+  ],
+  "fonte": "sora"
 }

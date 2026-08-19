@@ -53,10 +53,21 @@ Cada post vira uma imagem gerada na hora, com a identidade real do app:
 - **Paleta da marca**, convertida do `index.css` de cada app — os projetos
   declaram cor em `oklch` e o `lib/cor.js` traduz para sRGB. Nenhuma cor é
   escolhida no olho, e o contraste do texto é verificado.
-- **Tipografia embarcada** (Inter, licença OFL, em `assets/fontes/`). O
-  renderizador recebe os arquivos da fonte, então o card sai idêntico no seu
-  Mac e no runner do GitHub. Antes disso o resultado mudava de máquina para
-  máquina — Helvetica de um lado, DejaVu do outro.
+- **Tipografia embarcada** (licença OFL, em `assets/fontes/`). O renderizador
+  recebe os arquivos da fonte, então o card sai idêntico no seu Mac e no runner
+  do GitHub. Antes disso o resultado mudava de máquina para máquina — Helvetica
+  de um lado, DejaVu do outro.
+- **Uma fonte de display por app**, no campo `fonte`: Sora no AI-Eat, Manrope no
+  Remedin, Fraunces no Convertendo, Space Grotesk no GASONOL e Plus Jakarta Sans
+  no Vai dar quanto?. Como o rodízio publica um app por slot, cinco posts
+  seguidos saem com cinco tipografias diferentes — a variedade aparece no feed
+  sem que um mesmo app mude de cara de um post para o outro. A Inter continua no
+  corpo, nas descrições e no rodapé.
+
+  > O nome da família precisa ser o que o renderizador enxerga (name ID 16, ou
+  > ID 1 quando não há). A Inter Display se chama `Inter Display`, com espaço —
+  > o código pedia `InterDisplay`, que não casava com nada e caía calado no
+  > fallback: media com um desenho e imprimia com outro.
 - **Largura medida no arquivo da fonte** (opentype.js), não estimada: é o que
   garante que o título nunca vaze a margem.
 - **Hero com o app real**: um mockup de celular mostra uma **captura da tela
@@ -65,23 +76,23 @@ Cada post vira uma imagem gerada na hora, com a identidade real do app:
   — a publicação usa as já commitadas, então uma captura que falha não derruba
   nada.
 
-O layout padrão é a **vitrine**, com seis elementos fixos:
+O layout padrão é a **vitrine**, com cinco elementos fixos:
 
-1. **Marca no topo** — logo em ladrilho arredondado, nome em display e a
-   `tagline` do app. O recorte arredondado existe porque nem todo logo do PWA
-   tem transparência (GASONOL e Vai dar quanto? são PNG opaco): sem ele, o
-   quadrado sólido virava uma caixa preta solta no card.
-2. **Emblema redondo** no canto direito, vindo de `emblema` (ex.: `100% /
-   GRATUITO / SEM ANÚNCIOS`).
-3. **Manchete** com a palavra-chave na cor da marca — marque-a com asteriscos no
+1. **Marca no topo** — logo em ladrilho arredondado, nome no maior corpo que
+   couber e a `tagline` do app. O recorte arredondado existe porque nem todo
+   logo do PWA tem transparência (GASONOL e Vai dar quanto? são PNG opaco): sem
+   ele, o quadrado sólido virava uma caixa preta solta no card.
+2. **Manchete** com a palavra-chave na cor da marca — marque-a com asteriscos no
    título: `"Sem balança, *sem tabela*"`. Os asteriscos nunca saem no card nem no
    texto publicado; o `alt` da imagem é limpo com `semMarcadores`.
-4. **Número em destaque** acima da manchete, quando o post tem `destaque`.
-5. **Os quatro recursos**, cada um com ícone, cor própria, título em caixa alta e
+3. **Número em destaque** acima da manchete, quando o post tem `destaque`.
+4. **Os quatro recursos**, cada um com ícone, cor própria, título em caixa alta e
    descrição. A cor sai de uma rampa puxada 35% para a marca, então as quatro
    variantes seguem reconhecíveis como do mesmo app.
-6. **Dois aparelhos em perspectiva**, com duas telas reais diferentes, e o
-   **rodapé** com o CTA do domínio e os `selos`.
+5. **Os aparelhos** e o **rodapé** com o CTA do domínio e os `selos`. A pilha
+   tem três arranjos (dois aparelhos subindo, um só maior, dois descendo),
+   escolhidos pela variação do slot — sem isso os 40 cards repetiam a mesma
+   composição. Ela cabe inteira dentro da margem: nada sangra na borda.
 
 Quando o título é longo, quem cede é o corpo da manchete (78 → 42), não a lista:
 os quatro recursos são identidade do app e aparecem em todos os 40 cards. Só se

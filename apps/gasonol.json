@@ -279,10 +279,6 @@
     }
   ],
   "tagline": "Gasolina ou etanol? Compare e economize",
-  "emblema": [
-    "100%",
-    "GRATUITO"
-  ],
   "selos": [
     {
       "icone": "celular",
@@ -296,5 +292,6 @@
       "icone": "microfone",
       "titulo": "Por voz"
     }
-  ]
+  ],
+  "fonte": "grotesk"
 }

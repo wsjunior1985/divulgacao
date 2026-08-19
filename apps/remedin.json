@@ -279,10 +279,6 @@
     }
   ],
   "tagline": "Porque cada dose conta",
-  "emblema": [
-    "100%",
-    "GRATUITO"
-  ],
   "selos": [
     {
       "icone": "celular",
@@ -296,5 +292,6 @@
       "icone": "pessoas",
       "titulo": "Modo cuidador"
     }
-  ]
+  ],
+  "fonte": "manrope"
 }

@@ -278,11 +278,6 @@
     }
   ],
   "tagline": "Saiba quanto vai gastar antes do caixa",
-  "emblema": [
-    "100%",
-    "GRATUITO",
-    "SEM ANÚNCIOS"
-  ],
   "selos": [
     {
       "icone": "offline",
@@ -296,5 +291,6 @@
       "icone": "pessoas",
       "titulo": "Compras juntas"
     }
-  ]
+  ],
+  "fonte": "jakarta"
 }

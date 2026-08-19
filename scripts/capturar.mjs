@@ -47,11 +47,19 @@ const LOCALSTORAGE_PRE = {
 // passo é uma captura diferente.
 // ---------------------------------------------------------------------------
 
+// Fiat 500: tem consumo de etanol E de gasolina no PBEV (8 e 11,4 km/l). O
+// modelo escolhido antes, o primeiro da Volkswagen, marcava etanol 0 km/l — e o
+// card saía anunciando "limite 0,0%", que não diz nada a ninguém.
+//
+// Marca e modelo por rótulo, para não depender da ordem da lista; o ano segue
+// por índice porque a lista muda conforme o modelo. Cuidado ao trocar: rótulos
+// genéricos como "UNO" ou "ARGO" existem no select mas não habilitam o botão de
+// confirmar — só as variantes com motorização têm ficha no PBEV.
 async function escolherVeiculo(page) {
   const sels = page.locator("select");
-  await sels.nth(0).selectOption({ label: "VOLKSWAGEN" });
+  await sels.nth(0).selectOption({ label: "FIAT" });
   await page.waitForTimeout(1200);
-  await sels.nth(1).selectOption({ index: 1 });
+  await sels.nth(1).selectOption({ label: "500" });
   await page.waitForTimeout(1200);
   await sels.nth(2).selectOption({ index: 1 });
   await page.waitForTimeout(800);
@@ -64,6 +72,44 @@ async function preencherPrecos(page, gasolina, etanol) {
   await inputs.nth(0).fill(gasolina);
   await inputs.nth(1).fill(etanol);
   await page.waitForTimeout(1800);
+}
+
+/**
+ * Assim que os dois preços entram, o app abre sozinho a folha de resultado.
+ * Fechá-la deixa a calculadora com valores de verdade — que é o que vende o
+ * app. Antes o card mostrava R$ 0,00 nos dois campos, porque a calculadora era
+ * fotografada logo depois de escolher o veículo.
+ */
+async function fecharResultado(page) {
+  await page.keyboard.press("Escape").catch(() => {});
+  await page.waitForTimeout(900);
+}
+
+/** Reabre a folha mexendo de novo no preço do etanol. */
+async function reabrirResultado(page) {
+  const etanol = page.locator('input[placeholder="0,00"]').nth(1);
+  await etanol.fill("");
+  await page.waitForTimeout(400);
+  await etanol.fill("3,59");
+  await page.waitForTimeout(1800);
+  await apagarCortina(page);
+}
+
+/**
+ * A folha de resultado vem sobre um véu que escurece 65% e desfoca a tela
+ * inteira. No app isso dá profundidade; no card, com o celular reduzido a um
+ * terço da largura, vira uma mancha borrada com um retângulo laranja no pé.
+ * Some só com o véu — a folha e o resto da interface continuam como são.
+ */
+async function apagarCortina(page) {
+  await page.addStyleTag({
+    content: `.fixed.inset-0.z-50.backdrop-blur-sm {
+      background: transparent !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }`,
+  }).catch(() => {});
+  await page.waitForTimeout(250);
 }
 
 // Overlays de dica/onboarding que estragam o card: janelas de "Como usar?",
@@ -106,8 +152,15 @@ const APPS = [
     loginUrl: "/login",
     telas: [
       { nome: "seletor", url: "/app" },
-      { nome: "calculadora", preparar: escolherVeiculo },
-      { nome: "resultado", preparar: (page) => preencherPrecos(page, "5,49", "3,59") },
+      {
+        nome: "calculadora",
+        preparar: async (page) => {
+          await escolherVeiculo(page);
+          await preencherPrecos(page, "5,49", "3,59");
+          await fecharResultado(page);
+        },
+      },
+      { nome: "resultado", preparar: reabrirResultado },
     ],
   },
   {

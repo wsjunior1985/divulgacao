@@ -405,7 +405,7 @@ function layoutManchete({ app, p, L, A, margem, titulo, sub }) {
 
 function layoutRecursos({ app, p, L, A, margem, titulo, recursos }) {
   const util = L - margem * 2;
-  const { tamanho, linhas } = ajustarTitulo(titulo, util, 82, 48, 3);
+  const { tamanho, linhas } = ajustarTitulo(titulo, util, 60, 48, 3);
   // Estes layouts são de uma linha por recurso: do formato rico aproveitam a
   // descrição, que é a frase completa.
   const lista = textoDosRecursos(recursos).slice(0, 4);
@@ -425,7 +425,7 @@ function layoutRecursos({ app, p, L, A, margem, titulo, recursos }) {
 
   const blocoTitulo = linhas
     .map((linha, i) =>
-      `<text x="${margem}" y="${topoTitulo + i * tamanho * 1.12}" font-family="${display.familia}" font-size="${tamanho}" font-weight="${display.peso}" letter-spacing="-1.5" fill="${p.titulo}">${escapar(linha)}</text>`)
+      `<text x="${margem}" y="${topoTitulo + i * tamanho * 1.12}" font-family="${display.familia}" font-size="${tamanho}" font-weight="700" letter-spacing="-0.8" fill="${p.titulo}">${escapar(linha)}</text>`)
     .join("\n  ");
 
   let y = topoTitulo + (linhas.length - 1) * tamanho * 1.12 + 54 + tamanho * 0.3;
@@ -870,12 +870,11 @@ function medirRecursos(lista, largura, tamTitulo, tamDesc) {
   });
 }
 
-/** Recurso = círculo colorido com ícone branco + título em caixa alta + descrição. */
+/** Recurso = ícone com contorno na cor da marca + título em título case + descrição. */
 function listaRecursos(p, x, y, largura, lista, tamTitulo, tamDesc) {
   let cursor = y;
   return lista
     .map((item, i) => {
-      const cor = p.acentos[i % p.acentos.length];
       const linhasDesc = item.descricao
         ? quebrar(item.descricao, largura - 92, tamDesc, "corpo").slice(0, 2)
         : [];
@@ -884,28 +883,17 @@ function listaRecursos(p, x, y, largura, lista, tamTitulo, tamDesc) {
       const cyIcone = topo + r;
 
       const titulo = item.titulo
-        ? `<text x="92" y="${r + tamTitulo * 0.36}" font-family="${display.familia}" font-size="${tamTitulo}" font-weight="${display.peso}" letter-spacing="0.2" fill="${p.titulo}">${escapar(String(item.titulo).toUpperCase())}</text>`
+        ? `<text x="92" y="${r + tamTitulo * 0.36}" font-family="${display.familia}" font-size="${tamTitulo}" font-weight="600" letter-spacing="0" fill="${p.titulo}">${escapar(String(item.titulo).charAt(0).toUpperCase() + String(item.titulo).slice(1).toLowerCase())}</text>`
         : "";
       const yDesc = (item.titulo ? r + tamTitulo * 0.36 + tamDesc * 1.24 : r + tamDesc * 0.34);
       const desc = linhasDesc
         .map((linha, j) =>
-          `<text x="92" y="${yDesc + j * tamDesc * 1.3}" font-family="${CORPO}" font-size="${tamDesc}" font-weight="400" fill="${p.apoio}">${escapar(linha)}</text>`)
+          `<text x="92" y="${yDesc + j * tamDesc * 1.3}" font-family="${CORPO}" font-size="${tamDesc - 2}" font-weight="400" fill="${p.apoio}">${escapar(linha)}</text>`)
         .join("\n      ");
 
-      // Disco com degradê e aro claro no lugar do preenchimento chapado: é o
-      // que faz o ícone parecer botão em relevo, e não adesivo colado.
+      // Ícone com contorno na cor da marca: mais editorial, menos app-store.
       const g = `<g transform="translate(${x}, ${topo})">
-      <defs>
-        <linearGradient id="ac-${i}" x1="0" y1="0" x2="0.5" y2="1">
-          <stop offset="0" stop-color="${clarear(cor, 0.26)}"/>
-          <stop offset="1" stop-color="${escurecer(cor, 0.16)}"/>
-        </linearGradient>
-      </defs>
-      <circle cx="${r}" cy="${r}" r="${r + 8}" fill="${cor}" fill-opacity="0.14"/>
-      <circle cx="${r}" cy="${r + 2}" r="${r}" fill="#000000" fill-opacity="0.28"/>
-      <circle cx="${r}" cy="${r}" r="${r}" fill="url(#ac-${i})"/>
-      <circle cx="${r}" cy="${r}" r="${r - 0.8}" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.6"/>
-      ${icone(item.icone, { x: r - 17, y: r - 17, tamanho: 34, cor: "#ffffff", peso: 2 })}
+      ${icone(item.icone, { x: r - 17, y: r - 17, tamanho: 34, cor: p.marca, peso: 1.9 })}
       ${titulo}
       ${desc}
     </g>`;

@@ -42,6 +42,45 @@ const LOCALSTORAGE_PRE = {
 };
 
 // ---------------------------------------------------------------------------
+// Cenários do AI-EAT — semeia comidas no diário para o card não sair vazio.
+// ---------------------------------------------------------------------------
+
+/**
+ * O diário mostra "0 kcal" para hoje se vazio. Adiciona 4 comidas rápidas
+ * para o total e os macros aparecerem (e o card parecer mais preenchido).
+ */
+async function semearAiEatRapido(page) {
+  await page.goto("https://aieat.app.br/", { waitUntil: "networkidle" });
+  await page.waitForTimeout(1500);
+
+  // Tenta adicionar comidas via botão de foto ou busca; se não funcionar, pula.
+  // O app carrega receitas; vamos adicionar pelo botão de "+" se houver.
+  const btnAdicionar = page.locator("button").filter({ hasText: "+" }).first();
+  if (await btnAdicionar.count() && await btnAdicionar.isVisible().catch(() => false)) {
+    for (let i = 0; i < 3; i++) {
+      await btnAdicionar.click().catch(() => {});
+      await page.waitForTimeout(600);
+      // Tenta buscar "Arroz" e clicar no primeiro resultado
+      const busca = page.locator('input').filter({ hasText: /buscar|pesq/i }).first();
+      if (await busca.count()) {
+        await busca.fill("arroz");
+        await page.waitForTimeout(800);
+        const primeiro = page.locator("button, [role=button]").filter({ hasText: /arroz/i }).first();
+        if (await primeiro.count()) await primeiro.click().catch(() => {});
+        await page.waitForTimeout(400);
+      }
+    }
+  }
+
+  // Tenta o botão genérico de +200ml (hidratação) para aparecer algo no card
+  for (let i = 0; i < 2; i++) {
+    const btn = page.getByRole("button", { name: "+200ml" });
+    if (await btn.count()) await btn.click().catch(() => {});
+    await page.waitForTimeout(300);
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Cenários do GASONOL (com login, para capturar o estado premium). A tela de
 // cálculo é progressiva: selecionar veículo → calculadora → resultado. Cada
 // passo é uma captura diferente.
@@ -107,9 +146,12 @@ async function apagarCortina(page) {
       background: transparent !important;
       backdrop-filter: none !important;
       -webkit-backdrop-filter: none !important;
-    }`,
+    }
+    [class*="confetti"], [id*="confetti"], canvas { display: none !important; }
+    `,
   }).catch(() => {});
-  await page.waitForTimeout(250);
+  // Estende o tempo de espera para a animação terminar naturalmente se não for supprimida
+  await page.waitForTimeout(1500);
 }
 
 // Overlays de dica/onboarding que estragam o card: janelas de "Como usar?",
@@ -175,14 +217,14 @@ const APPS = [
     url: "https://aieat.app.br",
     login: true,
     loginUrl: "/auth",
-    telas: ["/", "/diario", "/historico"],
+    telas: [{ nome: "home", url: "/", preparar: semearAiEatRapido }, "/diario", "/historico"],
   },
   {
     id: "convertendo",
     url: "https://convertendo.app.br",
     login: true,
     loginUrl: "/auth",
-    telas: ["/converter", "/cotacoes", "/configuracoes"],
+    telas: ["/converter", "/cotacoes", "/converter"],
   },
   {
     id: "vaidarquanto",

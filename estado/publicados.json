@@ -665,7 +665,44 @@
         "em": "2026-08-21T17:32:49.488Z",
         "erro": null
       }
+    },
+    "18-gasonol-quanto-economiza": {
+      "instagram": {
+        "status": "ok",
+        "id": "17977400856088702",
+        "url": "https://www.instagram.com/p/17977400856088702",
+        "em": "2026-08-21T20:24:27.763Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122107386279435454",
+        "url": "https://www.facebook.com/1293634587162251_122107386279435454",
+        "em": "2026-08-21T20:24:27.763Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18077955545686893",
+        "url": "https://www.threads.net/@me/post/18077955545686893",
+        "em": "2026-08-21T20:24:27.763Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mtmlq5rwr324",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mtmlq5rwr324",
+        "em": "2026-08-21T20:24:27.763Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a88b3fbdc319146a2836ff5",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-08-21T20:24:27.763Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-08-21T17:32:49.488Z"
+  "atualizadoEm": "2026-08-21T20:24:27.763Z"
 }

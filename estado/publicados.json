@@ -702,7 +702,44 @@
         "em": "2026-08-21T20:24:27.763Z",
         "erro": null
       }
+    },
+    "19-convertendo-scanner-etiqueta": {
+      "instagram": {
+        "status": "ok",
+        "id": "18073668914403076",
+        "url": "https://www.instagram.com/p/18073668914403076",
+        "em": "2026-08-21T23:22:43.376Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122107451157435454",
+        "url": "https://www.facebook.com/1293634587162251_122107451157435454",
+        "em": "2026-08-21T23:22:43.376Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17883759936616937",
+        "url": "https://www.threads.net/@me/post/17883759936616937",
+        "em": "2026-08-21T23:22:43.376Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mtmvow32gz2w",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mtmvow32gz2w",
+        "em": "2026-08-21T23:22:43.376Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a88ddc324833b288b2688cb",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-08-21T23:22:43.376Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-08-21T20:24:27.763Z"
+  "atualizadoEm": "2026-08-21T23:22:43.376Z"
 }

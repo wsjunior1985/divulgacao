@@ -1,5 +1,8 @@
 # Como adicionar um novo projeto
 
+Se você quer só o caminho mais curto, abra [`GUIA-RAPIDO.md`](GUIA-RAPIDO.md).
+Este arquivo fica como referência completa.
+
 Este repositório publica os apps em rodízio determinístico. Hoje a regra prática
 é simples: se você quer que nenhum projeto fique de fora em um dia, o total de
 horários precisa ser igual ao total de apps.

@@ -776,7 +776,44 @@
         "em": "2026-08-22T11:20:39.343Z",
         "erro": null
       }
+    },
+    "21-aieat-comida-brasileira": {
+      "instagram": {
+        "status": "ok",
+        "id": "18038332967818249",
+        "url": "https://www.instagram.com/p/18038332967818249",
+        "em": "2026-08-22T14:19:09.464Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122107663521435454",
+        "url": "https://www.facebook.com/1293634587162251_122107663521435454",
+        "em": "2026-08-22T14:19:09.464Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18094486220329256",
+        "url": "https://www.threads.net/@me/post/18094486220329256",
+        "em": "2026-08-22T14:19:09.464Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mtohruhvsl24",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mtohruhvsl24",
+        "em": "2026-08-22T14:19:09.464Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a89afdd62b911df3f1a10cd",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-08-22T14:19:09.464Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-08-22T11:20:39.343Z"
+  "atualizadoEm": "2026-08-22T14:19:09.464Z"
 }

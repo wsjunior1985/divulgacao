@@ -29,7 +29,7 @@ const CORPO = "Inter";
 
 /**
  * Fontes de display, uma por app. O rodízio publica um app por slot, então
- * cinco posts seguidos já saem com cinco tipografias diferentes — a variedade
+ * seis posts seguidos já saem com seis tipografias diferentes — a variedade
  * aparece no feed sem que um mesmo app mude de cara de um post para o outro,
  * que leria como erro e não como intenção.
  *
@@ -810,7 +810,7 @@ const ALTURA_CABECALHO = 156;
  * e com sombra fraca — é o que cria profundidade sem competir com o da frente.
  */
 // Arranjos da pilha, escolhidos pela variação do slot (0, 1, 2) — o mesmo
-// índice que já decide qual captura entra. Sem isso, os 40 cards repetiam a
+// índice que já decide qual captura entra. Sem isso, os 48 cards repetiam a
 // mesma composição de aparelhos e o feed ficava monótono.
 //
 // `meiaCaixa` é a metade da largura do aparelho já com moldura e giro (0,53 da

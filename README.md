@@ -1,8 +1,8 @@
 # Divulgação automática
 
-Publica sozinho os cinco apps — **Vai dar quanto?, AI-Eat, GASONOL, Convertendo e
-Remedin** — no **Instagram, Facebook, Threads, Bluesky, TikTok e X**, em rodízio,
-de graça, sem ninguém apertar botão.
+Publica sozinho os seis apps — **Vai dar quanto?, AI-Eat, GASONOL, Convertendo,
+Remedin e O Palpiteiro** — no **Instagram, Facebook, Threads, Bluesky, TikTok e
+X**, em rodízio, de graça, sem ninguém apertar botão.
 
 Depois do [SETUP.md](SETUP.md), a sua participação é: nenhuma.
 
@@ -58,11 +58,11 @@ Cada post vira uma imagem gerada na hora, com a identidade real do app:
   do GitHub. Antes disso o resultado mudava de máquina para máquina — Helvetica
   de um lado, DejaVu do outro.
 - **Uma fonte de display por app**, no campo `fonte`: Sora no AI-Eat, Manrope no
-  Remedin, Fraunces no Convertendo, Space Grotesk no GASONOL e Plus Jakarta Sans
-  no Vai dar quanto?. Como o rodízio publica um app por slot, cinco posts
-  seguidos saem com cinco tipografias diferentes — a variedade aparece no feed
-  sem que um mesmo app mude de cara de um post para o outro. A Inter continua no
-  corpo, nas descrições e no rodapé.
+  Remedin, Fraunces no Convertendo, Space Grotesk no GASONOL, Plus Jakarta Sans
+  no Vai dar quanto? e Inter Display no O Palpiteiro. Como o rodízio publica um
+  app por slot, seis posts seguidos saem com seis tipografias diferentes — a
+  variedade aparece no feed sem que um mesmo app mude de cara de um post para o
+  outro. A Inter continua no corpo, nas descrições e no rodapé.
 
   > O nome da família precisa ser o que o renderizador enxerga (name ID 16, ou
   > ID 1 quando não há). A Inter Display se chama `Inter Display`, com espaço —
@@ -91,11 +91,11 @@ O layout padrão é a **vitrine**, com cinco elementos fixos:
    variantes seguem reconhecíveis como do mesmo app.
 5. **Os aparelhos** e o **rodapé** com o CTA do domínio e os `selos`. A pilha
    tem três arranjos (dois aparelhos subindo, um só maior, dois descendo),
-   escolhidos pela variação do slot — sem isso os 40 cards repetiam a mesma
+   escolhidos pela variação do slot — sem isso os 48 cards repetiam a mesma
    composição. Ela cabe inteira dentro da margem: nada sangra na borda.
 
 Quando o título é longo, quem cede é o corpo da manchete (78 → 42), não a lista:
-os quatro recursos são identidade do app e aparecem em todos os 40 cards. Só se
+os quatro recursos são identidade do app e aparecem em todos os 48 cards. Só se
 nem no menor corpo couber é que um recurso sai.
 
 Os layouts anteriores continuam no código como rede de segurança, escolhidos
@@ -157,15 +157,15 @@ a cada ciclo completo sem repetir o mesmo texto no ano. O `card`
 `{link}` vira a URL do app com UTM do canal (no texto só o domínio aparece; o
 UTM viaja no clique).
 
-São 8 temas por app, 40 no total, o que dá **8 dias de ciclo** publicando 5×/dia
+São 8 temas por app, 48 no total, o que dá 8 dias de ciclo publicando 6×/dia
 (1 post por app). O calendário completo do ano fica em
 [`CALENDARIO-1ANO.md`](CALENDARIO-1ANO.md) (`npm run calendario`).
 
 ## Ritmo
 
-Padrão: **5 posts por dia** (08h, 11h, 14h, 17h e 20h BRT), um por app — na
-ordem Remedin, AI-Eat, Vai dar quanto?, GASONOL e Convertendo. Para mudar,
-ajuste a variável `HORARIOS` (ex.: `9,13,19`) e os `cron` de
+Padrão: **6 posts por dia** (08h, 11h, 14h, 17h, 20h e 21h BRT), em rodízio pelos
+apps — na ordem Remedin, AI-Eat, Vai dar quanto?, GASONOL, Convertendo e O
+Palpiteiro. Para mudar, ajuste a variável `HORARIOS` (ex.: `9,13,19`) e os `cron` de
 [.github/workflows/publicar.yml](.github/workflows/publicar.yml) — os dois
 precisam bater.
 

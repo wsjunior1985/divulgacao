@@ -10,6 +10,7 @@ on:
     - cron: "0 17 * * *" # 14:00 BRT
     - cron: "0 20 * * *" # 17:00 BRT
     - cron: "0 23 * * *" # 20:00 BRT
+    - cron: "0 0 * * *" # 21:00 BRT
   workflow_dispatch:
     inputs:
       dry_run:
@@ -56,7 +57,7 @@ jobs:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
       MEDIA_MODE: ${{ vars.MEDIA_MODE || 'git' }}
-      HORARIOS: ${{ vars.HORARIOS || '08,11,14,17,20' }}
+      HORARIOS: ${{ vars.HORARIOS || '08,11,14,17,20,21' }}
       CANAIS: ${{ vars.CANAIS }}
     steps:
       - uses: actions/checkout@v4

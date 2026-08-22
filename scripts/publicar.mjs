@@ -27,7 +27,7 @@ const CANAIS = ["instagram", "facebook", "threads", "bluesky", "tiktok", "x"];
 const ARQUIVO_ESTADO = "estado/publicados.json";
 
 /** Horários do dia, em hora cheia BRT. O cron do Actions dispara nesses horários. */
-const HORARIOS = env("HORARIOS", "08,11,14,17,20")
+const HORARIOS = env("HORARIOS", "08,11,14,17,20,21")
   .split(",")
   .map((h) => Number(h.trim()))
   .filter((h) => Number.isInteger(h) && h >= 0 && h < 24);

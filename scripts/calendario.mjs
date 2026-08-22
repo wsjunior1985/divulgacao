@@ -13,7 +13,7 @@ import { carregarApps, escolherPauta, indiceDoSlot } from "./lib/conteudo.js";
 
 carregarEnv();
 
-const HORARIOS = env("HORARIOS", "08,11,14,17,20")
+const HORARIOS = env("HORARIOS", "08,11,14,17,20,21")
   .split(",")
   .map((h) => Number(h.trim()))
   .filter((h) => Number.isInteger(h) && h >= 0 && h < 24)

@@ -1,0 +1,289 @@
+{
+  "id": "opalpiteiro",
+  "nome": "O Palpiteiro",
+  "url": "https://opalpiteiro.app.br",
+  "tagline": "Seu palpite. Nossa resenha.",
+  "fonte": "inter",
+  "marca": {
+    "emoji": "🏆",
+    "fundoA": "#101427",
+    "destaque": "#7c3aed"
+  },
+  "recursos": [
+    {
+      "icone": "compartilhar",
+      "titulo": "Convite fácil",
+      "descricao": "Compartilhe o bolão com a turma em um link só."
+    },
+    {
+      "icone": "troca",
+      "titulo": "Multicategoria",
+      "descricao": "Futebol, reality, eleição, chá de bebê ou tema livre."
+    },
+    {
+      "icone": "grafico",
+      "titulo": "Ranking visível",
+      "descricao": "A pontuação muda ao vivo e a resenha ganha pódio."
+    },
+    {
+      "icone": "estrela",
+      "titulo": "Perfil e conquistas",
+      "descricao": "Pontos, nível, vitórias e histórico no mesmo lugar."
+    }
+  ],
+  "chips": [
+    "Amigos e família",
+    "Ranking em tempo real",
+    "Criar bolões"
+  ],
+  "selos": [
+    {
+      "icone": "pessoas",
+      "titulo": "Turma"
+    },
+    {
+      "icone": "troca",
+      "titulo": "Categorias"
+    },
+    {
+      "icone": "estrela",
+      "titulo": "Premium"
+    }
+  ],
+  "hashtags": [
+    "#opalpiteiro",
+    "#bolao",
+    "#palpite",
+    "#resenha",
+    "#futebol"
+  ],
+  "posts": [
+    {
+      "id": "seu-palpite",
+      "card": {
+        "titulo": "Seu palpite. *Nossa resenha.*",
+        "sub": "Bolões entre amigos e família, do convite ao pódio."
+      },
+      "ganchos": [
+        "Bolão bom é o que vira assunto no grupo.",
+        "Quer deixar a resenha menos no chute e mais no palpite?",
+        "Se a disputa é entre amigos, o placar precisa aparecer.",
+        "Toda turma tem alguém que aposta com muita confiança."
+      ],
+      "corpos": [
+        "O Palpiteiro junta convite, palpites, ranking e resultado num só lugar. Você entra, responde e acompanha a disputa sem perder o fio da resenha.",
+        "No Palpiteiro, a brincadeira fica organizada do começo ao fim: bolão, palpite e pódio no mesmo lugar.",
+        "É um app para bolões entre amigos e familiares, com tudo que importa na mão."
+      ],
+      "ctas": [
+        "Entre de graça e teste o primeiro bolão.\n\n👉 {link}",
+        "Comece grátis agora.\n\n👉 {link}",
+        "Abra a resenha.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "Seu palpite e a resenha ficam no mesmo lugar: {link}",
+        "Bolão entre amigos e família, sem bagunça. {link}",
+        "Palpite, ranking e pódio num só app: {link}"
+      ]
+    },
+    {
+      "id": "palpite-sem-complicacao",
+      "card": {
+        "titulo": "Palpite sem *complicação*",
+        "sub": "Tela direta, feita para o celular."
+      },
+      "ganchos": [
+        "Ninguém quer perder tempo procurando botão na hora da aposta.",
+        "O celular é onde a resenha acontece.",
+        "Responder palpite precisa ser rápido. Senão a galera esquece.",
+        "Quanto menos fricção, mais gente participa."
+      ],
+      "corpos": [
+        "A tela de palpite foi feita para ser direta: veja a pergunta, escolha sua resposta e envie.",
+        "O Palpiteiro deixa o fluxo simples de verdade: menos menu, mais palpite.",
+        "Quanto mais fácil for responder, mais gente entra na brincadeira."
+      ],
+      "ctas": [
+        "Teste grátis 👉 {link}",
+        "Abra no celular 👉 {link}",
+        "Experimente agora 👉 {link}"
+      ],
+      "curtos": [
+        "Palpite direto, sem enrolação. {link}",
+        "A aposta acontece rápido no celular: {link}",
+        "Menos menu, mais palpite. {link}"
+      ]
+    },
+    {
+      "id": "do-convite-ao-podio",
+      "card": {
+        "titulo": "Do convite ao *pódio*",
+        "sub": "Crie e organize em minutos.",
+        "destaque": "1 min"
+      },
+      "ganchos": [
+        "Abrir um bolão não precisa virar projeto.",
+        "Quer organizar a turma sem perder a graça?",
+        "Montar a disputa e chamar a galera pode ser rápido.",
+        "Quem organiza quer menos trabalho e mais jogo."
+      ],
+      "corpos": [
+        "No Premium, quem organiza cria o bolão, ajusta perguntas e coloca a capa. Depois é só chamar a turma.",
+        "Em poucos minutos o bolão já está pronto para a rodada.",
+        "A criação foi pensada para sair do rascunho para a resenha sem atrito."
+      ],
+      "ctas": [
+        "Crie o seu bolão agora.\n\n👉 {link}",
+        "Veja como fica em minutos.\n\n👉 {link}",
+        "Comece com um clique.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "Crie um bolão em minutos e siga para o pódio: {link}",
+        "Organização rápida para a sua turma. {link}",
+        "Abra um bolão sem complicação. {link}"
+      ]
+    },
+    {
+      "id": "ranking-da-galera",
+      "card": {
+        "titulo": "Quem sobe no *pódio*?",
+        "sub": "O ranking faz a resenha andar."
+      },
+      "ganchos": [
+        "A melhor parte da aposta é ver o ranking mexer.",
+        "Quem está em primeiro quer manter a ponta. Quem vem atrás quer virar o jogo.",
+        "Pontuação ao vivo deixa a competição mais divertida.",
+        "O pódio é o combustível da zoeira."
+      ],
+      "corpos": [
+        "A classificação deixa claro quem está na frente e quem precisa acertar o próximo palpite.",
+        "Cada rodada mexe no pódio e a conversa melhora junto.",
+        "No ranking, a resenha fica visível de um jeito fácil de acompanhar."
+      ],
+      "ctas": [
+        "Veja o ranking ao vivo.\n\n👉 {link}",
+        "Entre na disputa.\n\n👉 {link}",
+        "Acompanhe o pódio.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "Ranking ao vivo, resenha garantida: {link}",
+        "Quem acerta sobe no pódio. {link}",
+        "A pontuação mexe e o grupo sente. {link}"
+      ]
+    },
+    {
+      "id": "multicategoria",
+      "card": {
+        "titulo": "Futebol, *reality*, eleição...",
+        "sub": "Toda categoria pode virar assunto no grupo.",
+        "destaque": "5"
+      },
+      "ganchos": [
+        "Se o grupo é bom, qualquer tema vira bolão.",
+        "Futebol não é o único assunto que rende aposta.",
+        "Tem briga boa em reality, eleição e até chá de bebê.",
+        "A resenha fica melhor quando o tema é da turma."
+      ],
+      "corpos": [
+        "O Palpiteiro abraça futebol, reality show, eleições, chá de bebê e tema livre. Se a galera topar, vira bolão.",
+        "A multicategoria deixa a brincadeira abrir espaço para qualquer assunto que faça sentido para o grupo.",
+        "Do clássico ao inesperado, o app organiza a disputa sem engessar o tema."
+      ],
+      "ctas": [
+        "Escolha seu tema.\n\n👉 {link}",
+        "Teste uma nova categoria.\n\n👉 {link}",
+        "Monte a resenha do seu jeito.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "Futebol, reality, eleição ou tema livre: {link}",
+        "Qualquer assunto pode virar bolão. {link}",
+        "A categoria é da turma. {link}"
+      ]
+    },
+    {
+      "id": "bolao-publico-privado",
+      "card": {
+        "titulo": "Bolão público ou *privado*",
+        "sub": "Você decide quem entra na resenha."
+      },
+      "ganchos": [
+        "Tem bolão que é aberto, tem bolão que é só da turma.",
+        "Nem toda disputa precisa ficar visível para todo mundo.",
+        "Convite fechado ajuda a manter a brincadeira no grupo certo.",
+        "Privacidade também faz parte da organização."
+      ],
+      "corpos": [
+        "Você pode abrir um bolão público ou manter privado com convite, sem misturar as coisas.",
+        "O controle de privacidade deixa claro quem participa e quem só acompanha de fora.",
+        "Cada bolão pode nascer do jeito que a turma quiser."
+      ],
+      "ctas": [
+        "Escolha a privacidade.\n\n👉 {link}",
+        "Crie para a sua turma.\n\n👉 {link}",
+        "Abra só para convidados.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "Bolão público ou privado, você decide: {link}",
+        "A resenha pode ficar só entre convidados. {link}",
+        "Privacidade também faz parte do jogo. {link}"
+      ]
+    },
+    {
+      "id": "perfil-com-numeros",
+      "card": {
+        "titulo": "Seu perfil, seus *números*",
+        "sub": "Histórico, nível e conquistas."
+      },
+      "ganchos": [
+        "Não basta palpite. Tem que ver o histórico também.",
+        "O perfil conta a sua história no bolão.",
+        "Pontos, nível e vitórias deixam a evolução mais clara.",
+        "Quem joga sempre quer acompanhar a própria trajetória."
+      ],
+      "corpos": [
+        "No perfil, você acompanha pontos, nível, conquistas e evolução ao longo dos bolões.",
+        "Os números mostram como a sua resenha está rendendo dentro do app.",
+        "É o lugar para ver o que já ganhou e o que ainda quer conquistar."
+      ],
+      "ctas": [
+        "Veja seu perfil.\n\n👉 {link}",
+        "Acompanhe sua evolução.\n\n👉 {link}",
+        "Teste o app hoje.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "Perfil com pontos, nível e conquistas: {link}",
+        "Veja sua evolução dentro dos bolões. {link}",
+        "Os números contam a sua resenha. {link}"
+      ]
+    },
+    {
+      "id": "free-premium",
+      "card": {
+        "titulo": "Free para jogar. *Premium* para organizar.",
+        "sub": "Entrar é grátis. Criar e gerenciar é Premium.",
+        "destaque": "R$ 5"
+      },
+      "ganchos": [
+        "Quem só quer palpitar entra de graça.",
+        "Criar e organizar a disputa pede mais ferramentas.",
+        "O free resolve a brincadeira; o Premium resolve a organização.",
+        "Para quem monta o bolão, o plano importa."
+      ],
+      "corpos": [
+        "Participar é free. Criar bolões, personalizar e gerir a brincadeira fica para o Premium.",
+        "Se a sua função é organizar a turma, o Premium libera as ferramentas certas.",
+        "A nova conta ainda pode testar por 7 dias antes de decidir."
+      ],
+      "ctas": [
+        "Veja os planos.\n\n👉 {link}",
+        "Teste a conta grátis.\n\n👉 {link}",
+        "Comece no free.\n\n👉 {link}"
+      ],
+      "curtos": [
+        "Free para jogar, Premium para organizar: {link}",
+        "Entre grátis e teste o Premium. {link}",
+        "Criar bolão pede Premium; palpitar é free. {link}"
+      ]
+    }
+  ]
+}

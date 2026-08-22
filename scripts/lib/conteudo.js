@@ -9,7 +9,7 @@ import { resolve } from "node:path";
 import { RAIZ, lerJson } from "./base.js";
 
 /** Ordem fixa do rodízio — muda a ordem só se mudar esta lista. */
-export const ORDEM_APPS = ["remedin", "aieat", "vaidarquanto", "gasonol", "convertendo"];
+export const ORDEM_APPS = ["remedin", "aieat", "vaidarquanto", "gasonol", "convertendo", "opalpiteiro"];
 
 /** Época do rodízio: slot 0. Não mexa depois de publicar, ou o rodízio pula temas. */
 const EPOCA = Date.UTC(2026, 7, 18); // 2026-08-18

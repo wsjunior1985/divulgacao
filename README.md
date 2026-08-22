@@ -154,6 +154,10 @@ Bluesky/X) — e o `montarTexto` combina um de cada por enumeração mista, vari
 a cada ciclo completo sem repetir o mesmo texto no ano. O `card`
 (título/subtítulo/destaque) é fixo por tema.
 
+Se for adicionar um novo projeto, siga o checklist em
+[`apps/README.md`](apps/README.md): ele resume os arquivos que precisam existir,
+a ordem do rodízio, a regra dos horários e a validação antes de publicar.
+
 `{link}` vira a URL do app com UTM do canal (no texto só o domínio aparece; o
 UTM viaja no clique).
 

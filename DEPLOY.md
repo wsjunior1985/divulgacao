@@ -1,5 +1,8 @@
 # Deploy
 
+> Aviso: o deploy web não usa GitHub Actions. Os workflows desta pasta são apenas para captura, publicação de cards e renovação de tokens. O fluxo do site continua sendo GitHub -> Coolify -> VPS.
+
+
 Este projeto segue o padrão oficial do portfólio WaldeApps, mas tem fluxo próprio de automação:
 
 - o deploy das telas e cards não deve voltar para GitHub Actions como publicação de app web;

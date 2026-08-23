@@ -1,10 +1,15 @@
 # Divulgação automática
 
-Publica sozinho os seis apps — **Vai dar quanto?, AI-Eat, GASONOL, Convertendo,
-Remedin e O Palpiteiro** — no **Instagram, Facebook, Threads, Bluesky, TikTok e
-X**, em rodízio, de graça, sem ninguém apertar botão.
+Publica sozinho os sete apps — **Vai dar quanto?, AI-Eat, GASONOL, Convertendo,
+Remedin, O Palpiteiro e Papelzinho** — no **Instagram, Facebook, Threads,
+Bluesky, TikTok e X**, em rodízio, de graça, sem ninguém apertar botão.
 
 Depois do [SETUP.md](SETUP.md), a sua participação é: nenhuma.
+
+## Deploy
+
+Veja o guia local em [DEPLOY.md](./DEPLOY.md). Este projeto tem fluxo
+especial; não volte para GitHub Actions como caminho de deploy de app web.
 
 ## Como funciona
 
@@ -57,12 +62,12 @@ Cada post vira uma imagem gerada na hora, com a identidade real do app:
   recebe os arquivos da fonte, então o card sai idêntico no seu Mac e no runner
   do GitHub. Antes disso o resultado mudava de máquina para máquina — Helvetica
   de um lado, DejaVu do outro.
-- **Uma fonte de display por app**, no campo `fonte`: Sora no AI-Eat, Manrope no
-  Remedin, Fraunces no Convertendo, Space Grotesk no GASONOL, Plus Jakarta Sans
-  no Vai dar quanto? e Inter Display no O Palpiteiro. Como o rodízio publica um
-  app por slot, seis posts seguidos saem com seis tipografias diferentes — a
-  variedade aparece no feed sem que um mesmo app mude de cara de um post para o
-  outro. A Inter continua no corpo, nas descrições e no rodapé.
+- **Uma fonte de display por app**, no campo `fonte`: Sora no AI-Eat, Manrope
+  no Remedin, Fraunces no Convertendo e no Papelzinho, Space Grotesk no
+  GASONOL, Plus Jakarta Sans no Vai dar quanto? e Inter Display no O
+  Palpiteiro. O rodízio publica um app por slot, então a assinatura visual muda
+  naturalmente no feed sem depender da fonte do sistema. A Inter continua no
+  corpo, nas descrições e no rodapé.
 
   > O nome da família precisa ser o que o renderizador enxerga (name ID 16, ou
   > ID 1 quando não há). A Inter Display se chama `Inter Display`, com espaço —
@@ -90,13 +95,13 @@ O layout padrão é a **vitrine**, com cinco elementos fixos:
    descrição. A cor sai de uma rampa puxada 35% para a marca, então as quatro
    variantes seguem reconhecíveis como do mesmo app.
 5. **Os aparelhos** e o **rodapé** com o CTA do domínio e os `selos`. A pilha
-   tem três arranjos (dois aparelhos subindo, um só maior, dois descendo),
-   escolhidos pela variação do slot — sem isso os 48 cards repetiam a mesma
-   composição. Ela cabe inteira dentro da margem: nada sangra na borda.
+  tem três arranjos (dois aparelhos subindo, um só maior, dois descendo),
+  escolhidos pela variação do slot — sem isso os cards repetiam a mesma
+  composição. Ela cabe inteira dentro da margem: nada sangra na borda.
 
-Quando o título é longo, quem cede é o corpo da manchete (78 → 42), não a lista:
-os quatro recursos são identidade do app e aparecem em todos os 48 cards. Só se
-nem no menor corpo couber é que um recurso sai.
+Quando o título é longo, quem cede é o corpo da manchete (78 → 42), não a
+lista: os quatro recursos são identidade do app e aparecem em todos os cards.
+Só se nem no menor corpo couber é que um recurso sai.
 
 Os layouts anteriores continuam no código como rede de segurança, escolhidos
 quando falta material:
@@ -138,6 +143,10 @@ Contas novas saem com telas vazias. O `npm run semear` preenche dados de exemplo
 AI-Eat) para os cards saírem com as telas "vivas" — rode uma vez, e de novo só
 se os dados forem apagados.
 
+Quando entra um projeto novo, registre as rotas dele em
+[`scripts/capturar.mjs`](scripts/capturar.mjs) para a recaptura semanal
+continuar funcionando sem trabalho manual.
+
 Se uma captura falhar ou o Chromium não estiver instalado, o card cai de volta
 no layout só de texto — a publicação nunca é bloqueada por isso.
 
@@ -162,15 +171,16 @@ checklist mínimo para IA e humanos. Se quiser o guia completo, siga em
 `{link}` vira a URL do app com UTM do canal (no texto só o domínio aparece; o
 UTM viaja no clique).
 
-São 8 temas por app, 48 no total, o que dá 8 dias de ciclo publicando 6×/dia
+São 8 temas por app, 56 no total, o que dá 8 dias de ciclo publicando 7×/dia
 (1 post por app). O calendário completo do ano fica em
 [`CALENDARIO-1ANO.md`](CALENDARIO-1ANO.md) (`npm run calendario`).
 
 ## Ritmo
 
-Padrão: **6 posts por dia** (08h, 11h, 14h, 17h, 20h e 21h BRT), em rodízio pelos
-apps — na ordem Remedin, AI-Eat, Vai dar quanto?, GASONOL, Convertendo e O
-Palpiteiro. Para mudar, ajuste a variável `HORARIOS` (ex.: `9,13,19`) e os `cron` de
+Padrão: **7 posts por dia** (08h, 11h, 14h, 17h, 20h, 21h e 22h BRT), em
+rodízio pelos apps — na ordem Remedin, AI-Eat, Vai dar quanto?, GASONOL,
+Convertendo, O Palpiteiro e Papelzinho. Para mudar, ajuste a variável
+`HORARIOS` (ex.: `9,13,19`) e os `cron` de
 [.github/workflows/publicar.yml](.github/workflows/publicar.yml) — os dois
 precisam bater.
 

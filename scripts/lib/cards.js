@@ -28,10 +28,9 @@ const FONTES = resolve(RAIZ, "assets/fontes");
 const CORPO = "Inter";
 
 /**
- * Fontes de display, uma por app. O rodízio publica um app por slot, então
- * seis posts seguidos já saem com seis tipografias diferentes — a variedade
- * aparece no feed sem que um mesmo app mude de cara de um post para o outro,
- * que leria como erro e não como intenção.
+ * Fontes de display. Cada app aponta para uma família no campo `fonte`, e o
+ * renderizador embute o arquivo certo para o card sair idêntico em qualquer
+ * máquina.
  *
  * `familia` é o nome que o resvg enxerga (name ID 16, ou ID 1 quando não há):
  * atenção que a Inter Display se chama "Inter Display", COM espaço. O código
@@ -72,8 +71,9 @@ function logoBase64(app) {
 }
 
 // Capturas reais das telas dos apps (scripts/capturar.mjs → assets/capturas/).
-// Um app tem 3 variações (0, 1, 2); a variação escolhida roda determinística
-// pelo slot. Sem captura, o card cai de volta no layout só de texto.
+// Um app pode ter até 3 variações (0, 1, 2); a variação escolhida roda
+// determinística pelo slot. Sem captura, o card cai de volta no layout só de
+// texto.
 const cacheCaptura = new Map();
 
 /** Caminhos das capturas de um app, em ordem estável. */
@@ -486,7 +486,7 @@ function layoutDestaque({ app, p, L, A, margem, destaque, titulo, sub }) {
   ${blocoSub}`;
 }
 
-const ASPECTO_TELA = 844 / 390; // 9:19.5 do viewport de captura
+const ASPECTO_TELA = 915 / 412; // ratio do screenshot narrow do PWA do Papelzinho
 
 /**
  * Mockup premium de celular com a captura real do app dentro. Moldura metálica,
@@ -757,47 +757,36 @@ function desenharRico(linhas, x, primeiraBaseline, tamanho, entrelinha, opcoes =
  */
 function cabecalhoVitrine(app, p, margem, larguraMax) {
   const logo = logoBase64(app);
-  const lado = 156;
-  const xTexto = margem + lado + 34;
-  const disponivel = larguraMax - lado - 34;
+  const lado = 148;
+  const xTexto = margem + lado + 40;
+  const disponivel = larguraMax - lado - 40;
   const tagline = app.tagline ? String(app.tagline).toUpperCase() : "";
 
-  let tamNome = 92;
+  let tamNome = 90;
   while (tamNome > 44 && larguraTexto(app.nome, tamNome, "display", -3) > disponivel) tamNome -= 2;
 
   const TRACKING_TAG = 3.4;
-  const tamTag = 25;
+  const tamTag = 22;
   const linhasTag = tagline ? quebrar(tagline, disponivel, tamTag, "corpo", TRACKING_TAG).slice(0, 2) : [];
+  const alturaNome = tamNome * 0.78;
+  const gapTag = linhasTag.length ? 50 : 0;
+  const entrelinhaTag = 28;
 
   // O bloco de texto é centrado na altura do ladrilho, para o nome não flutuar
   // acima do logo quando a tagline ocupa só uma linha.
-  const alturaTexto = tamNome * 0.74 + (linhasTag.length ? 18 + linhasTag.length * 30 : 0);
+  const alturaTexto = alturaNome + (linhasTag.length ? gapTag + linhasTag.length * entrelinhaTag : 0);
   const topoTexto = margem + (lado - alturaTexto) / 2;
-  const baseNome = topoTexto + tamNome * 0.74;
+  const baseNome = topoTexto + alturaNome;
+  const baseTag = baseNome + gapTag;
 
   const blocoTag = linhasTag
     .map((linha, i) =>
-      `<text x="${xTexto}" y="${baseNome + 18 + 22 + i * 30}" font-family="${CORPO}" font-size="${tamTag}" font-weight="500" letter-spacing="${TRACKING_TAG}" fill="${p.apoio}" fill-opacity="0.88">${escapar(linha)}</text>`)
+      `<text x="${xTexto}" y="${baseTag + i * entrelinhaTag}" font-family="${CORPO}" font-size="${tamTag}" font-weight="500" letter-spacing="${TRACKING_TAG}" fill="${p.apoio}" fill-opacity="0.88">${escapar(linha)}</text>`)
     .join("\n    ");
 
-  // Nem todo logo do PWA vem com transparência — o do GASONOL e o do Vai dar
-  // quanto? são PNG opaco. Recortar em canto arredondado faz o quadrado sólido
-  // ler como ladrilho de ícone de app em vez de caixa preta solta no card.
   return `
   <g>
-    <defs>
-      <clipPath id="logo-${app.id}">
-        <rect x="${margem}" y="${margem}" width="${lado}" height="${lado}" rx="36"/>
-      </clipPath>
-      <linearGradient id="brilho-logo" x1="0" y1="0" x2="0.4" y2="1">
-        <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
-        <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
-      </linearGradient>
-    </defs>
-    <rect x="${margem + 6}" y="${margem + 12}" width="${lado}" height="${lado}" rx="36" fill="#000000" fill-opacity="0.30"/>
-    <image href="${logo}" x="${margem}" y="${margem}" width="${lado}" height="${lado}" preserveAspectRatio="xMidYMid meet" clip-path="url(#logo-${app.id})"/>
-    <rect x="${margem}" y="${margem}" width="${lado}" height="${lado}" rx="36" fill="url(#brilho-logo)"/>
-    <rect x="${margem + 0.75}" y="${margem + 0.75}" width="${lado - 1.5}" height="${lado - 1.5}" rx="35" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
+    <image href="${logo}" x="${margem}" y="${margem}" width="${lado}" height="${lado}" preserveAspectRatio="xMidYMid meet"/>
     <text x="${xTexto}" y="${baseNome}" font-family="${display.familia}" font-size="${tamNome}" font-weight="${display.peso}" letter-spacing="-3" fill="${p.titulo}">${escapar(app.nome)}</text>
     ${blocoTag}
   </g>`;
@@ -810,8 +799,8 @@ const ALTURA_CABECALHO = 156;
  * e com sombra fraca — é o que cria profundidade sem competir com o da frente.
  */
 // Arranjos da pilha, escolhidos pela variação do slot (0, 1, 2) — o mesmo
-// índice que já decide qual captura entra. Sem isso, os 48 cards repetiam a
-// mesma composição de aparelhos e o feed ficava monótono.
+// índice que já decide qual captura entra. Sem isso, os cards repetiam a mesma
+// composição de aparelhos e o feed ficava monótono.
 //
 // `meiaCaixa` é a metade da largura do aparelho já com moldura e giro (0,53 da
 // largura da tela). É o que permite medir a caixa da pilha antes de desenhar.
@@ -916,10 +905,13 @@ function rodapeVitrine(app, p, L, A, margem) {
 
   const larguraCta = selos.length ? Math.round(util * 0.5) : util;
   const raio = ALTURA_RODAPE_VITRINE / 2;
+  const xTexto = margem + 90;
+  const xSeta = margem + larguraCta - 52;
+  const setaRaio = 18;
+  const larguraDisponivel = xSeta - setaRaio - 20 - xTexto;
   const tamDominio = (() => {
-    // 96 do ícone à esquerda + 96 da seta à direita, e 16 de folga.
-    let t = 42;
-    while (t > 24 && larguraTexto(dominio, t, "corpo") > larguraCta - 208) t -= 2;
+    let t = 35;
+    while (t > 20 && larguraTexto(dominio, t, "corpo") > larguraDisponivel) t -= 2;
     return t;
   })();
 
@@ -945,11 +937,11 @@ function rodapeVitrine(app, p, L, A, margem) {
       </linearGradient>
     </defs>
     <rect x="${margem}" y="${y}" width="${larguraCta}" height="${ALTURA_RODAPE_VITRINE}" rx="${raio}" fill="url(#cta)"/>
-    ${icone("globo", { x: margem + 40, y: y + raio - 18, tamanho: 36, cor: "#ffffff", peso: 1.8 })}
-    <text x="${margem + 96}" y="${y + raio + tamDominio * 0.36}" font-family="${CORPO}" font-size="${tamDominio}" font-weight="600" fill="#ffffff">${escapar(dominio)}</text>
-    <g transform="translate(${margem + larguraCta - 74}, ${y + raio - 22})">
-      <circle cx="22" cy="22" r="22" fill="#ffffff" fill-opacity="0.2"/>
-      <path d="M15 22h14M23 16l6 6-6 6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    ${icone("globo", { x: margem + 36, y: y + raio - 18, tamanho: 36, cor: "#ffffff", peso: 1.8 })}
+    <text x="${xTexto}" y="${y + raio + tamDominio * 0.36}" font-family="${CORPO}" font-size="${tamDominio}" font-weight="600" fill="#ffffff">${escapar(dominio)}</text>
+    <g transform="translate(${xSeta}, ${y + raio - setaRaio})">
+      <circle cx="${setaRaio}" cy="${setaRaio}" r="${setaRaio}" fill="#ffffff" fill-opacity="0.2"/>
+      <path d="M11.5 18h13M19.5 12.5l5.5 5.5-5.5 5.5" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     ${blocoSelos}
   </g>`;

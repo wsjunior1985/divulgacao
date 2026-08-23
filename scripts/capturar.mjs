@@ -17,7 +17,7 @@ import { carregarEnv, log, ok, aviso, erro, env, RAIZ } from "./lib/base.js";
 
 carregarEnv();
 
-const VIEWPORT = { width: 390, height: 844 };
+const VIEWPORT = { width: 412, height: 915 };
 const DPR = 2;
 const DESTINO = resolve(RAIZ, "assets/capturas");
 
@@ -232,6 +232,13 @@ const APPS = [
     login: true,
     loginUrl: "/login",
     telas: ["/inicio", "/carrinho", "/listas"],
+  },
+  {
+    id: "papelzinho",
+    url: "https://papelzinho.waldeapps.systems",
+    login: true,
+    loginUrl: "/auth",
+    telas: ["/dashboard", "/events/new", "/premium"],
   },
 ];
 

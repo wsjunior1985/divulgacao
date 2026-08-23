@@ -11,7 +11,7 @@ import { carregarApps, escolherPauta, indiceDoSlot, montarTexto } from "./lib/co
 
 carregarEnv();
 
-const HORARIOS = env("HORARIOS", "08,11,14,17,20,21")
+const HORARIOS = env("HORARIOS", "08,11,14,17,20,21,22")
   .split(",")
   .map((h) => Number(h.trim()))
   .sort((a, b) => a - b);

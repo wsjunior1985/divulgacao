@@ -9,11 +9,11 @@ horários precisa ser igual ao total de apps.
 
 Exemplo atual:
 
-- 6 apps
-- 6 horários por dia
+- 7 apps
+- 7 horários por dia
 - 1 slot por app, sem repetição no mesmo dia
 
-Se você adicionar um 7º projeto, a agenda precisa ganhar um 7º horário. Se
+Se você adicionar um 8º projeto, a agenda precisa ganhar um 8º horário. Se
 ficar com menos horários do que apps, algum projeto vai pular aquele dia. Se
 ficar com mais horários, algum app vai repetir no mesmo dia.
 
@@ -25,7 +25,11 @@ Use o app atual como referência. O pacote mínimo é:
 - `assets/logos/<id>.png`
 - `assets/capturas/<id>-0.png`
 - `assets/capturas/<id>-1.png`
-- `assets/capturas/<id>-2.png`
+- `assets/capturas/<id>-2.png` *(opcional, se você quiser manter três telas)*
+
+Se o projeto tiver telas internas novas, registre as rotas em
+[`scripts/capturar.mjs`](../scripts/capturar.mjs) para que o recapturador
+automático continue funcionando.
 
 Se o projeto tiver uma fonte de display própria, adicione também o arquivo `.ttf`
 em `assets/fontes/` e o mapeamento em `scripts/lib/cards.js`.
@@ -110,6 +114,7 @@ ter a mesma quantidade que os apps. Hoje isso significa:
 - `17h`
 - `20h`
 - `21h`
+- `22h`
 
 ## Validação rápida
 
@@ -142,6 +147,8 @@ npm run dry
 - `ORDEM_APPS` foi atualizado;
 - os horários do dia batem com a quantidade de apps;
 - o calendário foi regenerado;
+- um exemplo visual do card foi mostrado para o usuário aprovar ou pedir
+  ajustes antes de ir para produção;
 - o preview do card ficou bom;
 - o commit foi feito só com os arquivos do projeto.
 
@@ -156,6 +163,16 @@ O projeto `O Palpiteiro` entrou por este fluxo:
 - `assets/capturas/opalpiteiro-2.png`
 - `assets/capturas/opalpiteiro-3.png`
 - atualização em `scripts/lib/conteudo.js`
-- ajuste de horários para manter 6 apps por dia
+- ajuste de horários para manter 7 apps por dia
+
+`Papelzinho` entrou logo depois, usando o mesmo fluxo:
+
+- `apps/papelzinho.json`
+- `assets/logos/papelzinho.png`
+- `assets/capturas/papelzinho-0.png`
+- `assets/capturas/papelzinho-1.png`
+- captura automática registrada em `scripts/capturar.mjs`
+- atualização em `scripts/lib/conteudo.js`
+- ajuste de horários para manter 7 apps por dia
 
 Esse conjunto serve como modelo para os próximos projetos.

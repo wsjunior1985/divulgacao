@@ -22,20 +22,25 @@ horários precisa ser igual ao número de apps.
    - `assets/logos/<id>.png`
    - `assets/capturas/<id>-0.png`
    - `assets/capturas/<id>-1.png`
-   - `assets/capturas/<id>-2.png`
-6. Se houver fonte própria, adicione o `.ttf` em `assets/fontes/` e registre a
+   - `assets/capturas/<id>-2.png` *(opcional, se quiser manter três telas)*
+6. Se houver telas internas novas, registre as rotas em
+   [`scripts/capturar.mjs`](../scripts/capturar.mjs) e teste com:
+   ```bash
+   npm run capturar -- --app <id>
+   ```
+7. Se houver fonte própria, adicione o `.ttf` em `assets/fontes/` e registre a
    família em `scripts/lib/cards.js`.
-7. Inclua o `id` novo em `scripts/lib/conteudo.js` (`ORDEM_APPS`).
-8. Ajuste os horários em:
+8. Inclua o `id` novo em `scripts/lib/conteudo.js` (`ORDEM_APPS`).
+9. Ajuste os horários em:
    - `.github/workflows/publicar.yml`
    - `scripts/publicar.mjs`
    - `scripts/agenda.mjs`
    - `scripts/calendario.mjs`
    - `.env.example`
-9. Regra de ouro:
+10. Regra de ouro:
    - número de apps = número de horários por dia
    - se entrar um app novo, entre um horário novo junto
-10. Valide antes de publicar:
+11. Valide antes de publicar:
     ```bash
     npm run cards -- --app <id> --todos
     npm run agenda -- --dias 7
@@ -43,17 +48,15 @@ horários precisa ser igual ao número de apps.
     npm run verificar
     npm run dry
     ```
-11. Se houver telas novas:
-    ```bash
-    npm run capturar -- --app <id>
-    ```
+12. Mostre um exemplo visual do card para o usuário aprovar ou pedir ajustes
+    antes de colocar em produção.
 
 ## Valores atuais
 
-- Apps: 6
-- Horários: `08h`, `11h`, `14h`, `17h`, `20h`, `21h`
+- Apps: 7
+- Horários: `08h`, `11h`, `14h`, `17h`, `20h`, `21h`, `22h`
 - Ordem atual: `Remedin`, `AI-Eat`, `Vai dar quanto?`, `GASONOL`,
-  `Convertendo`, `O Palpiteiro`
+  `Convertendo`, `O Palpiteiro`, `Papelzinho`
 
 ## Sequência mínima
 
@@ -71,6 +74,16 @@ validação → commit só do projeto.
 - `assets/capturas/opalpiteiro-2.png`
 - `assets/capturas/opalpiteiro-3.png`
 - atualização em `scripts/lib/conteudo.js`
-- horários ajustados para `6 apps = 6 horários`
+- horários ajustados para `7 apps = 7 horários`
+
+`Papelzinho` entrou logo depois:
+
+- `apps/papelzinho.json`
+- `assets/logos/papelzinho.png`
+- `assets/capturas/papelzinho-0.png`
+- `assets/capturas/papelzinho-1.png`
+- captura automática registrada em `scripts/capturar.mjs`
+- atualização em `scripts/lib/conteudo.js`
+- horários ajustados para `7 apps = 7 horários`
 
 Se só precisar do mínimo para agir, este arquivo é a referência rápida.

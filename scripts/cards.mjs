@@ -3,7 +3,7 @@
 //
 //   node scripts/cards.mjs                  um card de cada app
 //   node scripts/cards.mjs --app gasonol    todos os temas de um app
-//   node scripts/cards.mjs --todos          os 48 cards
+//   node scripts/cards.mjs --todos          todos os cards
 //   node scripts/cards.mjs --formato vertical
 
 import { carregarEnv, log, ok } from "./lib/base.js";

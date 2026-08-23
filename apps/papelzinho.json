@@ -1,0 +1,298 @@
+{
+  "id": "papelzinho",
+  "nome": "Papelzinho",
+  "url": "https://papelzinho.waldeapps.systems",
+  "tagline": "Amigo Oculto e Amigolate em segundos.",
+  "fonte": "fraunces",
+  "marca": {
+    "emoji": "🎁",
+    "fundoA": "#e11d48",
+    "destaque": "#f59e0b"
+  },
+  "recursos": [
+    {
+      "icone": "compartilhar",
+      "titulo": "Convite por link",
+      "descricao": "Compartilhe no WhatsApp e chame a turma em um toque."
+    },
+    {
+      "icone": "troca",
+      "titulo": "Sorteio justo",
+      "descricao": "O resultado sai sem ninguém tirar a si mesmo."
+    },
+    {
+      "icone": "pessoas",
+      "titulo": "Sugestões de presente",
+      "descricao": "Cada participante deixa dicas sem estragar a surpresa."
+    },
+    {
+      "icone": "celular",
+      "titulo": "Instala como app",
+      "descricao": "Abre na tela inicial e funciona como PWA."
+    }
+  ],
+  "chips": [
+    "Convite por link",
+    "Sorteio justo",
+    "Sugestões de presente"
+  ],
+  "selos": [
+    {
+      "icone": "pessoas",
+      "titulo": "Turma"
+    },
+    {
+      "icone": "troca",
+      "titulo": "Modalidades"
+    },
+    {
+      "icone": "estrela",
+      "titulo": "Premium"
+    }
+  ],
+  "hashtags": [
+    "#papelzinho",
+    "#amigooculto",
+    "#amigolate",
+    "#presentes",
+    "#resenha"
+  ],
+  "posts": [
+    {
+      "id": "sem-complicacao",
+      "card": {
+        "titulo": "Amigo Oculto sem *complicação*",
+        "sub": "Crie em segundos, sem planilha nem sofrimento."
+      },
+      "ganchos": [
+        "Se o amigo oculto começa numa planilha enorme, a brincadeira já perde a graça.",
+        "Ninguém quer organizar sorteio na base do improviso e da cola da turma.",
+        "Tem festa que merece menos burocracia e mais resenha.",
+        "Criar um amigo oculto não precisa virar missão de fim de semana."
+      ],
+      "corpos": [
+        "No Papelzinho você cria o evento, convida a galera e deixa o sorteio pronto em poucos toques.",
+        "O fluxo é simples de verdade: evento, convite, sorteio e revelação. Sem passo sobrando.",
+        "Em vez de planilha e troca de mensagens, você resolve tudo num lugar só.",
+        "O app foi pensado para deixar o amigo oculto organizado sem estragar a diversão."
+      ],
+      "ctas": [
+        "Crie o seu agora.\n\n👉 {link}",
+        "Teste grátis 👉 {link}",
+        "Comece em segundos 👉 {link}"
+      ],
+      "curtos": [
+        "Amigo Oculto sem complicação, sem planilha e sem stress: {link}",
+        "Crie, convide e sorteie em poucos toques. {link}",
+        "Menos burocracia, mais resenha. {link}"
+      ]
+    },
+    {
+      "id": "convite-por-link",
+      "card": {
+        "titulo": "Convite por *link*",
+        "sub": "Compartilhe no WhatsApp e pronto.",
+        "destaque": "1 clique"
+      },
+      "ganchos": [
+        "Ninguém quer sair mandando convite um por um quando dá pra resolver com um link.",
+        "Se a turma está no WhatsApp, o convite também precisa morar lá.",
+        "Um link já basta para juntar todo mundo no mesmo evento.",
+        "Compartilhar sem esforço ajuda o evento a sair do papel."
+      ],
+      "corpos": [
+        "No Papelzinho, o link de convite vai direto para a galera e cada pessoa entra no evento no seu ritmo.",
+        "Você compartilha o link, o pessoal entra e o evento começa a ganhar forma sem retrabalho.",
+        "O convite fica simples de repassar e fácil de abrir no celular.",
+        "Menos mensagens soltas, mais controle de quem já entrou."
+      ],
+      "ctas": [
+        "Compartilhe agora.\n\n👉 {link}",
+        "Crie seu link 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Convite por link para a turma entrar sem enrolação: {link}",
+        "Compartilhe no WhatsApp e deixe o evento rodar. {link}",
+        "Um link já resolve o convite. {link}"
+      ]
+    },
+    {
+      "id": "sorteio-justo",
+      "card": {
+        "titulo": "Sorteio *justo*",
+        "sub": "Ninguém tira a si mesmo."
+      },
+      "ganchos": [
+        "Se o sorteio não for justo, a brincadeira termina antes da revelação.",
+        "Amigo oculto bom é o que não entrega ninguém antes da hora.",
+        "Sorteio com regra clara evita dor de cabeça depois.",
+        "Ninguém quer descobrir que tirou a si mesmo."
+      ],
+      "corpos": [
+        "O Papelzinho garante que cada pessoa tire outra, sem repetir e sem deixar ninguém de fora.",
+        "Com o mínimo de participantes, o sorteio sai de forma justa e a brincadeira segue redonda.",
+        "O resultado é calculado para preservar o mistério e a diversão do grupo.",
+        "Você cria o evento e o app cuida da parte chata da conta."
+      ],
+      "ctas": [
+        "Veja como fica.\n\n👉 {link}",
+        "Crie o seu evento 👉 {link}",
+        "Teste grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Sorteio justo, sem ninguém tirar a si mesmo: {link}",
+        "A regra é clara e o resultado sai certo. {link}",
+        "Menos dor de cabeça, mais revelação. {link}"
+      ]
+    },
+    {
+      "id": "sugestoes-de-presente",
+      "card": {
+        "titulo": "Sugestões de *presente*",
+        "sub": "Ajudam sem estragar a surpresa.",
+        "destaque": "3 dicas"
+      },
+      "ganchos": [
+        "Sempre tem alguém que pergunta \"o que você quer ganhar?\" no último minuto.",
+        "Dar pista do presente ideal deixa a compra mais certeira.",
+        "A ideia é ajudar quem vai presentear, não entregar o jogo.",
+        "Sugestão boa evita presente aleatório e faz a troca render."
+      ],
+      "corpos": [
+        "No convite, cada participante pode deixar sugestões para guiar quem vai presentear.",
+        "As sugestões deixam a brincadeira mais útil sem perder o suspense da revelação.",
+        "Todo mundo ganha com uma pista melhor: quem compra acerta mais, quem recebe gosta mais.",
+        "O Papelzinho junta sorteio e sugestões num fluxo só, bem fácil de usar."
+      ],
+      "ctas": [
+        "Abra o evento.\n\n👉 {link}",
+        "Teste grátis 👉 {link}",
+        "Crie com sugestões 👉 {link}"
+      ],
+      "curtos": [
+        "Sugestões de presente ajudam sem matar a surpresa: {link}",
+        "Cada participante deixa pistas para quem vai comprar. {link}",
+        "Presente certeiro começa com uma boa sugestão. {link}"
+      ]
+    },
+    {
+      "id": "hora-da-revelacao",
+      "card": {
+        "titulo": "Hora da *revelação!*",
+        "sub": "Toque, espere e descubra."
+      },
+      "ganchos": [
+        "A melhor parte do amigo oculto é sempre a revelação.",
+        "Suspense bom precisa de um final à altura.",
+        "Quando a brincadeira chega na revelação, o grupo inteiro presta atenção.",
+        "Tem hora que todo mundo fica em silêncio esperando o nome aparecer."
+      ],
+      "corpos": [
+        "No Papelzinho, a revelação é animada e deixa o momento final mais divertido.",
+        "Você toca para revelar e o app mostra o resultado na hora certa.",
+        "A tela de revelação foi pensada para aumentar o suspense sem complicar o uso.",
+        "O final da brincadeira fica mais especial quando o resultado aparece com animação."
+      ],
+      "ctas": [
+        "Veja a revelação.\n\n👉 {link}",
+        "Teste o momento final 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Hora da revelação: toque e descubra quem tirou quem. {link}",
+        "O suspense termina com uma animação bonita. {link}",
+        "Tocar para revelar é a melhor parte. {link}"
+      ]
+    },
+    {
+      "id": "amigolate",
+      "card": {
+        "titulo": "Também tem *Amigolate*",
+        "sub": "Troca de doces para sair do óbvio.",
+        "destaque": "🍫"
+      },
+      "ganchos": [
+        "Nem todo amigo oculto precisa ser de presente tradicional.",
+        "Se a turma curte doce, a brincadeira muda de sabor.",
+        "Amigolate é a versão certa quando o grupo quer variar a resenha.",
+        "Tem evento que pede chocolate no lugar do presente clássico."
+      ],
+      "corpos": [
+        "O Papelzinho também serve para Amigolate, a troca de doces que deixa a brincadeira mais leve.",
+        "Você escolhe a modalidade e mantém o mesmo fluxo simples de convite e sorteio.",
+        "Muda o clima da festa sem mudar a facilidade de organizar.",
+        "Amigo oculto e Amigolate no mesmo app, sem retrabalho."
+      ],
+      "ctas": [
+        "Teste a versão doce.\n\n👉 {link}",
+        "Crie um Amigolate 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Amigolate também entra na resenha: {link}",
+        "Troca de doces com o mesmo fluxo simples. {link}",
+        "Quando a turma quer chocolate, o Papelzinho resolve. {link}"
+      ]
+    },
+    {
+      "id": "premium-sem-limites",
+      "card": {
+        "titulo": "Premium sem *limites*",
+        "sub": "R$5/mês, 7 dias grátis e mais liberdade."
+      },
+      "ganchos": [
+        "Quando o evento cresce, o plano grátis começa a ficar apertado.",
+        "Tem turma grande, tem festa recorrente e tem evento que pede mais espaço.",
+        "Se o amigo oculto virou tradição, vale ter recursos extras.",
+        "Nem todo mundo quer criar só um evento por vez."
+      ],
+      "corpos": [
+        "O Premium libera eventos e participantes ilimitados, além do Amigolate e de mais liberdade para editar depois.",
+        "No plano grátis, você começa simples; no Premium, ganha mais espaço para organizar sem limite.",
+        "Sete dias grátis deixam tempo suficiente para testar antes de decidir.",
+        "Também entram imagem de capa, sugestões maiores e prioridade em novidades."
+      ],
+      "ctas": [
+        "Veja o Premium.\n\n👉 {link}",
+        "Teste grátis por 7 dias 👉 {link}",
+        "Assine quando quiser 👉 {link}"
+      ],
+      "curtos": [
+        "Premium com 7 dias grátis e mais liberdade: {link}",
+        "Eventos e participantes ilimitados no plano pago. {link}",
+        "Quando o evento cresce, o Premium acompanha. {link}"
+      ]
+    },
+    {
+      "id": "instale-como-app",
+      "card": {
+        "titulo": "Instale como *app*",
+        "sub": "Abre na tela inicial e funciona como PWA.",
+        "destaque": "PWA"
+      },
+      "ganchos": [
+        "Se o grupo vai usar de novo, vale deixar o acesso na tela inicial.",
+        "Abrir pelo navegador é bom; abrir como app é melhor ainda.",
+        "Acesso rápido ajuda quando a turma está organizando a festa correndo.",
+        "PWA bom é o que parece app de verdade e abre sem atrito."
+      ],
+      "corpos": [
+        "O Papelzinho pode ser instalado como app, ficando disponível direto na tela inicial do celular.",
+        "Depois de instalado, o acesso fica mais rápido para voltar ao evento e conferir o convite.",
+        "É a mesma experiência do navegador, mas com atalho prático e cara de app nativo.",
+        "Para quem gosta de praticidade, é o jeito mais simples de manter o evento por perto."
+      ],
+      "ctas": [
+        "Instale agora.\n\n👉 {link}",
+        "Teste como app 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Instale como app e deixe o papelzinho na tela inicial: {link}",
+        "PWA para abrir rápido e voltar ao evento sem atrito. {link}",
+        "Mais prático do que abrir sempre pelo navegador. {link}"
+      ]
+    }
+  ]
+}

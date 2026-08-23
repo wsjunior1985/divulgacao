@@ -924,7 +924,44 @@
         "em": "2026-08-22T23:19:30.223Z",
         "erro": null
       }
+    },
+    "34-papelzinho-hora-da-revelacao": {
+      "instagram": {
+        "status": "ok",
+        "id": "18022794230702381",
+        "url": "https://www.instagram.com/p/18022794230702381",
+        "em": "2026-08-23T01:44:53.015Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122107794711435454",
+        "url": "https://www.facebook.com/1293634587162251_122107794711435454",
+        "em": "2026-08-23T01:44:53.015Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18109091362842961",
+        "url": "https://www.threads.net/@me/post/18109091362842961",
+        "em": "2026-08-23T01:44:53.015Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mtpo427hcq2e",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mtpo427hcq2e",
+        "em": "2026-08-23T01:44:53.015Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a8a5094deb4b57dfeadcf9c",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-08-23T01:44:53.015Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-08-22T23:19:30.223Z"
+  "atualizadoEm": "2026-08-23T01:44:53.015Z"
 }

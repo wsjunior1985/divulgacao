@@ -1257,7 +1257,44 @@
         "em": "2026-08-24T14:39:12.103Z",
         "erro": null
       }
+    },
+    "44-vaidarquanto-familia": {
+      "instagram": {
+        "status": "ok",
+        "id": "18091029416359526",
+        "url": "https://www.instagram.com/p/18091029416359526",
+        "em": "2026-08-24T17:34:35.421Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122108351097435454",
+        "url": "https://www.facebook.com/1293634587162251_122108351097435454",
+        "em": "2026-08-24T17:34:35.421Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18101304028973437",
+        "url": "https://www.threads.net/@me/post/18101304028973437",
+        "em": "2026-08-24T17:34:35.421Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mtttn5zgbd2y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mtttn5zgbd2y",
+        "em": "2026-08-24T17:34:35.421Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a8c80abc60ca5b89199b097",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-08-24T17:34:35.421Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-08-24T14:39:12.103Z"
+  "atualizadoEm": "2026-08-24T17:34:35.421Z"
 }

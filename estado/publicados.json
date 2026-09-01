@@ -2626,7 +2626,44 @@
         "em": "2026-08-31T23:38:00.964Z",
         "erro": null
       }
+    },
+    "97-papelzinho-amigolate": {
+      "instagram": {
+        "status": "ok",
+        "id": "18067515014774062",
+        "url": "https://www.instagram.com/p/18067515014774062",
+        "em": "2026-09-01T01:39:48.505Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122110193313435454",
+        "url": "https://www.facebook.com/1293634587162251_122110193313435454",
+        "em": "2026-09-01T01:39:48.505Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18440245594120207",
+        "url": "https://www.threads.net/@me/post/18440245594120207",
+        "em": "2026-09-01T01:39:48.505Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mugbzapc6424",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mugbzapc6424",
+        "em": "2026-09-01T01:39:48.505Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a962ce40f92a66e76d08564",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-01T01:39:48.505Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-08-31T23:38:00.964Z"
+  "atualizadoEm": "2026-09-01T01:39:48.505Z"
 }

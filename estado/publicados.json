@@ -2811,7 +2811,44 @@
         "em": "2026-09-01T21:19:33.677Z",
         "erro": null
       }
+    },
+    "106-gasonol-preco-limite": {
+      "instagram": {
+        "status": "ok",
+        "id": "18023627987911282",
+        "url": "https://www.instagram.com/p/18023627987911282",
+        "em": "2026-09-01T21:21:09.761Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122110405767435454",
+        "url": "https://www.facebook.com/1293634587162251_122110405767435454",
+        "em": "2026-09-01T21:21:09.761Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18118853756480334",
+        "url": "https://www.threads.net/@me/post/18118853756480334",
+        "em": "2026-09-01T21:21:09.761Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3muidzooji72v",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3muidzooji72v",
+        "em": "2026-09-01T21:21:09.761Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a9741c512353bde62225d70",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-01T21:21:09.761Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-01T21:19:33.677Z"
+  "atualizadoEm": "2026-09-01T21:21:09.761Z"
 }

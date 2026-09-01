@@ -62,6 +62,15 @@ export function escolherPauta(indice, apps) {
   return { app, post: app.posts[voltaPositiva], indice, ciclo };
 }
 
+/** Escolhe um app explicitamente para campanhas manuais sem alterar o rodizio. */
+export function escolherPautaPorApp(indice, apps, appId) {
+  const app = apps.find((item) => item.id === appId);
+  if (!app) throw new Error(`app desconhecido: ${appId}`);
+  const posicao = ((indice % app.posts.length) + app.posts.length) % app.posts.length;
+  const ciclo = Math.floor(indice / app.posts.length);
+  return { app, post: app.posts[posicao], indice, ciclo };
+}
+
 /** Link do app com UTM do canal — é o que separa um canal do outro no funil. */
 export function linkComUtm(app, canal, campanha = "alwayson") {
   const url = new URL(app.url);

@@ -26,6 +26,14 @@ on:
         description: "Slot específico (vazio = o de agora)"
         type: string
         required: false
+      app:
+        description: "App da campanha manual (vazio = rodízio normal)"
+        type: string
+        required: false
+      forcar:
+        description: "Republicar mesmo se o slot já saiu"
+        type: boolean
+        default: false
 
 # Necessário para commitar os cards, que viram a URL pública das imagens.
 permissions:
@@ -76,6 +84,8 @@ jobs:
           if [ "${{ inputs.dry_run }}" = "true" ]; then argumentos="$argumentos --dry-run"; fi
           if [ -n "${{ inputs.canais }}" ]; then argumentos="$argumentos --canais ${{ inputs.canais }}"; fi
           if [ -n "${{ inputs.slot }}" ]; then argumentos="$argumentos --slot ${{ inputs.slot }}"; fi
+          if [ -n "${{ inputs.app }}" ]; then argumentos="$argumentos --app ${{ inputs.app }}"; fi
+          if [ "${{ inputs.forcar }}" = "true" ]; then argumentos="$argumentos --forcar"; fi
           node scripts/publicar.mjs $argumentos
 
       # No dry-run os cards não são commitados, então ficam aqui para você abrir

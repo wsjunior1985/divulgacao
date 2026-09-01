@@ -17,7 +17,8 @@
     "verificar": "node scripts/verificar.mjs",
     "renovar": "node scripts/renovar-tokens.mjs",
     "apagar": "node scripts/apagar.mjs",
-    "calendario": "node scripts/calendario.mjs"
+    "calendario": "node scripts/calendario.mjs",
+    "test": "node --test scripts/lib/*.test.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",

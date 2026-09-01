@@ -6,12 +6,13 @@
 //   node scripts/publicar.mjs --slot 3           publica um slot específico
 //   node scripts/publicar.mjs --canais bluesky   restringe os canais
 //   node scripts/publicar.mjs --forcar           republica um slot já publicado
+//   node scripts/publicar.mjs --app gasonol       força um app em uma campanha manual
 //
 // A falha de um canal não derruba os outros: o resumo do fim diz o que saiu, o
 // que foi pulado e o que quebrou, e o processo só sai com erro se TODOS falharem.
 
 import { carregarEnv, canaisHabilitados, lerJson, gravarJson, agoraBRT, log, ok, aviso, erro, env } from "./lib/base.js";
-import { carregarApps, escolherPauta, indiceDoSlot, montarTexto, idDoPost } from "./lib/conteudo.js";
+import { carregarApps, escolherPauta, escolherPautaPorApp, indiceDoSlot, montarTexto, idDoPost } from "./lib/conteudo.js";
 import { gerarCard, semMarcadores } from "./lib/cards.js";
 import { publicarMidia } from "./lib/midia.js";
 import * as meta from "./canais/meta.js";
@@ -33,13 +34,14 @@ const HORARIOS = env("HORARIOS", "08,11,14,17,20,21,22")
   .filter((h) => Number.isInteger(h) && h >= 0 && h < 24);
 
 function argumentos(argv) {
-  const args = { dryRun: false, forcar: false, slot: null, canais: null };
+  const args = { dryRun: false, forcar: false, slot: null, canais: null, app: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--dry-run") args.dryRun = true;
     else if (a === "--forcar" || a === "--force") args.forcar = true;
     else if (a === "--slot") args.slot = Number(argv[++i]);
     else if (a === "--canais") args.canais = argv[++i].split(",").map((c) => c.trim());
+    else if (a === "--app") args.app = argv[++i];
     else throw new Error(`argumento desconhecido: ${a}`);
   }
   return args;
@@ -107,7 +109,7 @@ async function main() {
   const apps = carregarApps();
 
   const slot = args.slot !== null ? { indice: args.slot, dia: agoraBRT().dia } : slotDeAgora();
-  const pauta = escolherPauta(slot.indice, apps);
+  const pauta = args.app ? escolherPautaPorApp(slot.indice, apps, args.app) : escolherPauta(slot.indice, apps);
   const { app, post, ciclo } = pauta;
   const identificador = idDoPost(pauta);
 

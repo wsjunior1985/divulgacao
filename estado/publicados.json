@@ -2848,7 +2848,44 @@
         "em": "2026-09-01T21:21:09.761Z",
         "erro": null
       }
+    },
+    "101-gasonol-mito-etanol": {
+      "instagram": {
+        "status": "ok",
+        "id": "18333536401257099",
+        "url": "https://www.instagram.com/p/18333536401257099",
+        "em": "2026-09-01T22:23:31.541Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122110413021435454",
+        "url": "https://www.facebook.com/1293634587162251_122110413021435454",
+        "em": "2026-09-01T22:23:31.541Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17998116143798960",
+        "url": "https://www.threads.net/@me/post/17998116143798960",
+        "em": "2026-09-01T22:23:31.541Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3muihj6shha2j",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3muihj6shha2j",
+        "em": "2026-09-01T22:23:31.541Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a975063a01ff5804108fd0b",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-01T22:23:31.541Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-01T21:21:09.761Z"
+  "atualizadoEm": "2026-09-01T22:23:31.541Z"
 }

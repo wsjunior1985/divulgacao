@@ -2959,7 +2959,44 @@
         "em": "2026-09-02T03:56:39.401Z",
         "erro": null
       }
+    },
+    "106-aieat-consistencia": {
+      "instagram": {
+        "status": "ok",
+        "id": "17918569482430527",
+        "url": "https://www.instagram.com/p/17918569482430527",
+        "em": "2026-09-02T14:59:35.070Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122110607667435454",
+        "url": "https://www.facebook.com/1293634587162251_122110607667435454",
+        "em": "2026-09-02T14:59:35.070Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18109412501140925",
+        "url": "https://www.threads.net/@me/post/18109412501140925",
+        "em": "2026-09-02T14:59:35.070Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3muk76bdzzd2u",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3muk76bdzzd2u",
+        "em": "2026-09-02T14:59:35.070Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a9839d6370b3ab90cbb606a",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-02T14:59:35.070Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-02T03:56:39.401Z"
+  "atualizadoEm": "2026-09-02T14:59:35.070Z"
 }

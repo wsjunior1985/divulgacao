@@ -3218,7 +3218,44 @@
         "em": "2026-09-03T17:31:27.343Z",
         "erro": null
       }
+    },
+    "115-gasonol-regra-70": {
+      "instagram": {
+        "status": "ok",
+        "id": "18121561787485907",
+        "url": "https://www.instagram.com/p/18121561787485907",
+        "em": "2026-09-03T22:22:08.790Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122110913127435454",
+        "url": "https://www.facebook.com/1293634587162251_122110913127435454",
+        "em": "2026-09-03T22:22:08.790Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18206775931317863",
+        "url": "https://www.threads.net/@me/post/18206775931317863",
+        "em": "2026-09-03T22:22:08.790Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3muniekucck2o",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3muniekucck2o",
+        "em": "2026-09-03T22:22:08.790Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a99f3107ebbef60811f99d1",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-03T22:22:08.790Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-03T17:31:27.343Z"
+  "atualizadoEm": "2026-09-03T22:22:08.790Z"
 }

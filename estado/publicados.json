@@ -3921,7 +3921,44 @@
         "em": "2026-09-07T16:18:24.400Z",
         "erro": null
       }
+    },
+    "142-vaidarquanto-fim-do-mes": {
+      "instagram": {
+        "status": "ok",
+        "id": "18114282914061800",
+        "url": "https://www.instagram.com/p/18114282914061800",
+        "em": "2026-09-07T18:36:12.383Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122111891109435454",
+        "url": "https://www.facebook.com/1293634587162251_122111891109435454",
+        "em": "2026-09-07T18:36:12.383Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18078552587686640",
+        "url": "https://www.threads.net/@me/post/18078552587686640",
+        "em": "2026-09-07T18:36:12.383Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mux5m7xeoy24",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mux5m7xeoy24",
+        "em": "2026-09-07T18:36:12.383Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6a9f041c17b22218b4d33fe3",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-07T18:36:12.383Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-07T16:18:24.400Z"
+  "atualizadoEm": "2026-09-07T18:36:12.383Z"
 }

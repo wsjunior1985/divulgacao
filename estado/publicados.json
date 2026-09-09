@@ -4328,7 +4328,16 @@
         "em": "2026-09-09T17:33:11.373Z",
         "erro": null
       }
+    },
+    "157-gasonol-mito-etanol": {
+      "tiktok": {
+        "status": "ok",
+        "id": "p_pub_url~v2.7683641896496826375",
+        "url": "https://www.tiktok.com/",
+        "em": "2026-09-09T20:55:29.968Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-09T17:33:11.373Z"
+  "atualizadoEm": "2026-09-09T20:55:29.968Z"
 }

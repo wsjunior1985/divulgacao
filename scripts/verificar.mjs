@@ -94,7 +94,9 @@ async function checarTikTok() {
   try {
     const renovado = await tiktok.renovarToken();
     const token = renovado?.token ?? env("TIKTOK_ACCESS_TOKEN");
-    const res = await buscar("https://open.tiktokapis.com/v2/user/info/?fields=display_name,username", {
+    // "username" exige o escopo user.info.profile, que o app não pede (só
+    // user.info.basic, video.publish e video.upload — os da auditoria).
+    const res = await buscar("https://open.tiktokapis.com/v2/user/info/?fields=display_name", {
       headers: { Authorization: `Bearer ${token}` },
     });
     const d = await res.json();

@@ -4680,7 +4680,51 @@
         "em": "2026-09-11T04:03:17.216Z",
         "erro": null
       }
+    },
+    "169-aieat-foto-do-prato": {
+      "instagram": {
+        "status": "ok",
+        "id": "18582028447067174",
+        "url": "https://www.instagram.com/p/18582028447067174",
+        "em": "2026-09-11T14:51:46.544Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122112840639435454",
+        "url": "https://www.facebook.com/1293634587162251_122112840639435454",
+        "em": "2026-09-11T14:51:46.544Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18087389666667882",
+        "url": "https://www.threads.net/@me/post/18087389666667882",
+        "em": "2026-09-11T14:51:46.544Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mvaswe2j3u2z",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mvaswe2j3u2z",
+        "em": "2026-09-11T14:51:46.544Z",
+        "erro": null
+      },
+      "tiktok": {
+        "status": "ok",
+        "id": "p_pub_url~v2.7684290103607035924",
+        "url": "https://www.tiktok.com/",
+        "em": "2026-09-11T14:51:46.544Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aa41582262bdff0e87e9567",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-11T14:51:46.544Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-11T04:03:17.216Z"
+  "atualizadoEm": "2026-09-11T14:51:46.544Z"
 }

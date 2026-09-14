@@ -5252,7 +5252,51 @@
         "em": "2026-09-14T00:44:57.357Z",
         "erro": null
       }
+    },
+    "189-remedin-idoso": {
+      "instagram": {
+        "status": "ok",
+        "id": "17863760982672558",
+        "url": "https://www.instagram.com/p/17863760982672558",
+        "em": "2026-09-14T04:22:55.264Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122113390503435454",
+        "url": "https://www.facebook.com/1293634587162251_122113390503435454",
+        "em": "2026-09-14T04:22:55.264Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18495731857097416",
+        "url": "https://www.threads.net/@me/post/18495731857097416",
+        "em": "2026-09-14T04:22:55.264Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mvhb6gsr372g",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mvhb6gsr372g",
+        "em": "2026-09-14T04:22:55.264Z",
+        "erro": null
+      },
+      "tiktok": {
+        "status": "ok",
+        "id": "p_pub_url~v2.7685240507775633429",
+        "url": "https://www.tiktok.com/",
+        "em": "2026-09-14T04:22:55.264Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aa7769f490f0fc8d8b2af37",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-14T04:22:55.264Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-14T00:44:57.357Z"
+  "atualizadoEm": "2026-09-14T04:22:55.264Z"
 }

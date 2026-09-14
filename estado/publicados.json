@@ -5384,7 +5384,51 @@
         "em": "2026-09-14T19:02:27.367Z",
         "erro": null
       }
+    },
+    "192-gasonol-quanto-economiza": {
+      "instagram": {
+        "status": "ok",
+        "id": "18345633511269842",
+        "url": "https://www.instagram.com/p/18345633511269842",
+        "em": "2026-09-14T20:48:06.243Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122113534719435454",
+        "url": "https://www.facebook.com/1293634587162251_122113534719435454",
+        "em": "2026-09-14T20:48:06.243Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18133059991657702",
+        "url": "https://www.threads.net/@me/post/18133059991657702",
+        "em": "2026-09-14T20:48:06.243Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mviyaaxcxh2g",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mviyaaxcxh2g",
+        "em": "2026-09-14T20:48:06.243Z",
+        "erro": null
+      },
+      "tiktok": {
+        "status": "ok",
+        "id": "p_pub_url~v2.7685495231391238151",
+        "url": "https://www.tiktok.com/",
+        "em": "2026-09-14T20:48:06.243Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aa85d86605ccb766a46ba67",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-14T20:48:06.243Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-14T19:02:27.367Z"
+  "atualizadoEm": "2026-09-14T20:48:06.243Z"
 }

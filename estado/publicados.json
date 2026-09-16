@@ -5516,7 +5516,51 @@
         "em": "2026-09-15T20:05:32.883Z",
         "erro": null
       }
+    },
+    "202-papelzinho-hora-da-revelacao": {
+      "instagram": {
+        "status": "ok",
+        "id": "17963105358194134",
+        "url": "https://www.instagram.com/p/17963105358194134",
+        "em": "2026-09-16T01:07:16.899Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122113798179435454",
+        "url": "https://www.facebook.com/1293634587162251_122113798179435454",
+        "em": "2026-09-16T01:07:16.899Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17900320260657731",
+        "url": "https://www.threads.net/@me/post/17900320260657731",
+        "em": "2026-09-16T01:07:16.899Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mvlx6mjrt423",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mvlx6mjrt423",
+        "em": "2026-09-16T01:07:16.899Z",
+        "erro": null
+      },
+      "tiktok": {
+        "status": "ok",
+        "id": "p_pub_url~v2.7685932993294157845",
+        "url": "https://www.tiktok.com/",
+        "em": "2026-09-16T01:07:16.899Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aa9ebc4501861120db2a0ec",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-16T01:07:16.899Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-15T20:05:32.883Z"
+  "atualizadoEm": "2026-09-16T01:07:16.899Z"
 }

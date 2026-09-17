@@ -1,0 +1,12 @@
+{
+  "source": "/Users/wsjunior/Library/CloudStorage/GoogleDrive-wsjunior@gmail.com/Meu Drive/WaldeApps/Divulgação dos Projetos/Gasonol 3 - Sem edição.mp4",
+  "screens": [
+    "/Users/wsjunior/Library/CloudStorage/GoogleDrive-wsjunior@gmail.com/Meu Drive/WaldeApps/Divulgação dos Projetos/Gasonol/gasonol1.png",
+    "/Users/wsjunior/Library/CloudStorage/GoogleDrive-wsjunior@gmail.com/Meu Drive/WaldeApps/Divulgação dos Projetos/Gasonol/gasonol2.png",
+    "/Users/wsjunior/Library/CloudStorage/GoogleDrive-wsjunior@gmail.com/Meu Drive/WaldeApps/Divulgação dos Projetos/Gasonol/gasonol3.png"
+  ],
+  "brand": "Gasonol",
+  "output": "Gasonol 3 - Editado.mp4",
+  "format": "1080x1920, 24fps, 10s",
+  "audio": "original, stream copy"
+}

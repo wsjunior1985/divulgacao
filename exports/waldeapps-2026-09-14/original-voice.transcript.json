@@ -1,0 +1,64 @@
+[
+  {
+    "start": 3.020000000000001,
+    "end": 9.22,
+    "text": " Desenvolvemos PWA Lulari Tablet. Eles funcionam offline, sem Dynamic App Store.",
+    "words": [
+      {
+        "word": " Desenvolvemos",
+        "start": 3.020000000000001,
+        "end": 3.94
+      },
+      {
+        "word": " PWA",
+        "start": 3.94,
+        "end": 4.54
+      },
+      {
+        "word": " Lulari",
+        "start": 4.54,
+        "end": 4.9
+      },
+      {
+        "word": " Tablet.",
+        "start": 4.9,
+        "end": 5.38
+      },
+      {
+        "word": " Eles",
+        "start": 5.8,
+        "end": 5.98
+      },
+      {
+        "word": " funcionam",
+        "start": 5.98,
+        "end": 6.46
+      },
+      {
+        "word": " offline,",
+        "start": 6.46,
+        "end": 6.9
+      },
+      {
+        "word": " sem",
+        "start": 7.5,
+        "end": 8.42
+      },
+      {
+        "word": " Dynamic",
+        "start": 8.42,
+        "end": 8.8
+      },
+      {
+        "word": " App",
+        "start": 8.8,
+        "end": 9.0
+      },
+      {
+        "word": " Store.",
+        "start": 9.0,
+        "end": 9.22
+      }
+    ]
+  }
+]

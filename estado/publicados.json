@@ -5972,7 +5972,44 @@
         "em": "2026-09-18T01:03:16.901Z",
         "erro": null
       }
+    },
+    "217-remedin-antibiotico": {
+      "instagram": {
+        "status": "ok",
+        "id": "18111316169038432",
+        "url": "https://www.instagram.com/p/18111316169038432",
+        "em": "2026-09-18T04:08:58.838Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122114253207435454",
+        "url": "https://www.facebook.com/1293634587162251_122114253207435454",
+        "em": "2026-09-18T04:08:58.838Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17963658927178142",
+        "url": "https://www.threads.net/@me/post/17963658927178142",
+        "em": "2026-09-18T04:08:58.838Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mvrcbnh6mj2q",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mvrcbnh6mj2q",
+        "em": "2026-09-18T04:08:58.838Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aacb95aea02db373de23e1a",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-18T04:08:58.838Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-18T01:03:16.901Z"
+  "atualizadoEm": "2026-09-18T04:08:58.838Z"
 }

@@ -6527,7 +6527,44 @@
         "em": "2026-09-21T00:51:39.000Z",
         "erro": null
       }
+    },
+    "238-remedin-estoque": {
+      "instagram": {
+        "status": "ok",
+        "id": "18129180046759890",
+        "url": "https://www.instagram.com/p/18129180046759890",
+        "em": "2026-09-21T04:22:43.157Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122114984931435454",
+        "url": "https://www.facebook.com/1293634587162251_122114984931435454",
+        "em": "2026-09-21T04:22:43.157Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18227266801328974",
+        "url": "https://www.threads.net/@me/post/18227266801328974",
+        "em": "2026-09-21T04:22:43.157Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mvyugy76ed2n",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mvyugy76ed2n",
+        "em": "2026-09-21T04:22:43.157Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6ab0b1133649bbabeabcd7bb",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-09-21T04:22:43.157Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-09-21T00:51:39.000Z"
+  "atualizadoEm": "2026-09-21T04:22:43.157Z"
 }

@@ -1051,12 +1051,34 @@ function layoutVitrine(contexto, capturas, variacao = 0) {
   ${blocoLista}`;
 }
 
+/**
+ * Assembles a complete SVG card for a given app and post content.
+ *
+ * Layout selection logic (in order of precedence):
+ *  1. Vitrine: if capture exists AND resources exist AND layout !== "classico"
+ *     → showcase layout with logo, headline, 4 resource items, phone stack, footer
+ *  2. Hero: if capture exists (fallback for vitrine condition unmet)
+ *     → two-column with headline + phone; alternates left/right by `lado`
+ *  3. Destaque: if `destaque` number exists (no capture needed)
+ *     → large stat number + headline + subtitle
+ *  4. Recursos: if `card.layout === "recursos"` AND resources exist
+ *     → headline + 4 resource items, text-only (no phone)
+ *  5. Manchete: default fallback
+ *     → headline + subtitle + chips, simplest layout
+ *
+ * @param {Object} app - App config from apps/<id>.json (nome, fonte, marca, url, recursos, etc.)
+ * @param {Object} post - Post data (card: { titulo, sub, layout, destaque, recursos }, or null)
+ * @param {string} formato - "feed" (1080×1350), "vertical" (1080×1920), "quadrado" (1080×1080)
+ * @param {number} variacao - Rotation through captures (0–2) and phone arrangements
+ * @param {number} lado - Hero layout phone position: 0 = left, 1 = right
+ * @returns {string} Complete SVG as string, ready for resvg rendering
+ */
 export function montarSvg({ app, post, formato = "feed", variacao = 0, lado = 0 }) {
   usarDisplay(app.fonte);
   const { largura: L, altura: A } = FORMATOS[formato] ?? FORMATOS.feed;
   const p = paleta(app);
-  const margem = Math.round(L * 0.082);
-  const card = post.card ?? {};
+  const margem = Math.round(L * 0.082); // ~8.2% horizontal margin
+  const card = post?.card ?? {};
 
   const contexto = {
     app,
@@ -1071,14 +1093,10 @@ export function montarSvg({ app, post, formato = "feed", variacao = 0, lado = 0 
   };
 
   const captura = capturaBase64(app, variacao);
-
-  // Vitrine é o desenho padrão: só exige captura e recursos, que todo app tem.
-  // Os layouts antigos continuam atendendo os casos em que falta material —
-  // captura quebrada, tema sem recurso, card de número puro.
   const usaVitrine = captura && contexto.recursos.length && card.layout !== "classico";
 
   if (usaVitrine) {
-    const capturas = capturasBase64(app, variacao, 2);
+    const capturas = capturasBase64(app, variacao, 2); // Up to 2 phones stacked
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${L}" height="${A}" viewBox="0 0 ${L} ${A}">
   ${fundo(L, A, p)}
   ${cabecalhoVitrine(app, p, margem, L - margem * 2)}
@@ -1095,7 +1113,7 @@ export function montarSvg({ app, post, formato = "feed", variacao = 0, lado = 0 
   } else if (card.layout === "recursos" && contexto.recursos.length) {
     corpo = layoutRecursos(contexto);
   } else {
-    corpo = layoutManchete(contexto);
+    corpo = layoutManchete(contexto); // Always succeeds; safe default
   }
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${L}" height="${A}" viewBox="0 0 ${L} ${A}">
@@ -1106,28 +1124,50 @@ export function montarSvg({ app, post, formato = "feed", variacao = 0, lado = 0 
 </svg>`;
 }
 
-/** Rasteriza com resvg, que recebe as fontes do repositório — sem depender do sistema. */
+/**
+ * Renders SVG → PNG → JPEG. All fonts are embedded; resvg renders identically on any platform.
+ *
+ * Pipeline:
+ *  1. montarSvg() assembles the SVG using the app's fonts and colors
+ *  2. resvg renders SVG → PNG at the target width (auto height via viewBox)
+ *  3. sharp converts PNG → JPEG (quality 92, 4:4:4 chroma for best color fidelity)
+ *  4. Result is written to assets/cards/<nome>.jpg
+ *
+ * Font loading: readdirSync(assets/fontes/) discovers all .ttf/.otf files dynamically.
+ * This avoids a hardcoded font list and allows new display fonts to work immediately.
+ *
+ * @param {Object} app - App config (nome, fonte, marca, url, resources, logos, etc.)
+ * @param {Object} post - Post data with card: { titulo, sub, layout, destaque, recursos }
+ * @param {string} formato - Card format: "feed" (1080×1350), "vertical" (1080×1920), "quadrado" (1080×1080)
+ * @param {string} nome - Output filename (no extension; saved as assets/cards/<nome>.jpg)
+ * @param {string} [titulo] - Fallback headline if post.card.titulo is missing
+ * @param {string} [sub] - Fallback subtitle if post.card.sub is missing
+ * @param {number} variacao - Capture rotation and phone arrangement index (0–2)
+ * @param {number} lado - Hero layout phone side: 0 = left, 1 = right (ignored for vitrine)
+ * @returns {Promise<{relativo, caminho, bytes}>} Relative path, full path, and file size
+ */
 export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub, variacao = 0, lado = 0 }) {
   const { Resvg } = await import("@resvg/resvg-js");
   const postFinal = post ?? { card: { titulo, sub } };
   const svg = montarSvg({ app, post: postFinal, formato, variacao, lado });
 
+  // Discover all fonts dynamically. Hardcoding would break when new display fonts are added.
+  const fontFiles = readdirSync(FONTES)
+    .filter((f) => /\.(ttf|otf)$/i.test(f))
+    .map((f) => `${FONTES}/${f}`);
+
   const resvg = new Resvg(svg, {
     fitTo: { mode: "width", value: FORMATOS[formato]?.largura ?? 1080 },
     font: {
-      // Lista o diretório em vez de enumerar: cada app traz a sua display, e
-      // esquecer um arquivo aqui não daria erro — cairia calado no fallback.
-      fontFiles: readdirSync(FONTES)
-        .filter((f) => /\.(ttf|otf)$/i.test(f))
-        .map((f) => `${FONTES}/${f}`),
-      loadSystemFonts: false,
-      defaultFontFamily: CORPO,
+      fontFiles,
+      loadSystemFonts: false, // Embedded fonts only; no system font fallback
+      defaultFontFamily: CORPO, // Inter is the body/fallback
     },
   });
 
   const png = resvg.render().asPng();
 
-  // As redes querem JPEG; o resvg só entrega PNG, então o sharp fecha a conta.
+  // Convert PNG → JPEG at quality 92 with 4:4:4 chroma (best color fidelity for brand colors).
   const { default: sharp } = await import("sharp");
   const buffer = await sharp(png).jpeg({ quality: 92, chromaSubsampling: "4:4:4" }).toBuffer();
 

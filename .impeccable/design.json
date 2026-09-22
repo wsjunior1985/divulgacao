@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-22T00:00:00Z",
+  "title": "Design System: Divulgação Card Generator",
+  "extensions": {
+    "colorMeta": {
+      "brand-primary": {
+        "role": "primary",
+        "displayName": "Brand Primary",
+        "canonical": "dynamic per app (e.g., oklch(55% 0.24 140) for GASONOL)",
+        "tonalRamp": [
+          "oklch(15% 0.24 140)",
+          "oklch(25% 0.24 140)",
+          "oklch(35% 0.24 140)",
+          "oklch(45% 0.24 140)",
+          "oklch(55% 0.24 140)",
+          "oklch(65% 0.24 140)",
+          "oklch(75% 0.24 140)",
+          "oklch(85% 0.24 140)"
+        ]
+      },
+      "background-top": {
+        "role": "neutral",
+        "displayName": "Background Top",
+        "canonical": "derived from app base + 14% accent blend",
+        "tonalRamp": [
+          "#0a0d0b",
+          "#0d1010",
+          "#101414",
+          "#131818",
+          "#161c1c",
+          "#1a2020",
+          "#1d2424",
+          "#212828"
+        ]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Text Primary",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Card headline; font family varies per app. 56px–288px, auto-shrinking if title doesn't fit."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Resource descriptions, subtitles, support text. 28px–42px, always Inter."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Chip text, seal badges, callouts. 20px–26px, uppercase."
+      }
+    },
+    "breakpoints": [
+      {
+        "name": "feed",
+        "value": "1080×1350",
+        "purpose": "Instagram, Facebook, Threads feed card (portrait, standard)."
+      },
+      {
+        "name": "vertical",
+        "value": "1080×1920",
+        "purpose": "TikTok vertical video format (tall portrait)."
+      },
+      {
+        "name": "square",
+        "value": "1080×1080",
+        "purpose": "Square social preview and fallback format."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "phone-drop-far",
+        "value": "#000000 at 28% opacity, offset y+22",
+        "purpose": "Distant shadow under phone mockup, creates depth."
+      },
+      {
+        "name": "phone-drop-near",
+        "value": "#000000 at 12% opacity, offset y+40",
+        "purpose": "Closer shadow under phone mockup, adds dimensionality."
+      },
+      {
+        "name": "vignette",
+        "value": "radial gradient #000000, 0% center to 42% edge",
+        "purpose": "Frames the card and draws eye to center."
+      }
+    ],
+    "motion": [],
+    "gradients": [
+      {
+        "name": "background",
+        "svgDefinition": "<linearGradient id=\"g\" x1=\"0\" y1=\"0\" x2=\"0.35\" y2=\"1\"><stop offset=\"0\" stop-color=\"{background-top}\"/><stop offset=\"1\" stop-color=\"{background-base}\"/></linearGradient>",
+        "purpose": "Primary card background. Linear top-to-bottom, shifted left (35% x1→x2) to pool darkest tone in bottom-right."
+      },
+      {
+        "name": "brilho",
+        "svgDefinition": "<radialGradient id=\"brilho\" cx=\"0.74\" cy=\"0.08\" r=\"0.88\"><stop offset=\"0\" stop-color=\"{brand-primary}\" stop-opacity=\"0.34\"/><stop offset=\"0.45\" stop-color=\"{brand-primary}\" stop-opacity=\"0.10\"/><stop offset=\"1\" stop-color=\"{brand-primary}\" stop-opacity=\"0\"/></radialGradient>",
+        "purpose": "Top-right radial glow. Brand color soft highlight, anchors visual weight."
+      },
+      {
+        "name": "brilho2",
+        "svgDefinition": "<radialGradient id=\"brilho2\" cx=\"0.06\" cy=\"0.88\" r=\"0.7\"><stop offset=\"0\" stop-color=\"{text-support}\" stop-opacity=\"0.14\"/><stop offset=\"1\" stop-color=\"{text-support}\" stop-opacity=\"0\"/></radialGradient>",
+        "purpose": "Bottom-left radial glow. Secondary accent in support tone, adds warmth."
+      },
+      {
+        "name": "vignette",
+        "svgDefinition": "<radialGradient id=\"vignetta\" cx=\"0.5\" cy=\"0.44\" r=\"0.78\"><stop offset=\"0.55\" stop-color=\"#000000\" stop-opacity=\"0\"/><stop offset=\"1\" stop-color=\"#000000\" stop-opacity=\"0.42\"/></radialGradient>",
+        "purpose": "Radial vignette. Black gradient frames edges, draws eye to center, adds depth."
+      },
+      {
+        "name": "filete",
+        "svgDefinition": "<linearGradient id=\"filete\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\"><stop offset=\"0\" stop-color=\"{brand-primary}\" stop-opacity=\"0.9\"/><stop offset=\"0.45\" stop-color=\"{brand-primary}\" stop-opacity=\"0.28\"/><stop offset=\"1\" stop-color=\"{brand-primary}\" stop-opacity=\"0\"/></linearGradient>",
+        "purpose": "Top 3px border. Brand accent fades left-to-right; provides color punctuation without visual weight."
+      },
+      {
+        "name": "phone-corpo",
+        "svgDefinition": "<linearGradient id=\"{id}-corpo\" x1=\"0\" y1=\"0\" x2=\"0.5\" y2=\"1\"><stop offset=\"0\" stop-color=\"#3b3b44\"/><stop offset=\"0.5\" stop-color=\"#1a1a20\"/><stop offset=\"1\" stop-color=\"#0c0c10\"/></linearGradient>",
+        "purpose": "Phone frame body gradient. Metallic gray-to-black, simulates device casing."
+      },
+      {
+        "name": "phone-borda",
+        "svgDefinition": "<linearGradient id=\"{id}-borda\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#ffffff\" stop-opacity=\"0.5\"/><stop offset=\"0.2\" stop-color=\"#ffffff\" stop-opacity=\"0.12\"/><stop offset=\"1\" stop-color=\"#ffffff\" stop-opacity=\"0.05\"/></linearGradient>",
+        "purpose": "Phone frame edge highlight. White top-fade adds glossy dimension to device edge."
+      },
+      {
+        "name": "phone-reflexo",
+        "svgDefinition": "<linearGradient id=\"{id}-reflexo\" x1=\"0\" y1=\"0\" x2=\"0.45\" y2=\"1\"><stop offset=\"0\" stop-color=\"#ffffff\" stop-opacity=\"0.10\"/><stop offset=\"0.4\" stop-color=\"#ffffff\" stop-opacity=\"0\"/></linearGradient>",
+        "purpose": "Glass gloss on screen. Angled top-left to bottom-right, simulates light reflection off screen."
+      },
+      {
+        "name": "phone-glow",
+        "svgDefinition": "<radialGradient id=\"{id}-glow\" cx=\"0.5\" cy=\"0.42\" r=\"0.62\"><stop offset=\"0\" stop-color=\"{brand-primary}\" stop-opacity=\"0.34\"/><stop offset=\"0.6\" stop-color=\"{brand-primary}\" stop-opacity=\"0.08\"/><stop offset=\"1\" stop-color=\"{brand-primary}\" stop-opacity=\"0\"/></radialGradient>",
+        "purpose": "Halo around phone mockup. Brand-colored radial glow reinforces app identity without competing with content."
+      },
+      {
+        "name": "cta",
+        "svgDefinition": "<linearGradient id=\"cta\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0.6\"><stop offset=\"0\" stop-color=\"{brand-primary}\"/><stop offset=\"1\" stop-color=\"{brand-primary darkened 12%}\"/></linearGradient>",
+        "purpose": "CTA button (footer). Diagonal top-left to bottom-right, slight darkening for depth on flat card."
+      }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "The Living Brand Museum",
+    "overview": "This is not a template system — it's a fidelity engine. Each card holds the real brand identity of its app: the official logo (not a monogram), the precise palette extracted from the app's own CSS (converted from OKLCH to hex to guarantee pixel-identical rendering on GitHub's runner and the designer's Mac), and a distinctive font per app so no two cards in the rotation look the same. The card speaks the app's visual voice at full volume, with no beige compromises. Depth is conveyed through layered gradients, phone mockups rendered in grayscale metal with glossy overlays, and a radial vignette that anchors the composition. Every card is rendered to JPEG just-in-time — identical on every platform, every run.",
+    "keyCharacteristics": [
+      "Authentic brand per app (no normalization across products)",
+      "Deterministic, computed color palette from app source",
+      "One display font per app; identity shifts naturally across the rotation",
+      "Sophisticated depth via gradients and phone mockups, not flat tiles",
+      "Responsive typography that scales and breaks to content, not fixed grids",
+      "Real app screenshots (updated weekly) embedded inside metal phone frames"
+    ],
+    "rules": [
+      {
+        "name": "The Algorithmic Palette Rule",
+        "body": "Every color is computed, never guessed. The system reads the source OKLCH from index.css, converts to hex with LMS/gamma correction, and derives every secondary tone through mixing and darkening functions. This guarantees the card rendered on the GitHub runner looks identical to a preview on a designer's Mac.",
+        "section": "colors"
+      },
+      {
+        "name": "The Real Font Rule",
+        "body": "Every display font is embedded by filename and family name. The family name matches what the resvg renderer sees in the TTF's name table (e.g., \"Inter Display\" with a space, not \"InterDisplay\"). A mismatch causes the font to fall back silently to Inter, changing the card's entire personality. Verify the family name in the font file before adding to DISPLAYS in scripts/lib/cards.js.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Estimate Rule",
+        "body": "Text width is measured via opentype.js against the actual TTF file, character by character, advancing width included. Letter-spacing is folded into the width calculation. This prevents word-wrapping errors that would cause titles to spill beyond the card margin or orphan words.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "Box-shadow and filter: blur are off-limits. Depth lives in gradients and relative positioning. Shadows behind phone mockups are achieved via lower-opacity rect layers (#000000 at 0.28 and 0.12 opacity) stacked behind the phone frame.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Rounded-by-Default Rule",
+        "body": "Every grouped container (footer, chip, card) gets generous radius. Sharp corners are reserved for text boundaries and the phone screen (where crispness aids the mock's verisimilitude).",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do read the brand color from apps/<id>.json in both marca.destaque (accent) and marca.fundoA (base).",
+      "Do convert OKLCH to hex via the paraHex() function in lib/cor.js. It handles both formats; never hand-pick a hex approximation.",
+      "Do measure text width using opentype.js against the actual TTF file. Every glyph's advance width is summed, letter-spacing is folded in.",
+      "Do use the brand accent color sparingly: in the headline marker, footer stripe, and resource icons. Overuse dilutes the brand signal.",
+      "Do embed every font as a base64-encoded .ttf in the SVG <defs>. The rendering environment may not have the font installed.",
+      "Do use a clip-path to contain the app screenshot inside the phone mockup, even if the screenshot is smaller than the screen area.",
+      "Do layer gradients for depth: background, radial glows, and vignette, stacked in order from back to front.",
+      "Do add a unique sufixo (suffix) to gradient and clipPath IDs when rendering multiple phone instances on the same card (e.g., layout vitrine draws two phones side-by-side)."
+    ],
+    "donts": [
+      "Don't use CSS Box-shadow or filter: blur. Depth lives in gradients only; resvg's filter support is inconsistent.",
+      "Don't approximate colors by eye or paste hex values from a color picker. Always derive from the source OKLCH via paraHex().",
+      "Don't use system fonts or assume the font is installed. Every display font must be embedded as a .ttf in assets/fontes/.",
+      "Don't estimate text width or assume monospace advance widths. Use opentype.js and measure the actual font file.",
+      "Don't use <foreignObject> to embed HTML; build everything as SVG paths, text, and groups.",
+      "Don't apply filters to individual shapes; build the effect with layered gradients and opacity.",
+      "Don't hardcode headline sizes. Use ajustarTitulo() to shrink until the text fits the allotted lines (max 4).",
+      "Don't use white or near-white backgrounds. All backgrounds are dark; text is always white or the derived support color.",
+      "Don't add drop shadows to text. Contrast is achieved through color and weight, not shadow.",
+      "Don't reuse the same gradient ID across multiple phone instances or component groups on the same card. Each must have a unique ID to avoid one element's gradient bleeding into another."
+    ]
+  }
+}

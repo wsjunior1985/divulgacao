@@ -7,6 +7,35 @@
     "fundoA": "#120818",
     "destaque": "#cd46b7"
   },
+  "visual": {
+    "layout": "aieat",
+    "acento": "#b45cf0",
+    "calor": "#7c4dff",
+    "nomeMarca": "AI Eat",
+    "slogan": "Seu nutricionista<br>com <i>IA</i> no bolso",
+    "selo": [
+      "Grátis",
+      "para testar"
+    ],
+    "frase": [
+      "Simples, rápido e sem cartão!",
+      "Sua jornada saudável começa agora."
+    ],
+    "selos": [
+      {
+        "icone": "camera",
+        "titulo": "Foto e código"
+      },
+      {
+        "icone": "gota",
+        "titulo": "Hidratação"
+      },
+      {
+        "icone": "alvo",
+        "titulo": "Metas"
+      }
+    ]
+  },
   "recursos": [
     {
       "icone": "camera",
@@ -70,7 +99,38 @@
         "Registrar refeição dá tanto trabalho que a gente desiste. No AI-Eat, é foto do prato e pronto: {link}",
         "Foto do prato e a IA estima calorias e macros. Sem balança, sem tabela: {link}",
         "Esquece a balança: foto do prato e o AI-Eat estima tudo sozinho: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Controle suas<br>calorias com",
+        "destaque": "inteligência.",
+        "telas": [
+          "tela-home",
+          "tela-scanner",
+          "tela-diario"
+        ],
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Análise por foto",
+            "texto": "Tire uma foto e descubra as calorias do seu prato."
+          },
+          {
+            "icone": "gota",
+            "titulo": "Acompanhe sua hidratação",
+            "texto": "Registre cada copo e veja quanto falta."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Metas personalizadas",
+            "texto": "Calcule suas metas e alcance seus objetivos."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico completo",
+            "texto": "Acompanhe sua evolução e mantenha a consistência."
+          }
+        ]
+      }
     },
     {
       "id": "sem-pesar",
@@ -99,7 +159,38 @@
         "Pesar ingrediente e procurar na tabela ninguém mantém. Troque por uma foto: {link}",
         "Balança e tabela? Troca por uma foto e o AI-Eat estima em segundos: {link}",
         "Registro de refeição em segundos, sem balança: foto e pronto. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Sem balança,<br>sem tabela,",
+        "destaque": "só uma foto.",
+        "telas": [
+          "tela-scanner",
+          "tela-home",
+          "tela-diario"
+        ],
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Foto do prato",
+            "texto": "A IA estima as calorias em segundos."
+          },
+          {
+            "icone": "regua",
+            "titulo": "Nada de pesar",
+            "texto": "Esqueça a balança e as porções na mão."
+          },
+          {
+            "icone": "busca",
+            "titulo": "Código de barras",
+            "texto": "Industrializado? Escaneie e pronto."
+          },
+          {
+            "icone": "check",
+            "titulo": "Você confere",
+            "texto": "Ajuste os valores antes de salvar."
+          }
+        ]
+      }
     },
     {
       "id": "padrao-da-semana",
@@ -128,7 +219,38 @@
         "Um dia não diz nada; uma semana diz tudo. Veja onde a conta desanda: {link}",
         "O padrão aparece no histórico da semana. O AI-Eat mostra: {link}",
         "Não é um dia, é a semana. O AI-Eat revela onde a conta desanda: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "O que a sua<br>semana",
+        "destaque": "revela.",
+        "telas": [
+          "tela-diario",
+          "tela-historico",
+          "tela-home"
+        ],
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da semana",
+            "texto": "Veja onde a conta desanda."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Refeição por refeição",
+            "texto": "Café, almoço, jantar e lanches."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Meta de calorias",
+            "texto": "Compare o dia com o seu objetivo."
+          },
+          {
+            "icone": "calendario",
+            "titulo": "Todo dia conta",
+            "texto": "Consistência que aparece no gráfico."
+          }
+        ]
+      }
     },
     {
       "id": "meta-diaria",
@@ -157,7 +279,38 @@
         "Defina sua meta do dia e veja quanto já foi e quanto falta — sem plano genérico, sem sermão. {link}",
         "Sua meta, do seu jeito: o AI-Eat mostra quanto falta, sem sermão. {link}",
         "Meta diária clara, sem plano de revista: o AI-Eat acompanha por você. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Sua meta,",
+        "destaque": "do seu jeito.",
+        "telas": [
+          "tela-home",
+          "tela-diario",
+          "tela-agua"
+        ],
+        "beneficios": [
+          {
+            "icone": "alvo",
+            "titulo": "Meta diária",
+            "texto": "Quanto já foi e quanto falta hoje."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Calorias e macros",
+            "texto": "Proteínas, carboidratos e gorduras."
+          },
+          {
+            "icone": "gota",
+            "titulo": "Hidratação",
+            "texto": "Meta de água com o seu consumo."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sem sermão",
+            "texto": "Sem plano genérico de revista."
+          }
+        ]
+      }
     },
     {
       "id": "comida-brasileira",
@@ -186,7 +339,38 @@
         "A maioria dos apps só entende salada de quinoa. O AI-Eat reconhece PF, feijoada e açaí: {link}",
         "PF, feijoada e açaí: o AI-Eat entende a comida brasileira de verdade. {link}",
         "Seu almoço não é salada: o AI-Eat reconhece PF, feijoada e açaí. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Feijoada, PF<br>e até",
+        "destaque": "açaí.",
+        "telas": [
+          "tela-scanner",
+          "tela-diario",
+          "tela-home"
+        ],
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Comida de verdade",
+            "texto": "A IA entende o prato brasileiro."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Do PF ao açaí",
+            "texto": "Não é só salada de quinoa."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Macros do prato",
+            "texto": "Estimativa completa na hora."
+          },
+          {
+            "icone": "check",
+            "titulo": "Você ajusta",
+            "texto": "Confere e corrige antes de salvar."
+          }
+        ]
+      }
     },
     {
       "id": "gratis-testar",
@@ -215,7 +399,38 @@
         "Dá pra testar o scanner e o registro sem colocar cartão. Se não fizer sentido, você não perdeu nada: {link}",
         "Teste o AI-Eat sem cartão. Sem compromisso, sem pegadinha: {link}",
         "Sem cartão pra começar: experimente o scanner e o registro de graça. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Testa antes",
+        "destaque": "de assinar.",
+        "telas": [
+          "tela-premium",
+          "tela-home",
+          "tela-scanner"
+        ],
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Scanner grátis",
+            "texto": "Análises por IA todo dia no plano grátis."
+          },
+          {
+            "icone": "cartao",
+            "titulo": "Sem cartão",
+            "texto": "Para começar, basta abrir o app."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "7 dias de Premium",
+            "texto": "Teste tudo antes de decidir."
+          },
+          {
+            "icone": "check",
+            "titulo": "Cancele quando quiser",
+            "texto": "Sem cobrança durante o teste."
+          }
+        ]
+      }
     },
     {
       "id": "fora-de-casa",
@@ -244,7 +459,38 @@
         "Restaurante não vem com rótulo. Foto do prato, estimativa na hora, registro feito: {link}",
         "Comer fora não precisa quebrar o registro. Foto do prato e pronto: {link}",
         "Sem rótulo no restaurante? Foto do prato e o AI-Eat estima na hora: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Comeu fora e<br>não sabe",
+        "destaque": "o que contar?",
+        "telas": [
+          "tela-diario",
+          "tela-scanner",
+          "tela-home"
+        ],
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Foto resolve",
+            "texto": "Restaurante não tem rótulo; o app estima."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Registre depois",
+            "texto": "Fotografe agora, cadastre quando der."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Calorias e macros",
+            "texto": "A refeição entra no seu dia."
+          },
+          {
+            "icone": "check",
+            "titulo": "Você confere",
+            "texto": "Ajuste antes de salvar."
+          }
+        ]
+      }
     },
     {
       "id": "consistencia",
@@ -274,7 +520,38 @@
         "Nenhum registro funciona se você abandona em cinco dias. Foto, confere, salva — menos atrito: {link}",
         "Registro fácil é registro que dura. Foto, confere, salva: {link}",
         "Menos atrito, mais hábito. O AI-Eat resume o registro a uma foto: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Registro fácil",
+        "destaque": "é registro que dura.",
+        "telas": [
+          "tela-agua",
+          "tela-home",
+          "tela-diario"
+        ],
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Em segundos",
+            "texto": "Foto, confere, salva."
+          },
+          {
+            "icone": "gota",
+            "titulo": "Água no mesmo lugar",
+            "texto": "Copo, garrafa e meta do dia."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico",
+            "texto": "A semana inteira à vista."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Metas claras",
+            "texto": "Você sabe quanto falta."
+          }
+        ]
+      }
     }
   ],
   "tagline": "Seu nutricionista com IA no bolso",

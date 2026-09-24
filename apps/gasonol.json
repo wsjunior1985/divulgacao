@@ -7,6 +7,28 @@
     "fundoA": "#050a08",
     "destaque": "#38d080"
   },
+  "visual": {
+    "efeito": "fogo",
+    "acento": "#8ee53a",
+    "acento2": "#d9f75a",
+    "calor": "#ff5a0a",
+    "fonteTitulo": "barlow",
+    "urlSufixo": "grátis",
+    "selos": [
+      {
+        "icone": "raioCirculo",
+        "titulo": "Rápido"
+      },
+      {
+        "icone": "escudo",
+        "titulo": "Confiável"
+      },
+      {
+        "icone": "moedaCirculo",
+        "titulo": "Econômico"
+      }
+    ]
+  },
   "recursos": [
     {
       "icone": "carro",
@@ -70,7 +92,30 @@
         "Etanol ou gasolina? O que compensa não é 70% — é o consumo real do SEU carro. O GASONOL usa os dados oficiais do INMETRO e responde na hora. Grátis: {link}",
         "A regra dos 70% erra o seu carro. O GASONOL usa o consumo real e acerta: {link}",
         "Etanol ou gasolina? O GASONOL calcula com o consumo do SEU modelo, não com os 70%: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Gasolina<br>ou Etanol?",
+        "destaque": "Descubra na hora",
+        "sub": "O <b>GASONOL</b> mostra em segundos qual combustível compensa mais para o seu carro.",
+        "tela": "tela-calculadora",
+        "beneficios": [
+          {
+            "icone": "cronometro",
+            "titulo": "Cálculo rápido",
+            "texto": "Resultado em segundos para você decidir."
+          },
+          {
+            "icone": "medalha",
+            "titulo": "Dados do INMETRO",
+            "texto": "Consumo oficial do seu modelo."
+          },
+          {
+            "icone": "estrada",
+            "titulo": "Cidade e Estrada",
+            "texto": "Compare e escolha o melhor para você."
+          }
+        ]
+      }
     },
     {
       "id": "voz-na-bomba",
@@ -99,7 +144,30 @@
         "No posto, fale os dois preços em voz alta: o GASONOL responde na hora qual compensa. Grátis: {link}",
         "Sem digitar na bomba: fale os preços e o GASONOL calcula. {link}",
         "Fale os preços por voz e saiba qual compensa na hora. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Fale os preços<br>da bomba",
+        "destaque": "O app calcula",
+        "sub": "Diga <b>“gasolina 6,79, etanol 3,49”</b> e o GASONOL responde qual compensa. Sem digitar nada.",
+        "tela": "tela-voz",
+        "beneficios": [
+          {
+            "icone": "microfone",
+            "titulo": "Comando de voz",
+            "texto": "Fale os dois preços, com a mão livre."
+          },
+          {
+            "icone": "cronometro",
+            "titulo": "Resposta imediata",
+            "texto": "Decida antes de encostar na bomba."
+          },
+          {
+            "icone": "presente",
+            "titulo": "7 dias grátis",
+            "texto": "Recurso Premium, teste sem compromisso."
+          }
+        ]
+      }
     },
     {
       "id": "preco-limite",
@@ -128,7 +196,30 @@
         "Existe um preço em que o etanol deixa de compensar — e ele muda de carro pra carro. Descubra o do seu: {link}",
         "Qual o preço-limite do etanol pro SEU carro? O GASONOL calcula: {link}",
         "Descubra até que preço o etanol compensa no seu modelo: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Qual o limite<br>do etanol?",
+        "destaque": "Depende do carro",
+        "sub": "Com os preços de hoje, o GASONOL mostra se o etanol passou do limite do <b>seu modelo</b>.",
+        "tela": "tela-gasolina",
+        "beneficios": [
+          {
+            "icone": "alvo",
+            "titulo": "Limite do seu carro",
+            "texto": "Não é 70%: é o consumo real."
+          },
+          {
+            "icone": "gota",
+            "titulo": "Passou do limite?",
+            "texto": "O app avisa na hora: vai de gasolina."
+          },
+          {
+            "icone": "medalha",
+            "titulo": "Base INMETRO",
+            "texto": "Cálculo com dados oficiais."
+          }
+        ]
+      }
     },
     {
       "id": "quanto-economiza",
@@ -158,7 +249,31 @@
         "Errar o combustível custa pouco por tanque — mas são 5 tanques por mês. O GASONOL acerta a conta toda vez: {link}",
         "5 tanques por mês, todos errados? O GASONOL acerta a conta em cada um: {link}",
         "Errar todo abastecimento custa caro. O GASONOL acerta sempre: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Quanto rendem<br>seus R$ 100?",
+        "tamanho": 98,
+        "destaque": "Veja na hora",
+        "sub": "O GASONOL mostra quanto cada R$&nbsp;100 rende no outro combustível. <b>No fim do mês, a diferença aparece.</b>",
+        "tela": "tela-economia",
+        "beneficios": [
+          {
+            "icone": "moedaCirculo",
+            "titulo": "Economia real",
+            "texto": "Com o consumo oficial do seu carro."
+          },
+          {
+            "icone": "calendario",
+            "titulo": "Todo abastecimento",
+            "texto": "Cinco tanques por mês, todos certos."
+          },
+          {
+            "icone": "cronometro",
+            "titulo": "Em segundos",
+            "texto": "Na bomba, antes de escolher."
+          }
+        ]
+      }
     },
     {
       "id": "sem-instalar",
@@ -188,7 +303,30 @@
         "O GASONOL abre direto no navegador — sem baixar da loja. Testa no próximo posto: {link}",
         "Sem baixar e sem cadastro: abre no navegador e usa. {link}",
         "Teste em 10 segundos, sem instalar nada: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Sem baixar<br>nada",
+        "destaque": "Abre no navegador",
+        "sub": "Entre em <b>gasonol.com.br</b> e use na hora. Se quiser, instala como app com um toque.",
+        "tela": "tela-navegador",
+        "beneficios": [
+          {
+            "icone": "globo",
+            "titulo": "Direto no navegador",
+            "texto": "Sem loja e sem download."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Instala como app",
+            "texto": "Um toque e vai para a tela inicial."
+          },
+          {
+            "icone": "offline",
+            "titulo": "Abre offline",
+            "texto": "Funciona até sem sinal no posto."
+          }
+        ]
+      }
     },
     {
       "id": "consumo-oficial",
@@ -217,7 +355,30 @@
         "Não sabe o consumo do seu carro de cabeça? O GASONOL já tem — base oficial do INMETRO. Só escolher o modelo: {link}",
         "Consumo oficial do seu carro, sem chute: o GASONOL usa a base INMETRO/PBEV. {link}",
         "Escolha o modelo e o GASONOL usa o consumo oficial do INMETRO. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Consumo<br>oficial",
+        "destaque": "do seu carro",
+        "sub": "O GASONOL já tem o consumo de cada versão, da base <b>PBEV/INMETRO</b>. Você só escolhe o modelo.",
+        "tela": "tela-seletor",
+        "beneficios": [
+          {
+            "icone": "medalha",
+            "titulo": "Dados do INMETRO",
+            "texto": "Etanol e gasolina, sem estimativa."
+          },
+          {
+            "icone": "carro",
+            "titulo": "Busca por modelo",
+            "texto": "Digite a marca ou o modelo e pronto."
+          },
+          {
+            "icone": "estrada",
+            "titulo": "Cidade e Estrada",
+            "texto": "O consumo certo para cada trajeto."
+          }
+        ]
+      }
     },
     {
       "id": "mito-etanol",
@@ -246,7 +407,31 @@
         "\"Etanol estraga o motor\" é mito: flex foi feito pros dois. O que muda é o custo por km — e o GASONOL calcula: {link}",
         "Etanol estraga motor? Mito. Flex foi feito pros dois. Calcule o custo real: {link}",
         "Mito do etanol derrubado: o que importa é o custo por km. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "“Etanol estraga<br>o motor”?",
+        "tamanho": 92,
+        "destaque": "É mito.",
+        "sub": "Carro flex foi feito para os dois. O que muda é o <b>custo por km</b>, e isso o GASONOL calcula.",
+        "tela": "tela-etanol",
+        "beneficios": [
+          {
+            "icone": "engrenagem",
+            "titulo": "Flex por projeto",
+            "texto": "O motor foi feito para os dois."
+          },
+          {
+            "icone": "moedaCirculo",
+            "titulo": "Custo por km",
+            "texto": "O que pesa é quanto custa rodar."
+          },
+          {
+            "icone": "cronometro",
+            "titulo": "Resposta em segundos",
+            "texto": "Com o preço de hoje, no seu carro."
+          }
+        ]
+      }
     },
     {
       "id": "indique",
@@ -275,7 +460,30 @@
         "Todo mundo tem um amigo que ainda usa a regra dos 70%. Manda o GASONOL pra ele — os dois ganham 30 dias: {link}",
         "Indique o GASONOL e os dois ganham 30 dias de Premium: {link}",
         "Seu amigo ainda usa a regra dos 70%? Indique e os dois ganham 30 dias: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Indique<br>um amigo",
+        "destaque": "Os dois ganham",
+        "sub": "Quem assina pelo seu link ganha <b>30 dias de Premium</b>. E você ganha mais 30.",
+        "tela": "tela-indique",
+        "beneficios": [
+          {
+            "icone": "presente",
+            "titulo": "30 dias para ele",
+            "texto": "De presente, ao assinar pelo seu link."
+          },
+          {
+            "icone": "calendario",
+            "titulo": "30 dias para você",
+            "texto": "A cada amigo que assinar o Premium."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Compartilhe fácil",
+            "texto": "WhatsApp ou qualquer app, com um toque."
+          }
+        ]
+      }
     }
   ],
   "tagline": "Gasolina ou etanol? Compare e economize",

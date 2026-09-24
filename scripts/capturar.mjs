@@ -11,7 +11,7 @@
 // Requer Playwright (devDependency) + `npx playwright install chromium`.
 
 import { chromium } from "playwright";
-import { mkdirSync } from "node:fs";
+import { mkdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { carregarEnv, log, ok, aviso, erro, env, RAIZ } from "./lib/base.js";
 
@@ -255,12 +255,23 @@ async function autenticar(page, app) {
     await page.waitForTimeout(800);
   }
 
+  // AI-Eat e outros abrem na aba "Criar conta": sem isto o script preenchia o cadastro.
+  const abaEntrar = page.getByRole("tab", { name: "Entrar", exact: true }).or(page.getByRole("button", { name: "Entrar", exact: true }));
+  if (await abaEntrar.count()) {
+    await abaEntrar.first().click();
+    await page.waitForTimeout(800);
+  }
+
   await page.fill('input[type="email"]', EMAIL);
   await page.fill('input[type="password"]', SENHA);
 
   const submit = page.locator('button[type="submit"]');
-  if (await submit.count()) await submit.first().click();
-  else await page.getByRole("button", { name: /Entrar/i }).last().click();
+  if (await submit.count()) {
+    if (/criar|cadastr/i.test(await submit.first().innerText())) {
+      throw new Error("o botão de envio é de criar conta — login abortado");
+    }
+    await submit.first().click();
+  } else await page.getByRole("button", { name: /Entrar/i }).last().click();
 
   await page.waitForLoadState("networkidle", { timeout: 40000 }).catch(() => {});
   await page.waitForTimeout(2500);
@@ -268,6 +279,41 @@ async function autenticar(page, app) {
   if (/\/auth|\/login/i.test(page.url())) {
     throw new Error("login não saiu da tela de autenticação — confira as credenciais");
   }
+}
+
+// Avatar genérico e dados fictícios: as capturas vão para posts públicos, então o
+// nome da conta de captura, e-mails, fotos de perfil e os nomes listados em
+// CAPTURAS_NOMES (separados por vírgula, no .env.local / Secrets) nunca aparecem.
+const AVATAR = `data:image/svg+xml;base64,${readFileSync(resolve(RAIZ, "assets/premium/gasonol/avatar.svg")).toString("base64")}`;
+const NOMES_REAIS = env("CAPTURAS_NOMES", "").split(",").map((n) => n.trim()).filter(Boolean);
+
+// Nomes aprendidos pela saudação ("Olá, Fulano") valem para as telas seguintes.
+const APRENDIDOS = new Set(NOMES_REAIS);
+
+async function anonimizar(page) {
+  const novos = await page.evaluate(({ AVATAR, NOMES_REAIS }) => {
+    const saudacao = /(Olá|Oi|Bom dia|Boa tarde|Boa noite),\s*([^\s!,👋]+)/;
+    const achados = [...document.body.innerText.matchAll(new RegExp(saudacao, "g"))].map((m) => m[2]).filter((n) => n !== "Ana");
+    const nomes = [...new Set([...NOMES_REAIS, ...achados])];
+    const escapar = (n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const trocas = [
+      [new RegExp(saudacao, "g"), "$1, Ana"],
+      [/[\w.+-]+@[\w-]+\.[\w.]+/g, "ana.ribeiro@email.com"],
+      ...nomes.map((n) => [new RegExp(`${escapar(n)}(\\s+(d[aeo]s?\\s+)?[A-ZÀ-Ý][\\wÀ-ÿ]+)*`, "gi"), (m) => (m.trim().includes(" ") ? "Ana Ribeiro" : "Ana")]),
+    ];
+    const caminhar = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    for (let no = caminhar.nextNode(); no; no = caminhar.nextNode()) {
+      let t = no.nodeValue;
+      for (const [re, por] of trocas) t = t.replace(re, por);
+      if (t !== no.nodeValue) no.nodeValue = t;
+    }
+    for (const img of document.querySelectorAll("img")) {
+      if (/googleusercontent|gravatar|avatar/i.test(img.src)) img.src = AVATAR;
+    }
+    return achados;
+  }, { AVATAR, NOMES_REAIS: [...APRENDIDOS] });
+  novos.forEach((n) => APRENDIDOS.add(n));
+  await page.waitForTimeout(400);
 }
 
 async function capturarApp(browser, app) {
@@ -305,6 +351,7 @@ async function capturarApp(browser, app) {
       if (tela.preparar) await tela.preparar(page);
 
       await fecharDicas(page);
+      await anonimizar(page);
 
       const nome = typeof tela === "string" ? `${app.id}-${i}` : `${app.id}-${tela.nome}`;
       const caminho = resolve(DESTINO, `${nome}.png`);

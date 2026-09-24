@@ -7,6 +7,10 @@
     "fundoA": "#060d18",
     "destaque": "#1f92e8"
   },
+  "visual": {
+    "layout": "convertendo",
+    "slogan": "Seu parceiro ideal em<br><i>viagens ao exterior.</i>"
+  },
   "recursos": [
     {
       "icone": "dinheiro",
@@ -69,7 +73,36 @@
         "US$ 149 dá quanto em reais? Depende do IOF e do spread do seu cartão, não da cotação do Google. {link}",
         "O custo real em reais, com IOF e spread. Não a cotação de blog: {link}",
         "US$ 149 em reais de verdade? O Convertendo calcula com IOF e spread: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Converter ficou",
+        "destaque": "muito mais fácil!",
+        "telas": [
+          "tela-converter"
+        ],
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "Cotações em tempo real",
+            "texto": "Moedas do mundo todo sempre atualizadas."
+          },
+          {
+            "icone": "regua",
+            "titulo": "Medidas e unidades",
+            "texto": "Distância, temperatura, peso e muito mais."
+          },
+          {
+            "icone": "carrinho",
+            "titulo": "Compras inteligentes",
+            "texto": "Listas com conversão automática (Premium)."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "Simples, rápido e completo",
+            "texto": "Tudo que você precisa em um só app."
+          }
+        ]
+      }
     },
     {
       "id": "iof-338",
@@ -99,7 +132,36 @@
         "Crédito internacional: 3,38% de IOF. Remessa: 0,38%. Em US$ 1.000, a diferença passa de R$ 150. {link}",
         "3,38% de IOF no cartão ou 0,38% na remessa? Compare e economize: {link}",
         "A forma de pagar muda mais de R$ 150 em US$ 1.000. Compare: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "3,38% de IOF",
+        "destaque": "no cartão de crédito",
+        "telas": [
+          "tela-converter"
+        ],
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "Custo real",
+            "texto": "IOF e spread do cartão já entram na conta."
+          },
+          {
+            "icone": "cartao",
+            "titulo": "Compare antes",
+            "texto": "Crédito, pré-pago, remessa e dinheiro."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Cotação ao vivo",
+            "texto": "Moedas do mundo todo sempre atualizadas."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sem surpresa na fatura",
+            "texto": "Você sabe o valor em reais na hora."
+          }
+        ]
+      }
     },
     {
       "id": "sete-formas",
@@ -129,7 +191,36 @@
         "Crédito, pré-pago, remessa, dinheiro: o Convertendo compara lado a lado e mostra onde você economiza. {link}",
         "7 formas de pagar, 1 vencedora. O Convertendo compara e aponta: {link}",
         "Compare as formas de pagamento no exterior e economize até 3%. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "7 formas de pagar",
+        "destaque": "1 vencedora",
+        "telas": [
+          "tela-converter"
+        ],
+        "beneficios": [
+          {
+            "icone": "cartao",
+            "titulo": "Todas lado a lado",
+            "texto": "Crédito, débito, pré-pago, remessa e mais."
+          },
+          {
+            "icone": "dinheiro",
+            "titulo": "A mais barata",
+            "texto": "O app mostra onde você economiza."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Cotação do dia",
+            "texto": "Com IOF e spread de cada opção."
+          },
+          {
+            "icone": "check",
+            "titulo": "Decida antes",
+            "texto": "Compare antes de passar o cartão."
+          }
+        ]
+      }
     },
     {
       "id": "scanner-etiqueta",
@@ -158,7 +249,36 @@
         "Aponte a câmera na etiqueta e veja o preço em reais, já com IOF. Sem conta de cabeça: {link}",
         "Scanner de etiqueta: aponte e veja o preço em reais com IOF. {link}",
         "Etiqueta em dólar? Aponte a câmera e veja em reais na hora: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Aponte a câmera",
+        "destaque": "na etiqueta",
+        "telas": [
+          "tela-compras"
+        ],
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Scanner de etiquetas",
+            "texto": "O preço aparece em reais, no Premium."
+          },
+          {
+            "icone": "dinheiro",
+            "titulo": "Já com IOF",
+            "texto": "O valor que você vai pagar de verdade."
+          },
+          {
+            "icone": "carrinho",
+            "titulo": "Lista de compras",
+            "texto": "Some tudo e saiba quanto vai gastar (Premium)."
+          },
+          {
+            "icone": "nuvem",
+            "titulo": "Sincroniza",
+            "texto": "Suas listas em todos os aparelhos (Premium)."
+          }
+        ]
+      }
     },
     {
       "id": "so-na-fatura",
@@ -187,7 +307,36 @@
         "Só descobriu o valor em reais quando a fatura chegou? O Convertendo mostra o custo total antes: {link}",
         "Sem susto na fatura: o Convertendo mostra o custo real antes da compra. {link}",
         "Saiba o valor em reais antes de comprar, não na fatura. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Descobriu o valor",
+        "destaque": "só na fatura?",
+        "telas": [
+          "tela-converter"
+        ],
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "Custo total antes",
+            "texto": "IOF e spread já calculados."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Cotação ao vivo",
+            "texto": "Atualizada o tempo todo."
+          },
+          {
+            "icone": "cartao",
+            "titulo": "Forma de pagar",
+            "texto": "Veja qual sai mais barata."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sem susto",
+            "texto": "O valor em reais antes de comprar."
+          }
+        ]
+      }
     },
     {
       "id": "franquia",
@@ -216,7 +365,36 @@
         "Voltando de viagem com compras? Entenda a franquia, o imposto do excedente e o que declarar: {link}",
         "Franquia alfandegária sem juridiquês: entenda o limite e o imposto. {link}",
         "Quanto dá pra trazer sem imposto? O Convertendo explica: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Quanto dá pra trazer",
+        "destaque": "sem imposto?",
+        "telas": [
+          "tela-compras"
+        ],
+        "beneficios": [
+          {
+            "icone": "carrinho",
+            "titulo": "Controle das compras",
+            "texto": "Liste o que comprou na viagem (Premium)."
+          },
+          {
+            "icone": "dinheiro",
+            "titulo": "Total em reais",
+            "texto": "Some com a cotação do dia."
+          },
+          {
+            "icone": "documento",
+            "titulo": "Franquia na prática",
+            "texto": "Saiba quando passa do limite."
+          },
+          {
+            "icone": "check",
+            "titulo": "Volte tranquilo",
+            "texto": "Sem surpresa na alfândega."
+          }
+        ]
+      }
     },
     {
       "id": "cotacao-nao-e-preco",
@@ -245,7 +423,36 @@
         "A cotação do jornal é a comercial; você paga turismo + spread + IOF. A diferença passa de 8%. {link}",
         "A cotação da TV não é a que você paga. O Convertendo usa a conta real: {link}",
         "Comercial x turismo x spread: entenda o que você paga de verdade. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "A cotação",
+        "destaque": "não é o que você paga",
+        "telas": [
+          "tela-cotacoes"
+        ],
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Comercial x turismo",
+            "texto": "Veja a diferença de verdade."
+          },
+          {
+            "icone": "dinheiro",
+            "titulo": "Spread e IOF",
+            "texto": "Tudo embutido no valor final."
+          },
+          {
+            "icone": "globo",
+            "titulo": "Moedas do mundo",
+            "texto": "Dólar, euro, libra, peso e mais."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "Favoritas no topo",
+            "texto": "As moedas da sua viagem à mão."
+          }
+        ]
+      }
     },
     {
       "id": "medidas",
@@ -275,7 +482,36 @@
         "Viajar é converter o tempo todo: moeda, peso, distância, temperatura. Tudo num app só: {link}",
         "Moeda, peso, distância e temperatura: tudo convertido num app, offline. {link}",
         "Todas as conversões da viagem num app só, sem anúncio: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Moeda, peso,",
+        "destaque": "distância e mais",
+        "telas": [
+          "tela-cotacoes"
+        ],
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "Moedas",
+            "texto": "Cotação ao vivo do mundo todo."
+          },
+          {
+            "icone": "regua",
+            "titulo": "Medidas",
+            "texto": "Peso, distância e temperatura."
+          },
+          {
+            "icone": "offline",
+            "titulo": "Funciona offline",
+            "texto": "Medidas sem internet."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "Tudo num app só",
+            "texto": "Viajar é converter o tempo todo."
+          }
+        ]
+      }
     }
   ],
   "tagline": "Seu parceiro ideal em viagens ao exterior",

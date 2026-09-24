@@ -29,6 +29,15 @@ const APPS = {
       "tela-premium": "/premium",
     },
   },
+  convertendo: {
+    url: "https://convertendo.app.br",
+    login: "/auth",
+    telas: {
+      "tela-converter": "/converter",
+      "tela-cotacoes": "/cotacoes",
+      "tela-compras": "/compras",
+    },
+  },
 };
 
 const id = process.argv[2];

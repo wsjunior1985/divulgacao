@@ -79,8 +79,22 @@ jobs:
       - run: npm ci
 
       # Os cards são páginas HTML renderizadas no Chromium (scripts/lib/cards.js).
+      # O binário fica em cache (chave = lockfile, que fixa a versão do Playwright);
+      # as bibliotecas do sistema não cabem no cache e são instaladas a cada run.
+      - name: Cache do Chromium
+        id: cache-chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
       - name: Baixar o Chromium do Playwright
+        if: steps.cache-chromium.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps chromium
+
+      - name: Dependências de sistema do Chromium
+        if: steps.cache-chromium.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
 
       - name: Publicar
         run: |

@@ -42,8 +42,8 @@ replicar com a mesma fidelidade e o mesmo zero-esforço.
 ## Operating Context
 
 - Disparado por GitHub Actions em horários agendados; calcula o slot a partir
-  da data, escolhe app e tema (`apps/*.json`), desenha o card em SVG,
-  rasteriza em JPEG, hospeda via commit no próprio repo
+  da data, escolhe app e tema (`apps/*.json`), renderiza o card premium
+  (HTML/CSS no Chromium → JPEG), hospeda via commit no próprio repo
   (`raw.githubusercontent.com`) e publica em cada canal com texto e UTM
   próprios.
 - Registra publicações em `estado/publicados.json` para nunca repetir.
@@ -60,19 +60,17 @@ replicar com a mesma fidelidade e o mesmo zero-esforço.
 
 ## Capabilities and Constraints
 
-- Card renderizado em SVG → JPEG (retrato para feed, vertical para TikTok),
-  com layout fixo de cinco elementos: marca no topo, manchete com
-  palavra-chave destacada, número de destaque opcional, quatro recursos com
-  ícone e cor própria, e aparelhos/rodapé com CTA e selos.
-- Paleta de cada app vem de `oklch` do `index.css` real do app, convertida
-  para sRGB por `lib/cor.js`; nenhuma cor é escolhida a olho, e o contraste do
-  texto é verificado.
-- Tipografia embarcada por licença OFL (`assets/fontes/`), com uma fonte de
-  display por app (Sora, Manrope, Fraunces, Space Grotesk, Plus Jakarta Sans,
-  Inter Display) para variar a assinatura visual no rodízio; a Inter é usada
-  no corpo, descrições e rodapé.
-- Largura de texto medida via opentype.js a partir do arquivo real da fonte,
-  não estimada — evita que o título vaze a margem.
+- Card no padrão premium (HTML/CSS renderizado no Chromium → JPEG; retrato
+  para feed, vertical para TikTok): logo oficial, título em duas cores com
+  linha de destaque, três benefícios com ícone neon, celular em perspectiva 3D
+  com tela real do app, site do app em destaque e selos no rodapé.
+- Identidade por app no bloco `visual` (cores, efeito de fundo, fonte do
+  título, selos); o que faltar é derivado da cor da marca por `lib/cor.js`.
+- Conteúdo por tema no bloco `premium` de cada post; sem ele, o card é
+  montado a partir do `card` e dos `recursos` do app.
+- Tipografia local por licença OFL (`assets/fontes/`), igual no Mac e no
+  runner; o título se ajusta sozinho para caber na coluna.
+- O site de acesso ao app aparece sempre no card.
 - Hero mostra sempre uma captura real da tela interna do app (nunca landing
   ou login).
 - TikTok: renovação automática de token está desligada por falta do secret

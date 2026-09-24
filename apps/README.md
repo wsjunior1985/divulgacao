@@ -79,8 +79,14 @@ Regras práticas:
 - use `id` curto, estável e sem espaços;
 - mantenha `8 posts` por app, como os projetos atuais;
 - prefira `ganchos`, `corpos`, `ctas` e `curtos` para o texto variar sozinho;
-- use `card.titulo` e `card.sub` para orientar o layout do card;
-- inclua `destaque` apenas quando fizer sentido visual.
+- o card segue o padrão premium: escreva o bloco `premium` de cada post
+  (título, destaque, subtítulo, três benefícios e a tela do app) e o bloco
+  `visual` do app (cores, efeito, fonte do título, selos) — ver "O card" no
+  [README](../README.md) e o exemplo em `gasonol.json`;
+- sem `premium`, o card usa `card.titulo` (o trecho entre `*asteriscos*` vira
+  a linha de destaque), `card.sub` e os três primeiros `recursos`;
+- as telas do tema ficam em `assets/premium/<id>/` e a logo em alta em
+  `assets/premium/<id>/logo.png` (sem dados pessoais nas telas).
 
 ## Ordem do rodízio
 

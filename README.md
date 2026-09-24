@@ -18,8 +18,8 @@ O GitHub Actions dispara nos horários agendados. A cada disparo o sistema:
 1. calcula o **slot** a partir da data — o rodízio é determinístico, então nunca
    existe fila para reabastecer e o conteúdo não acaba;
 2. escolhe o app da vez e o tema da vez (`apps/*.json`);
-3. desenha o card em SVG e rasteriza em JPEG (retrato para o feed, vertical para
-   o TikTok);
+3. renderiza o card premium (HTML/CSS no Chromium → JPEG; retrato para o feed,
+   vertical para o TikTok);
 4. hospeda o card (commit no próprio repo → `raw.githubusercontent.com`);
 5. publica em cada canal, com o texto adaptado ao limite e ao formato de cada um
    e UTM próprio por rede;
@@ -52,72 +52,61 @@ node scripts/agenda.mjs --dias 30
 
 ## O card
 
-Cada post vira uma imagem gerada na hora, com a identidade real do app:
+Todo card segue o **padrão premium**: uma página HTML/CSS renderizada no
+Chromium (Playwright) e salva em JPEG, em [`scripts/lib/cards.js`](scripts/lib/cards.js).
+Retrato 1080×1350 para o feed e 1080×1920 para o TikTok.
 
-- **Logo oficial**, tirada do PWA de cada projeto (`assets/logos/`).
-- **Paleta da marca**, convertida do `index.css` de cada app — os projetos
-  declaram cor em `oklch` e o `lib/cor.js` traduz para sRGB. Nenhuma cor é
-  escolhida no olho, e o contraste do texto é verificado.
-- **Tipografia embarcada** (licença OFL, em `assets/fontes/`). O renderizador
-  recebe os arquivos da fonte, então o card sai idêntico no seu Mac e no runner
-  do GitHub. Antes disso o resultado mudava de máquina para máquina — Helvetica
-  de um lado, DejaVu do outro.
-- **Uma fonte de display por app**, no campo `fonte`: Sora no AI-Eat, Manrope
-  no Remedin, Fraunces no Convertendo e no Papelzinho, Space Grotesk no
-  GASONOL, Plus Jakarta Sans no Vai dar quanto? e Inter Display no O
-  Palpiteiro. O rodízio publica um app por slot, então a assinatura visual muda
-  naturalmente no feed sem depender da fonte do sistema. A Inter continua no
-  corpo, nas descrições e no rodapé.
+A composição é fixa:
 
-  > O nome da família precisa ser o que o renderizador enxerga (name ID 16, ou
-  > ID 1 quando não há). A Inter Display se chama `Inter Display`, com espaço —
-  > o código pedia `InterDisplay`, que não casava com nada e caía calado no
-  > fallback: media com um desenho e imprimia com outro.
-- **Largura medida no arquivo da fonte** (opentype.js), não estimada: é o que
-  garante que o título nunca vaze a margem.
-- **Hero com o app real**: um mockup de celular mostra uma **captura da tela
-  interna** do app (não a landing, não a tela de login). As capturas vivem em
-  `assets/capturas/` e são refotografadas semanalmente pelo workflow `capturar`
-  — a publicação usa as já commitadas, então uma captura que falha não derruba
-  nada.
+1. **Logo oficial** no alto, à esquerda (`assets/premium/<app>/logo.png`, com
+   `assets/logos/<app>.png` de reserva).
+2. **Título** em duas cores: as linhas brancas e uma linha de **destaque** com o
+   gradiente do app. Se não couber, o próprio card reduz o corpo até caber na
+   coluna e não encostar no site.
+3. **Subtítulo** e **três benefícios** em caixas com ícone neon.
+4. **Celular em perspectiva 3D** com uma **tela real do app** — nunca a landing.
+5. **O site do app** numa pílula amarela e três **selos** no rodapé.
 
-O layout padrão é a **vitrine**, com cinco elementos fixos:
+O fundo é desenhado na hora (feixes de luz, faíscas, vinheta), com a cor e o
+efeito de cada app. No vertical, pílula e selos sobem para ficar acima da
+legenda que o TikTok sobrepõe.
 
-1. **Marca no topo** — logo em ladrilho arredondado, nome no maior corpo que
-   couber e a `tagline` do app. O recorte arredondado existe porque nem todo
-   logo do PWA tem transparência (GASONOL e Vai dar quanto? são PNG opaco): sem
-   ele, o quadrado sólido virava uma caixa preta solta no card.
-2. **Manchete** com a palavra-chave na cor da marca — marque-a com asteriscos no
-   título: `"Sem balança, *sem tabela*"`. Os asteriscos nunca saem no card nem no
-   texto publicado; o `alt` da imagem é limpo com `semMarcadores`.
-3. **Número em destaque** acima da manchete, quando o post tem `destaque`.
-4. **Os quatro recursos**, cada um com ícone, cor própria, título em caixa alta e
-   descrição. A cor sai de uma rampa puxada 35% para a marca, então as quatro
-   variantes seguem reconhecíveis como do mesmo app.
-5. **Os aparelhos** e o **rodapé** com o CTA do domínio e os `selos`. A pilha
-  tem três arranjos (dois aparelhos subindo, um só maior, dois descendo),
-  escolhidos pela variação do slot — sem isso os cards repetiam a mesma
-  composição. Ela cabe inteira dentro da margem: nada sangra na borda.
+### De onde vem cada parte
 
-Quando o título é longo, quem cede é o corpo da manchete (78 → 42), não a
-lista: os quatro recursos são identidade do app e aparecem em todos os cards.
-Só se nem no menor corpo couber é que um recurso sai.
-
-Os layouts anteriores continuam no código como rede de segurança, escolhidos
-quando falta material:
-
-| Layout | Quando é usado | Campo no JSON |
+| Parte | Campo em `apps/<app>.json` | Sem o campo |
 |---|---|---|
-| `vitrine` | padrão — exige captura e recursos | — |
-| `hero` | há captura, mas o tema não tem recursos | — |
-| `manchete` | sem captura: título grande, subtítulo e chips | `"layout": "classico"` |
-| `recursos` | sem captura, com lista de recursos | `"layout": "recursos"` |
-| `destaque` | sem captura, um número é o argumento | `"destaque": "3,38%"` |
+| Cores, efeito, fonte do título, selos, sufixo do site | `visual` | derivados de `marca.destaque`, `fonte` e `selos` |
+| Título, destaque, subtítulo, benefícios | `posts[].premium` | trecho entre `*asteriscos*` do `card.titulo` vira o destaque; os 3 primeiros `recursos` viram benefícios |
+| Tela do celular | `posts[].premium.tela` → `assets/premium/<app>/<tela>.png` | capturas automáticas de `assets/capturas/`, em rodízio |
+
+Exemplo de tema premium:
+
+```json
+"premium": {
+  "titulo": "Gasolina<br>ou Etanol?",
+  "destaque": "Descubra na hora",
+  "sub": "O <b>GASONOL</b> mostra em segundos qual combustível compensa mais.",
+  "tela": "tela-calculadora",
+  "tamanho": 104,
+  "beneficios": [
+    { "icone": "cronometro", "titulo": "Cálculo rápido", "texto": "Resultado em segundos." }
+  ]
+}
+```
+
+`tamanho` (opcional) fixa o corpo do título; `<br>` quebra a linha e `<b>`
+destaca no subtítulo.
+
+As fontes são arquivos locais em `assets/fontes/` (licença OFL), então o card
+sai igual no Mac e no runner: Barlow Condensed no GASONOL, e a fonte do campo
+`fonte` nos demais (Sora, Manrope, Fraunces, Space Grotesk, Plus Jakarta Sans,
+Inter Display). A Inter fica no corpo.
 
 Para conferir sem publicar:
 
 ```bash
 npm run cards -- --app gasonol --todos
+npm run cards -- --app gasonol --todos --formato vertical
 ```
 
 ## As capturas dos apps
@@ -147,16 +136,21 @@ Quando entra um projeto novo, registre as rotas dele em
 [`scripts/capturar.mjs`](scripts/capturar.mjs) para a recaptura semanal
 continuar funcionando sem trabalho manual.
 
-Se uma captura falhar ou o Chromium não estiver instalado, o card cai de volta
-no layout só de texto — a publicação nunca é bloqueada por isso.
+Se uma captura falhar, o card usa as telas que já estão commitadas — a
+publicação nunca é bloqueada por isso.
+
+As telas dos temas premium do GASONOL (`assets/premium/gasonol/`) são feitas por
+[`scripts/premium/capturar-gasonol.mjs`](scripts/premium/capturar-gasonol.mjs):
+ele reproduz o estado logado com markup extraído da sessão real e troca dados
+pessoais por fictícios (avatar genérico, "Ana Ribeiro").
 
 ## Mudar o conteúdo
 
 Tudo vive em `apps/<app>.json`: `tagline`, cores da marca, `emblema`, `recursos`
 (cada um com `icone`, `titulo` e `descricao`), `selos` do rodapé, hashtags e a
 lista de temas. Os nomes de ícone disponíveis estão em `NOMES_ICONES`, em
-[`scripts/lib/icones.js`](scripts/lib/icones.js) — são traços desenhados na mão
-na mesma grade de 24, porque o resvg não carrega SVG externo nem fonte de ícone.
+[`scripts/lib/icones.js`](scripts/lib/icones.js) — traços na mesma grade de 24,
+inseridos inline no card e pintados com a cor do app.
  Cada tema é **combinatório** — `ganchos` (aberturas), `corpos`
 (parágrafos), `ctas` (fechos com `{link}`) e `curtos` (versão de 1 linha para
 Bluesky/X) — e o `montarTexto` combina um de cada por enumeração mista, variando

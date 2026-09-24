@@ -78,6 +78,10 @@ jobs:
 
       - run: npm ci
 
+      # Os cards são páginas HTML renderizadas no Chromium (scripts/lib/cards.js).
+      - name: Baixar o Chromium do Playwright
+        run: npx playwright install --with-deps chromium
+
       - name: Publicar
         run: |
           argumentos=""

@@ -21,12 +21,8 @@
     "test": "node --test scripts/lib/*.test.mjs"
   },
   "dependencies": {
-    "@resvg/resvg-js": "^2.6.2",
     "libsodium-wrappers": "^0.8.4",
-    "opentype.js": "^2.0.0",
+    "playwright": "^1.62.1",
     "sharp": "^0.33.5"
-  },
-  "devDependencies": {
-    "playwright": "^1.62.1"
   }
 }

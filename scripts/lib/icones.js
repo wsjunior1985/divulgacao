@@ -1,12 +1,11 @@
 // icones.js — o traço dos ícones dos cards.
 //
-// Por que desenhar à mão em vez de usar uma biblioteca: o resvg não carrega
-// SVG externo nem fontes de ícone, e empacotar um pacote inteiro para usar 20
-// glifos custaria mais do que estes 20 caminhos. Todos vivem na mesma grade de
-// 24x24 e no mesmo peso de traço, então a fileira de recursos sai regular.
+// Um conjunto próprio, todo na mesma grade de 24x24 e no mesmo peso de traço,
+// para a fileira de benefícios e os selos saírem regulares. Os ícones entram
+// inline no HTML do card (cor = currentColor), então herdam a cor e o brilho
+// do CSS de cada app.
 //
-// O token "@" vira a cor no momento de desenhar — é o que permite pintar o
-// mesmo ícone de branco no círculo colorido e da cor da marca no rodapé.
+// O token "@" vira a cor de preenchimento dos detalhes sólidos (currentColor).
 
 const T = 1.9; // peso do traço, constante em toda a grade
 
@@ -52,20 +51,19 @@ const TRACOS = {
   troca: '<path d="M4.2 8.4h13.4l-3.2-3.4"/><path d="M19.8 15.6H6.4l3.2 3.4"/>',
   offline:
     '<path d="M12 3.6v9.8"/><path d="M8.2 9.8l3.8 3.8 3.8-3.8"/><path d="M4.4 16.4v2.2a1.8 1.8 0 001.8 1.8h11.6a1.8 1.8 0 001.8-1.8v-2.2"/>',
+  cronometro: '<circle cx="12" cy="14" r="8"/><path d="M12 2v2M9 2h6M18.5 6.5l1.5-1.5"/><path d="M12.8 9.5 10 14.5h3.4l-.9 4 3-5.2h-3.3z" fill="@" stroke="none"/>',
+  medalha: '<circle cx="12" cy="9" r="6.5"/><path d="m9.2 9.2 1.9 1.9 3.8-3.8"/><path d="M8.2 14.3 6.5 22l5.5-3 5.5 3-1.7-7.7"/>',
+  estrada: '<path d="M8 3 3 21M16 3l5 18"/><path d="M12 4v3M12 10.5v3M12 17v3" stroke-width="2.6"/>',
+  presente: '<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8S10.5 3 8 3.5 7 8 12 8zM12 8s1.5-5 4-4.5S17 8 12 8z"/>',
+  engrenagem: '<circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>',
+  moedaCirculo: '<circle cx="12" cy="12" r="9"/><path d="M15 8.8c-.6-.9-1.7-1.4-3-1.4-1.9 0-3.2 1-3.2 2.4 0 3.3 6.4 1.7 6.4 4.9 0 1.4-1.4 2.5-3.3 2.5-1.4 0-2.6-.6-3.2-1.6M12 5.5v2M12 16.8v1.8"/>',
+  raioCirculo: '<circle cx="12" cy="12" r="9.5"/><path d="M13 5.5 8 13h3.8L11 18.5l5-7.5h-3.8z" fill="@" stroke="none"/>',
 };
 
 export const NOMES_ICONES = Object.keys(TRACOS);
 
-/**
- * Devolve o ícone desenhado dentro de uma caixa `tamanho` x `tamanho`, com o
- * canto superior esquerdo em (x, y).
- *
- * O traço é declarado na grade de 24 e escala junto com o grupo, então o peso
- * óptico fica igual em qualquer tamanho — é o que mantém o ícone de 34px da
- * lista de recursos e o de 26px do rodapé com a mesma aparência.
- */
-export function icone(nome, { x = 0, y = 0, tamanho = 24, cor = "#ffffff", peso = T } = {}) {
+/** O ícone como `<svg>` inline, pintado com currentColor (a cor vem do CSS). */
+export function icone(nome, { peso = T } = {}) {
   const tracos = TRACOS[nome] ?? TRACOS.check;
-  const escala = tamanho / 24;
-  return `<g transform="translate(${x}, ${y}) scale(${escala})" fill="none" stroke="${cor}" stroke-width="${peso}" stroke-linecap="round" stroke-linejoin="round">${tracos.replaceAll("@", cor)}</g>`;
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${peso}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${tracos.replaceAll("@", "currentColor")}</svg>`;
 }

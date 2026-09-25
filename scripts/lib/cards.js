@@ -16,6 +16,8 @@ import { RAIZ } from "./base.js";
 import { vitrine } from "./cards/vitrine.js";
 import { aieat } from "./cards/aieat.js";
 import { convertendo } from "./cards/convertendo.js";
+import { vaidarquanto } from "./cards/vaidarquanto.js";
+import { remedin } from "./cards/remedin.js";
 
 export { semMarcadores } from "./cards/comum.js";
 
@@ -24,7 +26,7 @@ export const FORMATOS = {
   vertical: { largura: 1080, altura: 1920 },
 };
 
-const LAYOUTS = { vitrine, aieat, convertendo };
+const LAYOUTS = { vitrine, aieat, convertendo, vaidarquanto, remedin };
 
 export function montarHtml({ app, post, formato = "feed", variacao = 0 }) {
   const { largura: L, altura: A } = FORMATOS[formato] ?? FORMATOS.feed;

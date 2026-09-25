@@ -7,6 +7,9 @@
     "fundoA": "#07130d",
     "destaque": "#56b63f"
   },
+  "visual": {
+    "layout": "remedin"
+  },
   "recursos": [
     {
       "icone": "sino",
@@ -69,7 +72,37 @@
         "\"Será que eu tomei o da manhã?\" O Remedin lembra na hora e guarda o histórico. Até 3 remédios grátis: {link}",
         "Dúvida se tomou o remédio? O Remedin lembra na hora e registra cada dose. Grátis: {link}",
         "Não lembra se tomou? O Remedin avisa no horário e guarda o histórico: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Nunca mais<br>esqueça de",
+        "destaque": "tomar seu<br>medicamento.",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "O Remedin organiza seus medicamentos e avisa no horário certo para você cuidar melhor da sua saúde.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Lembretes inteligentes",
+            "texto": "Alerta antes do horário de cada dose."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Horários personalizados",
+            "texto": "Intervalos de 6h, 8h, 12h ou 24h."
+          },
+          {
+            "icone": "pilula",
+            "titulo": "Controle de estoque",
+            "texto": "Saiba quando a cartela está acabando."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Acompanhe seu tratamento",
+            "texto": "Relatório de adesão para a consulta (Premium)."
+          }
+        ]
+      }
     },
     {
       "id": "cuidador",
@@ -98,7 +131,37 @@
         "Cuida de alguém à distância? O Modo Cuidador do Remedin te avisa quando a dose é esquecida. Grátis: {link}",
         "O Modo Cuidador do Remedin avisa você se a dose for esquecida. Cuide à distância: {link}",
         "Cuidando de alguém? O Remedin avisa quando a dose é esquecida, direto pra você: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Cuida de alguém",
+        "destaque": "à distância?",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "Com o <b>Modo Cuidador</b>, você fica sabendo quando uma dose é esquecida.",
+        "beneficios": [
+          {
+            "icone": "pessoas",
+            "titulo": "Modo cuidador",
+            "texto": "Avisa quem cuida quando a dose passa."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Lembretes na hora",
+            "texto": "Alerta antes de cada horário."
+          },
+          {
+            "icone": "check",
+            "titulo": "Dose confirmada",
+            "texto": "Um toque em “Tomei agora”."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico de adesão",
+            "texto": "Você acompanha o tratamento."
+          }
+        ]
+      }
     },
     {
       "id": "estoque",
@@ -127,7 +190,37 @@
         "A cartela sempre acaba no domingo à noite. O Remedin controla o estoque e avisa antes: {link}",
         "Remédio acabando? O Remedin controla o estoque e avisa com antecedência: {link}",
         "O Remedin avisa quando o remédio está perto de acabar, antes do aperto: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "A cartela acabou",
+        "destaque": "no domingo?",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "O Remedin controla o estoque e <b>avisa antes de acabar.</b>",
+        "beneficios": [
+          {
+            "icone": "pilula",
+            "titulo": "Controle de estoque",
+            "texto": "Sabe quantos comprimidos restam."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Aviso antecipado",
+            "texto": "Hora de comprar antes de faltar."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Qualquer intervalo",
+            "texto": "6h, 8h, 12h ou 24h."
+          },
+          {
+            "icone": "check",
+            "titulo": "Dose registrada",
+            "texto": "Cada “Tomei” baixa o estoque."
+          }
+        ]
+      }
     },
     {
       "id": "idoso",
@@ -157,7 +250,37 @@
         "5 remédios em 3 horários não cabem num papel na geladeira. O Remedin organiza numa tela só: {link}",
         "Rotina de remédios bagunçada? O Remedin organiza tudo numa tela só: {link}",
         "Chega de papel na geladeira: o Remedin organiza horários e doses numa tela: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "A rotina inteira",
+        "destaque": "numa tela só.",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "Vários remédios em vários horários, <b>organizados e sem papel na geladeira.</b>",
+        "beneficios": [
+          {
+            "icone": "lista",
+            "titulo": "Agenda do dia",
+            "texto": "Todos os horários em ordem."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Lembretes na hora",
+            "texto": "Alerta antes de cada dose."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Modo cuidador",
+            "texto": "A família acompanha junto."
+          },
+          {
+            "icone": "pilula",
+            "titulo": "Controle de estoque",
+            "texto": "Aviso antes de acabar."
+          }
+        ]
+      }
     },
     {
       "id": "relatorio",
@@ -186,7 +309,37 @@
         "Na consulta, mostre o histórico real do tratamento — não a sua memória. O Remedin registra cada dose: {link}",
         "Leve um relatório de adesão em PDF na próxima consulta. O Remedin registra tudo: {link}",
         "O médico quer saber como foi o tratamento? O Remedin gera o relatório de cada dose: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Leve o histórico",
+        "destaque": "na consulta.",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "Mostre ao médico o <b>histórico real do tratamento</b>, não a memória.",
+        "beneficios": [
+          {
+            "icone": "documento",
+            "titulo": "Relatório de adesão",
+            "texto": "Pronto para levar à consulta (Premium)."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Adesão do dia",
+            "texto": "Quanto do tratamento foi cumprido."
+          },
+          {
+            "icone": "check",
+            "titulo": "Cada dose registrada",
+            "texto": "Tomada, pendente ou atrasada."
+          },
+          {
+            "icone": "calendario",
+            "titulo": "Histórico",
+            "texto": "Dia a dia, sem esquecer nada."
+          }
+        ]
+      }
     },
     {
       "id": "ia",
@@ -215,7 +368,37 @@
         "\"Posso tomar esses dois juntos?\" O assistente do Remedin responde em português claro sobre os SEUS remédios: {link}",
         "Dúvida sobre seus remédios? O assistente do Remedin responde em português claro: {link}",
         "O assistente do Remedin entende a sua bula e responde sem jargão: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Assistente que",
+        "destaque": "entende bula.",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "Pergunte em português, sem jargão, sobre <b>os seus remédios.</b>",
+        "beneficios": [
+          {
+            "icone": "estrela",
+            "titulo": "Assistente com IA",
+            "texto": "Tira dúvidas sobre os seus remédios (Premium)."
+          },
+          {
+            "icone": "documento",
+            "titulo": "Fala sem jargão",
+            "texto": "Resposta em português claro."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Lembretes na hora",
+            "texto": "Nenhuma dose esquecida."
+          },
+          {
+            "icone": "pilula",
+            "titulo": "Seus medicamentos",
+            "texto": "Tudo organizado num lugar."
+          }
+        ]
+      }
     },
     {
       "id": "gratis",
@@ -245,7 +428,37 @@
         "Até 3 medicamentos grátis, para sempre, sem pedir cartão. O essencial do Remedin não expira: {link}",
         "Grátis de verdade: até 3 remédios, sem prazo e sem cartão. {link}",
         "Sem trial e sem cartão: até 3 medicamentos grátis pra sempre no Remedin. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Até 3 remédios",
+        "destaque": "grátis<br>para sempre.",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "O essencial do Remedin não expira e <b>não pede cartão.</b>",
+        "beneficios": [
+          {
+            "icone": "pilula",
+            "titulo": "Até 3 medicamentos",
+            "texto": "Grátis para sempre."
+          },
+          {
+            "icone": "cartao",
+            "titulo": "Sem cartão",
+            "texto": "Para começar, basta entrar."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Lembretes na hora",
+            "texto": "Alerta antes de cada dose."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Instala como app",
+            "texto": "Direto do navegador."
+          }
+        ]
+      }
     },
     {
       "id": "antibiotico",
@@ -275,7 +488,37 @@
         "Antibiótico de 8/8h inclui o alarme das 3 da manhã — o que a gente sempre esquece. O Remedin avisa em todos: {link}",
         "Antibiótico de 8/8h? O Remedin monta os horários e avisa em todos, até o fim: {link}",
         "Não pule a dose das 3h: o Remedin avisa em todos os horários do antibiótico: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Antibiótico",
+        "destaque": "de 8 em 8 horas.",
+        "telas": [
+          "tela-hoje"
+        ],
+        "sub": "Inclusive o das <b>3 da manhã</b>, que a gente sempre esquece.",
+        "beneficios": [
+          {
+            "icone": "relogio",
+            "titulo": "Qualquer intervalo",
+            "texto": "6h, 8h, 12h ou 24h."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Alarme em todos",
+            "texto": "Até de madrugada."
+          },
+          {
+            "icone": "check",
+            "titulo": "Tomei agora",
+            "texto": "Um toque confirma a dose."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Tratamento completo",
+            "texto": "Veja se nenhuma dose ficou para trás."
+          }
+        ]
+      }
     }
   ],
   "tagline": "Porque cada dose conta",

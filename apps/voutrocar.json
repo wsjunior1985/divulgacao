@@ -141,20 +141,23 @@
         "sub": "Busca por marca ou modelo.",
         "beneficios": [
           {
+            "icone": "busca",
+            "titulo": "Busca por modelo",
+            "texto": "Marca ou nome do carro."
+          },
+          {
             "icone": "grafico",
-            "titulo": "Ranking atualizado",
-            "texto": "Emplacamentos reais do mês."
+            "titulo": "Posição no ranking",
+            "texto": "Emplacamentos reais."
           },
           {
-            "icone": "troca",
-            "titulo": "Compare lado a lado",
-            "texto": "Dois carros antes de decidir."
-          },
-          {
-            "icone": "escudo",
-            "titulo": "Independente",
-            "texto": "Nenhuma montadora patrocina."
+            "icone": "dinheiro",
+            "titulo": "Preço de entrada",
+            "texto": "Só com fonte oficial."
           }
+        ],
+        "telas": [
+          "tela-inicio"
         ]
       }
     },
@@ -192,20 +195,23 @@
         "sub": "Compare antes de decidir.",
         "beneficios": [
           {
-            "icone": "grafico",
-            "titulo": "Ranking atualizado",
-            "texto": "Emplacamentos reais do mês."
-          },
-          {
             "icone": "troca",
-            "titulo": "Compare lado a lado",
-            "texto": "Dois carros antes de decidir."
+            "titulo": "Lado a lado",
+            "texto": "Até 4 carros de uma vez."
           },
           {
-            "icone": "escudo",
-            "titulo": "Independente",
-            "texto": "Nenhuma montadora patrocina."
+            "icone": "check",
+            "titulo": "Só as diferenças",
+            "texto": "Filtre o que muda."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Ranking de vendas",
+            "texto": "Quem vende mais."
           }
+        ],
+        "telas": [
+          "tela-comparar"
         ]
       }
     },
@@ -243,20 +249,23 @@
         "sub": "Favoritos, pra acompanhar sem perder.",
         "beneficios": [
           {
+            "icone": "estrela",
+            "titulo": "Sua lista",
+            "texto": "Salve os modelos que curtiu."
+          },
+          {
             "icone": "grafico",
-            "titulo": "Ranking atualizado",
-            "texto": "Emplacamentos reais do mês."
+            "titulo": "Acompanhe o ranking",
+            "texto": "Veja se sobe ou desce."
           },
           {
             "icone": "troca",
-            "titulo": "Compare lado a lado",
-            "texto": "Dois carros antes de decidir."
-          },
-          {
-            "icone": "escudo",
-            "titulo": "Independente",
-            "texto": "Nenhuma montadora patrocina."
+            "titulo": "Compare depois",
+            "texto": "Direto dos favoritos."
           }
+        ],
+        "telas": [
+          "tela-ranking"
         ]
       }
     },
@@ -294,20 +303,23 @@
         "sub": "Filtre por tipo de motorização.",
         "beneficios": [
           {
-            "icone": "grafico",
-            "titulo": "Ranking atualizado",
-            "texto": "Emplacamentos reais do mês."
+            "icone": "raio",
+            "titulo": "Elétricos",
+            "texto": "Os mais vendidos do tipo."
           },
           {
             "icone": "troca",
-            "titulo": "Compare lado a lado",
-            "texto": "Dois carros antes de decidir."
+            "titulo": "Híbridos",
+            "texto": "Leves, plenos e plug-in."
           },
           {
-            "icone": "escudo",
-            "titulo": "Independente",
-            "texto": "Nenhuma montadora patrocina."
+            "icone": "carro",
+            "titulo": "Combustão",
+            "texto": "O ranking tradicional."
           }
+        ],
+        "telas": [
+          "tela-eletricos"
         ]
       }
     },
@@ -345,20 +357,23 @@
         "sub": "Nada de estimativa ou chute.",
         "beneficios": [
           {
-            "icone": "grafico",
-            "titulo": "Ranking atualizado",
-            "texto": "Emplacamentos reais do mês."
-          },
-          {
-            "icone": "troca",
-            "titulo": "Compare lado a lado",
-            "texto": "Dois carros antes de decidir."
-          },
-          {
             "icone": "escudo",
-            "titulo": "Independente",
-            "texto": "Nenhuma montadora patrocina."
+            "titulo": "Fonte oficial",
+            "texto": "Nada estimado ou inventado."
+          },
+          {
+            "icone": "documento",
+            "titulo": "Metodologia aberta",
+            "texto": "Como os dados são obtidos."
+          },
+          {
+            "icone": "calendario",
+            "titulo": "Data da consulta",
+            "texto": "Você sabe quando foi."
           }
+        ],
+        "telas": [
+          "tela-metodologia"
         ]
       }
     },
@@ -396,20 +411,23 @@
         "sub": "Ferramenta informativa e independente.",
         "beneficios": [
           {
-            "icone": "grafico",
-            "titulo": "Ranking atualizado",
-            "texto": "Emplacamentos reais do mês."
-          },
-          {
-            "icone": "troca",
-            "titulo": "Compare lado a lado",
-            "texto": "Dois carros antes de decidir."
-          },
-          {
             "icone": "escudo",
-            "titulo": "Independente",
-            "texto": "Nenhuma montadora patrocina."
+            "titulo": "Sem patrocínio",
+            "texto": "Nenhuma montadora paga."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Dados de mercado",
+            "texto": "Emplacamentos reais."
+          },
+          {
+            "icone": "documento",
+            "titulo": "Transparente",
+            "texto": "Fonte citada em cada dado."
           }
+        ],
+        "telas": [
+          "tela-metodologia"
         ]
       }
     },
@@ -447,20 +465,23 @@
         "sub": "Ranking e busca liberados na hora.",
         "beneficios": [
           {
+            "icone": "check",
+            "titulo": "Grátis",
+            "texto": "Sem criar conta."
+          },
+          {
             "icone": "grafico",
-            "titulo": "Ranking atualizado",
-            "texto": "Emplacamentos reais do mês."
+            "titulo": "Top 50",
+            "texto": "Os mais vendidos do Brasil."
           },
           {
             "icone": "troca",
-            "titulo": "Compare lado a lado",
-            "texto": "Dois carros antes de decidir."
-          },
-          {
-            "icone": "escudo",
-            "titulo": "Independente",
-            "texto": "Nenhuma montadora patrocina."
+            "titulo": "Comparador",
+            "texto": "Lado a lado, na hora."
           }
+        ],
+        "telas": [
+          "tela-ranking"
         ]
       }
     }

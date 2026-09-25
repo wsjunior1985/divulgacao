@@ -141,19 +141,22 @@
         "beneficios": [
           {
             "icone": "raio",
-            "titulo": "Quiz com IA",
-            "texto": "Perguntas prontas em segundos."
+            "titulo": "Jogue na hora",
+            "texto": "Sem criar conta."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Quizzes prontos",
+            "texto": "Por tema e dificuldade."
           },
           {
             "icone": "compartilhar",
-            "titulo": "Link ou QR Code",
-            "texto": "Desafie a turma na hora."
-          },
-          {
-            "icone": "pessoas",
-            "titulo": "Painel do professor",
-            "texto": "Veja onde a turma mais erra."
+            "titulo": "Mande para amigos",
+            "texto": "Link ou QR Code."
           }
+        ],
+        "telas": [
+          "tela-explorar"
         ]
       }
     },
@@ -191,20 +194,23 @@
         "sub": "Veja onde a turma mais erra.",
         "beneficios": [
           {
-            "icone": "raio",
-            "titulo": "Quiz com IA",
-            "texto": "Perguntas prontas em segundos."
+            "icone": "grafico",
+            "titulo": "Onde a turma erra",
+            "texto": "Veja por pergunta."
           },
           {
-            "icone": "compartilhar",
-            "titulo": "Link ou QR Code",
-            "texto": "Desafie a turma na hora."
+            "icone": "documento",
+            "titulo": "Prova impressa",
+            "texto": "Com gabarito, em um clique."
           },
           {
-            "icone": "pessoas",
-            "titulo": "Painel do professor",
-            "texto": "Veja onde a turma mais erra."
+            "icone": "troca",
+            "titulo": "Exportar e importar",
+            "texto": "Leve seus quizzes."
           }
+        ],
+        "telas": [
+          "tela-professor"
         ]
       }
     },
@@ -242,20 +248,23 @@
         "sub": "Ou um QR Code, pra jogar na hora.",
         "beneficios": [
           {
-            "icone": "raio",
-            "titulo": "Quiz com IA",
-            "texto": "Perguntas prontas em segundos."
-          },
-          {
             "icone": "compartilhar",
             "titulo": "Link ou QR Code",
-            "texto": "Desafie a turma na hora."
+            "texto": "A turma entra na hora."
           },
           {
             "icone": "pessoas",
-            "titulo": "Painel do professor",
-            "texto": "Veja onde a turma mais erra."
+            "titulo": "Todo mundo joga",
+            "texto": "Sem precisar de conta."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Pontuação",
+            "texto": "Quem acertou mais."
           }
+        ],
+        "telas": [
+          "tela-jogar"
         ]
       }
     },
@@ -293,20 +302,23 @@
         "sub": "Escolha o modo que combina com você.",
         "beneficios": [
           {
-            "icone": "raio",
-            "titulo": "Quiz com IA",
-            "texto": "Perguntas prontas em segundos."
+            "icone": "documento",
+            "titulo": "Estudo",
+            "texto": "Explicação na hora, sem cronômetro."
           },
           {
-            "icone": "compartilhar",
-            "titulo": "Link ou QR Code",
-            "texto": "Desafie a turma na hora."
+            "icone": "check",
+            "titulo": "Clássico",
+            "texto": "Pontuação por acerto."
           },
           {
-            "icone": "pessoas",
-            "titulo": "Painel do professor",
-            "texto": "Veja onde a turma mais erra."
+            "icone": "relogio",
+            "titulo": "Contra o tempo",
+            "texto": "Rapidez vale ponto."
           }
+        ],
+        "telas": [
+          "tela-modos"
         ]
       }
     },
@@ -344,20 +356,23 @@
         "sub": "Escolha a dificuldade e o público.",
         "beneficios": [
           {
-            "icone": "raio",
-            "titulo": "Quiz com IA",
-            "texto": "Perguntas prontas em segundos."
+            "icone": "alvo",
+            "titulo": "Escolha o objetivo",
+            "texto": "Estudar, revisar ou prova."
           },
           {
-            "icone": "compartilhar",
-            "titulo": "Link ou QR Code",
-            "texto": "Desafie a turma na hora."
+            "icone": "grafico",
+            "titulo": "Dificuldade",
+            "texto": "Do fácil ao especialista."
           },
           {
             "icone": "pessoas",
-            "titulo": "Painel do professor",
-            "texto": "Veja onde a turma mais erra."
+            "titulo": "Público certo",
+            "texto": "Crianças, adolescentes ou geral."
           }
+        ],
+        "telas": [
+          "tela-criar"
         ]
       }
     },
@@ -395,20 +410,23 @@
         "sub": "A IA usa o seu material como base.",
         "beneficios": [
           {
+            "icone": "documento",
+            "titulo": "Cole seu texto",
+            "texto": "A IA usa o seu material."
+          },
+          {
             "icone": "raio",
-            "titulo": "Quiz com IA",
-            "texto": "Perguntas prontas em segundos."
+            "titulo": "Perguntas em segundos",
+            "texto": "Prontas para revisar."
           },
           {
-            "icone": "compartilhar",
-            "titulo": "Link ou QR Code",
-            "texto": "Desafie a turma na hora."
-          },
-          {
-            "icone": "pessoas",
-            "titulo": "Painel do professor",
-            "texto": "Veja onde a turma mais erra."
+            "icone": "check",
+            "titulo": "Você revisa",
+            "texto": "Antes de jogar ou enviar."
           }
+        ],
+        "telas": [
+          "tela-criar"
         ]
       }
     },
@@ -446,20 +464,23 @@
         "sub": "Por categoria e nível de dificuldade.",
         "beneficios": [
           {
+            "icone": "lista",
+            "titulo": "Biblioteca",
+            "texto": "Quizzes por categoria."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Por dificuldade",
+            "texto": "Fácil, média ou difícil."
+          },
+          {
             "icone": "raio",
-            "titulo": "Quiz com IA",
-            "texto": "Perguntas prontas em segundos."
-          },
-          {
-            "icone": "compartilhar",
-            "titulo": "Link ou QR Code",
-            "texto": "Desafie a turma na hora."
-          },
-          {
-            "icone": "pessoas",
-            "titulo": "Painel do professor",
-            "texto": "Veja onde a turma mais erra."
+            "titulo": "Jogue na hora",
+            "texto": "Sem criar conta."
           }
+        ],
+        "telas": [
+          "tela-explorar"
         ]
       }
     }

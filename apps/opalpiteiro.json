@@ -9,6 +9,9 @@
     "fundoA": "#101427",
     "destaque": "#7c3aed"
   },
+  "visual": {
+    "layout": "opalpiteiro"
+  },
   "recursos": [
     {
       "icone": "compartilhar",
@@ -84,7 +87,32 @@
         "Seu palpite e a resenha ficam no mesmo lugar: {link}",
         "Bolão entre amigos e família, sem bagunça. {link}",
         "Palpite, ranking e pódio num só app: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Seu palpite.",
+        "destaque": "Nossa resenha.",
+        "telas": [
+          "tela-app"
+        ],
+        "sub": "Bolões entre amigos e família: <b>futebol, eleição, reality, chá de bebê</b> e o que mais virar assunto.",
+        "beneficios": [
+          {
+            "icone": "compartilhar",
+            "titulo": "Convite por link",
+            "texto": "A turma entra em um toque."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Ranking ao vivo",
+            "texto": "A pontuação muda e a resenha ganha pódio."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Qualquer categoria",
+            "texto": "Futebol, eleição, reality ou tema livre."
+          }
+        ]
+      }
     },
     {
       "id": "palpite-sem-complicacao",
@@ -112,7 +140,32 @@
         "Palpite direto, sem enrolação. {link}",
         "A aposta acontece rápido no celular: {link}",
         "Menos menu, mais palpite. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Palpite",
+        "destaque": "sem complicação.",
+        "sub": "Tela direta, feita para o celular: <b>escolheu, palpitou, pronto.</b>",
+        "telas": [
+          "tela-app"
+        ],
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Palpite em segundos",
+            "texto": "Poucos toques por jogo."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Feito para o celular",
+            "texto": "Instala como app."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Ranking ao vivo",
+            "texto": "Veja quem está na frente."
+          }
+        ]
+      }
     },
     {
       "id": "do-convite-ao-podio",
@@ -141,7 +194,32 @@
         "Crie um bolão em minutos e siga para o pódio: {link}",
         "Organização rápida para a sua turma. {link}",
         "Abra um bolão sem complicação. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Do convite",
+        "destaque": "ao pódio.",
+        "sub": "Crie o bolão em minutos, chame a turma e <b>acompanhe o ranking.</b>",
+        "telas": [
+          "tela-app"
+        ],
+        "beneficios": [
+          {
+            "icone": "compartilhar",
+            "titulo": "Convite por link",
+            "texto": "A turma entra em um toque."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Regras claras",
+            "texto": "Pontuação definida desde o início."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "Pódio no final",
+            "texto": "Quem acertou mais leva a resenha."
+          }
+        ]
+      }
     },
     {
       "id": "ranking-da-galera",
@@ -169,7 +247,32 @@
         "Ranking ao vivo, resenha garantida: {link}",
         "Quem acerta sobe no pódio. {link}",
         "A pontuação mexe e o grupo sente. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Quem sobe",
+        "destaque": "no pódio?",
+        "sub": "O ranking muda a cada resultado e <b>a resenha anda sozinha.</b>",
+        "telas": [
+          "tela-app"
+        ],
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking ao vivo",
+            "texto": "Pontuação atualizada na hora."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "Pódio da galera",
+            "texto": "Os três primeiros em destaque."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Entre amigos",
+            "texto": "Família, trabalho ou turma."
+          }
+        ]
+      }
     },
     {
       "id": "multicategoria",
@@ -198,7 +301,32 @@
         "Futebol, reality, eleição ou tema livre: {link}",
         "Qualquer assunto pode virar bolão. {link}",
         "A categoria é da turma. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Futebol, reality,",
+        "destaque": "eleição...",
+        "sub": "Qualquer assunto que <b>vira conversa no grupo</b> pode virar bolão.",
+        "telas": [
+          "tela-app"
+        ],
+        "beneficios": [
+          {
+            "icone": "troca",
+            "titulo": "Várias categorias",
+            "texto": "Futebol, reality, eleição, chá de bebê."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "Tema livre",
+            "texto": "Invente o seu bolão."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Convite por link",
+            "texto": "Todo mundo entra rápido."
+          }
+        ]
+      }
     },
     {
       "id": "bolao-publico-privado",
@@ -226,7 +354,32 @@
         "Bolão público ou privado, você decide: {link}",
         "A resenha pode ficar só entre convidados. {link}",
         "Privacidade também faz parte do jogo. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Bolão público",
+        "destaque": "ou privado.",
+        "sub": "Você decide <b>quem entra na resenha</b>.",
+        "telas": [
+          "tela-app"
+        ],
+        "beneficios": [
+          {
+            "icone": "globo",
+            "titulo": "Público",
+            "texto": "Aberto para quem quiser jogar."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Privado",
+            "texto": "Só com convite (Premium)."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Convite por link",
+            "texto": "Mande para a turma certa."
+          }
+        ]
+      }
     },
     {
       "id": "perfil-com-numeros",
@@ -254,7 +407,32 @@
         "Perfil com pontos, nível e conquistas: {link}",
         "Veja sua evolução dentro dos bolões. {link}",
         "Os números contam a sua resenha. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Seu perfil,",
+        "destaque": "seus números.",
+        "sub": "Pontos, nível, vitórias e <b>histórico no mesmo lugar.</b>",
+        "telas": [
+          "tela-app"
+        ],
+        "beneficios": [
+          {
+            "icone": "estrela",
+            "titulo": "Nível e conquistas",
+            "texto": "Suba de nível palpitando."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico",
+            "texto": "Todos os seus bolões."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Acertos",
+            "texto": "Veja sua taxa de acerto."
+          }
+        ]
+      }
     },
     {
       "id": "free-premium",
@@ -283,7 +461,32 @@
         "Free para jogar, Premium para organizar: {link}",
         "Entre grátis e teste o Premium. {link}",
         "Criar bolão pede Premium; palpitar é free. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Grátis para jogar.",
+        "destaque": "Premium para organizar.",
+        "sub": "Entrar é grátis. <b>Criar e gerenciar bolões</b> é Premium, por R$ 5/mês.",
+        "telas": [
+          "tela-app"
+        ],
+        "beneficios": [
+          {
+            "icone": "check",
+            "titulo": "Jogar é grátis",
+            "texto": "Entre nos bolões da turma."
+          },
+          {
+            "icone": "estrela",
+            "titulo": "Premium R$ 5/mês",
+            "texto": "Crie bolões ilimitados."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Convite privado",
+            "texto": "Só quem você chamar entra."
+          }
+        ]
+      }
     }
   ]
 }

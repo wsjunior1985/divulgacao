@@ -57,6 +57,8 @@ const TRACOS = {
   presente: '<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8S10.5 3 8 3.5 7 8 12 8zM12 8s1.5-5 4-4.5S17 8 12 8z"/>',
   engrenagem: '<circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>',
   moedaCirculo: '<circle cx="12" cy="12" r="9"/><path d="M15 8.8c-.6-.9-1.7-1.4-3-1.4-1.9 0-3.2 1-3.2 2.4 0 3.3 6.4 1.7 6.4 4.9 0 1.4-1.4 2.5-3.3 2.5-1.4 0-2.6-.6-3.2-1.6M12 5.5v2M12 16.8v1.8"/>',
+  tablet: '<rect x="4.6" y="2.6" width="14.8" height="18.8" rx="2.2"/><path d="M11 18.2h2"/>',
+  monitor: '<rect x="2.6" y="4" width="18.8" height="12.4" rx="1.8"/><path d="M8.4 20.2h7.2M12 16.4v3.8"/>',
   raioCirculo: '<circle cx="12" cy="12" r="9.5"/><path d="M13 5.5 8 13h3.8L11 18.5l5-7.5h-3.8z" fill="@" stroke="none"/>',
 };
 

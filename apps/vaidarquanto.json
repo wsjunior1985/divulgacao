@@ -7,6 +7,9 @@
     "fundoA": "#0e0b16",
     "destaque": "#c061d6"
   },
+  "visual": {
+    "layout": "vaidarquanto"
+  },
   "recursos": [
     {
       "icone": "microfone",
@@ -69,7 +72,37 @@
         "Já levou susto com o total no caixa? Dite os produtos e veja o total em tempo real, antes de fechar a conta: {link}",
         "Saiba o total antes do caixa: dite os produtos e acompanhe em tempo real. {link}",
         "Chega no caixa sem susto: o \"Vai dar quanto?\" mostra o total em tempo real. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Descubra quanto",
+        "destaque": "vai dar...",
+        "telas": [
+          "tela-inicio"
+        ],
+        "sub": "Controle sua compra enquanto ela acontece e faça compras com <b>muito mais tranquilidade.</b>",
+        "beneficios": [
+          {
+            "icone": "microfone",
+            "titulo": "Some os produtos por voz",
+            "texto": "Diga os preços e acompanhe o total."
+          },
+          {
+            "icone": "carrinho",
+            "titulo": "Total em tempo real",
+            "texto": "O carrinho atualiza a cada item."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Defina um limite de gastos",
+            "texto": "Receba o aviso antes de estourar."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico e gráficos",
+            "texto": "Veja para onde vai seu dinheiro (Premium)."
+          }
+        ]
+      }
     },
     {
       "id": "por-voz",
@@ -98,7 +131,38 @@
         "Carrinho cheio, mãos ocupadas: fale \"arroz, doze e noventa\" e o total se atualiza sozinho. {link}",
         "Dite por voz e o \"Vai dar quanto?\" soma tudo sozinho, sem digitar. {link}",
         "Mãos ocupadas no mercado? Fale os itens e o total se atualiza. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Fale os preços,",
+        "destaque": "não digite.",
+        "faixa": "Carrinho cheio, mãos ocupadas!",
+        "telas": [
+          "tela-carrinho"
+        ],
+        "sub": "Toque no microfone e diga <b>“feijão cinco reais”</b>. O total atualiza na hora.",
+        "beneficios": [
+          {
+            "icone": "microfone",
+            "titulo": "Some por voz",
+            "texto": "Diga o produto e o preço, sem digitar."
+          },
+          {
+            "icone": "carrinho",
+            "titulo": "Total em tempo real",
+            "texto": "O carrinho atualiza a cada item."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Limite de gastos",
+            "texto": "Aviso antes de estourar o orçamento."
+          },
+          {
+            "icone": "offline",
+            "titulo": "Funciona offline",
+            "texto": "Mesmo sem sinal no mercado."
+          }
+        ]
+      }
     },
     {
       "id": "orcamento",
@@ -127,7 +191,38 @@
         "Defina o teto antes de entrar no mercado e veja quanto ainda cabe a cada item. Grátis: {link}",
         "Orçamento que avisa antes de estourar: defina o teto e acompanhe. {link}",
         "Saiba quanto ainda cabe no orçamento a cada item. Grátis: {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Defina o teto",
+        "destaque": "antes de entrar.",
+        "faixa": "E veja quanto ainda cabe!",
+        "telas": [
+          "tela-carrinho"
+        ],
+        "sub": "Coloque um valor máximo e acompanhe <b>quanto ainda cabe</b> no carrinho.",
+        "beneficios": [
+          {
+            "icone": "alvo",
+            "titulo": "Valor máximo",
+            "texto": "Você define quanto quer gastar."
+          },
+          {
+            "icone": "carrinho",
+            "titulo": "Total ao vivo",
+            "texto": "Cada item entra na conta na hora."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Aviso antes de estourar",
+            "texto": "Nada de susto no caixa."
+          },
+          {
+            "icone": "microfone",
+            "titulo": "Some por voz",
+            "texto": "Sem digitar no corredor."
+          }
+        ]
+      }
     },
     {
       "id": "sem-anuncio",
@@ -157,7 +252,38 @@
         "Um app de lista de compras que não vende o que você compra: sem anúncio, sem rastreador. {link}",
         "Sua lista de compras é sua: sem anúncio, sem rastreamento. {link}",
         "Sem anúncio e sem rastrear sua lista: o \"Vai dar quanto?\" respeita você. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Sua lista",
+        "destaque": "é sua.",
+        "faixa": "Sem anúncio e sem rastreamento!",
+        "telas": [
+          "tela-inicio"
+        ],
+        "sub": "Nada de propaganda no meio da compra. <b>Só você e o seu total.</b>",
+        "beneficios": [
+          {
+            "icone": "escudo",
+            "titulo": "Sem anúncios",
+            "texto": "Nenhuma propaganda na tela."
+          },
+          {
+            "icone": "offline",
+            "titulo": "Funciona offline",
+            "texto": "Abre mesmo sem internet."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Abre no navegador",
+            "texto": "Sem instalar nada da loja."
+          },
+          {
+            "icone": "carrinho",
+            "titulo": "Total na hora",
+            "texto": "Você vê quanto vai dar."
+          }
+        ]
+      }
     },
     {
       "id": "fim-do-mes",
@@ -186,7 +312,38 @@
         "A compra do mês pesa e ninguém acompanha. Com o total em tempo real você ajusta no corredor: {link}",
         "Compra do mês sem surpresa: acompanhe o total em tempo real. {link}",
         "Controle a maior compra do mês corredor por corredor. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "A compra do mês",
+        "destaque": "sem surpresa.",
+        "faixa": "Corredor por corredor!",
+        "telas": [
+          "tela-carrinho"
+        ],
+        "sub": "O total atualiza a cada item. <b>Você chega no caixa já sabendo.</b>",
+        "beneficios": [
+          {
+            "icone": "carrinho",
+            "titulo": "Total em tempo real",
+            "texto": "Corredor por corredor."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Limite de gastos",
+            "texto": "Defina o teto antes de entrar."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico e gráficos",
+            "texto": "Compare os meses (Premium)."
+          },
+          {
+            "icone": "microfone",
+            "titulo": "Some por voz",
+            "texto": "Mãos livres no carrinho."
+          }
+        ]
+      }
     },
     {
       "id": "sem-baixar",
@@ -216,7 +373,38 @@
         "Não precisa baixar 80 MB pra somar compras: o \"Vai dar quanto?\" abre no navegador. {link}",
         "0 MB: abre no navegador, sem baixar nada da loja. {link}",
         "Sem download: o \"Vai dar quanto?\" abre direto no navegador. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Nada de baixar",
+        "destaque": "da loja.",
+        "faixa": "Abre direto no navegador!",
+        "telas": [
+          "tela-inicio"
+        ],
+        "sub": "Entre em <b>vaidarquanto.com.br</b> e use na hora. Se quiser, instala como app.",
+        "beneficios": [
+          {
+            "icone": "celular",
+            "titulo": "Direto no navegador",
+            "texto": "Sem loja e sem download."
+          },
+          {
+            "icone": "offline",
+            "titulo": "Funciona offline",
+            "texto": "Abre mesmo sem sinal."
+          },
+          {
+            "icone": "raio",
+            "titulo": "Pronto em segundos",
+            "texto": "Abriu, já pode somar."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Sem anúncios",
+            "texto": "Nada atrapalha a compra."
+          }
+        ]
+      }
     },
     {
       "id": "familia",
@@ -245,7 +433,38 @@
         "Mandaram você no mercado com lista e limite? Dite os itens e volte com a prova de que ficou dentro: {link}",
         "Lista e limite combinados? Acompanhe o total e prove que cumpriu. {link}",
         "Volte do mercado com a prova de que respeitou o combinado. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "“Compra só o que",
+        "destaque": "está na lista.”",
+        "faixa": "Agora dá pra provar!",
+        "telas": [
+          "tela-listas"
+        ],
+        "sub": "Monte a lista, some no carrinho e <b>mostre o total</b> para quem ficou em casa.",
+        "beneficios": [
+          {
+            "icone": "lista",
+            "titulo": "Listas inteligentes",
+            "texto": "Nada fica esquecido (Premium)."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Compras juntas",
+            "texto": "Dois carrinhos, uma conta (Premium)."
+          },
+          {
+            "icone": "carrinho",
+            "titulo": "Total ao vivo",
+            "texto": "Todo mundo sabe quanto vai dar."
+          },
+          {
+            "icone": "microfone",
+            "titulo": "Some por voz",
+            "texto": "Rápido no corredor."
+          }
+        ]
+      }
     },
     {
       "id": "precos-subindo",
@@ -274,7 +493,38 @@
         "Os preços mudam toda semana e a gente só percebe no total. Acompanhe item por item: {link}",
         "Veja o que subiu na hora, não na fatura: acompanhe item por item. {link}",
         "Perceba o aumento enquanto compra — e troque antes do caixa. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "O preço mudou",
+        "destaque": "de novo?",
+        "faixa": "Perceba na hora, não na fatura!",
+        "telas": [
+          "tela-inicio"
+        ],
+        "sub": "Com o total atualizando a cada item, <b>você vê a diferença na hora.</b>",
+        "beneficios": [
+          {
+            "icone": "carrinho",
+            "titulo": "Total em tempo real",
+            "texto": "Cada preço entra na conta."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Estatísticas",
+            "texto": "Tendências e totais (Premium)."
+          },
+          {
+            "icone": "documento",
+            "titulo": "Ler nota fiscal",
+            "texto": "Importe a NFC-e do mercado."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Limite de gastos",
+            "texto": "Aviso antes de estourar."
+          }
+        ]
+      }
     }
   ],
   "tagline": "Saiba quanto vai gastar antes do caixa",

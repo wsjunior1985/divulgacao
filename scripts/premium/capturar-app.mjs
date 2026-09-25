@@ -15,6 +15,22 @@ carregarEnv();
 const FICTICIO = { nome: "Ana", completo: "Ana Ribeiro", email: "ana.ribeiro@email.com" };
 
 const APPS = {
+  vaidarquanto: {
+    url: "https://vaidarquanto.com.br",
+    login: "/login",
+    armazenamento: { "vdq-app-dark": "true" },
+    telas: { "tela-inicio": "/inicio", "tela-carrinho": "/carrinho", "tela-listas": "/listas" },
+  },
+  papelzinho: {
+    url: "https://papelzinho.waldeapps.systems",
+    login: "/auth",
+    telas: { "tela-dashboard": "/dashboard", "tela-novo": "/events/new" },
+  },
+  opalpiteiro: {
+    url: "https://opalpiteiro.app.br",
+    login: "/auth",
+    telas: { "tela-app": "/app" },
+  },
   aieat: {
     url: "https://aieat.app.br",
     login: "/auth",
@@ -50,8 +66,13 @@ const nomesReais = env("CAPTURAS_NOMES", "").split(",").map((n) => n.trim()).fil
 
 async function entrar(p) {
   await p.goto(app.url + app.login, { waitUntil: "networkidle" });
+  await p.waitForTimeout(1500); // hidratação: clicar antes disso não troca a aba
   const aba = p.getByRole("tab", { name: "Entrar", exact: true }).or(p.getByRole("button", { name: "Entrar", exact: true })).first();
-  if (await aba.count()) { await aba.click(); await p.waitForTimeout(800); }
+  for (let i = 0; i < 3 && (await aba.count()); i++) {
+    await aba.click();
+    await p.waitForTimeout(800);
+    if (!/criar|cadastr/i.test(await p.locator('button[type="submit"]').first().innerText())) break;
+  }
   await p.fill('input[type="email"]', env("CAPTURAS_EMAIL"));
   await p.fill('input[type="password"]', env("CAPTURAS_SENHA"));
   const enviar = p.locator('button[type="submit"]').first();
@@ -59,7 +80,10 @@ async function entrar(p) {
   await enviar.click();
   await p.waitForLoadState("networkidle").catch(() => {});
   await p.waitForTimeout(3000);
-  if (/\/auth|\/login/.test(p.url())) throw new Error("login não saiu da tela de autenticação");
+  if (/\/auth|\/login/.test(p.url())) {
+    const aviso = await p.$$eval("[role=status],[role=alert],li[data-sonner-toast]", (n) => n.map((e) => e.innerText.trim()).join(" | "));
+    throw new Error(`login não saiu da tela de autenticação${aviso ? ` — o app disse: ${aviso}` : ""}`);
+  }
 }
 
 // Nomes aprendidos pela saudação ("Olá, Fulano") valem para as telas seguintes.

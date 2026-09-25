@@ -90,20 +90,23 @@
         "sub": "Diga a rota e quanto quer pagar. <b>O Aeroliso avisa quando o preço cair.</b>",
         "beneficios": [
           {
-            "icone": "sino",
-            "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
+            "icone": "grafico",
+            "titulo": "Sinal de compra",
+            "texto": "Excelente, na média ou alto."
           },
           {
-            "icone": "grafico",
-            "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando baixar."
           },
           {
             "icone": "relogio",
             "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "texto": "Sem ficar pesquisando."
           }
+        ],
+        "telas": [
+          "tela-insights"
         ]
       }
     },
@@ -141,20 +144,23 @@
         "sub": "O Aeroliso avisa quando chegar lá.",
         "beneficios": [
           {
+            "icone": "alvo",
+            "titulo": "Seu preço-alvo",
+            "texto": "Você diz quanto quer pagar."
+          },
+          {
             "icone": "sino",
-            "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
+            "titulo": "Aviso na hora",
+            "texto": "Quando chegar lá, você sabe."
           },
           {
-            "icone": "grafico",
-            "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
-          },
-          {
-            "icone": "relogio",
-            "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "icone": "lista",
+            "titulo": "Várias rotas",
+            "texto": "Todos os alertas juntos."
           }
+        ],
+        "telas": [
+          "tela-alertas"
         ]
       }
     },
@@ -192,20 +198,23 @@
         "sub": "Veja a evolução antes de comprar.",
         "beneficios": [
           {
-            "icone": "sino",
-            "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
-          },
-          {
             "icone": "grafico",
             "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
+            "texto": "Veja a evolução do preço."
           },
           {
-            "icone": "relogio",
-            "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "icone": "check",
+            "titulo": "Preço bom de verdade",
+            "texto": "Compare antes de comprar."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Queda de preço",
+            "texto": "Você fica sabendo."
           }
+        ],
+        "telas": [
+          "tela-insights"
         ]
       }
     },
@@ -243,20 +252,23 @@
         "sub": "Você só recebe o aviso quando importa.",
         "beneficios": [
           {
-            "icone": "sino",
-            "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
-          },
-          {
-            "icone": "grafico",
-            "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
-          },
-          {
             "icone": "relogio",
-            "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "titulo": "Checagem diária",
+            "texto": "O preço é conferido todo dia."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Só avisa quando importa",
+            "texto": "Sem notificação à toa."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Todas as rotas",
+            "texto": "Num lugar só."
           }
+        ],
+        "telas": [
+          "tela-alertas"
         ]
       }
     },
@@ -294,20 +306,23 @@
         "sub": "Comece a monitorar sem compromisso.",
         "beneficios": [
           {
+            "icone": "check",
+            "titulo": "Grátis",
+            "texto": "Sem pedir cartão."
+          },
+          {
             "icone": "sino",
             "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
+            "texto": "Monitore suas rotas."
           },
           {
             "icone": "grafico",
-            "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
-          },
-          {
-            "icone": "relogio",
-            "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "titulo": "Histórico",
+            "texto": "Veja se vale comprar."
           }
+        ],
+        "telas": [
+          "tela-rota"
         ]
       }
     },
@@ -345,20 +360,23 @@
         "sub": "Escolha, defina o preço, receba o sinal.",
         "beneficios": [
           {
+            "icone": "globo",
+            "titulo": "1. Escolha a rota",
+            "texto": "Origem, destino e datas."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "2. Defina o preço",
+            "texto": "Quanto você quer pagar."
+          },
+          {
             "icone": "sino",
-            "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
-          },
-          {
-            "icone": "grafico",
-            "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
-          },
-          {
-            "icone": "relogio",
-            "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "titulo": "3. Receba o sinal",
+            "texto": "Aviso na hora certa."
           }
+        ],
+        "telas": [
+          "tela-rota"
         ]
       }
     },
@@ -396,20 +414,23 @@
         "sub": "O Aeroliso guarda o histórico pra você.",
         "beneficios": [
           {
-            "icone": "sino",
-            "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
+            "icone": "grafico",
+            "titulo": "Histórico automático",
+            "texto": "O Aeroliso guarda para você."
           },
           {
-            "icone": "grafico",
-            "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
+            "icone": "lista",
+            "titulo": "Zero planilhas",
+            "texto": "Nada para atualizar."
           },
           {
             "icone": "relogio",
-            "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "titulo": "Todo dia",
+            "texto": "Preço sempre atualizado."
           }
+        ],
+        "telas": [
+          "tela-insights"
         ]
       }
     },
@@ -447,20 +468,23 @@
         "sub": "Sem abrir dez abas pra comparar.",
         "beneficios": [
           {
-            "icone": "sino",
-            "titulo": "Alerta de preço",
-            "texto": "Aviso quando chegar no seu valor."
+            "icone": "lista",
+            "titulo": "Todas as rotas",
+            "texto": "Num lugar só."
           },
           {
             "icone": "grafico",
-            "titulo": "Histórico da rota",
-            "texto": "Veja se o preço é bom mesmo."
+            "titulo": "Compare de relance",
+            "texto": "Bom preço ou inflacionado."
           },
           {
-            "icone": "relogio",
-            "titulo": "Checa todo dia",
-            "texto": "Você não precisa ficar buscando."
+            "icone": "sino",
+            "titulo": "Um alerta por rota",
+            "texto": "Cada viagem no seu tempo."
           }
+        ],
+        "telas": [
+          "tela-alertas"
         ]
       }
     }

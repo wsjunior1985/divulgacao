@@ -142,19 +142,22 @@
         "beneficios": [
           {
             "icone": "dinheiro",
-            "titulo": "PIX direto",
-            "texto": "O dinheiro cai na sua conta."
-          },
-          {
-            "icone": "escudo",
-            "titulo": "Reserva de 24 horas",
-            "texto": "Tempo para o comprador pagar."
+            "titulo": "PIX na sua conta",
+            "texto": "Sem intermediário segurando o valor."
           },
           {
             "icone": "check",
-            "titulo": "Sorteio auditável",
-            "texto": "Resultado com hash de auditoria."
+            "titulo": "Você confirma",
+            "texto": "Confere o pagamento e libera a cota."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Vendas organizadas",
+            "texto": "Cada compra com status e valor."
           }
+        ],
+        "telas": [
+          "tela-vendas"
         ]
       }
     },
@@ -192,20 +195,23 @@
         "sub": "Tempo pra confirmar, sem perder a venda.",
         "beneficios": [
           {
-            "icone": "dinheiro",
-            "titulo": "PIX direto",
-            "texto": "O dinheiro cai na sua conta."
-          },
-          {
-            "icone": "escudo",
+            "icone": "relogio",
             "titulo": "Reserva de 24 horas",
             "texto": "Tempo para o comprador pagar."
           },
           {
-            "icone": "check",
-            "titulo": "Sorteio auditável",
-            "texto": "Resultado com hash de auditoria."
+            "icone": "escudo",
+            "titulo": "Cota protegida",
+            "texto": "Ninguém compra a mesma cota."
+          },
+          {
+            "icone": "sino",
+            "titulo": "Libera sozinho",
+            "texto": "Sem pagamento, a cota volta."
           }
+        ],
+        "telas": [
+          "tela-rifa"
         ]
       }
     },
@@ -243,20 +249,23 @@
         "sub": "Sorteio com hash de auditoria.",
         "beneficios": [
           {
-            "icone": "dinheiro",
-            "titulo": "PIX direto",
-            "texto": "O dinheiro cai na sua conta."
-          },
-          {
-            "icone": "escudo",
-            "titulo": "Reserva de 24 horas",
-            "texto": "Tempo para o comprador pagar."
-          },
-          {
             "icone": "check",
             "titulo": "Sorteio auditável",
             "texto": "Resultado com hash de auditoria."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Um prêmio por bilhete",
+            "texto": "Nada de sorteado repetido."
+          },
+          {
+            "icone": "calendario",
+            "titulo": "Data definida",
+            "texto": "Todos sabem quando sai."
           }
+        ],
+        "telas": [
+          "tela-rifa"
         ]
       }
     },
@@ -294,20 +303,23 @@
         "sub": "1 rifa ativa, sem pagar nada.",
         "beneficios": [
           {
+            "icone": "check",
+            "titulo": "Até 100 cotas grátis",
+            "texto": "Uma rifa ativa sem pagar."
+          },
+          {
             "icone": "dinheiro",
             "titulo": "PIX direto",
             "texto": "O dinheiro cai na sua conta."
           },
           {
-            "icone": "escudo",
-            "titulo": "Reserva de 24 horas",
-            "texto": "Tempo para o comprador pagar."
-          },
-          {
-            "icone": "check",
-            "titulo": "Sorteio auditável",
-            "texto": "Resultado com hash de auditoria."
+            "icone": "compartilhar",
+            "titulo": "Link para divulgar",
+            "texto": "Mande no WhatsApp em um toque."
           }
+        ],
+        "telas": [
+          "tela-rifa"
         ]
       }
     },
@@ -345,20 +357,23 @@
         "sub": "Só depois de gostar é que você se cadastra.",
         "beneficios": [
           {
-            "icone": "dinheiro",
-            "titulo": "PIX direto",
-            "texto": "O dinheiro cai na sua conta."
+            "icone": "grafico",
+            "titulo": "Simulador",
+            "texto": "Veja quanto a rifa arrecada."
           },
           {
-            "icone": "escudo",
-            "titulo": "Reserva de 24 horas",
-            "texto": "Tempo para o comprador pagar."
+            "icone": "raio",
+            "titulo": "Sem criar conta",
+            "texto": "Simule antes de decidir."
           },
           {
             "icone": "check",
-            "titulo": "Sorteio auditável",
-            "texto": "Resultado com hash de auditoria."
+            "titulo": "Crie quando quiser",
+            "texto": "Leva poucos minutos."
           }
+        ],
+        "telas": [
+          "tela-rifa"
         ]
       }
     },
@@ -396,20 +411,23 @@
         "sub": "Cotas e prêmios sem limite, sem cartão.",
         "beneficios": [
           {
-            "icone": "dinheiro",
-            "titulo": "PIX direto",
-            "texto": "O dinheiro cai na sua conta."
+            "icone": "estrela",
+            "titulo": "7 dias de Premium",
+            "texto": "Para testar, sem cartão."
           },
           {
-            "icone": "escudo",
-            "titulo": "Reserva de 24 horas",
-            "texto": "Tempo para o comprador pagar."
+            "icone": "lista",
+            "titulo": "Cotas sem limite",
+            "texto": "Rifas maiores, sem teto."
           },
           {
-            "icone": "check",
-            "titulo": "Sorteio auditável",
-            "texto": "Resultado com hash de auditoria."
+            "icone": "presente",
+            "titulo": "Vários prêmios",
+            "texto": "Até 10 prêmios por rifa."
           }
+        ],
+        "telas": [
+          "tela-vendas"
         ]
       }
     },
@@ -447,20 +465,23 @@
         "sub": "Confira o pagamento e confirme no painel.",
         "beneficios": [
           {
-            "icone": "dinheiro",
-            "titulo": "PIX direto",
-            "texto": "O dinheiro cai na sua conta."
-          },
-          {
-            "icone": "escudo",
-            "titulo": "Reserva de 24 horas",
-            "texto": "Tempo para o comprador pagar."
+            "icone": "pessoas",
+            "titulo": "Todos os compradores",
+            "texto": "Numa tela só."
           },
           {
             "icone": "check",
-            "titulo": "Sorteio auditável",
-            "texto": "Resultado com hash de auditoria."
+            "titulo": "Confirme o pagamento",
+            "texto": "Um toque por venda."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Quanto já entrou",
+            "texto": "Acompanhe a arrecadação."
           }
+        ],
+        "telas": [
+          "tela-vendas"
         ]
       }
     }

@@ -96,6 +96,9 @@ const TELAS = {
     saida: "tela-rota",
     montar: (html) => html.replace(/"AV(\d)"/g, (_, i) => `"${avatarIniciais(...AVATARES[i - 1])}"`),
   },
+  "aeroliso-alertas": { app: "aeroliso", origem: "https://aeroliso.waldeapps.systems/auth", saida: "tela-alertas", montar: (html) => html.replace(/"AV(\d)"/g, (_, i) => `"${avatarIniciais(...AVATARES[i - 1])}"`), },
+  "aeroliso-insights": { app: "aeroliso", origem: "https://aeroliso.waldeapps.systems/auth", saida: "tela-insights", montar: (html) => html.replace(/"AV(\d)"/g, (_, i) => `"${avatarIniciais(...AVATARES[i - 1])}"`), },
+  "rifazinha-vendas": { app: "rifazinha", origem: "https://rifazinha.waldeapps.systems/", saida: "tela-vendas", tema: "claro", montar: (html) => html.replace(/"AV(\d)"/g, (_, i) => `"${avatarIniciais(...AVATARES[i - 1])}"`), },
   "papelzinho-eventos": {
     app: "papelzinho",
     origem: "https://papelzinho.waldeapps.systems/auth",

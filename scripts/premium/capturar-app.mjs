@@ -15,6 +15,12 @@ carregarEnv();
 const FICTICIO = { nome: "Ana", completo: "Ana Ribeiro", email: "ana.ribeiro@email.com" };
 
 const APPS = {
+  aeroliso: {
+    url: "https://aeroliso.waldeapps.systems",
+    login: "/auth",
+    remover: ["Instale como aplicativo no seu dispositivo"],
+    telas: { "tela-rota": "/rota/GRU/SSA?ol=S%C3%A3o+Paulo+%28GRU%29&dl=Salvador+%28SSA%29&a=2&c=0&i=0&ida=2026-12-10&volta=2026-12-20" },
+  },
   omeualbum: {
     url: "https://omeualbum.waldeapps.systems",
     login: "/auth",

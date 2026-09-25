@@ -1,0 +1,484 @@
+{
+  "id": "voutrocar",
+  "nome": "VouTroCar",
+  "url": "https://voutrocar.waldeapps.systems",
+  "marca": {
+    "emoji": "🚗",
+    "fundoA": "#0a0b0d",
+    "destaque": "#c8ff2e"
+  },
+  "visual": {
+    "layout": "padrao",
+    "cor1": "#c8ff2e",
+    "cor2": "#22d3ee",
+    "fundoCor": "#0a0b0d",
+    "nomeMarca": "VouTroCar",
+    "selo": [
+      "Grátis",
+      "sem cadastro"
+    ],
+    "pe": "Veja o ranking em",
+    "tela": "tela-inicio",
+    "peTextoEscuro": true
+  },
+  "recursos": [
+    {
+      "icone": "medalha",
+      "titulo": "Ranking atualizado",
+      "descricao": "Os 50 mais vendidos do Brasil, com emplacamentos reais."
+    },
+    {
+      "icone": "busca",
+      "titulo": "Busca por marca ou modelo",
+      "descricao": "Digite o carro e veja a posição no ranking na hora."
+    },
+    {
+      "icone": "troca",
+      "titulo": "Compare lado a lado",
+      "descricao": "Coloque dois ou mais modelos frente a frente."
+    },
+    {
+      "icone": "estrela",
+      "titulo": "Favoritos",
+      "descricao": "Salve os modelos que estão na sua lista de compra."
+    }
+  ],
+  "hashtags": [
+    "#voutrocar",
+    "#carrosmaisvendidos",
+    "#comprarcarro",
+    "#ranking",
+    "#mercadoautomotivo"
+  ],
+  "chips": [
+    "Ranking atualizado",
+    "Sem cadastro",
+    "Grátis"
+  ],
+  "posts": [
+    {
+      "id": "ranking-atualizado",
+      "card": {
+        "titulo": "Os *50 mais vendidos* do Brasil",
+        "sub": "Emplacamentos reais, ranking atualizado."
+      },
+      "ganchos": [
+        "Qual carro está vendendo mais agora? O ranking responde. 🏁",
+        "Emplacamento não mente: é o que mostra o que o brasileiro está comprando de verdade.",
+        "Top 50 dos mais vendidos, sem depender de achismo de vendedor.",
+        "Antes de decidir, vale ver o que está vendendo mais."
+      ],
+      "corpos": [
+        "O VouTroCar lista os 50 veículos leves mais vendidos do Brasil, com base nos emplacamentos acumulados no ano.",
+        "É um ranking construído com dados de emplacamento — não uma lista de opinião.",
+        "Você vê a posição de cada modelo, incluindo quem lidera entre elétricos, SUVs e picapes.",
+        "Ranking atualizado com base nos números mais recentes de emplacamento no país."
+      ],
+      "ctas": [
+        "Ver o ranking 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Os 50 carros mais vendidos do Brasil, com emplacamentos reais: {link}",
+        "Ranking atualizado de vendas, sem achismo: {link}",
+        "Veja quem lidera entre elétricos, SUVs e picapes: {link}"
+      ],
+      "premium": {
+        "titulo": "Qual carro",
+        "destaque": "comprar?",
+        "sub": "Os <b>50 mais vendidos do Brasil</b>, com emplacamentos reais e preço só de fonte oficial.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    },
+    {
+      "id": "qual-carro-comprar",
+      "card": {
+        "titulo": "Digite o modelo, veja a *posição*",
+        "sub": "Busca por marca ou modelo."
+      },
+      "ganchos": [
+        "\"Será que esse carro vende bem?\" Dá pra saber na hora. 🔍",
+        "Curiosidade sobre um modelo específico? É só buscar.",
+        "Antes de ir na concessionária, vale conferir a posição do carro no ranking.",
+        "A dúvida sobre qual carro comprar começa com uma busca simples."
+      ],
+      "corpos": [
+        "No VouTroCar, você digita a marca ou o modelo e vê a posição dele no ranking dos mais vendidos na hora.",
+        "A busca mostra onde aquele carro específico está no ranking, sem precisar rolar a lista toda.",
+        "Serve tanto pra quem já decidiu o modelo quanto pra quem ainda está comparando opções.",
+        "Digite o que você tem em mente e veja como ele se compara aos concorrentes."
+      ],
+      "ctas": [
+        "Buscar carro 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Digite o modelo e veja a posição dele no ranking na hora: {link}",
+        "Busca por marca ou modelo, sem cadastro: {link}",
+        "Curioso sobre um carro específico? Busque e veja a posição: {link}"
+      ],
+      "premium": {
+        "titulo": "Digite o modelo, veja a",
+        "destaque": "posição",
+        "sub": "Busca por marca ou modelo.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    },
+    {
+      "id": "comparar",
+      "card": {
+        "titulo": "Coloque dois carros *lado a lado*",
+        "sub": "Compare antes de decidir."
+      },
+      "ganchos": [
+        "Entre dois carros, qual escolher? Compare lado a lado. ⚖️",
+        "Decisão de carro fica mais fácil quando os dados estão juntos, não espalhados.",
+        "Duas abas abertas, comparando manualmente? Tem um jeito mais direto.",
+        "Comparar de verdade é ver os dois modelos na mesma tela."
+      ],
+      "corpos": [
+        "O VouTroCar deixa você colocar dois ou mais modelos lado a lado, pra comparar antes de decidir.",
+        "Em vez de alternar entre páginas, você vê os carros que está considerando juntos, na mesma tela.",
+        "A comparação ajuda a enxergar diferenças que passam batido quando você olha um modelo de cada vez.",
+        "Ótimo pra quem já reduziu a escolha a dois ou três candidatos."
+      ],
+      "ctas": [
+        "Comparar agora 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Compare dois ou mais carros lado a lado, antes de decidir: {link}",
+        "Chega de alternar abas: veja os modelos juntos, na mesma tela: {link}",
+        "Comparação lado a lado pra facilitar a escolha: {link}"
+      ],
+      "premium": {
+        "titulo": "Coloque dois carros",
+        "destaque": "lado a lado",
+        "sub": "Compare antes de decidir.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    },
+    {
+      "id": "favoritos",
+      "card": {
+        "titulo": "Salve os modelos na sua *lista*",
+        "sub": "Favoritos, pra acompanhar sem perder."
+      },
+      "ganchos": [
+        "Achou um carro interessante? Guarda ele pra depois. ⭐",
+        "Pesquisa de carro se estende por dias — favoritar ajuda a não perder o fio.",
+        "Sua lista de candidatos merece um lugar só dela.",
+        "Comparar de cabeça é difícil. Favoritar é mais fácil."
+      ],
+      "corpos": [
+        "No VouTroCar, você favorita os modelos que está considerando e acompanha todos numa lista só.",
+        "Em vez de anotar em outro lugar, você salva o carro direto na plataforma e volta quando quiser.",
+        "A lista de favoritos ajuda a organizar sua pesquisa ao longo dos dias, sem perder nenhum candidato.",
+        "Quando chegar a hora de decidir, seus favoritos já estão todos reunidos."
+      ],
+      "ctas": [
+        "Comece a favoritar 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Favorite os carros que está considerando e acompanhe todos juntos: {link}",
+        "Sua lista de candidatos, organizada num lugar só: {link}",
+        "Salve o modelo agora, decida com calma depois: {link}"
+      ],
+      "premium": {
+        "titulo": "Salve os modelos na sua",
+        "destaque": "lista",
+        "sub": "Favoritos, pra acompanhar sem perder.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    },
+    {
+      "id": "por-categoria",
+      "card": {
+        "titulo": "Elétrico, híbrido ou *combustão*?",
+        "sub": "Filtre por tipo de motorização."
+      },
+      "ganchos": [
+        "Elétrico, híbrido ou motor a combustão — cada um tem seu ranking. 🔌⛽",
+        "Nem todo mundo procura o mesmo tipo de carro.",
+        "Filtrar por categoria poupa tempo de quem já sabe o que quer.",
+        "SUV, picape ou sedã: dá pra ver só o que interessa."
+      ],
+      "corpos": [
+        "O VouTroCar classifica os modelos por motorização — combustão, híbrido leve, híbrido, híbrido plug-in e elétrico — pra você filtrar direto.",
+        "Também dá pra isolar categorias como SUV e picape dentro do ranking geral.",
+        "Se você já decidiu o tipo de motorização, o filtro corta o resto e mostra só o que interessa.",
+        "A classificação segue um critério claro, documentado na metodologia da plataforma."
+      ],
+      "ctas": [
+        "Filtrar agora 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Filtre o ranking por elétrico, híbrido ou combustão: {link}",
+        "Quer só SUV ou só picape? O filtro isola a categoria: {link}",
+        "Cada tipo de motorização com seu próprio recorte no ranking: {link}"
+      ],
+      "premium": {
+        "titulo": "Elétrico, híbrido",
+        "destaque": "ou combustão?",
+        "sub": "Filtre por tipo de motorização.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sem-chute",
+      "card": {
+        "titulo": "Preço só entra com *fonte oficial*",
+        "sub": "Nada de estimativa ou chute."
+      },
+      "ganchos": [
+        "\"Preço estimado\" é outro jeito de dizer \"chute\". 🚫",
+        "Preço de carro merece fonte, não achismo.",
+        "A gente já viu preço \"aproximado\" que não batia com nada.",
+        "Rigor com dado de preço é raro — e devia ser padrão."
+      ],
+      "corpos": [
+        "No VouTroCar, um preço só entra com o valor público sugerido, direto do site oficial da fabricante, com data e link da consulta.",
+        "Sem preço estimado, sem valor de fonte não verificada: se ainda não tem confirmação oficial, o modelo mostra isso claramente.",
+        "A metodologia é pública: você pode ver exatamente como cada preço foi obtido.",
+        "É mais devagar publicar assim, mas o dado que aparece é confiável."
+      ],
+      "ctas": [
+        "Veja a metodologia 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Preço só entra com fonte oficial, data e link — nada de chute: {link}",
+        "Sem preço estimado: só o que está confirmado na fonte oficial: {link}",
+        "Metodologia pública, dado confiável: {link}"
+      ],
+      "premium": {
+        "titulo": "Preço só entra com",
+        "destaque": "fonte oficial",
+        "sub": "Nada de estimativa ou chute.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    },
+    {
+      "id": "independente",
+      "card": {
+        "titulo": "Nenhuma *montadora* patrocina",
+        "sub": "Ferramenta informativa e independente."
+      },
+      "ganchos": [
+        "Site de carro com patrocínio de montadora tende a puxar sardinha. 🚗",
+        "Independência importa quando o assunto é comparar carro.",
+        "Sem parceria com fabricante, o ranking fica mais isento.",
+        "Quem paga a conta costuma influenciar o que aparece primeiro — aqui, ninguém paga."
+      ],
+      "corpos": [
+        "O VouTroCar não tem parceria, patrocínio ou aprovação de nenhuma montadora — os dados vêm de fontes públicas de emplacamento.",
+        "Sendo independente, a plataforma não tem motivo pra favorecer uma marca em vez de outra.",
+        "O ranking reflete o que os dados de emplacamento mostram, não um acordo comercial.",
+        "Isso não substitui a conversa com a concessionária — mas ajuda a chegar nela com mais informação."
+      ],
+      "ctas": [
+        "Conheça o VouTroCar 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Sem patrocínio de montadora: ranking independente, baseado em dados públicos: {link}",
+        "Nenhuma marca paga pra aparecer primeiro aqui: {link}",
+        "Ferramenta informativa e independente, sem parceria com fabricante: {link}"
+      ],
+      "premium": {
+        "titulo": "Nenhuma montadora",
+        "destaque": "patrocina.",
+        "sub": "Ferramenta informativa e independente.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sem-cadastro-gratis",
+      "card": {
+        "titulo": "*Grátis*, sem criar conta",
+        "sub": "Ranking e busca liberados na hora."
+      },
+      "ganchos": [
+        "Pesquisar carro não devia pedir cadastro antes. 🆓",
+        "Informação de carro deveria ser fácil de acessar, sem burocracia.",
+        "Sem login, sem plano pago: é só entrar e ver.",
+        "Curiosidade sobre carro não deveria esbarrar num formulário."
+      ],
+      "corpos": [
+        "O VouTroCar é grátis e não pede cadastro: você entra, busca, compara e favorita sem criar conta.",
+        "Todo o ranking, a busca e a comparação estão disponíveis direto, sem barreira de login.",
+        "Não existe plano pago escondido — o acesso à informação é aberto.",
+        "É só abrir e usar, no navegador do celular ou do computador."
+      ],
+      "ctas": [
+        "Acesse agora 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Ranking, busca e comparação, grátis e sem cadastro: {link}",
+        "Sem login pra ver o ranking dos mais vendidos: {link}",
+        "É só abrir e usar — sem plano pago escondido: {link}"
+      ],
+      "premium": {
+        "titulo": "Grátis,",
+        "destaque": "sem criar conta",
+        "sub": "Ranking e busca liberados na hora.",
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Ranking atualizado",
+            "texto": "Emplacamentos reais do mês."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Compare lado a lado",
+            "texto": "Dois carros antes de decidir."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Independente",
+            "texto": "Nenhuma montadora patrocina."
+          }
+        ]
+      }
+    }
+  ],
+  "tagline": "Os carros mais vendidos. Os preços mais claros.",
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Instala como app"
+    },
+    {
+      "icone": "medalha",
+      "titulo": "Top 50 atualizado"
+    },
+    {
+      "icone": "estrela",
+      "titulo": "Favoritos"
+    }
+  ],
+  "fonte": "grotesk"
+}

@@ -90,6 +90,12 @@ const TELAS = {
         .replace("data-dock></nav>", `>${dockPalpiteiro()}</nav>`)
         .replace(/"AV(\d)"/g, (_, i) => `"${avatarIniciais(...AVATARES[i - 1])}"`),
   },
+  "aeroliso-rota": {
+    app: "aeroliso",
+    origem: "https://aeroliso.waldeapps.systems/auth",
+    saida: "tela-rota",
+    montar: (html) => html.replace(/"AV(\d)"/g, (_, i) => `"${avatarIniciais(...AVATARES[i - 1])}"`),
+  },
   "papelzinho-eventos": {
     app: "papelzinho",
     origem: "https://papelzinho.waldeapps.systems/auth",

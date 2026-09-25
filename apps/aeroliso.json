@@ -1,0 +1,484 @@
+{
+  "id": "aeroliso",
+  "nome": "Aeroliso",
+  "url": "https://aeroliso.waldeapps.systems",
+  "marca": {
+    "emoji": "✈️",
+    "fundoA": "#141b2e",
+    "destaque": "#1ad1d1"
+  },
+  "visual": {
+    "layout": "padrao",
+    "cor1": "#1ad1d1",
+    "cor2": "#3b82f6",
+    "fundoCor": "#0a1426",
+    "nomeMarca": "Aeroliso",
+    "selo": [
+      "Grátis",
+      "sem cartão"
+    ],
+    "pe": "Monitore sua rota em",
+    "tela": "tela-rota",
+    "logoArredondado": true
+  },
+  "recursos": [
+    {
+      "icone": "busca",
+      "titulo": "Monitoramento diário",
+      "descricao": "O Aeroliso confere o preço da sua rota todo santo dia."
+    },
+    {
+      "icone": "sino",
+      "titulo": "Alerta no seu preço",
+      "descricao": "Diga quanto quer pagar e receba o aviso quando chegar lá."
+    },
+    {
+      "icone": "grafico",
+      "titulo": "Histórico de preços",
+      "descricao": "Veja a evolução da tarifa e saiba se o preço de hoje é bom."
+    },
+    {
+      "icone": "celular",
+      "titulo": "Instala como app",
+      "descricao": "Grátis, sem cartão, direto do navegador do celular."
+    }
+  ],
+  "hashtags": [
+    "#aeroliso",
+    "#passagensaereas",
+    "#viagembarata",
+    "#monitordepassagem",
+    "#viajarmelhor"
+  ],
+  "chips": [
+    "Grátis, sem cartão",
+    "Alerta de preço",
+    "Histórico da rota"
+  ],
+  "posts": [
+    {
+      "id": "quando-comprar",
+      "card": {
+        "titulo": "Comprar *agora* ou esperar?",
+        "sub": "O Aeroliso ajuda a decidir."
+      },
+      "ganchos": [
+        "A pergunta que trava toda compra de passagem: comprar agora ou esperar cair? ✈️",
+        "Ninguém sabe se o preço de hoje é bom ou se amanhã cai mais.",
+        "Comprar cedo demais dá medo de perder desconto. Esperar demais dá medo do preço subir.",
+        "A dúvida clássica de quem vai viajar: agora ou depois?"
+      ],
+      "corpos": [
+        "O Aeroliso acompanha a rota que você escolheu e mostra sinais simples: comprar, esperar ou continuar monitorando.",
+        "Em vez de adivinhar, você vê o histórico da rota e um sinal claro sobre o momento de comprar.",
+        "O Aeroliso troca o achismo por dados: histórico de preço e um sinal direto do que fazer.",
+        "Você não precisa decidir no escuro — o Aeroliso mostra a tendência da sua rota."
+      ],
+      "ctas": [
+        "Monitore grátis 👉 {link}",
+        "Comece agora 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Comprar agora ou esperar? O Aeroliso mostra o sinal certo pra sua rota: {link}",
+        "Chega de adivinhar o preço da passagem — o Aeroliso monitora e avisa: {link}",
+        "Histórico de preço + sinal claro: assim fica fácil decidir quando comprar: {link}"
+      ],
+      "premium": {
+        "titulo": "Passagem barata",
+        "destaque": "na hora certa.",
+        "sub": "Diga a rota e quanto quer pagar. <b>O Aeroliso avisa quando o preço cair.</b>",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    },
+    {
+      "id": "alerta-preco",
+      "card": {
+        "titulo": "Diga *quanto quer pagar*",
+        "sub": "O Aeroliso avisa quando chegar lá."
+      },
+      "ganchos": [
+        "Existe um preço em que você compra na hora, sem pensar duas vezes. Qual é o seu? 🎯",
+        "Defina o preço dos sonhos e deixa o resto por conta do app.",
+        "Em vez de ficar checando todo dia, é só dizer o valor que topa pagar.",
+        "Preço-alvo: você diz até quanto paga, o Aeroliso avisa quando bater."
+      ],
+      "corpos": [
+        "No Aeroliso, você define o preço que topa pagar pela rota e recebe um aviso assim que a tarifa chegar nesse valor.",
+        "Você não precisa mais abrir o site todo dia: o Aeroliso acompanha a rota e avisa quando o preço bater na sua meta.",
+        "Defina o valor uma vez. O Aeroliso cuida de checar todo santo dia até a tarifa chegar lá.",
+        "O alerta chega direto pra você — sem precisar caçar preço manualmente."
+      ],
+      "ctas": [
+        "Crie seu alerta 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Diga quanto quer pagar. O Aeroliso avisa quando a passagem chegar nesse preço: {link}",
+        "Defina sua meta de preço e deixa o Aeroliso vigiar a rota: {link}",
+        "Alerta de preço, sem precisar checar todo dia: {link}"
+      ],
+      "premium": {
+        "titulo": "Diga",
+        "destaque": "quanto quer pagar",
+        "sub": "O Aeroliso avisa quando chegar lá.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    },
+    {
+      "id": "historico",
+      "card": {
+        "titulo": "Esse preço é *bom mesmo?*",
+        "sub": "Veja a evolução antes de comprar."
+      },
+      "ganchos": [
+        "Preço de passagem parado numa tela só não conta a história toda. 📈",
+        "Sem histórico, todo preço parece \"talvez seja bom\".",
+        "Ver a evolução do preço muda a decisão na hora de comprar.",
+        "Um número sozinho não diz se está caro ou barato — o histórico diz."
+      ],
+      "corpos": [
+        "O Aeroliso mostra como o preço da sua rota andou nos últimos dias, pra você entender se a tarifa de hoje é realmente boa.",
+        "Com o histórico de preços na tela, fica mais fácil saber se vale comprar agora ou esperar um pouco.",
+        "Em vez de decidir por um número solto, você vê a tendência da rota inteira.",
+        "O gráfico do Aeroliso conta a história do preço — pra você não comprar no ponto errado."
+      ],
+      "ctas": [
+        "Veja o histórico 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Esse preço é bom mesmo? O histórico do Aeroliso mostra a evolução da rota: {link}",
+        "Antes de comprar, veja como o preço andou nos últimos dias: {link}",
+        "O Aeroliso mostra a tendência da tarifa, não só o número de hoje: {link}"
+      ],
+      "premium": {
+        "titulo": "Esse preço é",
+        "destaque": "bom mesmo?",
+        "sub": "Veja a evolução antes de comprar.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    },
+    {
+      "id": "monitoramento-diario",
+      "card": {
+        "titulo": "Ele checa o preço *todo dia*",
+        "sub": "Você só recebe o aviso quando importa."
+      },
+      "ganchos": [
+        "Quem tem tempo de abrir site de passagem todo santo dia? 🙃",
+        "A busca repetitiva é chata. Automatizar ela é o caminho.",
+        "O Aeroliso faz o trabalho chato de checar o preço de novo, todo dia.",
+        "Você define a rota uma vez. Ele confere sozinho, sem parar."
+      ],
+      "corpos": [
+        "Depois de escolher a rota, o Aeroliso confere o preço de novo todos os dias e só avisa você quando fizer sentido.",
+        "Você não precisa lembrar de checar: o Aeroliso faz essa busca repetitiva por você, todo dia.",
+        "Enquanto você vive a vida, o Aeroliso continua de olho na rota, todos os dias.",
+        "Automatizar a busca diária é o que sobra de tempo pra você planejar a viagem em si."
+      ],
+      "ctas": [
+        "Comece a monitorar 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "O Aeroliso confere o preço da sua rota todo dia, sem você precisar lembrar: {link}",
+        "Chega de abrir site de passagem toda hora: o Aeroliso faz isso por você: {link}",
+        "Monitoramento diário automático, direto na sua rota: {link}"
+      ],
+      "premium": {
+        "titulo": "Ele checa o preço",
+        "destaque": "todo dia",
+        "sub": "Você só recebe o aviso quando importa.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    },
+    {
+      "id": "gratis-sem-cartao",
+      "card": {
+        "titulo": "*Grátis*, sem pedir cartão",
+        "sub": "Comece a monitorar sem compromisso."
+      },
+      "ganchos": [
+        "\"Grátis\" que pede cartão de crédito no cadastro não é bem grátis. 💳",
+        "O Aeroliso não pede cartão pra você nem começar.",
+        "Testar não deveria custar nada — nem o número do cartão.",
+        "Sem pegadinha: é grátis mesmo."
+      ],
+      "corpos": [
+        "Você cria sua conta, adiciona uma rota e começa a monitorar sem informar nenhum dado de pagamento.",
+        "O Aeroliso é gratuito para monitorar suas rotas, sem pedir cartão de crédito em nenhum momento do cadastro.",
+        "Sem cartão, sem trial disfarçado de assinatura: você usa e pronto.",
+        "A ideia é simples: você testa de verdade, sem medo de cobrança surpresa."
+      ],
+      "ctas": [
+        "Comece grátis 👉 {link}",
+        "Sem cartão 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Grátis de verdade, sem pedir cartão de crédito: {link}",
+        "Monitore sua rota sem informar nenhum dado de pagamento: {link}",
+        "Sem cartão, sem pegadinha: o Aeroliso é grátis para começar: {link}"
+      ],
+      "premium": {
+        "titulo": "Grátis,",
+        "destaque": "sem pedir cartão",
+        "sub": "Comece a monitorar sem compromisso.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tres-passos",
+      "card": {
+        "titulo": "*Três passos* até a próxima viagem",
+        "sub": "Escolha, defina o preço, receba o sinal."
+      },
+      "ganchos": [
+        "Simples assim: escolher, definir e esperar o sinal. ✈️",
+        "Da busca ao embarque, o processo cabe em três passos.",
+        "Nada de configuração complicada — é bem direto.",
+        "Três passos separam você de comprar com mais confiança."
+      ],
+      "corpos": [
+        "Primeiro você escolhe a rota, depois define o preço que topa pagar, e por fim recebe o sinal de quando comprar.",
+        "Escolha a rota, diga seu preço-alvo e deixe o Aeroliso avisar quando a hora certa chegar.",
+        "É o mesmo fluxo sempre: rota, preço, sinal. Sem enrolação no meio do caminho.",
+        "Três passos simples entre você e uma decisão de compra mais tranquila."
+      ],
+      "ctas": [
+        "Comece agora 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Escolha a rota, defina o preço, receba o sinal — simples assim: {link}",
+        "Três passos até saber a hora certa de comprar a passagem: {link}",
+        "Da busca ao embarque em três passos, sem complicação: {link}"
+      ],
+      "premium": {
+        "titulo": "Três passos",
+        "destaque": "até a próxima viagem",
+        "sub": "Escolha, defina o preço, receba o sinal.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sem-planilha",
+      "card": {
+        "titulo": "*Zero* planilhas pra atualizar",
+        "sub": "O Aeroliso guarda o histórico pra você."
+      },
+      "ganchos": [
+        "Ainda tem gente com planilha de preço de passagem aberta todo dia. 📊",
+        "Planilha de monitoramento manual é trabalho que ninguém pediu.",
+        "Guardar preço em planilha é a versão manual do que o Aeroliso já faz.",
+        "Zero planilha, zero print de tela: o app guarda tudo."
+      ],
+      "corpos": [
+        "O Aeroliso guarda o histórico de preços da sua rota automaticamente — nenhuma planilha pra atualizar na mão.",
+        "Em vez de colar preço em planilha todo dia, você só abre o app e vê a evolução pronta.",
+        "O trabalho de registrar preço, dia após dia, fica por conta do Aeroliso.",
+        "Zero planilha: o histórico já está lá, organizado, quando você quiser olhar."
+      ],
+      "ctas": [
+        "Comece grátis 👉 {link}",
+        "👉 {link}",
+        "Monitore agora 👉 {link}"
+      ],
+      "curtos": [
+        "Zero planilhas pra atualizar: o Aeroliso guarda o histórico de preço sozinho: {link}",
+        "Chega de planilha de passagem: o app registra tudo por você: {link}",
+        "O histórico de preço já vem pronto, sem trabalho manual: {link}"
+      ],
+      "premium": {
+        "titulo": "Zero",
+        "destaque": "planilhas pra atualizar",
+        "sub": "O Aeroliso guarda o histórico pra você.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    },
+    {
+      "id": "uma-rota-tudo",
+      "card": {
+        "titulo": "Todas as suas rotas *num lugar só*",
+        "sub": "Sem abrir dez abas pra comparar."
+      },
+      "ganchos": [
+        "Quantas abas abertas pra comparar rota de viagem? 🗂️",
+        "Cada rota que você acompanha manualmente é mais uma coisa pra lembrar.",
+        "Organizar rota de viagem não devia ser um quebra-cabeça de abas.",
+        "Um lugar só pra todas as rotas que você tá de olho."
+      ],
+      "corpos": [
+        "No Aeroliso, você cadastra quantas rotas quiser e acompanha todas num só lugar, sem abrir site atrás de site.",
+        "Idas, voltas, destinos diferentes: tudo organizado numa única lista, fácil de revisar.",
+        "Em vez de espalhar a busca em várias abas, você centraliza tudo no Aeroliso.",
+        "Cada rota fica salva e monitorada, pronta pra você conferir quando quiser."
+      ],
+      "ctas": [
+        "Organize suas rotas 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Todas as suas rotas de viagem, num lugar só: {link}",
+        "Chega de abrir dez abas: o Aeroliso organiza suas rotas: {link}",
+        "Cadastre quantas rotas quiser e acompanhe tudo junto: {link}"
+      ],
+      "premium": {
+        "titulo": "Todas as suas rotas",
+        "destaque": "num lugar só",
+        "sub": "Sem abrir dez abas pra comparar.",
+        "beneficios": [
+          {
+            "icone": "sino",
+            "titulo": "Alerta de preço",
+            "texto": "Aviso quando chegar no seu valor."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Histórico da rota",
+            "texto": "Veja se o preço é bom mesmo."
+          },
+          {
+            "icone": "relogio",
+            "titulo": "Checa todo dia",
+            "texto": "Você não precisa ficar buscando."
+          }
+        ]
+      }
+    }
+  ],
+  "tagline": "Menos busca. Mais viagem.",
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Instala como app"
+    },
+    {
+      "icone": "sino",
+      "titulo": "Alerta automático"
+    },
+    {
+      "icone": "relogio",
+      "titulo": "Confere todo dia"
+    }
+  ],
+  "fonte": "sora"
+}

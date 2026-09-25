@@ -15,6 +15,14 @@ carregarEnv();
 const FICTICIO = { nome: "Ana", completo: "Ana Ribeiro", email: "ana.ribeiro@email.com" };
 
 const APPS = {
+  omeualbum: {
+    url: "https://omeualbum.waldeapps.systems",
+    login: "/auth",
+    // As telas do card vêm das capturas oficiais da landing (/landing/showcase-*-540.webp,
+    // conta de demonstração): a conta de captura tem o álbum vazio. Estas rotas servem
+    // para recapturar quando houver uma conta com o álbum preenchido.
+    telas: { "tela-grupos": "/album", "tela-estatisticas": "/estatisticas" },
+  },
   vaidarquanto: {
     url: "https://vaidarquanto.com.br",
     login: "/login",

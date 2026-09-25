@@ -17,6 +17,7 @@ export const ORDEM_APPS = [
   "convertendo",
   "opalpiteiro",
   "papelzinho",
+  "omeualbum",
 ];
 
 /** Época do rodízio: slot 0. Não mexa depois de publicar, ou o rodízio pula temas. */

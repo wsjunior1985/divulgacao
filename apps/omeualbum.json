@@ -1,0 +1,500 @@
+{
+  "id": "omeualbum",
+  "nome": "O Meu Álbum",
+  "url": "https://omeualbum.waldeapps.systems",
+  "marca": {
+    "emoji": "⚽",
+    "fundoA": "#050f23",
+    "destaque": "#41ca51"
+  },
+  "visual": {
+    "layout": "omeualbum"
+  },
+  "recursos": [
+    {
+      "icone": "check",
+      "titulo": "Coladas, faltantes e repetidas",
+      "descricao": "Controle as 994 figurinhas do seu álbum físico num só lugar."
+    },
+    {
+      "icone": "camera",
+      "titulo": "Código, voz ou câmera",
+      "descricao": "Digite, fale ou use o scanner para achar a figurinha na hora."
+    },
+    {
+      "icone": "troca",
+      "titulo": "Listas para troca",
+      "descricao": "Separe o que falta do que sobra e compartilhe com amigos."
+    },
+    {
+      "icone": "grafico",
+      "titulo": "Progresso visível",
+      "descricao": "Veja o avanço por seleção, grupo e álbum inteiro."
+    }
+  ],
+  "hashtags": [
+    "#omeualbum",
+    "#copa2026",
+    "#figurinhas",
+    "#albumdefigurinhas",
+    "#trocadefigurinhas"
+  ],
+  "chips": [
+    "994 figurinhas, 48 seleções",
+    "Busca por voz e câmera",
+    "Instala como app"
+  ],
+  "posts": [
+    {
+      "id": "marque-brasil",
+      "card": {
+        "titulo": "Marque as figurinhas *que você já tem*",
+        "sub": "Comece pelo Brasil e veja o que falta, sem cadastro."
+      },
+      "ganchos": [
+        "Seu álbum físico virou uma bagunça de figurinha solta? 🫠",
+        "Sabe de cabeça quais figurinhas do Brasil ainda faltam? Ninguém sabe.",
+        "Figurinha repetida, figurinha faltando, e nenhuma lista organizada.",
+        "Antes de abrir mais um pacote, confira o que já tem."
+      ],
+      "corpos": [
+        "O Meu Álbum deixa você marcar, no celular, as figurinhas que já colou no álbum físico — e mostra na hora o que falta.",
+        "Toque nas figurinhas que já tem, começando pelo Brasil, e o app organiza coladas, faltantes e repetidas das 994 do álbum.",
+        "Nada de lista de papel: marque no celular e acompanhe o progresso das 48 seleções.",
+        "É um controle digital do seu álbum impresso da Copa 2026: você marca o que já colou, o app cuida do resto."
+      ],
+      "ctas": [
+        "Marque sem cadastro 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "7 dias grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Seu álbum físico virou bagunça de figurinha solta? O Meu Álbum organiza coladas, faltantes e repetidas das 994 figurinhas da Copa 2026. Marque sem cadastro: {link}",
+        "Marque as figurinhas que já tem, começando pelo Brasil, e veja o que falta na hora: {link}",
+        "Controle digital do seu álbum impresso da Copa 2026, sem lista de papel: {link}"
+      ],
+      "premium": {
+        "titulo": "Seu álbum da Copa",
+        "destaque": "sem bagunça.",
+        "telas": [
+          "tela-grupos",
+          "tela-estatisticas"
+        ],
+        "sub": "Marque as figurinhas que você já tem e veja na hora <b>o que falta e o que sobra.</b>",
+        "beneficios": [
+          {
+            "icone": "check",
+            "titulo": "Coladas e faltantes",
+            "texto": "As 994 figurinhas num só lugar."
+          },
+          {
+            "icone": "microfone",
+            "titulo": "Busca por voz ou câmera",
+            "texto": "Fale “BRA 10” e pronto."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Listas para troca",
+            "texto": "Repetidas e faltantes para compartilhar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "busca-por-voz",
+      "card": {
+        "titulo": "Fale *\"BRA 10\"* e pronto",
+        "sub": "Busca por voz vai direto à figurinha certa."
+      },
+      "ganchos": [
+        "Procurar figurinha número por número é perder tempo.",
+        "Com as mãos cheias de pacote, digitar é ruim.",
+        "\"Cadê a do Casemiro?\" Fale, não procure.",
+        "Achar figurinha sem folhear o álbum inteiro."
+      ],
+      "corpos": [
+        "Fale o código, tipo \"BRA 10\", e o Meu Álbum leva direto à figurinha certa, sem rolar lista.",
+        "A busca por voz entende o código, a seleção ou o nome do jogador e encontra na hora.",
+        "Enquanto separa os pacotes, é só falar o código: o app acha a figurinha e você marca.",
+        "Voz, código ou nome: qualquer um leva direto à figurinha, sem folhear nada."
+      ],
+      "ctas": [
+        "Teste a busca por voz 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Fale \"BRA 10\" e o Meu Álbum vai direto à figurinha certa. Busca por voz, código ou nome: {link}",
+        "Sem digitar: fale o código da figurinha e o app acha na hora. {link}",
+        "Mãos cheias de pacote? Fale o código e o app localiza a figurinha: {link}"
+      ],
+      "premium": {
+        "titulo": "Fale “BRA 10”",
+        "destaque": "e pronto.",
+        "sub": "A busca por voz vai <b>direto à figurinha certa</b>, sem digitar.",
+        "telas": [
+          "tela-grupos"
+        ],
+        "beneficios": [
+          {
+            "icone": "microfone",
+            "titulo": "Busca por voz",
+            "texto": "Fale o código e a figurinha aparece."
+          },
+          {
+            "icone": "camera",
+            "titulo": "Ou use a câmera",
+            "texto": "O scanner localiza na hora."
+          },
+          {
+            "icone": "check",
+            "titulo": "Marque em um toque",
+            "texto": "Colada, faltante ou repetida."
+          }
+        ]
+      }
+    },
+    {
+      "id": "scanner-camera",
+      "card": {
+        "titulo": "Aponte a câmera *e ache*",
+        "sub": "Scanner localiza a figurinha na hora."
+      },
+      "ganchos": [
+        "Digitar código de figurinha uma por uma cansa.",
+        "Tem um jeito mais rápido de achar a figurinha: apontar a câmera.",
+        "Nem sempre dá pra parar e digitar o código todo.",
+        "Scanner na mão, figurinha encontrada em segundos."
+      ],
+      "corpos": [
+        "Use o scanner do Meu Álbum: aponte a câmera para a figurinha e o app localiza ela no álbum na hora.",
+        "Sem digitar código: o scanner reconhece a figurinha pela câmera do celular.",
+        "É mais rápido apontar a câmera do que procurar o número na lista. O app faz esse trabalho.",
+        "Scanner, código ou voz — você escolhe o jeito mais rápido de achar cada figurinha."
+      ],
+      "ctas": [
+        "Experimente o scanner 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Aponte a câmera para a figurinha e o Meu Álbum acha ela na hora, sem digitar código. {link}",
+        "Scanner de figurinha pela câmera do celular: rápido e sem digitação. {link}",
+        "Achar figurinha ficou mais rápido: só apontar a câmera. {link}"
+      ],
+      "premium": {
+        "titulo": "Aponte a câmera",
+        "destaque": "e ache.",
+        "sub": "O scanner <b>localiza a figurinha na hora</b>, direto do pacotinho.",
+        "telas": [
+          "tela-grupos"
+        ],
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Scanner de câmera",
+            "texto": "Aponte e a figurinha aparece."
+          },
+          {
+            "icone": "microfone",
+            "titulo": "Busca por voz",
+            "texto": "Ou fale “BRA 10”."
+          },
+          {
+            "icone": "check",
+            "titulo": "Álbum em dia",
+            "texto": "Tudo marcado sem esforço."
+          }
+        ]
+      }
+    },
+    {
+      "id": "trocas-organizadas",
+      "card": {
+        "titulo": "Sua lista de *trocas*, sempre pronta",
+        "sub": "Faltantes de um lado, repetidas do outro."
+      },
+      "ganchos": [
+        "Trocar figurinha sem lista organizada é bagunça na certa.",
+        "\"Você tem repetida de quem?\" — pergunta que ninguém responde de cabeça.",
+        "Separar faltantes e repetidas do álbum inteiro, à mão, dá trabalho.",
+        "Antes de marcar a troca, alguém sempre pergunta a lista."
+      ],
+      "corpos": [
+        "O Meu Álbum separa o que falta do que está repetido, por seleção, e você compartilha a lista com amigos e família em poucos toques.",
+        "Mesmo antes da primeira repetida, o espaço já fica organizado. Quando os extras chegarem, é só copiar ou compartilhar a lista.",
+        "Chega de decorar quem tem o quê: o app mantém a lista de faltantes e repetidas sempre pronta pra troca.",
+        "Combine a próxima troca em segundos: a lista sai organizada por seleção, pronta pra enviar."
+      ],
+      "ctas": [
+        "Organize suas trocas 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Faltantes de um lado, repetidas do outro: o Meu Álbum organiza sua lista de trocas e você compartilha com amigos. {link}",
+        "Lista de trocas sempre pronta, por seleção, para copiar ou compartilhar: {link}",
+        "Chega de decorar quem tem o quê: organize suas trocas no Meu Álbum. {link}"
+      ],
+      "premium": {
+        "titulo": "Sua lista de trocas",
+        "destaque": "sempre pronta.",
+        "sub": "Faltantes de um lado, repetidas do outro. <b>É só compartilhar.</b>",
+        "telas": [
+          "tela-grupos"
+        ],
+        "beneficios": [
+          {
+            "icone": "troca",
+            "titulo": "Faltantes e repetidas",
+            "texto": "Separadas automaticamente."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Compartilhe fácil",
+            "texto": "Mande a lista no WhatsApp."
+          },
+          {
+            "icone": "check",
+            "titulo": "Troca sem confusão",
+            "texto": "Todo mundo sabe o que falta."
+          }
+        ]
+      }
+    },
+    {
+      "id": "progresso-visivel",
+      "card": {
+        "titulo": "Quanto falta pro álbum *completo*?",
+        "sub": "Progresso por seleção, grupo e coleção.",
+        "destaque": "994"
+      },
+      "ganchos": [
+        "994 figurinhas. Quantas você já tem?",
+        "\"Falta pouco\" não é resposta. Quanto falta, exatamente?",
+        "Álbum de Copa do Mundo sem noção do progresso é sofrimento.",
+        "48 seleções pra completar — sabe em quantas já está perto?"
+      ],
+      "corpos": [
+        "O Meu Álbum mostra o avanço geral, por grupo, por seleção e por coleção especial — sem contar figurinha uma por uma.",
+        "A tela de estatísticas reúne obtidas, faltantes e repetidas e detalha o desempenho de cada seleção.",
+        "Você acompanha as 994 figurinhas e as 48 seleções direto no painel, sem planilha.",
+        "Progresso visível ajuda a decidir onde focar: qual seleção está quase completa e qual precisa de mais pacotes."
+      ],
+      "ctas": [
+        "Veja seu progresso 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "994 figurinhas, 48 seleções: o Meu Álbum mostra seu progresso completo, por grupo e por seleção. {link}",
+        "Quanto falta pro álbum completo? O painel de progresso responde na hora. {link}",
+        "Acompanhe o avanço do álbum inteiro sem contar figurinha uma por uma: {link}"
+      ],
+      "premium": {
+        "titulo": "Quanto falta pro",
+        "destaque": "álbum completo?",
+        "sub": "Veja o progresso <b>por seleção, grupo e coleção</b>, em tempo real.",
+        "telas": [
+          "tela-estatisticas"
+        ],
+        "beneficios": [
+          {
+            "icone": "grafico",
+            "titulo": "Progresso geral",
+            "texto": "As 994 figurinhas em um número."
+          },
+          {
+            "icone": "alvo",
+            "titulo": "Seleções completas",
+            "texto": "Veja quais já fechou."
+          },
+          {
+            "icone": "check",
+            "titulo": "A um de completar",
+            "texto": "Saiba onde está perto."
+          }
+        ]
+      }
+    },
+    {
+      "id": "preco-sem-asterisco",
+      "card": {
+        "titulo": "R$ 15, *uma vez só*",
+        "sub": "Sem mensalidade, sem renovação.",
+        "destaque": "R$15"
+      },
+      "ganchos": [
+        "Preço sem asterisco: 7 dias grátis, depois R$ 15 e pronto.",
+        "\"Grátis\" que pede cartão de novo não. O Meu Álbum é diferente.",
+        "Assinatura mensal pra controlar figurinha? Não precisa.",
+        "R$ 15 pagos uma vez só, sem renovar todo mês."
+      ],
+      "corpos": [
+        "Você experimenta por 7 dias sem informar cartão. Se quiser continuar, o acesso vitalício custa R$ 15, pagamento único, sem mensalidade.",
+        "Nada de assinatura: são R$ 15 uma única vez para liberar o acesso vitalício ao Meu Álbum.",
+        "Comece a testar sem cartão. Só decide pagar depois dos 7 dias grátis, e o valor não muda nunca mais.",
+        "R$ 15 e o acesso é seu para sempre — sem cobrança recorrente."
+      ],
+      "ctas": [
+        "Comece 7 dias grátis 👉 {link}",
+        "Sem cartão pra começar 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "7 dias grátis, sem cartão. Depois, R$ 15 uma única vez, sem mensalidade: {link}",
+        "Preço sem pegadinha: R$ 15 pagos uma vez, acesso vitalício ao Meu Álbum. {link}",
+        "Teste grátis por 7 dias e decida depois: R$ 15, pagamento único. {link}"
+      ],
+      "premium": {
+        "titulo": "R$ 15,",
+        "destaque": "uma vez só.",
+        "sub": "Sem mensalidade e sem renovação. <b>Teste 7 dias grátis</b>, sem cartão.",
+        "telas": [
+          "tela-grupos"
+        ],
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "Pagamento único",
+            "texto": "Acesso vitalício ao app."
+          },
+          {
+            "icone": "cartao",
+            "titulo": "Sem cartão para testar",
+            "texto": "7 dias grátis para usar tudo."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sem renovação",
+            "texto": "Nada de cobrança todo mês."
+          }
+        ]
+      }
+    },
+    {
+      "id": "organizem-a-dois",
+      "card": {
+        "titulo": "Organizem o álbum *a dois*",
+        "sub": "Compartilhe o controle com outra pessoa."
+      },
+      "ganchos": [
+        "Filho colando as figurinhas e você tentando ajudar a organizar?",
+        "Duas pessoas cuidando do mesmo álbum, cada uma com sua lista? Complica.",
+        "Quem monta o álbum com outra pessoa sabe: falta combinar quem marcou o quê.",
+        "Um álbum, duas pessoas, uma organização só."
+      ],
+      "corpos": [
+        "No perfil do Meu Álbum dá pra gerenciar o compartilhamento com outra pessoa, além de personalizar o nome, o título e a foto do álbum.",
+        "Se você monta o álbum em dupla, o app mantém as figurinhas marcadas em um lugar só, sem listas separadas.",
+        "Personalize o álbum do seu jeito e, se quiser dividir a organização, adicione outra pessoa pelo perfil.",
+        "Seu álbum, seu nome, suas trocas — e, se fizer sentido, a organização compartilhada com quem também está colando."
+      ],
+      "ctas": [
+        "Organize junto 👉 {link}",
+        "Comece grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Duas pessoas cuidando do mesmo álbum? O Meu Álbum deixa compartilhar a organização pelo perfil. {link}",
+        "Personalize o álbum e divida a organização com outra pessoa: {link}",
+        "Um álbum, uma organização só, mesmo em dupla: {link}"
+      ],
+      "premium": {
+        "titulo": "Organizem o álbum",
+        "destaque": "a dois.",
+        "sub": "Compartilhe o controle com <b>outra pessoa</b> e completem juntos.",
+        "telas": [
+          "tela-grupos"
+        ],
+        "beneficios": [
+          {
+            "icone": "pessoas",
+            "titulo": "Álbum compartilhado",
+            "texto": "Dois colecionadores, um álbum."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Listas em comum",
+            "texto": "Faltantes e repetidas juntas."
+          },
+          {
+            "icone": "check",
+            "titulo": "Tudo sincronizado",
+            "texto": "Cada um marca do seu celular."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sem-cadastro-instala",
+      "card": {
+        "titulo": "Teste *sem cadastro*",
+        "sub": "Depois, instale como app e use offline."
+      },
+      "ganchos": [
+        "Não precisa criar conta pra começar a marcar figurinha.",
+        "Zero burocracia: abre e já marca as figurinhas do Brasil.",
+        "Testar não deveria pedir cadastro logo de cara.",
+        "Sem baixar de loja, sem formulário — só abrir e usar."
+      ],
+      "corpos": [
+        "O Meu Álbum abre no navegador e você já marca as figurinhas que tem, sem cadastro. Se gostar, instala como app e o álbum continua acessível até offline.",
+        "Comece marcando direto no navegador, sem informar dados. Depois, instale como app com um toque e leve o álbum sempre no bolso.",
+        "Nada de download de loja: é só abrir o link, testar, e instalar como app quando quiser.",
+        "Instalado como app, o Meu Álbum abre até sem internet, pronto pra consultar sua lista em qualquer lugar."
+      ],
+      "ctas": [
+        "Teste sem cadastro 👉 {link}",
+        "Comece agora 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Marque as figurinhas sem cadastro, direto no navegador. Depois, instale como app e use até offline: {link}",
+        "Sem download de loja: abre, testa, e instala como app se quiser. {link}",
+        "Zero burocracia pra começar: {link}"
+      ],
+      "premium": {
+        "titulo": "Teste",
+        "destaque": "sem cadastro.",
+        "sub": "Depois, <b>instale como app</b> e use até sem internet.",
+        "telas": [
+          "tela-grupos"
+        ],
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Comece na hora",
+            "texto": "Marque sem criar conta."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Instala como app",
+            "texto": "Direto da tela inicial."
+          },
+          {
+            "icone": "offline",
+            "titulo": "Funciona offline",
+            "texto": "Use no meio da troca."
+          }
+        ]
+      }
+    }
+  ],
+  "tagline": "Copa 2026, sem bagunça",
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Instala como app"
+    },
+    {
+      "icone": "offline",
+      "titulo": "Abre offline"
+    },
+    {
+      "icone": "compartilhar",
+      "titulo": "Compartilha fácil"
+    }
+  ],
+  "fonte": "grotesk"
+}

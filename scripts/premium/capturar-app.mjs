@@ -29,7 +29,8 @@ const APPS = {
   opalpiteiro: {
     url: "https://opalpiteiro.app.br",
     login: "/auth",
-    telas: { "tela-app": "/app" },
+    remover: ["Instale como aplicativo no seu dispositivo"],
+    telas: { "tela-app": "/app", "tela-boloes": "/pools", "tela-ranking": "/ranking", "tela-criar": "/pools/new" },
   },
   aieat: {
     url: "https://aieat.app.br",

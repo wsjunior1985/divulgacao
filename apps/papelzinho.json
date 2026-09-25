@@ -9,6 +9,9 @@
     "fundoA": "#e11d48",
     "destaque": "#f59e0b"
   },
+  "visual": {
+    "layout": "papelzinho"
+  },
   "recursos": [
     {
       "icone": "compartilhar",
@@ -85,7 +88,16 @@
         "Amigo Oculto sem complicação, sem planilha e sem stress: {link}",
         "Crie, convide e sorteie em poucos toques. {link}",
         "Menos burocracia, mais resenha. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Amigo Oculto",
+        "destaque": "sem complicação",
+        "telas": [
+          "tela-eventos"
+        ],
+        "sub": "Crie eventos, convide a galera, faça o sorteio e revele tudo de forma <b>divertida.</b>",
+        "beneficios": []
+      }
     },
     {
       "id": "convite-por-link",
@@ -115,7 +127,16 @@
         "Convite por link para a turma entrar sem enrolação: {link}",
         "Compartilhe no WhatsApp e deixe o evento rodar. {link}",
         "Um link já resolve o convite. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Convite por link,",
+        "destaque": "em um clique.",
+        "sub": "Compartilhe no <b>WhatsApp</b> e a galera entra no evento na hora.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     },
     {
       "id": "sorteio-justo",
@@ -144,7 +165,16 @@
         "Sorteio justo, sem ninguém tirar a si mesmo: {link}",
         "A regra é clara e o resultado sai certo. {link}",
         "Menos dor de cabeça, mais revelação. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Sorteio justo,",
+        "destaque": "ninguém tira a si mesmo.",
+        "sub": "O Papelzinho sorteia os pares e <b>ninguém fica de fora</b> nem se tira.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     },
     {
       "id": "sugestoes-de-presente",
@@ -174,7 +204,16 @@
         "Sugestões de presente ajudam sem matar a surpresa: {link}",
         "Cada participante deixa pistas para quem vai comprar. {link}",
         "Presente certeiro começa com uma boa sugestão. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Dicas de presente",
+        "destaque": "sem estragar a surpresa.",
+        "sub": "Cada um deixa <b>sugestões</b> e quem tirou decide o que comprar.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     },
     {
       "id": "hora-da-revelacao",
@@ -203,7 +242,16 @@
         "Hora da revelação: toque e descubra quem tirou quem. {link}",
         "O suspense termina com uma animação bonita. {link}",
         "Tocar para revelar é a melhor parte. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Chegou a hora",
+        "destaque": "da revelação!",
+        "sub": "Toque, espere e <b>descubra quem você tirou</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     },
     {
       "id": "amigolate",
@@ -233,7 +281,16 @@
         "Amigolate também entra na resenha: {link}",
         "Troca de doces com o mesmo fluxo simples. {link}",
         "Quando a turma quer chocolate, o Papelzinho resolve. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Também tem",
+        "destaque": "Amigolate!",
+        "sub": "Troca de doces e chocolates para <b>sair do óbvio</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     },
     {
       "id": "premium-sem-limites",
@@ -262,7 +319,16 @@
         "Premium com 7 dias grátis e mais liberdade: {link}",
         "Eventos e participantes ilimitados no plano pago. {link}",
         "Quando o evento cresce, o Premium acompanha. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Premium",
+        "destaque": "sem limites.",
+        "sub": "R$ 5/mês com <b>7 dias grátis</b> para testar tudo.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     },
     {
       "id": "instale-como-app",
@@ -292,7 +358,16 @@
         "Instale como app e deixe o papelzinho na tela inicial: {link}",
         "PWA para abrir rápido e voltar ao evento sem atrito. {link}",
         "Mais prático do que abrir sempre pelo navegador. {link}"
-      ]
+      ],
+      "premium": {
+        "titulo": "Instale como app,",
+        "destaque": "direto do navegador.",
+        "sub": "Abre na tela inicial e <b>funciona como app</b>, sem loja.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     }
   ]
 }

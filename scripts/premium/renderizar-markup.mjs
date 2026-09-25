@@ -57,6 +57,13 @@ const TELAS = {
         ])}</div>`)
         .replace("data-dock></nav>", `>${dockRemedin("Hoje")}</nav>`),
   },
+  "papelzinho-eventos": {
+    app: "papelzinho",
+    origem: "https://papelzinho.waldeapps.systems/auth",
+    saida: "tela-eventos",
+    tema: "claro",
+    montar: (html) => html,
+  },
 };
 
 const id = process.argv[2];
@@ -70,18 +77,18 @@ const saida = resolve(RAIZ, `assets/premium/${tela.app}`);
 mkdirSync(saida, { recursive: true });
 
 const navegador = await chromium.launch();
-const ctx = await navegador.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, colorScheme: "dark" });
+const ctx = await navegador.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, colorScheme: tela.tema === "claro" ? "light" : "dark" });
 await ctx.addInitScript((pares) => { for (const [k, v] of Object.entries(pares)) localStorage.setItem(k, v); }, tela.armazenamento ?? {});
 const p = await ctx.newPage();
 try {
   await p.goto(tela.origem, { waitUntil: "networkidle" });
   await p.waitForTimeout(1200);
   // O app já carregou o CSS; troca o corpo pelo markup anonimizado e congela a página.
-  await p.evaluate((markup) => {
+  await p.evaluate(({ markup, claro }) => {
     document.querySelectorAll("script").forEach((s) => s.remove());
     document.body.innerHTML = markup;
-    document.documentElement.classList.add("dark");
-  }, html);
+    if (claro) document.documentElement.classList.remove("dark"); else document.documentElement.classList.add("dark");
+  }, { markup: html, claro: tela.tema === "claro" });
   await p.waitForLoadState("networkidle").catch(() => {});
   await p.waitForTimeout(1200);
   await p.screenshot({ path: `${saida}/${tela.saida}.png` });

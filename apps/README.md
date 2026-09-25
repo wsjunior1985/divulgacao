@@ -3,19 +3,16 @@
 Se você quer só o caminho mais curto, abra [`GUIA-RAPIDO.md`](GUIA-RAPIDO.md).
 Este arquivo fica como referência completa.
 
-Este repositório publica os apps em rodízio determinístico. Hoje a regra prática
-é simples: se você quer que nenhum projeto fique de fora em um dia, o total de
-horários precisa ser igual ao total de apps.
+Este repositório publica os apps em rodízio determinístico: a cada horário do
+dia, o próximo app da lista `ORDEM_APPS` publica o próximo tema dele.
 
-Exemplo atual:
+Hoje são 7 horários por dia e mais apps do que horários. Isso é intencional:
+os apps se revezam ao longo da semana (nenhum repete no mesmo dia) em vez de
+lotar os perfis com um post de cada app todo dia. Para incluir um app novo,
+basta acrescentá-lo em `ORDEM_APPS` — os horários não mudam.
 
-- 7 apps
-- 7 horários por dia
-- 1 slot por app, sem repetição no mesmo dia
-
-Se você adicionar um 8º projeto, a agenda precisa ganhar um 8º horário. Se
-ficar com menos horários do que apps, algum projeto vai pular aquele dia. Se
-ficar com mais horários, algum app vai repetir no mesmo dia.
+Regra do estúdio: um app só entra em `ORDEM_APPS` depois que o card 1 no padrão
+premium for aprovado pelo dono.
 
 ## O que precisa ser criado
 
@@ -98,11 +95,11 @@ Ao entrar um projeto novo:
 
 1. adicione o `id` do novo app em `ORDEM_APPS`;
 2. mantenha essa ordem coerente com a história que você quer contar no feed;
-3. se a quantidade de apps mudar, atualize também os horários do dia.
+3. os horários não mudam: continuam 7 por dia, e os apps se revezam neles.
 
 ## Horários e cron
 
-Os horários vivem em quatro lugares e precisam bater:
+Os horários (7 por dia, fixos) vivem em quatro lugares e precisam bater entre si:
 
 - `scripts/publicar.mjs`
 - `scripts/agenda.mjs`
@@ -111,16 +108,7 @@ Os horários vivem em quatro lugares e precisam bater:
 
 O valor também aparece em `.env.example` e, localmente, em `.env.local`.
 
-Se a meta for "nenhum projeto fica de fora no mesmo dia", os horários devem
-ter a mesma quantidade que os apps. Hoje isso significa:
-
-- `08h`
-- `11h`
-- `14h`
-- `17h`
-- `20h`
-- `21h`
-- `22h`
+Os horários ficam fixos em 7 por dia; o número de apps pode ser maior (ver o início deste guia).
 
 ## Validação rápida
 
@@ -151,7 +139,7 @@ npm run dry
 - o logo está em `assets/logos/`;
 - as capturas estão em `assets/capturas/`;
 - `ORDEM_APPS` foi atualizado;
-- os horários do dia batem com a quantidade de apps;
+- o card 1 premium foi aprovado pelo dono antes de entrar em `ORDEM_APPS`;
 - o calendário foi regenerado;
 - um exemplo visual do card foi mostrado para o usuário aprovar ou pedir
   ajustes antes de ir para produção;
@@ -169,7 +157,7 @@ O projeto `O Palpiteiro` entrou por este fluxo:
 - `assets/capturas/opalpiteiro-2.png`
 - `assets/capturas/opalpiteiro-3.png`
 - atualização em `scripts/lib/conteudo.js`
-- ajuste de horários para manter 7 apps por dia
+- (na época, com ajuste de horários; hoje eles ficam fixos em 7)
 
 `Papelzinho` entrou logo depois, usando o mesmo fluxo:
 
@@ -179,6 +167,6 @@ O projeto `O Palpiteiro` entrou por este fluxo:
 - `assets/capturas/papelzinho-1.png`
 - captura automática registrada em `scripts/capturar.mjs`
 - atualização em `scripts/lib/conteudo.js`
-- ajuste de horários para manter 7 apps por dia
+- (na época, com ajuste de horários; hoje eles ficam fixos em 7)
 
 Esse conjunto serve como modelo para os próximos projetos.

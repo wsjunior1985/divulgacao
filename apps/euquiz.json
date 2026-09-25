@@ -1,0 +1,483 @@
+{
+  "id": "euquiz",
+  "nome": "EuQuiz",
+  "url": "https://euquiz.waldeapps.systems",
+  "marca": {
+    "emoji": "🧠",
+    "fundoA": "#2b1a5e",
+    "destaque": "#6d28d9"
+  },
+  "visual": {
+    "layout": "padrao",
+    "cor1": "#8b5cf6",
+    "cor2": "#22d3ee",
+    "fundoCor": "#120a26",
+    "nomeMarca": "EuQuiz",
+    "selo": [
+      "Grátis",
+      "sem criar conta"
+    ],
+    "pe": "Crie seu quiz em",
+    "tela": "tela-jogar"
+  },
+  "recursos": [
+    {
+      "icone": "raio",
+      "titulo": "Quiz pronto em segundos",
+      "descricao": "Digite um tema e a IA cria as perguntas na hora."
+    },
+    {
+      "icone": "compartilhar",
+      "titulo": "Link e QR Code",
+      "descricao": "Jogue sozinho ou desafie a turma e os amigos."
+    },
+    {
+      "icone": "grafico",
+      "titulo": "Painel do professor",
+      "descricao": "Veja onde a turma mais erra e imprima a prova com gabarito."
+    },
+    {
+      "icone": "check",
+      "titulo": "Jogue sem cadastro",
+      "descricao": "Escolha um quiz pronto e comece agora, sem criar conta."
+    }
+  ],
+  "hashtags": [
+    "#euquiz",
+    "#quiz",
+    "#aprenderbrincando",
+    "#educacao",
+    "#estudarcomia"
+  ],
+  "chips": [
+    "Grátis",
+    "Sem cadastro para jogar",
+    "Painel do professor"
+  ],
+  "posts": [
+    {
+      "id": "qualquer-assunto",
+      "card": {
+        "titulo": "Um quiz sobre *qualquer assunto*",
+        "sub": "Em segundos, com IA."
+      },
+      "ganchos": [
+        "Sistema Solar, Copa do Mundo, verbo em inglês — qualquer assunto vira quiz. 🧠",
+        "Bateu a vontade de testar o que você sabe sobre alguma coisa?",
+        "Qualquer tema que você imaginar pode virar um quiz em segundos.",
+        "De curiosidade repentina a quiz jogável: é questão de segundos."
+      ],
+      "corpos": [
+        "No EuQuiz, você digita o assunto e a inteligência artificial cria as perguntas na hora — você revisa e já pode jogar.",
+        "Basta escrever o tema: a IA monta o quiz, você confere e ajusta o que quiser antes de publicar.",
+        "Funciona pra qualquer assunto: história, ciência, cultura pop, o que vier na cabeça.",
+        "Em poucos segundos, uma ideia solta vira um quiz completo, pronto pra jogar."
+      ],
+      "ctas": [
+        "Crie seu quiz grátis 👉 {link}",
+        "Comece agora 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Digite qualquer assunto e a IA cria o quiz na hora: {link}",
+        "Sistema Solar, Copa do Mundo, o que você quiser — vira quiz em segundos: {link}",
+        "Qualquer tema, um quiz pronto pra jogar em segundos: {link}"
+      ],
+      "premium": {
+        "titulo": "Qualquer assunto",
+        "destaque": "vira quiz.",
+        "sub": "Digite o tema e a <b>IA cria as perguntas em segundos.</b> Jogue e mande para os amigos.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sem-cadastro",
+      "card": {
+        "titulo": "Jogue *sem criar conta*",
+        "sub": "Escolha um quiz pronto e comece."
+      },
+      "ganchos": [
+        "Vontade de jogar um quiz rápido, sem cadastro nenhum? 🎮",
+        "Nem todo mundo quer criar conta só pra responder um quiz.",
+        "Curiosidade não devia pedir e-mail e senha antes.",
+        "Tem quiz pronto esperando, sem burocracia nenhuma."
+      ],
+      "corpos": [
+        "No EuQuiz, você escolhe um quiz pronto em Explorar e já começa a jogar, sem precisar se cadastrar.",
+        "É só entrar, escolher um tema e jogar — o cadastro fica reservado pra quem quer criar e salvar os próprios quizzes.",
+        "A biblioteca de quizzes prontos está aberta pra jogar na hora, sem login.",
+        "Zero fricção pra quem só quer testar o próprio conhecimento agora."
+      ],
+      "ctas": [
+        "Jogue agora 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Escolha um quiz pronto e jogue sem criar conta: {link}",
+        "Sem cadastro pra jogar: é só escolher e começar: {link}",
+        "Quiz pronto, sem login, sem enrolação: {link}"
+      ],
+      "premium": {
+        "titulo": "Jogue",
+        "destaque": "sem criar conta",
+        "sub": "Escolha um quiz pronto e comece.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "professor",
+      "card": {
+        "titulo": "Um *painel* pra quem ensina",
+        "sub": "Veja onde a turma mais erra."
+      },
+      "ganchos": [
+        "Professor, esse aqui é pra você. 🍎",
+        "Corrigir prova e entender o erro da turma são coisas diferentes.",
+        "Dá pra saber onde a turma mais travou, não só quem acertou.",
+        "Ensinar fica mais fácil quando você vê o padrão dos erros."
+      ],
+      "corpos": [
+        "O Painel do Professor do EuQuiz mostra onde a turma mais erra, além de deixar você imprimir a prova em papel com gabarito.",
+        "Com o painel, você exporta e importa quizzes entre dispositivos e enxerga o desempenho da turma num só lugar.",
+        "Dá pra levar o quiz pro papel: imprima a prova com gabarito pra quem não tem celular na hora.",
+        "O objetivo é simples: menos tempo corrigindo, mais tempo entendendo onde a turma precisa de ajuda."
+      ],
+      "ctas": [
+        "Conheça o painel 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "O Painel do Professor mostra onde a turma mais erra: {link}",
+        "Imprima a prova com gabarito direto do EuQuiz: {link}",
+        "Um painel pra entender o desempenho da turma, não só a nota: {link}"
+      ],
+      "premium": {
+        "titulo": "Um painel",
+        "destaque": "pra quem ensina",
+        "sub": "Veja onde a turma mais erra.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "compartilhar",
+      "card": {
+        "titulo": "Desafie a turma *com um link*",
+        "sub": "Ou um QR Code, pra jogar na hora."
+      },
+      "ganchos": [
+        "Criou o quiz. Agora é só mandar pra galera. 📲",
+        "Compartilhar conhecimento não devia dar trabalho.",
+        "Um QR Code na lousa e a turma inteira já está jogando.",
+        "De um quiz solitário a um desafio em grupo, é um link de distância."
+      ],
+      "corpos": [
+        "Depois de criar, você compartilha o quiz por link ou QR Code — quem recebe já entra direto pra jogar.",
+        "Manda pro grupo da família, da turma ou dos amigos, e cada um joga no próprio ritmo.",
+        "O QR Code é ótimo pra sala de aula: projeta na tela e todo mundo escaneia pra começar.",
+        "Compartilhar é rápido: um link resolve pra quem está longe, um QR Code resolve pra quem está na sala."
+      ],
+      "ctas": [
+        "Crie e compartilhe 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Compartilhe seu quiz por link ou QR Code: {link}",
+        "Um QR Code na lousa e a turma inteira já está jogando: {link}",
+        "Desafie os amigos com um link, sem complicação: {link}"
+      ],
+      "premium": {
+        "titulo": "Desafie a turma",
+        "destaque": "com um link",
+        "sub": "Ou um QR Code, pra jogar na hora.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "modos-de-jogo",
+      "card": {
+        "titulo": "*Estudo*, Clássico ou Contra o tempo",
+        "sub": "Escolha o modo que combina com você."
+      },
+      "ganchos": [
+        "Nem todo quiz precisa ser corrida contra o relógio. ⏱️",
+        "Às vezes você quer estudar com calma. Às vezes quer disputar.",
+        "O modo de jogo muda o clima do quiz inteiro.",
+        "Estudar e competir pedem experiências diferentes — o EuQuiz separa isso."
+      ],
+      "corpos": [
+        "No EuQuiz, você escolhe entre o modo Estudo, pra ir com calma, o Clássico ou o Contra o tempo, pra quem gosta de pressão.",
+        "Cada quiz pode ser jogado do jeito que fizer sentido: revisão tranquila ou disputa cronometrada.",
+        "Escolher o objetivo — estudar, revisar, competir — muda como as perguntas aparecem pra você.",
+        "É o mesmo quiz, mas a experiência muda conforme o modo escolhido."
+      ],
+      "ctas": [
+        "Escolha seu modo 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Modo Estudo, Clássico ou Contra o tempo — você escolhe: {link}",
+        "Jogue com calma ou dispute contra o relógio, no mesmo quiz: {link}",
+        "O EuQuiz se adapta ao seu jeito de estudar ou competir: {link}"
+      ],
+      "premium": {
+        "titulo": "Estudo, Clássico",
+        "destaque": "ou Contra o tempo",
+        "sub": "Escolha o modo que combina com você.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "estudar-para-prova",
+      "card": {
+        "titulo": "Revisar pra prova virou *jogo*",
+        "sub": "Escolha a dificuldade e o público."
+      },
+      "ganchos": [
+        "Revisão pra prova não precisa ser chata. 📚",
+        "Vestibular, concurso, prova da escola — dá pra revisar jogando.",
+        "Quem falou que estudar e se divertir são coisas separadas?",
+        "Transformar a matéria em quiz muda a forma de gravar o conteúdo."
+      ],
+      "corpos": [
+        "Ao criar o quiz, você define o objetivo (estudar, revisar, treinar), a dificuldade e até o público — do ensino fundamental ao profissional.",
+        "O EuQuiz deixa você ajustar a dificuldade certa pro momento: fácil pra começar, difícil pra testar de verdade.",
+        "Serve pra escola, faculdade, concurso, idioma ou treinamento — o quiz se adapta ao seu objetivo.",
+        "Em vez de reler o material, você revisa respondendo — e vê na hora o que ainda precisa estudar."
+      ],
+      "ctas": [
+        "Crie seu quiz de revisão 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Revisar pra prova virou jogo, com dificuldade sob medida: {link}",
+        "Escola, concurso ou idioma: crie o quiz certo pro seu objetivo: {link}",
+        "Revise respondendo e veja na hora o que falta estudar: {link}"
+      ],
+      "premium": {
+        "titulo": "Revisar pra prova virou",
+        "destaque": "jogo",
+        "sub": "Escolha a dificuldade e o público.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "texto-referencia",
+      "card": {
+        "titulo": "Cole um texto, ganhe *um quiz*",
+        "sub": "A IA usa o seu material como base."
+      },
+      "ganchos": [
+        "Tem aquele texto de aula que você precisa decorar? Vira quiz. 📄",
+        "Em vez de só ler o material de novo, transforme ele em perguntas.",
+        "O quiz mais útil é o que nasce do seu próprio conteúdo.",
+        "Cola o texto, a IA faz o resto."
+      ],
+      "corpos": [
+        "Ao criar um quiz, você pode colar um texto de referência — a IA monta as perguntas com base nesse material específico.",
+        "Em vez de um tema genérico, o quiz sai direto do seu resumo, da sua apostila ou do seu material de aula.",
+        "Isso ajuda a fixar exatamente o que você precisa saber, não um recorte aleatório do assunto.",
+        "O upload de PDF e vídeo está a caminho — por enquanto, o texto colado já rende um quiz sob medida."
+      ],
+      "ctas": [
+        "Crie a partir do seu texto 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Cole seu texto de estudo e ganhe um quiz feito sob medida: {link}",
+        "A IA usa o seu material como base pra criar as perguntas: {link}",
+        "Transforme seu resumo de aula em quiz, colando o texto: {link}"
+      ],
+      "premium": {
+        "titulo": "Cole um texto, ganhe",
+        "destaque": "um quiz",
+        "sub": "A IA usa o seu material como base.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "explorar-prontos",
+      "card": {
+        "titulo": "Uma biblioteca de *quizzes prontos*",
+        "sub": "Por categoria e nível de dificuldade."
+      },
+      "ganchos": [
+        "Sem tempo de criar um quiz agora? Tem um pronto esperando. 📚",
+        "Ciências, história, concursos, idiomas — a biblioteca já está lá.",
+        "Nem todo quiz precisa ser criado por você — alguns já estão prontos.",
+        "Filtra por tema e dificuldade, escolhe e já começa a jogar."
+      ],
+      "corpos": [
+        "Em Explorar, o EuQuiz reúne quizzes prontos por categoria — ciências, história, concursos, idiomas — e por nível de dificuldade.",
+        "Você filtra o que quer treinar e entra direto no quiz, sem precisar montar nada.",
+        "É uma forma rápida de testar conhecimento sobre um assunto sem passar pela etapa de criação.",
+        "Do fácil ao especialista, tem opção pra todo tipo de curiosidade."
+      ],
+      "ctas": [
+        "Explore os quizzes 👉 {link}",
+        "Grátis 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Quizzes prontos por categoria e dificuldade, prontos pra jogar: {link}",
+        "Ciências, história, concursos, idiomas — escolha e jogue: {link}",
+        "Não precisa criar: a biblioteca de quizzes já está pronta: {link}"
+      ],
+      "premium": {
+        "titulo": "Uma biblioteca de",
+        "destaque": "quizzes prontos",
+        "sub": "Por categoria e nível de dificuldade.",
+        "beneficios": [
+          {
+            "icone": "raio",
+            "titulo": "Quiz com IA",
+            "texto": "Perguntas prontas em segundos."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Link ou QR Code",
+            "texto": "Desafie a turma na hora."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Painel do professor",
+            "texto": "Veja onde a turma mais erra."
+          }
+        ]
+      }
+    }
+  ],
+  "tagline": "Aprender é jogar sério",
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Instala como app"
+    },
+    {
+      "icone": "raio",
+      "titulo": "IA gera em segundos"
+    },
+    {
+      "icone": "compartilhar",
+      "titulo": "Link ou QR Code"
+    }
+  ],
+  "fonte": "grotesk"
+}

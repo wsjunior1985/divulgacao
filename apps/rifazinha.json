@@ -1,0 +1,484 @@
+{
+  "id": "rifazinha",
+  "nome": "Rifazinha",
+  "url": "https://rifazinha.waldeapps.systems",
+  "marca": {
+    "emoji": "🎟️",
+    "fundoA": "#170b05",
+    "destaque": "#f75125"
+  },
+  "visual": {
+    "layout": "padrao",
+    "cor1": "#f75125",
+    "cor2": "#ffb347",
+    "fundoCor": "#150a04",
+    "nomeMarca": "Rifazinha",
+    "selo": [
+      "Grátis até 100 cotas",
+      "7 dias de Premium"
+    ],
+    "pe": "Crie sua rifa em",
+    "tela": "tela-rifa",
+    "logoArredondado": true
+  },
+  "recursos": [
+    {
+      "icone": "dinheiro",
+      "titulo": "Simulador de arrecadação",
+      "descricao": "Prêmio, preço e cotas: o total aparece na hora, sem cadastro."
+    },
+    {
+      "icone": "raio",
+      "titulo": "PIX direto na sua conta",
+      "descricao": "O comprador paga por QR Code e o valor cai sem intermediário."
+    },
+    {
+      "icone": "escudo",
+      "titulo": "Proteção contra fraude",
+      "descricao": "Cotas ficam reservadas por 24h até a confirmação do pagamento."
+    },
+    {
+      "icone": "medalha",
+      "titulo": "Sorteio auditável",
+      "descricao": "Cada prêmio sai com hash de auditoria, sem bilhete repetido."
+    }
+  ],
+  "hashtags": [
+    "#rifazinha",
+    "#rifaonline",
+    "#sorteio",
+    "#pix",
+    "#rifacompix"
+  ],
+  "chips": [
+    "PIX direto",
+    "Sorteio auditável",
+    "Grátis para começar"
+  ],
+  "posts": [
+    {
+      "id": "simulador",
+      "card": {
+        "titulo": "Quanto sua rifa *arrecada*?",
+        "sub": "Calcule antes de criar, sem cadastro."
+      },
+      "ganchos": [
+        "Quer fazer uma rifa mas não sabe se vale a pena? 🎟️",
+        "Antes de criar a rifa, dá pra saber quanto ela arrecada.",
+        "\"Vai dar quanto se eu vender tudo?\" — dá pra calcular antes de publicar.",
+        "Rifa sem conta feita é rifa no escuro."
+      ],
+      "corpos": [
+        "No Rifazinha, você informa o prêmio, o preço da cota e a quantidade — o total aparece na hora, sem precisar criar conta.",
+        "Coloque prêmio, preço e cotas e veja o valor total na tela, antes mesmo de publicar.",
+        "O simulador do Rifazinha mostra o total na hora. Se fizer sentido, você publica em seguida.",
+        "Sem cadastro, sem planilha: o Rifazinha calcula o total da sua rifa em segundos."
+      ],
+      "ctas": [
+        "Simule grátis 👉 {link}",
+        "Calcule sem cadastro 👉 {link}",
+        "Comece grátis 👉 {link}"
+      ],
+      "curtos": [
+        "Quanto sua rifa arrecada? O Rifazinha calcula na hora, sem cadastro: {link}",
+        "Simule sua rifa antes de criar — sem conta, sem planilha: {link}",
+        "Prêmio, preço e cotas: o Rifazinha calcula o total em segundos: {link}"
+      ],
+      "premium": {
+        "titulo": "Sua rifa online,",
+        "destaque": "no PIX, sem enrolação.",
+        "sub": "Crie a rifa, compartilhe o link e <b>receba direto na sua conta.</b>",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "pix-direto",
+      "card": {
+        "titulo": "O dinheiro cai *direto no seu PIX*",
+        "sub": "Sem intermediário segurando o valor."
+      },
+      "ganchos": [
+        "Quem organiza rifa não quer esperar plataforma nenhuma liberar o dinheiro. 💸",
+        "PIX direto na sua conta — sem ninguém no meio.",
+        "Vendeu a cota, o comprador pagou, o PIX caiu. Simples assim.",
+        "Chega de esperar repasse de terceiro pra ver o dinheiro da rifa."
+      ],
+      "corpos": [
+        "No Rifazinha, você cadastra sua chave PIX e o comprador paga direto por QR Code — o valor cai na sua conta, sem passar pela plataforma.",
+        "O pagamento vai direto pra sua chave PIX. O Rifazinha não fica no meio do dinheiro.",
+        "Cada cota vendida gera um QR Code com sua chave PIX. O comprador paga, você recebe na hora.",
+        "Sem intermediário: o PIX é seu, direto na sua conta."
+      ],
+      "ctas": [
+        "Comece grátis 👉 {link}",
+        "Crie sua rifa 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "PIX direto na sua conta, sem intermediário segurando o valor: {link}",
+        "O comprador paga por QR Code e o PIX cai direto na sua chave: {link}",
+        "Sem repasse de terceiro: o dinheiro da rifa vai direto pra você: {link}"
+      ],
+      "premium": {
+        "titulo": "O dinheiro cai",
+        "destaque": "direto no seu PIX",
+        "sub": "Sem intermediário segurando o valor.",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "antifraude",
+      "card": {
+        "titulo": "Cota reservada por *24 horas*",
+        "sub": "Tempo pra confirmar, sem perder a venda."
+      },
+      "ganchos": [
+        "Já perdeu venda porque alguém escolheu a cota e nunca pagou? 😤",
+        "Cota escolhida e ninguém paga — clássico problema de rifa manual.",
+        "Reservar sem travar a rifa pro resto da galera.",
+        "24 horas é o tempo certo pra pagar sem travar a fila de compradores."
+      ],
+      "corpos": [
+        "No Rifazinha, a cota fica reservada por 24 horas para o comprador confirmar o pagamento. Depois disso, ela volta a ficar disponível.",
+        "Ninguém trava uma cota pra sempre: o Rifazinha libera de novo depois de 24h sem pagamento.",
+        "A reserva de 24h protege a sua rifa contra quem escolhe e some.",
+        "Você confere o pagamento e confirma no painel — sem depender de print de comprovante no WhatsApp."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Comece grátis 👉 {link}",
+        "Crie sua rifa 👉 {link}"
+      ],
+      "curtos": [
+        "Cota reservada por 24h: quem não paga, libera a vaga de novo: {link}",
+        "Chega de cota travada pra sempre por quem não paga: {link}",
+        "24h pra confirmar o pagamento, sem travar a rifa: {link}"
+      ],
+      "premium": {
+        "titulo": "Cota reservada por",
+        "destaque": "24 horas",
+        "sub": "Tempo pra confirmar, sem perder a venda.",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sorteio-auditavel",
+      "card": {
+        "titulo": "Um bilhete *nunca leva dois* prêmios",
+        "sub": "Sorteio com hash de auditoria."
+      },
+      "ganchos": [
+        "Rifa por sorteio manual sempre deixa aquela pontinha de dúvida. 🤔",
+        "\"Foi sorteio mesmo ou só o organizador escolheu?\" 😅",
+        "Transparência não devia ser esforço extra em cima da rifa.",
+        "Todo mundo quer ver o sorteio de verdade, não só confiar no print."
+      ],
+      "corpos": [
+        "O Rifazinha só libera o sorteio com 100% das cotas pagas, e cada prêmio sai com um hash de auditoria — nenhum bilhete repete em dois prêmios.",
+        "Sorteio auditável: cada resultado tem um hash que comprova como saiu, sem depender só da sua palavra.",
+        "O sistema garante que um mesmo bilhete não ganhe duas vezes, e o resultado fica registrado com hash.",
+        "Mais confiança pros compradores, menos dor de cabeça pra você explicar o resultado."
+      ],
+      "ctas": [
+        "Crie grátis 👉 {link}",
+        "👉 {link}",
+        "Comece agora 👉 {link}"
+      ],
+      "curtos": [
+        "Sorteio auditável, com hash de cada prêmio — sem bilhete repetido: {link}",
+        "O Rifazinha só sorteia com 100% das cotas pagas, com hash de auditoria: {link}",
+        "Mais transparência no sorteio, com hash que comprova o resultado: {link}"
+      ],
+      "premium": {
+        "titulo": "Um bilhete nunca",
+        "destaque": "leva dois prêmios",
+        "sub": "Sorteio com hash de auditoria.",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "gratis-comece",
+      "card": {
+        "titulo": "Comece com *até 100 cotas*, de graça",
+        "sub": "1 rifa ativa, sem pagar nada."
+      },
+      "ganchos": [
+        "Dá pra testar o Rifazinha sem tirar um real do bolso. 💰",
+        "Plano grátis existe mesmo — com limite, mas sem custo.",
+        "Antes de pagar qualquer coisa, dá pra rodar uma rifa inteira de graça.",
+        "Rifa pequena? O plano grátis já resolve."
+      ],
+      "corpos": [
+        "No plano grátis do Rifazinha, você cria 1 rifa ativa por vez, com até 100 cotas e 1 prêmio — sem pagar nada.",
+        "O grátis do Rifazinha cobre uma rifa simples: até 100 cotas, 1 prêmio, painel de compradores e PIX direto.",
+        "Comece pequeno, sem custo, e veja como funciona antes de pensar em mais recursos.",
+        "Até 100 cotas por rifa, de graça — dá pra rifar da cesta ao vale-presente."
+      ],
+      "ctas": [
+        "Comece grátis 👉 {link}",
+        "Crie sua rifa 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "Até 100 cotas por rifa, de graça, com PIX direto: {link}",
+        "O plano grátis do Rifazinha já cria uma rifa completa: {link}",
+        "Sem pagar nada: 1 rifa ativa, até 100 cotas, PIX direto: {link}"
+      ],
+      "premium": {
+        "titulo": "Comece com",
+        "destaque": "até 100 cotas grátis",
+        "sub": "1 rifa ativa, sem pagar nada.",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sem-cadastro-simular",
+      "card": {
+        "titulo": "Simule *sem criar conta*",
+        "sub": "Só depois de gostar é que você se cadastra."
+      },
+      "ganchos": [
+        "Ninguém devia precisar de conta só pra fazer uma conta de padaria. 🧮",
+        "Testa primeiro, cadastra depois — nessa ordem.",
+        "Simulação sem cadastro é o mínimo que a gente espera hoje em dia.",
+        "Curiosidade sobre \"quanto dá\" não devia pedir e-mail e senha."
+      ],
+      "corpos": [
+        "No Rifazinha, o simulador de arrecadação funciona sem login. Só quando você decide criar a rifa de verdade é que entra o cadastro.",
+        "Você mexe no prêmio, no preço e nas cotas e vê o total, sem precisar criar conta antes.",
+        "Zero fricção pra testar: simula, decide, e só depois cria a conta pra publicar.",
+        "A curiosidade é grátis e sem cadastro. O compromisso vem só na hora de criar a rifa."
+      ],
+      "ctas": [
+        "Simule agora 👉 {link}",
+        "👉 {link}",
+        "Teste sem cadastro 👉 {link}"
+      ],
+      "curtos": [
+        "Simule sua rifa sem criar conta — o cadastro só entra depois: {link}",
+        "Testa a conta da rifa de graça, sem cadastro: {link}",
+        "Sem login pra simular: só decide, depois cria a conta: {link}"
+      ],
+      "premium": {
+        "titulo": "Simule",
+        "destaque": "sem criar conta",
+        "sub": "Só depois de gostar é que você se cadastra.",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "premium-recursos",
+      "card": {
+        "titulo": "*7 dias* de Premium pra testar",
+        "sub": "Cotas e prêmios sem limite, sem cartão."
+      },
+      "ganchos": [
+        "Toda conta nova no Rifazinha já nasce com 7 dias de Premium. 🎁",
+        "Testar o topo de linha antes de decidir — sem pedir cartão.",
+        "7 dias pra ver se cotas ilimitadas fazem sentido pra sua rifa.",
+        "Rifa grande, com vários prêmios? O período de teste mostra como fica."
+      ],
+      "corpos": [
+        "Nos primeiros 7 dias, toda conta nova libera cotas ilimitadas, várias rifas ativas e até 10 prêmios por rifa — sem pedir cartão de crédito.",
+        "O teste de 7 dias dá acesso a rifas ativas ilimitadas, mais prêmios e galeria de imagens. Depois, a conta volta pro plano grátis, sem cobrança automática.",
+        "Dá pra sentir o Premium na prática por uma semana inteira, sem compromisso nenhum.",
+        "Se sua rifa precisa de mais de 100 cotas ou mais de um prêmio, o período de teste mostra como funciona."
+      ],
+      "ctas": [
+        "Teste grátis 👉 {link}",
+        "Comece agora 👉 {link}",
+        "👉 {link}"
+      ],
+      "curtos": [
+        "7 dias de Premium em toda conta nova, sem pedir cartão: {link}",
+        "Cotas ilimitadas e mais prêmios por 7 dias, de graça: {link}",
+        "Teste o Premium do Rifazinha por uma semana, sem compromisso: {link}"
+      ],
+      "premium": {
+        "titulo": "7 dias",
+        "destaque": "de Premium pra testar",
+        "sub": "Cotas e prêmios sem limite, sem cartão.",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "painel-compradores",
+      "card": {
+        "titulo": "Todos os compradores, *numa tela só*",
+        "sub": "Confira o pagamento e confirme no painel."
+      },
+      "ganchos": [
+        "Chega de controlar rifa por print de comprovante no WhatsApp. 📱",
+        "Quem já organizou rifa sabe: o difícil é controlar quem pagou o quê.",
+        "Planilha de rifa vive desatualizada. Dá pra fazer diferente.",
+        "O painel existe pra você não perder o controle de quem comprou."
+      ],
+      "corpos": [
+        "O painel do Rifazinha reúne todos os compradores, mostra quem pagou e deixa você confirmar cada pedido em um único lugar.",
+        "Em vez de planilha e print, o Rifazinha mostra todas as cotas e compradores numa tela organizada.",
+        "Você confere o PIX recebido e confirma o pedido direto no painel — sem depender da memória.",
+        "Gerenciar compradores fica mais simples com tudo num painel só, sem arquivo espalhado."
+      ],
+      "ctas": [
+        "👉 {link}",
+        "Comece grátis 👉 {link}",
+        "Organize sua rifa 👉 {link}"
+      ],
+      "curtos": [
+        "Todos os compradores da rifa, organizados num painel só: {link}",
+        "Chega de planilha: o Rifazinha organiza quem comprou e quem pagou: {link}",
+        "Confira o pagamento e confirme o pedido direto no painel: {link}"
+      ],
+      "premium": {
+        "titulo": "Todos os compradores,",
+        "destaque": "numa tela só",
+        "sub": "Confira o pagamento e confirme no painel.",
+        "beneficios": [
+          {
+            "icone": "dinheiro",
+            "titulo": "PIX direto",
+            "texto": "O dinheiro cai na sua conta."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Reserva de 24 horas",
+            "texto": "Tempo para o comprador pagar."
+          },
+          {
+            "icone": "check",
+            "titulo": "Sorteio auditável",
+            "texto": "Resultado com hash de auditoria."
+          }
+        ]
+      }
+    }
+  ],
+  "tagline": "Sua rifa digital com alma de bilhete",
+  "selos": [
+    {
+      "icone": "celular",
+      "titulo": "Instala como app"
+    },
+    {
+      "icone": "escudo",
+      "titulo": "Sorteio auditável"
+    },
+    {
+      "icone": "raio",
+      "titulo": "PIX direto"
+    }
+  ],
+  "fonte": "jakarta"
+}

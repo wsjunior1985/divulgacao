@@ -18,6 +18,10 @@ export const ORDEM_APPS = [
   "opalpiteiro",
   "papelzinho",
   "omeualbum",
+  "rifazinha",
+  "aeroliso",
+  "euquiz",
+  "voutrocar",
 ];
 
 /** Época do rodízio: slot 0. Não mexa depois de publicar, ou o rodízio pula temas. */

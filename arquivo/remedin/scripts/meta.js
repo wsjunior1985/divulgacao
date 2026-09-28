@@ -128,7 +128,7 @@ export async function postMeta({ channels, caption, mediaUrls, link }) {
         fbId = await publishFacebookImage(pageId, token, mediaUrls[0], caption);
       } else {
         fbId = await publishFacebookLink(pageId, token, {
-          link: link ?? "https://remedin.lovable.app",
+          link: link ?? "https://remedin.app.br",
           message: caption,
         });
       }

@@ -8,7 +8,7 @@
       "time": "10:00",
       "channels": ["instagram", "facebook"],
       "type": "carousel",
-      "caption": "💊 Nunca mais esqueça seu remédio!\n\nO Remedin é o app gratuito que organiza sua rotina de medicamentos: lembretes no horário certo, registro de doses, controle de estoque e Modo Cuidador.\n\n👉 Até 3 medicamentos grátis para sempre\n👉 Premium com Assistente IA e relatórios a partir de R$ 14,90/mês\n\nBaixe: https://remedin.lovable.app\n\n#Remedin #LembreteDeRemedio #Saude #Tratamento",
+      "caption": "💊 Nunca mais esqueça seu remédio!\n\nO Remedin é o app gratuito que organiza sua rotina de medicamentos: lembretes no horário certo, registro de doses, controle de estoque e Modo Cuidador.\n\n👉 Até 3 medicamentos grátis para sempre\n👉 Premium com Assistente IA e relatórios a partir de R$ 14,90/mês\n\nBaixe: https://remedin.app.br\n\n#Remedin #LembreteDeRemedio #Saude #Tratamento",
       "media": [
         "marketing/assets/card-intro.png",
         "marketing/assets/card-lembrete.png",
@@ -17,7 +17,7 @@
         "marketing/assets/card-ia.png",
         "marketing/assets/card-cta.png"
       ],
-      "link": "https://remedin.lovable.app"
+      "link": "https://remedin.app.br"
     },
     {
       "id": "cuidador-post",
@@ -25,9 +25,9 @@
       "time": "11:00",
       "channels": ["facebook"],
       "type": "image",
-      "caption": "Se você cuida de alguém (pai, mãe, avô), esse post é pra você. 🤍\n\nO Remedin avisa a dose na hora certa e, se ela for esquecida, você fica sabendo pelo Modo Cuidador. Cuidado à distância, de verdade.\n\nBaixe grátis: https://remedin.lovable.app\n#CuidarDeQuemAma #Remedin",
+      "caption": "Se você cuida de alguém (pai, mãe, avô), esse post é pra você. 🤍\n\nO Remedin avisa a dose na hora certa e, se ela for esquecida, você fica sabendo pelo Modo Cuidador. Cuidado à distância, de verdade.\n\nBaixe grátis: https://remedin.app.br\n#CuidarDeQuemAma #Remedin",
       "media": ["marketing/assets/card-cuidador.png"],
-      "link": "https://remedin.lovable.app"
+      "link": "https://remedin.app.br"
     },
     {
       "id": "reels-lembrete",
@@ -35,9 +35,9 @@
       "time": "18:00",
       "channels": ["instagram"],
       "type": "image",
-      "caption": "Você tomou o remédio hoje? 🤔\n\nO Remedin me lembra na hora certa e eu só toco em \"tomei\". Minha mãe acompanha tudo pelo Modo Cuidador. 💙\n\nBaixa grátis, link na bio! 👉 https://remedin.lovable.app\n\n#Remedin #LembreteDeRemedio #Saude",
+      "caption": "Você tomou o remédio hoje? 🤔\n\nO Remedin me lembra na hora certa e eu só toco em \"tomei\". Minha mãe acompanha tudo pelo Modo Cuidador. 💙\n\nBaixa grátis, link na bio! 👉 https://remedin.app.br\n\n#Remedin #LembreteDeRemedio #Saude",
       "media": ["marketing/assets/card-lembrete.png"],
-      "link": "https://remedin.lovable.app"
+      "link": "https://remedin.app.br"
     },
     {
       "id": "tiktok-esquece",
@@ -54,9 +54,9 @@
       "time": "10:00",
       "channels": ["instagram", "facebook"],
       "type": "image",
-      "caption": "Sabe aquele remédio que acaba justamente no fim de semana? 🥲\n\nNo Remedin você cadastra a quantidade e o app avisa antes de acabar. Nunca mais correr pra farmácia às pressas!\n\nBaixe grátis: https://remedin.lovable.app\n#Remedin #Estoque",
+      "caption": "Sabe aquele remédio que acaba justamente no fim de semana? 🥲\n\nNo Remedin você cadastra a quantidade e o app avisa antes de acabar. Nunca mais correr pra farmácia às pressas!\n\nBaixe grátis: https://remedin.app.br\n#Remedin #Estoque",
       "media": ["marketing/assets/card-estoque.png"],
-      "link": "https://remedin.lovable.app"
+      "link": "https://remedin.app.br"
     },
     {
       "id": "tiktok-cuidador",
@@ -73,9 +73,9 @@
       "time": "18:00",
       "channels": ["instagram"],
       "type": "image",
-      "caption": "Dúvida sobre o remédio? Pergunta pra IA do Remedin. 🤖💊\n\nEla te ajuda com bulas, interações e orientações do tratamento. (Sempre com apoio do seu médico, viu?)\n\nBaixa grátis: https://remedin.lovable.app\n#Remedin #AssistenteIA",
+      "caption": "Dúvida sobre o remédio? Pergunta pra IA do Remedin. 🤖💊\n\nEla te ajuda com bulas, interações e orientações do tratamento. (Sempre com apoio do seu médico, viu?)\n\nBaixa grátis: https://remedin.app.br\n#Remedin #AssistenteIA",
       "media": ["marketing/assets/card-ia.png"],
-      "link": "https://remedin.lovable.app"
+      "link": "https://remedin.app.br"
     },
     {
       "id": "lancamento-fb",
@@ -83,9 +83,9 @@
       "time": "09:00",
       "channels": ["facebook"],
       "type": "image",
-      "caption": "💊 Aplicativo brasileiro de lembrar remédios!\n\nO Remedin chegou pra acabar com o \"eu esqueci de tomar\". Ele:\n✅ Lembra na hora certa (push)\n✅ Registra se você tomou ou pulou\n✅ Avisa quando o estoque está acabando\n✅ Deixa a família acompanhar (Modo Cuidador)\n✅ Tem Assistente IA pra dúvidas de bula\n\nAté 3 medicamentos grátis para sempre: https://remedin.lovable.app\n#Remedin #Saude #Medicamentos",
+      "caption": "💊 Aplicativo brasileiro de lembrar remédios!\n\nO Remedin chegou pra acabar com o \"eu esqueci de tomar\". Ele:\n✅ Lembra na hora certa (push)\n✅ Registra se você tomou ou pulou\n✅ Avisa quando o estoque está acabando\n✅ Deixa a família acompanhar (Modo Cuidador)\n✅ Tem Assistente IA pra dúvidas de bula\n\nAté 3 medicamentos grátis para sempre: https://remedin.app.br\n#Remedin #Saude #Medicamentos",
       "media": ["marketing/assets/og-banner.png"],
-      "link": "https://remedin.lovable.app"
+      "link": "https://remedin.app.br"
     },
     {
       "id": "tiktok-apps",
@@ -102,9 +102,9 @@
       "time": "10:00",
       "channels": ["instagram", "facebook"],
       "type": "image",
-      "caption": "6 em cada 10 pessoas esquecem alguma dose. 😮\n\nCom o Remedin, você confirma cada uma com um toque. Comece grátis — até 3 medicamentos para sempre.\n\n👉 https://remedin.lovable.app\n#Remedin #AdesaoAoTraitamento",
+      "caption": "6 em cada 10 pessoas esquecem alguma dose. 😮\n\nCom o Remedin, você confirma cada uma com um toque. Comece grátis — até 3 medicamentos para sempre.\n\n👉 https://remedin.app.br\n#Remedin #AdesaoAoTraitamento",
       "media": ["marketing/assets/card-cta.png"],
-      "link": "https://remedin.lovable.app"
+      "link": "https://remedin.app.br"
     }
   ]
 }

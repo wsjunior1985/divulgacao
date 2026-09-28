@@ -109,7 +109,7 @@ O Threads usa o mesmo app da Meta, mas **token próprio** e host próprio.
 1. No app da Meta → **Adicionar produto → Threads API**.
 2. Em **Casos de uso**, habilite `threads_basic` e `threads_content_publish`.
 3. Configure a URI de redirecionamento (qualquer URL sua serve, ex.:
-   `https://waldeapps.lovable.app/`).
+   `https://waldeapps.systems/`).
 4. Gere o token pelo **Graph API Explorer do Threads** ou pelo fluxo de login do
    produto Threads. Pegue também o seu **user id** do Threads:
    ```

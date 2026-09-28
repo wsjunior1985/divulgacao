@@ -56,9 +56,9 @@ Estratégia de tráfego pago para **Google Ads** e **Meta Ads** (Instagram/Faceb
 2. Cuide de quem você ama à distância: lembretes + aviso de dose esquecida. Premium a partir de R$ 14,90/mês.
 
 **Links de site (Sitelinks):**
-- Planos e preços — https://remedin.lovable.app/planos
-- Como funciona — https://remedin.lovable.app/#recursos
-- Preços — https://remedin.lovable.app/planos
+- Planos e preços — https://remedin.app.br/planos
+- Como funciona — https://remedin.app.br/#recursos
+- Preços — https://remedin.app.br/planos
 
 ### 1.2 Campanha "Performance Max" (opcional, após dados)
 - Um só grupo, ativo = todo o feed (Busca, Shopping, Display, YouTube, Discover).

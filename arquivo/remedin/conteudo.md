@@ -1,7 +1,7 @@
 # Banco de conteúdo — Remedin
 
 Divulgação para **Instagram, TikTok, WhatsApp e Facebook**. Use à vontade: edite, remixe e poste.
-Link oficial: **https://remedin.lovable.app** · Hashtags base: `#Remedin #LembreteDeRemedio #Saúde #CuidarDeQuemAma #AdesãoAoTratamento #Medicamentos`
+Link oficial: **https://remedin.app.br** · Hashtags base: `#Remedin #LembreteDeRemedio #Saúde #CuidarDeQuemAma #AdesãoAoTratamento #Medicamentos`
 
 ---
 
@@ -97,7 +97,7 @@ Link oficial: **https://remedin.lovable.app** · Hashtags base: `#Remedin #Lembr
 ### 3.1 Status (texto + link)
 > 💊 Nunca mais esqueça seu remédio!
 > O Remedin lembra na hora certa, registra suas doses e avisa se você pular. Até 3 medicamentos grátis para sempre.
-> Baixa: https://remedin.lovable.app
+> Baixa: https://remedin.app.br
 
 ### 3.2 Mensagem de indicação (para lista de transmissão)
 > Oi! 😊 Sabe aquele app de lembrar remédio que eu te contei? Ele tá no ar!
@@ -107,7 +107,7 @@ Link oficial: **https://remedin.lovable.app** · Hashtags base: `#Remedin #Lembr
 > • Modo Cuidador pra acompanhar quem você ama
 > • Assistente IA pra dúvidas de bula
 >
-> Até 3 medicamentos grátis pra sempre. Pra quem cuida de alguém ou quer se cuidar: https://remedin.lovable.app 💙
+> Até 3 medicamentos grátis pra sempre. Pra quem cuida de alguém ou quer se cuidar: https://remedin.app.br 💙
 >
 > (Se preferir não receber, é só me avisar 🙏)
 
@@ -117,7 +117,7 @@ Link oficial: **https://remedin.lovable.app** · Hashtags base: `#Remedin #Lembr
 ### 3.4 Resposta padrão a interessados
 > Que bom que você quer conhecer! 💊 O Remedin é um app de lembretes de medicamento com IA e Modo Cuidador.
 > Grátis até 3 medicamentos. Premium a partir de R$ 14,90/mês.
-> Baixa aqui: https://remedin.lovable.app
+> Baixa aqui: https://remedin.app.br
 
 ---
 
@@ -133,7 +133,7 @@ Link oficial: **https://remedin.lovable.app** · Hashtags base: `#Remedin #Lembr
 > ✅ Deixa a família acompanhar (Modo Cuidador)
 > ✅ Tem Assistente IA pra dúvidas de bula
 >
-> Até 3 medicamentos grátis para sempre. Comece agora: https://remedin.lovable.app
+> Até 3 medicamentos grátis para sempre. Comece agora: https://remedin.app.br
 >
 > #Remedin #Saúde #Medicamentos #Cuidadores
 
@@ -142,13 +142,13 @@ Link oficial: **https://remedin.lovable.app** · Hashtags base: `#Remedin #Lembr
 >
 > O Remedin avisa a dose na hora certa e, se ela for esquecida, você fica sabendo. Cuidado à distância, de verdade.
 >
-> Baixe grátis: https://remedin.lovable.app
+> Baixe grátis: https://remedin.app.br
 > #CuidarDeQuemAma #Remedin
 
 ### 4.3 Post "mito ou verdade"
 > 🤔 "Só idoso esquece remédio."
 > MITO. 6 em cada 10 pessoas esquecem alguma dose. Com o Remedin, você confirma cada uma com um toque. 💊
-> Baixe: https://remedin.lovable.app
+> Baixe: https://remedin.app.br
 > #Remedin #AdesãoAoTratamento
 
 ---
@@ -175,6 +175,6 @@ Link oficial: **https://remedin.lovable.app** · Hashtags base: `#Remedin #Lembr
 ---
 
 ## 6. Notas
-- **Imagens/design:** peça à IA do Lovable (ou use Canva) seguindo a identidade do app: gradiente azul `#2563EB` → verde `#10B981`, ícone `public/icon-512.png`, banner OG `public/og-banner.png`.
-- **Links:** sempre use `https://remedin.lovable.app` e, para indicação, `https://remedin.lovable.app/auth?ref=SEUCODIGO` (seu código fica no app, aba "Indique e ganhe").
+- **Imagens/design:** use Canva ou outra ferramenta de design seguindo a identidade do app: gradiente azul `#2563EB` → verde `#10B981`, ícone `public/icon-512.png`, banner OG `public/og-banner.png`.
+- **Links:** sempre use `https://remedin.app.br` e, para indicação, `https://remedin.app.br/auth?ref=SEUCODIGO` (seu código fica no app, aba "Indique e ganhe").
 - **Compliance de saúde:** lembrete sempre de que o app não substitui orientação médica (já está nos textos de apoio).

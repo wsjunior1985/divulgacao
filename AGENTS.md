@@ -70,6 +70,7 @@ Cada repositório é um app com identidade visual, público e contexto próprios
 
 ## 🌿 Regras de Git
 - Commits pequenos, atômicos, explícitos e por repositório, sem arquivos alheios à tarefa.
+- Commits vão **sempre na `main`**. Não crie branches por iniciativa própria; só use outra branch quando o usuário pedir expressamente.
 - Preserve alterações paralelas na árvore de trabalho do usuário.
 - **NUNCA** use `git reset --hard`, `git checkout --`, `git clean -fd` ou force push sem autorização explícita.
 

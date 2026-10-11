@@ -10375,7 +10375,44 @@
         "em": "2026-10-11T16:34:44.765Z",
         "erro": null
       }
+    },
+    "380-rifazinha-painel-compradores": {
+      "instagram": {
+        "status": "ok",
+        "id": "18104044346203389",
+        "url": "https://www.instagram.com/p/18104044346203389",
+        "em": "2026-10-11T18:37:35.353Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122120029443435454",
+        "url": "https://www.facebook.com/1293634587162251_122120029443435454",
+        "em": "2026-10-11T18:37:35.353Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18105855143363038",
+        "url": "https://www.threads.net/@me/post/18105855143363038",
+        "em": "2026-10-11T18:37:35.353Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mxmnjys7a62z",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mxmnjys7a62z",
+        "em": "2026-10-11T18:37:35.353Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6acbd76fea568e911a39975e",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-11T18:37:35.353Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-10-11T16:34:44.765Z"
+  "atualizadoEm": "2026-10-11T18:37:35.353Z"
 }

@@ -10338,7 +10338,44 @@
         "em": "2026-10-11T05:10:31.185Z",
         "erro": null
       }
+    },
+    "379-omeualbum-sem-cadastro-instala": {
+      "instagram": {
+        "status": "erro",
+        "id": null,
+        "url": null,
+        "em": "2026-10-11T16:34:44.765Z",
+        "erro": "Graph API: Media ID is not available (código 9007/2207027)"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122120013045435454",
+        "url": "https://www.facebook.com/1293634587162251_122120013045435454",
+        "em": "2026-10-11T16:34:44.765Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17996851146020770",
+        "url": "https://www.threads.net/@me/post/17996851146020770",
+        "em": "2026-10-11T16:34:44.765Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mxmgoe5ean2m",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mxmgoe5ean2m",
+        "em": "2026-10-11T16:34:44.765Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6acbbaa4bba9419ccb413b95",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-11T16:34:44.765Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-10-11T05:10:31.185Z"
+  "atualizadoEm": "2026-10-11T16:34:44.765Z"
 }

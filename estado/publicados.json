@@ -10523,7 +10523,44 @@
         "em": "2026-10-12T02:05:11.658Z",
         "erro": null
       }
+    },
+    "385-aieat-foto-do-prato": {
+      "instagram": {
+        "status": "ok",
+        "id": "17955000657030146",
+        "url": "https://www.instagram.com/p/17955000657030146",
+        "em": "2026-10-12T05:24:35.133Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122120121009435454",
+        "url": "https://www.facebook.com/1293634587162251_122120121009435454",
+        "em": "2026-10-12T05:24:35.133Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18371461297246343",
+        "url": "https://www.threads.net/@me/post/18371461297246343",
+        "em": "2026-10-12T05:24:35.133Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mxnrowq2pv2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mxnrowq2pv2d",
+        "em": "2026-10-12T05:24:35.133Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6acc6f13a9411fbcc56edfea",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-12T05:24:35.133Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-10-12T02:05:11.658Z"
+  "atualizadoEm": "2026-10-12T05:24:35.133Z"
 }

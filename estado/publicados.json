@@ -10708,7 +10708,44 @@
         "em": "2026-10-13T03:22:51.616Z",
         "erro": null
       }
+    },
+    "394-euquiz-qualquer-assunto": {
+      "instagram": {
+        "status": "ok",
+        "id": "18160719007497692",
+        "url": "https://www.instagram.com/p/18160719007497692",
+        "em": "2026-10-13T17:57:44.696Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122120495205435454",
+        "url": "https://www.facebook.com/1293634587162251_122120495205435454",
+        "em": "2026-10-13T17:57:44.696Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18271883020309991",
+        "url": "https://www.threads.net/@me/post/18271883020309991",
+        "em": "2026-10-13T17:57:44.696Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mxrmalot6c2m",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mxrmalot6c2m",
+        "em": "2026-10-13T17:57:44.696Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6ace7118f969cac3ed44aeeb",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-13T17:57:44.696Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-10-13T03:22:51.616Z"
+  "atualizadoEm": "2026-10-13T17:57:44.696Z"
 }

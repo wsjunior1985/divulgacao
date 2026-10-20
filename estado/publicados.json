@@ -12043,11 +12043,11 @@
     },
     "444-remedin-ia": {
       "instagram": {
-        "status": "erro",
-        "id": null,
-        "url": null,
-        "em": "2026-10-20T20:20:49.370Z",
-        "erro": "Graph API: Media ID is not available (código 9007/2207027)"
+        "status": "ok",
+        "id": "18448367830122714",
+        "url": "https://www.instagram.com/p/18448367830122714",
+        "em": "2026-10-20T22:56:12.306Z",
+        "erro": null
       },
       "facebook": {
         "status": "ok",
@@ -12079,5 +12079,5 @@
       }
     }
   },
-  "atualizadoEm": "2026-10-20T20:20:49.370Z"
+  "atualizadoEm": "2026-10-20T22:56:12.307Z"
 }

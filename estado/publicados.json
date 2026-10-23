@@ -12447,7 +12447,44 @@
         "em": "2026-10-22T20:27:37.790Z",
         "erro": null
       }
+    },
+    "461-opalpiteiro-perfil-com-numeros": {
+      "instagram": {
+        "status": "ok",
+        "id": "18113249471153530",
+        "url": "https://www.instagram.com/p/18113249471153530",
+        "em": "2026-10-23T01:22:40.731Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122122250079435454",
+        "url": "https://www.facebook.com/1293634587162251_122122250079435454",
+        "em": "2026-10-23T01:22:40.731Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17901380772602923",
+        "url": "https://www.threads.net/@me/post/17901380772602923",
+        "em": "2026-10-23T01:22:40.731Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myizchyyxj2l",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myizchyyxj2l",
+        "em": "2026-10-23T01:22:40.731Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adab6e0d447d56a646e401a",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-23T01:22:40.731Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-10-22T20:27:37.790Z"
+  "atualizadoEm": "2026-10-23T01:22:40.731Z"
 }

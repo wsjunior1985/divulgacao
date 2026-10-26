@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // apagar-video.mjs — apaga posts de VÍDEO já publicados (estado/videos.json).
 //
-//   node scripts/apagar-video.mjs --app remedin,aieat [--canais bluesky,x] [--dry-run]
+//   node scripts/apagar-video.mjs --app remedin,aieat [--canais bluesky,x] [--formato 9x16|16x9] [--dry-run]
 //
 // O que for apagado sai do estado, para o vídeo poder ser republicado. O X sai pelo
 // Buffer, que só remove post ainda na fila: post já publicado no X é manual.
@@ -16,13 +16,16 @@ const a = process.argv.slice(2);
 const val = (f) => (a.includes(f) ? a[a.indexOf(f) + 1] : null);
 const dryRun = a.includes("--dry-run");
 const apps = val("--app")?.split(",") ?? [];
+const formato = val("--formato") ?? "9x16";
+if (!["9x16", "16x9"].includes(formato)) throw new Error(`--formato inválido: ${formato}`);
 const canais = val("--canais")?.split(",") ?? ["instagram", "facebook", "threads", "bluesky", "x"];
 if (!apps.length) throw new Error("use --app <id[,id]>");
 
 const estado = lerJson("estado/videos.json", { videos: {} });
 const manuais = [];
 for (const app of apps) {
-  const feitos = estado.videos[app] ?? {};
+  const chave = formato === "9x16" ? app : `${app}@${formato}`;
+  const feitos = estado.videos[chave] ?? {};
   for (const canal of canais) {
     const r = feitos[canal];
     if (!r || r.status !== "ok" || !r.id) continue;
@@ -39,7 +42,7 @@ for (const app of apps) {
       if (canal === "x") { manuais.push(`${app}/x (${r.id})`); delete feitos[canal]; }
     }
   }
-  estado.videos[app] = feitos;
+  estado.videos[chave] = feitos;
 }
 if (!dryRun) { estado.atualizadoEm = new Date().toISOString(); gravarJson("estado/videos.json", estado); }
 if (manuais.length) aviso(`X: apague manualmente no X/Buffer → ${manuais.join(", ")}`);

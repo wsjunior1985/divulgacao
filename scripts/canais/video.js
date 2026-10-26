@@ -130,7 +130,7 @@ export async function tiktok({ legenda, arquivo }) {
   return { id: publishId, url: "https://www.tiktok.com/", pendente: true };
 }
 
-export async function bluesky({ legenda, arquivo, alt, link, linkLimpo }) {
+export async function bluesky({ legenda, arquivo, alt, link, linkLimpo, aspecto = { width: 1080, height: 1920 } }) {
   const { jwt, did, handle } = await sessaoBluesky();
   // O aud do token precisa ser o DID do PDS real do usuário (não bsky.social).
   const doc = await json(await buscar(`https://plc.directory/${did}`), "Bluesky plc");
@@ -168,7 +168,7 @@ export async function bluesky({ legenda, arquivo, alt, link, linkLimpo }) {
   const registro = {
     $type: "app.bsky.feed.post", text: legenda, createdAt: new Date().toISOString(), langs: ["pt-BR"],
     facets: facets.sort((a, b) => a.index.byteStart - b.index.byteStart),
-    embed: { $type: "app.bsky.embed.video", video: blob, alt: alt ?? "", aspectRatio: { width: 1080, height: 1920 } },
+    embed: { $type: "app.bsky.embed.video", video: blob, alt: alt ?? "", aspectRatio: aspecto },
   };
   const d = await json(
     await buscar(`${env("BLUESKY_SERVICE", "https://bsky.social")}/xrpc/com.atproto.repo.createRecord`, {

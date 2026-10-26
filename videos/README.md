@@ -1,4 +1,4 @@
-# Vídeos de apresentação 9:16
+# Vídeos de apresentação (9:16 e 16:9)
 
 Tudo que é vídeo de apresentação dos apps mora aqui, dentro do `divulgacao`.
 **Não crie projeto de vídeo fora desta pasta** (nada de `<app>-video` solto em
@@ -12,7 +12,8 @@ Tudo que é vídeo de apresentação dos apps mora aqui, dentro do `divulgacao`.
 | `projetos/<app>/` | Fonte de cada vídeo (capturas, gerador de cenas, música, render) | não (local; pesa ~3,5 GB e tem dado de captura) |
 | `nativos/<app>.mp4` | Entrega final aprovada, 1080×1920 | não |
 | `nativos/anteriores/` | Versões antigas (`<app>-v1.mp4`, `-v2`…) | não |
-| `9x16/<app>.mp4` | Cópia com `faststart` que o publicador envia às redes | não |
+| `9x16/<app>.mp4` | Cópia 9:16 com `faststart` que o publicador envia às redes | não |
+| `nativos/<app>-16x9.mp4` e `16x9/<app>.mp4` | Versão horizontal 1920×1080 (YouTube, Facebook, X, site) e sua cópia `faststart`; o publicador envia com `--formato 16x9` (só facebook, threads, bluesky e x) | não |
 | `origem/` | Os 16:9 originais, só como referência | não |
 
 Os scripts ficam em `scripts/`: `videos-converter.mjs`, `publicar-video.mjs`,
@@ -41,7 +42,10 @@ Os `gen-v1`/`gen-v2` são versões anteriores (aparelho cortado), guardadas só
 para histórico. O app `comunidadedoceu` não guarda mais nenhuma pasta de vídeo:
 as duas que existiam nele (`video/` e `video-social-9x16/`) foram movidas para cá.
 
-## Padrão do vídeo (aprendido com as revisões do dono)
+## Método reutilizável
+A skill `.claude/skills/video-apresentacao-app` descreve o método completo (9:16 e 16:9), com templates de captura, QA e normalização de áudio e o briefing para delegar a um agente.
+
+## Padrão do vídeo 9:16 (aprendido com as revisões do dono; o 16:9 está na skill)
 
 - Nativo 9:16 (1080×1920, 30 fps), nunca 16:9 encaixado em fundo desfocado.
 - Aparelho com a **tela inteira** do app (cabeçalho e rodapé), ~55–60% da largura,
@@ -76,6 +80,9 @@ node scripts/publicar-video.mjs --dry-run --app <app>
 
 # 4. publicar (o TikTok fica fora: a API só aceita post privado até a auditoria)
 node scripts/publicar-video.mjs --app <app> --canais bluesky,instagram,facebook,threads,x
+
+# versão 16:9 (facebook, threads, bluesky e x; instagram e tiktok exigem 9:16)
+node scripts/publicar-video.mjs --app <app> --formato 16x9 [--dry-run]
 
 # republicar um vídeo que já saiu (cria um post novo, não apaga o antigo)
 node scripts/publicar-video.mjs --app <app> --forcar --canais ...

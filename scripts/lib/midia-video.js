@@ -4,12 +4,12 @@ import { readFileSync } from "node:fs";
 import { basename, resolve } from "node:path";
 import { RAIZ, env, log, buscar } from "./base.js";
 
-export async function hospedarVideo(relativo) {
+export async function hospedarVideo(relativo, nomeArquivo) {
   const url = env("SUPABASE_URL");
   const chave = env("SUPABASE_SERVICE_ROLE_KEY");
   const bucket = env("SUPABASE_VIDEO_BUCKET", "marketing-videos");
   if (!url || !chave) throw new Error("hospedagem de vídeo exige SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY");
-  const nome = `videos/${basename(relativo)}`;
+  const nome = `videos/${nomeArquivo ?? basename(relativo)}`;
   const res = await buscar(`${url}/storage/v1/object/${bucket}/${nome}`, {
     method: "POST",
     headers: { Authorization: `Bearer ${chave}`, "Content-Type": "video/mp4", "x-upsert": "true" },

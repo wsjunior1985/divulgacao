@@ -1,0 +1,494 @@
+{
+  "id": "barbarizando",
+  "nome": "Barbarizando",
+  "url": "https://barbarizando.com.br",
+  "tagline": "Sua barbearia em ordem.",
+  "fonte": "barlow",
+  "marca": {
+    "emoji": "💈",
+    "fundoA": "#0c1210",
+    "destaque": "#d08f55"
+  },
+  "visual": {
+    "layout": "barbarizando",
+    "efeito": "luz",
+    "acento": "#d08f55",
+    "acento2": "#f0b27a",
+    "calor": "#c97a3c",
+    "fonteTitulo": "barlow",
+    "urlSufixo": "",
+    "selos": [
+      {
+        "icone": "calendario",
+        "titulo": "Agenda online"
+      },
+      {
+        "icone": "pessoas",
+        "titulo": "Equipe"
+      },
+      {
+        "icone": "moedaCirculo",
+        "titulo": "Financeiro"
+      }
+    ]
+  },
+  "recursos": [
+    {
+      "icone": "calendario",
+      "titulo": "Agenda e reserva online",
+      "descricao": "O cliente escolhe serviço, profissional e horário pelo seu link."
+    },
+    {
+      "icone": "pessoas",
+      "titulo": "Equipe e clientes",
+      "descricao": "Cada profissional com a própria agenda e o histórico de cada cliente."
+    },
+    {
+      "icone": "moedaCirculo",
+      "titulo": "Financeiro e comissões",
+      "descricao": "Preço e comissão ficam registrados na hora do atendimento."
+    },
+    {
+      "icone": "escudo",
+      "titulo": "Dados só seus",
+      "descricao": "Cada barbearia vê apenas os próprios dados."
+    }
+  ],
+  "chips": [
+    "Agenda online",
+    "Comandas e caixa",
+    "Equipe e comissões",
+    "Estoque e relatórios"
+  ],
+  "selos": [
+    {
+      "icone": "calendario",
+      "titulo": "Agenda online"
+    },
+    {
+      "icone": "pessoas",
+      "titulo": "Equipe"
+    },
+    {
+      "icone": "moedaCirculo",
+      "titulo": "Financeiro"
+    }
+  ],
+  "hashtags": [
+    "#barbarizando",
+    "#barbearia",
+    "#barbeiro",
+    "#gestaodebarbearia",
+    "#agendaonline"
+  ],
+  "posts": [
+    {
+      "id": "agenda-online",
+      "card": {
+        "titulo": "O cliente agenda *sozinho*",
+        "sub": "No link da sua barbearia, a qualquer hora."
+      },
+      "ganchos": [
+        "O cliente chama no WhatsApp às 23h e você só vê de manhã?",
+        "Agenda cheia de recado e horário combinado de cabeça?",
+        "Barbearia boa perde cliente quando demora a responder.",
+        "E se o cliente marcasse o horário sozinho?"
+      ],
+      "corpos": [
+        "No link da sua barbearia, o cliente escolhe o serviço, o profissional, o dia e o horário livre. Sem instalar nada.",
+        "Seu cliente marca pelo celular, a qualquer hora: serviço, profissional e horário. Você vê tudo na agenda.",
+        "O Barbarizando mostra só os horários livres. O cliente escolhe e o atendimento cai direto na sua agenda."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "O cliente escolhe serviço, profissional e horário pelo link da sua barbearia, sem instalar nada. Barbarizando: {link}",
+        "Agendamento online para barbearia: o cliente marca sozinho, a qualquer hora. {link}",
+        "Pare de marcar horário de cabeça. O cliente agenda pelo seu link: {link}"
+      ],
+      "premium": {
+        "titulo": "CLIENTE AGENDA<BR>SOZINHO",
+        "destaque": "A QUALQUER HORA",
+        "sub": "No link da sua barbearia, o cliente escolhe <b>serviço, profissional, dia e horário</b>.",
+        "tela": "tela-horarios",
+        "beneficios": [
+          {
+            "icone": "regua",
+            "titulo": "Serviço e profissional",
+            "texto": "O cliente escolhe como quiser."
+          },
+          {
+            "icone": "calendario",
+            "titulo": "Só horários livres",
+            "texto": "Sem choque na sua agenda."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Sem instalar nada",
+            "texto": "Abre direto no navegador."
+          }
+        ]
+      }
+    },
+    {
+      "id": "pagina-propria",
+      "card": {
+        "titulo": "Sua barbearia com *link próprio*",
+        "sub": "Serviços, preços e equipe numa página só sua."
+      },
+      "ganchos": [
+        "Seu cliente precisa de um lugar para ver seus serviços e marcar.",
+        "Link na bio que leva direto para a agenda da sua barbearia.",
+        "Divulgar a barbearia é fácil. Difícil é o cliente achar como agendar.",
+        "Cada barbearia no Barbarizando tem a própria página."
+      ],
+      "corpos": [
+        "A página mostra seus serviços com preço e duração, a equipe e como chegar. É só colocar o link no Instagram e no WhatsApp.",
+        "Serviços, combos, preços e profissionais numa página só da sua barbearia, com botões de WhatsApp, Instagram e como chegar.",
+        "O link leva o cliente da página da barbearia até o horário marcado, em poucos toques."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "Cada barbearia ganha uma página própria com serviços, preços, equipe e agendamento. Coloque o link na bio: {link}",
+        "Sua barbearia com página própria para o cliente ver os serviços e agendar: {link}",
+        "Link na bio que leva direto à agenda da sua barbearia. Barbarizando: {link}"
+      ],
+      "premium": {
+        "titulo": "SUA BARBEARIA<BR>COM LINK PRÓPRIO",
+        "destaque": "PARA O CLIENTE AGENDAR",
+        "sub": "Serviços, preços e equipe numa página <b>só sua</b>.",
+        "tela": "tela-agendamento",
+        "beneficios": [
+          {
+            "icone": "globo",
+            "titulo": "Página da barbearia",
+            "texto": "Com a sua identidade."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Serviços e preços",
+            "texto": "Duração e valor à vista."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Contato e como chegar",
+            "texto": "WhatsApp, Instagram e endereço."
+          }
+        ]
+      }
+    },
+    {
+      "id": "agenda-do-dia",
+      "card": {
+        "titulo": "O dia inteiro *na agenda*",
+        "sub": "Quem chegou, quem está na cadeira e quem já terminou."
+      },
+      "ganchos": [
+        "Quem chegou? Quem está na cadeira? Quem já terminou?",
+        "Barbearia cheia e você sem saber em que pé está o dia?",
+        "Agenda de papel some, rasura e não avisa ninguém.",
+        "Dá para ver o dia inteiro da barbearia em um relance?"
+      ],
+      "corpos": [
+        "Cada atendimento passa por etapas: agendado, confirmado, cliente chegou, em atendimento e concluído. Ninguém precisa decorar nada.",
+        "A agenda do dia mostra os atendimentos por profissional, no celular ou no tablet da recepção. Também dá para ver a semana e o mês.",
+        "Você acompanha o dia, bloqueia horário quando precisar e vê o que foi concluído."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "Agenda do dia por profissional, com cada atendimento do agendado ao concluído. Dá para ver no celular ou no tablet. Barbarizando: {link}",
+        "Quem chegou, quem está na cadeira, quem já terminou: tudo na agenda do Barbarizando. {link}",
+        "A agenda da sua barbearia em um relance, no celular ou no tablet: {link}"
+      ],
+      "premium": {
+        "titulo": "O DIA TODO<BR>NA AGENDA",
+        "destaque": "SEM DECORAR NADA",
+        "sub": "Cada atendimento passa por <b>etapas claras</b>, do agendado ao concluído.",
+        "tela": "tela-agenda",
+        "beneficios": [
+          {
+            "icone": "calendario",
+            "titulo": "Agenda do dia",
+            "texto": "Por profissional, em colunas."
+          },
+          {
+            "icone": "check",
+            "titulo": "Etapas do atendimento",
+            "texto": "Chegou, em atendimento, concluído."
+          },
+          {
+            "icone": "tablet",
+            "titulo": "Celular ou tablet",
+            "texto": "Para a recepção e para o dono."
+          }
+        ]
+      }
+    },
+    {
+      "id": "comandas-e-caixa",
+      "card": {
+        "titulo": "Comanda e caixa *sem papel*",
+        "sub": "Abra, some serviços e produtos e feche."
+      },
+      "ganchos": [
+        "Conta do cliente anotada em caderno? Dá para errar.",
+        "Fechar o caixa no fim do dia não precisa ser um mistério.",
+        "Serviço, produto e forma de pagamento no mesmo lugar.",
+        "Comanda de papel perde, molha e não soma sozinha."
+      ],
+      "corpos": [
+        "Comanda é a conta do cliente: você abre, adiciona serviços e produtos e fecha recebendo o pagamento, que pode ser dividido em mais de uma forma.",
+        "Depois de fechada, o valor e a comissão não mudam. O caixa mostra o que entrou.",
+        "Abra o caixa com o troco inicial, abra as comandas dos clientes e feche tudo no mesmo app."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "Comanda e caixa no celular: abra a conta do cliente, some serviços e produtos e feche. O pagamento pode ser dividido. Barbarizando: {link}",
+        "Chega de comanda de papel. Serviços, produtos e pagamento no mesmo lugar. {link}",
+        "Depois de fechada, a comanda não muda. Valor e comissão ficam registrados: {link}"
+      ],
+      "premium": {
+        "titulo": "COMANDA<BR>E CAIXA",
+        "destaque": "TUDO REGISTRADO",
+        "sub": "Abra a conta do cliente, some <b>serviços e produtos</b> e feche recebendo.",
+        "tela": "tela-comandas",
+        "beneficios": [
+          {
+            "icone": "carrinho",
+            "titulo": "Serviços e produtos",
+            "texto": "Na mesma comanda."
+          },
+          {
+            "icone": "cartao",
+            "titulo": "Pagamento dividido",
+            "texto": "Em mais de uma forma."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Fechou, não muda",
+            "texto": "Valor e comissão ficam fixos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "equipe",
+      "card": {
+        "titulo": "Cada barbeiro *com a sua agenda*",
+        "sub": "Equipe cadastrada, serviços de cada um e convite por e-mail."
+      },
+      "ganchos": [
+        "Cada barbeiro faz seus serviços e tem a sua agenda.",
+        "Equipe grande ou pequena: cada um precisa ver o próprio dia.",
+        "Quem atende o quê na sua barbearia está registrado em algum lugar?",
+        "Dá para convidar o barbeiro para ver só a própria agenda?"
+      ],
+      "corpos": [
+        "Cadastre quem atende na barbearia e marque os serviços que cada pessoa faz. Para ver a própria agenda, o profissional recebe um convite por e-mail.",
+        "O cliente pode escolher o profissional na hora de agendar, ou deixar que a barbearia encontre quem estiver livre.",
+        "Equipe, serviços e agenda de cada um no mesmo painel do dono."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "Cadastre sua equipe, marque os serviços de cada barbeiro e convide por e-mail para ver a própria agenda. Barbarizando: {link}",
+        "Cada barbeiro com a sua agenda e os seus serviços. {link}",
+        "O cliente escolhe o profissional, e cada um vê o próprio dia: {link}"
+      ],
+      "premium": {
+        "titulo": "AGENDA POR<br>BARBEIRO",
+        "destaque": "EQUIPE ORGANIZADA",
+        "sub": "Cadastre a equipe, marque os <b>serviços de cada um</b> e convide por e-mail.",
+        "tela": "tela-equipe",
+        "beneficios": [
+          {
+            "icone": "pessoas",
+            "titulo": "Cadastro da equipe",
+            "texto": "Quem atende na barbearia."
+          },
+          {
+            "icone": "regua",
+            "titulo": "Serviços de cada um",
+            "texto": "Marque o que cada pessoa faz."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Convite por e-mail",
+            "texto": "Para ver a própria agenda."
+          }
+        ]
+      }
+    },
+    {
+      "id": "estoque",
+      "card": {
+        "titulo": "Estoque que *baixa sozinho*",
+        "sub": "Fechou a comanda, o produto sai do estoque."
+      },
+      "ganchos": [
+        "Pomada acabou e ninguém avisou?",
+        "Quanto de produto você tem na barbearia hoje?",
+        "Vender produto sem controlar estoque é perder dinheiro sem ver.",
+        "Fornecedor, compra e saída de produto no mesmo lugar."
+      ],
+      "corpos": [
+        "Ligue o controle nos produtos que você quer acompanhar. Cada comanda fechada tira a quantidade do estoque sozinha.",
+        "Compras, perdas e ajustes ficam num histórico que não pode ser alterado. E dá para cadastrar fornecedores.",
+        "Você escolhe quais produtos controlar. O resto continua simples."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "Cada comanda fechada baixa o produto do estoque sozinha. Compras, perdas e ajustes ficam em histórico. Barbarizando: {link}",
+        "Controle de estoque da barbearia que baixa sozinho a cada venda: {link}",
+        "Pomada, shampoo, fornecedor: o estoque da sua barbearia sem planilha. {link}"
+      ],
+      "premium": {
+        "titulo": "CONTROLE<BR>DE ESTOQUE",
+        "destaque": "BAIXA SOZINHO",
+        "sub": "Cada comanda fechada <b>tira o produto</b> do estoque, sem você fazer nada.",
+        "tela": "tela-estoque",
+        "beneficios": [
+          {
+            "icone": "lista",
+            "titulo": "Só o que você quiser",
+            "texto": "Ligue nos produtos certos."
+          },
+          {
+            "icone": "troca",
+            "titulo": "Baixa automática",
+            "texto": "A cada comanda fechada."
+          },
+          {
+            "icone": "documento",
+            "titulo": "Histórico fixo",
+            "texto": "Compras, perdas e ajustes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "comissoes-e-repasses",
+      "card": {
+        "titulo": "Comissão sem *planilha*",
+        "sub": "Regra por profissional e serviço, repasse registrado."
+      },
+      "ganchos": [
+        "Fim do mês e a conta da comissão não bate?",
+        "Planilha de comissão é a que mais dá briga em barbearia.",
+        "Quanto cada barbeiro tem a receber? O app sabe.",
+        "Mudou a regra da comissão? O que já foi feito não pode mudar."
+      ],
+      "corpos": [
+        "Defina quanto cada profissional ganha por atendimento. A comissão fica registrada na hora do atendimento, e o que já foi feito não muda se a regra mudar.",
+        "O repasse é o pagamento da comissão ao profissional: o app mostra o que está pendente e quem tem saldo.",
+        "Regras de comissão e repasses no mesmo painel do dono, sem conta de cabeça."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "Defina a comissão de cada profissional e acompanhe o repasse pendente. Se a regra mudar, o que já foi feito não muda. Barbarizando: {link}",
+        "Comissão da equipe calculada pelo app, sem planilha: {link}",
+        "Quanto cada barbeiro tem a receber? Veja no repasse do Barbarizando: {link}"
+      ],
+      "premium": {
+        "titulo": "COMISSÃO<BR>SEM PLANILHA",
+        "destaque": "REGRA POR SERVIÇO",
+        "sub": "A comissão fica registrada <b>na hora do atendimento</b> e não muda depois.",
+        "tela": "tela-comissoes",
+        "beneficios": [
+          {
+            "icone": "moedaCirculo",
+            "titulo": "Regra de comissão",
+            "texto": "Por profissional e serviço."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Repasse pendente",
+            "texto": "Veja quem tem saldo."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Histórico preservado",
+            "texto": "Mudou a regra? O feito não muda."
+          }
+        ]
+      }
+    },
+    {
+      "id": "metas-e-relatorios",
+      "card": {
+        "titulo": "Metas e relatórios *do mês*",
+        "sub": "Veja o faturamento sem montar planilha."
+      },
+      "ganchos": [
+        "Quanto sua barbearia faturou no mês? Dá para saber em segundos.",
+        "Meta de faturamento é bom: dá direção para a equipe.",
+        "Relatório de barbearia não precisa ser planilha.",
+        "Quem vendeu mais no mês? Tem ranking."
+      ],
+      "corpos": [
+        "Defina a meta mensal de faturamento e acompanhe o quanto já foi feito. A conta usa serviços e produtos de comandas pagas, já com os descontos.",
+        "Os relatórios mostram o que foi vendido no mês: serviços e produtos, por profissional e por período.",
+        "Quando ainda não há dados suficientes, o app avisa em vez de mostrar número inventado."
+      ],
+      "ctas": [
+        "Cadastre sua barbearia 👉 {link}",
+        "Cadastrar minha barbearia 👉 {link}",
+        "Conheça 👉 {link}"
+      ],
+      "curtos": [
+        "Meta mensal, ranking da equipe e relatório do mês: o Barbarizando mostra o faturamento sem planilha. {link}",
+        "Quanto sua barbearia faturou no mês? Veja nos relatórios. {link}",
+        "Meta de faturamento e ranking da equipe na palma da mão: {link}"
+      ],
+      "premium": {
+        "titulo": "METAS E<BR>RELATÓRIOS",
+        "destaque": "VEJA O MÊS",
+        "sub": "Meta de faturamento e relatório <b>sem montar planilha</b>.",
+        "tela": "tela-metas",
+        "beneficios": [
+          {
+            "icone": "alvo",
+            "titulo": "Meta mensal",
+            "texto": "Quanto falta para chegar."
+          },
+          {
+            "icone": "medalha",
+            "titulo": "Ranking da equipe",
+            "texto": "Por faturamento do mês."
+          },
+          {
+            "icone": "grafico",
+            "titulo": "Relatórios",
+            "texto": "Serviços e produtos vendidos."
+          }
+        ]
+      }
+    }
+  ]
+}

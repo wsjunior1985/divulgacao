@@ -22,6 +22,7 @@ export const ORDEM_APPS = [
   "aeroliso",
   "euquiz",
   "voutrocar",
+  "barbarizando",
 ];
 
 /** Época do rodízio: slot 0. Não mexa depois de publicar, ou o rodízio pula temas. */

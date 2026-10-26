@@ -49,11 +49,11 @@ entra no rodízio depois que o card 1 no padrão premium for aprovado pelo dono.
 
 ## Valores atuais
 
-- Apps: 13 (7 horários, em rodízio)
+- Apps: 14 (7 horários, em rodízio)
 - Horários: `08h`, `11h`, `14h`, `17h`, `20h`, `21h`, `22h`
 - Ordem atual: `Remedin`, `AI-Eat`, `Vai dar quanto?`, `GASONOL`,
   `Convertendo`, `O Palpiteiro`, `Papelzinho`, `O Meu Álbum`,
-  `Rifazinha`, `Aeroliso`, `EuQuiz`, `VouTroCar`, `Barbarizando`
+  `Rifazinha`, `Aeroliso`, `EuQuiz`, `VouTroCar`, `Barbarizando`, `Faz o PIX!`
 
 ## Sequência mínima
 

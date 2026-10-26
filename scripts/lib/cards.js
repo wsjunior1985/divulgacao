@@ -23,6 +23,7 @@ import { omeualbum } from "./cards/omeualbum.js";
 import { opalpiteiro } from "./cards/opalpiteiro.js";
 import { padrao } from "./cards/padrao.js";
 import { barbarizando } from "./cards/barbarizando.js";
+import { fazopix } from "./cards/fazopix.js";
 
 export { semMarcadores } from "./cards/comum.js";
 
@@ -31,7 +32,7 @@ export const FORMATOS = {
   vertical: { largura: 1080, altura: 1920 },
 };
 
-const LAYOUTS = { vitrine, aieat, convertendo, vaidarquanto, remedin, papelzinho, omeualbum, opalpiteiro, padrao, barbarizando };
+const LAYOUTS = { vitrine, aieat, convertendo, vaidarquanto, remedin, papelzinho, omeualbum, opalpiteiro, padrao, barbarizando, fazopix };
 
 export function montarHtml({ app, post, formato = "feed", variacao = 0 }) {
   const { largura: L, altura: A } = FORMATOS[formato] ?? FORMATOS.feed;

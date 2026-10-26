@@ -1,0 +1,496 @@
+{
+  "id": "fazopix",
+  "nome": "Faz o PIX!",
+  "url": "https://fazopix.waldeapps.systems",
+  "tagline": "Do QR Pix em poucos toques.",
+  "fonte": "jakarta",
+  "marca": {
+    "emoji": "💚",
+    "fundoA": "#06231e",
+    "destaque": "#00806b"
+  },
+  "visual": {
+    "layout": "fazopix",
+    "efeito": "luz",
+    "acento": "#19c2a6",
+    "acento2": "#5fdcc6",
+    "calor": "#00806b",
+    "fonteTitulo": "jakarta",
+    "urlSufixo": "",
+    "selos": [
+      {
+        "icone": "check",
+        "titulo": "Sem cadastro"
+      },
+      {
+        "icone": "escudo",
+        "titulo": "Dados no aparelho"
+      },
+      {
+        "icone": "offline",
+        "titulo": "Funciona offline"
+      }
+    ]
+  },
+  "recursos": [
+    {
+      "icone": "celular",
+      "titulo": "QR Pix a partir da chave",
+      "descricao": "Chave, nome e cidade bastam; valor, descrição e TXID são opcionais."
+    },
+    {
+      "icone": "compartilhar",
+      "titulo": "Copiar, compartilhar e baixar",
+      "descricao": "Código Pix, PNG, SVG e cartão para imprimir."
+    },
+    {
+      "icone": "escudo",
+      "titulo": "Dados só no aparelho",
+      "descricao": "Tudo é gerado no navegador, sem servidor e sem cadastro."
+    },
+    {
+      "icone": "offline",
+      "titulo": "Instala e funciona offline",
+      "descricao": "PWA com modo claro e escuro."
+    }
+  ],
+  "chips": [
+    "QR Code Pix",
+    "Sem cadastro",
+    "Copiar e compartilhar",
+    "Baixar PNG e SVG",
+    "Imprimir cartão"
+  ],
+  "selos": [
+    {
+      "icone": "check",
+      "titulo": "Sem cadastro"
+    },
+    {
+      "icone": "escudo",
+      "titulo": "Dados no aparelho"
+    },
+    {
+      "icone": "offline",
+      "titulo": "Funciona offline"
+    }
+  ],
+  "hashtags": [
+    "#fazopix",
+    "#pix",
+    "#qrcodepix",
+    "#cobrancapix",
+    "#autonomo",
+    "#pixcopiaecola"
+  ],
+  "posts": [
+    {
+      "id": "qr-em-segundos",
+      "card": {
+        "titulo": "Da chave ao *QR Pix*",
+        "sub": "Chave, nome e cidade. O resto é opcional."
+      },
+      "ganchos": [
+        "Precisa cobrar por Pix e não quer ficar ditando a chave?",
+        "Dividir a conta e todo mundo pedindo a chave Pix de novo?",
+        "Cobrar no Pix com QR Code não precisa de maquininha nem cadastro.",
+        "E se a sua chave Pix virasse um QR Code em poucos toques?"
+      ],
+      "corpos": [
+        "Você informa a chave, o nome e a cidade de quem recebe, e o Faz o PIX! monta o QR Code na hora. Quem vai pagar é só escanear no app do banco.",
+        "Preencha só o que muda. Com chave, nome e cidade o QR já aparece, e dá para copiar o código Pix para colar no WhatsApp.",
+        "Serve para dividir a conta com os amigos e para cobrar um cliente: o fluxo é o mesmo, direto até o QR."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Chave, nome e cidade e pronto: o Faz o PIX! gera o seu QR Code Pix na hora. {link}",
+        "Cobrar por Pix com QR Code, sem cadastro e sem maquininha. Gere o seu: {link}",
+        "Da chave Pix ao QR Code em poucos toques: {link}"
+      ],
+      "premium": {
+        "titulo": "Da chave<br>ao QR Pix",
+        "destaque": "Em poucos toques",
+        "sub": "Informe <b>chave, nome e cidade</b> e o QR Code Pix aparece na hora.",
+        "tela": "tela-qr-pronto",
+        "beneficios": [
+          {
+            "icone": "cronometro",
+            "titulo": "QR na hora",
+            "texto": "Aparece assim que você preenche."
+          },
+          {
+            "icone": "pessoas",
+            "titulo": "Amigos e clientes",
+            "texto": "O mesmo caminho para os dois."
+          },
+          {
+            "icone": "check",
+            "titulo": "Só o essencial",
+            "texto": "Chave, nome e cidade."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sem-cadastro",
+      "card": {
+        "titulo": "Sem cadastro, *sem login*",
+        "sub": "Abriu o app, preencheu, gerou."
+      },
+      "ganchos": [
+        "Gerar um QR Pix sem criar conta em lugar nenhum.",
+        "Quer cobrar um Pix e o site pede cadastro, e-mail, senha?",
+        "Para gerar um QR Code Pix, você não precisa se cadastrar.",
+        "Abriu, preencheu, gerou. Sem login no meio do caminho."
+      ],
+      "corpos": [
+        "No Faz o PIX! não existe conta nem senha. Você abre, preenche os dados de quem recebe e o QR Code já está pronto.",
+        "São poucos campos: tipo de chave, chave, nome e cidade. Cada campo a mais é um passo a mais, então o app pede o mínimo.",
+        "Funciona para quem cobra de vez em quando e para quem cobra todo dia: abrir e gerar, sem fila de cadastro."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Faz o PIX!: gere o QR Code da sua chave Pix sem cadastro e sem login. {link}",
+        "Sem conta, sem senha. Abriu, preencheu, gerou o QR Pix: {link}",
+        "QR Code Pix sem cadastro, direto no celular: {link}"
+      ],
+      "premium": {
+        "titulo": "Sem cadastro,<br>sem login",
+        "destaque": "Abriu, gerou",
+        "sub": "Poucos campos e <b>nenhuma conta</b>: tipo de chave, chave, nome e cidade.",
+        "tela": "tela-formulario",
+        "beneficios": [
+          {
+            "icone": "check",
+            "titulo": "Sem cadastro",
+            "texto": "Nada de conta ou senha."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Poucos campos",
+            "texto": "Tipo de chave, chave, nome, cidade."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Direto no celular",
+            "texto": "Abre no navegador."
+          }
+        ]
+      }
+    },
+    {
+      "id": "valor-descricao",
+      "card": {
+        "titulo": "Valor fixo, descrição e *TXID*",
+        "sub": "Tudo opcional, só quando você precisar."
+      },
+      "ganchos": [
+        "Quer que o QR já venha com o valor certo?",
+        "Cobrança de R$ 35,00? O valor já pode ir dentro do QR.",
+        "Valor, descrição e identificador: coloque só o que ajuda.",
+        "Quem paga não precisa digitar o valor."
+      ],
+      "corpos": [
+        "Digite o valor e ele vai dentro do QR Code, então quem paga não precisa digitar. Os botões +10, +20, +50 e +100 somam rápido.",
+        "Se preferir, deixe sem valor e quem paga digita no banco. Em Mais opções você pode incluir uma descrição e um identificador (TXID).",
+        "Descrição para lembrar do que se trata e TXID para identificar o pedido: opcionais, só quando fizerem sentido para você."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Coloque o valor dentro do QR Pix e quem paga não precisa digitar. Valor, descrição e TXID são opcionais. {link}",
+        "Valor fixo no QR Code Pix, com descrição e identificador se você quiser: {link}",
+        "Cobrança com valor certo: o Faz o PIX! põe o valor dentro do QR. {link}"
+      ],
+      "premium": {
+        "titulo": "Valor fixo,<br>descrição e TXID",
+        "destaque": "Só se precisar",
+        "sub": "Coloque o valor no QR para <b>ninguém digitar</b>. O resto é opcional.",
+        "tela": "tela-mais-opcoes",
+        "beneficios": [
+          {
+            "icone": "moedaCirculo",
+            "titulo": "Valor no QR",
+            "texto": "Com botões de soma rápida."
+          },
+          {
+            "icone": "documento",
+            "titulo": "Descrição",
+            "texto": "Para lembrar do que se trata."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Identificador (TXID)",
+            "texto": "Letras e números."
+          }
+        ]
+      }
+    },
+    {
+      "id": "logo-no-qr",
+      "card": {
+        "titulo": "Sua logo no *meio do QR*",
+        "sub": "Escolha uma imagem e ela vai no centro."
+      },
+      "ganchos": [
+        "QR Pix com a cara da sua marca no meio.",
+        "Autônomo, freelancer, vendedor: dá para pôr a sua logo no QR.",
+        "Quer um QR Pix que não pareça igual a todos os outros?",
+        "A sua logo pode ficar no centro do QR Code Pix."
+      ],
+      "corpos": [
+        "Em Mais opções você escolhe uma imagem (PNG, JPG, WEBP ou SVG) e ela entra no centro do QR Code. Dá para tirar ou mostrar a logo quando quiser.",
+        "O app usa o nível mais alto de correção de erro do QR para a logo não atrapalhar a leitura.",
+        "Para quem cobra de clientes, o QR com a sua logo deixa o cartão e a mensagem mais profissionais."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Coloque a sua logo no centro do QR Code Pix. Escolha a imagem e pronto: {link}",
+        "QR Pix com a sua marca no meio, para autônomos e pequenos negócios: {link}",
+        "Faz o PIX!: logo no centro do QR e correção de erro nível H. {link}"
+      ],
+      "premium": {
+        "titulo": "Sua logo<br>no QR Pix",
+        "destaque": "No centro do QR",
+        "sub": "Escolha uma imagem e ela entra <b>no meio do código</b>.",
+        "tela": "tela-qr-logo",
+        "beneficios": [
+          {
+            "icone": "camera",
+            "titulo": "Sua imagem",
+            "texto": "PNG, JPG, WEBP ou SVG."
+          },
+          {
+            "icone": "escudo",
+            "titulo": "Leitura protegida",
+            "texto": "Correção de erro nível H."
+          },
+          {
+            "icone": "check",
+            "titulo": "Tira e põe",
+            "texto": "Mostre ou esconda a logo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "copiar-compartilhar-baixar",
+      "card": {
+        "titulo": "Copie, compartilhe *ou baixe*",
+        "sub": "Código, PNG e SVG na mesma tela."
+      },
+      "ganchos": [
+        "QR pronto. E agora, como mando para a pessoa?",
+        "Pix copia e cola, imagem ou arquivo: você escolhe.",
+        "Mandar a cobrança no WhatsApp leva um toque.",
+        "Do QR pronto para a conversa em segundos."
+      ],
+      "corpos": [
+        "Com o QR pronto, você copia o código Pix (o copia e cola), compartilha pelo celular ou baixa o QR em PNG ou SVG.",
+        "O botão Copiar código Pix fica fixo na parte de baixo da tela no celular, então você não precisa voltar ao topo.",
+        "PNG para mandar como imagem e SVG para quem precisa de um arquivo vetorial, como para imprimir em tamanho maior."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Copie o código Pix, compartilhe ou baixe o QR em PNG ou SVG. Tudo na mesma tela: {link}",
+        "Pix copia e cola, compartilhar e baixar o QR Code. {link}",
+        "Do QR pronto para o WhatsApp em um toque: {link}"
+      ],
+      "premium": {
+        "titulo": "Copie, compartilhe<br>ou baixe",
+        "destaque": "PNG e SVG",
+        "sub": "O QR pronto vira <b>código, imagem ou arquivo</b> em um toque.",
+        "tela": "tela-exportar",
+        "beneficios": [
+          {
+            "icone": "documento",
+            "titulo": "Copiar o código",
+            "texto": "O Pix copia e cola."
+          },
+          {
+            "icone": "compartilhar",
+            "titulo": "Compartilhar",
+            "texto": "Pelo menu do celular."
+          },
+          {
+            "icone": "nuvem",
+            "titulo": "Baixar PNG ou SVG",
+            "texto": "Para guardar ou mandar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "imprimir-cartao",
+      "card": {
+        "titulo": "Imprima o *cartão Pix*",
+        "sub": "O QR no balcão, na mesa ou na mochila."
+      },
+      "ganchos": [
+        "QR Pix impresso: cliente chega, escaneia e paga.",
+        "Vende na feira, atende em casa ou recebe na porta? Imprima o cartão.",
+        "Tem cobrança que se repete? Deixe o QR impresso.",
+        "Um cartão com o QR Pix pronto para imprimir."
+      ],
+      "corpos": [
+        "O Faz o PIX! monta um cartão com o QR Code, o nome de quem recebe e o valor (ou Valor livre), pronto para imprimir.",
+        "O cartão traz a frase Pague com Pix e o código copia e cola embaixo, para quem não consegue escanear.",
+        "Imprima e deixe à mão para as cobranças que se repetem."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Imprima um cartão com o seu QR Pix, nome e valor. Pronto para o balcão ou a mesa: {link}",
+        "Cartão Pix para imprimir direto do app: {link}",
+        "QR Pix impresso para cobrar de novo e de novo. Faz o PIX!: {link}"
+      ],
+      "premium": {
+        "titulo": "Imprima o<br>cartão Pix",
+        "destaque": "Pronto para o balcão",
+        "sub": "Um cartão com <b>QR, nome e valor</b> para imprimir direto do app.",
+        "tela": "tela-cartao",
+        "beneficios": [
+          {
+            "icone": "documento",
+            "titulo": "Cartão pronto",
+            "texto": "QR, nome e valor."
+          },
+          {
+            "icone": "tablet",
+            "titulo": "Imprimir do app",
+            "texto": "Direto do navegador."
+          },
+          {
+            "icone": "lista",
+            "titulo": "Copia e cola",
+            "texto": "O código fica no rodapé."
+          }
+        ]
+      }
+    },
+    {
+      "id": "so-no-aparelho",
+      "card": {
+        "titulo": "Sua chave Pix fica *no aparelho*",
+        "sub": "O QR é gerado aqui mesmo, sem servidor."
+      },
+      "ganchos": [
+        "Para onde vai a sua chave Pix quando você gera um QR?",
+        "Gerar QR Pix sem mandar a sua chave para servidor nenhum.",
+        "Privacidade na cobrança: tudo roda no seu navegador.",
+        "Nenhuma chave Pix sai do seu celular."
+      ],
+      "corpos": [
+        "O código Pix e o QR são gerados no seu navegador. O Faz o PIX! não tem servidor para guardar chave, nome ou valor.",
+        "Se quiser, marque Lembrar meus dados neste aparelho: eles ficam salvos só no navegador, para a próxima cobrança.",
+        "Sem cadastro, sem conta e sem backend. O que você digita fica com você."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Nada sai do seu aparelho: o QR Pix é gerado no seu navegador, sem servidor e sem cadastro. {link}",
+        "Sua chave Pix não vai para servidor nenhum. Faz o PIX!: {link}",
+        "Lembrar meus dados é opcional e fica só neste navegador: {link}"
+      ],
+      "premium": {
+        "titulo": "Nada sai<br>do&nbsp;aparelho",
+        "destaque": "Sem servidor",
+        "sub": "O QR é gerado <b>no seu navegador</b>. Nenhum dado vai para um servidor.",
+        "tela": "tela-lembrar",
+        "beneficios": [
+          {
+            "icone": "escudo",
+            "titulo": "Chave, nome e valor",
+            "texto": "Ficam com você."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Gerado no navegador",
+            "texto": "Código e QR locais."
+          },
+          {
+            "icone": "check",
+            "titulo": "Lembrar é opcional",
+            "texto": "Salvo só neste navegador."
+          }
+        ]
+      }
+    },
+    {
+      "id": "claro-escuro-offline",
+      "card": {
+        "titulo": "Claro ou escuro, *até offline*",
+        "sub": "Instale como app e use quando precisar."
+      },
+      "ganchos": [
+        "Cobrança à noite com a tela clara estourando no olho?",
+        "Sem internet na hora de cobrar? Dá para gerar o QR.",
+        "Um app de QR Pix que você instala e abre como qualquer outro.",
+        "Modo escuro, instalável e que funciona offline."
+      ],
+      "corpos": [
+        "O Faz o PIX! tem modo claro e escuro e pode ser instalado como app no celular (PWA).",
+        "Depois de instalado, ele funciona offline: o QR é gerado no próprio aparelho, sem depender de servidor.",
+        "Fica um ícone na tela inicial para abrir direto e gerar o QR quando precisar."
+      ],
+      "ctas": [
+        "Gere o seu 👉 {link}",
+        "Faça o seu QR Pix 👉 {link}",
+        "Abra e gere 👉 {link}"
+      ],
+      "curtos": [
+        "Modo claro e escuro, instala como app e funciona offline: {link}",
+        "Instale o Faz o PIX! na tela inicial e gere QR Pix até sem internet: {link}",
+        "QR Pix em modo escuro, instalável e offline. {link}"
+      ],
+      "premium": {
+        "titulo": "Modo escuro<br>e claro",
+        "destaque": "Instale como app",
+        "sub": "O app tem <b>modo escuro e modo claro</b>, instala como app e gera o QR no aparelho.",
+        "tela": "tela-claro-escuro",
+        "beneficios": [
+          {
+            "icone": "monitor",
+            "titulo": "Escuro e claro",
+            "texto": "Você escolhe o tema."
+          },
+          {
+            "icone": "celular",
+            "titulo": "Instala como app",
+            "texto": "Ícone na tela inicial."
+          },
+          {
+            "icone": "offline",
+            "titulo": "Funciona offline",
+            "texto": "QR gerado no aparelho."
+          }
+        ]
+      }
+    }
+  ]
+}

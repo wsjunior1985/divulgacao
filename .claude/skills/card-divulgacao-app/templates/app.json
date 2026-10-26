@@ -1,0 +1,51 @@
+{
+  "id": "novoapp",
+  "nome": "Novo App",
+  "url": "https://novoapp.waldeapps.systems",
+  "tagline": "Frase curta de marca.",
+  "fonte": "inter",
+  "marca": { "emoji": "🚀", "fundoA": "#101427", "destaque": "#7c3aed" },
+  "visual": {
+    "layout": "vitrine",
+    "efeito": "luz",
+    "acento": "#a78bfa",
+    "acento2": "#c4b5fd",
+    "calor": "#7c3aed",
+    "fonteTitulo": "inter",
+    "urlSufixo": "",
+    "selos": [
+      { "icone": "check", "titulo": "Selo 1" },
+      { "icone": "check", "titulo": "Selo 2" },
+      { "icone": "check", "titulo": "Selo 3" }
+    ]
+  },
+  "recursos": [
+    { "icone": "check", "titulo": "Recurso 1", "descricao": "Descrição curta e verdadeira." },
+    { "icone": "check", "titulo": "Recurso 2", "descricao": "Descrição curta e verdadeira." },
+    { "icone": "check", "titulo": "Recurso 3", "descricao": "Descrição curta e verdadeira." }
+  ],
+  "chips": ["Chip 1", "Chip 2", "Chip 3"],
+  "selos": [ { "icone": "check", "titulo": "Selo 1" } ],
+  "hashtags": ["#novoapp", "#tema1", "#tema2", "#tema3", "#tema4"],
+  "posts": [
+    {
+      "id": "tema-1",
+      "card": { "titulo": "Título com *destaque*", "sub": "Subtítulo curto" },
+      "ganchos": ["Abertura 1", "Abertura 2"],
+      "corpos": ["Parágrafo 1", "Parágrafo 2"],
+      "ctas": ["👉 {link}"],
+      "curtos": ["Versão curta com {link}"],
+      "premium": {
+        "titulo": "Primeira<br>linha",
+        "destaque": "Linha de destaque",
+        "sub": "Subtítulo com <b>negrito</b>.",
+        "tela": "tela-1",
+        "beneficios": [
+          { "icone": "check", "titulo": "Benefício 1", "texto": "Frase de apoio." },
+          { "icone": "check", "titulo": "Benefício 2", "texto": "Frase de apoio." },
+          { "icone": "check", "titulo": "Benefício 3", "texto": "Frase de apoio." }
+        ]
+      }
+    }
+  ]
+}

@@ -319,7 +319,71 @@
         "url": "https://publish.buffer.com/",
         "em": "2026-10-25T18:30:45.320Z"
       }
+    },
+    "fazopix": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myscekojdo2y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myscekojdo2y",
+        "em": "2026-10-26T17:58:51.541Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "18099186020432138",
+        "url": "https://www.instagram.com/reel/18099186020432138",
+        "em": "2026-10-26T17:59:49.186Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1468795971814601",
+        "url": "https://www.facebook.com/1468795971814601",
+        "em": "2026-10-26T17:59:55.621Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17935124274408128",
+        "url": "https://www.threads.net/@me/post/17935124274408128",
+        "em": "2026-10-26T18:00:34.657Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf95457099fd3e032b0852",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T18:00:38.121Z"
+      }
+    },
+    "voutrocar": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mysck4t2ot2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mysck4t2ot2d",
+        "em": "2026-10-26T18:01:58.025Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "17941905891380609",
+        "url": "https://www.instagram.com/reel/17941905891380609",
+        "em": "2026-10-26T18:02:53.276Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "2213941182878553",
+        "url": "https://www.facebook.com/2213941182878553",
+        "em": "2026-10-26T18:02:59.252Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17881417017543303",
+        "url": "https://www.threads.net/@me/post/17881417017543303",
+        "em": "2026-10-26T18:03:31.569Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf95f67099fd3e032b6e52",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T18:03:34.290Z"
+      }
     }
   },
-  "atualizadoEm": "2026-10-26T08:49:26.471Z"
+  "atualizadoEm": "2026-10-26T18:03:34.290Z"
 }

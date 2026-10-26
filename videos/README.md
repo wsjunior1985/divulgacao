@@ -34,6 +34,8 @@ O estado do que já saiu fica em `estado/videos.json` (IDs de cada post por rede
 | Papelzinho | `projetos/papelzinho/video-vertical/` | `gerador/gen.mjs` | `assets/` |
 | Remedin | `projetos/remedin/` | `build.py` | `music/compose.py` |
 | Vai dar quanto? | `projetos/vaidarquanto/` | `video/tools/gen.mjs` | `music/compose.py`, `video/tools/finalize.sh` |
+| Faz o PIX! | `projetos/fazopix/` | `video/tools/gen.mjs` | `music/compose.py`, `finalize.sh` |
+| VouTroCar | `projetos/voutrocar/` | `video/tools/gen.mjs` | `music/compose.py`, `finalize.sh` |
 
 Os `gen-v1`/`gen-v2` são versões anteriores (aparelho cortado), guardadas só
 para histórico. O app `comunidadedoceu` não guarda mais nenhuma pasta de vídeo:

@@ -8,7 +8,9 @@
     "convertendo",
     "opalpiteiro",
     "barbarizando",
-    "aeroliso"
+    "aeroliso",
+    "fazopix",
+    "voutrocar"
   ],
   "videos": {
     "aieat": {
@@ -149,6 +151,34 @@
         "bluesky": "Menos busca, mais viagem: o Aeroliso confere o preço da sua rota todo dia e avisa quando cai.\n\naeroliso.waldeapps.systems",
         "tiktok": "Já olhou o preço da passagem hoje? 👇\n\nMenos busca, mais viagem: o Aeroliso confere o preço da sua rota todo dia e avisa quando cai.\n\naeroliso.waldeapps.systems\n\n#aeroliso #passagensaereas #viagembarata #monitordepassagem #viajarmelhor",
         "x": "Menos busca, mais viagem: o Aeroliso confere o preço da sua rota todo dia e avisa quando cai.\n\naeroliso.waldeapps.systems"
+      }
+    },
+    "fazopix": {
+      "arquivo": "videos/9x16/fazopix.mp4",
+      "nome": "Faz o PIX!",
+      "titulo": "Vai cobrar no Pix? Qual é a sua chave?",
+      "url": "https://fazopix.waldeapps.systems",
+      "legendas": {
+        "instagram": "Vai cobrar no Pix? Qual é a sua chave? 💚\n\nNo Faz o PIX! você informa chave, nome e cidade e o QR Code Pix sai na hora. Valor, descrição e a sua logo no QR são opcionais.\n\nCopie o código, compartilhe, baixe em PNG ou SVG e imprima o cartão. Sem cadastro, nada sai do seu aparelho, funciona offline e instala como app.\n\n🔗 fazopix.waldeapps.systems (link na bio)\n\n#fazopix #pix #qrcodepix #cobrancapix #autonomo",
+        "facebook": "Vai cobrar no Pix? Qual é a sua chave? 💚\n\nNo Faz o PIX! você informa chave, nome e cidade e o QR Code Pix sai na hora. Valor, descrição e a sua logo no QR são opcionais.\n\nCopie o código, compartilhe, baixe em PNG ou SVG e imprima o cartão. Sem cadastro, nada sai do seu aparelho, funciona offline e instala como app.\n\n🔗 https://fazopix.waldeapps.systems?utm_source=facebook&utm_medium=video&utm_campaign=apresentacao",
+        "threads": "Vai cobrar no Pix? Informe chave, nome e cidade e o QR sai na hora. Copie, compartilhe, baixe PNG/SVG ou imprima. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems",
+        "bluesky": "Chave, nome e cidade: o QR Code Pix sai na hora. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems",
+        "tiktok": "Vai cobrar no Pix? Qual é a sua chave? 👇\n\nChave, nome e cidade: o QR Code Pix sai na hora. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems\n\n#fazopix #pix #qrcodepix #cobrancapix #autonomo",
+        "x": "Chave, nome e cidade: o QR Code Pix sai na hora. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems"
+      }
+    },
+    "voutrocar": {
+      "arquivo": "videos/9x16/voutrocar.mp4",
+      "nome": "VouTroCar",
+      "titulo": "Qual carro está bombando?",
+      "url": "https://voutrocar.waldeapps.systems",
+      "legendas": {
+        "instagram": "Qual carro está bombando? 🚗\n\nO VouTroCar mostra o ranking dos carros mais vendidos do Brasil, com emplacamentos do mês e do ano. Digite a marca ou o modelo e veja a posição na hora.\n\nCompare modelos lado a lado, com preço inicial e vendas na mesma tabela, e salve os favoritos sem criar conta.\n\n🔗 voutrocar.waldeapps.systems (link na bio)\n\n#voutrocar #carrosmaisvendidos #rankingdecarros #comprarcarro #carros",
+        "facebook": "Qual carro está bombando? 🚗\n\nO VouTroCar mostra o ranking dos carros mais vendidos do Brasil, com emplacamentos do mês e do ano. Digite a marca ou o modelo e veja a posição na hora.\n\nCompare modelos lado a lado, com preço inicial e vendas na mesma tabela, e salve os favoritos sem criar conta.\n\n🔗 https://voutrocar.waldeapps.systems?utm_source=facebook&utm_medium=video&utm_campaign=apresentacao",
+        "threads": "Qual carro está bombando? Veja o ranking dos mais vendidos, busque por marca ou modelo, compare lado a lado e salve favoritos sem criar conta.\n\nvoutrocar.waldeapps.systems",
+        "bluesky": "O ranking dos carros mais vendidos, a posição de cada modelo e comparação lado a lado.\n\nvoutrocar.waldeapps.systems",
+        "tiktok": "Qual carro está bombando? 👇\n\nO ranking dos carros mais vendidos, a posição de cada modelo e comparação lado a lado.\n\nvoutrocar.waldeapps.systems\n\n#voutrocar #carrosmaisvendidos #rankingdecarros #comprarcarro #carros",
+        "x": "O ranking dos carros mais vendidos, a posição de cada modelo e comparação lado a lado.\n\nvoutrocar.waldeapps.systems"
       }
     }
   }

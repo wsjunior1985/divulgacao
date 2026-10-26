@@ -13076,7 +13076,44 @@
         "em": "2026-10-26T04:12:06.418Z",
         "erro": null
       }
+    },
+    "485-aeroliso-historico": {
+      "instagram": {
+        "status": "ok",
+        "id": "18111736760187312",
+        "url": "https://www.instagram.com/p/18111736760187312",
+        "em": "2026-10-26T17:09:11.601Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122122925139435454",
+        "url": "https://www.facebook.com/1293634587162251_122122925139435454",
+        "em": "2026-10-26T17:09:11.601Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18106512731290009",
+        "url": "https://www.threads.net/@me/post/18106512731290009",
+        "em": "2026-10-26T17:09:11.601Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mys7lqhpiv2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mys7lqhpiv2d",
+        "em": "2026-10-26T17:09:11.601Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf8937fd915805681f83f6",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T17:09:11.601Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-10-26T05:34:42.659Z"
+  "atualizadoEm": "2026-10-26T17:09:11.601Z"
 }

@@ -72,8 +72,10 @@ export async function agendados(organizationId, channelId) {
   return dados.posts?.edges?.map((e) => e.node) ?? [];
 }
 
-async function criarPost({ channelId, texto, dueAt, imagem }) {
-  const assets = imagem?.startsWith("https://") ? `assets: [{ image: { url: "${escapar(imagem)}" } }]` : "";
+async function criarPost({ channelId, texto, dueAt, imagem, video }) {
+  const assets = video?.startsWith("https://")
+    ? `assets: [{ video: { url: "${escapar(video)}" } }]`
+    : imagem?.startsWith("https://") ? `assets: [{ image: { url: "${escapar(imagem)}" } }]` : "";
   const dados = await consultar(`mutation {
     createPost(input: {
       text: "${escapar(texto)}"
@@ -109,7 +111,7 @@ export async function removerPost(id) {
  * Enfileira o post nos canais Buffer pedidos. Agenda alguns minutos à frente
  * porque o Buffer recusa dueAt no passado, e é o próprio Buffer que publica.
  */
-export async function publicar({ texto, imagens, servicos }) {
+export async function publicar({ texto, imagens, servicos, video }) {
   const alvos = (servicos ?? env("BUFFER_SERVICOS", "twitter").split(","))
     .map((s) => s.trim().toLowerCase())
     .filter(Boolean);
@@ -132,7 +134,7 @@ export async function publicar({ texto, imagens, servicos }) {
     if (canal.isQueuePaused) {
       aviso(`buffer/${canal.service}: fila pausada no painel — o post foi criado mas não sai até despausar`);
     }
-    const post = await criarPost({ channelId: canal.id, texto, dueAt, imagem: imagens?.[0] });
+    const post = await criarPost({ channelId: canal.id, texto, dueAt, imagem: imagens?.[0], video });
     log(`buffer/${canal.service}: agendado para ${post.dueAt} (${post.id})`);
     resultados.push({ servico: canal.service, id: post.id, dueAt: post.dueAt });
   }

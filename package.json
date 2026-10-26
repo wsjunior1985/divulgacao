@@ -9,6 +9,9 @@
   },
   "scripts": {
     "publicar": "node scripts/publicar.mjs",
+    "videos:converter": "node scripts/videos-converter.mjs",
+    "videos:dry": "node scripts/publicar-video.mjs --dry-run",
+    "videos:publicar": "node scripts/publicar-video.mjs",
     "dry": "node scripts/publicar.mjs --dry-run",
     "agenda": "node scripts/agenda.mjs",
     "cards": "node scripts/cards.mjs",

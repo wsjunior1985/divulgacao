@@ -1,0 +1,325 @@
+{
+  "videos": {
+    "remedin": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myrcz4cev522",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myrcz4cev522",
+        "em": "2026-10-26T08:37:41.271Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "18450656368193975",
+        "url": "https://www.instagram.com/reel/18450656368193975",
+        "em": "2026-10-26T08:38:24.766Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1892719298362038",
+        "url": "https://www.facebook.com/1892719298362038",
+        "em": "2026-10-26T08:38:30.900Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18570434368079950",
+        "url": "https://www.threads.net/@me/post/18570434368079950",
+        "em": "2026-10-26T08:39:08.495Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf11afc99de55ddb70dd03",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T08:39:11.416Z"
+      }
+    },
+    "aieat": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myrd4nbsm32a",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myrd4nbsm32a",
+        "em": "2026-10-26T08:39:39.607Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "18118136974791861",
+        "url": "https://www.instagram.com/reel/18118136974791861",
+        "em": "2026-10-26T08:41:28.309Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1849118929711625",
+        "url": "https://www.facebook.com/1849118929711625",
+        "em": "2026-10-26T08:41:35.634Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17969659317190087",
+        "url": "https://www.threads.net/@me/post/17969659317190087",
+        "em": "2026-10-26T08:42:06.460Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf1261b5e7f9340921d21b",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T08:42:09.529Z"
+      }
+    },
+    "vaidarquanto": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myrdo5da4i25",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myrdo5da4i25",
+        "em": "2026-10-26T08:49:26.470Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "17976821441935669",
+        "url": "https://www.instagram.com/reel/17976821441935669",
+        "em": "2026-10-26T08:43:28.130Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "2179554219574606",
+        "url": "https://www.facebook.com/2179554219574606",
+        "em": "2026-10-26T08:43:34.493Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18022889111722571",
+        "url": "https://www.threads.net/@me/post/18022889111722571",
+        "em": "2026-10-26T08:44:38.010Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf12f83163d936550b698c",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T08:44:40.847Z"
+      }
+    },
+    "gasonol": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myrdg5zskc2y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myrdg5zskc2y",
+        "em": "2026-10-26T08:44:58.903Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "17964707136229617",
+        "url": "https://www.instagram.com/reel/17964707136229617",
+        "em": "2026-10-26T08:45:35.353Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1596768695017067",
+        "url": "https://www.facebook.com/1596768695017067",
+        "em": "2026-10-26T08:45:43.238Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17932134573165349",
+        "url": "https://www.threads.net/@me/post/17932134573165349",
+        "em": "2026-10-26T08:46:20.492Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf135e09f30424bdda5417",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T08:46:23.074Z"
+      }
+    },
+    "papelzinho": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myrdjt6aru25",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myrdjt6aru25",
+        "em": "2026-10-26T08:47:02.636Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "18109748969223895",
+        "url": "https://www.instagram.com/reel/18109748969223895",
+        "em": "2026-10-26T08:47:44.652Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1626678915876316",
+        "url": "https://www.facebook.com/1626678915876316",
+        "em": "2026-10-26T08:47:53.654Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18117261947599969",
+        "url": "https://www.threads.net/@me/post/18117261947599969",
+        "em": "2026-10-26T08:48:52.072Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adf13f62d4c1c99b88f4f66",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-26T08:48:55.036Z"
+      }
+    },
+    "convertendo": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myozc2ppv22f",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myozc2ppv22f",
+        "em": "2026-10-25T10:38:24.513Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "18017490755957268",
+        "url": "https://www.instagram.com/reel/18017490755957268",
+        "em": "2026-10-25T10:39:00.953Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1859525028813822",
+        "url": "https://www.facebook.com/1859525028813822",
+        "em": "2026-10-25T10:39:08.750Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17957016684273190",
+        "url": "https://www.threads.net/@me/post/17957016684273190",
+        "em": "2026-10-25T10:39:44.077Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adddc726887a2efc1fe0718",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-25T10:39:46.736Z"
+      }
+    },
+    "opalpiteiro": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myozfkybns2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myozfkybns2d",
+        "em": "2026-10-25T10:40:22.477Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "18338765062256745",
+        "url": "https://www.instagram.com/reel/18338765062256745",
+        "em": "2026-10-25T10:41:09.703Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1634014835183600",
+        "url": "https://www.facebook.com/1634014835183600",
+        "em": "2026-10-25T10:41:16.238Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17970277883965632",
+        "url": "https://www.threads.net/@me/post/17970277883965632",
+        "em": "2026-10-25T10:41:50.626Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adddcf1bd33ce99c368d3ea",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-25T10:41:53.615Z"
+      }
+    },
+    "comunidade-do-ceu": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myozitazzx22",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myozitazzx22",
+        "em": "2026-10-25T10:42:11.433Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "17997444746834615",
+        "url": "https://www.instagram.com/reel/17997444746834615",
+        "em": "2026-10-25T10:42:58.846Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1643652323779509",
+        "url": "https://www.facebook.com/1643652323779509",
+        "em": "2026-10-25T10:43:05.194Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18051422723803979",
+        "url": "https://www.threads.net/@me/post/18051422723803979",
+        "em": "2026-10-25T10:43:39.768Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adddd5e0b5343d070c94988",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-25T10:43:42.570Z"
+      }
+    },
+    "barbarizando": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myozm46dqb2y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myozm46dqb2y",
+        "em": "2026-10-25T10:44:01.515Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "17995814466047761",
+        "url": "https://www.instagram.com/reel/17995814466047761",
+        "em": "2026-10-25T10:44:47.391Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1736479674108882",
+        "url": "https://www.facebook.com/1736479674108882",
+        "em": "2026-10-25T10:44:55.173Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18134768956662257",
+        "url": "https://www.threads.net/@me/post/18134768956662257",
+        "em": "2026-10-25T10:45:54.566Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6adddde50b5343d070c96464",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-25T10:45:57.799Z"
+      }
+    },
+    "aeroliso": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myptltnkcc2b",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myptltnkcc2b",
+        "em": "2026-10-25T18:29:09.836Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "17992020801026803",
+        "url": "https://www.instagram.com/reel/17992020801026803",
+        "em": "2026-10-25T18:30:04.092Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1481617457257177",
+        "url": "https://www.facebook.com/1481617457257177",
+        "em": "2026-10-25T18:30:10.664Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18452750698122431",
+        "url": "https://www.threads.net/@me/post/18452750698122431",
+        "em": "2026-10-25T18:30:42.603Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6ade4ad50b5343d070e71602",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-25T18:30:45.320Z"
+      }
+    }
+  },
+  "atualizadoEm": "2026-10-26T08:49:26.471Z"
+}

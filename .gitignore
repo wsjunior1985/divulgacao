@@ -8,3 +8,19 @@ node_modules/
 assets/cards/preview-*
 assets/tmp/
 pendencias.md
+
+# Vídeos NÃO vão para o git (arquivos grandes; o repositório é público).
+# Só o manifesto e o README de videos/ são versionados; o mp4 é hospedado no
+# Supabase Storage na hora de publicar.
+videos/*
+!videos/README.md
+!videos/videos.json
+estado/backups/
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.m4v
+*.wav
+*.mp3
+*.m4a

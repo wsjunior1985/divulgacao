@@ -194,6 +194,20 @@
         "x": "Gasolina ou etanol? O GASONOL compara o consumo do seu carro (PBEV/INMETRO) com os preços do posto. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao&utm_content=bomba"
       },
       "url": "https://gasonol.com.br?utm_content=bomba"
+    },
+    "gasonol-duvida": {
+      "arquivo": "videos/9x16/gasonol-duvida.mp4",
+      "nome": "GASONOL (a dúvida)",
+      "titulo": "Etanol ou gasolina? Tira a dúvida no posto",
+      "legendas": {
+        "instagram": "Etanol ou gasolina? Chega de chutar na hora de abastecer. ⛽\n\nNo GASONOL você escolhe o seu carro, informa os preços do posto (digitando ou falando) e ele mostra na hora qual combustível compensa, com o consumo do modelo na base PBEV/INMETRO. Os valores do vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Funciona offline.\n\n🔗 gasonol.com.br (link na bio)\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "facebook": "Etanol ou gasolina? Chega de chutar na hora de abastecer. ⛽\n\nNo GASONOL você escolhe o seu carro, informa os preços do posto (digitando ou falando) e ele mostra na hora qual combustível compensa, com o consumo do modelo na base PBEV/INMETRO. Os valores do vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Funciona offline.\n\n🔗 https://gasonol.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao&utm_content=duvida",
+        "threads": "Etanol ou gasolina? O GASONOL compara o consumo do seu modelo (PBEV/INMETRO) com os preços do posto e mostra na hora qual compensa. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao&utm_content=duvida",
+        "bluesky": "Etanol ou gasolina? O GASONOL compara o consumo do seu carro com os preços do posto e tira a dúvida na hora. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao&utm_content=duvida",
+        "tiktok": "Etanol ou gasolina? Tira a dúvida no posto. ⛽\n\nO GASONOL usa dados PBEV/INMETRO e os preços do posto. Valores no vídeo são exemplos; resultado varia por modelo e preço.\n\nhttps://gasonol.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao&utm_content=duvida\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "x": "Etanol ou gasolina? O GASONOL compara o consumo do seu carro (PBEV/INMETRO) com os preços do posto e tira a dúvida na hora. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao&utm_content=duvida"
+      },
+      "url": "https://gasonol.com.br?utm_content=duvida"
     }
   }
 }

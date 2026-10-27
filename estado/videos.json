@@ -415,7 +415,39 @@
         "url": "https://publish.buffer.com/",
         "em": "2026-10-26T23:57:37.726Z"
       }
+    },
+    "gasonol-duvida": {
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3myu7bihycz2y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3myu7bihycz2y",
+        "em": "2026-10-27T12:08:45.991Z"
+      },
+      "instagram": {
+        "status": "ok",
+        "id": "18143975989525134",
+        "url": "https://www.instagram.com/reel/18143975989525134",
+        "em": "2026-10-27T12:09:26.882Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1811381673344056",
+        "url": "https://www.facebook.com/1811381673344056",
+        "em": "2026-10-27T12:09:36.711Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18106809013983002",
+        "url": "https://www.threads.net/@me/post/18106809013983002",
+        "em": "2026-10-27T12:10:12.594Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6ae094a89ce7db40d51a6b58",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-10-27T12:10:16.948Z"
+      }
     }
   },
-  "atualizadoEm": "2026-10-26T23:57:37.726Z"
+  "atualizadoEm": "2026-10-27T12:10:16.948Z"
 }

@@ -25,6 +25,24 @@ O GitHub Actions dispara nos horários agendados. A cada disparo o sistema:
    e UTM próprio por rede;
 6. registra em `estado/publicados.json` para não repetir.
 
+Cada link distingue a rede (`utm_source`), a campanha e a peça. Por padrão,
+`utm_campaign` recebe `divulgacao-AAAA-MM`; a variável `CAMPANHA` permite nomear
+uma ação específica. Posts recebem `utm_content` com formato, app, tema, ciclo e
+variação visual;
+vídeos recebem formato e app. O estado de cada publicação guarda a URL final e
+os campos UTM para auditoria.
+
+No piloto do GASONOL, o painel administrativo em `/admin` → **Funil** agrupa
+visitas, cadastros, checkouts, assinantes pagantes, faturas e receita confirmada
+por rede, campanha e peça. A receita só vem de faturas Stripe pagas em produção;
+uma assinatura em teste grátis aparece como checkout/assinatura ativada, não como
+venda. As outras métricas UTM continuam disponíveis nos painéis de cada app.
+Os posts de Facebook, Threads, Bluesky e X levam o link rastreável no próprio
+post. Nos cards do Instagram e TikTok, o fluxo atual mostra o domínio, mas não
+publica um link clicável por peça. Em vídeos, há uma URL na legenda, cuja
+atribuição só funciona se a plataforma permitir o clique; para comparar peças
+nesses canais, use o link da bio ou outro link realmente clicável.
+
 Falha de um canal não derruba os outros: o log diz o que saiu, o que foi pulado
 por falta de credencial e o que quebrou.
 

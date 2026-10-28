@@ -112,6 +112,8 @@ async function main() {
   const pauta = args.app ? escolherPautaPorApp(slot.indice, apps, args.app) : escolherPauta(slot.indice, apps);
   const { app, post, ciclo } = pauta;
   const identificador = idDoPost(pauta);
+  const campanha = env("CAMPANHA", `divulgacao-${slot.dia.slice(0, 7)}`);
+  const variacao = ((slot.indice % 3) + 3) % 3;
 
   const estado = lerJson(ARQUIVO_ESTADO, { posts: {} });
   const jaFeito = estado.posts[identificador] ?? {};
@@ -139,11 +141,10 @@ async function main() {
   }
 
   const textoPorCanal = Object.fromEntries(
-    alvos.map((canal) => [canal, montarTexto({ app, post, canal, campanha: env("CAMPANHA", "alwayson"), ciclo })]),
+    alvos.map((canal) => [canal, montarTexto({ app, post, canal, campanha, ciclo, variacao })]),
   );
 
   // Cards: um retrato para o feed, um vertical se o TikTok estiver no páreo.
-  const variacao = ((slot.indice % 3) + 3) % 3;
   const cardFeed = await gerarCard({ app, post, formato: "feed", nome: `${identificador}-feed`, variacao });
   log(`card feed: ${cardFeed.relativo} (${Math.round(cardFeed.bytes / 1024)} KB)`);
 
@@ -180,7 +181,20 @@ async function main() {
       ...Object.fromEntries(
         resultados.map((r) => [
           r.canal,
-          { status: r.status, id: r.id ?? null, url: r.url ?? null, em: new Date().toISOString(), erro: r.mensagem ?? null },
+          {
+            status: r.status,
+            id: r.id ?? null,
+            url: r.url ?? null,
+            landingUrl: textoPorCanal[r.canal]?.link ?? null,
+            utm: {
+              source: r.canal,
+              medium: "social",
+              campaign,
+              content: textoPorCanal[r.canal]?.utmContent ?? null,
+            },
+            em: new Date().toISOString(),
+            erro: r.mensagem ?? null,
+          },
         ]),
       ),
     };

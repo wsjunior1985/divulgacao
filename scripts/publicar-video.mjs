@@ -50,15 +50,36 @@ const pronto = (c) =>
   c === "instagram" || c === "facebook" ? meta.pronto(c) : c === "threads" ? threads.pronto()
   : c === "bluesky" ? bluesky.pronto() : c === "tiktok" ? tiktok.pronto() : buffer.pronto();
 
-function uTm(urlApp, canal) {
+function uTm(urlApp, canal, app, formato, campanha) {
   const u = new URL(urlApp);
   u.searchParams.set("utm_source", canal);
   u.searchParams.set("utm_medium", "social");
-  u.searchParams.set("utm_campaign", "apresentacao");
+  u.searchParams.set("utm_campaign", campanha);
+  u.searchParams.set("utm_content", `video-${formato}-${app}`);
   return u.toString();
 }
 
+function legendaComUtm(legenda, landingUrl) {
+  const host = new URL(landingUrl).hostname;
+  let substituiu = false;
+  const atualizada = legenda.replace(/https?:\/\/[^\s]+/g, (texto) => {
+    const link = texto.replace(/[),.;!?]+$/, "");
+    const pontuacao = texto.slice(link.length);
+    try {
+      if (new URL(link).hostname === host) {
+        substituiu = true;
+        return `${landingUrl}${pontuacao}`;
+      }
+    } catch {
+      return texto;
+    }
+    return texto;
+  });
+  return substituiu ? atualizada : `${legenda.trim()}\n\n${landingUrl}`;
+}
+
 const estado = lerJson(ESTADO, { videos: {} });
+const campanha = env("CAMPANHA", "apresentacao");
 let falhas = 0;
 
 for (const app of alvosApp) {
@@ -86,15 +107,23 @@ for (const app of alvosApp) {
   }
   const dom = new URL(v.url).hostname;
   for (const c of canais) {
-    const legenda = v.legendas[c];
+    const landingUrl = uTm(v.url, c, app, formato, campanha);
+    const legenda = legendaComUtm(v.legendas[c], landingUrl);
     try {
       const r = c === "instagram" ? await video.instagram({ legenda, urlVideo })
         : c === "facebook" ? await video.facebook({ legenda, urlVideo })
         : c === "threads" ? await video.threads({ legenda, urlVideo })
         : c === "tiktok" ? await video.tiktok({ legenda, arquivo })
-        : c === "bluesky" ? await video.bluesky({ legenda, arquivo, aspecto: ASPECTO, alt: v.titulo, link: uTm(v.url, c), linkLimpo: dom })
+        : c === "bluesky" ? await video.bluesky({ legenda, arquivo, aspecto: ASPECTO, alt: v.titulo, link: landingUrl, linkLimpo: dom })
         : await buffer.publicar({ texto: legenda, imagens: [], video: urlVideo, servicos: ["twitter"] });
-      feitos[c] = { status: "ok", id: r.id ?? null, url: r.url ?? null, em: new Date().toISOString() };
+      feitos[c] = {
+        status: "ok",
+        id: r.id ?? null,
+        url: r.url ?? null,
+        landingUrl,
+        utm: { source: c, medium: "social", campaign, content: `video-${formato}-${app}` },
+        em: new Date().toISOString(),
+      };
       ok(`${app}/${c}: publicado`);
     } catch (e) {
       erro(`${app}/${c}: ${e.message}`);

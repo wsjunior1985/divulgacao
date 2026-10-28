@@ -79,11 +79,12 @@ export function escolherPautaPorApp(indice, apps, appId) {
 }
 
 /** Link do app com UTM do canal — é o que separa um canal do outro no funil. */
-export function linkComUtm(app, canal, campanha = "alwayson") {
+export function linkComUtm(app, canal, campanha = "alwayson", conteudo) {
   const url = new URL(app.url);
   url.searchParams.set("utm_source", canal);
   url.searchParams.set("utm_medium", "social");
   url.searchParams.set("utm_campaign", campanha);
+  if (conteudo) url.searchParams.set("utm_content", conteudo);
   return url.toString();
 }
 
@@ -164,8 +165,10 @@ function montarCurto(post, ciclo = 0) {
  *  - bluesky:   300 caracteres — usa a versão curta do template
  *  - tiktok:    título do post em modo foto, hashtags ajudam a distribuição
  */
-export function montarTexto({ app, post, canal, campanha, ciclo = 0 }) {
-  const link = linkComUtm(app, canal, campanha); // URL completa com UTM (facet/clique)
+export function montarTexto({ app, post, canal, campanha, ciclo = 0, variacao = 0, conteudo }) {
+  const formato = canal === "tiktok" ? "vertical" : "feed";
+  const utmContent = conteudo ?? `card-${formato}-${app.id}-${post.id}-c${ciclo}-v${variacao}`;
+  const link = linkComUtm(app, canal, campanha, utmContent); // URL completa com UTM (facet/clique)
   const limpo = linkExibicao(app); // ex.: vaidarquanto.com.br
   const tags = hashtags(app, post);
 
@@ -176,13 +179,13 @@ export function montarTexto({ app, post, canal, campanha, ciclo = 0 }) {
 
   switch (canal) {
     case "instagram":
-      return { texto: cortar(`${base}\n\n${tags}`, 2200), link };
+      return { texto: cortar(`${base}\n\n${tags}`, 2200), link, utmContent };
     case "facebook":
-      return { texto: cortar(base, 5000), link };
+      return { texto: cortar(base, 5000), link, utmContent };
     case "threads":
       // O link vai no CORPO, não em link_attachment: a Threads API só aceita
       // link_attachment em post de texto puro, e os nossos sempre levam card.
-      return { texto: cortarPreservandoLink(longo, limpo, 500), link };
+      return { texto: cortarPreservandoLink(longo, link, 500), link, utmContent };
     case "bluesky": {
       // O Bluesky mostra só o domínio (sem protocolo, para o facet não duplicar)
       // e o clique vai para a URL completa com UTM.
@@ -191,14 +194,15 @@ export function montarTexto({ app, post, canal, campanha, ciclo = 0 }) {
         texto: cortarPreservandoLink(curto, semProtocolo, 300),
         link,
         linkLimpo: semProtocolo,
+        utmContent,
       };
     }
     case "x":
       // 280 é o limite da conta gratuita. O X conta qualquer URL como 23
       // caracteres, mas cortar pelo tamanho real só deixa margem — nunca falta.
-      return { texto: cortarPreservandoLink(curto, limpo, 280), link };
+      return { texto: cortarPreservandoLink(curto, link, 280), link, utmContent };
     case "tiktok":
-      return { texto: cortar(`${curtoComLink}\n\n${tags}`, 2200), link };
+      return { texto: cortar(`${curtoComLink}\n\n${tags}`, 2200), link, utmContent };
     default:
       throw new Error(`canal sem formatação definida: ${canal}`);
   }

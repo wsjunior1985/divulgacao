@@ -68,6 +68,7 @@ jobs:
       MEDIA_MODE: ${{ vars.MEDIA_MODE || 'git' }}
       HORARIOS: ${{ vars.HORARIOS || '08,11,14,17,20,21,22' }}
       CANAIS: ${{ vars.CANAIS }}
+      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
     steps:
       - uses: actions/checkout@v4
 
@@ -117,7 +118,7 @@ jobs:
           retention-days: 7
 
       - name: Guardar o registro do que foi publicado
-        if: ${{ inputs.dry_run != true }}
+        if: ${{ always() && inputs.dry_run != true }}
         run: |
           git config user.name "divulgacao-bot"
           git config user.email "divulgacao-bot@users.noreply.github.com"

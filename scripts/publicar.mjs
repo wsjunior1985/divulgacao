@@ -59,6 +59,32 @@ function slotDeAgora() {
   return { indice: indiceDoSlot(dia, posicao, ordenados.length), dia, horario: ordenados[posicao] };
 }
 
+/** Usa o cron de origem para que atrasos do GitHub não reaproveitem outro slot. */
+function slotAgendado(expressao) {
+  if (!expressao) return null;
+  const partes = expressao.trim().split(/\s+/);
+  const minutoUtc = Number(partes[0]);
+  const horaUtc = Number(partes[1]);
+  if (partes.length !== 5 || !Number.isInteger(minutoUtc) || !Number.isInteger(horaUtc)
+      || minutoUtc < 0 || minutoUtc > 59 || horaUtc < 0 || horaUtc > 23
+      || partes.slice(2).some((parte) => parte !== "*")) {
+    throw new Error(`cron agendado não reconhecido: ${expressao}`);
+  }
+
+  const agora = new Date();
+  const previsto = new Date(Date.UTC(agora.getUTCFullYear(), agora.getUTCMonth(), agora.getUTCDate(), horaUtc, minutoUtc));
+  if (previsto > agora) previsto.setUTCDate(previsto.getUTCDate() - 1);
+  const atrasoMinutos = (agora.getTime() - previsto.getTime()) / 60000;
+  if (atrasoMinutos > 120) {
+    throw new Error(`cron atrasou ${Math.floor(atrasoMinutos)} minutos; slot ignorado para evitar publicar conteúdo fora de hora`);
+  }
+
+  const { dia, hora } = agoraBRT(previsto);
+  const posicao = [...HORARIOS].sort((a, b) => a - b).indexOf(hora);
+  if (posicao < 0) throw new Error(`cron ${expressao} não corresponde a um horário BRT configurado (${hora}h)`);
+  return { indice: indiceDoSlot(dia, posicao, HORARIOS.length), dia, horario: hora };
+}
+
 async function publicarCanal(canal, { textoPorCanal, urlsCard, cardFeed, cardVertical, app, post, dryRun }) {
   const { texto, link, linkLimpo } = textoPorCanal[canal];
 
@@ -111,7 +137,8 @@ async function main() {
   const args = argumentos(process.argv.slice(2));
   const apps = carregarApps();
 
-  const slot = args.slot !== null ? { indice: args.slot, dia: agoraBRT().dia } : slotDeAgora();
+  const agendado = slotAgendado(env("GITHUB_EVENT_SCHEDULE"));
+  const slot = args.slot !== null ? { indice: args.slot, dia: agoraBRT().dia } : agendado ?? slotDeAgora();
   const pauta = args.app ? escolherPautaPorApp(slot.indice, apps, args.app) : escolherPauta(slot.indice, apps);
   const { app, post, ciclo } = pauta;
   const identificador = idDoPost(pauta);
@@ -147,6 +174,26 @@ async function main() {
     alvos.map((canal) => [canal, montarTexto({ app, post, canal, campanha, ciclo, variacao })]),
   );
 
+  const registrarCanal = (canal, resultado) => {
+    estado.posts[identificador] ??= {};
+    estado.posts[identificador][canal] = {
+      status: resultado.status,
+      id: resultado.id ?? null,
+      url: resultado.url ?? null,
+      landingUrl: textoPorCanal[canal]?.link ?? null,
+      utm: {
+        source: canal,
+        medium: "social",
+        campaign: campanha,
+        content: textoPorCanal[canal]?.utmContent ?? null,
+      },
+      em: new Date().toISOString(),
+      erro: resultado.mensagem ?? null,
+    };
+    estado.atualizadoEm = new Date().toISOString();
+    gravarJson(ARQUIVO_ESTADO, estado);
+  };
+
   // Cards: um retrato para o feed, um vertical se o TikTok estiver no páreo.
   const cardFeed = await gerarCard({ app, post, formato: "feed", nome: `${identificador}-feed`, variacao });
   log(`card feed: ${cardFeed.relativo} (${Math.round(cardFeed.bytes / 1024)} KB)`);
@@ -169,40 +216,15 @@ async function main() {
   const resultados = [];
   for (const canal of alvos) {
     try {
-      resultados.push(
-        await publicarCanal(canal, { textoPorCanal, urlsCard, cardFeed, cardVertical, app, post, dryRun: args.dryRun }),
-      );
+      const resultado = await publicarCanal(canal, { textoPorCanal, urlsCard, cardFeed, cardVertical, app, post, dryRun: args.dryRun });
+      resultados.push(resultado);
+      if (!args.dryRun) registrarCanal(canal, resultado);
     } catch (e) {
       erro(`${canal}: ${e.message}`);
-      resultados.push({ canal, status: "erro", mensagem: e.message });
+      const resultado = { canal, status: "erro", mensagem: e.message };
+      resultados.push(resultado);
+      if (!args.dryRun) registrarCanal(canal, resultado);
     }
-  }
-
-  if (!args.dryRun) {
-    estado.posts[identificador] = {
-      ...jaFeito,
-      ...Object.fromEntries(
-        resultados.map((r) => [
-          r.canal,
-          {
-            status: r.status,
-            id: r.id ?? null,
-            url: r.url ?? null,
-            landingUrl: textoPorCanal[r.canal]?.link ?? null,
-            utm: {
-              source: r.canal,
-              medium: "social",
-              campaign: campanha,
-              content: textoPorCanal[r.canal]?.utmContent ?? null,
-            },
-            em: new Date().toISOString(),
-            erro: r.mensagem ?? null,
-          },
-        ]),
-      ),
-    };
-    estado.atualizadoEm = new Date().toISOString();
-    gravarJson(ARQUIVO_ESTADO, estado);
   }
 
   const sucessos = resultados.filter((r) => r.status === "ok");

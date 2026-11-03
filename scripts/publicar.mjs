@@ -47,12 +47,15 @@ function argumentos(argv) {
   return args;
 }
 
-/** Descobre qual slot corresponde a agora: o horário programado mais próximo já passado. */
+/** Descobre o slot de agora; execuções muito atrasadas não devem repetir pauta antiga. */
 function slotDeAgora() {
-  const { dia, hora } = agoraBRT();
+  const { dia, hora, minuto } = agoraBRT();
   const ordenados = [...HORARIOS].sort((a, b) => a - b);
   let posicao = ordenados.findIndex((h, i) => hora >= h && (i === ordenados.length - 1 || hora < ordenados[i + 1]));
-  if (posicao === -1) posicao = 0; // antes do primeiro horário do dia: usa o primeiro
+  const atrasoMinutos = posicao === -1 ? Infinity : hora * 60 + minuto - ordenados[posicao] * 60;
+  if (atrasoMinutos < 0 || atrasoMinutos > 15) {
+    throw new Error(`execução fora da janela de publicação (${dia} ${String(hora).padStart(2, "0")}:${String(minuto).padStart(2, "0")} BRT); use --slot para uma republicação manual`);
+  }
   return { indice: indiceDoSlot(dia, posicao, ordenados.length), dia, horario: ordenados[posicao] };
 }
 
@@ -189,7 +192,7 @@ async function main() {
             utm: {
               source: r.canal,
               medium: "social",
-              campaign,
+              campaign: campanha,
               content: textoPorCanal[r.canal]?.utmContent ?? null,
             },
             em: new Date().toISOString(),

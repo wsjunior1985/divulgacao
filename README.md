@@ -1,8 +1,9 @@
 # Divulgação automática
 
-Publica sozinho os sete apps — **Vai dar quanto?, AI-Eat, GASONOL, Convertendo,
-Remedin, O Palpiteiro e Papelzinho** — no **Instagram, Facebook, Threads,
-Bluesky, TikTok e X**, em rodízio, de graça, sem ninguém apertar botão.
+Publica os 14 apps do portfólio — **Remedin, AI-Eat, Vai dar quanto?, GASONOL,
+Convertendo, O Palpiteiro, Papelzinho, O Meu Álbum, Rifazinha, Aeroliso,
+EuQuiz, VouTroCar, Barbarizando e Faz o PIX!** — no **Instagram, Facebook,
+Threads, Bluesky, TikTok e X**, em rodízio.
 
 Depois do [SETUP.md](SETUP.md), a sua participação é: nenhuma.
 
@@ -24,6 +25,12 @@ O GitHub Actions dispara nos horários agendados. A cada disparo o sistema:
 5. publica em cada canal, com o texto adaptado ao limite e ao formato de cada um
    e UTM próprio por rede;
 6. registra em `estado/publicados.json` para não repetir.
+
+Além dos posts únicos, o workflow `publicar-carrossel` prepara sete slides
+1080×1350 com as telas e a identidade visual de cada app. Ele percorre os 14
+projetos em rodízio e publica no Instagram às terças e sextas, às 11h30 (BRT),
+sem alterar a agenda diária. A primeira execução começa pelo GASONOL, cujo
+carrossel piloto foi aprovado. O dashboard identifica esse formato no histórico.
 
 Cada link distingue a rede (`utm_source`), a campanha e a peça. Por padrão,
 `utm_campaign` recebe `divulgacao-AAAA-MM`; a variável `CAMPANHA` permite nomear
@@ -56,8 +63,27 @@ npm run cards             # gera cards para conferir o visual
 npm run capturar          # refotografa as telas reais dos apps
 npm run semear            # semeia dados de exemplo nas contas (telas "vivas")
 npm run publicar          # publica o slot atual
+npm run carrossel:dry     # prévia local do próximo carrossel, sem publicar
+npm run publicar:carrossel # publica somente dentro da janela agendada
 npm run renovar           # renova os tokens que expiram
 ```
+
+
+## Painel de publicações
+
+Para consultar o histórico, sucessos, falhas e métricas disponíveis por rede:
+
+```bash
+npm run dashboard
+```
+
+Abra `http://127.0.0.1:8138` no computador que tem o `.env.local` do projeto e
+clique em **Atualizar métricas**. A tela mostra até 40 publicações recentes por
+rede; os valores são consultas atuais, não um histórico diário de evolução. O
+cache fica em `~/.cache/waldeapps-divulgacao-dashboard/` e o servidor escuta
+somente em localhost. Métricas que uma API ou permissão não fornece aparecem
+como indisponíveis, sem serem tratadas como zero. O painel sinaliza quando o
+registro de publicações está desatualizado.
 
 Variações úteis:
 

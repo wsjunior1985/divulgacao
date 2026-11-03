@@ -1,0 +1,83 @@
+name: publicar-carrossel
+
+on:
+  schedule:
+    # Terça e sexta, 11:30 BRT (14:30 UTC), fora dos slots dos posts únicos.
+    - cron: "30 14 * * 2"
+    - cron: "30 14 * * 5"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Gerar e guardar os slides sem publicar"
+        type: boolean
+        default: true
+      app:
+        description: "App específico para conferência (vazio = rodízio)"
+        type: string
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      META_APP_ID: ${{ secrets.META_APP_ID }}
+      META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+      MEDIA_MODE: ${{ vars.MEDIA_MODE || 'git' }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
+      CARROSSEL_APP: ${{ inputs.app }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Cache do Chromium
+        id: cache-chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: Baixar Chromium
+        if: steps.cache-chromium.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+      - name: Dependências do Chromium
+        if: steps.cache-chromium.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
+      - name: Gerar e publicar carrossel
+        run: |
+          argumentos=()
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then argumentos+=(--dry-run); fi
+          if [ -n "$CARROSSEL_APP" ]; then argumentos+=(--app "$CARROSSEL_APP"); fi
+          node scripts/publicar-carrossel.mjs "${argumentos[@]}"
+      - name: Guardar slides do dry-run
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: carrossel-preview
+          path: |
+            assets/cards/*-slide-*.jpg
+            carrosseis/2026-11-03-gasonol-recriar-referencia/slides/*.jpg
+          retention-days: 7
+      - name: Registrar resultado
+        if: ${{ always() && !(github.event_name == 'workflow_dispatch' && inputs.dry_run == true) }}
+        run: |
+          git config user.name "divulgacao-bot"
+          git config user.email "divulgacao-bot@users.noreply.github.com"
+          git add estado/publicados.json assets/cards || true
+          git diff --cached --quiet || git commit -m "chore: registro de carrossel [skip ci]"
+          git pull --rebase origin "$GITHUB_REF_NAME" || true
+          git push origin "HEAD:$GITHUB_REF_NAME"

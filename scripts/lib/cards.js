@@ -47,9 +47,10 @@ export function montarHtml({ app, post, formato = "feed", variacao = 0 }) {
  * @param {number} variacao - qual captura automática usar quando o tema não escolhe tela
  * @returns {Promise<{relativo, caminho, bytes}>}
  */
-export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub, variacao = 0 }) {
+export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub, variacao = 0, navegador: navegadorExistente }) {
   const { chromium } = await import("playwright");
   const { default: sharp } = await import("sharp");
+  const navegador = navegadorExistente ?? await chromium.launch();
   const postFinal = post ?? { id: nome, card: { titulo, sub } };
   const { largura, altura } = FORMATOS[formato] ?? FORMATOS.feed;
 
@@ -59,7 +60,6 @@ export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub
   writeFileSync(pagina, montarHtml({ app, post: postFinal, formato, variacao }));
 
   // Renderiza em 2x e reduz: o antialias do texto e dos traços sai mais limpo que em 1x.
-  const navegador = await chromium.launch();
   try {
     const aba = await navegador.newPage({ viewport: { width: largura, height: altura }, deviceScaleFactor: 2 });
     await aba.goto(pathToFileURL(pagina).href, { waitUntil: "load" });
@@ -72,7 +72,7 @@ export async function gerarCard({ app, post, formato = "feed", nome, titulo, sub
     writeFileSync(resolve(RAIZ, relativo), buffer);
     return { relativo, caminho: resolve(RAIZ, relativo), bytes: buffer.length };
   } finally {
-    await navegador.close();
+    if (!navegadorExistente) await navegador.close();
     rmSync(pagina, { force: true });
   }
 }

@@ -8,8 +8,8 @@ web
 
 ## Users
 
-O usuário primário é o dono do repositório (Waldemar), donos dos sete apps
-divulgados. A situação: manter presença ativa em seis redes sociais para sete
+O usuário primário é o dono do repositório (Waldemar), responsável pelos 14 apps
+divulgados. A situação: manter presença ativa em seis redes sociais para seus
 produtos próprios, sem tempo para produzir e publicar conteúdo manualmente. O
 trabalho a ser feito ("job"): a divulgação acontece sozinha, em rodízio
 determinístico, sem que ninguém precise desenhar um post ou apertar um botão
@@ -22,12 +22,13 @@ publicada.
 
 ## Product Purpose
 
-Divulgação automática: publica os sete apps (Vai dar quanto?, AI-Eat, GASONOL,
-Convertendo, Remedin, O Palpiteiro, Papelzinho) no Instagram, Facebook,
-Threads, Bluesky, TikTok e X, em rodízio, de graça, sem intervenção humana
-recorrente. Sucesso é o sistema rodar continuamente pelo GitHub Actions,
-gerando cards fiéis à identidade de cada app e publicando no horário certo,
-sem repetir conteúdo e sem que uma falha de canal derrube os demais.
+Divulgação automática: publica os 14 apps (Remedin, AI-Eat, Vai dar quanto?,
+GASONOL, Convertendo, O Palpiteiro, Papelzinho, O Meu Álbum, Rifazinha,
+Aeroliso, EuQuiz, VouTroCar, Barbarizando e Faz o PIX!) em seis redes, em
+rodízio. Além dos posts únicos diários, cria e agenda carrosséis semanais no
+Instagram. Sucesso é o sistema rodar continuamente pelo GitHub Actions,
+gerando peças fiéis à identidade de cada app, sem repetir slots e sem que uma
+falha de publicação interrompa os demais canais.
 
 ## Positioning
 
@@ -81,7 +82,7 @@ replicar com a mesma fidelidade e o mesmo zero-esforço.
 
 ## Brand Commitments
 
-- Cada um dos sete apps mantém identidade própria e real (logo oficial do
+- Cada um dos 14 apps mantém identidade própria e real (logo oficial do
   PWA, paleta da marca, fonte de display própria) — o motor de cards nunca
   inventa ou normaliza essas identidades, apenas as extrai e renderiza com
   fidelidade.

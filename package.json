@@ -9,6 +9,9 @@
   },
   "scripts": {
     "publicar": "node scripts/publicar.mjs",
+    "publicar:carrossel": "node scripts/publicar-carrossel.mjs",
+    "carrossel:dry": "node scripts/publicar-carrossel.mjs --dry-run",
+    "dashboard": "node scripts/dashboard.mjs",
     "videos:converter": "node scripts/videos-converter.mjs",
     "videos:dry": "node scripts/publicar-video.mjs --dry-run",
     "videos:publicar": "node scripts/publicar-video.mjs",

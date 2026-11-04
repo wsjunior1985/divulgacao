@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Agenda exclusiva para carrosséis do Instagram: terça e sexta, 11:30 BRT.
+// Agenda de carrosséis do Instagram: quatro projetos distintos por dia.
 import { carregarEnv, lerJson, gravarJson, agoraBRT, log, ok, aviso, erro, env } from "./lib/base.js";
 import { ORDEM_APPS, carregarApps, escolherPautaPorApp, montarTexto } from "./lib/conteudo.js";
 import { escolherPostSeguro, gerarCarrossel } from "./lib/carrossel.js";
@@ -10,6 +10,9 @@ import { resolve } from "node:path";
 
 carregarEnv();
 const ARQUIVO_ESTADO = "estado/publicados.json";
+const CRONS_DIARIOS = ["0 12 * * *", "0 16 * * *", "0 19 * * *", "0 21 * * *"];
+const HORAS_BRT = CRONS_DIARIOS.map((cron) => Number(cron.split(" ")[1]) - 3);
+const EPOCH_INICIAL = Date.UTC(2026, 10, 4);
 const AVISOS = {
   aieat: "As informações nutricionais são estimativas e não substituem avaliação profissional.",
   remedin: "O app ajuda com lembretes; siga sempre a orientação do profissional de saúde.",
@@ -28,41 +31,37 @@ function argumentos(argv) {
   return a;
 }
 
-function slotAgendado(dryRun) {
+function sequenciaDoDia(data, posicao) {
+  const [ano, mes, dia] = data.split("-").map(Number);
+  const dias = Math.round((Date.UTC(ano, mes - 1, dia) - EPOCH_INICIAL) / 86400000);
+  if (dias < 0) throw new Error(`data anterior ao início da agenda: ${data}`);
+  return dias * CRONS_DIARIOS.length + posicao;
+}
+
+function slotAgendado() {
   const cron = env("GITHUB_EVENT_SCHEDULE");
   if (!cron) {
-    const hoje = agoraBRT().dia;
-    const [ano, mes, dia] = hoje.split("-").map(Number);
-    const epoch = Date.UTC(2026, 10, 6);
-    let dias = Math.round((Date.UTC(ano, mes - 1, dia) - epoch) / 86400000);
-    const semanaDia = new Date(Date.UTC(ano, mes - 1, dia)).getUTCDay();
-    if (!dryRun && semanaDia !== 2 && semanaDia !== 5) throw new Error("publicação manual fora de terça ou sexta; rode como dry-run para prévia");
-    const ateProximo = semanaDia === 2 || semanaDia === 5 ? 0 : Math.min((2 - semanaDia + 7) % 7 || 7, (5 - semanaDia + 7) % 7 || 7);
-    dias += ateProximo;
-    if (dias < 0) {
-      if (!dryRun) throw new Error("o primeiro carrossel automático está agendado para sexta-feira, 6 de novembro");
-      dias = 0;
+    const agora = agoraBRT();
+    let posicao = HORAS_BRT.findIndex((hora) => hora > agora.hora);
+    let data = agora.dia;
+    if (posicao < 0) {
+      posicao = 0;
+      const [ano, mes, dia] = data.split("-").map(Number);
+      data = new Date(Date.UTC(ano, mes - 1, dia + 1)).toISOString().slice(0, 10);
     }
-    const data = new Date(epoch + dias * 86400000).toISOString().slice(0, 10);
-    return { data, sequencia: Math.floor(dias / 7) * 2 + (dias % 7 === 4 ? 1 : 0) };
+    return { data, sequencia: sequenciaDoDia(data, posicao) };
   }
-  const partes = cron.trim().split(/\s+/);
-  const [minuto, hora, , , diaSemana] = partes.map(Number);
-  if (partes.length !== 5 || minuto !== 30 || hora !== 14 || partes[2] !== "*" || partes[3] !== "*" || ![2, 5].includes(diaSemana)) {
-    throw new Error(`cron de carrossel não reconhecido: ${cron}`);
-  }
+
+  const posicao = CRONS_DIARIOS.indexOf(cron.trim());
+  if (posicao < 0) throw new Error(`cron de carrossel não reconhecido: ${cron}`);
+  const [minuto, hora] = CRONS_DIARIOS[posicao].split(" ").map(Number);
   const agora = new Date();
   const previsto = new Date(Date.UTC(agora.getUTCFullYear(), agora.getUTCMonth(), agora.getUTCDate(), hora, minuto));
-  if (previsto > agora) previsto.setUTCDate(previsto.getUTCDate() - 7);
+  if (previsto > agora) previsto.setUTCDate(previsto.getUTCDate() - 1);
   const atraso = (agora - previsto) / 60000;
   if (atraso > 120) throw new Error(`cron atrasou ${Math.floor(atraso)} minutos; slot ignorado`);
   const data = agoraBRT(previsto).dia;
-  const [ano, mesNum, dia] = data.split("-").map(Number);
-  const epoch = Date.UTC(2026, 10, 6);
-  const dias = Math.round((Date.UTC(ano, mesNum - 1, dia) - epoch) / 86400000);
-  if (dias < 0 || (dias % 7 !== 0 && dias % 7 !== 4)) throw new Error(`data agendada inesperada: ${data}`);
-  const sequencia = Math.floor(dias / 7) * 2 + (dias % 7 === 4 ? 1 : 0);
-  return { data, sequencia };
+  return { data, sequencia: sequenciaDoDia(data, posicao) };
 }
 
 function textoComAviso(pauta, campanha) {
@@ -74,7 +73,7 @@ function textoComAviso(pauta, campanha) {
 async function main() {
   const args = argumentos(process.argv.slice(2));
   const apps = carregarApps();
-  const slot = slotAgendado(args.dryRun);
+  const slot = slotAgendado();
   const ordem = ["gasonol", ...ORDEM_APPS.filter((id) => id !== "gasonol")];
   const appId = args.app ?? ordem[((slot.sequencia % ordem.length) + ordem.length) % ordem.length];
   const app = apps.find((a) => a.id === appId);

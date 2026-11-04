@@ -2,9 +2,12 @@ name: publicar-carrossel
 
 on:
   schedule:
-    # Terça e sexta, 11:30 BRT (14:30 UTC), fora dos slots dos posts únicos.
-    - cron: "30 14 * * 2"
-    - cron: "30 14 * * 5"
+    # Quatro projetos distintos por dia, fora dos slots dos posts únicos.
+    # 09h, 13h, 16h e 18h BRT = 12h, 16h, 19h e 21h UTC.
+    - cron: "0 12 * * *"
+    - cron: "0 16 * * *"
+    - cron: "0 19 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:

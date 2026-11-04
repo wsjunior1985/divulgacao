@@ -27,10 +27,12 @@ O GitHub Actions dispara nos horários agendados. A cada disparo o sistema:
 6. registra em `estado/publicados.json` para não repetir.
 
 Além dos posts únicos, o workflow `publicar-carrossel` prepara sete slides
-1080×1350 com as telas e a identidade visual de cada app. Ele percorre os 14
-projetos em rodízio e publica no Instagram às terças e sextas, às 11h30 (BRT),
-sem alterar a agenda diária. A primeira execução começa pelo GASONOL, cujo
-carrossel piloto foi aprovado. O dashboard identifica esse formato no histórico.
+1080×1350 com as telas e a identidade visual de cada app. Ele publica quatro
+carrosséis por dia no Instagram, às 09h, 13h, 16h e 18h (BRT), cada um de um
+projeto diferente. Os 14 projetos passam em blocos rotativos de quatro; cada
+projeto aparece duas vezes por semana. A agenda começa em 4/11/2026 pelo
+GASONOL, Remedin, AI-Eat e Vai dar quanto?. Os carrosséis se somam aos sete
+posts únicos diários. O dashboard identifica esse formato no histórico.
 
 Cada link distingue a rede (`utm_source`), a campanha e a peça. Por padrão,
 `utm_campaign` recebe `divulgacao-AAAA-MM`; a variável `CAMPANHA` permite nomear
@@ -215,7 +217,8 @@ São 8 temas por app, 56 no total, o que dá 8 dias de ciclo publicando 7×/dia
 
 ## Ritmo
 
-Padrão: **7 posts por dia** (08h, 11h, 14h, 17h, 20h, 21h e 22h BRT), em
+Padrão: **7 posts únicos e 4 carrosséis por dia** (08h, 09h, 11h, 13h, 14h,
+16h, 17h, 18h, 20h, 21h e 22h BRT), em
 rodízio pelos apps — na ordem Remedin, AI-Eat, Vai dar quanto?, GASONOL,
 Convertendo, O Palpiteiro e Papelzinho. Para mudar, ajuste a variável
 `HORARIOS` (ex.: `9,13,19`) e os `cron` de

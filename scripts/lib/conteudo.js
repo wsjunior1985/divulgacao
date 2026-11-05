@@ -53,29 +53,45 @@ export function indiceDoSlot(dia, posicaoNoDia, horariosPorDia) {
 }
 
 /**
+ * Temas do app vigentes no dia. Post com `sazonal: { de, ate }` (AAAA-MM-DD, inclusive)
+ * só vale dentro da janela e, enquanto houver algum ativo, ele domina o rodízio do app.
+ * Sem `dia` (ou fora da janela) o app usa só os temas fixos.
+ * Atenção: `publicar.mjs --slot N` usa o dia de hoje, não o do slot; fora da janela, republicar
+ * um slot de dentro dela cai em outro tema (outro idDoPost).
+ */
+export function postsDoApp(app, dia) {
+  const fixos = app.posts.filter((p) => !p.sazonal);
+  if (!dia) return fixos;
+  const ativos = app.posts.filter((p) => p.sazonal && dia >= p.sazonal.de && dia <= p.sazonal.ate);
+  return ativos.length ? ativos : fixos;
+}
+
+/**
  * Escolhe app e tema do slot. O app gira a cada slot; o tema só avança quando o
  * rodízio de apps fecha uma volta — assim nenhum app repete tema antes da hora.
  */
-export function escolherPauta(indice, apps) {
+export function escolherPauta(indice, apps, dia) {
   const total = apps.length;
   // Índices negativos (datas antes da época) precisam de módulo positivo.
   const i = ((indice % total) + total) % total;
   const volta = Math.floor(indice / total);
   const app = apps[i];
-  const voltaPositiva = ((volta % app.posts.length) + app.posts.length) % app.posts.length;
-  // Qual ciclo completo de temas do app estamos: avança a cada app.posts.length
+  const posts = postsDoApp(app, dia);
+  const voltaPositiva = ((volta % posts.length) + posts.length) % posts.length;
+  // Qual ciclo completo de temas do app estamos: avança a cada posts.length
   // voltas. É o contador usado para variar os textos (combinatório).
-  const ciclo = Math.floor(volta / app.posts.length);
-  return { app, post: app.posts[voltaPositiva], indice, ciclo };
+  const ciclo = Math.floor(volta / posts.length);
+  return { app, post: posts[voltaPositiva], indice, ciclo };
 }
 
 /** Escolhe um app explicitamente para campanhas manuais sem alterar o rodizio. */
-export function escolherPautaPorApp(indice, apps, appId) {
+export function escolherPautaPorApp(indice, apps, appId, dia) {
   const app = apps.find((item) => item.id === appId);
   if (!app) throw new Error(`app desconhecido: ${appId}`);
-  const posicao = ((indice % app.posts.length) + app.posts.length) % app.posts.length;
-  const ciclo = Math.floor(indice / app.posts.length);
-  return { app, post: app.posts[posicao], indice, ciclo };
+  const posts = postsDoApp(app, dia);
+  const posicao = ((indice % posts.length) + posts.length) % posts.length;
+  const ciclo = Math.floor(indice / posts.length);
+  return { app, post: posts[posicao], indice, ciclo };
 }
 
 /** Link do app com UTM do canal — é o que separa um canal do outro no funil. */

@@ -79,8 +79,8 @@ async function main() {
   const app = apps.find((a) => a.id === appId);
   if (!app) throw new Error(`app desconhecido: ${appId}`);
   const ciclo = Math.floor(slot.sequencia / ordem.length);
-  const pautaBase = escolherPautaPorApp(ciclo, apps, appId);
-  const pauta = { ...pautaBase, post: escolherPostSeguro(app, ciclo) };
+  const pautaBase = escolherPautaPorApp(ciclo, apps, appId, slot.data);
+  const pauta = { ...pautaBase, post: escolherPostSeguro(app, ciclo, slot.data) };
   const identificador = `carrossel-${app.id}-${pauta.post.id}-${slot.data}`;
   const campanha = env("CAMPANHA", `divulgacao-${slot.data.slice(0, 7)}`);
   const estado = lerJson(ARQUIVO_ESTADO, { posts: {} });

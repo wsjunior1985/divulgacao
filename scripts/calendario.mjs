@@ -30,8 +30,8 @@ const [ano, mes, dia] = hoje.split("-").map(Number);
 
 const LADO = ["←", "→"]; // 0 = celular à esquerda, 1 = à direita
 
-function celula(indice) {
-  const { app, post, ciclo } = escolherPauta(indice, apps);
+function celula(indice, iso) {
+  const { app, post } = escolherPauta(indice, apps, iso);
   const lado = ((indice % 2) + 2) % 2;
   return `${app.nome} · ${post.id} ${LADO[lado]}`;
 }
@@ -43,7 +43,7 @@ for (let d = 0; d < dias; d++) {
   const iso = data.toISOString().slice(0, 10);
   const chaveMes = iso.slice(0, 7);
   const rotulo = new Intl.DateTimeFormat("pt-BR", { weekday: "short", day: "2-digit", timeZone: "UTC" }).format(data);
-  const celulas = HORARIOS.map((_, pos) => celula(indiceDoSlot(iso, pos, HORARIOS.length)));
+  const celulas = HORARIOS.map((_, pos) => celula(indiceDoSlot(iso, pos, HORARIOS.length), iso));
   if (!meses.has(chaveMes)) meses.set(chaveMes, []);
   meses.get(chaveMes).push({ data: iso, rotulo, celulas });
 }

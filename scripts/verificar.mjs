@@ -8,13 +8,13 @@
 // de monitoramento sabe que precisa abrir um alerta.
 
 import { execFileSync } from "node:child_process";
-import { carregarEnv, env, buscar, ok, aviso, erro, log } from "./lib/base.js";
+import { carregarEnv, env, buscar, ok, aviso, erro, log, agoraBRT } from "./lib/base.js";
 import * as meta from "./canais/meta.js";
 import * as threads from "./canais/threads.js";
 import * as bluesky from "./canais/bluesky.js";
 import * as tiktok from "./canais/tiktok.js";
 import * as buffer from "./canais/buffer.js";
-import { carregarApps } from "./lib/conteudo.js";
+import { carregarApps, postsDoApp } from "./lib/conteudo.js";
 
 carregarEnv();
 
@@ -137,7 +137,7 @@ async function checarBuffer() {
 function checarConteudo() {
   try {
     const apps = carregarApps();
-    const total = apps.reduce((s, a) => s + a.posts.length, 0);
+    const total = apps.reduce((s, a) => s + postsDoApp(a, agoraBRT().dia).length, 0);
     registrar("conteúdo", "ok", `${apps.length} apps · ${total} posts no rodízio`);
   } catch (e) {
     registrar("conteúdo", "erro", e.message);

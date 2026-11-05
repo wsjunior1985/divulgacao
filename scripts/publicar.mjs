@@ -139,7 +139,7 @@ async function main() {
 
   const agendado = slotAgendado(env("GITHUB_EVENT_SCHEDULE"));
   const slot = args.slot !== null ? { indice: args.slot, dia: agoraBRT().dia } : agendado ?? slotDeAgora();
-  const pauta = args.app ? escolherPautaPorApp(slot.indice, apps, args.app) : escolherPauta(slot.indice, apps);
+  const pauta = args.app ? escolherPautaPorApp(slot.indice, apps, args.app, slot.dia) : escolherPauta(slot.indice, apps, slot.dia);
   const { app, post, ciclo } = pauta;
   const identificador = idDoPost(pauta);
   const campanha = env("CAMPANHA", `divulgacao-${slot.dia.slice(0, 7)}`);

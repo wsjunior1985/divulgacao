@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 import sharp from "sharp";
 import { gerarCard } from "./cards.js";
 import { RAIZ } from "./base.js";
+import { postsDoApp } from "./conteudo.js";
 
 const TELAS = {
   aeroliso: ["tela-alertas", "tela-rota", "tela-insights"], aieat: ["tela-home", "tela-scanner", "tela-diario", "tela-historico"],
@@ -44,7 +45,7 @@ function montarSlides(app, post) {
     } else if (i === 5) c = { titulo: "Comece em", destaque: "poucos passos", sub: `Acesse ${app.url.replace(/^https?:\/\//, "").replace(/\/$/, "")} e conheça.`, tela: telas(i), beneficios: [{ titulo: "Abra o app", texto: "Direto pelo navegador" }, { titulo: "Explore", texto: "Veja os recursos disponíveis" }, { titulo: "Use no seu ritmo", texto: "No celular ou computador" }] };
     else c = { titulo: "Quer conhecer", destaque: `${app.nome}?`, sub: `Acesse ${app.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}`, tela: telas(i), beneficios: [{ titulo: "Salve este post", texto: "para consultar depois" }, { titulo: "Compartilhe", texto: "com quem pode aproveitar" }, { titulo: app.nome, texto: "acesse pelo link do perfil" }] };
     c.beneficios = (c.beneficios ?? []).slice(0, 3).map((b, j) => ({ icone: ICONE[(i + j) % ICONE.length], titulo: b.titulo, texto: b.texto ?? "" }));
-    return { id: `${post.id}-slide-${i + 1}`, card: { titulo: `${c.titulo} *${c.destaque}*`, sub: c.sub }, premium: c };
+    return { id: `${post.id}-slide-${i + 1}`, card: { titulo: `${c.titulo} *${c.destaque}*`, sub: c.sub }, premium: c, ...(post.visual ? { visual: post.visual } : {}) };
   });
 }
 
@@ -72,9 +73,9 @@ export async function gerarCarrossel({ app, post, identificador, variacao = 0 })
   return arquivos;
 }
 
-export function escolherPostSeguro(app, ciclo = 0) {
+export function escolherPostSeguro(app, ciclo = 0, dia) {
   const adiados = TEMAS_ADIADOS[app.id] ?? new Set();
-  const elegiveis = app.posts.filter((post) => !adiados.has(post.id));
+  const elegiveis = postsDoApp(app, dia).filter((post) => !adiados.has(post.id));
   if (!elegiveis.length) throw new Error(`nenhum tema liberado para carrossel: ${app.id}`);
   return elegiveis[((ciclo % elegiveis.length) + elegiveis.length) % elegiveis.length];
 }

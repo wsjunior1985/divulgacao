@@ -33,7 +33,7 @@ for (let d = 0; d < dias; d++) {
 
   for (let posicao = 0; posicao < HORARIOS.length; posicao++) {
     const indice = indiceDoSlot(dia, posicao, HORARIOS.length);
-    const { app, post, ciclo } = escolherPauta(indice, apps);
+    const { app, post, ciclo } = escolherPauta(indice, apps, dia);
     contagem.set(app.nome, (contagem.get(app.nome) ?? 0) + 1);
     const { texto } = montarTexto({ app, post, canal: "bluesky", campanha: env("CAMPANHA", "alwayson"), ciclo });
     const primeira = texto.split("\n")[0].slice(0, 68);

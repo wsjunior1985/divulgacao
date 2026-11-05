@@ -1,0 +1,64 @@
+{
+  "videos": {
+    "2026-11-05-p0-remedin": {
+      "instagram": {
+        "status": "ok",
+        "id": "18135757390708468",
+        "url": "https://www.instagram.com/reel/18135757390708468",
+        "landingUrl": "https://remedin.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-05T15:01:38.309Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "4654284414897023",
+        "url": "https://www.facebook.com/4654284414897023",
+        "landingUrl": "https://remedin.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-05T15:01:47.888Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17896071039614008",
+        "url": "https://www.threads.net/@me/post/17896071039614008",
+        "landingUrl": "https://remedin.app.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-05T15:02:27.280Z"
+      },
+      "bluesky": {
+        "status": "erro",
+        "erro": "Bluesky uploadVideo: \"already_exists\"",
+        "em": "2026-11-05T15:02:28.771Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aec9a87b83dcc59b9c16e6a",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://remedin.app.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-05T15:02:31.491Z"
+      }
+    }
+  },
+  "atualizadoEm": "2026-11-05T15:02:31.491Z"
+}

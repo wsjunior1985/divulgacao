@@ -14,6 +14,10 @@ on:
         description: "Gerar e guardar os slides sem publicar"
         type: boolean
         default: true
+      cron:
+        description: "Cron do slot (disparo pontual pela VPS). Ex.: 0 12 * * *"
+        type: string
+        required: false
       app:
         description: "App específico para conferência (vazio = rodízio)"
         type: string
@@ -39,7 +43,7 @@ jobs:
       MEDIA_MODE: ${{ vars.MEDIA_MODE || 'git' }}
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
+      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
       CARROSSEL_APP: ${{ inputs.app }}
     steps:
       - uses: actions/checkout@v4

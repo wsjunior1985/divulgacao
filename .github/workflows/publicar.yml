@@ -30,6 +30,10 @@ on:
         description: "App da campanha manual (vazio = rodízio normal)"
         type: string
         required: false
+      cron:
+        description: "Cron do slot (disparo pontual pela VPS). Ex.: 0 11 * * *"
+        type: string
+        required: false
       forcar:
         description: "Republicar mesmo se o slot já saiu"
         type: boolean
@@ -68,7 +72,7 @@ jobs:
       MEDIA_MODE: ${{ vars.MEDIA_MODE || 'git' }}
       HORARIOS: ${{ vars.HORARIOS || '08,11,14,17,20,21,22' }}
       CANAIS: ${{ vars.CANAIS }}
-      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
+      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
     steps:
       - uses: actions/checkout@v4
 

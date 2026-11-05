@@ -14204,8 +14204,9 @@
     },
     "carrossel-convertendo-quanto-em-reais-2026-11-05": {
       "instagram": {
-        "status": "erro",
-        "mensagem": "fetch failed",
+        "status": "ok",
+        "id": "18106979816639279",
+        "url": "https://www.instagram.com/p/18106979816639279",
         "formato": "carrossel",
         "slides": 7,
         "tipo": "carrossel",
@@ -14218,8 +14219,8 @@
           "campaign": "divulgacao-2026-11",
           "content": "carrossel-convertendo-quanto-em-reais"
         },
-        "em": "2026-11-05T12:01:09.521Z",
-        "erro": "fetch failed"
+        "em": "2026-11-05T14:10:04.183Z",
+        "erro": null
       }
     },
     "554-rifazinha-painel-compradores": {
@@ -14295,5 +14296,5 @@
       }
     }
   },
-  "atualizadoEm": "2026-11-05T14:02:15.435Z"
+  "atualizadoEm": "2026-11-05T14:10:04.183Z"
 }

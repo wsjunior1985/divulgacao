@@ -222,22 +222,143 @@
         "tiktok": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\n#waldeapps #pwa #apps",
         "x": "Conheça a WaldeApps, estúdio de apps PWA que abrem direto no celular.\n\nhttps://waldeapps.systems"
       }
+    },
+    "aieat-1": {
+      "arquivo": "videos/9x16/aieat-1.mp4",
+      "nome": "AI-Eat",
+      "titulo": "Tire uma foto do prato e veja as calorias",
+      "legendas": {
+        "instagram": "Foto do prato, estimativa em segundos. 🍽️\n\nA IA do AI-Eat estima calorias e macronutrientes; os números servem como referência e podem variar conforme a porção real. Entende PF, feijoada e açaí e guarda o histórico semanal.\n\nSem conta e sem cartão para testar.\n\n🔗 aieat.app.br (link na bio)\n\n#aieat #calorias #alimentacao #nutricao #inteligenciaartificial",
+        "facebook": "Foto do prato, estimativa em segundos. 🍽️\n\nA IA do AI-Eat estima calorias e macronutrientes; os números servem como referência e podem variar conforme a porção real. Entende PF, feijoada e açaí e guarda o histórico semanal.\n\nSem conta e sem cartão para testar.\n\n🔗 https://aieat.app.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "A IA do AI-Eat estima calorias e macros pela foto. Os números são referência e podem variar conforme a porção. Entende PF, feijoada e açaí. Sem conta ou cartão.\n\nhttps://aieat.app.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Foto do prato → estimativa de calorias e macros pela IA. Os números são referência, não medição exata. Sem conta ou cartão.\n\nhttps://aieat.app.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Foto do prato → estimativa de calorias e macros. Os números são referência e podem variar conforme a porção. Sem conta ou cartão.\n\nhttps://aieat.app.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#aieat #calorias #alimentacao #nutricao #inteligenciaartificial",
+        "x": "A IA estima calorias e macros pela foto. Os números são referência e podem variar conforme a porção. Sem conta ou cartão.\n\nhttps://aieat.app.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://aieat.app.br"
+    },
+    "gasonol-1": {
+      "arquivo": "videos/9x16/gasonol-1.mp4",
+      "nome": "GASONOL",
+      "titulo": "Gasolina ou etanol? Descubra na hora",
+      "legendas": {
+        "instagram": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 gasonol.com.br (link na bio)\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "facebook": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 https://gasonol.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "O GASONOL compara o consumo do seu modelo (PBEV/INMETRO) com os preços que você informa. Os valores do vídeo são exemplos; o resultado varia por carro e preço.\n\nhttps://gasonol.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Gasolina ou etanol? O GASONOL compara o consumo do modelo com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Qual combustível compensa no seu carro? ⛽\n\nO GASONOL usa dados PBEV/INMETRO e os preços que você informa. Valores no vídeo são exemplos; resultado varia por modelo e preço.\n\nhttps://gasonol.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "x": "O GASONOL compara o consumo do seu carro (PBEV/INMETRO) com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://gasonol.com.br"
+    },
+    "gasonol-2": {
+      "arquivo": "videos/9x16/gasonol-2.mp4",
+      "nome": "GASONOL",
+      "titulo": "Gasolina ou etanol? Descubra na hora",
+      "legendas": {
+        "instagram": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 gasonol.com.br (link na bio)\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "facebook": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 https://gasonol.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "O GASONOL compara o consumo do seu modelo (PBEV/INMETRO) com os preços que você informa. Os valores do vídeo são exemplos; o resultado varia por carro e preço.\n\nhttps://gasonol.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Gasolina ou etanol? O GASONOL compara o consumo do modelo com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Qual combustível compensa no seu carro? ⛽\n\nO GASONOL usa dados PBEV/INMETRO e os preços que você informa. Valores no vídeo são exemplos; resultado varia por modelo e preço.\n\nhttps://gasonol.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "x": "O GASONOL compara o consumo do seu carro (PBEV/INMETRO) com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://gasonol.com.br"
+    },
+    "gasonol-3": {
+      "arquivo": "videos/9x16/gasonol-3.mp4",
+      "nome": "GASONOL",
+      "titulo": "Gasolina ou etanol? Descubra na hora",
+      "legendas": {
+        "instagram": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 gasonol.com.br (link na bio)\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "facebook": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 https://gasonol.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "O GASONOL compara o consumo do seu modelo (PBEV/INMETRO) com os preços que você informa. Os valores do vídeo são exemplos; o resultado varia por carro e preço.\n\nhttps://gasonol.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Gasolina ou etanol? O GASONOL compara o consumo do modelo com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Qual combustível compensa no seu carro? ⛽\n\nO GASONOL usa dados PBEV/INMETRO e os preços que você informa. Valores no vídeo são exemplos; resultado varia por modelo e preço.\n\nhttps://gasonol.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "x": "O GASONOL compara o consumo do seu carro (PBEV/INMETRO) com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://gasonol.com.br"
+    },
+    "remedin-1": {
+      "arquivo": "videos/9x16/remedin-1.mp4",
+      "nome": "Remedin",
+      "titulo": "Porque cada dose conta",
+      "legendas": {
+        "instagram": "Porque cada dose conta. 💊\n\nO Remedin avisa antes dos horários configurados, ajuda a acompanhar doses e estoque e deixa o histórico pronto para a consulta.\n\nAté 3 medicamentos grátis para sempre, sem cartão. O Remedin organiza lembretes, registros e o acompanhamento de quem cuida de você. Telas e dados do vídeo são ilustrativos; siga a orientação do seu médico ou farmacêutico.\n\n🔗 remedin.app.br (link na bio)\n\n#remedin #lembretederemedio #saude #cuidador #tratamento",
+        "facebook": "Porque cada dose conta. 💊\n\nO Remedin avisa antes dos horários configurados, ajuda a acompanhar doses e estoque e deixa o histórico pronto para a consulta.\n\nAté 3 medicamentos grátis para sempre, sem cartão. O Remedin organiza lembretes, registros e o acompanhamento de quem cuida de você. Telas e dados do vídeo são ilustrativos; siga a orientação do seu médico ou farmacêutico.\n\n🔗 https://remedin.app.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "Até 3 medicamentos grátis para sempre, sem cartão. O Remedin organiza lembretes e registros. Telas e dados são ilustrativos; siga a orientação do seu profissional de saúde.\n\nhttps://remedin.app.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Até 3 medicamentos grátis para sempre, sem cartão. Lembretes e registros para sua rotina. Dados do vídeo são ilustrativos; siga orientação profissional.\n\nhttps://remedin.app.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Porque cada dose conta 💊\n\nAté 3 medicamentos grátis para sempre, sem cartão. Telas e dados são ilustrativos. Configure lembretes conforme a orientação do seu médico ou farmacêutico.\n\nhttps://remedin.app.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#remedin #lembretederemedio #saude #cuidador #tratamento",
+        "x": "Até 3 medicamentos grátis para sempre, sem cartão. O Remedin organiza lembretes e registros. Dados ilustrativos; siga a orientação do seu profissional de saúde.\n\nhttps://remedin.app.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://remedin.app.br"
+    },
+    "vdq-1": {
+      "arquivo": "videos/9x16/vdq-1.mp4",
+      "nome": "Vai dar quanto?",
+      "titulo": "Acompanhe o total da compra antes do caixa",
+      "legendas": {
+        "instagram": "Acompanhe o total da compra antes do caixa. 🛒\n\nNo Vai dar quanto? você dita os produtos, informa os preços, define um teto e recebe aviso antes de ultrapassá-lo. Sem rastreamento e funciona offline.\n\nOs valores e a compra vistos no vídeo são de demonstração. No app, informe os preços da sua loja para acompanhar uma estimativa do total.\n\n🔗 vaidarquanto.com.br (link na bio)\n\n#vaidarquanto #supermercado #economiadomestica #compras #financaspessoais",
+        "facebook": "Acompanhe o total da compra antes do caixa. 🛒\n\nNo Vai dar quanto? você dita os produtos, informa os preços, define um teto e recebe aviso antes de ultrapassá-lo. Sem rastreamento e funciona offline.\n\nOs valores e a compra vistos no vídeo são de demonstração. No app, informe os preços da sua loja para acompanhar uma estimativa do total.\n\n🔗 https://vaidarquanto.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "Dite os produtos, informe os preços e acompanhe a estimativa do total. Defina um teto e receba aviso antes de ultrapassá-lo. Os valores do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Informe produtos e preços e acompanhe uma estimativa da compra. Os dados do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Acompanhe a estimativa da compra enquanto faz compras 🛒\n\nDite os produtos, informe os preços, defina um teto e receba aviso. Valores do vídeo são demonstrativos; o total depende dos preços informados.\n\nhttps://vaidarquanto.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#vaidarquanto #supermercado #economiadomestica #compras #financaspessoais",
+        "x": "Informe produtos e preços e acompanhe uma estimativa da compra. Os dados do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://vaidarquanto.com.br"
+    },
+    "vdq-2": {
+      "arquivo": "videos/9x16/vdq-2.mp4",
+      "nome": "Vai dar quanto?",
+      "titulo": "Acompanhe o total da compra antes do caixa",
+      "legendas": {
+        "instagram": "Acompanhe o total da compra antes do caixa. 🛒\n\nNo Vai dar quanto? você dita os produtos, informa os preços, define um teto e recebe aviso antes de ultrapassá-lo. Sem rastreamento e funciona offline.\n\nOs valores e a compra vistos no vídeo são de demonstração. No app, informe os preços da sua loja para acompanhar uma estimativa do total.\n\n🔗 vaidarquanto.com.br (link na bio)\n\n#vaidarquanto #supermercado #economiadomestica #compras #financaspessoais",
+        "facebook": "Acompanhe o total da compra antes do caixa. 🛒\n\nNo Vai dar quanto? você dita os produtos, informa os preços, define um teto e recebe aviso antes de ultrapassá-lo. Sem rastreamento e funciona offline.\n\nOs valores e a compra vistos no vídeo são de demonstração. No app, informe os preços da sua loja para acompanhar uma estimativa do total.\n\n🔗 https://vaidarquanto.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "Dite os produtos, informe os preços e acompanhe a estimativa do total. Defina um teto e receba aviso antes de ultrapassá-lo. Os valores do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Informe produtos e preços e acompanhe uma estimativa da compra. Os dados do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Acompanhe a estimativa da compra enquanto faz compras 🛒\n\nDite os produtos, informe os preços, defina um teto e receba aviso. Valores do vídeo são demonstrativos; o total depende dos preços informados.\n\nhttps://vaidarquanto.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#vaidarquanto #supermercado #economiadomestica #compras #financaspessoais",
+        "x": "Informe produtos e preços e acompanhe uma estimativa da compra. Os dados do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://vaidarquanto.com.br"
+    },
+    "waldeapps-3": {
+      "arquivo": "videos/9x16/waldeapps-3.mp4",
+      "nome": "WaldeApps",
+      "titulo": "Conheça a WaldeApps",
+      "url": "https://waldeapps.systems",
+      "legendas": {
+        "instagram": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\n🔗 waldeapps.systems (link na bio)\n\n#waldeapps #pwa #apps",
+        "facebook": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\n🔗 https://waldeapps.systems",
+        "threads": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\nhttps://waldeapps.systems",
+        "bluesky": "Conheça a WaldeApps, estúdio de apps PWA que abrem direto no celular.\n\nhttps://waldeapps.systems",
+        "tiktok": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\n#waldeapps #pwa #apps",
+        "x": "Conheça a WaldeApps, estúdio de apps PWA que abrem direto no celular.\n\nhttps://waldeapps.systems"
+      }
     }
   },
   "rodizio": [
     "remedin",
     "aieat",
+    "waldeapps-teste",
     "vaidarquanto",
-    "gasonol",
+    "gasonol-1",
     "papelzinho",
     "convertendo",
+    "vdq-1",
     "opalpiteiro",
     "barbarizando",
+    "remedin-1",
     "aeroliso",
+    "gasonol",
     "fazopix",
+    "gasonol-2",
     "voutrocar",
+    "aieat-1",
+    "gasonol-3",
     "comunidade-do-ceu",
     "gasonol-bomba",
+    "waldeapps-3",
+    "vdq-2",
     "gasonol-duvida"
   ]
 }

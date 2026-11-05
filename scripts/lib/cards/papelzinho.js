@@ -5,6 +5,33 @@
 import { icone } from "../icones.js";
 import { CSS_BASE, CSS_CELULAR, celular, conteudo, dominio, fontesCss, DISPLAYS, existe, logo, tela, url } from "./comum.js";
 
+// Toque natalino (só no post com visual.variante "natal"): pisca-pisca no topo e neve discreta.
+const CSS_NATAL = `
+.natal-luzes { position:absolute; left:0; top:0; width:100%; height:120px; z-index:6; pointer-events:none; }
+.sub { text-wrap:balance; }
+.natal-neve { position:absolute; inset:0; z-index:4; pointer-events:none; }
+.natal-neve i { position:absolute; border-radius:50%; background:#fff; box-shadow:0 0 12px rgba(255,255,255,.7); }
+`;
+
+function natalDecor(L, A) {
+  const cores = ["#ffd45c", "#ffffff", "#7ee08a", "#ffb3c1"];
+  const n = Math.round(L / 54);
+  let fio = `M-10 14`, bulbos = "";
+  for (let k = 0; k <= n; k++) {
+    const x = (k / n) * L, y = 20 + 14 * Math.sin(k * 1.1);
+    fio += ` L${x.toFixed(1)} ${y.toFixed(1)}`;
+    const c = cores[k % cores.length];
+    bulbos += `<circle cx="${x.toFixed(1)}" cy="${(y + 14).toFixed(1)}" r="11" fill="${c}" opacity=".95"/><circle cx="${x.toFixed(1)}" cy="${(y + 14).toFixed(1)}" r="22" fill="${c}" opacity=".22"/>`;
+  }
+  let neve = "";
+  for (let k = 0; k < 46; k++) {
+    const r = ((k * 9301 + 49297) % 233280) / 233280, q = ((k * 7919 + 1237) % 104729) / 104729;
+    const d = 5 + Math.round(r * 9);
+    neve += `<i style="left:${(q * L).toFixed(0)}px;top:${(r * A * 0.62 + 150).toFixed(0)}px;width:${d}px;height:${d}px;opacity:${(0.35 + q * 0.4).toFixed(2)}"></i>`;
+  }
+  return `<div class="natal-neve">${neve}</div><svg class="natal-luzes" viewBox="0 0 ${L} 120"><path d="${fio}" stroke="#3a1a22" stroke-width="3" fill="none" opacity=".55"/>${bulbos}</svg>`;
+}
+
 export function papelzinho({ app, post, formato, L, A, variacao }) {
   const c = conteudo(app, post, 0);
   const fraunces = DISPLAYS.fraunces;
@@ -12,6 +39,7 @@ export function papelzinho({ app, post, formato, L, A, variacao }) {
   const nomes = c.telas ?? [c.tela ?? "tela-eventos"];
   const telas = nomes.map((n, i) => tela(app, n, variacao + i));
   const [centro, esquerda, direita] = telas;
+  const natal = post.visual?.variante === "natal";
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 ${fontesCss(fraunces)}
@@ -56,6 +84,7 @@ h1 .l2 { display:block; font-size:118px; white-space:nowrap;
 .cena.esq { left:24px; top:810px; transform:scale(.8); --giro:rotateY(22deg) rotateZ(-6deg); z-index:2; }
 .cena.dir { left:716px; top:790px; transform:scale(.8); --giro:rotateY(-22deg) rotateZ(6deg); z-index:2; }
 ${CSS_CELULAR}
+${natal ? CSS_NATAL : ""}
 
 .pe { position:absolute; left:92px; right:92px; bottom:40px; height:118px; border-radius:70px; z-index:5; display:flex; align-items:center; justify-content:center; gap:22px;
   background:linear-gradient(90deg,#e8246e,#f06a52 60%,#f7923c); border:3px solid rgba(255,255,255,.75); color:#fff;
@@ -80,7 +109,7 @@ ${esquerda ? celular(esquerda, "esq") : ""}
 ${direita ? celular(direita, "dir") : ""}
 ${celular(centro, "centro")}
 
-<div class="selo"><svg viewBox="0 0 100 100"><path fill="#ffd45c" d="${Array.from({ length: 40 }, (_, i) => { const a = (i / 40) * Math.PI * 2, r = i % 2 ? 46 : 50; return `${i ? "L" : "M"}${(50 + r * Math.cos(a)).toFixed(2)} ${(50 + r * Math.sin(a)).toFixed(2)}`; }).join(" ")}Z"/></svg><i>✦</i><b>Grátis</b></div>
+<div class="selo"><svg viewBox="0 0 100 100"><path fill="#ffd45c" d="${Array.from({ length: 40 }, (_, i) => { const a = (i / 40) * Math.PI * 2, r = i % 2 ? 46 : 50; return `${i ? "L" : "M"}${(50 + r * Math.cos(a)).toFixed(2)} ${(50 + r * Math.sin(a)).toFixed(2)}`; }).join(" ")}Z"/></svg><i>${natal ? "🎄" : "✦"}</i><b>${natal ? "Natal" : "Grátis"}</b></div>
 <div class="pwa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>PWA</div>
 <div class="marca" style="${formato === "vertical" ? "" : "top:44px"}"></div>
 
@@ -89,7 +118,8 @@ ${celular(centro, "centro")}
   ${c.sub ? `<p class="sub">${c.sub}</p>` : ""}
 </div>
 
-<div class="pe"><div class="ic">${icone("globo")}</div><div><small>Acesse grátis</small><b>${dominio(app)}</b></div></div>
+<div class="pe"><div class="ic">${icone("globo")}</div><div><small>${natal ? "Acesse o app" : "Acesse grátis"}</small><b>${dominio(app)}</b></div></div>
+${natal ? natalDecor(L, A) : ""}
 <div class="grao"></div>
 
 <script>

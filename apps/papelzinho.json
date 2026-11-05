@@ -368,6 +368,423 @@
         ],
         "beneficios": []
       }
+    },
+    {
+      "id": "natal-amigo-secreto",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#natal",
+        "#amigosecreto",
+        "#amigooculto",
+        "#ceiadenatal"
+      ],
+      "card": {
+        "titulo": "Amigo Secreto de *Natal*",
+        "sub": "A família toda no mesmo sorteio."
+      },
+      "ganchos": [
+        "O Natal está chegando e o amigo secreto da família ainda não saiu do papel.",
+        "Todo ano alguém promete organizar o amigo secreto e a lista some no grupo.",
+        "Amigo secreto de Natal bom é o que todo mundo entra e ninguém reclama do sorteio.",
+        "Se o Natal vai ter troca de presentes, a organização precisa ser a parte fácil."
+      ],
+      "corpos": [
+        "No Papelzinho você cria o evento, manda o link no grupo da família e cada um entra pelo celular.",
+        "O sorteio sai sem repetir e sem ninguém tirar a si mesmo, e só cada pessoa vê o seu resultado.",
+        "Tio, prima, sogra e a criançada: todo mundo entra pelo link, sem planilha.",
+        "Você deixa tudo pronto antes da ceia e na hora só falta a parte divertida: a revelação."
+      ],
+      "ctas": [
+        "Monte o amigo secreto da família.\n\n👉 {link}",
+        "Crie o seu antes da ceia 👉 {link}",
+        "Comece pelo link 👉 {link}"
+      ],
+      "curtos": [
+        "Amigo secreto de Natal da família, sem confusão: {link}",
+        "Crie, convide e sorteie antes da ceia. {link}",
+        "O Natal já tem trabalho demais. O sorteio fica com o app. {link}"
+      ],
+      "premium": {
+        "titulo": "Amigo Secreto",
+        "destaque": "de Natal",
+        "sub": "Convide a família pelo link e <b>sorteie sem confusão</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
+    },
+    {
+      "id": "natal-amigo-oculto",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#natal",
+        "#amigosecreto",
+        "#amigooculto",
+        "#ceiadenatal"
+      ],
+      "card": {
+        "titulo": "Amigo Oculto da *ceia*",
+        "sub": "Surpresa na mesa, organização no celular."
+      },
+      "ganchos": [
+        "Amigo secreto ou amigo oculto, a ceia fica melhor com troca de presentes.",
+        "Tem família que chama de secreto, tem família que chama de oculto. A graça é a mesma.",
+        "A troca de presentes é o momento da ceia em que todo mundo para pra rir.",
+        "Ceia de Natal com amigo oculto organizado muda o clima da noite."
+      ],
+      "corpos": [
+        "Amigo secreto e amigo oculto são a mesma brincadeira com nomes diferentes, e no Papelzinho você organiza os dois do mesmo jeito.",
+        "Você cria o evento, combina o valor com o grupo e o app cuida do sorteio.",
+        "Cada participante deixa sugestões de presente sem estragar a surpresa.",
+        "Na hora da ceia, a revelação acontece de um jeito divertido e ninguém fica de fora."
+      ],
+      "ctas": [
+        "Organize o amigo oculto da ceia.\n\n👉 {link}",
+        "Crie o seu evento 👉 {link}",
+        "Veja como fica 👉 {link}"
+      ],
+      "curtos": [
+        "Amigo oculto da ceia, do sorteio à revelação: {link}",
+        "Secreto ou oculto, o app resolve do mesmo jeito. {link}",
+        "Menos burocracia, mais Natal. {link}"
+      ],
+      "premium": {
+        "titulo": "Amigo Oculto",
+        "destaque": "da ceia",
+        "sub": "Do sorteio à revelação, tudo <b>no celular da família</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
+    },
+    {
+      "id": "natal-amigolate",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#natal",
+        "#amigolate",
+        "#amigooculto",
+        "#familia"
+      ],
+      "card": {
+        "titulo": "Amigolate de *Natal*",
+        "sub": "Troca de doces para adoçar a ceia.",
+        "destaque": "🍫"
+      },
+      "ganchos": [
+        "Nem todo Natal precisa de presente caro, às vezes precisa de chocolate.",
+        "Se o bolso está apertado no fim do ano, o Amigolate ajuda a manter a brincadeira.",
+        "Quer fugir do presente óbvio? Troque por doce.",
+        "Amigolate é a troca de doces que cabe em qualquer Natal."
+      ],
+      "corpos": [
+        "O Papelzinho também organiza Amigolate, a versão da brincadeira em que a troca é de doces.",
+        "É o mesmo fluxo simples de convite e sorteio, só que com chocolate na revelação.",
+        "Funciona bem para a família, para a vizinhança e para quem quer manter a tradição sem pesar no orçamento.",
+        "O Amigolate faz parte do plano Premium do app."
+      ],
+      "ctas": [
+        "Monte um Amigolate de Natal.\n\n👉 {link}",
+        "Conheça o Amigolate 👉 {link}",
+        "Veja a versão doce 👉 {link}"
+      ],
+      "curtos": [
+        "Amigolate de Natal: troca de doces sem complicação. {link}",
+        "Chocolate no lugar do presente clássico. {link}",
+        "A ceia fica mais doce com Amigolate. {link}"
+      ],
+      "premium": {
+        "titulo": "Amigolate",
+        "destaque": "de Natal",
+        "sub": "Troca de doces e chocolates para <b>adoçar a ceia</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
+    },
+    {
+      "id": "natal-amigo-da-onca",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#amigodaonca",
+        "#amigosecreto",
+        "#natal",
+        "#resenha"
+      ],
+      "card": {
+        "titulo": "Amigo da *Onça*",
+        "sub": "A versão zoeira do Natal em família."
+      },
+      "ganchos": [
+        "Todo grupo tem aquele parente que merece um presente de pegadinha.",
+        "O amigo da onça é o amigo secreto sem seriedade nenhuma.",
+        "Quer um Natal com mais risada? Combine presentes engraçados.",
+        "Presente bobo, de zoeira ou de pegadinha: isso também é Natal."
+      ],
+      "corpos": [
+        "O amigo da onça é a versão de zoeira do amigo secreto, com presentes engraçados no lugar dos sérios.",
+        "O sorteio funciona igual: o Papelzinho sorteia os pares e ninguém tira a si mesmo.",
+        "O grupo combina o tom e o valor dos presentes, e o app cuida do convite, do sorteio e da revelação.",
+        "Crie o evento, mande o link na família e deixe a zoeira para a noite de Natal."
+      ],
+      "ctas": [
+        "Monte o seu amigo da onça.\n\n👉 {link}",
+        "Crie a zoeira 👉 {link}",
+        "Convide a turma 👉 {link}"
+      ],
+      "curtos": [
+        "Amigo da onça de Natal, com sorteio sem repetir: {link}",
+        "A zoeira da família merece boa organização. {link}",
+        "Presente de pegadinha e sorteio justo. {link}"
+      ],
+      "premium": {
+        "titulo": "Amigo da",
+        "destaque": "Onça",
+        "sub": "A versão zoeira do amigo secreto, com <b>sorteio justo</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
+    },
+    {
+      "id": "natal-sugestoes-de-presente",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#natal",
+        "#amigosecreto",
+        "#amigooculto",
+        "#ceiadenatal"
+      ],
+      "card": {
+        "titulo": "Dica de *presente*",
+        "sub": "Sem estragar a surpresa do Natal."
+      },
+      "ganchos": [
+        "Ninguém quer ganhar meia de novo no amigo secreto de Natal.",
+        "Presente de amigo secreto bom começa com uma pista.",
+        "Tirou alguém que você mal conhece? Uma dica ajuda muito.",
+        "Dar presente que a pessoa gosta é a melhor parte do Natal."
+      ],
+      "corpos": [
+        "No Papelzinho cada participante deixa sugestões de presente sem revelar quem tirou quem.",
+        "Quem tirou você vê o que você gostaria de ganhar, e a surpresa continua inteira.",
+        "Isso ajuda a família, que às vezes mistura idades e gostos bem diferentes.",
+        "Você cria o evento, o pessoal entra pelo link e as dicas ficam num lugar só."
+      ],
+      "ctas": [
+        "Monte seu amigo secreto com dicas.\n\n👉 {link}",
+        "Crie o evento 👉 {link}",
+        "Veja como funciona 👉 {link}"
+      ],
+      "curtos": [
+        "Sugestões de presente sem estragar a surpresa: {link}",
+        "Menos chute, mais presente certo no Natal. {link}",
+        "Dica de presente e sorteio no mesmo app. {link}"
+      ],
+      "premium": {
+        "titulo": "Sugestões",
+        "destaque": "de presente",
+        "sub": "Cada um deixa dicas e a <b>surpresa continua inteira</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
+    },
+    {
+      "id": "confra-da-firma",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#confraternizacao",
+        "#amigooculto",
+        "#fimdeano",
+        "#trabalho"
+      ],
+      "card": {
+        "titulo": "Confra da *firma*",
+        "sub": "Fim de ano com amigo oculto sem dor de cabeça."
+      },
+      "ganchos": [
+        "Confraternização de fim de ano da firma sem amigo oculto organizado vira confusão.",
+        "Alguém sempre fica com a missão de organizar o amigo oculto do escritório.",
+        "Fim de ano no trabalho pede uma confraternização leve e sem planilha.",
+        "Time grande, agenda corrida e amigo oculto para organizar: dá para facilitar."
+      ],
+      "corpos": [
+        "Crie o evento no Papelzinho, mande o link no grupo da equipe e cada pessoa entra pelo celular.",
+        "O sorteio sai sem repetir e sem ninguém tirar a si mesmo, e o resultado é só de cada um.",
+        "Dá para fazer amigo oculto ou amigo da onça com o pessoal do trabalho.",
+        "Quem organiza não precisa tirar papelzinho do pote nem juntar nome em planilha."
+      ],
+      "ctas": [
+        "Organize a confra do time.\n\n👉 {link}",
+        "Crie o amigo oculto da firma 👉 {link}",
+        "Convide a equipe 👉 {link}"
+      ],
+      "curtos": [
+        "Confra da firma com amigo oculto sem planilha: {link}",
+        "Link no grupo da equipe e sorteio pronto. {link}",
+        "Fim de ano no trabalho com menos burocracia. {link}"
+      ],
+      "premium": {
+        "titulo": "Confra da",
+        "destaque": "firma",
+        "sub": "O link vai no grupo da equipe e o <b>sorteio sai sem planilha</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
+    },
+    {
+      "id": "amigo-oculto-do-trabalho",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#confraternizacao",
+        "#amigooculto",
+        "#fimdeano",
+        "#trabalho"
+      ],
+      "card": {
+        "titulo": "Amigo Oculto do *trabalho*",
+        "sub": "Setor, equipe ou empresa inteira."
+      },
+      "ganchos": [
+        "Amigo oculto do trabalho é clássico de fim de ano, mas organizar dá trabalho.",
+        "Entre uma entrega e outra, ninguém quer perder tempo com sorteio.",
+        "No escritório todo mundo gosta da troca de presentes, e quase ninguém quer organizar.",
+        "Fim de ano, equipe reunida e a pergunta de sempre: quem organiza o amigo oculto?"
+      ],
+      "corpos": [
+        "Você cria o evento, combina o valor e envia o link para a equipe.",
+        "Cada pessoa entra pelo celular e o Papelzinho faz o sorteio sem repetir.",
+        "As sugestões de presente ajudam a acertar mesmo com colega que você mal conhece.",
+        "Na confraternização, a revelação fica por conta do grupo."
+      ],
+      "ctas": [
+        "Crie o do seu setor.\n\n👉 {link}",
+        "Monte o amigo oculto do time 👉 {link}",
+        "Comece pelo link 👉 {link}"
+      ],
+      "curtos": [
+        "Amigo oculto do trabalho, do convite à revelação: {link}",
+        "Setor, equipe ou empresa: um link resolve. {link}",
+        "Sorteio sem repetir para a confra de fim de ano. {link}"
+      ],
+      "premium": {
+        "titulo": "Amigo Oculto",
+        "destaque": "do trabalho",
+        "sub": "Setor, equipe ou empresa: <b>um link e o sorteio pronto</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
+    },
+    {
+      "id": "natal-convite-no-zap",
+      "sazonal": {
+        "de": "2026-11-05",
+        "ate": "2026-12-24"
+      },
+      "visual": {
+        "variante": "natal"
+      },
+      "hashtags": [
+        "#papelzinho",
+        "#natal",
+        "#amigosecreto",
+        "#amigooculto",
+        "#ceiadenatal"
+      ],
+      "card": {
+        "titulo": "Convite no *zap*",
+        "sub": "Chame a família antes do Natal."
+      },
+      "ganchos": [
+        "Chamar a família toda no grupo, um por um, é trabalho que ninguém merece.",
+        "O Natal está chegando e o amigo secreto ainda não tem lista de participantes.",
+        "O grupo da família já existe. O convite pode morar nele.",
+        "Quanto antes o link circular, mais fácil fechar o amigo secreto de Natal."
+      ],
+      "corpos": [
+        "Crie o evento no Papelzinho e compartilhe o link de convite no WhatsApp com um toque.",
+        "Cada pessoa entra no evento pelo celular, no seu ritmo.",
+        "Com todo mundo dentro, o sorteio sai em poucos toques.",
+        "São necessários pelo menos 3 participantes, e ninguém tira a si mesmo."
+      ],
+      "ctas": [
+        "Mande o convite agora.\n\n👉 {link}",
+        "Crie o evento 👉 {link}",
+        "Comece em segundos 👉 {link}"
+      ],
+      "curtos": [
+        "Convite de amigo secreto no WhatsApp com um link: {link}",
+        "Chame a família antes do Natal. {link}",
+        "Link no grupo e a turma entra sozinha. {link}"
+      ],
+      "premium": {
+        "titulo": "Convite",
+        "destaque": "no zap",
+        "sub": "Compartilhe o link e a <b>família entra pelo celular</b>.",
+        "telas": [
+          "tela-eventos"
+        ],
+        "beneficios": []
+      }
     }
   ]
 }

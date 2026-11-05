@@ -58,7 +58,66 @@
         },
         "em": "2026-11-05T15:02:31.491Z"
       }
+    },
+    "2026-11-05-p1-aieat": {
+      "instagram": {
+        "status": "ok",
+        "id": "18222151894343072",
+        "url": "https://www.instagram.com/reel/18222151894343072",
+        "landingUrl": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat"
+        },
+        "em": "2026-11-05T22:01:27.657Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "4663778983946340",
+        "url": "https://www.facebook.com/4663778983946340",
+        "landingUrl": "https://aieat.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat"
+        },
+        "em": "2026-11-05T22:01:35.929Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18015895811986195",
+        "url": "https://www.threads.net/@me/post/18015895811986195",
+        "landingUrl": "https://aieat.app.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat"
+        },
+        "em": "2026-11-05T22:02:34.232Z"
+      },
+      "bluesky": {
+        "status": "erro",
+        "erro": "Bluesky uploadVideo: \"already_exists\"",
+        "em": "2026-11-05T22:02:36.025Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aecfcfed930780bcacb590c",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aieat.app.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat"
+        },
+        "em": "2026-11-05T22:02:38.744Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-05T15:02:31.491Z"
+  "atualizadoEm": "2026-11-05T22:02:38.744Z"
 }

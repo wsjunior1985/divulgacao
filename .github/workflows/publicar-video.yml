@@ -13,6 +13,14 @@ on:
         description: "Cron do slot (disparo pela VPS). Ex.: 0 15 * * *"
         type: string
         required: false
+      data:
+        description: "Data do slot (AAAA-MM-DD), para teste ou recuperação. Vazio = pelo cron"
+        type: string
+        required: false
+      pos:
+        description: "Posição do slot no dia: 0 = 12h BRT, 1 = 19h BRT (usar com data)"
+        type: string
+        required: false
       permitir_atraso:
         description: "Recuperar slot que já passou (ignora o limite de 120 min)"
         type: boolean
@@ -44,6 +52,8 @@ jobs:
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
       GITHUB_EVENT_SCHEDULE: ${{ inputs.cron }}
       PERMITIR_ATRASO: ${{ inputs.permitir_atraso }}
+      SLOT_DATA: ${{ inputs.data }}
+      SLOT_POS: ${{ inputs.pos }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -55,6 +65,7 @@ jobs:
         run: |
           argumentos=()
           if [ "${{ inputs.dry_run }}" = "true" ]; then argumentos+=(--dry-run); fi
+          if [ -n "$SLOT_DATA" ]; then argumentos+=(--data "$SLOT_DATA" --pos "${SLOT_POS:-0}"); fi
           node scripts/publicar-video-rodizio.mjs "${argumentos[@]}"
       - name: Registrar resultado
         if: ${{ always() && inputs.dry_run != true }}

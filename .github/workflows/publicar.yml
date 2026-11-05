@@ -34,6 +34,10 @@ on:
         description: "Cron do slot (disparo pontual pela VPS). Ex.: 0 11 * * *"
         type: string
         required: false
+      permitir_atraso:
+        description: "Recuperar slot do dia que já passou (ignora o limite de 120 min)"
+        type: boolean
+        default: false
       forcar:
         description: "Republicar mesmo se o slot já saiu"
         type: boolean
@@ -73,6 +77,7 @@ jobs:
       HORARIOS: ${{ vars.HORARIOS || '08,11,14,17,20,21,22' }}
       CANAIS: ${{ vars.CANAIS }}
       GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
+      PERMITIR_ATRASO: ${{ inputs.permitir_atraso }}
     steps:
       - uses: actions/checkout@v4
 

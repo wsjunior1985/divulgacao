@@ -75,7 +75,7 @@ function slotAgendado(expressao) {
   const previsto = new Date(Date.UTC(agora.getUTCFullYear(), agora.getUTCMonth(), agora.getUTCDate(), horaUtc, minutoUtc));
   if (previsto > agora) previsto.setUTCDate(previsto.getUTCDate() - 1);
   const atrasoMinutos = (agora.getTime() - previsto.getTime()) / 60000;
-  if (atrasoMinutos > 120) {
+  if (atrasoMinutos > 120 && env("PERMITIR_ATRASO") !== "true") {
     throw new Error(`cron atrasou ${Math.floor(atrasoMinutos)} minutos; slot ignorado para evitar publicar conteúdo fora de hora`);
   }
 

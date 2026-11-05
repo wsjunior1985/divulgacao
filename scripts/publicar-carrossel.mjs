@@ -59,7 +59,7 @@ function slotAgendado() {
   const previsto = new Date(Date.UTC(agora.getUTCFullYear(), agora.getUTCMonth(), agora.getUTCDate(), hora, minuto));
   if (previsto > agora) previsto.setUTCDate(previsto.getUTCDate() - 1);
   const atraso = (agora - previsto) / 60000;
-  if (atraso > 120) throw new Error(`cron atrasou ${Math.floor(atraso)} minutos; slot ignorado`);
+  if (atraso > 120 && env("PERMITIR_ATRASO") !== "true") throw new Error(`cron atrasou ${Math.floor(atraso)} minutos; slot ignorado`);
   const data = agoraBRT(previsto).dia;
   return { data, sequencia: sequenciaDoDia(data, posicao) };
 }

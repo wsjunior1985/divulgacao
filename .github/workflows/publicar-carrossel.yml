@@ -18,6 +18,10 @@ on:
         description: "Cron do slot (disparo pontual pela VPS). Ex.: 0 12 * * *"
         type: string
         required: false
+      permitir_atraso:
+        description: "Recuperar slot do dia que já passou (ignora o limite de 120 min)"
+        type: boolean
+        default: false
       app:
         description: "App específico para conferência (vazio = rodízio)"
         type: string
@@ -44,6 +48,7 @@ jobs:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
       GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
+      PERMITIR_ATRASO: ${{ inputs.permitir_atraso }}
       CARROSSEL_APP: ${{ inputs.app }}
     steps:
       - uses: actions/checkout@v4

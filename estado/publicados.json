@@ -14201,7 +14201,27 @@
         "em": "2026-11-05T11:01:54.905Z",
         "erro": null
       }
+    },
+    "carrossel-convertendo-quanto-em-reais-2026-11-05": {
+      "instagram": {
+        "status": "erro",
+        "mensagem": "fetch failed",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "convertendo",
+        "temaId": "quanto-em-reais",
+        "landingUrl": "https://convertendo.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-convertendo-quanto-em-reais"
+        },
+        "em": "2026-11-05T12:01:09.521Z",
+        "erro": "fetch failed"
+      }
     }
   },
-  "atualizadoEm": "2026-11-05T11:01:54.905Z"
+  "atualizadoEm": "2026-11-05T12:01:09.521Z"
 }

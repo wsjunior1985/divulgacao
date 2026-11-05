@@ -14066,7 +14066,28 @@
         "em": "2026-11-05T02:36:05.640Z",
         "erro": null
       }
+    },
+    "carrossel-remedin-esqueceu-2026-11-04": {
+      "instagram": {
+        "status": "ok",
+        "id": "18181083367428956",
+        "url": "https://www.instagram.com/p/18181083367428956",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "remedin",
+        "temaId": "esqueceu",
+        "landingUrl": "https://remedin.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-remedin-esqueceu"
+        },
+        "em": "2026-11-05T02:37:40.804Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-05T02:36:05.641Z"
+  "atualizadoEm": "2026-11-05T02:37:40.804Z"
 }

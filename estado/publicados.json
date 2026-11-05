@@ -13685,7 +13685,79 @@
         "em": "2026-11-05T02:22:28.242Z",
         "erro": null
       }
+    },
+    "548-vaidarquanto-precos-subindo": {
+      "instagram": {
+        "status": "erro",
+        "id": null,
+        "url": null,
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-vaidarquanto-precos-subindo-c4-v2",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-vaidarquanto-precos-subindo-c4-v2"
+        },
+        "em": "2026-11-05T02:23:14.959Z",
+        "erro": "Graph API: Media ID is not available (código 9007/2207027)"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122124649071435454",
+        "url": "https://www.facebook.com/1293634587162251_122124649071435454",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-vaidarquanto-precos-subindo-c4-v2",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-vaidarquanto-precos-subindo-c4-v2"
+        },
+        "em": "2026-11-05T02:23:20.871Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18154961224535539",
+        "url": "https://www.threads.net/@me/post/18154961224535539",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-vaidarquanto-precos-subindo-c4-v2",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-vaidarquanto-precos-subindo-c4-v2"
+        },
+        "em": "2026-11-05T02:24:00.813Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzjss7lvwe2z",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzjss7lvwe2z",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-vaidarquanto-precos-subindo-c4-v2",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-vaidarquanto-precos-subindo-c4-v2"
+        },
+        "em": "2026-11-05T02:24:01.958Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aebe8c401b5398f87a471f8",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-vaidarquanto-precos-subindo-c4-v2",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-vaidarquanto-precos-subindo-c4-v2"
+        },
+        "em": "2026-11-05T02:24:04.395Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-05T02:22:28.242Z"
+  "atualizadoEm": "2026-11-05T02:24:04.395Z"
 }

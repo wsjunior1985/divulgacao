@@ -3,15 +3,7 @@ name: publicar
 # Publica um post por horário agendado. O rodízio de app e tema é calculado a
 # partir da data, então não existe fila para reabastecer: o conteúdo nunca acaba.
 on:
-  schedule:
-    # Horário de Brasília = UTC-3. Mantenha em sincronia com a variável HORARIOS.
-    - cron: "0 11 * * *" # 08:00 BRT
-    - cron: "0 14 * * *" # 11:00 BRT
-    - cron: "0 17 * * *" # 14:00 BRT
-    - cron: "0 20 * * *" # 17:00 BRT
-    - cron: "0 23 * * *" # 20:00 BRT
-    - cron: "0 0 * * *" # 21:00 BRT
-    - cron: "0 1 * * *" # 22:00 BRT
+  # Disparo pontual pela VPS (/etc/cron.d/divulgacao-slots, scripts/vps/): o schedule nativo do GitHub atrasava 5-7h.
   workflow_dispatch:
     inputs:
       dry_run:

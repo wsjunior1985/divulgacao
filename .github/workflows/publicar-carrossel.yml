@@ -1,13 +1,7 @@
 name: publicar-carrossel
 
 on:
-  schedule:
-    # Quatro projetos distintos por dia, fora dos slots dos posts únicos.
-    # 09h, 13h, 16h e 18h BRT = 12h, 16h, 19h e 21h UTC.
-    - cron: "0 12 * * *"
-    - cron: "0 16 * * *"
-    - cron: "0 19 * * *"
-    - cron: "0 21 * * *"
+  # Disparo pontual pela VPS (/etc/cron.d/divulgacao-slots, scripts/vps/): o schedule nativo do GitHub atrasava 5-7h.
   workflow_dispatch:
     inputs:
       dry_run:

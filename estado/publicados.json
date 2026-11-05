@@ -13688,9 +13688,9 @@
     },
     "548-vaidarquanto-precos-subindo": {
       "instagram": {
-        "status": "erro",
-        "id": null,
-        "url": null,
+        "status": "ok",
+        "id": "18135064489808600",
+        "url": "https://www.instagram.com/p/18135064489808600",
         "landingUrl": "https://vaidarquanto.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-vaidarquanto-precos-subindo-c4-v2",
         "utm": {
           "source": "instagram",
@@ -13698,8 +13698,8 @@
           "campaign": "divulgacao-2026-11",
           "content": "card-feed-vaidarquanto-precos-subindo-c4-v2"
         },
-        "em": "2026-11-05T02:23:14.959Z",
-        "erro": "Graph API: Media ID is not available (código 9007/2207027)"
+        "em": "2026-11-05T02:43:34.078Z",
+        "erro": null
       },
       "facebook": {
         "status": "ok",
@@ -14131,5 +14131,5 @@
       }
     }
   },
-  "atualizadoEm": "2026-11-05T02:42:28.940Z"
+  "atualizadoEm": "2026-11-05T02:43:34.078Z"
 }

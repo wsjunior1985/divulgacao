@@ -13760,9 +13760,9 @@
     },
     "549-gasonol-indique": {
       "instagram": {
-        "status": "erro",
-        "id": null,
-        "url": null,
+        "status": "ok",
+        "id": "18061647038799048",
+        "url": "https://www.instagram.com/p/18061647038799048",
         "landingUrl": "https://gasonol.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-indique-c4-v0",
         "utm": {
           "source": "instagram",
@@ -13770,8 +13770,8 @@
           "campaign": "divulgacao-2026-11",
           "content": "card-feed-gasonol-indique-c4-v0"
         },
-        "em": "2026-11-05T02:25:00.122Z",
-        "erro": "Graph API: Media ID is not available (código 9007/2207027)"
+        "em": "2026-11-05T02:47:33.919Z",
+        "erro": null
       },
       "facebook": {
         "status": "ok",
@@ -14131,5 +14131,5 @@
       }
     }
   },
-  "atualizadoEm": "2026-11-05T02:43:34.078Z"
+  "atualizadoEm": "2026-11-05T02:47:33.919Z"
 }

@@ -14,3 +14,6 @@ PATH=/usr/local/bin:/usr/bin:/bin
 0 16 * * * root /usr/local/bin/disparar-slot.sh publicar-carrossel "0 16 * * *" >> /var/log/divulgacao-slots.log 2>&1
 0 19 * * * root /usr/local/bin/disparar-slot.sh publicar-carrossel "0 19 * * *" >> /var/log/divulgacao-slots.log 2>&1
 0 21 * * * root /usr/local/bin/disparar-slot.sh publicar-carrossel "0 21 * * *" >> /var/log/divulgacao-slots.log 2>&1
+# Reels do rodízio de vídeos: 12h e 19h BRT
+0 15 * * * root /usr/local/bin/disparar-slot.sh publicar-video "0 15 * * *" >> /var/log/divulgacao-slots.log 2>&1
+0 22 * * * root /usr/local/bin/disparar-slot.sh publicar-video "0 22 * * *" >> /var/log/divulgacao-slots.log 2>&1

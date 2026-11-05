@@ -14108,7 +14108,28 @@
         "em": "2026-11-05T02:39:57.192Z",
         "erro": null
       }
+    },
+    "carrossel-vaidarquanto-susto-no-caixa-2026-11-04": {
+      "instagram": {
+        "status": "ok",
+        "id": "18123644905734196",
+        "url": "https://www.instagram.com/p/18123644905734196",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "vaidarquanto",
+        "temaId": "susto-no-caixa",
+        "landingUrl": "https://vaidarquanto.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-vaidarquanto-susto-no-caixa"
+        },
+        "em": "2026-11-05T02:42:28.940Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-05T02:39:57.192Z"
+  "atualizadoEm": "2026-11-05T02:42:28.940Z"
 }

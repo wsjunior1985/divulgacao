@@ -14366,7 +14366,28 @@
         "em": "2026-11-05T17:01:43.340Z",
         "erro": null
       }
+    },
+    "carrossel-papelzinho-natal-amigo-secreto-2026-11-05": {
+      "instagram": {
+        "status": "ok",
+        "id": "18138730408734671",
+        "url": "https://www.instagram.com/p/18138730408734671",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "papelzinho",
+        "temaId": "natal-amigo-secreto",
+        "landingUrl": "https://papelzinho.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-papelzinho-natal-amigo-secreto"
+        },
+        "em": "2026-11-05T19:01:53.545Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-05T17:01:43.340Z"
+  "atualizadoEm": "2026-11-05T19:01:53.545Z"
 }

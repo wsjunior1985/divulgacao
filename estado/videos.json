@@ -447,7 +447,79 @@
         "url": "https://publish.buffer.com/",
         "em": "2026-10-27T12:10:16.948Z"
       }
+    },
+    "waldeapps-teste": {
+      "instagram": {
+        "status": "ok",
+        "id": "18099352802115495",
+        "url": "https://www.instagram.com/reel/18099352802115495",
+        "em": "2026-11-05T11:57:00.000Z",
+        "landingUrl": "https://waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "apresentacao",
+          "content": "video-9x16-waldeapps-teste"
+        }
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1599342394754995",
+        "url": "https://www.facebook.com/1599342394754995",
+        "em": "2026-11-05T11:57:00.000Z",
+        "landingUrl": "https://waldeapps.systems",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "apresentacao",
+          "content": "video-9x16-waldeapps-teste"
+        }
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17951375052357637",
+        "url": "https://www.threads.net/@me/post/17951375052357637",
+        "em": "2026-11-05T11:57:00.000Z",
+        "landingUrl": "https://waldeapps.systems",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "apresentacao",
+          "content": "video-9x16-waldeapps-teste"
+        }
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "3mzksui2cxr2y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzksui2cxr2y",
+        "em": "2026-11-05T11:57:00.000Z",
+        "landingUrl": "https://waldeapps.systems",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "apresentacao",
+          "content": "video-9x16-waldeapps-teste"
+        }
+      },
+      "tiktok": {
+        "status": "erro",
+        "erro": "TikTok: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+        "em": "2026-11-05T11:58:00.466Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aec6f4ba622b08bbb84d582",
+        "url": "https://publish.buffer.com/",
+        "em": "2026-11-05T11:57:00.000Z",
+        "landingUrl": "https://waldeapps.systems",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "apresentacao",
+          "content": "video-9x16-waldeapps-teste"
+        }
+      }
     }
   },
-  "atualizadoEm": "2026-10-27T12:10:16.948Z"
+  "atualizadoEm": "2026-11-05T11:58:03.375Z"
 }

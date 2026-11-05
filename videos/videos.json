@@ -208,6 +208,20 @@
         "x": "Etanol ou gasolina? O GASONOL compara o consumo do seu carro (PBEV/INMETRO) com os preços do posto e tira a dúvida na hora. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao&utm_content=duvida"
       },
       "url": "https://gasonol.com.br?utm_content=duvida"
+    },
+    "waldeapps-teste": {
+      "arquivo": "videos/9x16/waldeapps-teste.mp4",
+      "nome": "WaldeApps",
+      "titulo": "Conheça a WaldeApps",
+      "url": "https://waldeapps.systems",
+      "legendas": {
+        "instagram": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\n🔗 waldeapps.systems (link na bio)\n\n#waldeapps #pwa #apps",
+        "facebook": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\n🔗 https://waldeapps.systems",
+        "threads": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\nhttps://waldeapps.systems",
+        "bluesky": "Conheça a WaldeApps, estúdio de apps PWA que abrem direto no celular.\n\nhttps://waldeapps.systems",
+        "tiktok": "Conheça a WaldeApps, estúdio de aplicativos PWA. Apps que abrem direto no celular, sem baixar na loja.\n\n#waldeapps #pwa #apps",
+        "x": "Conheça a WaldeApps, estúdio de apps PWA que abrem direto no celular.\n\nhttps://waldeapps.systems"
+      }
     }
   },
   "rodizio": [

@@ -7,6 +7,7 @@
 //   node scripts/publicar-video.mjs --app gasonol --canais bluesky,threads
 //   node scripts/publicar-video.mjs --forcar                  republica o que já saiu
 //   node scripts/publicar-video.mjs --app gasonol --formato 16x9   versão horizontal (1920x1080)
+//   --estado <arquivo> --chave <chave>   estado e chave próprios (usado pelo rodízio: publicar-video-rodizio.mjs)
 //
 // Formatos: 9x16 (padrão; arquivo `arquivo`/`arquivos["9x16"]` do manifesto) e 16x9
 // (`arquivos["16x9"]`, ou videos/16x9/<app>.mp4). O 16:9 só sai em facebook, threads, bluesky e x:
@@ -26,7 +27,8 @@ import * as buffer from "./canais/buffer.js";
 
 carregarEnv();
 const CANAIS = ["instagram", "facebook", "threads", "bluesky", "tiktok", "x"];
-const ESTADO = "estado/videos.json";
+const ESTADO_ARG = (() => { const i = process.argv.indexOf("--estado"); return i > 0 ? process.argv[i + 1] : null; })();
+const ESTADO = ESTADO_ARG ?? "estado/videos.json";
 
 const a = process.argv.slice(2);
 const flag = (f) => a.includes(f);
@@ -85,7 +87,7 @@ let falhas = 0;
 for (const app of alvosApp) {
   const v = manifesto.videos[app];
   if (!v) { erro(`vídeo desconhecido: ${app}`); falhas++; continue; }
-  const chave = formato === "9x16" ? app : `${app}@${formato}`;
+  const chave = val("--chave") ?? (formato === "9x16" ? app : `${app}@${formato}`);
   const feitos = estado.videos[chave] ?? {};
   const arquivo = arquivoDe(app, v);
   if (!existsSync(`${RAIZ}/${arquivo}`)) { erro(`${app}: ${arquivo} não existe (${formato})`); falhas++; continue; }

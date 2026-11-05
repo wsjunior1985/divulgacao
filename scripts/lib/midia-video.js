@@ -10,13 +10,22 @@ export async function hospedarVideo(relativo, nomeArquivo) {
   const bucket = env("SUPABASE_VIDEO_BUCKET", "marketing-videos");
   if (!url || !chave) throw new Error("hospedagem de vídeo exige SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY");
   const nome = `videos/${nomeArquivo ?? basename(relativo)}`;
+  const publica = `${url}/storage/v1/object/public/${bucket}/${nome}`;
+  const local = readFileSync(resolve(RAIZ, relativo));
+  // Já hospedado com o mesmo tamanho: reaproveita a URL (o rodízio repete os mesmos vídeos).
+  try {
+    const head = await fetch(publica, { method: "HEAD" });
+    if (head.ok && Number(head.headers.get("content-length")) === local.length) {
+      log(`vídeo já hospedado: ${publica}`);
+      return publica;
+    }
+  } catch { /* segue para o upload */ }
   const res = await buscar(`${url}/storage/v1/object/${bucket}/${nome}`, {
     method: "POST",
     headers: { Authorization: `Bearer ${chave}`, "Content-Type": "video/mp4", "x-upsert": "true" },
-    body: readFileSync(resolve(RAIZ, relativo)),
+    body: local,
   });
   if (!res.ok) throw new Error(`Supabase Storage ${res.status}: ${(await res.text()).slice(0, 200)}`);
-  const publica = `${url}/storage/v1/object/public/${bucket}/${nome}`;
   log(`vídeo hospedado: ${publica}`);
   return publica;
 }

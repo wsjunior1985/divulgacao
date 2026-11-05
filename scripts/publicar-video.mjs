@@ -123,7 +123,7 @@ for (const app of alvosApp) {
         id: r.id ?? null,
         url: r.url ?? null,
         landingUrl,
-        utm: { source: c, medium: "social", campaign, content: `video-${formato}-${app}` },
+        utm: { source: c, medium: "social", campaign: campanha, content: `video-${formato}-${app}` },
         em: new Date().toISOString(),
       };
       ok(`${app}/${c}: publicado`);

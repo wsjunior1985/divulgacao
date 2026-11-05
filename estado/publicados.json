@@ -13613,7 +13613,79 @@
         "em": "2026-11-05T02:20:29.649Z",
         "erro": null
       }
+    },
+    "547-aieat-consistencia": {
+      "instagram": {
+        "status": "ok",
+        "id": "18449423851131778",
+        "url": "https://www.instagram.com/p/18449423851131778",
+        "landingUrl": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-consistencia-c4-v1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-consistencia-c4-v1"
+        },
+        "em": "2026-11-05T02:21:38.965Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122124648909435454",
+        "url": "https://www.facebook.com/1293634587162251_122124648909435454",
+        "landingUrl": "https://aieat.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-consistencia-c4-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-consistencia-c4-v1"
+        },
+        "em": "2026-11-05T02:21:45.173Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18147262105586754",
+        "url": "https://www.threads.net/@me/post/18147262105586754",
+        "landingUrl": "https://aieat.app.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-consistencia-c4-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-consistencia-c4-v1"
+        },
+        "em": "2026-11-05T02:22:25.535Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzjspf6kr624",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzjspf6kr624",
+        "landingUrl": "https://aieat.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-consistencia-c4-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-consistencia-c4-v1"
+        },
+        "em": "2026-11-05T02:22:27.173Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aebe864f283c8dd45b3f7a4",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aieat.app.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-consistencia-c4-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-consistencia-c4-v1"
+        },
+        "em": "2026-11-05T02:22:28.242Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-05T02:20:29.649Z"
+  "atualizadoEm": "2026-11-05T02:22:28.242Z"
 }

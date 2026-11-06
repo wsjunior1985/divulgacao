@@ -108,9 +108,17 @@
         "em": "2026-11-05T22:02:34.232Z"
       },
       "bluesky": {
-        "status": "erro",
-        "erro": "Bluesky uploadVideo: \"already_exists\"",
-        "em": "2026-11-05T22:02:36.025Z"
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzmekawoej25",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzmekawoej25",
+        "landingUrl": "https://aieat.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat"
+        },
+        "em": "2026-11-06T02:47:01.760Z"
       },
       "x": {
         "status": "ok",
@@ -127,5 +135,5 @@
       }
     }
   },
-  "atualizadoEm": "2026-11-06T02:46:23.165Z"
+  "atualizadoEm": "2026-11-06T02:47:01.760Z"
 }

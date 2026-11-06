@@ -14789,7 +14789,28 @@
         "em": "2026-11-06T11:01:40.269Z",
         "erro": null
       }
+    },
+    "carrossel-rifazinha-simulador-2026-11-06": {
+      "instagram": {
+        "status": "ok",
+        "id": "18190791016410753",
+        "url": "https://www.instagram.com/p/18190791016410753",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "rifazinha",
+        "temaId": "simulador",
+        "landingUrl": "https://rifazinha.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-rifazinha-simulador"
+        },
+        "em": "2026-11-06T12:01:35.311Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-06T11:01:40.269Z"
+  "atualizadoEm": "2026-11-06T12:01:35.311Z"
 }

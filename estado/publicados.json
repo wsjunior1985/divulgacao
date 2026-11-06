@@ -15068,7 +15068,28 @@
         "em": "2026-11-06T20:01:43.362Z",
         "erro": null
       }
+    },
+    "carrossel-voutrocar-favoritos-2026-11-06": {
+      "instagram": {
+        "status": "ok",
+        "id": "17998204806046707",
+        "url": "https://www.instagram.com/p/17998204806046707",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "voutrocar",
+        "temaId": "favoritos",
+        "landingUrl": "https://voutrocar.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-voutrocar-favoritos"
+        },
+        "em": "2026-11-06T21:01:50.150Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-06T20:01:43.362Z"
+  "atualizadoEm": "2026-11-06T21:01:50.150Z"
 }

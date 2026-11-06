@@ -41,9 +41,17 @@
         "em": "2026-11-05T15:02:27.280Z"
       },
       "bluesky": {
-        "status": "erro",
-        "erro": "Bluesky uploadVideo: \"already_exists\"",
-        "em": "2026-11-05T15:02:28.771Z"
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzmej44fuy2b",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzmej44fuy2b",
+        "landingUrl": "https://remedin.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-06T02:46:23.165Z"
       },
       "x": {
         "status": "ok",
@@ -119,5 +127,5 @@
       }
     }
   },
-  "atualizadoEm": "2026-11-05T22:02:38.744Z"
+  "atualizadoEm": "2026-11-06T02:46:23.165Z"
 }

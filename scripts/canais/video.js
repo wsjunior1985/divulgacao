@@ -141,12 +141,15 @@ export async function bluesky({ legenda, arquivo, alt, link, linkLimpo, aspecto 
       { headers: { Authorization: `Bearer ${jwt}` } }),
     "Bluesky serviceAuth",
   );
-  const envio = await json(
-    await buscar(`https://video.bsky.app/xrpc/app.bsky.video.uploadVideo?` + new URLSearchParams({ did, name: basename(arquivo) }), {
-      method: "POST", headers: { Authorization: `Bearer ${aut.token}`, "Content-Type": "video/mp4" }, body: readFileSync(abs(arquivo)),
-    }),
-    "Bluesky uploadVideo",
-  );
+  const respEnvio = await buscar(`https://video.bsky.app/xrpc/app.bsky.video.uploadVideo?` + new URLSearchParams({ did, name: basename(arquivo) }), {
+    method: "POST", headers: { Authorization: `Bearer ${aut.token}`, "Content-Type": "video/mp4" }, body: readFileSync(abs(arquivo)),
+  });
+  let envio = await respEnvio.json().catch(() => ({}));
+  // Vídeo idêntico já enviado antes (o rodízio repete): o serviço devolve 409 com o jobId do
+  // processamento anterior; o blob sai do getJobStatus, como num envio novo.
+  if (envio.error === "already_exists" && envio.jobId) log(`bluesky: vídeo já processado antes (job ${envio.jobId}); reaproveitando`);
+  else if (envio.error) throw new Error(`Bluesky uploadVideo: ${envio.message ?? envio.error}`);
+  else if (!respEnvio.ok) throw new Error(`Bluesky uploadVideo HTTP ${respEnvio.status}`);
   let blob = envio.blob ?? envio.jobStatus?.blob;
   const jobId = envio.jobId ?? envio.jobStatus?.jobId;
   for (let i = 0; i < 40 && !blob; i++) {

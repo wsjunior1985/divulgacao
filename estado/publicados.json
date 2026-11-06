@@ -14975,7 +14975,28 @@
         "em": "2026-11-06T17:07:37.435Z",
         "erro": null
       }
+    },
+    "carrossel-euquiz-qualquer-assunto-2026-11-06": {
+      "instagram": {
+        "status": "ok",
+        "id": "17980046550171793",
+        "url": "https://www.instagram.com/p/17980046550171793",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "euquiz",
+        "temaId": "qualquer-assunto",
+        "landingUrl": "https://euquiz.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-euquiz-qualquer-assunto"
+        },
+        "em": "2026-11-06T19:14:30.289Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-06T17:07:37.435Z"
+  "atualizadoEm": "2026-11-06T19:14:30.289Z"
 }

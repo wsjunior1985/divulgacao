@@ -334,7 +334,74 @@
         },
         "em": "2026-11-07T15:02:42.977Z"
       }
+    },
+    "2026-11-07-p1-papelzinho": {
+      "instagram": {
+        "status": "ok",
+        "id": "18135871093665357",
+        "url": "https://www.instagram.com/reel/18135871093665357",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-07T22:01:14.279Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1145524558060963",
+        "url": "https://www.facebook.com/1145524558060963",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-07T22:01:21.861Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18128239040484409",
+        "url": "https://www.threads.net/@me/post/18128239040484409",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-07T22:01:57.990Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzqvkjdtlu2u",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzqvkjdtlu2u",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-07T22:02:03.168Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aef9fde51492b796e01860d",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-07T22:02:06.297Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-07T15:02:42.977Z"
+  "atualizadoEm": "2026-11-07T22:02:06.297Z"
 }

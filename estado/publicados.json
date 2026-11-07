@@ -15491,7 +15491,79 @@
         "em": "2026-11-07T16:02:05.185Z",
         "erro": null
       }
+    },
+    "569-aeroliso-quando-comprar": {
+      "instagram": {
+        "status": "ok",
+        "id": "18096519044157151",
+        "url": "https://www.instagram.com/p/18096519044157151",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-quando-comprar-c5-v2",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-quando-comprar-c5-v2"
+        },
+        "em": "2026-11-07T17:01:26.683Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122125063809435454",
+        "url": "https://www.facebook.com/1293634587162251_122125063809435454",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-quando-comprar-c5-v2",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-quando-comprar-c5-v2"
+        },
+        "em": "2026-11-07T17:01:32.361Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18120026612048882",
+        "url": "https://www.threads.net/@me/post/18120026612048882",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-quando-comprar-c5-v2",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-quando-comprar-c5-v2"
+        },
+        "em": "2026-11-07T17:02:10.782Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzqesdv2v42y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzqesdv2v42y",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-quando-comprar-c5-v2",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-quando-comprar-c5-v2"
+        },
+        "em": "2026-11-07T17:02:13.053Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aef5996229bf05daf62135b",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-quando-comprar-c5-v2",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-quando-comprar-c5-v2"
+        },
+        "em": "2026-11-07T17:02:14.512Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-07T16:02:05.185Z"
+  "atualizadoEm": "2026-11-07T17:02:14.512Z"
 }

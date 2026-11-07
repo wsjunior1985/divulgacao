@@ -15563,7 +15563,28 @@
         "em": "2026-11-07T17:02:14.512Z",
         "erro": null
       }
+    },
+    "carrossel-gasonol-voz-na-bomba-2026-11-07": {
+      "instagram": {
+        "status": "ok",
+        "id": "18132120425492009",
+        "url": "https://www.instagram.com/p/18132120425492009",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "gasonol",
+        "temaId": "voz-na-bomba",
+        "landingUrl": "https://gasonol.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-gasonol-voz-na-bomba"
+        },
+        "em": "2026-11-07T19:02:14.558Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-07T17:02:14.512Z"
+  "atualizadoEm": "2026-11-07T19:02:14.559Z"
 }

@@ -15656,7 +15656,28 @@
         "em": "2026-11-07T20:01:45.149Z",
         "erro": null
       }
+    },
+    "carrossel-remedin-cuidador-2026-11-07": {
+      "instagram": {
+        "status": "ok",
+        "id": "18019270520950905",
+        "url": "https://www.instagram.com/p/18019270520950905",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "remedin",
+        "temaId": "cuidador",
+        "landingUrl": "https://remedin.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-remedin-cuidador"
+        },
+        "em": "2026-11-07T21:01:52.228Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-07T20:01:45.149Z"
+  "atualizadoEm": "2026-11-07T21:01:52.228Z"
 }

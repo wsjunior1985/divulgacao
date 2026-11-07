@@ -15470,7 +15470,28 @@
         "em": "2026-11-07T14:01:42.834Z",
         "erro": null
       }
+    },
+    "carrossel-fazopix-qr-em-segundos-2026-11-07": {
+      "instagram": {
+        "status": "ok",
+        "id": "18358748266169767",
+        "url": "https://www.instagram.com/p/18358748266169767",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "fazopix",
+        "temaId": "qr-em-segundos",
+        "landingUrl": "https://fazopix.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-fazopix-qr-em-segundos"
+        },
+        "em": "2026-11-07T16:02:05.185Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-07T14:01:42.834Z"
+  "atualizadoEm": "2026-11-07T16:02:05.185Z"
 }

@@ -15377,7 +15377,28 @@
         "em": "2026-11-07T11:01:53.562Z",
         "erro": null
       }
+    },
+    "carrossel-barbarizando-agenda-online-2026-11-07": {
+      "instagram": {
+        "status": "ok",
+        "id": "18510344068105934",
+        "url": "https://www.instagram.com/p/18510344068105934",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "barbarizando",
+        "temaId": "agenda-online",
+        "landingUrl": "https://barbarizando.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-barbarizando-agenda-online"
+        },
+        "em": "2026-11-07T12:01:53.813Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-07T11:01:53.562Z"
+  "atualizadoEm": "2026-11-07T12:01:53.813Z"
 }

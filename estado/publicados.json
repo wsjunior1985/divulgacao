@@ -16058,7 +16058,28 @@
         "em": "2026-11-08T14:01:48.278Z",
         "erro": null
       }
+    },
+    "carrossel-vaidarquanto-por-voz-2026-11-08": {
+      "instagram": {
+        "status": "ok",
+        "id": "18078149267724194",
+        "url": "https://www.instagram.com/p/18078149267724194",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "vaidarquanto",
+        "temaId": "por-voz",
+        "landingUrl": "https://vaidarquanto.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-vaidarquanto-por-voz"
+        },
+        "em": "2026-11-08T16:02:14.610Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-08T14:01:48.278Z"
+  "atualizadoEm": "2026-11-08T16:02:14.610Z"
 }

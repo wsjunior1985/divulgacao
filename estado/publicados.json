@@ -16244,7 +16244,28 @@
         "em": "2026-11-08T20:01:51.636Z",
         "erro": null
       }
+    },
+    "carrossel-opalpiteiro-do-convite-ao-podio-2026-11-08": {
+      "instagram": {
+        "status": "ok",
+        "id": "18134072110665760",
+        "url": "https://www.instagram.com/p/18134072110665760",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "opalpiteiro",
+        "temaId": "do-convite-ao-podio",
+        "landingUrl": "https://opalpiteiro.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-opalpiteiro-do-convite-ao-podio"
+        },
+        "em": "2026-11-08T21:01:41.555Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-08T20:01:51.636Z"
+  "atualizadoEm": "2026-11-08T21:01:41.555Z"
 }

@@ -16151,7 +16151,28 @@
         "em": "2026-11-08T17:01:52.324Z",
         "erro": null
       }
+    },
+    "carrossel-convertendo-sete-formas-2026-11-08": {
+      "instagram": {
+        "status": "ok",
+        "id": "18124077364940724",
+        "url": "https://www.instagram.com/p/18124077364940724",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "convertendo",
+        "temaId": "sete-formas",
+        "landingUrl": "https://convertendo.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-convertendo-sete-formas"
+        },
+        "em": "2026-11-08T19:01:53.791Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-08T17:01:52.324Z"
+  "atualizadoEm": "2026-11-08T19:01:53.792Z"
 }

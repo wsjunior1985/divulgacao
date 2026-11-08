@@ -15965,7 +15965,28 @@
         "em": "2026-11-08T11:01:51.683Z",
         "erro": null
       }
+    },
+    "carrossel-aieat-sem-pesar-2026-11-08": {
+      "instagram": {
+        "status": "ok",
+        "id": "18081507692403022",
+        "url": "https://www.instagram.com/p/18081507692403022",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "aieat",
+        "temaId": "sem-pesar",
+        "landingUrl": "https://aieat.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-aieat-sem-pesar"
+        },
+        "em": "2026-11-08T12:01:57.764Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-08T11:01:51.683Z"
+  "atualizadoEm": "2026-11-08T12:01:57.764Z"
 }

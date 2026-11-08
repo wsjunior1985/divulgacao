@@ -401,7 +401,74 @@
         },
         "em": "2026-11-07T22:02:06.297Z"
       }
+    },
+    "2026-11-08-p0-convertendo": {
+      "instagram": {
+        "status": "ok",
+        "id": "18110745836353127",
+        "url": "https://www.instagram.com/reel/18110745836353127",
+        "landingUrl": "https://convertendo.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-convertendo",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-convertendo"
+        },
+        "em": "2026-11-08T15:02:01.763Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1603294358136317",
+        "url": "https://www.facebook.com/1603294358136317",
+        "landingUrl": "https://convertendo.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-convertendo",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-convertendo"
+        },
+        "em": "2026-11-08T15:02:10.056Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18120738758085171",
+        "url": "https://www.threads.net/@me/post/18120738758085171",
+        "landingUrl": "https://convertendo.app.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-convertendo",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-convertendo"
+        },
+        "em": "2026-11-08T15:03:07.085Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzsominrmt2s",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzsominrmt2s",
+        "landingUrl": "https://convertendo.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-convertendo",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-convertendo"
+        },
+        "em": "2026-11-08T15:03:12.852Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af08f34004e4879a7c40732",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://convertendo.app.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-convertendo",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-convertendo"
+        },
+        "em": "2026-11-08T15:03:16.480Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-07T22:02:06.297Z"
+  "atualizadoEm": "2026-11-08T15:03:16.480Z"
 }

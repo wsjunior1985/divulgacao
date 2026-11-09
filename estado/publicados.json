@@ -16832,7 +16832,27 @@
         "em": "2026-11-09T20:01:50.925Z",
         "erro": null
       }
+    },
+    "carrossel-aeroliso-alerta-preco-2026-11-09": {
+      "instagram": {
+        "status": "erro",
+        "mensagem": "container do Instagram terminou em ERROR",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "aeroliso",
+        "temaId": "alerta-preco",
+        "landingUrl": "https://aeroliso.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-aeroliso-alerta-preco"
+        },
+        "em": "2026-11-09T21:01:48.579Z",
+        "erro": "container do Instagram terminou em ERROR"
+      }
     }
   },
-  "atualizadoEm": "2026-11-09T20:01:50.925Z"
+  "atualizadoEm": "2026-11-09T21:01:48.579Z"
 }

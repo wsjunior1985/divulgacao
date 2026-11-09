@@ -535,7 +535,74 @@
         },
         "em": "2026-11-08T22:02:03.879Z"
       }
+    },
+    "2026-11-09-p0-opalpiteiro": {
+      "instagram": {
+        "status": "ok",
+        "id": "18176112646395012",
+        "url": "https://www.instagram.com/reel/18176112646395012",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-09T15:01:41.885Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "28266191789726111",
+        "url": "https://www.facebook.com/28266191789726111",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-09T15:01:50.574Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18107136698000255",
+        "url": "https://www.threads.net/@me/post/18107136698000255",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-09T15:02:29.312Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzv72biwku2b",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzv72biwku2b",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-09T15:02:34.471Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af1e08c71028e9f62bcca52",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-09T15:02:37.048Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-08T22:02:03.879Z"
+  "atualizadoEm": "2026-11-09T15:02:37.048Z"
 }

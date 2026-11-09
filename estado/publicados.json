@@ -16667,7 +16667,79 @@
         "em": "2026-11-09T16:01:47.221Z",
         "erro": null
       }
+    },
+    "583-aeroliso-alerta-preco": {
+      "instagram": {
+        "status": "ok",
+        "id": "18119430934807570",
+        "url": "https://www.instagram.com/p/18119430934807570",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-alerta-preco-c5-v1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-alerta-preco-c5-v1"
+        },
+        "em": "2026-11-09T17:04:06.393Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122125407861435454",
+        "url": "https://www.facebook.com/1293634587162251_122125407861435454",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-alerta-preco-c5-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-alerta-preco-c5-v1"
+        },
+        "em": "2026-11-09T17:04:11.673Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18129604957915274",
+        "url": "https://www.threads.net/@me/post/18129604957915274",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-alerta-preco-c5-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-alerta-preco-c5-v1"
+        },
+        "em": "2026-11-09T17:04:49.236Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzvfuvxwfy2m",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzvfuvxwfy2m",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-alerta-preco-c5-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-alerta-preco-c5-v1"
+        },
+        "em": "2026-11-09T17:04:51.896Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af1fd35fa4f406f7bb73902",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-alerta-preco-c5-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-alerta-preco-c5-v1"
+        },
+        "em": "2026-11-09T17:04:53.307Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-09T16:01:47.221Z"
+  "atualizadoEm": "2026-11-09T17:04:53.307Z"
 }

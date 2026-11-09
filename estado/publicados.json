@@ -16739,7 +16739,28 @@
         "em": "2026-11-09T17:04:53.307Z",
         "erro": null
       }
+    },
+    "carrossel-rifazinha-pix-direto-2026-11-09": {
+      "instagram": {
+        "status": "ok",
+        "id": "18099720023408582",
+        "url": "https://www.instagram.com/p/18099720023408582",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "rifazinha",
+        "temaId": "pix-direto",
+        "landingUrl": "https://rifazinha.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-rifazinha-pix-direto"
+        },
+        "em": "2026-11-09T19:02:07.962Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-09T17:04:53.307Z"
+  "atualizadoEm": "2026-11-09T19:02:07.963Z"
 }

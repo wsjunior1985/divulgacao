@@ -736,7 +736,74 @@
         },
         "em": "2026-11-10T15:03:18.289Z"
       }
+    },
+    "2026-11-10-p1-aeroliso": {
+      "instagram": {
+        "status": "ok",
+        "id": "18125563697314247",
+        "url": "https://www.instagram.com/reel/18125563697314247",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aeroliso",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aeroliso"
+        },
+        "em": "2026-11-10T22:01:18.035Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "988100733816507",
+        "url": "https://www.facebook.com/988100733816507",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aeroliso",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aeroliso"
+        },
+        "em": "2026-11-10T22:01:24.440Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18111430829184443",
+        "url": "https://www.threads.net/@me/post/18111430829184443",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aeroliso",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aeroliso"
+        },
+        "em": "2026-11-10T22:02:01.936Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzygxf4mmz2n",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzygxf4mmz2n",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aeroliso",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aeroliso"
+        },
+        "em": "2026-11-10T22:02:06.728Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af39461acda3662ff1377c4",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aeroliso",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aeroliso"
+        },
+        "em": "2026-11-10T22:02:09.137Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-10T15:03:18.290Z"
+  "atualizadoEm": "2026-11-10T22:02:09.137Z"
 }

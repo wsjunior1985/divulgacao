@@ -16924,7 +16924,79 @@
         "em": "2026-11-09T23:01:47.963Z",
         "erro": null
       }
+    },
+    "586-barbarizando-pagina-propria": {
+      "instagram": {
+        "status": "ok",
+        "id": "17911991781571872",
+        "url": "https://www.instagram.com/p/17911991781571872",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-pagina-propria-c5-v1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-pagina-propria-c5-v1"
+        },
+        "em": "2026-11-10T00:00:57.836Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122125447575435454",
+        "url": "https://www.facebook.com/1293634587162251_122125447575435454",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-pagina-propria-c5-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-pagina-propria-c5-v1"
+        },
+        "em": "2026-11-10T00:01:01.933Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18136908331677501",
+        "url": "https://www.threads.net/@me/post/18136908331677501",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-pagina-propria-c5-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-pagina-propria-c5-v1"
+        },
+        "em": "2026-11-10T00:01:43.329Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3mzw56flu7s2f",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3mzw56flu7s2f",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-pagina-propria-c5-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-pagina-propria-c5-v1"
+        },
+        "em": "2026-11-10T00:01:46.114Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af25eeb223aa16048d91ae5",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-pagina-propria-c5-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-pagina-propria-c5-v1"
+        },
+        "em": "2026-11-10T00:01:47.570Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-09T23:01:47.963Z"
+  "atualizadoEm": "2026-11-10T00:01:47.570Z"
 }

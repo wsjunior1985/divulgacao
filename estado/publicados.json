@@ -17419,7 +17419,28 @@
         "em": "2026-11-10T20:01:55.331Z",
         "erro": null
       }
+    },
+    "carrossel-fazopix-sem-cadastro-2026-11-10": {
+      "instagram": {
+        "status": "ok",
+        "id": "18125626126935758",
+        "url": "https://www.instagram.com/p/18125626126935758",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "fazopix",
+        "temaId": "sem-cadastro",
+        "landingUrl": "https://fazopix.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-fazopix-sem-cadastro"
+        },
+        "em": "2026-11-10T21:02:10.061Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-10T20:01:55.331Z"
+  "atualizadoEm": "2026-11-10T21:02:10.061Z"
 }

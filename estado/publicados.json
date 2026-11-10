@@ -17140,7 +17140,28 @@
         "em": "2026-11-10T11:01:57.945Z",
         "erro": null
       }
+    },
+    "carrossel-euquiz-sem-cadastro-2026-11-10": {
+      "instagram": {
+        "status": "ok",
+        "id": "18136196638680996",
+        "url": "https://www.instagram.com/p/18136196638680996",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "euquiz",
+        "temaId": "sem-cadastro",
+        "landingUrl": "https://euquiz.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-euquiz-sem-cadastro"
+        },
+        "em": "2026-11-10T12:03:47.155Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-10T11:01:57.945Z"
+  "atualizadoEm": "2026-11-10T12:03:47.156Z"
 }

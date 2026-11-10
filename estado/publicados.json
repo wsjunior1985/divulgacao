@@ -17326,7 +17326,28 @@
         "em": "2026-11-10T17:01:46.074Z",
         "erro": null
       }
+    },
+    "carrossel-barbarizando-pagina-propria-2026-11-10": {
+      "instagram": {
+        "status": "ok",
+        "id": "18098888123449632",
+        "url": "https://www.instagram.com/p/18098888123449632",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "barbarizando",
+        "temaId": "pagina-propria",
+        "landingUrl": "https://barbarizando.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-barbarizando-pagina-propria"
+        },
+        "em": "2026-11-10T19:02:22.053Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-10T17:01:46.074Z"
+  "atualizadoEm": "2026-11-10T19:02:22.054Z"
 }

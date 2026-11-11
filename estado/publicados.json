@@ -17656,7 +17656,28 @@
         "em": "2026-11-11T11:01:41.331Z",
         "erro": null
       }
+    },
+    "carrossel-gasonol-preco-limite-2026-11-11": {
+      "instagram": {
+        "status": "ok",
+        "id": "18078104600467556",
+        "url": "https://www.instagram.com/p/18078104600467556",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "gasonol",
+        "temaId": "preco-limite",
+        "landingUrl": "https://gasonol.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-gasonol-preco-limite"
+        },
+        "em": "2026-11-11T12:02:13.333Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-11T11:01:41.331Z"
+  "atualizadoEm": "2026-11-11T12:02:13.333Z"
 }

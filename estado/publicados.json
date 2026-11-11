@@ -17677,7 +17677,79 @@
         "em": "2026-11-11T12:02:13.333Z",
         "erro": null
       }
+    },
+    "597-aeroliso-historico": {
+      "instagram": {
+        "status": "ok",
+        "id": "18025772153707970",
+        "url": "https://www.instagram.com/p/18025772153707970",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-historico-c5-v0",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-historico-c5-v0"
+        },
+        "em": "2026-11-11T17:02:26.239Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122125736943435454",
+        "url": "https://www.facebook.com/1293634587162251_122125736943435454",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-historico-c5-v0",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-historico-c5-v0"
+        },
+        "em": "2026-11-11T17:02:32.753Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18123919972977287",
+        "url": "https://www.threads.net/@me/post/18123919972977287",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-historico-c5-v0",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-historico-c5-v0"
+        },
+        "em": "2026-11-11T17:03:08.295Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n22gpqs4bc2t",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n22gpqs4bc2t",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-historico-c5-v0",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-historico-c5-v0"
+        },
+        "em": "2026-11-11T17:03:10.007Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af49fcfc6945777c8b2e3ca",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-historico-c5-v0",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-historico-c5-v0"
+        },
+        "em": "2026-11-11T17:03:11.283Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-11T12:02:13.333Z"
+  "atualizadoEm": "2026-11-11T17:03:11.283Z"
 }

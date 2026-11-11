@@ -17842,7 +17842,28 @@
         "em": "2026-11-11T20:01:47.500Z",
         "erro": null
       }
+    },
+    "carrossel-vaidarquanto-orcamento-2026-11-11": {
+      "instagram": {
+        "status": "ok",
+        "id": "17901919434609924",
+        "url": "https://www.instagram.com/p/17901919434609924",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "vaidarquanto",
+        "temaId": "orcamento",
+        "landingUrl": "https://vaidarquanto.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-vaidarquanto-orcamento"
+        },
+        "em": "2026-11-11T21:01:56.332Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-11T20:01:47.500Z"
+  "atualizadoEm": "2026-11-11T21:01:56.332Z"
 }

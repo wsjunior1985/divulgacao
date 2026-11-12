@@ -18172,7 +18172,79 @@
         "em": "2026-11-12T12:01:57.595Z",
         "erro": null
       }
+    },
+    "603-aieat-meta-diaria": {
+      "instagram": {
+        "status": "ok",
+        "id": "17965800198247132",
+        "url": "https://www.instagram.com/p/17965800198247132",
+        "landingUrl": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-meta-diaria-c5-v0",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-meta-diaria-c5-v0"
+        },
+        "em": "2026-11-12T14:01:06.480Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122125908363435454",
+        "url": "https://www.facebook.com/1293634587162251_122125908363435454",
+        "landingUrl": "https://aieat.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-meta-diaria-c5-v0",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-meta-diaria-c5-v0"
+        },
+        "em": "2026-11-12T14:01:11.438Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18018974255974256",
+        "url": "https://www.threads.net/@me/post/18018974255974256",
+        "landingUrl": "https://aieat.app.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-meta-diaria-c5-v0",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-meta-diaria-c5-v0"
+        },
+        "em": "2026-11-12T14:01:49.750Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n24n2hhazl2y",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n24n2hhazl2y",
+        "landingUrl": "https://aieat.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-meta-diaria-c5-v0",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-meta-diaria-c5-v0"
+        },
+        "em": "2026-11-12T14:01:51.952Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af5c6d1e7d7941c3fa45dc3",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aieat.app.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-meta-diaria-c5-v0",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-meta-diaria-c5-v0"
+        },
+        "em": "2026-11-12T14:01:53.204Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-12T12:01:57.595Z"
+  "atualizadoEm": "2026-11-12T14:01:53.204Z"
 }

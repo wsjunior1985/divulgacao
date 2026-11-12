@@ -937,7 +937,74 @@
         },
         "em": "2026-11-11T22:02:09.458Z"
       }
+    },
+    "2026-11-12-p0-gasonol-2": {
+      "instagram": {
+        "status": "ok",
+        "id": "18149437123498496",
+        "url": "https://www.instagram.com/reel/18149437123498496",
+        "landingUrl": "https://gasonol.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-gasonol-2",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-2"
+        },
+        "em": "2026-11-12T15:01:16.072Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1124635883830491",
+        "url": "https://www.facebook.com/1124635883830491",
+        "landingUrl": "https://gasonol.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-gasonol-2",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-2"
+        },
+        "em": "2026-11-12T15:01:24.554Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18120715187005436",
+        "url": "https://www.threads.net/@me/post/18120715187005436",
+        "landingUrl": "https://gasonol.com.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-gasonol-2",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-2"
+        },
+        "em": "2026-11-12T15:01:58.149Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n24qgfb6c22j",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n24qgfb6c22j",
+        "landingUrl": "https://gasonol.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-gasonol-2",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-2"
+        },
+        "em": "2026-11-12T15:02:14.139Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af5d4f9df65abceb03c6f68",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://gasonol.com.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-gasonol-2",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-2"
+        },
+        "em": "2026-11-12T15:02:17.411Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-11T22:02:09.458Z"
+  "atualizadoEm": "2026-11-12T15:02:17.411Z"
 }

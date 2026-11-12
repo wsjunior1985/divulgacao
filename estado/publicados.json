@@ -18337,7 +18337,28 @@
         "em": "2026-11-12T17:01:52.951Z",
         "erro": null
       }
+    },
+    "carrossel-papelzinho-natal-amigolate-2026-11-12": {
+      "instagram": {
+        "status": "ok",
+        "id": "18647882461063236",
+        "url": "https://www.instagram.com/p/18647882461063236",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "papelzinho",
+        "temaId": "natal-amigolate",
+        "landingUrl": "https://papelzinho.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-papelzinho-natal-amigolate"
+        },
+        "em": "2026-11-12T19:01:50.869Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-12T17:01:52.951Z"
+  "atualizadoEm": "2026-11-12T19:01:50.869Z"
 }

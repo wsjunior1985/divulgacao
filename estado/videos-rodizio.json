@@ -1071,7 +1071,74 @@
         },
         "em": "2026-11-12T22:02:37.611Z"
       }
+    },
+    "2026-11-13-p0-aieat-1": {
+      "instagram": {
+        "status": "ok",
+        "id": "18128487892907205",
+        "url": "https://www.instagram.com/reel/18128487892907205",
+        "landingUrl": "https://aieat.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat-1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat-1"
+        },
+        "em": "2026-11-13T15:01:19.091Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1485000313828789",
+        "url": "https://www.facebook.com/1485000313828789",
+        "landingUrl": "https://aieat.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat-1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat-1"
+        },
+        "em": "2026-11-13T15:01:26.223Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18174512617465409",
+        "url": "https://www.threads.net/@me/post/18174512617465409",
+        "landingUrl": "https://aieat.app.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat-1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat-1"
+        },
+        "em": "2026-11-13T15:02:01.324Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n27aw2abfx2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n27aw2abfx2d",
+        "landingUrl": "https://aieat.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat-1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat-1"
+        },
+        "em": "2026-11-13T15:02:38.388Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af726905d42e353d9997561",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aieat.app.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-aieat-1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-aieat-1"
+        },
+        "em": "2026-11-13T15:02:40.823Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-12T22:02:37.611Z"
+  "atualizadoEm": "2026-11-13T15:02:40.823Z"
 }

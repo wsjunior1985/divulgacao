@@ -18925,7 +18925,28 @@
         "em": "2026-11-13T17:02:12.749Z",
         "erro": null
       }
+    },
+    "carrossel-euquiz-professor-2026-11-13": {
+      "instagram": {
+        "status": "ok",
+        "id": "18121881181954129",
+        "url": "https://www.instagram.com/p/18121881181954129",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "euquiz",
+        "temaId": "professor",
+        "landingUrl": "https://euquiz.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-euquiz-professor"
+        },
+        "em": "2026-11-13T19:01:45.602Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-13T17:02:12.749Z"
+  "atualizadoEm": "2026-11-13T19:01:45.602Z"
 }

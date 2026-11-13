@@ -19018,7 +19018,28 @@
         "em": "2026-11-13T20:01:53.732Z",
         "erro": null
       }
+    },
+    "carrossel-voutrocar-independente-2026-11-13": {
+      "instagram": {
+        "status": "ok",
+        "id": "17939852391398415",
+        "url": "https://www.instagram.com/p/17939852391398415",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "voutrocar",
+        "temaId": "independente",
+        "landingUrl": "https://voutrocar.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-voutrocar-independente"
+        },
+        "em": "2026-11-13T21:01:45.143Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-13T20:01:53.732Z"
+  "atualizadoEm": "2026-11-13T21:01:45.143Z"
 }

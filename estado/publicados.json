@@ -19513,7 +19513,28 @@
         "em": "2026-11-14T17:01:51.749Z",
         "erro": null
       }
+    },
+    "carrossel-gasonol-quanto-economiza-2026-11-14": {
+      "instagram": {
+        "status": "ok",
+        "id": "17877666597594709",
+        "url": "https://www.instagram.com/p/17877666597594709",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "gasonol",
+        "temaId": "quanto-economiza",
+        "landingUrl": "https://gasonol.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-gasonol-quanto-economiza"
+        },
+        "em": "2026-11-14T19:01:51.532Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-14T17:01:51.749Z"
+  "atualizadoEm": "2026-11-14T19:01:51.532Z"
 }

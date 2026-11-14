@@ -1272,7 +1272,66 @@
         },
         "em": "2026-11-14T15:02:39.209Z"
       }
+    },
+    "2026-11-14-p1-gasonol-bomba": {
+      "instagram": {
+        "status": "ok",
+        "id": "18605763394071546",
+        "url": "https://www.instagram.com/reel/18605763394071546",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-bomba&utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-bomba"
+        },
+        "em": "2026-11-14T22:01:45.509Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1575977697669818",
+        "url": "https://www.facebook.com/1575977697669818",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-bomba&utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-bomba"
+        },
+        "em": "2026-11-14T22:01:53.292Z"
+      },
+      "threads": {
+        "status": "erro",
+        "erro": "Threads: container em ERROR",
+        "em": "2026-11-14T22:05:32.299Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2cizcuebf2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2cizcuebf2d",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-bomba&utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-bomba"
+        },
+        "em": "2026-11-14T22:05:36.327Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af8db32b9a106584c70d815",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-bomba&utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-bomba"
+        },
+        "em": "2026-11-14T22:05:38.471Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-14T15:02:39.210Z"
+  "atualizadoEm": "2026-11-14T22:05:38.471Z"
 }

@@ -19420,7 +19420,28 @@
         "em": "2026-11-14T14:02:11.391Z",
         "erro": null
       }
+    },
+    "carrossel-fazopix-valor-descricao-2026-11-14": {
+      "instagram": {
+        "status": "ok",
+        "id": "18142988500625994",
+        "url": "https://www.instagram.com/p/18142988500625994",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "fazopix",
+        "temaId": "valor-descricao",
+        "landingUrl": "https://fazopix.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-fazopix-valor-descricao"
+        },
+        "em": "2026-11-14T16:01:52.184Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-14T14:02:11.391Z"
+  "atualizadoEm": "2026-11-14T16:01:52.184Z"
 }

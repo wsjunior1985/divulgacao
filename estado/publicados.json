@@ -19534,7 +19534,79 @@
         "em": "2026-11-14T19:01:51.532Z",
         "erro": null
       }
+    },
+    "619-gasonol-sem-instalar": {
+      "instagram": {
+        "status": "ok",
+        "id": "17911774038594487",
+        "url": "https://www.instagram.com/p/17911774038594487",
+        "landingUrl": "https://gasonol.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-sem-instalar-c5-v1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-sem-instalar-c5-v1"
+        },
+        "em": "2026-11-14T20:00:54.327Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126276175435454",
+        "url": "https://www.facebook.com/1293634587162251_122126276175435454",
+        "landingUrl": "https://gasonol.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-sem-instalar-c5-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-sem-instalar-c5-v1"
+        },
+        "em": "2026-11-14T20:00:59.092Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17969381397235324",
+        "url": "https://www.threads.net/@me/post/17969381397235324",
+        "landingUrl": "https://gasonol.com.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-sem-instalar-c5-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-sem-instalar-c5-v1"
+        },
+        "em": "2026-11-14T20:01:40.719Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2cc3qvwlq2f",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2cc3qvwlq2f",
+        "landingUrl": "https://gasonol.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-sem-instalar-c5-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-sem-instalar-c5-v1"
+        },
+        "em": "2026-11-14T20:01:41.980Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af8be27e5a113497aa5db86",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://gasonol.com.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-sem-instalar-c5-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-sem-instalar-c5-v1"
+        },
+        "em": "2026-11-14T20:01:43.131Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-14T19:01:51.532Z"
+  "atualizadoEm": "2026-11-14T20:01:43.131Z"
 }

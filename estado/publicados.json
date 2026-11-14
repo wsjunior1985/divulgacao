@@ -19606,7 +19606,28 @@
         "em": "2026-11-14T20:01:43.131Z",
         "erro": null
       }
+    },
+    "carrossel-remedin-idoso-2026-11-14": {
+      "instagram": {
+        "status": "ok",
+        "id": "18035442512879214",
+        "url": "https://www.instagram.com/p/18035442512879214",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "remedin",
+        "temaId": "idoso",
+        "landingUrl": "https://remedin.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-remedin-idoso"
+        },
+        "em": "2026-11-14T21:01:58.045Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-14T20:01:43.131Z"
+  "atualizadoEm": "2026-11-14T21:01:58.045Z"
 }

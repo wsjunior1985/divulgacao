@@ -1205,7 +1205,74 @@
         },
         "em": "2026-11-13T22:02:36.160Z"
       }
+    },
+    "2026-11-14-p0-comunidade-do-ceu": {
+      "instagram": {
+        "status": "ok",
+        "id": "18110724950213142",
+        "url": "https://www.instagram.com/reel/18110724950213142",
+        "landingUrl": "https://comunidadedoceu.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-comunidade-do-ceu",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-comunidade-do-ceu"
+        },
+        "em": "2026-11-14T15:01:28.756Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1153876507100577",
+        "url": "https://www.facebook.com/1153876507100577",
+        "landingUrl": "https://comunidadedoceu.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-comunidade-do-ceu",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-comunidade-do-ceu"
+        },
+        "em": "2026-11-14T15:01:36.523Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18359159254168203",
+        "url": "https://www.threads.net/@me/post/18359159254168203",
+        "landingUrl": "https://comunidadedoceu.com.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-comunidade-do-ceu",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-comunidade-do-ceu"
+        },
+        "em": "2026-11-14T15:02:31.968Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2brewsloa2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2brewsloa2d",
+        "landingUrl": "https://comunidadedoceu.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-comunidade-do-ceu",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-comunidade-do-ceu"
+        },
+        "em": "2026-11-14T15:02:36.556Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6af8780e76c23bf1c7215b83",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://comunidadedoceu.com.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-comunidade-do-ceu",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-comunidade-do-ceu"
+        },
+        "em": "2026-11-14T15:02:39.209Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-13T22:02:36.160Z"
+  "atualizadoEm": "2026-11-14T15:02:39.210Z"
 }

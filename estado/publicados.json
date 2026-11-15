@@ -20008,7 +20008,28 @@
         "em": "2026-11-15T14:02:04.677Z",
         "erro": null
       }
+    },
+    "carrossel-vaidarquanto-sem-anuncio-2026-11-15": {
+      "instagram": {
+        "status": "ok",
+        "id": "18050298539823783",
+        "url": "https://www.instagram.com/p/18050298539823783",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "vaidarquanto",
+        "temaId": "sem-anuncio",
+        "landingUrl": "https://vaidarquanto.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-vaidarquanto-sem-anuncio"
+        },
+        "em": "2026-11-15T16:02:00.823Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-15T14:02:04.677Z"
+  "atualizadoEm": "2026-11-15T16:02:00.823Z"
 }

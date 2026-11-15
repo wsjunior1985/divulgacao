@@ -20215,7 +20215,79 @@
         "em": "2026-11-15T21:01:45.217Z",
         "erro": null
       }
+    },
+    "627-voutrocar-por-categoria": {
+      "instagram": {
+        "status": "ok",
+        "id": "18148769806585118",
+        "url": "https://www.instagram.com/p/18148769806585118",
+        "landingUrl": "https://voutrocar.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-voutrocar-por-categoria-c5-v0",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-voutrocar-por-categoria-c5-v0"
+        },
+        "em": "2026-11-15T23:01:01.854Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126440425435454",
+        "url": "https://www.facebook.com/1293634587162251_122126440425435454",
+        "landingUrl": "https://voutrocar.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-voutrocar-por-categoria-c5-v0",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-voutrocar-por-categoria-c5-v0"
+        },
+        "em": "2026-11-15T23:01:09.018Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18130683997649618",
+        "url": "https://www.threads.net/@me/post/18130683997649618",
+        "landingUrl": "https://voutrocar.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-voutrocar-por-categoria-c5-v0",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-voutrocar-por-categoria-c5-v0"
+        },
+        "em": "2026-11-15T23:01:47.871Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2f4mqxkys2m",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2f4mqxkys2m",
+        "landingUrl": "https://voutrocar.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-voutrocar-por-categoria-c5-v0",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-voutrocar-por-categoria-c5-v0"
+        },
+        "em": "2026-11-15T23:01:49.926Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6afa39de8e87c256a398ecb7",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://voutrocar.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-voutrocar-por-categoria-c5-v0",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-voutrocar-por-categoria-c5-v0"
+        },
+        "em": "2026-11-15T23:01:50.996Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-15T21:01:45.217Z"
+  "atualizadoEm": "2026-11-15T23:01:50.996Z"
 }

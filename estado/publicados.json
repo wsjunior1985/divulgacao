@@ -20101,7 +20101,28 @@
         "em": "2026-11-15T17:02:07.371Z",
         "erro": null
       }
+    },
+    "carrossel-convertendo-so-na-fatura-2026-11-15": {
+      "instagram": {
+        "status": "ok",
+        "id": "18020074937985869",
+        "url": "https://www.instagram.com/p/18020074937985869",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "convertendo",
+        "temaId": "so-na-fatura",
+        "landingUrl": "https://convertendo.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-convertendo-so-na-fatura"
+        },
+        "em": "2026-11-15T19:01:50.594Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-15T17:02:07.371Z"
+  "atualizadoEm": "2026-11-15T19:01:50.594Z"
 }

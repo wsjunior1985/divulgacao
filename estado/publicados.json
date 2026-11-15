@@ -20122,7 +20122,79 @@
         "em": "2026-11-15T19:01:50.594Z",
         "erro": null
       }
+    },
+    "626-euquiz-modos-de-jogo": {
+      "instagram": {
+        "status": "ok",
+        "id": "18500487868109202",
+        "url": "https://www.instagram.com/p/18500487868109202",
+        "landingUrl": "https://euquiz.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-euquiz-modos-de-jogo-c5-v2",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-euquiz-modos-de-jogo-c5-v2"
+        },
+        "em": "2026-11-15T20:01:10.775Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126425419435454",
+        "url": "https://www.facebook.com/1293634587162251_122126425419435454",
+        "landingUrl": "https://euquiz.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-euquiz-modos-de-jogo-c5-v2",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-euquiz-modos-de-jogo-c5-v2"
+        },
+        "em": "2026-11-15T20:01:16.179Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18508269148101553",
+        "url": "https://www.threads.net/@me/post/18508269148101553",
+        "landingUrl": "https://euquiz.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-euquiz-modos-de-jogo-c5-v2",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-euquiz-modos-de-jogo-c5-v2"
+        },
+        "em": "2026-11-15T20:01:55.688Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2esl4zu762m",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2esl4zu762m",
+        "landingUrl": "https://euquiz.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-euquiz-modos-de-jogo-c5-v2",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-euquiz-modos-de-jogo-c5-v2"
+        },
+        "em": "2026-11-15T20:01:58.012Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6afa0fb7e5a113497a0df659",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://euquiz.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-euquiz-modos-de-jogo-c5-v2",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-euquiz-modos-de-jogo-c5-v2"
+        },
+        "em": "2026-11-15T20:01:59.157Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-15T19:01:50.594Z"
+  "atualizadoEm": "2026-11-15T20:01:59.157Z"
 }

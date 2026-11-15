@@ -19915,7 +19915,28 @@
         "em": "2026-11-15T11:01:50.890Z",
         "erro": null
       }
+    },
+    "carrossel-aieat-meta-diaria-2026-11-15": {
+      "instagram": {
+        "status": "ok",
+        "id": "18096470966488050",
+        "url": "https://www.instagram.com/p/18096470966488050",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "aieat",
+        "temaId": "meta-diaria",
+        "landingUrl": "https://aieat.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-aieat-meta-diaria"
+        },
+        "em": "2026-11-15T12:02:00.249Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-15T11:01:50.890Z"
+  "atualizadoEm": "2026-11-15T12:02:00.249Z"
 }

@@ -20524,7 +20524,28 @@
         "em": "2026-11-16T14:01:51.511Z",
         "erro": null
       }
+    },
+    "carrossel-omeualbum-trocas-organizadas-2026-11-16": {
+      "instagram": {
+        "status": "ok",
+        "id": "18080233715431517",
+        "url": "https://www.instagram.com/p/18080233715431517",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "omeualbum",
+        "temaId": "trocas-organizadas",
+        "landingUrl": "https://omeualbum.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-omeualbum-trocas-organizadas"
+        },
+        "em": "2026-11-16T16:01:59.028Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-16T14:01:51.511Z"
+  "atualizadoEm": "2026-11-16T16:01:59.028Z"
 }

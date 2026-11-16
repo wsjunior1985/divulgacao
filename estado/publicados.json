@@ -20710,7 +20710,28 @@
         "em": "2026-11-16T20:01:59.885Z",
         "erro": null
       }
+    },
+    "carrossel-aeroliso-monitoramento-diario-2026-11-16": {
+      "instagram": {
+        "status": "ok",
+        "id": "18171603076473884",
+        "url": "https://www.instagram.com/p/18171603076473884",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "aeroliso",
+        "temaId": "monitoramento-diario",
+        "landingUrl": "https://aeroliso.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-aeroliso-monitoramento-diario"
+        },
+        "em": "2026-11-16T21:01:55.731Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-16T20:01:59.885Z"
+  "atualizadoEm": "2026-11-16T21:01:55.731Z"
 }

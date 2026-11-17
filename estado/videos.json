@@ -518,8 +518,22 @@
           "campaign": "apresentacao",
           "content": "video-9x16-waldeapps-teste"
         }
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "V4HL-kjgxf4",
+        "url": "https://www.youtube.com/shorts/V4HL-kjgxf4",
+        "landingUrl": "https://waldeapps.systems/?utm_source=youtube&utm_medium=social&utm_campaign=apresentacao&utm_content=video-9x16-waldeapps-teste",
+        "privacidade": "public",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "apresentacao",
+          "content": "video-9x16-waldeapps-teste"
+        },
+        "em": "2026-11-17T14:14:01.105Z"
       }
     }
   },
-  "atualizadoEm": "2026-11-05T11:58:03.375Z"
+  "atualizadoEm": "2026-11-17T14:14:01.106Z"
 }

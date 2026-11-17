@@ -52,6 +52,6 @@ servidor.listen(0, "127.0.0.1", () => {
   })}`;
   console.log("Abra esta URL no Safari (perfil WaldeApps) e escolha o canal @WaldeApps:\n");
   console.log(auth);
-  console.log("\nAguardando a autorização (10 min)...");
-  setTimeout(() => { console.error("Tempo esgotado."); process.exit(1); }, 600000).unref();
+  console.log("\nAguardando a autorização (30 min)...");
+  setTimeout(() => { console.error("Tempo esgotado."); process.exit(1); }, 1800000).unref();
 });

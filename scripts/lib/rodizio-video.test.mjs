@@ -40,3 +40,15 @@ test("youtube channel is skipped when credentials are missing", () => {
   for (const n of ["YOUTUBE_CLIENT_ID", "YOUTUBE_CLIENT_SECRET", "YOUTUBE_REFRESH_TOKEN"]) delete process.env[n];
   assert.equal(pronto().ok, false);
 });
+
+test("short uses the manifest search title, opening line and tags", () => {
+  const s = montarShort({
+    titulo: "Genérico", nome: "App", youtube: { titulo: "Gasolina ou etanol? Qual compensa", abertura: "Abertura <b>x</b>", tags: ["a", "b".repeat(300), "c".repeat(300)] },
+    legenda: "Gancho\n\nExplicação repetida\n\nAviso do vídeo\n\nhttps://x.com/?utm_source=youtube",
+  });
+  assert.equal(s.titulo, "Gasolina ou etanol? Qual compensa #Shorts");
+  assert.ok(s.descricao.startsWith("Abertura x"));
+  assert.ok(!s.descricao.includes("Explicação repetida"));
+  assert.ok(s.descricao.includes("utm_source=youtube"));
+  assert.deepEqual(s.tags.length, 2);
+});

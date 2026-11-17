@@ -103,7 +103,7 @@ for (const app of alvosApp) {
   log(`— ${v.nome} (${formato}) · ${(statSync(`${RAIZ}/${arquivo}`).size / 1048576).toFixed(1)} MB · canais: ${canais.join(", ") || "nenhum"}`);
   if (dryRun) {
     for (const c of canais) {
-      if (c === "youtube") { const y = youtube.montarShort({ titulo: v.titulo, nome: v.nome, legenda: legendaComUtm(v.legendas.youtube ?? v.legendas.facebook, uTm(v.url, c, app, formato, campanha)) }); log(`[youtube]\n${y.titulo}\n${y.descricao}\n`); }
+      if (c === "youtube") { const y = youtube.montarShort({ titulo: v.titulo, nome: v.nome, youtube: v.youtube, legenda: legendaComUtm(v.legendas.youtube ?? v.legendas.facebook, uTm(v.url, c, app, formato, campanha)) }); log(`[youtube]\n${y.titulo}\n${y.descricao}\ntags: ${y.tags.join(", ")}\n`); }
       else log(`[${c}]\n${v.legendas[c]}\n`);
     }
     continue;
@@ -123,7 +123,7 @@ for (const app of alvosApp) {
         : c === "facebook" ? await video.facebook({ legenda, urlVideo })
         : c === "threads" ? await video.threads({ legenda, urlVideo })
         : c === "tiktok" ? await video.tiktok({ legenda, arquivo })
-        : c === "youtube" ? await youtube.publicarShort({ ...youtube.montarShort({ titulo: v.titulo, nome: v.nome, legenda }), arquivo: `${RAIZ}/${arquivo}` })
+        : c === "youtube" ? await youtube.publicarShort({ ...youtube.montarShort({ titulo: v.titulo, nome: v.nome, youtube: v.youtube, legenda }), arquivo: `${RAIZ}/${arquivo}` })
         : c === "bluesky" ? await video.bluesky({ legenda, arquivo, aspecto: ASPECTO, alt: v.titulo, link: landingUrl, linkLimpo: dom })
         : await buffer.publicar({ texto: legenda, imagens: [], video: urlVideo, servicos: ["twitter"] });
       feitos[c] = {

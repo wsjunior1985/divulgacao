@@ -23,15 +23,27 @@ export function pronto() {
 const limpar = (t) => String(t ?? "").replace(/<[^>]*>/g, "").replace(/[<>]/g, "").trim();
 const cortarBytes = (t, max) => { while (Buffer.byteLength(t, "utf8") > max) t = t.slice(0, -1); return t; };
 
-/** Título (até 100 caracteres) e descrição (até 5000 bytes) de um Short; o YouTube rejeita < e >. */
-export function montarShort({ titulo, nome, legenda }) {
+/**
+ * Título (até 100 caracteres), descrição (até 5000 bytes) e tags de um Short. O manifesto pode trazer
+ * `youtube: { titulo, abertura, tags }` com título de busca e frase de abertura; sem ele, usa título e nome.
+ * O YouTube rejeita < e > e limita as tags a ~500 caracteres.
+ */
+export function montarShort({ titulo, nome, legenda, youtube }) {
   const sufixo = " #Shorts";
-  const base = limpar([titulo, nome].filter(Boolean).join(" | "));
+  const base = limpar(youtube?.titulo ?? [titulo, nome].filter(Boolean).join(" | "));
   const corte = 100 - sufixo.length;
   const cabeca = base.length > corte ? `${base.slice(0, corte - 1).trimEnd()}…` : base;
   const rodape = "\n\n#Shorts";
-  const descricao = `${cortarBytes(limpar(legenda), 4900 - rodape.length)}${rodape}`;
-  return { titulo: `${cabeca}${sufixo}`, descricao };
+  // Com abertura própria, descarta o gancho (e a explicação, quando a legenda tem 4+ parágrafos:
+  // gancho, explicação, aviso, link). Avisos de "valores de exemplo" e o link com UTM sempre ficam.
+  const paragrafos = String(legenda ?? "").split(/\n{2,}/);
+  const descartar = !youtube?.abertura ? 0 : paragrafos.length >= 4 ? 2 : paragrafos.length === 3 ? 1 : 0;
+  const resto = paragrafos.slice(descartar).join("\n\n");
+  const corpo = [youtube?.abertura, resto].map(limpar).filter(Boolean).join("\n\n");
+  const descricao = `${cortarBytes(corpo, 4900 - rodape.length)}${rodape}`;
+  let tags = [], total = 0;
+  for (const t of (youtube?.tags ?? []).map(limpar).filter(Boolean)) { if (total + t.length + 1 > 480) break; tags.push(t); total += t.length + 1; }
+  return { titulo: `${cabeca}${sufixo}`, descricao, tags };
 }
 
 export async function tokenDeAcesso() {
@@ -52,11 +64,11 @@ export async function tokenDeAcesso() {
   return d.access_token;
 }
 
-export async function publicarShort({ titulo, descricao, arquivo }) {
+export async function publicarShort({ titulo, descricao, tags = [], arquivo }) {
   const token = await tokenDeAcesso();
   const privacidadePedida = env("YOUTUBE_PRIVACY", "public");
   const metadados = {
-    snippet: { title: titulo, description: descricao, categoryId: env("YOUTUBE_CATEGORIA", "28"), defaultLanguage: "pt-BR" },
+    snippet: { title: titulo, description: descricao, ...(tags.length ? { tags } : {}), categoryId: env("YOUTUBE_CATEGORIA", "28"), defaultLanguage: "pt-BR" },
     status: { privacyStatus: privacidadePedida, selfDeclaredMadeForKids: false, embeddable: true },
   };
   const tamanho = statSync(arquivo).size;
@@ -92,4 +104,18 @@ export async function publicarShort({ titulo, descricao, arquivo }) {
   }
   log(`youtube: short publicado (${video.id}, ${privacidade ?? "status desconhecido"})`);
   return { id: video.id, url: `https://www.youtube.com/shorts/${video.id}`, privacidade };
+}
+
+/** Estatísticas públicas (views, curtidas, comentários) de até 50 vídeos por chamada. */
+export async function estatisticas(ids) {
+  const token = await tokenDeAcesso();
+  const saida = {};
+  for (let i = 0; i < ids.length; i += 50) {
+    const lote = ids.slice(i, i + 50);
+    const res = await fetch(`${API_URL}/videos?part=statistics&id=${lote.join(",")}`, { signal: AbortSignal.timeout(30000), headers: { Authorization: `Bearer ${token}` } });
+    const d = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(`YouTube estatísticas ${res.status}: ${d.error?.message ?? ""}`.trim());
+    for (const v of d.items ?? []) saida[v.id] = { views: Number(v.statistics.viewCount ?? 0), curtidas: Number(v.statistics.likeCount ?? 0), comentarios: Number(v.statistics.commentCount ?? 0) };
+  }
+  return saida;
 }

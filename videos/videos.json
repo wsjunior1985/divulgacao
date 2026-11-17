@@ -684,7 +684,7 @@
       },
       "ia": true,
       "moldura": "gasonol",
-      "desde": "2026-11-25"
+      "desde": "2026-11-18"
     },
     "fazopix-1": {
       "arquivo": "videos/9x16/fazopix-1.mp4",
@@ -714,7 +714,7 @@
       },
       "ia": true,
       "moldura": "fazopix",
-      "desde": "2026-11-25"
+      "desde": "2026-11-18"
     },
     "vdq-3": {
       "arquivo": "videos/9x16/vdq-3.mp4",
@@ -744,7 +744,7 @@
       },
       "ia": true,
       "moldura": "vaidarquanto",
-      "desde": "2026-11-23"
+      "desde": "2026-11-18"
     },
     "convertendo-1": {
       "arquivo": "videos/9x16/convertendo-1.mp4",
@@ -774,7 +774,7 @@
       },
       "ia": true,
       "moldura": "convertendo",
-      "desde": "2026-11-28"
+      "desde": "2026-11-18"
     },
     "barbarizando-1": {
       "arquivo": "videos/9x16/barbarizando-1.mp4",
@@ -804,7 +804,7 @@
       },
       "ia": true,
       "moldura": "barbarizando",
-      "desde": "2026-11-30"
+      "desde": "2026-11-18"
     },
     "barbarizando-2": {
       "arquivo": "videos/9x16/barbarizando-2.mp4",
@@ -834,37 +834,37 @@
       },
       "ia": true,
       "moldura": "barbarizando",
-      "desde": "2026-12-01"
+      "desde": "2026-11-18"
     }
   },
   "rodizio": [
     "remedin",
     "aieat",
+    "vdq-3",
     "waldeapps-teste",
     "vaidarquanto",
     "gasonol-1",
     "papelzinho",
+    "gasonol-4",
     "convertendo",
     "vdq-1",
     "opalpiteiro",
-    "fazopix-1",
     "barbarizando",
+    "fazopix-1",
     "remedin-1",
     "aeroliso",
-    "vdq-3",
     "gasonol",
     "fazopix",
+    "convertendo-1",
     "gasonol-2",
     "voutrocar",
-    "convertendo-1",
-    "barbarizando-2",
-    "gasonol-4",
     "aieat-1",
-    "barbarizando-1",
     "gasonol-3",
+    "barbarizando-2",
     "comunidade-do-ceu",
     "gasonol-bomba",
     "waldeapps-3",
+    "barbarizando-1",
     "vdq-2",
     "gasonol-duvida"
   ],

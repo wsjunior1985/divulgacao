@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // publicar-video-rodizio.mjs — publica, no horário do slot, o próximo vídeo do rodízio como Reel
-// (instagram, facebook, threads, bluesky e x), 2 por dia.
+// (instagram, facebook, threads, bluesky, x e youtube Shorts), 2 por dia. O YouTube só sai quando os
+// segredos YOUTUBE_* existem; sem eles o canal é pulado sem falha.
 //
 //   node scripts/publicar-video-rodizio.mjs --dry-run            próximo slot, sem enviar
 //   node scripts/publicar-video-rodizio.mjs --agenda 7           mostra os próximos 7 dias
@@ -17,7 +18,7 @@ import { carregarEnv, lerJson, agoraBRT, log, env, RAIZ } from "./lib/base.js";
 carregarEnv();
 const CRONS = ["0 15 * * *", "0 22 * * *"]; // 12h e 19h BRT
 const EPOCA = Date.UTC(2026, 10, 5);
-const CANAIS = "instagram,facebook,threads,bluesky,x";
+const CANAIS = "instagram,facebook,threads,bluesky,x,youtube";
 const ESTADO = "estado/videos-rodizio.json";
 
 export function sequencia(data, posicao) {

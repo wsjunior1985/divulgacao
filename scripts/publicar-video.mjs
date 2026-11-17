@@ -24,9 +24,10 @@ import * as threads from "./canais/threads.js";
 import * as bluesky from "./canais/bluesky.js";
 import * as tiktok from "./canais/tiktok.js";
 import * as buffer from "./canais/buffer.js";
+import * as youtube from "./canais/youtube.js";
 
 carregarEnv();
-const CANAIS = ["instagram", "facebook", "threads", "bluesky", "tiktok", "x"];
+const CANAIS = ["instagram", "facebook", "threads", "bluesky", "tiktok", "x", "youtube"];
 const ESTADO_ARG = (() => { const i = process.argv.indexOf("--estado"); return i > 0 ? process.argv[i + 1] : null; })();
 const ESTADO = ESTADO_ARG ?? "estado/videos.json";
 
@@ -50,7 +51,7 @@ const alvosApp = val("--apps")
 
 const pronto = (c) =>
   c === "instagram" || c === "facebook" ? meta.pronto(c) : c === "threads" ? threads.pronto()
-  : c === "bluesky" ? bluesky.pronto() : c === "tiktok" ? tiktok.pronto() : buffer.pronto();
+  : c === "bluesky" ? bluesky.pronto() : c === "tiktok" ? tiktok.pronto() : c === "youtube" ? youtube.pronto() : buffer.pronto();
 
 function uTm(urlApp, canal, app, formato, campanha) {
   const u = new URL(urlApp);
@@ -100,7 +101,13 @@ for (const app of alvosApp) {
     return true;
   });
   log(`— ${v.nome} (${formato}) · ${(statSync(`${RAIZ}/${arquivo}`).size / 1048576).toFixed(1)} MB · canais: ${canais.join(", ") || "nenhum"}`);
-  if (dryRun) { for (const c of canais) log(`[${c}]\n${v.legendas[c]}\n`); continue; }
+  if (dryRun) {
+    for (const c of canais) {
+      if (c === "youtube") { const y = youtube.montarShort({ titulo: v.titulo, nome: v.nome, legenda: legendaComUtm(v.legendas.youtube ?? v.legendas.facebook, uTm(v.url, c, app, formato, campanha)) }); log(`[youtube]\n${y.titulo}\n${y.descricao}\n`); }
+      else log(`[${c}]\n${v.legendas[c]}\n`);
+    }
+    continue;
+  }
   if (!canais.length) continue;
 
   let urlVideo = null;
@@ -110,12 +117,13 @@ for (const app of alvosApp) {
   const dom = new URL(v.url).hostname;
   for (const c of canais) {
     const landingUrl = uTm(v.url, c, app, formato, campanha);
-    const legenda = legendaComUtm(v.legendas[c], landingUrl);
+    const legenda = legendaComUtm(v.legendas[c] ?? (c === "youtube" ? v.legendas.facebook : ""), landingUrl);
     try {
       const r = c === "instagram" ? await video.instagram({ legenda, urlVideo })
         : c === "facebook" ? await video.facebook({ legenda, urlVideo })
         : c === "threads" ? await video.threads({ legenda, urlVideo })
         : c === "tiktok" ? await video.tiktok({ legenda, arquivo })
+        : c === "youtube" ? await youtube.publicarShort({ ...youtube.montarShort({ titulo: v.titulo, nome: v.nome, legenda }), arquivo: `${RAIZ}/${arquivo}` })
         : c === "bluesky" ? await video.bluesky({ legenda, arquivo, aspecto: ASPECTO, alt: v.titulo, link: landingUrl, linkLimpo: dom })
         : await buffer.publicar({ texto: legenda, imagens: [], video: urlVideo, servicos: ["twitter"] });
       feitos[c] = {
@@ -123,6 +131,7 @@ for (const app of alvosApp) {
         id: r.id ?? null,
         url: r.url ?? null,
         landingUrl,
+        ...(r.privacidade ? { privacidade: r.privacidade } : {}),
         utm: { source: c, medium: "social", campaign: campanha, content: `video-${formato}-${app}` },
         em: new Date().toISOString(),
       };

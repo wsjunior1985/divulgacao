@@ -1,6 +1,7 @@
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { pautaDoSlot, sequencia } from "../publicar-video-rodizio.mjs";
+import { listaDoDia, pautaDoSlot, sequencia } from "../publicar-video-rodizio.mjs";
 import { montarShort, pronto } from "../canais/youtube.js";
 
 const lista = ["a", "b", "c"];
@@ -51,4 +52,23 @@ test("short uses the manifest search title, opening line and tags", () => {
   assert.ok(!s.descricao.includes("Explicação repetida"));
   assert.ok(s.descricao.includes("utm_source=youtube"));
   assert.deepEqual(s.tags.length, 2);
+});
+
+test("a video with `desde` only enters the rotation from that date", () => {
+  const m = { rodizio: ["a", "novo", "b"], videos: { a: {}, novo: { desde: "2026-11-06" }, b: {} } };
+  assert.deepEqual(listaDoDia(m, "2026-11-05"), ["a", "b"]);
+  assert.deepEqual(listaDoDia(m, "2026-11-06"), ["a", "novo", "b"]);
+});
+
+test("the real manifest never repeats the same video in consecutive slots, even when `desde` changes the list", () => {
+  const m = JSON.parse(readFileSync(new URL("../../videos/videos.json", import.meta.url), "utf8"));
+  let anterior = null;
+  for (let k = 0; k < 120; k++) {
+    const data = new Date(Date.UTC(2026, 10, 17 + k)).toISOString().slice(0, 10);
+    for (const pos of [0, 1]) {
+      const { app } = pautaDoSlot(listaDoDia(m, data), data, pos);
+      assert.notEqual(app, anterior, `repetição em ${data} pos ${pos}: ${app}`);
+      anterior = app;
+    }
+  }
 });

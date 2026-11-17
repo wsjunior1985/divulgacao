@@ -66,7 +66,8 @@
           "abastecer"
         ],
         "playlist": "gasonol"
-      }
+      },
+      "moldura": "gasonol"
     },
     "remedin": {
       "arquivo": "videos/9x16/remedin.mp4",
@@ -364,7 +365,9 @@
           "abastecer"
         ],
         "playlist": "gasonol"
-      }
+      },
+      "ia": true,
+      "moldura": "gasonol"
     },
     "gasonol-duvida": {
       "arquivo": "videos/9x16/gasonol-duvida.mp4",
@@ -392,7 +395,9 @@
           "abastecer"
         ],
         "playlist": "gasonol"
-      }
+      },
+      "ia": true,
+      "moldura": "gasonol"
     },
     "waldeapps-teste": {
       "arquivo": "videos/9x16/waldeapps-teste.mp4",
@@ -418,7 +423,8 @@
           "estúdio de apps"
         ],
         "playlist": "waldeapps"
-      }
+      },
+      "ia": true
     },
     "aieat-1": {
       "arquivo": "videos/9x16/aieat-1.mp4",
@@ -445,7 +451,8 @@
           "dieta"
         ],
         "playlist": "aieat"
-      }
+      },
+      "ia": true
     },
     "gasonol-1": {
       "arquivo": "videos/9x16/gasonol-1.mp4",
@@ -473,7 +480,9 @@
           "abastecer"
         ],
         "playlist": "gasonol"
-      }
+      },
+      "ia": true,
+      "moldura": "gasonol"
     },
     "gasonol-2": {
       "arquivo": "videos/9x16/gasonol-2.mp4",
@@ -501,7 +510,9 @@
           "abastecer"
         ],
         "playlist": "gasonol"
-      }
+      },
+      "ia": true,
+      "moldura": "gasonol"
     },
     "gasonol-3": {
       "arquivo": "videos/9x16/gasonol-3.mp4",
@@ -529,7 +540,9 @@
           "abastecer"
         ],
         "playlist": "gasonol"
-      }
+      },
+      "ia": true,
+      "moldura": "gasonol"
     },
     "remedin-1": {
       "arquivo": "videos/9x16/remedin-1.mp4",
@@ -556,7 +569,8 @@
           "cuidador"
         ],
         "playlist": "remedin"
-      }
+      },
+      "ia": true
     },
     "vdq-1": {
       "arquivo": "videos/9x16/vdq-1.mp4",
@@ -583,7 +597,8 @@
           "economia doméstica"
         ],
         "playlist": "vaidarquanto"
-      }
+      },
+      "ia": true
     },
     "vdq-2": {
       "arquivo": "videos/9x16/vdq-2.mp4",
@@ -610,7 +625,8 @@
           "economia doméstica"
         ],
         "playlist": "vaidarquanto"
-      }
+      },
+      "ia": true
     },
     "waldeapps-3": {
       "arquivo": "videos/9x16/waldeapps-3.mp4",
@@ -636,7 +652,39 @@
           "estúdio de apps"
         ],
         "playlist": "waldeapps"
-      }
+      },
+      "ia": true
+    },
+    "gasonol-4": {
+      "arquivo": "videos/9x16/gasonol-4.mp4",
+      "nome": "GASONOL",
+      "titulo": "Etanol ou gasolina? Veja na hora qual compensa",
+      "legendas": {
+        "instagram": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 gasonol.com.br (link na bio)\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "facebook": "Gasolina ou etanol? Compare com os dados do seu carro. ⛽\n\nO GASONOL usa o consumo do modelo na base PBEV/INMETRO e os preços que você informa para indicar o que compensa. Os valores vistos no vídeo são exemplos; o resultado varia conforme o veículo e os preços da sua região. Você também pode falar os preços, sem digitar. Funciona offline.\n\n🔗 https://gasonol.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "O GASONOL compara o consumo do seu modelo (PBEV/INMETRO) com os preços que você informa. Os valores do vídeo são exemplos; o resultado varia por carro e preço.\n\nhttps://gasonol.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Gasolina ou etanol? O GASONOL compara o consumo do modelo com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Qual combustível compensa no seu carro? ⛽\n\nO GASONOL usa dados PBEV/INMETRO e os preços que você informa. Valores no vídeo são exemplos; resultado varia por modelo e preço.\n\nhttps://gasonol.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#gasonol #etanolougasolina #carroflex #economia #motorista",
+        "x": "O GASONOL compara o consumo do seu carro (PBEV/INMETRO) com os preços informados. Os valores do vídeo são exemplos.\n\nhttps://gasonol.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://gasonol.com.br",
+      "youtube": {
+        "titulo": "Etanol ou gasolina? Veja na hora qual compensa",
+        "abertura": "No GASONOL você escolhe o carro, digita os preços do posto e vê na hora qual combustível compensa, com o consumo do modelo na base PBEV/INMETRO.",
+        "tags": [
+          "gasolina ou etanol",
+          "etanol ou gasolina",
+          "qual compensa abastecer",
+          "calculadora etanol gasolina",
+          "GASONOL",
+          "economizar combustível",
+          "abastecer"
+        ],
+        "playlist": "gasonol"
+      },
+      "ia": true,
+      "moldura": "gasonol",
+      "desde": "2026-11-25"
     }
   },
   "rodizio": [
@@ -656,6 +704,7 @@
     "fazopix",
     "gasonol-2",
     "voutrocar",
+    "gasonol-4",
     "aieat-1",
     "gasonol-3",
     "comunidade-do-ceu",

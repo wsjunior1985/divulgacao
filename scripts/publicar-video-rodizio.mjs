@@ -28,6 +28,13 @@ export function sequencia(data, posicao) {
   return dias * CRONS.length + posicao;
 }
 
+/** Vídeos do rodízio ativos na data: um vídeo com `desde` só entra a partir dela, sem alterar os slots passados.
+ * Trocar o tamanho da lista muda `seq % n` e pode repetir um vídeo na virada: escolha um `desde` em que o teste
+ * "never repeats the same video in consecutive slots" passe. */
+export function listaDoDia(manifesto, data) {
+  return manifesto.rodizio.filter((id) => !manifesto.videos[id]?.desde || data >= manifesto.videos[id].desde);
+}
+
 export function pautaDoSlot(lista, data, posicao) {
   const seq = sequencia(data, posicao);
   const n = lista.length;
@@ -75,14 +82,13 @@ async function main() {
   const val = (f) => (a.includes(f) ? a[a.indexOf(f) + 1] : null);
   const dryRun = a.includes("--dry-run");
   const manifesto = lerJson("videos/videos.json");
-  const lista = manifesto.rodizio;
-  if (!lista?.length) throw new Error("videos/videos.json sem a lista `rodizio`");
-  for (const id of lista) if (!manifesto.videos[id]) throw new Error(`rodizio: vídeo desconhecido ${id}`);
+  if (!manifesto.rodizio?.length) throw new Error("videos/videos.json sem a lista `rodizio`");
+  for (const id of manifesto.rodizio) if (!manifesto.videos[id]) throw new Error(`rodizio: vídeo desconhecido ${id}`);
 
   if (val("--agenda")) {
     let { data, posicao } = proximoSlot();
     for (let i = 0; i < Number(val("--agenda")) * CRONS.length; i++) {
-      const p = pautaDoSlot(lista, data, posicao);
+      const p = pautaDoSlot(listaDoDia(manifesto, data), data, posicao);
       console.log(`${data} ${posicao === 0 ? "12h" : "19h"} BRT  ciclo ${p.ciclo}  ${p.app}`);
       posicao++; if (posicao >= CRONS.length) { posicao = 0; data = new Date(Date.parse(`${data}T12:00:00Z`) + 86400000).toISOString().slice(0, 10); }
     }
@@ -95,7 +101,7 @@ async function main() {
   }
   const slot = val("--data") ? { data: val("--data"), posicao: Number(val("--pos") ?? 0) }
     : cron ? slotDoCron(cron, env("PERMITIR_ATRASO") === "true") : proximoSlot();
-  const { seq, app, ciclo } = pautaDoSlot(lista, slot.data, slot.posicao);
+  const { seq, app, ciclo } = pautaDoSlot(listaDoDia(manifesto, slot.data), slot.data, slot.posicao);
   const chave = `${slot.data}-p${slot.posicao}-${app}`;
   log(`rodízio de vídeos · ${slot.data} ${slot.posicao === 0 ? "12h" : "19h"} BRT · sequência ${seq} · ciclo ${ciclo} · ${app}`);
 

@@ -1,0 +1,64 @@
+name: relatorio-semanal
+
+# Relatório semanal de alcance do Instagram (por formato, semana x semana, seguidores).
+# Disparo pela VPS (/etc/cron.d/divulgacao-slots), toda segunda 10h30 BRT.
+# Grava relatorios/AAAA-MM-DD.md, atualiza estado/seguidores.json e abre uma issue com o texto.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Só mostrar o relatório, sem gravar nem abrir issue"
+        type: boolean
+        default: true
+      cron:
+        description: "Informativo (disparo pela VPS)"
+        type: string
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: relatorio
+  cancel-in-progress: false
+
+jobs:
+  relatorio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Gerar o relatório
+        run: |
+          arquivo="relatorios/$(date -u +%F).md"
+          node scripts/dashboard.mjs --relatorio 7 --saida "$arquivo"
+          echo "ARQUIVO=$arquivo" >> "$GITHUB_ENV"
+      - name: Abrir a issue com o relatório
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          gh issue create --title "Relatório semanal de alcance · $(date -u +%F)" --body-file "$ARQUIVO"
+      - name: Guardar o relatório e os seguidores
+        if: ${{ always() && inputs.dry_run != true }}
+        run: |
+          git config user.name "divulgacao-bot"
+          git config user.email "divulgacao-bot@users.noreply.github.com"
+          git add relatorios estado/seguidores.json || true
+          git diff --cached --quiet || git commit -m "chore: relatório semanal de alcance [skip ci]"
+          for tentativa in 1 2 3 4; do
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" || git rebase --abort || true
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            sleep $((tentativa * 8))
+          done
+          echo "push do relatório falhou nas 4 tentativas"; exit 1

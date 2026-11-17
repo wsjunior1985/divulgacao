@@ -418,22 +418,64 @@ async function atualizarMetricas() {
   return true;
 }
 
-if (process.argv.includes("--relatorio")) {
-  await atualizarMetricas();
+/** Relatório de alcance do Instagram: semana atual x semana anterior, por formato, com seguidores. */
+async function relatorioSemanal(dias) {
   const { registros } = construirDados();
-  const dias = Number(process.argv[process.argv.indexOf("--relatorio") + 1]) || 14;
-  const corte = Date.now() - dias * 86400000;
+  const agora = Date.now(), d = (n) => agora - n * 86400000;
   const mediana = (a) => { a = a.filter(Number.isFinite).sort((x, y) => x - y); return a.length ? a[Math.floor(a.length / 2)] : null; };
   const val = (r, k) => { const v = r.metricas?.valores?.[k]; return typeof v === "object" ? v?.valor : v; };
-  console.log(`\nRelatório de alcance por formato · últimos ${dias} dias · Instagram`);
-  for (const tipo of ["post", "carrossel", "vídeo", "importado da API"]) {
-    const itens = registros.filter((r) => r.rede === "instagram" && r.status === "ok" && r.tipo === tipo && r.em && Date.parse(r.em) >= corte && r.metricas?.valores?.reach !== undefined);
-    if (!itens.length) continue;
-    const soma = (k) => itens.reduce((t, r) => t + (val(r, k) ?? 0), 0);
-    console.log(`${tipo.padEnd(18)} n=${String(itens.length).padStart(3)}  alcance mediana ${mediana(itens.map((r) => val(r, "reach")))}  views mediana ${mediana(itens.map((r) => val(r, "views")))}  total views ${soma("views")}  curtidas ${soma("curtidas")}  salvos ${soma("saved")}  compart. ${soma("shares")}`);
+  const ig = registros.filter((r) => r.rede === "instagram" && r.status === "ok" && r.em && r.metricas?.valores?.reach !== undefined);
+  const faixa = (ini, fim) => ig.filter((r) => Date.parse(r.em) >= ini && Date.parse(r.em) < fim);
+  const atual = faixa(d(dias), agora), anterior = faixa(d(dias * 2), d(dias));
+  const tipoNome = { post: "Imagem", carrossel: "Carrossel", "vídeo": "Reel", "importado da API": "Outros" };
+  const resumo = (itens) => ({ n: itens.length, alc: mediana(itens.map((r) => val(r, "reach"))), views: itens.reduce((t, r) => t + (val(r, "views") ?? 0), 0), curt: itens.reduce((t, r) => t + (val(r, "curtidas") ?? 0), 0), salv: itens.reduce((t, r) => t + (val(r, "saved") ?? 0), 0), comp: itens.reduce((t, r) => t + (val(r, "shares") ?? 0), 0) });
+  const setas = (a, b) => (b == null || a == null) ? "" : a > b ? ` ▲ (era ${b})` : a < b ? ` ▼ (era ${b})` : "";
+  // Seguidores: registra um ponto por relatório para acompanhar o crescimento.
+  let seguidores = null;
+  try {
+    const dados = await obter(`https://graph.facebook.com/${versaoMeta}/${env("META_IG_USER_ID")}?fields=followers_count&access_token=${encodeURIComponent(env("META_ACCESS_TOKEN"))}`);
+    seguidores = dados.followers_count ?? null;
+  } catch (e) { console.warn(`seguidores indisponíveis: ${e.message}`); }
+  const hist = json("estado/seguidores.json", { pontos: [] });
+  const hoje = new Date().toISOString().slice(0, 10);
+  if (seguidores != null) {
+    hist.pontos = hist.pontos.filter((x) => x.data !== hoje).concat({ data: hoje, seguidores }).slice(-60);
+    mkdirSync(resolve(RAIZ, "estado"), { recursive: true });
+    writeFileSync(resolve(RAIZ, "estado/seguidores.json"), `${JSON.stringify(hist, null, 2)}\n`);
   }
-  const top = registros.filter((r) => r.rede === "instagram" && r.status === "ok" && r.metricas?.valores?.reach !== undefined && r.em && Date.parse(r.em) >= corte).sort((a, b) => (val(b, "reach") ?? 0) - (val(a, "reach") ?? 0)).slice(0, 5);
-  console.log("Top 5 por alcance:"); for (const r of top) console.log(`  ${val(r, "reach")} alcance · ${val(r, "views") ?? "-"} views · ${r.tipo} · ${r.app} · ${(r.tema ?? "").slice(0, 50)} · ${r.em?.slice(0, 10)}`);
+  const antes = hist.pontos.filter((x) => x.data < hoje).at(-1);
+  const linhas = [`# Relatório semanal de alcance · Instagram · ${hoje}`, ""];
+  linhas.push(`**Seguidores:** ${seguidores ?? "indisponível"}${antes && seguidores != null ? ` (${seguidores - antes.seguidores >= 0 ? "+" : ""}${seguidores - antes.seguidores} desde ${antes.data})` : ""}`, "");
+  linhas.push(`Últimos ${dias} dias comparados aos ${dias} anteriores. Alcance = mediana por post; views, curtidas, salvos e compartilhamentos = soma.`, "");
+  linhas.push("| Formato | Posts | Alcance (mediana) | Views | Curtidas | Salvos | Compart. |", "|---|---|---|---|---|---|---|");
+  for (const tipo of Object.keys(tipoNome)) {
+    const a = resumo(atual.filter((r) => r.tipo === tipo)), b = resumo(anterior.filter((r) => r.tipo === tipo));
+    if (!a.n && !b.n) continue;
+    linhas.push(`| ${tipoNome[tipo]} | ${a.n}${setas(a.n, b.n)} | ${a.alc ?? "-"}${setas(a.alc, b.alc)} | ${a.views}${setas(a.views, b.views)} | ${a.curt} | ${a.salv} | ${a.comp} |`);
+  }
+  const top = [...atual].sort((x, y) => (val(y, "reach") ?? 0) - (val(x, "reach") ?? 0)).slice(0, 5);
+  linhas.push("", "## Top 5 por alcance", "");
+  for (const r of top) linhas.push(`- **${val(r, "reach")}** alcance · ${val(r, "views") ?? "-"} views · ${tipoNome[r.tipo] ?? r.tipo} · ${r.app ?? "-"} · ${(r.tema ?? "").slice(0, 60)} · ${r.em.slice(0, 10)}${r.url ? ` · ${r.url}` : ""}`);
+  const todos = resumo(atual), prev = resumo(anterior);
+  linhas.push("", "## Leitura", "");
+  if (todos.alc != null && prev.alc != null) linhas.push(`- Alcance mediano ${todos.alc > prev.alc ? "subiu" : todos.alc === prev.alc ? "ficou igual" : "caiu"} (${prev.alc} → ${todos.alc}).`);
+  const melhor = Object.keys(tipoNome).map((t) => ({ t, r: resumo(atual.filter((x) => x.tipo === t)) })).filter((x) => x.r.n >= 3 && x.r.alc != null).sort((x, y) => y.r.alc - x.r.alc)[0];
+  if (melhor) linhas.push(`- Formato com maior alcance mediano (mín. 3 posts): **${tipoNome[melhor.t]}** (${melhor.r.alc}).`);
+  linhas.push("- Amostra pequena: trate como sinal, não como prova. Posts com menos de 7 dias ainda estão maturando.");
+  return linhas.join("\n");
+}
+
+if (process.argv.includes("--relatorio")) {
+  await atualizarMetricas();
+  const dias = Number(process.argv[process.argv.indexOf("--relatorio") + 1]) || 7;
+  const texto = await relatorioSemanal(dias);
+  console.log(texto);
+  const i = process.argv.indexOf("--saida");
+  if (i > 0) {
+    const arquivo = resolve(RAIZ, process.argv[i + 1]);
+    mkdirSync(dirname(arquivo), { recursive: true });
+    writeFileSync(arquivo, `${texto}\n`);
+  }
   process.exit(0);
 }
 

@@ -29,6 +29,22 @@ function json(path, fallback) {
   catch { return fallback; }
 }
 
+/** Vídeos publicados à mão (estado/videos.json) e pelo rodízio de Reels (estado/videos-rodizio.json). */
+function videosRegistrados(perfis) {
+  const lista = [];
+  for (const [appId, canais] of Object.entries(json("estado/videos.json", { videos: {} }).videos ?? {})) {
+    lista.push({ appId, perfilId: appId, canais });
+  }
+  const manifesto = json("videos/videos.json", { videos: {} }).videos ?? {};
+  for (const [chave, canais] of Object.entries(json("estado/videos-rodizio.json", { videos: {} }).videos ?? {})) {
+    const idVideo = chave.replace(/^\d{4}-\d{2}-\d{2}-p\d+-/, "");
+    const nome = manifesto[idVideo]?.nome;
+    const perfil = perfis?.get?.(idVideo) ?? [...(perfis?.values?.() ?? [])].find((p) => p.nome === nome);
+    lista.push({ appId: idVideo, perfilId: perfil?.id ?? idVideo, canais, rodizio: true });
+  }
+  return lista;
+}
+
 function carregarMetricas() {
   return json(CACHE, { atualizadoEm: null, itens: {}, fontes: {} });
 }
@@ -40,7 +56,6 @@ function salvarMetricas(dados) {
 
 function construirDados() {
   const estado = json("estado/publicados.json", { posts: {}, atualizadoEm: null });
-  const videos = json("estado/videos.json", { videos: {}, atualizadoEm: null });
   const perfis = new Map();
   for (const arquivo of listJson(resolve(RAIZ, "apps"))) {
     const p = json(`apps/${arquivo}`, null);
@@ -70,13 +85,13 @@ function construirDados() {
   const videoManifest = json("videos/videos.json", { videos: {} });
   const manifestItems = Array.isArray(videoManifest.videos) ? videoManifest.videos : Object.entries(videoManifest.videos ?? {}).map(([app, v]) => ({ app, ...v }));
   const manifestPorApp = new Map(manifestItems.map((v) => [v.app, v]));
-  for (const [appId, canais] of Object.entries(videos.videos ?? {})) {
-    const app = perfis.get(appId);
+  for (const { appId, perfilId, canais } of videosRegistrados(perfis)) {
+    const app = perfis.get(perfilId);
     const video = manifestPorApp.get(appId);
     for (const [rede, r] of Object.entries(canais ?? {})) {
       registros.push({
         chave: `${rede}:${r.id ?? appId}`, tipo: "vídeo", rede, redeNome: NOMES[rede] ?? rede,
-        app: app?.nome ?? appId, appId, tema: video?.titulo ?? "Vídeo de apresentação",
+        app: app?.nome ?? appId, appId: perfilId, tema: video?.titulo ?? "Vídeo de apresentação",
         status: r.status ?? "desconhecido", id: r.id ?? null, url: r.url ?? null,
         em: r.em ?? null, erro: r.erro ?? null, utm: r.utm ?? null,
         metricas: metricas.itens?.[`${rede}:${r.id}`] ?? null,
@@ -244,7 +259,6 @@ async function atualizarMetricas() {
   atualizando = true;
   const metricas = carregarMetricas();
   const estado = json("estado/publicados.json", { posts: {} });
-  const videos = json("estado/videos.json", { videos: {} });
   const alvos = [];
   for (const [chave, canais] of Object.entries(estado.posts ?? {})) {
     const [slot, appId, ...tema] = chave.split("-");
@@ -254,7 +268,7 @@ async function atualizarMetricas() {
       }
     }
   }
-  for (const [appId, canais] of Object.entries(videos.videos ?? {})) {
+  for (const { appId, canais } of videosRegistrados(null)) {
     for (const [rede, r] of Object.entries(canais ?? {})) {
       if (r.status === "ok" && r.id && ["instagram", "facebook", "threads", "bluesky", "x"].includes(rede)) {
         alvos.push({ chave: `video:${appId}`, rede, id: r.id, em: r.em ?? "", appId, tema: "video" });
@@ -263,6 +277,7 @@ async function atualizarMetricas() {
   }
   const porRede = Object.fromEntries(REDES.map((r) => [r, alvos.filter((p) => p.rede === r).sort((a, b) => b.em.localeCompare(a.em)).slice(0, 40)]));
   const fontes = {};
+  const semInsights = {};
 
   // A API do Instagram também ajuda a recuperar posts recentes ausentes do
   // estado local após uma execução que publicou e depois falhou.
@@ -338,8 +353,7 @@ async function atualizarMetricas() {
     } catch (e) { fontes.x = { status: "erro", mensagem: e.message, consultados: 0 }; }
   } else if (buffer.length) fontes.x = { status: "indisponivel", nota: "Defina BUFFER_ACCESS_TOKEN para carregar métricas do X." };
 
-  // Leitura de contagens da Meta. Instagram fornece curtidas/comentários; Insights
-  // (views/reach/saves) exige permissão que não existe no token atual.
+  // Leitura de contagens e Insights da Meta (o token precisa de instagram_manage_insights e read_insights).
   for (const rede of ["instagram", "facebook"]) {
     const lista = rede === "instagram" ? [...new Map([...porRede.instagram, ...alvos.filter((p) => p.rede === "instagram")].map((p) => [p.id, p])).values()].sort((a, b) => b.em.localeCompare(a.em)).slice(0, 100) : porRede[rede];
     if (!lista.length) continue;
@@ -354,6 +368,20 @@ async function atualizarMetricas() {
         const counts = rede === "instagram"
           ? { curtidas: data.like_count, comentarios: data.comments_count }
           : { curtidas: data.likes?.summary?.total_count, comentarios: data.comments?.summary?.total_count };
+        // Insights (exigem instagram_manage_insights / read_insights no token): alcance, views, salvamentos, compartilhamentos.
+        const conjuntos = rede === "instagram" ? ["reach,views,saved,shares", "reach,views"] : ["post_impressions_unique"];
+        let obteve = false;
+        for (const metricasPedidas of conjuntos) {
+          try {
+            const ins = await obter(`https://graph.facebook.com/${versaoMeta}/${p.id}/insights?metric=${metricasPedidas}&access_token=${encodeURIComponent(token)}`);
+            for (const m of ins.data ?? []) {
+              const v = m.values?.[0]?.value;
+              if (Number.isFinite(v)) counts[m.name === "post_impressions_unique" ? "reach" : m.name] = v;
+            }
+            obteve = true; break;
+          } catch { /* tenta o conjunto menor de métricas */ }
+        }
+        if (!obteve) semInsights[rede] = (semInsights[rede] ?? 0) + 1;
         metricas.itens[`${rede}:${p.id}`] = {
           valores: Object.fromEntries(Object.entries(counts).filter(([, v]) => v !== undefined)),
           atualizadoEm: new Date().toISOString(), fonte: "Meta Graph API",
@@ -361,8 +389,8 @@ async function atualizarMetricas() {
       } catch (e) { metricas.itens[`${rede}:${p.id}`] = { valores: {}, atualizadoEm: new Date().toISOString(), fonte: "Meta Graph API", erro: e.message }; }
     });
     const erros = lista.filter((p) => metricas.itens[`${rede}:${p.id}`]?.erro).length;
-    fontes[rede] = { status: erros === lista.length ? "erro" : erros ? "parcial" : "ok", consultados: lista.length, erros,
-      nota: rede === "instagram" ? "Curtidas e comentários nos até 100 posts recentes. Views, alcance, salvamentos e compartilhamentos exigem a consulta de Insights e permissões da conta profissional." : "Curtidas e comentários consultados nos posts registrados. A API não disponibilizou compartilhamentos nesta consulta." };
+    fontes[rede] = { status: erros === lista.length ? "erro" : erros ? "parcial" : "ok", consultados: lista.length, erros, semInsights: semInsights[rede] ?? 0,
+      nota: rede === "instagram" ? "Curtidas, comentários, views, alcance, salvamentos e compartilhamentos nos até 100 posts recentes (Insights da conta profissional)." : "Curtidas e comentários consultados nos posts registrados. A API não disponibilizou compartilhamentos nesta consulta." };
   }
 
   // Insights do Threads: métricas vitalícias disponíveis por publicação.
@@ -388,6 +416,25 @@ async function atualizarMetricas() {
   salvarMetricas(metricas);
   atualizando = false;
   return true;
+}
+
+if (process.argv.includes("--relatorio")) {
+  await atualizarMetricas();
+  const { registros } = construirDados();
+  const dias = Number(process.argv[process.argv.indexOf("--relatorio") + 1]) || 14;
+  const corte = Date.now() - dias * 86400000;
+  const mediana = (a) => { a = a.filter(Number.isFinite).sort((x, y) => x - y); return a.length ? a[Math.floor(a.length / 2)] : null; };
+  const val = (r, k) => { const v = r.metricas?.valores?.[k]; return typeof v === "object" ? v?.valor : v; };
+  console.log(`\nRelatório de alcance por formato · últimos ${dias} dias · Instagram`);
+  for (const tipo of ["post", "carrossel", "vídeo", "importado da API"]) {
+    const itens = registros.filter((r) => r.rede === "instagram" && r.status === "ok" && r.tipo === tipo && r.em && Date.parse(r.em) >= corte && r.metricas?.valores?.reach !== undefined);
+    if (!itens.length) continue;
+    const soma = (k) => itens.reduce((t, r) => t + (val(r, k) ?? 0), 0);
+    console.log(`${tipo.padEnd(18)} n=${String(itens.length).padStart(3)}  alcance mediana ${mediana(itens.map((r) => val(r, "reach")))}  views mediana ${mediana(itens.map((r) => val(r, "views")))}  total views ${soma("views")}  curtidas ${soma("curtidas")}  salvos ${soma("saved")}  compart. ${soma("shares")}`);
+  }
+  const top = registros.filter((r) => r.rede === "instagram" && r.status === "ok" && r.metricas?.valores?.reach !== undefined && r.em && Date.parse(r.em) >= corte).sort((a, b) => (val(b, "reach") ?? 0) - (val(a, "reach") ?? 0)).slice(0, 5);
+  console.log("Top 5 por alcance:"); for (const r of top) console.log(`  ${val(r, "reach")} alcance · ${val(r, "views") ?? "-"} views · ${r.tipo} · ${r.app} · ${(r.tema ?? "").slice(0, 50)} · ${r.em?.slice(0, 10)}`);
+  process.exit(0);
 }
 
 const servidor = createServer(async (req, res) => {

@@ -745,6 +745,36 @@
       "ia": true,
       "moldura": "vaidarquanto",
       "desde": "2026-11-23"
+    },
+    "convertendo-1": {
+      "arquivo": "videos/9x16/convertendo-1.mp4",
+      "nome": "Convertendo",
+      "titulo": "Quanto custa em reais, de verdade?",
+      "url": "https://convertendo.app.br",
+      "legendas": {
+        "instagram": "Quanto custa em reais, de verdade? ✈️💱\n\nO Convertendo mostra o custo real da sua compra lá fora, com IOF e spread já na conta, compara as formas de pagar e acompanha o dólar com 12 meses de histórico.\n\nTem lista de compras, scanner de etiqueta e conversor de medidas que funciona offline.\n\n🔗 convertendo.app.br (link na bio)\n\n#convertendo #viagem #dolar #iof #comprasinternacionais",
+        "facebook": "Quanto custa em reais, de verdade? ✈️💱\n\nO Convertendo mostra o custo real da sua compra lá fora, com IOF e spread já na conta, compara as formas de pagar e acompanha o dólar com 12 meses de histórico.\n\nTem lista de compras, scanner de etiqueta e conversor de medidas que funciona offline.\n\n🔗 https://convertendo.app.br?utm_source=facebook&utm_medium=video&utm_campaign=apresentacao",
+        "threads": "Quanto custa em reais, de verdade? O Convertendo mostra o custo real com IOF e spread, compara as formas de pagar e converte medidas até offline.\n\nconvertendo.app.br",
+        "bluesky": "Custo real em reais, com IOF e spread, e a melhor forma de pagar lá fora.\n\nconvertendo.app.br",
+        "tiktok": "Quanto custa em reais, de verdade? 👇\n\nCusto real em reais, com IOF e spread, e a melhor forma de pagar lá fora.\n\nconvertendo.app.br\n\n#convertendo #viagem #dolar #iof #comprasinternacionais",
+        "x": "Custo real em reais, com IOF e spread, e a melhor forma de pagar lá fora.\n\nconvertendo.app.br"
+      },
+      "youtube": {
+        "titulo": "Quanto custa em reais, de verdade? Compra no exterior com IOF",
+        "abertura": "O Convertendo mostra o custo real da compra lá fora, com IOF e spread na conta, e acompanha o dólar com 12 meses de histórico.",
+        "tags": [
+          "converter dólar para real",
+          "compra no exterior",
+          "IOF",
+          "cotação do dólar",
+          "viagem internacional",
+          "Convertendo"
+        ],
+        "playlist": "convertendo"
+      },
+      "ia": true,
+      "moldura": "convertendo",
+      "desde": "2026-11-28"
     }
   },
   "rodizio": [
@@ -766,6 +796,7 @@
     "fazopix",
     "gasonol-2",
     "voutrocar",
+    "convertendo-1",
     "gasonol-4",
     "aieat-1",
     "gasonol-3",

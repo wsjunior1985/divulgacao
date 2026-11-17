@@ -1,0 +1,52 @@
+{
+  "app": "convertendo",
+  "id": "convertendo-1",
+  "dominio": "convertendo.app.br",
+  "fala": "Quanto custa em reais, de verdade? No Convertendo você vê o custo real da compra lá fora, com i ó efe e spread.",
+  "apresentadora": {
+    "pronome": "she",
+    "referencia": null,
+    "descricao": "young Afro-Brazilian woman in her late 20s with curly hair in a high bun, wearing a light-blue shirt under a casual travel jacket",
+    "cenario": "stands in a bright airport terminal with a blurred, out-of-focus background and a small carry-on suitcase beside her",
+    "gesto": "holds her smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.55,
+  "tempos": [
+    {
+      "ini": 0.13,
+      "fim": 2.3,
+      "texto": "Quanto custa em reais, de verdade?"
+    },
+    {
+      "ini": 2.3,
+      "fim": 3.7,
+      "texto": "No Convertendo você vê"
+    },
+    {
+      "ini": 3.7,
+      "fim": 5.85,
+      "texto": "o custo real da compra lá fora,"
+    },
+    {
+      "ini": 5.85,
+      "fim": 7.9,
+      "texto": "com IOF e spread."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "Convertendo",
+      "html": "<i class=\"c1\">Convertendo</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#5db4ff"
+  },
+  "cena": {
+    "fluxo": "convertendo",
+    "inicio": 2.0,
+    "logo": "assets/premium/convertendo/logo.png",
+    "logoLargura": 340,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(31,146,232,.24),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(20,90,180,.18),transparent 70%),linear-gradient(180deg,#040a12,#060d18 60%,#040a12)"
+  }
+}

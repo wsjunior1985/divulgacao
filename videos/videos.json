@@ -775,6 +775,36 @@
       "ia": true,
       "moldura": "convertendo",
       "desde": "2026-11-28"
+    },
+    "barbarizando-1": {
+      "arquivo": "videos/9x16/barbarizando-1.mp4",
+      "nome": "Barbarizando",
+      "titulo": "Sua barbearia em ordem",
+      "url": "https://barbarizando.com.br",
+      "legendas": {
+        "instagram": "Sua barbearia em ordem. 💈\n\nO Barbarizando deixa o cliente agendar sozinho (serviço, profissional, dia e horário) e dá ao dono painel, agenda, comandas, equipe e relatórios num só lugar, com estoque, comissões, repasses e metas.\n\nCada barbearia tem a própria página e o próprio agendamento.\n\n🔗 barbarizando.com.br (link na bio)\n\n#barbarizando #barbearia #barbeiro #gestaodebarbearia #agendaonline",
+        "facebook": "Sua barbearia em ordem. 💈\n\nO Barbarizando deixa o cliente agendar sozinho (serviço, profissional, dia e horário) e dá ao dono painel, agenda, comandas, equipe e relatórios num só lugar, com estoque, comissões, repasses e metas.\n\nCada barbearia tem a própria página e o próprio agendamento.\n\n🔗 https://barbarizando.com.br?utm_source=facebook&utm_medium=video&utm_campaign=apresentacao",
+        "threads": "Sua barbearia em ordem: o cliente agenda sozinho e você controla agenda, comandas, equipe, estoque, comissões e metas num só lugar.\n\nbarbarizando.com.br",
+        "bluesky": "O cliente agenda sozinho e você controla agenda, comandas, equipe e metas num só lugar.\n\nbarbarizando.com.br",
+        "tiktok": "Sua barbearia em ordem 👇\n\nO cliente agenda sozinho e você controla agenda, comandas, equipe e metas num só lugar.\n\nbarbarizando.com.br\n\n#barbarizando #barbearia #barbeiro #gestaodebarbearia #agendaonline",
+        "x": "O cliente agenda sozinho e você controla agenda, comandas, equipe e metas num só lugar.\n\nbarbarizando.com.br"
+      },
+      "youtube": {
+        "titulo": "Agendamento online para barbearia: como funciona",
+        "abertura": "O Barbarizando deixa o cliente agendar sozinho e dá ao dono painel, agenda, comandas, equipe e relatórios num só lugar.",
+        "tags": [
+          "agendamento para barbearia",
+          "sistema para barbearia",
+          "agenda de barbearia",
+          "comanda de barbearia",
+          "gestão de barbearia",
+          "Barbarizando"
+        ],
+        "playlist": "barbarizando"
+      },
+      "ia": true,
+      "moldura": "barbarizando",
+      "desde": "2026-11-30"
     }
   },
   "rodizio": [
@@ -799,6 +829,7 @@
     "convertendo-1",
     "gasonol-4",
     "aieat-1",
+    "barbarizando-1",
     "gasonol-3",
     "comunidade-do-ceu",
     "gasonol-bomba",

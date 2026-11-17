@@ -1,0 +1,53 @@
+{
+  "app": "barbarizando",
+  "id": "barbarizando-1",
+  "dominio": "barbarizando.com.br",
+  "fala": "Cansou de marcar horário na mão? No Barbarizando o cliente agenda sozinho: serviço, profissional e horário.",
+  "apresentadora": {
+    "pronome": "he",
+    "referencia": null,
+    "descricao": "Brazilian man in his late 30s with a well-groomed full dark beard and short fade haircut, wearing a black barber apron over a white shirt with rolled sleeves",
+    "cenario": "stands in a stylish modern barbershop with a leather barber chair and mirror softly blurred behind him",
+    "gesto": "holds his smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.65,
+  "tempos": [
+    {
+      "ini": 0.05,
+      "fim": 2.0,
+      "texto": "Cansou de marcar horário na mão?"
+    },
+    {
+      "ini": 2.0,
+      "fim": 3.65,
+      "texto": "No Barbarizando"
+    },
+    {
+      "ini": 3.65,
+      "fim": 5.0,
+      "texto": "o cliente agenda sozinho:"
+    },
+    {
+      "ini": 5.0,
+      "fim": 8.0,
+      "texto": "serviço, profissional e horário."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "Barbarizando",
+      "html": "<i class=\"c1\">Barbarizando</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#e0a063"
+  },
+  "cena": {
+    "fluxo": "barbarizando",
+    "inicio": 1.5,
+    "logo": "assets/premium/barbarizando/logo.png",
+    "logoLargura": 340,
+    "logoAltura": 400,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(201,122,60,.28),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(240,178,122,.14),transparent 70%),linear-gradient(180deg,#0a0f0d,#0f1815 60%,#0a0f0d)"
+  }
+}

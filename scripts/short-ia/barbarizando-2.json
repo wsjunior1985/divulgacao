@@ -1,0 +1,58 @@
+{
+  "app": "barbarizando",
+  "id": "barbarizando-2",
+  "dominio": "barbarizando.com.br",
+  "fala": "Dono de barbearia, tenha tudo num só lugar: agenda, comandas, comissões e relatórios no Barbarizando.",
+  "apresentadora": {
+    "pronome": "he",
+    "referencia": null,
+    "descricao": "Brazilian man in his late 30s with a well-groomed full dark beard and short fade haircut, wearing a black barber apron over a white shirt with rolled sleeves",
+    "cenario": "stands in a stylish barbershop with a brick wall, round mirrors and wooden shelves softly blurred behind him",
+    "gesto": "holds his smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.38,
+  "tempos": [
+    {
+      "ini": 0.1,
+      "fim": 1.55,
+      "texto": "Dono de barbearia,"
+    },
+    {
+      "ini": 1.55,
+      "fim": 3.38,
+      "texto": "tenha tudo num só lugar:"
+    },
+    {
+      "ini": 3.38,
+      "fim": 4.8,
+      "texto": "agenda, comandas,"
+    },
+    {
+      "ini": 4.8,
+      "fim": 6.94,
+      "texto": "comissões e relatórios"
+    },
+    {
+      "ini": 6.94,
+      "fim": 8.0,
+      "texto": "no Barbarizando."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "Barbarizando",
+      "html": "<i class=\"c1\">Barbarizando</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#e0a063"
+  },
+  "cena": {
+    "fluxo": "painel-estatico",
+    "inicio": 0,
+    "logo": "assets/premium/barbarizando/logo.png",
+    "logoLargura": 340,
+    "logoAltura": 400,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(201,122,60,.28),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(240,178,122,.14),transparent 70%),linear-gradient(180deg,#0a0f0d,#0f1815 60%,#0a0f0d)"
+  }
+}

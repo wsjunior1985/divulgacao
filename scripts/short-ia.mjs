@@ -57,7 +57,8 @@ if (comando === "capturar") {
   const nav = await (await chromium()).launch();
   const ctx = await nav.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, colorScheme: "dark", serviceWorkers: "block" }); // sem service worker: o bloqueio de escritas vale para tudo
   await ctx.addInitScript((c) => { for (const [k, v] of Object.entries(c.sessionStorage ?? {})) { try { sessionStorage.setItem(k, v); } catch {} } for (const [k, v] of Object.entries(c.localStorage ?? {})) { try { localStorage.setItem(k, v); } catch {} } }, fluxoMod.contexto ?? {});
-  await ctx.route("**/*", (r) => (["GET", "HEAD", "OPTIONS"].includes(r.request().method()) ? r.continue() : r.fulfill({ status: 204, body: "" }))); // só leitura
+  const leituraPost = (fluxoMod.permitirPost ?? []).map((x) => new RegExp(x)); // POSTs que só leem (ex.: funções de catálogo/horários); o fluxo declara quais
+  await ctx.route("**/*", (r) => (["GET", "HEAD", "OPTIONS"].includes(r.request().method()) || leituraPost.some((re) => re.test(r.request().url())) ? r.continue() : (console.log(`   bloqueado ${r.request().method()} ${r.request().url().slice(0, 110)}`), r.fulfill({ status: 204, body: "" })))); // só leitura
   const p = await ctx.newPage();
   await p.goto(fluxoMod.url, { waitUntil: "networkidle", timeout: 45000 }); await p.waitForTimeout(1500);
   const lista = []; let rodando = true; let n = 0; const t0 = Date.now();

@@ -14,5 +14,7 @@ export default async function fluxo({ p, esp, marca }) {
   for (const ch of "SAO PAULO") { await p.keyboard.type(ch); await esp(70); }
   await esp(500);
   await p.getByRole("button", { name: "Concluir" }).click(); marca("concluir");
-  await esp(3600);
+  await esp(900);
+  await p.evaluate(() => window.scrollTo({ top: 0, behavior: "smooth" })); // mostra o QR inteiro
+  await esp(3000);
 }

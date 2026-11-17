@@ -10,8 +10,29 @@
     "cenario": "stands behind the counter of a small, tidy neighborhood shop with a card machine on the counter",
     "gesto": "holds his smartphone toward the camera with the screen turned slightly away so no interface is readable"
   },
-  "corte": 3.4,
-  "tempos": [],
+  "corte": 3.0,
+  "tempos": [
+    {
+      "ini": 0.3,
+      "fim": 2.0,
+      "texto": "Vai cobrar no Pix?"
+    },
+    {
+      "ini": 2.0,
+      "fim": 4.25,
+      "texto": "No Faz o PIX você informa a chave,"
+    },
+    {
+      "ini": 4.3,
+      "fim": 6.0,
+      "texto": "o nome e a cidade,"
+    },
+    {
+      "ini": 6.05,
+      "fim": 7.95,
+      "texto": "e o QR Code sai na hora."
+    }
+  ],
   "destaques": [
     {
       "trecho": "Faz o PIX",

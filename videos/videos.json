@@ -685,6 +685,36 @@
       "ia": true,
       "moldura": "gasonol",
       "desde": "2026-11-25"
+    },
+    "fazopix-1": {
+      "arquivo": "videos/9x16/fazopix-1.mp4",
+      "nome": "Faz o PIX!",
+      "titulo": "Vai cobrar no Pix? Gere o QR Code na hora",
+      "url": "https://fazopix.waldeapps.systems",
+      "legendas": {
+        "instagram": "Vai cobrar no Pix? Qual é a sua chave? 💚\n\nNo Faz o PIX! você informa chave, nome e cidade e o QR Code Pix sai na hora. Valor, descrição e a sua logo no QR são opcionais.\n\nCopie o código, compartilhe, baixe em PNG ou SVG e imprima o cartão. Sem cadastro, nada sai do seu aparelho, funciona offline e instala como app.\n\n🔗 fazopix.waldeapps.systems (link na bio)\n\n#fazopix #pix #qrcodepix #cobrancapix #autonomo",
+        "facebook": "Vai cobrar no Pix? Qual é a sua chave? 💚\n\nNo Faz o PIX! você informa chave, nome e cidade e o QR Code Pix sai na hora. Valor, descrição e a sua logo no QR são opcionais.\n\nCopie o código, compartilhe, baixe em PNG ou SVG e imprima o cartão. Sem cadastro, nada sai do seu aparelho, funciona offline e instala como app.\n\n🔗 https://fazopix.waldeapps.systems?utm_source=facebook&utm_medium=video&utm_campaign=apresentacao",
+        "threads": "Vai cobrar no Pix? Informe chave, nome e cidade e o QR sai na hora. Copie, compartilhe, baixe PNG/SVG ou imprima. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems",
+        "bluesky": "Chave, nome e cidade: o QR Code Pix sai na hora. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems",
+        "tiktok": "Vai cobrar no Pix? Qual é a sua chave? 👇\n\nChave, nome e cidade: o QR Code Pix sai na hora. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems\n\n#fazopix #pix #qrcodepix #cobrancapix #autonomo",
+        "x": "Chave, nome e cidade: o QR Code Pix sai na hora. Sem cadastro, tudo no seu aparelho.\n\nfazopix.waldeapps.systems"
+      },
+      "youtube": {
+        "titulo": "Vai cobrar no Pix? Gere o QR Code na hora",
+        "abertura": "No Faz o PIX! você informa a chave, o nome e a cidade, e o QR Code Pix sai na hora, sem cadastro.",
+        "tags": [
+          "QR Code Pix",
+          "gerar QR Code Pix",
+          "cobrar no Pix",
+          "chave Pix",
+          "Faz o PIX",
+          "cartão Pix"
+        ],
+        "playlist": "fazopix"
+      },
+      "ia": true,
+      "moldura": "fazopix",
+      "desde": "2026-11-25"
     }
   },
   "rodizio": [
@@ -697,6 +727,7 @@
     "convertendo",
     "vdq-1",
     "opalpiteiro",
+    "fazopix-1",
     "barbarizando",
     "remedin-1",
     "aeroliso",

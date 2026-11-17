@@ -21177,7 +21177,28 @@
         "em": "2026-11-17T17:01:41.697Z",
         "erro": null
       }
+    },
+    "carrossel-barbarizando-comandas-e-caixa-2026-11-17": {
+      "instagram": {
+        "status": "ok",
+        "id": "18122094182047114",
+        "url": "https://www.instagram.com/p/18122094182047114",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "barbarizando",
+        "temaId": "comandas-e-caixa",
+        "landingUrl": "https://barbarizando.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-barbarizando-comandas-e-caixa"
+        },
+        "em": "2026-11-17T19:02:13.531Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-17T17:01:41.697Z"
+  "atualizadoEm": "2026-11-17T19:02:13.531Z"
 }

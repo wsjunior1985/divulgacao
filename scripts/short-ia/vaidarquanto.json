@@ -1,0 +1,53 @@
+{
+  "app": "vaidarquanto",
+  "id": "vdq-3",
+  "dominio": "vaidarquanto.com.br",
+  "fala": "Quanto vai dar a compra? No Vai dar quanto você dita os produtos e vê o total antes do caixa.",
+  "apresentadora": {
+    "pronome": "she",
+    "referencia": null,
+    "descricao": "Brazilian woman in her late 50s with short dark hair with silver streaks and round glasses, wearing a light cardigan over a white blouse",
+    "cenario": "stands in a supermarket aisle next to a shopping cart with a few groceries",
+    "gesto": "holds her smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.65,
+  "tempos": [
+    {
+      "ini": 0.05,
+      "fim": 2.0,
+      "texto": "Quanto vai dar a compra?"
+    },
+    {
+      "ini": 2.0,
+      "fim": 3.4,
+      "texto": "No Vai dar quanto?"
+    },
+    {
+      "ini": 3.4,
+      "fim": 5.05,
+      "texto": "você dita os produtos"
+    },
+    {
+      "ini": 5.05,
+      "fim": 7.6,
+      "texto": "e vê o total antes do caixa."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "Vai dar quanto?",
+      "html": "<i class=\"c1\">Vai dar quanto</i><i class=\"c2\">?</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#d98cf0",
+    "c2": "#a6d829"
+  },
+  "cena": {
+    "fluxo": "vaidarquanto",
+    "inicio": 0.6,
+    "logo": "assets/premium/vaidarquanto/logo.png",
+    "logoLargura": 340,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(192,97,214,.22),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(120,60,200,.16),transparent 70%),linear-gradient(180deg,#09070f,#0e0b16 60%,#09070f)"
+  }
+}

@@ -715,6 +715,36 @@
       "ia": true,
       "moldura": "fazopix",
       "desde": "2026-11-25"
+    },
+    "vdq-3": {
+      "arquivo": "videos/9x16/vdq-3.mp4",
+      "nome": "Vai dar quanto?",
+      "titulo": "Quanto vai dar a compra? Veja o total antes do caixa",
+      "legendas": {
+        "instagram": "Acompanhe o total da compra antes do caixa. 🛒\n\nNo Vai dar quanto? você dita os produtos, informa os preços, define um teto e recebe aviso antes de ultrapassá-lo. Sem rastreamento e funciona offline.\n\nOs valores e a compra vistos no vídeo são de demonstração. No app, informe os preços da sua loja para acompanhar uma estimativa do total.\n\n🔗 vaidarquanto.com.br (link na bio)\n\n#vaidarquanto #supermercado #economiadomestica #compras #financaspessoais",
+        "facebook": "Acompanhe o total da compra antes do caixa. 🛒\n\nNo Vai dar quanto? você dita os produtos, informa os preços, define um teto e recebe aviso antes de ultrapassá-lo. Sem rastreamento e funciona offline.\n\nOs valores e a compra vistos no vídeo são de demonstração. No app, informe os preços da sua loja para acompanhar uma estimativa do total.\n\n🔗 https://vaidarquanto.com.br?utm_source=facebook&utm_medium=social&utm_campaign=apresentacao",
+        "threads": "Dite os produtos, informe os preços e acompanhe a estimativa do total. Defina um teto e receba aviso antes de ultrapassá-lo. Os valores do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=threads&utm_medium=social&utm_campaign=apresentacao",
+        "bluesky": "Informe produtos e preços e acompanhe uma estimativa da compra. Os dados do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=bluesky&utm_medium=social&utm_campaign=apresentacao",
+        "tiktok": "Acompanhe a estimativa da compra enquanto faz compras 🛒\n\nDite os produtos, informe os preços, defina um teto e receba aviso. Valores do vídeo são demonstrativos; o total depende dos preços informados.\n\nhttps://vaidarquanto.com.br?utm_source=tiktok&utm_medium=social&utm_campaign=apresentacao\n\n#vaidarquanto #supermercado #economiadomestica #compras #financaspessoais",
+        "x": "Informe produtos e preços e acompanhe uma estimativa da compra. Os dados do vídeo são demonstrativos.\n\nhttps://vaidarquanto.com.br?utm_source=x&utm_medium=social&utm_campaign=apresentacao"
+      },
+      "url": "https://vaidarquanto.com.br",
+      "youtube": {
+        "titulo": "Quanto vai dar a compra? Veja o total antes do caixa",
+        "abertura": "No Vai dar quanto? você dita os produtos e acompanha o total da compra antes do caixa. Funciona offline e sem rastreamento.",
+        "tags": [
+          "total da compra",
+          "calculadora de mercado",
+          "lista de compras",
+          "controle de gastos no mercado",
+          "Vai dar quanto",
+          "economia doméstica"
+        ],
+        "playlist": "vaidarquanto"
+      },
+      "ia": true,
+      "moldura": "vaidarquanto",
+      "desde": "2026-11-23"
     }
   },
   "rodizio": [
@@ -731,6 +761,7 @@
     "barbarizando",
     "remedin-1",
     "aeroliso",
+    "vdq-3",
     "gasonol",
     "fazopix",
     "gasonol-2",

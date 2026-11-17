@@ -20875,7 +20875,79 @@
         "em": "2026-11-17T00:01:57.291Z",
         "erro": null
       }
+    },
+    "636-papelzinho-confra-da-firma": {
+      "instagram": {
+        "status": "ok",
+        "id": "18200287030390799",
+        "url": "https://www.instagram.com/p/18200287030390799",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-confra-da-firma-c5-v0",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-confra-da-firma-c5-v0"
+        },
+        "em": "2026-11-17T01:01:20.480Z",
+        "erro": null
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126619291435454",
+        "url": "https://www.facebook.com/1293634587162251_122126619291435454",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-confra-da-firma-c5-v0",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-confra-da-firma-c5-v0"
+        },
+        "em": "2026-11-17T01:01:26.171Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18066539870529690",
+        "url": "https://www.threads.net/@me/post/18066539870529690",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-confra-da-firma-c5-v0",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-confra-da-firma-c5-v0"
+        },
+        "em": "2026-11-17T01:02:06.167Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2htssrvas2j",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2htssrvas2j",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-confra-da-firma-c5-v0",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-confra-da-firma-c5-v0"
+        },
+        "em": "2026-11-17T01:02:08.744Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6afba7913e42cd001e41a321",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-confra-da-firma-c5-v0",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-confra-da-firma-c5-v0"
+        },
+        "em": "2026-11-17T01:02:09.976Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-17T00:01:57.291Z"
+  "atualizadoEm": "2026-11-17T01:02:09.976Z"
 }

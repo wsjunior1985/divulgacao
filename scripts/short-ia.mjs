@@ -34,11 +34,19 @@ async function chromium() { return (await import("playwright")).chromium; }
 if (comando === "preparar") {
   const ref = cfg.apresentadora;
   const quadroRef = `${pasta}/1-apresentadora.png`;
-  if (existsSync(abs(ref.referencia))) ff(["-ss", String(ref.quadro ?? 1), "-i", abs(ref.referencia), "-frames:v", "1", quadroRef]);
-  const prompt = `Vertical 9:16 realistic smartphone-style video, natural daylight, handheld feel. The ${ref.descricao} from the FIRST reference image only (ignore any other person in other images) ${ref.cenario}, looks at the camera and speaks in Brazilian Portuguese with a friendly, casual, natural tone: "${cfg.fala}" While she speaks she ${ref.gesto}. Clear voice, faint ambient sound, no music. The phone screen must NOT show any readable interface or text. No subtitles, no text overlays, no logos, no watermarks.`;
+  const pron = ref.pronome === "he" ? "he" : "she";
+  // Apresentadora existente (quadro de um clipe) ou NOVA (imagem gerada no Flow, uma por app).
+  if (ref.referencia && existsSync(abs(ref.referencia))) ff(["-ss", String(ref.quadro ?? 1), "-i", abs(ref.referencia), "-frames:v", "1", quadroRef]);
+  const prompt = `Vertical 9:16 realistic smartphone-style video, natural daylight, handheld feel. The ${ref.descricao} from the FIRST reference image only (ignore any other person in other images) ${ref.cenario}, looks at the camera and speaks in Brazilian Portuguese with a friendly, casual, natural tone: "${cfg.fala}" While ${pron} speaks, ${pron} ${ref.gesto}. Clear voice, faint ambient sound, no music. The phone screen must NOT show any readable interface or text. No subtitles, no text overlays, no logos, no watermarks.`;
   writeFileSync(`${pasta}/prompt.txt`, `${prompt}\n`);
-  writeFileSync(`${pasta}/LEIA-ME.md`, `# Short com apresentadora de IA: ${app}\n\n## Fala\n${cfg.fala}\n\n## No Flow (flow.google, conta com o plano Google AI Pro)\n1. Suba só a imagem \`1-apresentadora.png\` (nesta pasta) e anexe-a ao pedido.\n2. Agente > Configurações: modelo **Veo 3.1 Fast**, **9:16**, x1; "Confirmar antes de gerar: Sempre" (custo ~20 créditos).\n3. Cole o prompt abaixo (ele também está em \`prompt.txt\`; copie com \`LC_ALL=en_US.UTF-8 pbcopy < prompt.txt\` para não quebrar os acentos).\n4. Baixe em qualidade original e salve aqui como \`piloto.mp4\`.\n\n## Prompt\n${prompt}\n\n## Depois\n\`node scripts/short-ia.mjs capturar ${app}\`, \`transcrever ${app}\` (ajuste \`tempos\` no JSON) e \`compor ${app}\`.\n`);
-  log(`preparado em ${pasta} (referência: ${existsSync(quadroRef) ? "ok" : "sem quadro"})`);
+  let etapaImagem = "";
+  if (!ref.referencia) {
+    const promptImagem = `Photorealistic vertical 9:16 portrait, shot like a smartphone photo in natural daylight, shallow depth of field. A ${ref.descricao}, upper body visible, ${ref.cenario}. Relaxed friendly expression with a slight smile, looking straight at the camera, holding a smartphone in one hand with the screen turned away. Natural skin texture, realistic hands (five fingers), no text, no logos, no watermarks.`;
+    writeFileSync(`${pasta}/prompt-imagem.txt`, `${promptImagem}\n`);
+    etapaImagem = `## Etapa 0: criar a apresentadora deste app (uma por projeto)\nNo Flow, peça uma imagem (modelo Nano Banana, 9:16, x2) com o prompt de \`prompt-imagem.txt\`. Escolha a melhor (rosto natural, mãos com 5 dedos, sem texto) e salve aqui como \`1-apresentadora.png\`. Ela vira a referência do vídeo e deve ser **diferente** das apresentadoras dos outros apps.\n\n## Prompt da imagem\n${promptImagem}\n\n`;
+  }
+  writeFileSync(`${pasta}/LEIA-ME.md`, `# Short com apresentadora de IA: ${app}\n\n## Fala\n${cfg.fala}\n\n${etapaImagem}## Vídeo no Flow (flow.google, conta com o plano Google AI Pro)\n1. Suba só a imagem \`1-apresentadora.png\` (nesta pasta) e anexe-a ao pedido.\n2. Agente > Configurações: modelo **Veo 3.1 Fast**, **9:16**, x1; "Confirmar antes de gerar: Sempre" (custo ~20 créditos).\n3. Cole o prompt abaixo (também em \`prompt.txt\`; copie com \`LC_ALL=en_US.UTF-8 pbcopy < prompt.txt\` para não quebrar os acentos).\n4. Baixe em qualidade original e salve aqui como \`piloto.mp4\`.\n\n## Prompt do vídeo\n${prompt}\n\n## Depois\n\`node scripts/short-ia.mjs capturar ${app}\`, \`transcrever ${app}\` (ajuste \`tempos\` no JSON) e \`compor ${app}\`.\n`);
+  log(`preparado em ${pasta} (${ref.referencia ? (existsSync(quadroRef) ? "referência extraída" : "sem quadro") : "apresentadora NOVA: gere a imagem com prompt-imagem.txt"})`);
   process.exit(0);
 }
 

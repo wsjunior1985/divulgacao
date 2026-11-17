@@ -4,16 +4,28 @@
   "dominio": "fazopix.waldeapps.systems",
   "fala": "Vai cobrar no Pix? No Faz o PIX você informa a chave, o nome e a cidade, e o QR Code sai na hora.",
   "apresentadora": {
-    "referencia": "videos/nativos/anteriores/gasonol-2-sem-moldura.mp4",
-    "quadro": 1.2,
-    "descricao": "young Brazilian woman with long dark wavy hair, white t-shirt and denim jacket",
-    "cenario": "stands behind the counter of a small, tidy neighborhood shop with a card machine in the background",
-    "gesto": "holds her smartphone toward the camera with the screen turned slightly away so no interface is readable"
+    "pronome": "he",
+    "referencia": null,
+    "descricao": "Brazilian man in his mid-30s with short curly black hair and light stubble, wearing a teal polo shirt",
+    "cenario": "stands behind the counter of a small, tidy neighborhood shop with a card machine on the counter",
+    "gesto": "holds his smartphone toward the camera with the screen turned slightly away so no interface is readable"
   },
   "corte": 3.4,
   "tempos": [],
-  "destaques": [{ "trecho": "Faz o PIX", "html": "Faz o <i class=\"c1\">PIX</i>" }],
-  "cores": { "c1": "#19c2a6" },
-  "cena": { "fluxo": "fazopix", "inicio": 0.4, "logo": "assets/premium/fazopix/logo.png", "logoLargura": 340,
-    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(0,128,107,.30),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(25,194,166,.18),transparent 70%),linear-gradient(180deg,#041712,#06231e 60%,#041712)" }
+  "destaques": [
+    {
+      "trecho": "Faz o PIX",
+      "html": "Faz o <i class=\"c1\">PIX</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#19c2a6"
+  },
+  "cena": {
+    "fluxo": "fazopix",
+    "inicio": 0.4,
+    "logo": "assets/premium/fazopix/logo.png",
+    "logoLargura": 340,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(0,128,107,.30),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(25,194,166,.18),transparent 70%),linear-gradient(180deg,#041712,#06231e 60%,#041712)"
+  }
 }

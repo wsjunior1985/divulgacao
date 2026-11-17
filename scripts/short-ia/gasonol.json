@@ -8,17 +8,47 @@
     "quadro": 1.2,
     "descricao": "young Brazilian woman with long dark wavy hair, white t-shirt and denim jacket",
     "cenario": "sits in the driver's seat of a parked car at a gas station",
-    "gesto": "lifts her smartphone toward the camera"
+    "gesto": "lifts her smartphone toward the camera",
+    "pronome": "she"
   },
   "corte": 3.65,
   "tempos": [
-    { "ini": 0.25, "fim": 1.95, "texto": "Etanol ou gasolina?" },
-    { "ini": 2.25, "fim": 4.15, "texto": "No GASONOL você escolhe o carro," },
-    { "ini": 4.2, "fim": 5.85, "texto": "digita os preços do posto" },
-    { "ini": 5.9, "fim": 7.9, "texto": "e vê na hora o que compensa." }
+    {
+      "ini": 0.25,
+      "fim": 1.95,
+      "texto": "Etanol ou gasolina?"
+    },
+    {
+      "ini": 2.25,
+      "fim": 4.15,
+      "texto": "No GASONOL você escolhe o carro,"
+    },
+    {
+      "ini": 4.2,
+      "fim": 5.85,
+      "texto": "digita os preços do posto"
+    },
+    {
+      "ini": 5.9,
+      "fim": 7.9,
+      "texto": "e vê na hora o que compensa."
+    }
   ],
-  "destaques": [{ "trecho": "GASONOL", "html": "<i class=\"c1\">GASO</i><i class=\"c2\">NOL</i>" }],
-  "cores": { "c1": "#ff7b12", "c2": "#6fd128" },
-  "cena": { "fluxo": "gasonol", "inicio": 0.55, "logo": "assets/premium/gasonol/logo.png", "logoLargura": 340,
-    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(255,110,20,.22),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(60,200,80,.20),transparent 70%),linear-gradient(180deg,#0a0a0a,#050505 60%,#0b0f08)" }
+  "destaques": [
+    {
+      "trecho": "GASONOL",
+      "html": "<i class=\"c1\">GASO</i><i class=\"c2\">NOL</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#ff7b12",
+    "c2": "#6fd128"
+  },
+  "cena": {
+    "fluxo": "gasonol",
+    "inicio": 0.55,
+    "logo": "assets/premium/gasonol/logo.png",
+    "logoLargura": 340,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(255,110,20,.22),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(60,200,80,.20),transparent 70%),linear-gradient(180deg,#0a0a0a,#050505 60%,#0b0f08)"
+  }
 }

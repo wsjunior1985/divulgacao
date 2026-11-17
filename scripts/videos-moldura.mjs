@@ -2,7 +2,7 @@
 // videos-moldura.mjs — coloca a vinheta (intro) e o encerramento (outro) de um app em vídeos 9:16.
 //
 //   node scripts/videos-moldura.mjs preparar --app gasonol --origem videos/flow/gasonol-piloto/intro.mp4 \
-//        [--intro 2.2:4.0] [--outro 7.0:10.0] [--url gasonol.com.br]   (origem 9:16 ou 16:9) gera videos/molduras/<app>/{intro,outro}.mp4 em 1080x1920
+//        [--intro 2.2:4.0] [--outro 7.0:10.0] [--url gasonol.com.br] [--escala 1.25] [--fundo-cor #06101f] [--url-y 1260] [--fusao 0.2]   (origem 9:16 ou 16:9) gera videos/molduras/<app>/{intro,outro}.mp4 em 1080x1920
 //   node scripts/videos-moldura.mjs preparar --app fazopix --padrao --url fazopix.waldeapps.systems   (sem vinheta própria: logo + fundo do app)
 //   node scripts/videos-moldura.mjs aplicar --app gasonol [--id gasonol-1] [--dry-run]
 //        refaz videos/9x16/<id>.mp4 = intro + vídeo original + outro, para os vídeos do app
@@ -11,7 +11,7 @@
 // então `aplicar` é idempotente. As vinhetas são 16:9 e entram inteiras (sem cortar a logo), na largura de 1080, centralizadas sobre o próprio
 // vídeo desfocado. Os arquivos de vídeo não vão para o git; só este script e o campo `moldura` do manifesto.
 import { execFileSync } from "node:child_process";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { lerJson, gravarJson, log, aviso, erro, RAIZ } from "./lib/base.js";
 
@@ -39,7 +39,7 @@ if (comando === "preparar" && resto.includes("--padrao")) {
   const esc = (t) => String(t).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const pagina = (comPilula) => `<!doctype html><html><head><meta charset="utf-8"><style>@font-face{font-family:F;src:url(data:font/ttf;base64,${fonteB64});font-weight:800}html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#050505}.f{position:absolute;inset:0;background:${conf.cena.fundo}}img{position:absolute;left:50%;top:${comPilula ? 560 : 700}px;width:640px;transform:translateX(-50%)}.p{position:absolute;left:50%;top:960px;transform:translateX(-50%);display:flex;align-items:center;gap:22px;padding:30px 66px;border-radius:80px;background:linear-gradient(90deg,#ffd23f,#ff9f1c);box-shadow:0 10px 40px rgba(255,150,20,.45);font:800 78px/1 F;color:#1a1200;letter-spacing:-1.5px;white-space:nowrap}</style></head><body><div class="f"></div><img src="data:image/png;base64,${logoB64}">${comPilula ? `<div class="p">${esc(url)}</div>` : ""}</body></html>`;
   const nav = await chromium.launch(); const pg = await nav.newPage({ viewport: { width: 1080, height: 1920 } });
-  for (const [nome, comPilula] of [["intro", false], ["outro", true]]) { await pg.setContent(pagina(comPilula)); await pg.evaluate(() => document.fonts.ready); await pg.evaluate(() => { const el = document.querySelector(".p"); if (!el) return; let f = 78; while (el.getBoundingClientRect().width > 940 && f > 34) { f -= 2; el.style.fontSize = `${f}px`; el.style.padding = `${Math.round(f * 0.38)}px ${Math.round(f * 0.85)}px`; } }); await pg.waitForTimeout(300); await pg.screenshot({ path: `${pasta}/${nome}.png` }); }
+  for (const [nome, comPilula] of [["intro", false], ["outro", true]]) { await pg.setContent(pagina(comPilula)); await pg.evaluate(() => document.fonts.ready); await pg.evaluate(async () => { const el = document.querySelector(".p"); if (!el) return; const im = document.querySelector("img"); await im.decode(); el.style.top = `${Math.round(im.getBoundingClientRect().bottom + 70)}px`; let f = 78; while (el.getBoundingClientRect().width > 940 && f > 34) { f -= 2; el.style.fontSize = `${f}px`; el.style.padding = `${Math.round(f * 0.38)}px ${Math.round(f * 0.85)}px`; } }); await pg.waitForTimeout(300); await pg.screenshot({ path: `${pasta}/${nome}.png` }); }
   await nav.close();
   const zoom = "zoompan=z='min(1+0.0009*on,1.06)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':fps=30:s=1080x1920";
   for (const [nome, dur] of [["intro", 1.6], ["outro", 3.0]]) {
@@ -75,15 +75,41 @@ svg{width:72px;height:72px}</style></head><body><div class="w"><span class="p"><
     pilula = `${pasta}/url.png`;
     await pg.locator(".w").screenshot({ path: pilula, omitBackground: true }); await nav.close();
   }
+  const escala = Number(val("--escala") ?? 1); // só para origem 16:9
+  // Fundo natural para origem 16:9: brilho suave + partículas que se movem devagar em toda a altura, no lugar de uma cor chapada.
+  const fundoCor = /^#[0-9a-fA-F]{6}$/.test(val("--fundo-cor") ?? "") ? val("--fundo-cor") : "#06101f";
+  const partCor = val("--particulas-cor") ?? "#bfe8ff";
+  if (!vertical) {
+    const { chromium } = await import("playwright");
+    const nav = await chromium.launch(); const pg = await nav.newPage({ viewport: { width: 1080, height: 1920 } });
+    await pg.setContent(`<!doctype html><html><head><style>html,body{margin:0;width:1080px;height:1920px;background:${fundoCor}}.g{position:absolute;inset:0;background:radial-gradient(ellipse 760px 620px at 50% 50%,rgba(40,90,170,.34),transparent 72%),radial-gradient(ellipse 900px 500px at 20% 8%,rgba(30,70,140,.14),transparent 70%),radial-gradient(ellipse 900px 500px at 80% 95%,rgba(20,80,120,.12),transparent 70%)}</style></head><body><div class="g"></div></body></html>`);
+    await pg.screenshot({ path: `${pasta}/fundo.png` });
+    await pg.setContent(`<!doctype html><html><body style="margin:0;background:transparent"><canvas id="c" width="1080" height="1920"></canvas></body></html>`);
+    await pg.evaluate((cor) => {
+      let sd = 1234567; const rnd = () => (sd = (sd * 1664525 + 1013904223) % 4294967296) / 4294967296;
+      const c = document.getElementById("c").getContext("2d");
+      for (let i = 0; i < 70; i++) { const r = 5 + rnd() * 10, x = rnd() * 1080, y = rnd() * 1920, g = c.createRadialGradient(x, y, 0, x, y, r); g.addColorStop(0, `rgba(160,210,255,${0.05 + rnd() * 0.08})`); g.addColorStop(1, "rgba(160,210,255,0)"); c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); }
+      for (let i = 0; i < 190; i++) { const r = 0.8 + Math.pow(rnd(), 2.2) * 2.6, x = rnd() * 1080, y = rnd() * 1920; c.fillStyle = cor; c.globalAlpha = 0.18 + rnd() * 0.6; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); }
+    }, partCor);
+    await pg.screenshot({ path: `${pasta}/particulas.png`, omitBackground: true }); await nav.close();
+  }
   const congelar = Number(val("--outro-congelar") ?? 0); // segundos extras segurando o último quadro do encerramento
   const montar = ([ini, fim], saida, comUrl = false) => {
     const dur = fim - ini + (comUrl ? congelar : 0);
     const base = vertical
       ? "[0:v]scale=1080:1920:flags=lanczos,fps=30,format=yuv420p"
-      : "[0:v]split[a][b];[a]scale=-2:1920,crop=1080:1920,boxblur=40:6,eq=brightness=-0.05[bg];[b]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2,fps=30,format=yuv420p";
+      // 16:9 sem recorte da logo: o quadro inteiro é ampliado por --escala (largura = 1080 × escala; só as laterais vazias são cortadas),
+      // centralizado sobre o fundo natural (fundo.png + partículas em movimento lento) e com as bordas superior e inferior
+      // se diluindo nele (máscara de 160 px): sem faixa quadrada visível.
+      : (() => {
+        const fgH = Math.round((1080 * escala * 9) / 16 / 2) * 2, topH = Math.floor((1920 - fgH) / 2 / 2) * 2;
+        const iF = comUrl && pilula ? 2 : 1, iP = iF + 1;
+        return `[${iF}:v]format=yuv420p[bg0];[${iP}:v]format=rgba,scroll=vertical=0.0012[pt];[bg0][pt]overlay=0:0[bg];[0:v]scale=${Math.round(1080 * escala)}:${fgH},crop=min(iw\\,1080):${fgH},fps=30,format=yuva420p,geq=lum='lum(X,Y)':cb='cb(X,Y)':cr='cr(X,Y)':a='255*min(1,min(Y,H-1-Y)/160)'[fgf];[bg][fgf]overlay=(W-w)/2:${topH}:shortest=1,format=yuv420p`;
+      })();
     const usaUrl = comUrl && pilula;
-    const sobrepor = usaUrl ? `[b0];[1:v]format=rgba,fade=t=in:st=0.5:d=0.4:alpha=1[u];[b0][u]overlay=(W-w)/2:1260,format=yuv420p` : "";
-    const entradas = ["-ss", String(ini), "-t", String(fim - ini), "-i", abs(origem), ...(usaUrl ? ["-loop", "1", "-t", String(dur), "-i", pilula] : [])];
+    const sobrepor = usaUrl ? `[b0];[1:v]format=rgba,fade=t=in:st=0.5:d=0.4:alpha=1[u];[b0][u]overlay=(W-w)/2:${Number(val("--url-y") ?? 1260)},format=yuv420p` : "";
+    const loopPng = (arq) => ["-framerate", "30", "-loop", "1", "-t", String(dur), "-i", arq];
+    const entradas = ["-ss", String(ini), "-t", String(fim - ini), "-i", abs(origem), ...(usaUrl ? ["-loop", "1", "-t", String(dur), "-i", pilula] : []), ...(vertical ? [] : [...loopPng(`${pasta}/fundo.png`), ...loopPng(`${pasta}/particulas.png`)])];
     ff([...entradas, "-filter_complex",
       base + (comUrl && congelar ? `,tpad=stop_mode=clone:stop_duration=${congelar}` : "") + sobrepor + `,fade=t=in:st=0:d=0.15,fade=t=out:st=${(dur - 0.25).toFixed(2)}:d=0.25[v];` +
       `[0:a]aresample=48000,aformat=channel_layouts=stereo,${comUrl && congelar ? `apad=pad_dur=${congelar},` : ""}afade=t=in:st=0:d=0.1,afade=t=out:st=${(dur - 0.3).toFixed(2)}:d=0.3[a]`,
@@ -91,6 +117,7 @@ svg{width:72px;height:72px}</style></head><body><div class="w"><span class="p"><
   };
   montar(trecho(val("--intro"), "2.2:4.0"), `${pasta}/intro.mp4`);
   montar(trecho(val("--outro"), "7.0:10.0"), `${pasta}/outro.mp4`, true);
+  writeFileSync(`${pasta}/moldura.json`, JSON.stringify({ fusao: Number(val("--fusao") ?? 0) }));
   log(`molduras de ${app} em videos/molduras/${app}/`);
   process.exit(0);
 }
@@ -114,11 +141,17 @@ for (const [id, v] of alvos) {
   log(`${id}: intro + ${id}-sem-moldura + outro → ${v.arquivo}`);
   if (dryRun) continue;
   const tmp = `${atual}.tmp.mp4`;
-  ff(["-i", `${pasta}/intro.mp4`, "-i", backup, "-i", `${pasta}/outro.mp4`, "-filter_complex",
-    "[1:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2,fps=30,format=yuv420p,setsar=1[m];" +
-    "[0:v]setsar=1[i];[2:v]setsar=1[o];" +
-    "[1:a]aresample=48000,aformat=channel_layouts=stereo[ma];[0:a]aresample=48000,aformat=channel_layouts=stereo[ia];[2:a]aresample=48000,aformat=channel_layouts=stereo[oa];" +
-    "[i][ia][m][ma][o][oa]concat=n=3:v=1:a=1[v][a0];[a0]loudnorm=I=-14:TP=-1.5:LRA=11[a]",
+  const dur = (arq) => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", arq]).toString());
+  const fusao = existsSync(`${pasta}/moldura.json`) ? Number(JSON.parse(readFileSync(`${pasta}/moldura.json`, "utf8")).fusao ?? 0) : 0;
+  const norm = "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2,fps=30,format=yuv420p,setsar=1";
+  const aud = "aresample=48000,aformat=channel_layouts=stereo";
+  const dI = dur(`${pasta}/intro.mp4`), dM = dur(backup);
+  const juncao = fusao > 0
+    // a vinheta e a primeira fala se sobrepõem por `fusao` s (a fala entra logo que a logo aparece)
+    ? `[0:v]fps=30,format=yuv420p,setsar=1,settb=1/30[i];[1:v]${norm},settb=1/30[m];[2:v]fps=30,format=yuv420p,setsar=1,settb=1/30[o];[i][m]xfade=transition=fade:duration=${fusao}:offset=${(dI - fusao).toFixed(3)}[x1];[x1][o]xfade=transition=fade:duration=${fusao}:offset=${(dI + dM - 2 * fusao).toFixed(3)}[v];` +
+      `[0:a]${aud}[ia];[1:a]${aud}[ma];[2:a]${aud}[oa];[ia][ma]acrossfade=d=${fusao}[a1];[a1][oa]acrossfade=d=${fusao}[a0];[a0]loudnorm=I=-14:TP=-1.5:LRA=11[a]`
+    : `[1:v]${norm}[m];[0:v]setsar=1[i];[2:v]setsar=1[o];[1:a]${aud}[ma];[0:a]${aud}[ia];[2:a]${aud}[oa];[i][ia][m][ma][o][oa]concat=n=3:v=1:a=1[v][a0];[a0]loudnorm=I=-14:TP=-1.5:LRA=11[a]`;
+  ff(["-i", `${pasta}/intro.mp4`, "-i", backup, "-i", `${pasta}/outro.mp4`, "-filter_complex", juncao,
     "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", tmp]);
   renameSync(tmp, atual);
   v.moldura = app;

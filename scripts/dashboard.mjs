@@ -14,12 +14,13 @@ const PORTA = Number(env("DASHBOARD_PORT", "8138"));
 const HOST = "127.0.0.1";
 const CACHE = resolve(homedir(), ".cache/waldeapps-divulgacao-dashboard/metricas.json");
 const HTML = readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), "../dashboard/index.html"));
-const REDES = ["instagram", "facebook", "threads", "bluesky", "x", "tiktok"];
-const NOMES = { instagram: "Instagram", facebook: "Facebook", threads: "Threads", bluesky: "Bluesky", x: "X · Buffer", tiktok: "TikTok" };
+const REDES = ["instagram", "facebook", "threads", "bluesky", "x", "tiktok", "youtube"];
+const NOMES = { instagram: "Instagram", facebook: "Facebook", threads: "Threads", bluesky: "Bluesky", x: "X · Buffer", tiktok: "TikTok", youtube: "YouTube" };
 const URLS = {
   instagram: (id) => `https://www.instagram.com/p/${id}/`,
   facebook: (id) => `https://www.facebook.com/${id}`,
   threads: (id) => `https://www.threads.net/@me/post/${id}`,
+  youtube: (id) => `https://www.youtube.com/shorts/${id}`,
 };
 const versaoMeta = env("META_API_VERSION", "v21.0");
 let atualizando = false;
@@ -263,14 +264,14 @@ async function atualizarMetricas() {
   for (const [chave, canais] of Object.entries(estado.posts ?? {})) {
     const [slot, appId, ...tema] = chave.split("-");
     for (const [rede, r] of Object.entries(canais ?? {})) {
-      if (r.status === "ok" && r.id && ["instagram", "facebook", "threads", "bluesky", "x"].includes(rede)) {
+      if (r.status === "ok" && r.id && ["instagram", "facebook", "threads", "bluesky", "x", "youtube"].includes(rede)) {
         alvos.push({ chave, rede, id: r.id, em: r.em ?? "", appId, tema: tema.join("-") });
       }
     }
   }
   for (const { appId, canais } of videosRegistrados(null)) {
     for (const [rede, r] of Object.entries(canais ?? {})) {
-      if (r.status === "ok" && r.id && ["instagram", "facebook", "threads", "bluesky", "x"].includes(rede)) {
+      if (r.status === "ok" && r.id && ["instagram", "facebook", "threads", "bluesky", "x", "youtube"].includes(rede)) {
         alvos.push({ chave: `video:${appId}`, rede, id: r.id, em: r.em ?? "", appId, tema: "video" });
       }
     }
@@ -400,6 +401,19 @@ async function atualizarMetricas() {
       nota: rede === "instagram" ? "Curtidas, comentários, views, alcance, salvamentos e compartilhamentos nos até 100 posts recentes (Insights da conta profissional)." : "Curtidas e comentários consultados nos posts registrados. A API não disponibilizou compartilhamentos nesta consulta." };
   }
 
+  // YouTube Shorts: views, curtidas e comentários dos vídeos registrados (videos.list, escopo de leitura).
+  const idsYoutube = [...new Set(videosRegistrados(null).flatMap((v) => Object.entries(v.canais ?? {}).filter(([rede, r]) => rede === "youtube" && r.status === "ok" && r.id).map(([, r]) => r.id)))];
+  if (idsYoutube.length && env("YOUTUBE_REFRESH_TOKEN")) {
+    try {
+      const { estatisticas } = await import("./canais/youtube.js");
+      const dados = await estatisticas(idsYoutube);
+      for (const [vid, valores] of Object.entries(dados)) {
+        metricas.itens[`youtube:${vid}`] = { valores: { views: valores.views, curtidas: valores.curtidas, comentarios: valores.comentarios }, atualizadoEm: new Date().toISOString(), fonte: "YouTube Data API" };
+      }
+      fontes.youtube = { status: "ok", consultados: idsYoutube.length, nota: "Views, curtidas e comentários dos Shorts registrados." };
+    } catch (e) { fontes.youtube = { status: "erro", mensagem: e.message, consultados: 0 }; }
+  } else if (idsYoutube.length) fontes.youtube = { status: "indisponivel", nota: "Defina YOUTUBE_REFRESH_TOKEN para carregar métricas do YouTube." };
+
   // Insights do Threads: métricas vitalícias disponíveis por publicação.
   const threads = [...new Map([...porRede.threads, ...(metricas.publicacoesThreads ?? []).filter((p) => p.id).map((p) => ({ id: p.id, em: p.timestamp ?? "" }))].map((p) => [p.id, p])).values()].sort((a, b) => (b.em ?? "").localeCompare(a.em ?? "")).slice(0, 100);
   if (threads.length && env("THREADS_ACCESS_TOKEN")) {
@@ -464,6 +478,13 @@ async function relatorioSemanal(dias) {
   linhas.push("", "## Top 5 por alcance", "");
   for (const r of top) linhas.push(`- **${val(r, "reach")}** alcance · ${val(r, "views") ?? "-"} views · ${tipoNome[r.tipo] ?? r.tipo} · ${r.app ?? "-"} · ${(r.tema ?? "").slice(0, 60)} · ${r.em.slice(0, 10)}${r.url ? ` · ${r.url}` : ""}`);
   const todos = resumo(atual), prev = resumo(anterior);
+  const yt = registros.filter((r) => r.rede === "youtube" && r.status === "ok" && r.em && r.metricas?.valores?.views !== undefined);
+  if (yt.length) {
+    const ytAtual = yt.filter((r) => Date.parse(r.em) >= d(dias)), ytAnt = yt.filter((r) => Date.parse(r.em) >= d(dias * 2) && Date.parse(r.em) < d(dias));
+    const somaViews = (l) => l.reduce((t, r) => t + (val(r, "views") ?? 0), 0);
+    linhas.push("", "## YouTube Shorts", "", `Últimos ${dias} dias: **${ytAtual.length}** Shorts publicados, **${somaViews(ytAtual)}** views${setas(somaViews(ytAtual), somaViews(ytAnt))}, mediana ${mediana(ytAtual.map((r) => val(r, "views"))) ?? "-"} views por vídeo. Total no canal: ${somaViews(yt)} views em ${yt.length} Shorts.`, "");
+    for (const r of [...yt].sort((x, y) => (val(y, "views") ?? 0) - (val(x, "views") ?? 0)).slice(0, 3)) linhas.push(`- **${val(r, "views")}** views · ${val(r, "curtidas") ?? 0} curtidas · ${r.tema ?? ""} · ${r.em.slice(0, 10)}${r.url ? ` · ${r.url}` : ""}`);
+  }
   linhas.push("", "## Leitura", "");
   if (todos.alc != null && prev.alc != null) linhas.push(`- Alcance mediano ${todos.alc > prev.alc ? "subiu" : todos.alc === prev.alc ? "ficou igual" : "caiu"} (${prev.alc} → ${todos.alc}).`);
   const melhor = Object.keys(tipoNome).map((t) => ({ t, r: resumo(atual.filter((x) => x.tipo === t)) })).filter((x) => x.r.n >= 3 && x.r.alc != null).sort((x, y) => y.r.alc - x.r.alc)[0];

@@ -81,6 +81,17 @@ function legendaComUtm(legenda, landingUrl) {
   return substituiu ? atualizada : `${legenda.trim()}\n\n${landingUrl}`;
 }
 
+/** Short + playlist do app. Falha na playlist (ex.: token sem o escopo) não derruba o vídeo já publicado. */
+async function publicarNoYoutube({ v, legenda, arquivo }) {
+  const r = await youtube.publicarShort({ ...youtube.montarShort({ titulo: v.titulo, nome: v.nome, youtube: v.youtube, legenda }), arquivo: `${RAIZ}/${arquivo}` });
+  const chave = v.youtube?.playlist, definicao = manifesto.playlists?.[chave];
+  if (chave && definicao) {
+    try { r.playlistId = (await youtube.registrarNaPlaylist({ chave, definicao, videoId: r.id })).playlistId; }
+    catch (e) { aviso(`youtube: playlist "${chave}" não atualizada (${e.message})${/insufficient|scope/i.test(e.message) ? "; reautorize com scripts/youtube-autorizar.mjs e rode scripts/youtube-playlists.mjs" : "; rode scripts/youtube-playlists.mjs para tentar de novo"}`); }
+  }
+  return r;
+}
+
 const estado = lerJson(ESTADO, { videos: {} });
 const campanha = env("CAMPANHA", "apresentacao");
 let falhas = 0;
@@ -123,7 +134,7 @@ for (const app of alvosApp) {
         : c === "facebook" ? await video.facebook({ legenda, urlVideo })
         : c === "threads" ? await video.threads({ legenda, urlVideo })
         : c === "tiktok" ? await video.tiktok({ legenda, arquivo })
-        : c === "youtube" ? await youtube.publicarShort({ ...youtube.montarShort({ titulo: v.titulo, nome: v.nome, youtube: v.youtube, legenda }), arquivo: `${RAIZ}/${arquivo}` })
+        : c === "youtube" ? await publicarNoYoutube({ v, legenda, arquivo })
         : c === "bluesky" ? await video.bluesky({ legenda, arquivo, aspecto: ASPECTO, alt: v.titulo, link: landingUrl, linkLimpo: dom })
         : await buffer.publicar({ texto: legenda, imagens: [], video: urlVideo, servicos: ["twitter"] });
       feitos[c] = {
@@ -132,6 +143,7 @@ for (const app of alvosApp) {
         url: r.url ?? null,
         landingUrl,
         ...(r.privacidade ? { privacidade: r.privacidade } : {}),
+        ...(r.playlistId ? { playlistId: r.playlistId } : {}),
         utm: { source: c, medium: "social", campaign: campanha, content: `video-${formato}-${app}` },
         em: new Date().toISOString(),
       };

@@ -76,7 +76,7 @@ jobs:
         run: |
           git config user.name "divulgacao-bot"
           git config user.email "divulgacao-bot@users.noreply.github.com"
-          git add estado/videos-rodizio.json || true
+          git add estado/videos-rodizio.json estado/youtube-playlists.json || true
           git diff --cached --quiet || git commit -m "chore: registro de reel [skip ci]"
           # Até 4 tentativas: o GitHub às vezes devolve 5xx no push e o registro se perderia.
           for tentativa in 1 2 3 4; do

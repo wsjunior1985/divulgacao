@@ -7,7 +7,7 @@
 // "private" até passar na auditoria de conformidade. O publicador lê o status real depois do upload
 // e o devolve em `privacidade`, para o registro não afirmar que o vídeo está público quando não está.
 import { readFileSync, statSync } from "node:fs";
-import { env, log, buscar } from "../lib/base.js";
+import { env, log, buscar, lerJson, gravarJson } from "../lib/base.js";
 
 const TOKEN_URL = "https://oauth2.googleapis.com/token";
 const UPLOAD_URL = "https://www.googleapis.com/upload/youtube/v3/videos";
@@ -118,4 +118,77 @@ export async function estatisticas(ids) {
     for (const v of d.items ?? []) saida[v.id] = { views: Number(v.statistics.viewCount ?? 0), curtidas: Number(v.statistics.likeCount ?? 0), comentarios: Number(v.statistics.commentCount ?? 0) };
   }
   return saida;
+}
+
+// ---------------------------------------------------------------------------
+// Playlists por app. Exigem o escopo "youtube" (gerenciar a conta); com o token só de upload a
+// API devolve 403 insufficientPermissions e o publicador segue sem a playlist (rode de novo
+// scripts/youtube-autorizar.mjs e depois scripts/youtube-playlists.mjs).
+// ---------------------------------------------------------------------------
+const ARQUIVO_PLAYLISTS = "estado/youtube-playlists.json";
+
+async function api(token, metodo, caminho, { consulta = {}, corpo } = {}) {
+  const res = await fetch(`${API_URL}${caminho}?${new URLSearchParams(consulta)}`, {
+    method: metodo, signal: AbortSignal.timeout(30000),
+    headers: { Authorization: `Bearer ${token}`, ...(corpo ? { "Content-Type": "application/json" } : {}) },
+    ...(corpo ? { body: JSON.stringify(corpo) } : {}),
+  });
+  const d = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(`YouTube ${caminho} ${res.status}: ${d.error?.message ?? ""}`.trim());
+  return d;
+}
+
+async function playlistsDoCanal(token) {
+  const todas = [];
+  let pagina;
+  do {
+    const d = await api(token, "GET", "/playlists", { consulta: { part: "snippet", mine: "true", maxResults: "50", ...(pagina ? { pageToken: pagina } : {}) } });
+    todas.push(...(d.items ?? []));
+    pagina = d.nextPageToken;
+  } while (pagina);
+  return todas;
+}
+
+/** Id da playlist da chave (cache em estado/youtube-playlists.json): reaproveita a existente pelo título ou cria. */
+export async function garantirPlaylist(token, chave, { titulo, descricao }) {
+  const cache = lerJson(ARQUIVO_PLAYLISTS, { playlists: {} });
+  if (cache.playlists[chave]) return cache.playlists[chave];
+  const existente = (await playlistsDoCanal(token)).find((p) => p.snippet?.title === titulo);
+  let id = existente?.id;
+  if (!id) {
+    const criada = await api(token, "POST", "/playlists", {
+      consulta: { part: "snippet,status" },
+      corpo: { snippet: { title: titulo, description: descricao, defaultLanguage: "pt-BR" }, status: { privacyStatus: "public" } },
+    });
+    id = criada.id;
+    log(`youtube: playlist criada "${titulo}" (${id})`);
+  }
+  cache.playlists[chave] = id;
+  gravarJson(ARQUIVO_PLAYLISTS, cache);
+  return id;
+}
+
+/** Coloca o vídeo na playlist da chave, sem duplicar. Devolve { playlistId, jaEstava }. */
+export async function registrarNaPlaylist({ chave, definicao, videoId }, tentativa = 1) {
+  const token = await tokenDeAcesso();
+  const playlistId = await garantirPlaylist(token, chave, definicao);
+  try {
+    const itens = await api(token, "GET", "/playlistItems", { consulta: { part: "id", playlistId, videoId, maxResults: "1" } });
+    if (itens.items?.length) return { playlistId, jaEstava: true };
+    await api(token, "POST", "/playlistItems", {
+      consulta: { part: "snippet" },
+      corpo: { snippet: { playlistId, resourceId: { kind: "youtube#video", videoId } } },
+    });
+  } catch (e) {
+    // Playlist apagada no YouTube: o id do cache ficou obsoleto (404). Limpa e tenta uma vez de novo.
+    if (tentativa === 1 && /\b404\b/.test(e.message)) {
+      const cache = lerJson(ARQUIVO_PLAYLISTS, { playlists: {} });
+      delete cache.playlists[chave];
+      gravarJson(ARQUIVO_PLAYLISTS, cache);
+      return registrarNaPlaylist({ chave, definicao, videoId }, 2);
+    }
+    throw e;
+  }
+  log(`youtube: vídeo ${videoId} na playlist "${definicao.titulo}"`);
+  return { playlistId, jaEstava: false };
 }

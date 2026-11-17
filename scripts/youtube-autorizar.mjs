@@ -17,7 +17,7 @@ carregarEnv();
 const id = env("YOUTUBE_CLIENT_ID"), segredo = env("YOUTUBE_CLIENT_SECRET");
 if (!id || !segredo) { console.error("Defina YOUTUBE_CLIENT_ID e YOUTUBE_CLIENT_SECRET no .env.local."); process.exit(1); }
 
-const ESCOPOS = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.readonly"].join(" ");
+const ESCOPOS = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube"].join(" "); // upload + gerenciar (playlists, leitura)
 const estado = randomUUID();
 
 const servidor = createServer(async (req, res) => {

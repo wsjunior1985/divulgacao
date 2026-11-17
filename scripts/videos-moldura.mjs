@@ -44,7 +44,7 @@ if (comando === "preparar" && resto.includes("--padrao")) {
   const zoom = "zoompan=z='min(1+0.0009*on,1.06)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':fps=30:s=1080x1920";
   for (const [nome, dur] of [["intro", 1.6], ["outro", 3.0]]) {
     ff(["-framerate", "30", "-loop", "1", "-t", String(dur), "-i", `${pasta}/${nome}.png`, "-f", "lavfi", "-t", String(dur), "-i", "anullsrc=r=48000:cl=stereo", "-filter_complex",
-      `[0:v]${zoom}:d=${Math.round(dur * 30)},fade=t=in:st=0:d=0.25,fade=t=out:st=${(dur - 0.25).toFixed(2)}:d=0.25,format=yuv420p[v]`,
+      `[0:v]scale=4320:7680:flags=lanczos,${zoom}:d=${Math.round(dur * 30)},fade=t=in:st=0:d=0.25,fade=t=out:st=${(dur - 0.25).toFixed(2)}:d=0.25,format=yuv420p[v]`,
       "-map", "[v]", "-map", "1:a", "-t", String(dur), "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", `${pasta}/${nome}.mp4`]);
   }
   log(`molduras padrão de ${app} em videos/molduras/${app}/`);

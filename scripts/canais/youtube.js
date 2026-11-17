@@ -64,12 +64,12 @@ export async function tokenDeAcesso() {
   return d.access_token;
 }
 
-export async function publicarShort({ titulo, descricao, tags = [], arquivo }) {
+export async function publicarShort({ titulo, descricao, tags = [], arquivo, sintetico = false }) {
   const token = await tokenDeAcesso();
   const privacidadePedida = env("YOUTUBE_PRIVACY", "public");
   const metadados = {
     snippet: { title: titulo, description: descricao, ...(tags.length ? { tags } : {}), categoryId: env("YOUTUBE_CATEGORIA", "28"), defaultLanguage: "pt-BR" },
-    status: { privacyStatus: privacidadePedida, selfDeclaredMadeForKids: false, embeddable: true },
+    status: { privacyStatus: privacidadePedida, selfDeclaredMadeForKids: false, embeddable: true, ...(sintetico ? { containsSyntheticMedia: true } : {}) },
   };
   const tamanho = statSync(arquivo).size;
   const inicio = await fetch(`${UPLOAD_URL}?uploadType=resumable&part=snippet,status`, {

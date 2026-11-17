@@ -83,7 +83,7 @@ function legendaComUtm(legenda, landingUrl) {
 
 /** Short + playlist do app. Falha na playlist (ex.: token sem o escopo) não derruba o vídeo já publicado. */
 async function publicarNoYoutube({ v, legenda, arquivo }) {
-  const r = await youtube.publicarShort({ ...youtube.montarShort({ titulo: v.titulo, nome: v.nome, youtube: v.youtube, legenda }), arquivo: `${RAIZ}/${arquivo}` });
+  const r = await youtube.publicarShort({ ...youtube.montarShort({ titulo: v.titulo, nome: v.nome, youtube: v.youtube, legenda }), arquivo: `${RAIZ}/${arquivo}`, sintetico: Boolean(v.ia) });
   const chave = v.youtube?.playlist, definicao = manifesto.playlists?.[chave];
   if (chave && definicao) {
     try { r.playlistId = (await youtube.registrarNaPlaylist({ chave, definicao, videoId: r.id })).playlistId; }

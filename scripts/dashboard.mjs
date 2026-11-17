@@ -285,8 +285,15 @@ async function atualizarMetricas() {
   const contaInstagram = env("META_IG_USER_ID");
   if (tokenMeta && contaInstagram) {
     try {
-      const data = await obter(`https://graph.facebook.com/${versaoMeta}/${contaInstagram}/media?fields=id,caption,timestamp,permalink,like_count,comments_count&limit=100&access_token=${encodeURIComponent(tokenMeta)}`);
-      metricas.publicacoesInstagram = data.data ?? [];
+      // Até 3 páginas (300 posts): cobre ~2 semanas e permite comparar com a semana anterior.
+      let url = `https://graph.facebook.com/${versaoMeta}/${contaInstagram}/media?fields=id,caption,timestamp,permalink,like_count,comments_count&limit=100&access_token=${encodeURIComponent(tokenMeta)}`;
+      const recentes = [];
+      for (let pagina = 0; pagina < 3 && url; pagina++) {
+        const data = await obter(url);
+        recentes.push(...(data.data ?? []));
+        url = data.paging?.next ?? null;
+      }
+      metricas.publicacoesInstagram = recentes;
       for (const post of metricas.publicacoesInstagram) {
         if (post.id && (post.like_count !== undefined || post.comments_count !== undefined)) {
           metricas.itens[`instagram:${post.id}`] = {
@@ -355,7 +362,7 @@ async function atualizarMetricas() {
 
   // Leitura de contagens e Insights da Meta (o token precisa de instagram_manage_insights e read_insights).
   for (const rede of ["instagram", "facebook"]) {
-    const lista = rede === "instagram" ? [...new Map([...porRede.instagram, ...alvos.filter((p) => p.rede === "instagram")].map((p) => [p.id, p])).values()].sort((a, b) => b.em.localeCompare(a.em)).slice(0, 100) : porRede[rede];
+    const lista = rede === "instagram" ? [...new Map([...porRede.instagram, ...alvos.filter((p) => p.rede === "instagram")].map((p) => [p.id, p])).values()].sort((a, b) => b.em.localeCompare(a.em)).slice(0, 300) : porRede[rede];
     if (!lista.length) continue;
     const token = env("META_ACCESS_TOKEN");
     if (!token) { fontes[rede] = { status: "indisponivel", nota: "META_ACCESS_TOKEN não configurado." }; continue; }

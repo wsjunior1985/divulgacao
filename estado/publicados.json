@@ -21098,7 +21098,28 @@
         "em": "2026-11-17T14:01:39.013Z",
         "erro": null
       }
+    },
+    "carrossel-voutrocar-sem-cadastro-gratis-2026-11-17": {
+      "instagram": {
+        "status": "ok",
+        "id": "17916237135491366",
+        "url": "https://www.instagram.com/p/17916237135491366",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "voutrocar",
+        "temaId": "sem-cadastro-gratis",
+        "landingUrl": "https://voutrocar.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-voutrocar-sem-cadastro-gratis"
+        },
+        "em": "2026-11-17T16:01:48.794Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-17T14:01:39.013Z"
+  "atualizadoEm": "2026-11-17T16:01:48.794Z"
 }

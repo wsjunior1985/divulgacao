@@ -1,0 +1,58 @@
+{
+  "app": "aeroliso",
+  "id": "aeroliso-1",
+  "dominio": "aeroliso.waldeapps.systems",
+  "fala": "Passagem cara? O Aeroliso confere o preço da sua rota todo dia e avisa por e-mail quando ele cair. É grátis.",
+  "apresentadora": {
+    "pronome": "she",
+    "referencia": null,
+    "descricao": "Brazilian woman in her early 30s with shoulder-length wavy dark brown hair, warm friendly smile, wearing a light denim jacket over a white t-shirt with a small backpack strap on one shoulder",
+    "cenario": "stands in a bright modern airport departure hall with large windows and a few blurred travelers and a suitcase behind her",
+    "gesto": "holds her smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.0,
+  "tempos": [
+    {
+      "ini": 0.1,
+      "fim": 1.4,
+      "texto": "Passagem cara?"
+    },
+    {
+      "ini": 1.4,
+      "fim": 3.0,
+      "texto": "O Aeroliso confere o preço"
+    },
+    {
+      "ini": 3.0,
+      "fim": 4.8,
+      "texto": "da sua rota todo dia"
+    },
+    {
+      "ini": 4.8,
+      "fim": 6.2,
+      "texto": "e avisa por e-mail"
+    },
+    {
+      "ini": 6.2,
+      "fim": 8.0,
+      "texto": "quando ele cair. É grátis."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "Aeroliso",
+      "html": "<i class=\"c1\">Aeroliso</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#35d0f0"
+  },
+  "cena": {
+    "fluxo": "painel-estatico",
+    "inicio": 0,
+    "logo": "assets/premium/aeroliso/logo-redonda.png",
+    "logoLargura": 200,
+    "logoAltura": 200,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(26,209,209,.22),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(59,130,246,.2),transparent 70%),linear-gradient(180deg,#070d1a,#0a1426 60%,#070d1a)"
+  }
+}

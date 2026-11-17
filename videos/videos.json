@@ -36,7 +36,8 @@
           "estimar calorias",
           "AI-Eat",
           "dieta"
-        ]
+        ],
+        "playlist": "aieat"
       }
     },
     "gasonol": {
@@ -63,7 +64,8 @@
           "GASONOL",
           "economizar combustível",
           "abastecer"
-        ]
+        ],
+        "playlist": "gasonol"
       }
     },
     "remedin": {
@@ -89,7 +91,8 @@
           "estoque de remédios",
           "Remedin",
           "cuidador"
-        ]
+        ],
+        "playlist": "remedin"
       }
     },
     "vaidarquanto": {
@@ -115,7 +118,8 @@
           "controle de gastos no mercado",
           "Vai dar quanto",
           "economia doméstica"
-        ]
+        ],
+        "playlist": "vaidarquanto"
       }
     },
     "papelzinho": {
@@ -141,7 +145,8 @@
           "sorteio de amigo oculto",
           "amigo oculto online",
           "Papelzinho"
-        ]
+        ],
+        "playlist": "papelzinho"
       }
     },
     "comunidade-do-ceu": {
@@ -167,7 +172,8 @@
           "escala de ministério",
           "agenda de cultos",
           "Comunidade do Céu"
-        ]
+        ],
+        "playlist": "comunidade-do-ceu"
       }
     },
     "convertendo": {
@@ -193,7 +199,8 @@
           "cotação do dólar",
           "viagem internacional",
           "Convertendo"
-        ]
+        ],
+        "playlist": "convertendo"
       }
     },
     "opalpiteiro": {
@@ -219,7 +226,8 @@
           "bolão da rodada",
           "ranking de palpites",
           "O Palpiteiro"
-        ]
+        ],
+        "playlist": "opalpiteiro"
       }
     },
     "barbarizando": {
@@ -245,7 +253,8 @@
           "comanda de barbearia",
           "gestão de barbearia",
           "Barbarizando"
-        ]
+        ],
+        "playlist": "barbarizando"
       }
     },
     "aeroliso": {
@@ -271,7 +280,8 @@
           "quando comprar passagem",
           "histórico de preço de passagem",
           "Aeroliso"
-        ]
+        ],
+        "playlist": "aeroliso"
       }
     },
     "fazopix": {
@@ -297,7 +307,8 @@
           "chave Pix",
           "Faz o PIX",
           "cartão Pix"
-        ]
+        ],
+        "playlist": "fazopix"
       }
     },
     "voutrocar": {
@@ -323,7 +334,8 @@
           "comparar carros",
           "carro mais vendido do Brasil",
           "VouTroCar"
-        ]
+        ],
+        "playlist": "voutrocar"
       }
     },
     "gasonol-bomba": {
@@ -350,7 +362,8 @@
           "GASONOL",
           "economizar combustível",
           "abastecer"
-        ]
+        ],
+        "playlist": "gasonol"
       }
     },
     "gasonol-duvida": {
@@ -377,7 +390,8 @@
           "GASONOL",
           "economizar combustível",
           "abastecer"
-        ]
+        ],
+        "playlist": "gasonol"
       }
     },
     "waldeapps-teste": {
@@ -402,7 +416,8 @@
           "aplicativos",
           "app sem baixar na loja",
           "estúdio de apps"
-        ]
+        ],
+        "playlist": "waldeapps"
       }
     },
     "aieat-1": {
@@ -428,7 +443,8 @@
           "estimar calorias",
           "AI-Eat",
           "dieta"
-        ]
+        ],
+        "playlist": "aieat"
       }
     },
     "gasonol-1": {
@@ -455,7 +471,8 @@
           "GASONOL",
           "economizar combustível",
           "abastecer"
-        ]
+        ],
+        "playlist": "gasonol"
       }
     },
     "gasonol-2": {
@@ -482,7 +499,8 @@
           "GASONOL",
           "economizar combustível",
           "abastecer"
-        ]
+        ],
+        "playlist": "gasonol"
       }
     },
     "gasonol-3": {
@@ -509,7 +527,8 @@
           "GASONOL",
           "economizar combustível",
           "abastecer"
-        ]
+        ],
+        "playlist": "gasonol"
       }
     },
     "remedin-1": {
@@ -535,7 +554,8 @@
           "estoque de remédios",
           "Remedin",
           "cuidador"
-        ]
+        ],
+        "playlist": "remedin"
       }
     },
     "vdq-1": {
@@ -561,7 +581,8 @@
           "controle de gastos no mercado",
           "Vai dar quanto",
           "economia doméstica"
-        ]
+        ],
+        "playlist": "vaidarquanto"
       }
     },
     "vdq-2": {
@@ -587,7 +608,8 @@
           "controle de gastos no mercado",
           "Vai dar quanto",
           "economia doméstica"
-        ]
+        ],
+        "playlist": "vaidarquanto"
       }
     },
     "waldeapps-3": {
@@ -612,7 +634,8 @@
           "aplicativos",
           "app sem baixar na loja",
           "estúdio de apps"
-        ]
+        ],
+        "playlist": "waldeapps"
       }
     }
   },
@@ -640,5 +663,59 @@
     "waldeapps-3",
     "vdq-2",
     "gasonol-duvida"
-  ]
+  ],
+  "playlists": {
+    "remedin": {
+      "titulo": "Remedin: lembretes e controle de remédios",
+      "descricao": "Vídeos curtos sobre o Remedin: lembretes de horário, acompanhamento de doses e estoque de medicamentos. Conheça: https://waldeapps.systems"
+    },
+    "aieat": {
+      "titulo": "AI-Eat: calorias do prato por foto",
+      "descricao": "Vídeos curtos sobre o AI-Eat: estime calorias e macronutrientes do prato com uma foto. Os números são uma referência. Conheça: https://waldeapps.systems"
+    },
+    "vaidarquanto": {
+      "titulo": "Vai dar quanto?: total da compra no mercado",
+      "descricao": "Vídeos curtos sobre o Vai dar quanto?: dite os produtos, informe os preços e acompanhe o total da compra antes do caixa. Conheça: https://waldeapps.systems"
+    },
+    "gasonol": {
+      "titulo": "GASONOL: gasolina ou etanol, qual compensa?",
+      "descricao": "Vídeos curtos sobre o GASONOL: compare gasolina e etanol pelo consumo do seu carro e pelos preços do posto. Conheça: https://waldeapps.systems"
+    },
+    "papelzinho": {
+      "titulo": "Papelzinho: amigo oculto e amigolate online",
+      "descricao": "Vídeos curtos sobre o Papelzinho: convite por link e sorteio de amigo oculto e amigolate. Conheça: https://waldeapps.systems"
+    },
+    "convertendo": {
+      "titulo": "Convertendo: custo real das compras no exterior",
+      "descricao": "Vídeos curtos sobre o Convertendo: custo real em reais, com IOF e spread, e histórico do dólar. Conheça: https://waldeapps.systems"
+    },
+    "opalpiteiro": {
+      "titulo": "O Palpiteiro: bolão com a galera",
+      "descricao": "Vídeos curtos sobre o O Palpiteiro: monte bolões, convide a turma por link e acompanhe o ranking. Conheça: https://waldeapps.systems"
+    },
+    "barbarizando": {
+      "titulo": "Barbarizando: agendamento e gestão para barbearia",
+      "descricao": "Vídeos curtos sobre o Barbarizando: agendamento online, agenda, comandas, equipe e relatórios para barbearia. Conheça: https://waldeapps.systems"
+    },
+    "aeroliso": {
+      "titulo": "Aeroliso: acompanhe o preço da passagem",
+      "descricao": "Vídeos curtos sobre o Aeroliso: preço da sua rota todo dia, histórico e aviso quando o preço cai. Conheça: https://waldeapps.systems"
+    },
+    "fazopix": {
+      "titulo": "Faz o PIX!: QR Code Pix na hora",
+      "descricao": "Vídeos curtos sobre o Faz o PIX!: gere o QR Code Pix na hora, sem cadastro. Conheça: https://waldeapps.systems"
+    },
+    "voutrocar": {
+      "titulo": "VouTroCar: ranking dos carros mais vendidos",
+      "descricao": "Vídeos curtos sobre o VouTroCar: ranking de emplacamentos e comparação de modelos. Conheça: https://waldeapps.systems"
+    },
+    "comunidade-do-ceu": {
+      "titulo": "Comunidade do Céu: o app da sua igreja",
+      "descricao": "Vídeos curtos sobre o app da Comunidade do Céu: devocional, Bíblia, agenda, células e escalas. Conheça: https://waldeapps.systems"
+    },
+    "waldeapps": {
+      "titulo": "WaldeApps: apps PWA que abrem direto no celular",
+      "descricao": "Vídeos curtos da WaldeApps, estúdio de aplicativos PWA que abrem direto no celular, sem baixar na loja. Conheça: https://waldeapps.systems"
+    }
+  }
 }

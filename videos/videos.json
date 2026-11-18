@@ -632,6 +632,36 @@
       "moldura": "papelzinho",
       "desde": "2026-12-06"
     },
+    "opalpiteiro-1": {
+      "arquivo": "videos/9x16/opalpiteiro-1.mp4",
+      "nome": "O Palpiteiro",
+      "titulo": "Quer montar um bolão? Convide a turma por link",
+      "legendas": {
+        "instagram": "Quer montar um bolão? ⚽\n\nNo O Palpiteiro você cria o bolão (futebol, chá de bebê, eleição ou tema livre), convida a turma por um link e acompanha o ranking ao vivo. Os palpites e participantes do vídeo são ilustrativos.\n\nÉ grátis pra jogar.\n\n🔗 opalpiteiro.app.br (link na bio)\n\n#opalpiteiro #bolao #palpite #resenha #futebol",
+        "facebook": "Quer montar um bolão? ⚽\n\nNo O Palpiteiro você cria o bolão (futebol, chá de bebê, eleição ou tema livre), convida a turma por um link e acompanha o ranking ao vivo. Os palpites e participantes do vídeo são ilustrativos.\n\nÉ grátis pra jogar.\n\n🔗 https://opalpiteiro.app.br?utm_source=facebook&utm_medium=video&utm_campaign=monte-seu-bolao",
+        "threads": "Quer montar um bolão? No O Palpiteiro você convida a turma por link e acompanha o ranking ao vivo. É grátis pra jogar.\n\nopalpiteiro.app.br",
+        "bluesky": "Quer montar um bolão? No O Palpiteiro você convida a turma por link e acompanha o ranking ao vivo.\n\nopalpiteiro.app.br",
+        "tiktok": "Quer montar um bolão? ⚽👇\n\nConvide a turma por link e acompanhe o ranking ao vivo. É grátis pra jogar.\n\nopalpiteiro.app.br\n\n#opalpiteiro #bolao #palpite #resenha #futebol",
+        "x": "Quer montar um bolão? No O Palpiteiro você convida a turma por link e acompanha o ranking ao vivo.\n\nopalpiteiro.app.br"
+      },
+      "url": "https://opalpiteiro.app.br",
+      "youtube": {
+        "titulo": "Como montar um bolão com a galera: convite por link e ranking ao vivo",
+        "abertura": "No O Palpiteiro você monta bolão de qualquer tipo, convida a turma por um link e acompanha o ranking ao vivo. É grátis pra jogar. Palpites e participantes do vídeo são ilustrativos.",
+        "tags": [
+          "bolão",
+          "bolão entre amigos",
+          "palpite de futebol",
+          "bolão da rodada",
+          "ranking de palpites",
+          "O Palpiteiro"
+        ],
+        "playlist": "opalpiteiro"
+      },
+      "ia": true,
+      "moldura": "opalpiteiro",
+      "desde": "2026-12-08"
+    },
     "vdq-1": {
       "arquivo": "videos/9x16/vdq-1.mp4",
       "nome": "Vai dar quanto?",
@@ -990,7 +1020,8 @@
     "gasonol-duvida",
     "aieat-2",
     "remedin-2",
-    "papelzinho-1"
+    "papelzinho-1",
+    "opalpiteiro-1"
   ],
   "playlists": {
     "remedin": {

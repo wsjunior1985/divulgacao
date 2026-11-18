@@ -1,0 +1,58 @@
+{
+  "app": "opalpiteiro",
+  "id": "opalpiteiro-1",
+  "dominio": "opalpiteiro.app.br",
+  "fala": "Quer montar um bolão? Com O Palpiteiro você convida a turma por link e acompanha o ranking ao vivo.",
+  "apresentadora": {
+    "pronome": "she",
+    "referencia": null,
+    "descricao": "Brazilian woman in her late 30s with short natural curly black hair, a bright energetic smile, wearing a casual yellow t-shirt",
+    "cenario": "stands in a lively home living room with a sofa, colorful cushions and a TV with a blurred football match glowing behind her",
+    "gesto": "holds her smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.15,
+  "tempos": [
+    {
+      "ini": 0.05,
+      "fim": 1.5,
+      "texto": "Quer montar um bolão?"
+    },
+    {
+      "ini": 1.5,
+      "fim": 3.15,
+      "texto": "Com O Palpiteiro,"
+    },
+    {
+      "ini": 3.15,
+      "fim": 5.5,
+      "texto": "você convida a turma por link"
+    },
+    {
+      "ini": 5.5,
+      "fim": 8.0,
+      "texto": "e acompanha o ranking ao vivo."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "O Palpiteiro",
+      "html": "<i class=\"c1\">O Palpiteiro</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#b98cff"
+  },
+  "cena": {
+    "fluxo": "painel-estatico",
+    "inicio": 0,
+    "logo": "assets/premium/opalpiteiro/logo.png",
+    "logoLargura": 200,
+    "logoAltura": 170,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(124,58,237,.30),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(249,115,22,.16),transparent 70%),linear-gradient(180deg,#0a0d1f,#141838 60%,#0a0d1f)",
+    "escala": 1.06,
+    "topo": 245,
+    "semNotch": true,
+    "margem": 16,
+    "corTela": "#080b1a"
+  }
+}

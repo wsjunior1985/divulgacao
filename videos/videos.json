@@ -602,6 +602,36 @@
       "moldura": "remedin",
       "desde": "2026-12-08"
     },
+    "papelzinho-1": {
+      "arquivo": "videos/9x16/papelzinho-1.mp4",
+      "nome": "Papelzinho",
+      "titulo": "Vai ter amigo oculto? Convite por link e sorteio justo",
+      "legendas": {
+        "instagram": "Vai ter amigo oculto? 🎁\n\nNo Papelzinho você cria o evento, manda o convite por link e faz o sorteio justo. Cada participante pode deixar sugestões de presente sem estragar a surpresa.\n\nPlano grátis para começar; o Amigolate exige Premium. Participantes e datas no vídeo são ilustrativos.\n\n🔗 papelzinho.waldeapps.systems (link na bio)\n\n#papelzinho #amigooculto #amigolate #presentes #resenha",
+        "facebook": "Vai ter amigo oculto? 🎁\n\nNo Papelzinho você cria o evento, manda o convite por link e faz o sorteio justo. Cada participante pode deixar sugestões de presente sem estragar a surpresa.\n\nPlano grátis para começar; o Amigolate exige Premium. Participantes e datas no vídeo são ilustrativos.\n\n🔗 https://papelzinho.waldeapps.systems?utm_source=facebook&utm_medium=video&utm_campaign=convite-por-link",
+        "threads": "Vai ter amigo oculto? No Papelzinho você cria o evento, manda o convite por link e faz o sorteio justo. Plano grátis para começar.\n\npapelzinho.waldeapps.systems",
+        "bluesky": "Vai ter amigo oculto? No Papelzinho você cria o evento, manda o convite por link e faz o sorteio justo.\n\npapelzinho.waldeapps.systems",
+        "tiktok": "Vai ter amigo oculto? 🎁👇\n\nConvite por link, sorteio justo e sugestões de presente. Plano grátis para começar.\n\npapelzinho.waldeapps.systems\n\n#papelzinho #amigooculto #amigolate #presentes #resenha",
+        "x": "Vai ter amigo oculto? No Papelzinho você cria o evento, manda o convite por link e faz o sorteio justo.\n\npapelzinho.waldeapps.systems"
+      },
+      "url": "https://papelzinho.waldeapps.systems",
+      "youtube": {
+        "titulo": "Amigo oculto online: convite por link e sorteio justo",
+        "abertura": "No Papelzinho você cria o evento, manda o convite por link e faz o sorteio justo de amigo oculto. Cada participante deixa sugestões de presente sem estragar a surpresa. Plano grátis para começar; o Amigolate exige Premium. Dados do vídeo são ilustrativos.",
+        "tags": [
+          "amigo oculto",
+          "amigo secreto",
+          "amigolate",
+          "sorteio de amigo oculto",
+          "amigo oculto online",
+          "Papelzinho"
+        ],
+        "playlist": "papelzinho"
+      },
+      "ia": true,
+      "moldura": "papelzinho",
+      "desde": "2026-12-06"
+    },
     "vdq-1": {
       "arquivo": "videos/9x16/vdq-1.mp4",
       "nome": "Vai dar quanto?",
@@ -959,7 +989,8 @@
     "vdq-2",
     "gasonol-duvida",
     "aieat-2",
-    "remedin-2"
+    "remedin-2",
+    "papelzinho-1"
   ],
   "playlists": {
     "remedin": {

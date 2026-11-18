@@ -1,0 +1,63 @@
+{
+  "app": "papelzinho",
+  "id": "papelzinho-1",
+  "dominio": "papelzinho.waldeapps.systems",
+  "fala": "Vai ter amigo oculto? No Papelzinho você cria o evento, manda o convite por link e faz o sorteio justo.",
+  "apresentadora": {
+    "pronome": "he",
+    "referencia": null,
+    "descricao": "Brazilian man in his late 20s with short curly dark hair, light beard and a cheerful smile, wearing a dark red knit sweater",
+    "cenario": "stands in a cozy living room decorated for Christmas with a softly lit Christmas tree and wrapped gifts blurred behind him",
+    "gesto": "holds his smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 2.87,
+  "tempos": [
+    {
+      "ini": 0.05,
+      "fim": 2.0,
+      "texto": "Vai ter amigo oculto?"
+    },
+    {
+      "ini": 2.0,
+      "fim": 2.87,
+      "texto": "No Papelzinho,"
+    },
+    {
+      "ini": 2.87,
+      "fim": 4.17,
+      "texto": "você cria o evento,"
+    },
+    {
+      "ini": 4.17,
+      "fim": 6.01,
+      "texto": "manda o convite por link"
+    },
+    {
+      "ini": 6.01,
+      "fim": 8.0,
+      "texto": "e faz o sorteio justo."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "Papelzinho",
+      "html": "<i class=\"c1\">Papelzinho</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#ffb02e"
+  },
+  "cena": {
+    "fluxo": "painel-estatico",
+    "inicio": 0,
+    "logo": "assets/premium/papelzinho/logo.png",
+    "logoLargura": 170,
+    "logoAltura": 170,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(225,29,72,.30),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(245,158,11,.18),transparent 70%),linear-gradient(180deg,#14060d,#240a17 60%,#14060d)",
+    "escala": 1.06,
+    "topo": 245,
+    "semNotch": true,
+    "margem": 18,
+    "corTela": "#0b0b10"
+  }
+}

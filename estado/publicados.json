@@ -21746,7 +21746,28 @@
         "em": "2026-11-18T20:01:57.961Z",
         "erro": null
       }
+    },
+    "carrossel-vaidarquanto-fim-do-mes-2026-11-18": {
+      "instagram": {
+        "status": "ok",
+        "id": "18642602602014320",
+        "url": "https://www.instagram.com/p/18642602602014320",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "vaidarquanto",
+        "temaId": "fim-do-mes",
+        "landingUrl": "https://vaidarquanto.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-vaidarquanto-fim-do-mes"
+        },
+        "em": "2026-11-18T21:02:01.432Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-18T20:01:57.961Z"
+  "atualizadoEm": "2026-11-18T21:02:01.433Z"
 }

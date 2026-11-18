@@ -21335,7 +21335,65 @@
         "em": "2026-11-17T23:01:45.977Z",
         "erro": null
       }
+    },
+    "642-barbarizando-estoque": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126765241435454",
+        "url": "https://www.facebook.com/1293634587162251_122126765241435454",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-estoque-c5-v0",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-estoque-c5-v0"
+        },
+        "em": "2026-11-18T00:01:02.185Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17969489850206704",
+        "url": "https://www.threads.net/@me/post/17969489850206704",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-estoque-c5-v0",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-estoque-c5-v0"
+        },
+        "em": "2026-11-18T00:01:41.810Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2kavpoclo2b",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2kavpoclo2b",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-estoque-c5-v0",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-estoque-c5-v0"
+        },
+        "em": "2026-11-18T00:01:44.228Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6afceae99f3765f6ab1aff0e",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-barbarizando-estoque-c5-v0",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-barbarizando-estoque-c5-v0"
+        },
+        "em": "2026-11-18T00:01:45.264Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-17T23:01:45.977Z"
+  "atualizadoEm": "2026-11-18T00:01:45.264Z"
 }

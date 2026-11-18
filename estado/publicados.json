@@ -21688,7 +21688,65 @@
         "em": "2026-11-18T19:02:24.454Z",
         "erro": null
       }
+    },
+    "647-gasonol-mito-etanol": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126943837435454",
+        "url": "https://www.facebook.com/1293634587162251_122126943837435454",
+        "landingUrl": "https://gasonol.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-mito-etanol-c5-v2",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-mito-etanol-c5-v2"
+        },
+        "em": "2026-11-18T20:01:13.903Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18389333896227886",
+        "url": "https://www.threads.net/@me/post/18389333896227886",
+        "landingUrl": "https://gasonol.com.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-mito-etanol-c5-v2",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-mito-etanol-c5-v2"
+        },
+        "em": "2026-11-18T20:01:55.727Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2mdxuyfux2p",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2mdxuyfux2p",
+        "landingUrl": "https://gasonol.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-mito-etanol-c5-v2",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-mito-etanol-c5-v2"
+        },
+        "em": "2026-11-18T20:01:56.878Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6afe043572a787cbb5db4bbe",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://gasonol.com.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-mito-etanol-c5-v2",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-mito-etanol-c5-v2"
+        },
+        "em": "2026-11-18T20:01:57.961Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-18T19:02:24.454Z"
+  "atualizadoEm": "2026-11-18T20:01:57.961Z"
 }

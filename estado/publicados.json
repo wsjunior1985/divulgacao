@@ -21530,7 +21530,65 @@
         "em": "2026-11-18T12:02:14.275Z",
         "erro": null
       }
+    },
+    "645-aieat-fora-de-casa": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126897343435454",
+        "url": "https://www.facebook.com/1293634587162251_122126897343435454",
+        "landingUrl": "https://aieat.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-fora-de-casa-c5-v0",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-fora-de-casa-c5-v0"
+        },
+        "em": "2026-11-18T14:01:30.911Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17918411853500486",
+        "url": "https://www.threads.net/@me/post/17918411853500486",
+        "landingUrl": "https://aieat.app.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-fora-de-casa-c5-v0",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-fora-de-casa-c5-v0"
+        },
+        "em": "2026-11-18T14:02:10.803Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2lpumim3g26",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2lpumim3g26",
+        "landingUrl": "https://aieat.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-fora-de-casa-c5-v0",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-fora-de-casa-c5-v0"
+        },
+        "em": "2026-11-18T14:02:13.216Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6afdafe6ea3aea9074f7801b",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aieat.app.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-fora-de-casa-c5-v0",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-fora-de-casa-c5-v0"
+        },
+        "em": "2026-11-18T14:02:14.462Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-18T12:02:14.275Z"
+  "atualizadoEm": "2026-11-18T14:02:14.462Z"
 }

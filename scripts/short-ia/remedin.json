@@ -1,0 +1,58 @@
+{
+  "app": "remedin",
+  "id": "remedin-2",
+  "dominio": "remedin.app.br",
+  "fala": "Esqueceu de tomar o remédio? No Remedin você recebe o lembrete na hora e acompanha doses e estoque.",
+  "apresentadora": {
+    "pronome": "she",
+    "referencia": null,
+    "descricao": "Brazilian woman in her late 40s with chin-length silver-streaked dark hair, warm reassuring smile, wearing a soft cream knit cardigan over a pale green blouse",
+    "cenario": "stands in a cozy bright living room with a sofa, a cup of tea on a side table and green plants softly blurred behind her",
+    "gesto": "holds her smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.4,
+  "tempos": [
+    {
+      "ini": 0.05,
+      "fim": 2.24,
+      "texto": "Esqueceu de tomar o remédio?"
+    },
+    {
+      "ini": 2.24,
+      "fim": 3.59,
+      "texto": "No Remedin,"
+    },
+    {
+      "ini": 3.59,
+      "fim": 5.44,
+      "texto": "você recebe o lembrete na hora"
+    },
+    {
+      "ini": 5.44,
+      "fim": 8.0,
+      "texto": "e acompanha doses e estoque."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "Remedin",
+      "html": "<i class=\"c1\">Remedin</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#56b63f"
+  },
+  "cena": {
+    "fluxo": "painel-estatico",
+    "inicio": 0,
+    "logo": "assets/premium/remedin/logo.png",
+    "logoLargura": 160,
+    "logoAltura": 162,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(86,182,63,.26),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(40,140,90,.18),transparent 70%),linear-gradient(180deg,#07130d,#0c2016 60%,#07130d)",
+    "escala": 1.06,
+    "topo": 245,
+    "semNotch": true,
+    "margem": 16,
+    "corTela": "#07130d"
+  }
+}

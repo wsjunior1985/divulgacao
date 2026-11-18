@@ -572,6 +572,36 @@
       },
       "ia": true
     },
+    "remedin-2": {
+      "arquivo": "videos/9x16/remedin-2.mp4",
+      "nome": "Remedin",
+      "titulo": "Esqueceu de tomar o remédio? Receba o lembrete na hora",
+      "legendas": {
+        "instagram": "Esqueceu de tomar o remédio? 💊\n\nNo Remedin você recebe o lembrete na hora e acompanha doses e estoque dos seus medicamentos.\n\nAté 3 medicamentos grátis para sempre, sem cartão. Telas e dados do vídeo são ilustrativos; siga a orientação do seu médico ou farmacêutico.\n\n🔗 remedin.app.br (link na bio)\n\n#remedin #lembretederemedio #saude #cuidador #tratamento",
+        "facebook": "Esqueceu de tomar o remédio? 💊\n\nNo Remedin você recebe o lembrete na hora e acompanha doses e estoque dos seus medicamentos.\n\nAté 3 medicamentos grátis para sempre, sem cartão. Telas e dados do vídeo são ilustrativos; siga a orientação do seu médico ou farmacêutico.\n\n🔗 https://remedin.app.br?utm_source=facebook&utm_medium=video&utm_campaign=lembrete-na-hora",
+        "threads": "Esqueceu de tomar o remédio? No Remedin você recebe o lembrete na hora e acompanha doses e estoque. Até 3 medicamentos grátis, sem cartão. Dados ilustrativos.\n\nremedin.app.br",
+        "bluesky": "Esqueceu de tomar o remédio? No Remedin você recebe o lembrete na hora e acompanha doses e estoque. Dados ilustrativos.\n\nremedin.app.br",
+        "tiktok": "Esqueceu de tomar o remédio? 👇\n\nLembrete na hora e controle de doses e estoque. Até 3 medicamentos grátis, sem cartão. Dados ilustrativos; siga a orientação do seu médico.\n\nremedin.app.br\n\n#remedin #lembretederemedio #saude #cuidador #tratamento",
+        "x": "Esqueceu de tomar o remédio? No Remedin você recebe o lembrete na hora e acompanha doses e estoque. Dados ilustrativos.\n\nremedin.app.br"
+      },
+      "url": "https://remedin.app.br",
+      "youtube": {
+        "titulo": "Lembrete de remédio na hora: controle doses e estoque",
+        "abertura": "No Remedin você recebe o lembrete na hora e acompanha doses e estoque dos seus medicamentos. Até 3 medicamentos grátis, sem cartão. Telas e dados são ilustrativos; siga a orientação do seu médico ou farmacêutico.",
+        "tags": [
+          "lembrete de remédio",
+          "horário dos remédios",
+          "controle de medicamentos",
+          "estoque de remédios",
+          "Remedin",
+          "cuidador"
+        ],
+        "playlist": "remedin"
+      },
+      "ia": true,
+      "moldura": "remedin",
+      "desde": "2026-12-08"
+    },
     "vdq-1": {
       "arquivo": "videos/9x16/vdq-1.mp4",
       "nome": "Vai dar quanto?",
@@ -928,7 +958,8 @@
     "waldeapps-3",
     "vdq-2",
     "gasonol-duvida",
-    "aieat-2"
+    "aieat-2",
+    "remedin-2"
   ],
   "playlists": {
     "remedin": {

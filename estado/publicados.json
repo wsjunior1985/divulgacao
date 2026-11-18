@@ -21667,7 +21667,28 @@
         "em": "2026-11-18T17:01:39.682Z",
         "erro": null
       }
+    },
+    "carrossel-aieat-comida-brasileira-2026-11-18": {
+      "instagram": {
+        "status": "ok",
+        "id": "17971501314077154",
+        "url": "https://www.instagram.com/p/17971501314077154",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "aieat",
+        "temaId": "comida-brasileira",
+        "landingUrl": "https://aieat.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-aieat-comida-brasileira"
+        },
+        "em": "2026-11-18T19:02:24.454Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-18T17:01:39.682Z"
+  "atualizadoEm": "2026-11-18T19:02:24.454Z"
 }

@@ -1,0 +1,59 @@
+{
+  "app": "voutrocar",
+  "id": "voutrocar-1",
+  "dominio": "voutrocar.waldeapps.systems",
+  "fala": "Qual é o carro mais vendido do Brasil? No VouTroCar você vê o ranking dos cinquenta mais vendidos e compara modelos.",
+  "apresentadora": {
+    "pronome": "he",
+    "referencia": null,
+    "descricao": "Brazilian man in his early 40s with short gray-streaked black hair and light stubble, confident friendly smile, wearing a navy blue polo shirt",
+    "cenario": "stands in a bright modern car dealership showroom with a few cars softly blurred behind him",
+    "gesto": "holds his smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.89,
+  "tempos": [
+    {
+      "ini": 0.05,
+      "fim": 2.64,
+      "texto": "Qual é o carro mais vendido do Brasil?"
+    },
+    {
+      "ini": 2.64,
+      "fim": 3.89,
+      "texto": "No VouTroCar,"
+    },
+    {
+      "ini": 3.89,
+      "fim": 6.46,
+      "texto": "você vê o ranking dos 50 mais vendidos"
+    },
+    {
+      "ini": 6.46,
+      "fim": 8.0,
+      "texto": "e compara modelos."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "VouTroCar",
+      "html": "<i class=\"c1\">VouTro<i class=\"c2\">Car</i></i>"
+    }
+  ],
+  "cores": {
+    "c1": "#ffffff",
+    "c2": "#c8ff2e"
+  },
+  "cena": {
+    "fluxo": "painel-estatico",
+    "inicio": 0,
+    "logo": "assets/premium/voutrocar/logo.png",
+    "logoLargura": 160,
+    "logoAltura": 160,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(200,255,46,.16),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(139,92,246,.26),transparent 70%),linear-gradient(180deg,#07080a,#12141a 60%,#07080a)",
+    "escala": 1.06,
+    "topo": 245,
+    "semNotch": true,
+    "margem": 16,
+    "corTela": "#0a0b0d"
+  }
+}

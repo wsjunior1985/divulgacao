@@ -662,6 +662,36 @@
       "moldura": "opalpiteiro",
       "desde": "2026-12-08"
     },
+    "voutrocar-1": {
+      "arquivo": "videos/9x16/voutrocar-1.mp4",
+      "nome": "VouTroCar",
+      "titulo": "Qual é o carro mais vendido do Brasil? Veja o ranking",
+      "legendas": {
+        "instagram": "Qual é o carro mais vendido do Brasil? 🚗\n\nNo VouTroCar você vê o ranking dos 50 mais vendidos, com emplacamentos do mês e do ano, e compara modelos lado a lado.\n\nÉ grátis e sem cadastro. Os números do vídeo são os exibidos na tela do app.\n\n🔗 voutrocar.waldeapps.systems (link na bio)\n\n#voutrocar #carrosmaisvendidos #rankingdecarros #comprarcarro #carros",
+        "facebook": "Qual é o carro mais vendido do Brasil? 🚗\n\nNo VouTroCar você vê o ranking dos 50 mais vendidos, com emplacamentos do mês e do ano, e compara modelos lado a lado.\n\nÉ grátis e sem cadastro.\n\n🔗 https://voutrocar.waldeapps.systems?utm_source=facebook&utm_medium=video&utm_campaign=ranking-carros",
+        "threads": "Qual é o carro mais vendido do Brasil? No VouTroCar você vê o ranking dos 50 mais vendidos e compara modelos. Grátis e sem cadastro.\n\nvoutrocar.waldeapps.systems",
+        "bluesky": "Qual é o carro mais vendido do Brasil? No VouTroCar você vê o ranking dos 50 mais vendidos e compara modelos.\n\nvoutrocar.waldeapps.systems",
+        "tiktok": "Qual é o carro mais vendido do Brasil? 🚗👇\n\nRanking dos 50 mais vendidos e comparação de modelos. Grátis e sem cadastro.\n\nvoutrocar.waldeapps.systems\n\n#voutrocar #carrosmaisvendidos #rankingdecarros #comprarcarro #carros",
+        "x": "Qual é o carro mais vendido do Brasil? No VouTroCar você vê o ranking dos 50 mais vendidos e compara modelos.\n\nvoutrocar.waldeapps.systems"
+      },
+      "url": "https://voutrocar.waldeapps.systems",
+      "youtube": {
+        "titulo": "Carros mais vendidos do Brasil: ranking dos 50 e comparador",
+        "abertura": "No VouTroCar você vê o ranking dos 50 carros mais vendidos do Brasil, com emplacamentos do mês e do ano, e compara modelos lado a lado. Grátis e sem cadastro.",
+        "tags": [
+          "carros mais vendidos",
+          "ranking de carros",
+          "emplacamentos",
+          "comparar carros",
+          "carro mais vendido do Brasil",
+          "VouTroCar"
+        ],
+        "playlist": "voutrocar"
+      },
+      "ia": true,
+      "moldura": "voutrocar",
+      "desde": "2026-12-08"
+    },
     "vdq-1": {
       "arquivo": "videos/9x16/vdq-1.mp4",
       "nome": "Vai dar quanto?",
@@ -1021,7 +1051,8 @@
     "aieat-2",
     "remedin-2",
     "papelzinho-1",
-    "opalpiteiro-1"
+    "opalpiteiro-1",
+    "voutrocar-1"
   ],
   "playlists": {
     "remedin": {

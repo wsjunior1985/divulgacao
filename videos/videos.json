@@ -865,6 +865,36 @@
       "ia": true,
       "moldura": "aeroliso",
       "desde": "2026-11-18"
+    },
+    "aieat-2": {
+      "arquivo": "videos/9x16/aieat-2.mp4",
+      "nome": "AI-Eat",
+      "titulo": "Cansou de contar caloria? Tire uma foto do prato",
+      "url": "https://aieat.app.br",
+      "legendas": {
+        "instagram": "Cansou de contar caloria? 🍽️\n\nNo AI-Eat você tira uma foto do prato e a IA estima calorias e macronutrientes. Os números são uma referência e variam conforme a porção real.\n\nTem meta diária, controle de água e histórico da semana. Sem conta e sem cartão para testar.\n\n🔗 aieat.app.br (link na bio)\n\n#aieat #calorias #alimentacao #nutricao #inteligenciaartificial",
+        "facebook": "Cansou de contar caloria? 🍽️\n\nNo AI-Eat você tira uma foto do prato e a IA estima calorias e macronutrientes. Os números são uma referência e variam conforme a porção real.\n\nTem meta diária, controle de água e histórico da semana. Sem conta e sem cartão para testar.\n\n🔗 https://aieat.app.br?utm_source=facebook&utm_medium=video&utm_campaign=contar-caloria",
+        "threads": "Cansou de contar caloria? No AI-Eat você tira uma foto do prato e a IA estima calorias e macros. Os números são referência e variam conforme a porção. Sem conta ou cartão.\n\naieat.app.br",
+        "bluesky": "Cansou de contar caloria? No AI-Eat você tira uma foto do prato e a IA estima calorias e macros. Os números são referência.\n\naieat.app.br",
+        "tiktok": "Cansou de contar caloria? 👇\n\nFoto do prato e a IA estima calorias e macros. Os números são referência e variam conforme a porção. Sem conta ou cartão.\n\naieat.app.br\n\n#aieat #calorias #alimentacao #nutricao #inteligenciaartificial",
+        "x": "Cansou de contar caloria? No AI-Eat você tira uma foto do prato e a IA estima calorias e macros. Os números são referência.\n\naieat.app.br"
+      },
+      "youtube": {
+        "titulo": "Como contar calorias sem balança: foto do prato com IA",
+        "abertura": "No AI-Eat você tira uma foto do prato e a IA estima calorias e macros. Os números são uma referência e variam conforme a porção real. Sem conta e sem cartão para testar.",
+        "tags": [
+          "contar calorias",
+          "calorias do prato",
+          "foto da comida",
+          "estimar calorias",
+          "controle de dieta",
+          "AI-Eat"
+        ],
+        "playlist": "aieat"
+      },
+      "ia": true,
+      "moldura": "aieat",
+      "desde": "2026-12-06"
     }
   },
   "rodizio": [
@@ -897,7 +927,8 @@
     "fazopix-1",
     "waldeapps-3",
     "vdq-2",
-    "gasonol-duvida"
+    "gasonol-duvida",
+    "aieat-2"
   ],
   "playlists": {
     "remedin": {

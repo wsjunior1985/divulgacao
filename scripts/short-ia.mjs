@@ -105,10 +105,11 @@ const pg = await nav.newPage({ viewport: { width: 1080, height: 1920 } });
 const fonte = b64(FONTE, "font/ttf");
 
 // 1) fundo e moldura do celular
+const ESC = cfg.cena.escala ?? 1, TOPO = cfg.cena.topo ?? 280; // escala do celular e y do topo da moldura (padrão: layout original)
 const logo = cfg.cena.logo ? b64(abs(cfg.cena.logo), "image/png") : null;
 await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#050505}.f{position:absolute;inset:0;background:${cfg.cena.fundo}}img{position:absolute;left:50%;top:40px;max-width:${cfg.cena.logoLargura ?? 340}px;max-height:${cfg.cena.logoAltura ?? 215}px;width:auto;height:auto;transform:translateX(-50%)}</style></head><body><div class="f"></div>${logo ? `<img src="${logo}">` : ""}</body></html>`);
 await pg.waitForTimeout(300); await pg.screenshot({ path: `${pasta}/cena-fundo.png` });
-await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transparent}</style></head><body><svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8d928a"/><stop offset=".5" stop-color="#2b2e2a"/><stop offset="1" stop-color="#6c7168"/></linearGradient></defs><path fill-rule="evenodd" fill="url(#g)" d="M262 360a80 80 0 0 1 80-80h396a80 80 0 0 1 80 80v1011a80 80 0 0 1-80 80H342a80 80 0 0 1-80-80Z M280 366a62 62 0 0 1 62-62h396a62 62 0 0 1 62 62v999a62 62 0 0 1-62 62H342a62 62 0 0 1-62-62Z"/><rect x="470" y="318" width="140" height="38" rx="19" fill="#000"/></svg></body></html>`);
+await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transparent}</style></head><body><svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"><g transform="translate(540 ${TOPO}) scale(${ESC}) translate(-540 -280)"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8d928a"/><stop offset=".5" stop-color="#2b2e2a"/><stop offset="1" stop-color="#6c7168"/></linearGradient></defs><path fill-rule="evenodd" fill="url(#g)" d="M262 360a80 80 0 0 1 80-80h396a80 80 0 0 1 80 80v1011a80 80 0 0 1-80 80H342a80 80 0 0 1-80-80Z M280 366a62 62 0 0 1 62-62h396a62 62 0 0 1 62 62v999a62 62 0 0 1-62 62H342a62 62 0 0 1-62-62Z"/>${cfg.cena.semNotch ? "" : '<rect x="470" y="318" width="140" height="38" rx="19" fill="#000"/>'}</g></svg></body></html>`);
 await pg.screenshot({ path: `${pasta}/cena-moldura.png`, omitBackground: true });
 
 // 2) legendas (PNG transparente por linha)
@@ -127,9 +128,10 @@ await nav.close();
 // 3) cena do celular com a captura real (início cortado e acelerada para caber na narração)
 const durCaptura = cap.total - (cfg.cena.inicio ?? 0);
 const vel = durCaptura / cenaDur;
-ff(["-i", `${pasta}/captura.mp4`, "-vf", `trim=start=${cfg.cena.inicio ?? 0},setpts=(PTS-STARTPTS)/${vel.toFixed(4)},scale=520:1126:flags=lanczos,format=yuv420p`, "-an", "-t", cenaDur.toFixed(2), `${pasta}/tela-real.mp4`]);
+const par = (n) => Math.round(n / 2) * 2, M = cfg.cena.margem ?? 0; // margem: recuo da tela dentro da moldura (px) para os cantos arredondados não cortarem o app
+ff(["-i", `${pasta}/captura.mp4`, "-vf", `trim=start=${cfg.cena.inicio ?? 0},setpts=(PTS-STARTPTS)/${vel.toFixed(4)},scale=${par((520 - 2 * M) * ESC)}:${par((520 - 2 * M) * 1126 / 520 * ESC)}:flags=lanczos${M ? `,pad=${par(520 * ESC)}:${par(1126 * ESC)}:(ow-iw)/2:(oh-ih)/2:color=${cfg.cena.corTela ?? "black"}` : ""},format=yuv420p`, "-an", "-t", cenaDur.toFixed(2), `${pasta}/tela-real.mp4`]);
 ff(["-loop", "1", "-t", cenaDur.toFixed(2), "-i", `${pasta}/cena-fundo.png`, "-i", `${pasta}/tela-real.mp4`, "-loop", "1", "-t", cenaDur.toFixed(2), "-i", `${pasta}/cena-moldura.png`,
-  "-filter_complex", "[0:v][1:v]overlay=280:304[a];[a][2:v]overlay=0:0,fps=30,format=yuv420p[v]", "-map", "[v]", "-t", cenaDur.toFixed(2), "-c:v", "libx264", "-crf", "18", "-preset", "medium", `${pasta}/cena-real.mp4`]);
+  "-filter_complex", `[0:v][1:v]overlay=${Math.round(540 + (280 - 540) * ESC)}:${Math.round(TOPO + (304 - 280) * ESC)}[a];[a][2:v]overlay=0:0,fps=30,format=yuv420p[v]`, "-map", "[v]", "-t", cenaDur.toFixed(2), "-c:v", "libx264", "-crf", "18", "-preset", "medium", `${pasta}/cena-real.mp4`]);
 
 // 4) composição final (rosto → cena real, legendas sincronizadas, áudio do clipe com fade)
 const entradas = ["-i", clipe, "-i", `${pasta}/cena-real.mp4`, ...cfg.tempos.flatMap((_, i) => ["-i", `${pasta}/leg-${i}.png`])];

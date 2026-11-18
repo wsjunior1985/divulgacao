@@ -1,0 +1,63 @@
+{
+  "app": "aieat",
+  "id": "aieat-2",
+  "dominio": "aieat.app.br",
+  "fala": "Cansou de contar caloria? No Ai Ít você tira uma foto do prato e a IA estima calorias e macros.",
+  "apresentadora": {
+    "pronome": "he",
+    "referencia": null,
+    "descricao": "Brazilian man in his early 30s with short black hair, light stubble and a friendly smile, athletic build, wearing a fitted heather-gray t-shirt",
+    "cenario": "stands in a bright modern home kitchen with a wooden counter, a bowl of fresh fruit and green plants softly blurred behind him",
+    "gesto": "holds his smartphone toward the camera with the screen turned slightly away so no interface is readable"
+  },
+  "corte": 3.24,
+  "tempos": [
+    {
+      "ini": 0.05,
+      "fim": 2.0,
+      "texto": "Cansou de contar caloria?"
+    },
+    {
+      "ini": 2.0,
+      "fim": 3.24,
+      "texto": "No AI-Eat,"
+    },
+    {
+      "ini": 3.24,
+      "fim": 5.0,
+      "texto": "você tira uma foto do prato"
+    },
+    {
+      "ini": 5.0,
+      "fim": 6.44,
+      "texto": "e a IA estima"
+    },
+    {
+      "ini": 6.44,
+      "fim": 8.0,
+      "texto": "calorias e macros."
+    }
+  ],
+  "destaques": [
+    {
+      "trecho": "AI-Eat",
+      "html": "<i class=\"c1\">AI-Eat</i>"
+    }
+  ],
+  "cores": {
+    "c1": "#cd46b7"
+  },
+  "cena": {
+    "fluxo": "painel-estatico",
+    "inicio": 0,
+    "logo": "assets/premium/aieat/logo.png",
+    "logoLargura": 160,
+    "logoAltura": 162,
+    "fundo": "radial-gradient(900px 700px at 15% 78%,rgba(180,92,240,.26),transparent 70%),radial-gradient(800px 700px at 90% 25%,rgba(205,70,183,.18),transparent 70%),linear-gradient(180deg,#120818,#1a0c26 60%,#120818)",
+    "escala": 1.06,
+    "topo": 245,
+    "semNotch": true,
+    "margem": 16,
+    "corTela": "#0a0d14"
+  }
+}

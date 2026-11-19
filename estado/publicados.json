@@ -21999,7 +21999,28 @@
         "em": "2026-11-19T11:01:47.794Z",
         "erro": null
       }
+    },
+    "carrossel-convertendo-medidas-2026-11-19": {
+      "instagram": {
+        "status": "ok",
+        "id": "18110670452203918",
+        "url": "https://www.instagram.com/p/18110670452203918",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "convertendo",
+        "temaId": "medidas",
+        "landingUrl": "https://convertendo.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-convertendo-medidas"
+        },
+        "em": "2026-11-19T12:01:52.462Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-19T11:01:47.794Z"
+  "atualizadoEm": "2026-11-19T12:01:52.462Z"
 }

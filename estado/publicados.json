@@ -22099,7 +22099,65 @@
         "em": "2026-11-19T16:03:08.095Z",
         "erro": null
       }
+    },
+    "653-aeroliso-sem-planilha": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122127103929435454",
+        "url": "https://www.facebook.com/1293634587162251_122127103929435454",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-sem-planilha-c5-v2",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-sem-planilha-c5-v2"
+        },
+        "em": "2026-11-19T17:01:08.501Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18140694988647238",
+        "url": "https://www.threads.net/@me/post/18140694988647238",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-sem-planilha-c5-v2",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-sem-planilha-c5-v2"
+        },
+        "em": "2026-11-19T17:01:49.226Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2okeqyevd2w",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2okeqyevd2w",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-sem-planilha-c5-v2",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-sem-planilha-c5-v2"
+        },
+        "em": "2026-11-19T17:01:50.835Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aff2b7fc271940a961db578",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aeroliso-sem-planilha-c5-v2",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aeroliso-sem-planilha-c5-v2"
+        },
+        "em": "2026-11-19T17:01:52.244Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-19T16:03:08.095Z"
+  "atualizadoEm": "2026-11-19T17:01:52.244Z"
 }

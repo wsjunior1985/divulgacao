@@ -21825,7 +21825,65 @@
         "em": "2026-11-18T23:01:47.334Z",
         "erro": null
       }
+    },
+    "649-opalpiteiro-perfil-com-numeros": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122126963661435454",
+        "url": "https://www.facebook.com/1293634587162251_122126963661435454",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-opalpiteiro-perfil-com-numeros-c5-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-opalpiteiro-perfil-com-numeros-c5-v1"
+        },
+        "em": "2026-11-19T00:00:55.214Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18120352780803030",
+        "url": "https://www.threads.net/@me/post/18120352780803030",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-opalpiteiro-perfil-com-numeros-c5-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-opalpiteiro-perfil-com-numeros-c5-v1"
+        },
+        "em": "2026-11-19T00:01:33.834Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2mref2p7t2p",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2mref2p7t2p",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-opalpiteiro-perfil-com-numeros-c5-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-opalpiteiro-perfil-com-numeros-c5-v1"
+        },
+        "em": "2026-11-19T00:01:35.540Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6afe3c604cace847b38291b5",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-opalpiteiro-perfil-com-numeros-c5-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-opalpiteiro-perfil-com-numeros-c5-v1"
+        },
+        "em": "2026-11-19T00:01:36.792Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-18T23:01:47.334Z"
+  "atualizadoEm": "2026-11-19T00:01:36.792Z"
 }

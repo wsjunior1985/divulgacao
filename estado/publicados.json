@@ -22157,7 +22157,28 @@
         "em": "2026-11-19T17:01:52.244Z",
         "erro": null
       }
+    },
+    "carrossel-papelzinho-natal-sugestoes-de-presente-2026-11-19": {
+      "instagram": {
+        "status": "ok",
+        "id": "18224120701349888",
+        "url": "https://www.instagram.com/p/18224120701349888",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "papelzinho",
+        "temaId": "natal-sugestoes-de-presente",
+        "landingUrl": "https://papelzinho.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-papelzinho-natal-sugestoes-de-presente"
+        },
+        "em": "2026-11-19T19:02:10.991Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-19T17:01:52.244Z"
+  "atualizadoEm": "2026-11-19T19:02:10.991Z"
 }

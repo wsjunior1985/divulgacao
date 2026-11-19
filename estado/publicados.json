@@ -22078,7 +22078,28 @@
         "em": "2026-11-19T14:01:39.311Z",
         "erro": null
       }
+    },
+    "carrossel-opalpiteiro-perfil-com-numeros-2026-11-19": {
+      "instagram": {
+        "status": "ok",
+        "id": "18380652757211748",
+        "url": "https://www.instagram.com/p/18380652757211748",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "opalpiteiro",
+        "temaId": "perfil-com-numeros",
+        "landingUrl": "https://opalpiteiro.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-opalpiteiro-perfil-com-numeros"
+        },
+        "em": "2026-11-19T16:03:08.095Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-19T14:01:39.311Z"
+  "atualizadoEm": "2026-11-19T16:03:08.095Z"
 }

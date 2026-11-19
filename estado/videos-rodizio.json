@@ -1926,7 +1926,88 @@
         },
         "em": "2026-11-19T15:03:14.045Z"
       }
+    },
+    "2026-11-19-p1-gasonol-duvida": {
+      "instagram": {
+        "status": "ok",
+        "id": "18116941610156654",
+        "url": "https://www.instagram.com/reel/18116941610156654",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-duvida&utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-duvida"
+        },
+        "em": "2026-11-19T22:01:12.777Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1100632806276198",
+        "url": "https://www.facebook.com/1100632806276198",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-duvida&utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-duvida"
+        },
+        "em": "2026-11-19T22:01:19.377Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18462170452121269",
+        "url": "https://www.threads.net/@me/post/18462170452121269",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-duvida&utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-duvida"
+        },
+        "em": "2026-11-19T22:01:57.990Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2p37v3rs426",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2p37v3rs426",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-duvida&utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-duvida"
+        },
+        "em": "2026-11-19T22:03:21.688Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6aff722b48bc5f5e45a39f13",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-duvida&utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-duvida"
+        },
+        "em": "2026-11-19T22:03:24.158Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "zJvm1MJfMEw",
+        "url": "https://www.youtube.com/shorts/zJvm1MJfMEw",
+        "landingUrl": "https://gasonol.com.br/?utm_content=video-9x16-gasonol-duvida&utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-1",
+        "privacidade": "public",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-gasonol-duvida"
+        },
+        "em": "2026-11-19T22:03:27.721Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-19T15:03:14.045Z"
+  "atualizadoEm": "2026-11-19T22:03:27.721Z"
 }

@@ -17,5 +17,7 @@ PATH=/usr/local/bin:/usr/bin:/bin
 # Reels do rodízio de vídeos: 12h e 19h BRT
 0 15 * * * root /usr/local/bin/disparar-slot.sh publicar-video "0 15 * * *" >> /var/log/divulgacao-slots.log 2>&1
 0 22 * * * root /usr/local/bin/disparar-slot.sh publicar-video "0 22 * * *" >> /var/log/divulgacao-slots.log 2>&1
+# Papelzinho extra (Natal): 15h30 BRT até 24/12/2026; o script se encerra sozinho depois
+30 18 * * * root /usr/local/bin/disparar-papelzinho.sh >> /var/log/divulgacao-slots.log 2>&1
 # Relatório semanal de alcance (segunda 10h30 BRT)
 30 13 * * 1 root /usr/local/bin/disparar-slot.sh relatorio-semanal "30 13 * * 1" >> /var/log/divulgacao-slots.log 2>&1

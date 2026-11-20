@@ -22489,7 +22489,28 @@
         "em": "2026-11-20T11:01:31.582Z",
         "erro": null
       }
+    },
+    "carrossel-rifazinha-gratis-comece-2026-11-20": {
+      "instagram": {
+        "status": "ok",
+        "id": "18000500439101068",
+        "url": "https://www.instagram.com/p/18000500439101068",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "rifazinha",
+        "temaId": "gratis-comece",
+        "landingUrl": "https://rifazinha.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-rifazinha-gratis-comece"
+        },
+        "em": "2026-11-20T12:02:00.696Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-20T11:01:31.582Z"
+  "atualizadoEm": "2026-11-20T12:02:00.696Z"
 }

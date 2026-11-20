@@ -22705,7 +22705,28 @@
         "em": "2026-11-20T18:31:59.519Z",
         "erro": null
       }
+    },
+    "carrossel-euquiz-modos-de-jogo-2026-11-20": {
+      "instagram": {
+        "status": "ok",
+        "id": "18138038827678220",
+        "url": "https://www.instagram.com/p/18138038827678220",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "euquiz",
+        "temaId": "modos-de-jogo",
+        "landingUrl": "https://euquiz.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-euquiz-modos-de-jogo"
+        },
+        "em": "2026-11-20T19:01:58.620Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-20T18:31:59.519Z"
+  "atualizadoEm": "2026-11-20T19:01:58.620Z"
 }

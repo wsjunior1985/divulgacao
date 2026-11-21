@@ -23253,7 +23253,27 @@
         "em": "2026-11-21T18:31:53.198Z",
         "erro": null
       }
+    },
+    "carrossel-gasonol-consumo-oficial-2026-11-21": {
+      "instagram": {
+        "status": "erro",
+        "mensagem": "Graph API: Timeout (código -2/2207003)",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "gasonol",
+        "temaId": "consumo-oficial",
+        "landingUrl": "https://gasonol.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-gasonol-consumo-oficial"
+        },
+        "em": "2026-11-21T19:02:01.102Z",
+        "erro": "Graph API: Timeout (código -2/2207003)"
+      }
     }
   },
-  "atualizadoEm": "2026-11-21T18:31:53.198Z"
+  "atualizadoEm": "2026-11-21T19:02:01.102Z"
 }

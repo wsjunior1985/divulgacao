@@ -23037,7 +23037,28 @@
         "em": "2026-11-21T11:01:34.526Z",
         "erro": null
       }
+    },
+    "carrossel-barbarizando-equipe-2026-11-21": {
+      "instagram": {
+        "status": "ok",
+        "id": "18120358784596706",
+        "url": "https://www.instagram.com/p/18120358784596706",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "barbarizando",
+        "temaId": "equipe",
+        "landingUrl": "https://barbarizando.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-barbarizando-equipe"
+        },
+        "em": "2026-11-21T12:02:03.117Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-21T11:01:34.526Z"
+  "atualizadoEm": "2026-11-21T12:02:03.117Z"
 }

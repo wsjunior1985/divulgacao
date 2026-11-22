@@ -23605,7 +23605,65 @@
         "em": "2026-11-22T12:02:10.866Z",
         "erro": null
       }
+    },
+    "673-aieat-foto-do-prato": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122127579273435454",
+        "url": "https://www.facebook.com/1293634587162251_122127579273435454",
+        "landingUrl": "https://aieat.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-foto-do-prato-c6-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-foto-do-prato-c6-v1"
+        },
+        "em": "2026-11-22T14:01:18.373Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18062218913559441",
+        "url": "https://www.threads.net/@me/post/18062218913559441",
+        "landingUrl": "https://aieat.app.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-foto-do-prato-c6-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-foto-do-prato-c6-v1"
+        },
+        "em": "2026-11-22T14:01:56.532Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2vrpucpy62b",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2vrpucpy62b",
+        "landingUrl": "https://aieat.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-foto-do-prato-c6-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-foto-do-prato-c6-v1"
+        },
+        "em": "2026-11-22T14:01:57.785Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b02f5d6d864a01105ca985a",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aieat.app.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-aieat-foto-do-prato-c6-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-aieat-foto-do-prato-c6-v1"
+        },
+        "em": "2026-11-22T14:01:59.104Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-22T12:02:10.866Z"
+  "atualizadoEm": "2026-11-22T14:01:59.104Z"
 }

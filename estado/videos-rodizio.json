@@ -2332,7 +2332,89 @@
         },
         "em": "2026-11-21T22:02:36.401Z"
       }
+    },
+    "2026-11-22-p0-fazopix": {
+      "instagram": {
+        "status": "ok",
+        "id": "18578168716075332",
+        "url": "https://www.instagram.com/reel/18578168716075332",
+        "landingUrl": "https://fazopix.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-fazopix",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-fazopix"
+        },
+        "em": "2026-11-22T15:01:44.542Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "2323870871795385",
+        "url": "https://www.facebook.com/2323870871795385",
+        "landingUrl": "https://fazopix.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-fazopix",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-fazopix"
+        },
+        "em": "2026-11-22T15:01:51.758Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17987083751924681",
+        "url": "https://www.threads.net/@me/post/17987083751924681",
+        "landingUrl": "https://fazopix.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-fazopix",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-fazopix"
+        },
+        "em": "2026-11-22T15:02:28.830Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2vv4bdomk2s",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2vv4bdomk2s",
+        "landingUrl": "https://fazopix.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-fazopix",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-fazopix"
+        },
+        "em": "2026-11-22T15:02:35.325Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b03040dd864a01105d15e42",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://fazopix.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-fazopix",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-fazopix"
+        },
+        "em": "2026-11-22T15:02:37.707Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "BQT2CgEULq4",
+        "url": "https://www.youtube.com/shorts/BQT2CgEULq4",
+        "landingUrl": "https://fazopix.waldeapps.systems/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-1&utm_content=video-9x16-fazopix",
+        "privacidade": "public",
+        "playlistId": "PLUX65i5RZqck",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-1",
+          "content": "video-9x16-fazopix"
+        },
+        "em": "2026-11-22T15:02:40.061Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-21T22:02:36.402Z"
+  "atualizadoEm": "2026-11-22T15:02:40.061Z"
 }

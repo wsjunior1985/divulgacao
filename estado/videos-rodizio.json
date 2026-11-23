@@ -2495,7 +2495,89 @@
         },
         "em": "2026-11-22T22:02:19.022Z"
       }
+    },
+    "2026-11-23-p0-remedin": {
+      "instagram": {
+        "status": "ok",
+        "id": "18377352337243620",
+        "url": "https://www.instagram.com/reel/18377352337243620",
+        "landingUrl": "https://remedin.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-23T15:01:55.262Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "2144094309523730",
+        "url": "https://www.facebook.com/2144094309523730",
+        "landingUrl": "https://remedin.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-23T15:02:03.474Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18125887378821876",
+        "url": "https://www.threads.net/@me/post/18125887378821876",
+        "landingUrl": "https://remedin.app.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-23T15:02:41.503Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n2yflj2eba2d",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n2yflj2eba2d",
+        "landingUrl": "https://remedin.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-23T15:02:46.071Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b04559895a2771f4abfadfb",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://remedin.app.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-remedin",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-23T15:02:48.633Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "toO0PmkRX_0",
+        "url": "https://www.youtube.com/shorts/toO0PmkRX_0",
+        "landingUrl": "https://remedin.app.br/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-remedin",
+        "privacidade": "public",
+        "playlistId": "PLERgNaoZ6xdc",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-remedin"
+        },
+        "em": "2026-11-23T15:02:51.514Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-22T22:02:19.022Z"
+  "atualizadoEm": "2026-11-23T15:02:51.515Z"
 }

@@ -24896,7 +24896,28 @@
         "em": "2026-11-24T18:31:57.585Z",
         "erro": null
       }
+    },
+    "carrossel-barbarizando-estoque-2026-11-24": {
+      "instagram": {
+        "status": "ok",
+        "id": "18005569889806607",
+        "url": "https://www.instagram.com/p/18005569889806607",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "barbarizando",
+        "temaId": "estoque",
+        "landingUrl": "https://barbarizando.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-barbarizando-estoque"
+        },
+        "em": "2026-11-24T19:02:03.248Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-24T18:31:57.585Z"
+  "atualizadoEm": "2026-11-24T19:02:03.248Z"
 }

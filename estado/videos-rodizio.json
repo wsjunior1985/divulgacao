@@ -2740,7 +2740,88 @@
         },
         "em": "2026-11-24T15:02:22.994Z"
       }
+    },
+    "2026-11-24-p1-barbarizando-1": {
+      "instagram": {
+        "status": "ok",
+        "id": "17956842069313309",
+        "url": "https://www.instagram.com/reel/17956842069313309",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-barbarizando-1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-barbarizando-1"
+        },
+        "em": "2026-11-24T22:01:22.888Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1665019351964832",
+        "url": "https://www.facebook.com/1665019351964832",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-barbarizando-1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-barbarizando-1"
+        },
+        "em": "2026-11-24T22:01:28.147Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "17872144227661608",
+        "url": "https://www.threads.net/@me/post/17872144227661608",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-barbarizando-1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-barbarizando-1"
+        },
+        "em": "2026-11-24T22:02:08.428Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n33nkavh2z2o",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n33nkavh2z2o",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-barbarizando-1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-barbarizando-1"
+        },
+        "em": "2026-11-24T22:03:13.821Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b0609a4ea9b23114ff62b5f",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-barbarizando-1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-barbarizando-1"
+        },
+        "em": "2026-11-24T22:03:16.938Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "jSToMVEdgVQ",
+        "url": "https://www.youtube.com/shorts/jSToMVEdgVQ",
+        "landingUrl": "https://barbarizando.com.br/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-barbarizando-1",
+        "privacidade": "public",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-barbarizando-1"
+        },
+        "em": "2026-11-24T22:03:22.364Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-24T15:02:22.994Z"
+  "atualizadoEm": "2026-11-24T22:03:22.364Z"
 }

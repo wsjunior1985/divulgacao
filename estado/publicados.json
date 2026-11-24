@@ -24680,7 +24680,28 @@
         "em": "2026-11-24T11:02:13.187Z",
         "erro": null
       }
+    },
+    "carrossel-euquiz-estudar-para-prova-2026-11-24": {
+      "instagram": {
+        "status": "ok",
+        "id": "17979239640174941",
+        "url": "https://www.instagram.com/p/17979239640174941",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "euquiz",
+        "temaId": "estudar-para-prova",
+        "landingUrl": "https://euquiz.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-euquiz-estudar-para-prova"
+        },
+        "em": "2026-11-24T12:02:02.150Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-24T11:02:13.187Z"
+  "atualizadoEm": "2026-11-24T12:02:02.150Z"
 }

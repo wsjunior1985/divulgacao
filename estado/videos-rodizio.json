@@ -2658,7 +2658,89 @@
         },
         "em": "2026-11-23T22:03:10.415Z"
       }
+    },
+    "2026-11-24-p0-waldeapps-teste": {
+      "instagram": {
+        "status": "ok",
+        "id": "17999079666013813",
+        "url": "https://www.instagram.com/reel/17999079666013813",
+        "landingUrl": "https://waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-waldeapps-teste",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-waldeapps-teste"
+        },
+        "em": "2026-11-24T15:01:33.037Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "2220573222150131",
+        "url": "https://www.facebook.com/2220573222150131",
+        "landingUrl": "https://waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-waldeapps-teste",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-waldeapps-teste"
+        },
+        "em": "2026-11-24T15:01:39.520Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18103514303431695",
+        "url": "https://www.threads.net/@me/post/18103514303431695",
+        "landingUrl": "https://waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-waldeapps-teste",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-waldeapps-teste"
+        },
+        "em": "2026-11-24T15:02:12.230Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n32vzkr4p427",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n32vzkr4p427",
+        "landingUrl": "https://waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-waldeapps-teste",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-waldeapps-teste"
+        },
+        "em": "2026-11-24T15:02:16.994Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b05a6fb4d531e79e19e3c64",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-waldeapps-teste",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-waldeapps-teste"
+        },
+        "em": "2026-11-24T15:02:19.369Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "TZ3KXfrk2XY",
+        "url": "https://www.youtube.com/shorts/TZ3KXfrk2XY",
+        "landingUrl": "https://waldeapps.systems/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-waldeapps-teste",
+        "privacidade": "public",
+        "playlistId": "PLcRl21fcnKvE",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-waldeapps-teste"
+        },
+        "em": "2026-11-24T15:02:22.994Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-23T22:03:10.415Z"
+  "atualizadoEm": "2026-11-24T15:02:22.994Z"
 }

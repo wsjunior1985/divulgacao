@@ -25443,7 +25443,28 @@
         "em": "2026-11-25T18:31:41.700Z",
         "erro": null
       }
+    },
+    "carrossel-aieat-fora-de-casa-2026-11-25": {
+      "instagram": {
+        "status": "ok",
+        "id": "18162591589507016",
+        "url": "https://www.instagram.com/p/18162591589507016",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "aieat",
+        "temaId": "fora-de-casa",
+        "landingUrl": "https://aieat.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-aieat-fora-de-casa"
+        },
+        "em": "2026-11-25T19:02:20.762Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-25T18:31:41.700Z"
+  "atualizadoEm": "2026-11-25T19:02:20.762Z"
 }

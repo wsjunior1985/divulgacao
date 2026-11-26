@@ -26012,7 +26012,65 @@
         "em": "2026-11-26T19:01:50.994Z",
         "erro": null
       }
+    },
+    "703-gasonol-preco-limite": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122128301871435454",
+        "url": "https://www.facebook.com/1293634587162251_122128301871435454",
+        "landingUrl": "https://gasonol.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-preco-limite-c6-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-preco-limite-c6-v1"
+        },
+        "em": "2026-11-26T20:01:13.206Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18136900813819365",
+        "url": "https://www.threads.net/@me/post/18136900813819365",
+        "landingUrl": "https://gasonol.com.br/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-preco-limite-c6-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-preco-limite-c6-v1"
+        },
+        "em": "2026-11-26T20:01:51.267Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n3ahp4r54x2h",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n3ahp4r54x2h",
+        "landingUrl": "https://gasonol.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-preco-limite-c6-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-preco-limite-c6-v1"
+        },
+        "em": "2026-11-26T20:01:52.804Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b089032f0a96d0f21884c03",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://gasonol.com.br/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-gasonol-preco-limite-c6-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-gasonol-preco-limite-c6-v1"
+        },
+        "em": "2026-11-26T20:01:55.149Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-26T19:01:50.994Z"
+  "atualizadoEm": "2026-11-26T20:01:55.149Z"
 }

@@ -26070,7 +26070,28 @@
         "em": "2026-11-26T20:01:55.149Z",
         "erro": null
       }
+    },
+    "carrossel-omeualbum-organizem-a-dois-2026-11-26": {
+      "instagram": {
+        "status": "ok",
+        "id": "18489213343113997",
+        "url": "https://www.instagram.com/p/18489213343113997",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "omeualbum",
+        "temaId": "organizem-a-dois",
+        "landingUrl": "https://omeualbum.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-omeualbum-organizem-a-dois"
+        },
+        "em": "2026-11-26T21:01:54.384Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-26T20:01:55.149Z"
+  "atualizadoEm": "2026-11-26T21:01:54.385Z"
 }

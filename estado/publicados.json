@@ -25854,7 +25854,28 @@
         "em": "2026-11-26T14:02:12.805Z",
         "erro": null
       }
+    },
+    "carrossel-opalpiteiro-palpite-sem-complicacao-2026-11-26": {
+      "instagram": {
+        "status": "ok",
+        "id": "18131420057301381",
+        "url": "https://www.instagram.com/p/18131420057301381",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "opalpiteiro",
+        "temaId": "palpite-sem-complicacao",
+        "landingUrl": "https://opalpiteiro.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-opalpiteiro-palpite-sem-complicacao"
+        },
+        "em": "2026-11-26T16:02:02.454Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-26T14:02:12.805Z"
+  "atualizadoEm": "2026-11-26T16:02:02.455Z"
 }

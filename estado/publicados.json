@@ -25991,7 +25991,28 @@
         "em": "2026-11-26T18:31:41.684Z",
         "erro": null
       }
+    },
+    "carrossel-papelzinho-amigo-oculto-do-trabalho-2026-11-26": {
+      "instagram": {
+        "status": "ok",
+        "id": "18090636059705768",
+        "url": "https://www.instagram.com/p/18090636059705768",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "papelzinho",
+        "temaId": "amigo-oculto-do-trabalho",
+        "landingUrl": "https://papelzinho.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-papelzinho-amigo-oculto-do-trabalho"
+        },
+        "em": "2026-11-26T19:01:50.994Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-26T18:31:41.684Z"
+  "atualizadoEm": "2026-11-26T19:01:50.994Z"
 }

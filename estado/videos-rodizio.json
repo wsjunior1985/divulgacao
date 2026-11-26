@@ -2985,7 +2985,89 @@
         },
         "em": "2026-11-25T22:02:45.847Z"
       }
+    },
+    "2026-11-26-p0-papelzinho": {
+      "instagram": {
+        "status": "ok",
+        "id": "17981305527155730",
+        "url": "https://www.instagram.com/reel/17981305527155730",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-26T15:02:09.127Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "4902693420014966",
+        "url": "https://www.facebook.com/4902693420014966",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-26T15:02:16.391Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18149258029584832",
+        "url": "https://www.threads.net/@me/post/18149258029584832",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-26T15:02:55.287Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n37wyokgny24",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n37wyokgny24",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-26T15:02:59.834Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b084a2802d874faa5067316",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-papelzinho",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-26T15:03:04.750Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "E_uNd_42gBk",
+        "url": "https://www.youtube.com/shorts/E_uNd_42gBk",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-papelzinho",
+        "privacidade": "public",
+        "playlistId": "PLIU2HhUzzWQA",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-papelzinho"
+        },
+        "em": "2026-11-26T15:03:07.423Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-25T22:02:45.848Z"
+  "atualizadoEm": "2026-11-26T15:03:07.423Z"
 }

@@ -3067,7 +3067,88 @@
         },
         "em": "2026-11-26T15:03:07.423Z"
       }
+    },
+    "2026-11-26-p1-aeroliso-1": {
+      "instagram": {
+        "status": "ok",
+        "id": "18239203507325899",
+        "url": "https://www.instagram.com/reel/18239203507325899",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-aeroliso-1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-aeroliso-1"
+        },
+        "em": "2026-11-26T22:01:02.199Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "975908205313511",
+        "url": "https://www.facebook.com/975908205313511",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-aeroliso-1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-aeroliso-1"
+        },
+        "em": "2026-11-26T22:01:07.361Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18120119396029975",
+        "url": "https://www.threads.net/@me/post/18120119396029975",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-aeroliso-1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-aeroliso-1"
+        },
+        "em": "2026-11-26T22:01:39.522Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n3aofpvtzt25",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n3aofpvtzt25",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-aeroliso-1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-aeroliso-1"
+        },
+        "em": "2026-11-26T22:01:54.460Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b08ac5482b7c4bc1654b850",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-aeroliso-1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-aeroliso-1"
+        },
+        "em": "2026-11-26T22:01:56.457Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "mG4dkt6Hrrs",
+        "url": "https://www.youtube.com/shorts/mG4dkt6Hrrs",
+        "landingUrl": "https://aeroliso.waldeapps.systems/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-aeroliso-1",
+        "privacidade": "public",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-aeroliso-1"
+        },
+        "em": "2026-11-26T22:01:58.953Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-26T15:03:07.423Z"
+  "atualizadoEm": "2026-11-26T22:01:58.953Z"
 }

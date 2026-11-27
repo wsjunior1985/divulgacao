@@ -26207,7 +26207,65 @@
         "em": "2026-11-27T00:01:51.315Z",
         "erro": null
       }
+    },
+    "706-papelzinho-natal-amigolate": {
+      "facebook": {
+        "status": "ok",
+        "id": "1293634587162251_122128330203435454",
+        "url": "https://www.facebook.com/1293634587162251_122128330203435454",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=facebook&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-natal-amigolate-c6-v1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-natal-amigolate-c6-v1"
+        },
+        "em": "2026-11-27T01:01:31.014Z",
+        "erro": null
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18212300299371091",
+        "url": "https://www.threads.net/@me/post/18212300299371091",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=threads&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-natal-amigolate-c6-v1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-natal-amigolate-c6-v1"
+        },
+        "em": "2026-11-27T01:02:08.329Z",
+        "erro": null
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n3ayi324ld2x",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n3ayi324ld2x",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=bluesky&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-natal-amigolate-c6-v1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-natal-amigolate-c6-v1"
+        },
+        "em": "2026-11-27T01:02:09.741Z",
+        "erro": null
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b08d69470e2a88e2ce4f3ff",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://papelzinho.waldeapps.systems/?utm_source=x&utm_medium=social&utm_campaign=divulgacao-2026-11&utm_content=card-feed-papelzinho-natal-amigolate-c6-v1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "card-feed-papelzinho-natal-amigolate-c6-v1"
+        },
+        "em": "2026-11-27T01:02:12.369Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-27T00:01:51.315Z"
+  "atualizadoEm": "2026-11-27T01:02:12.369Z"
 }

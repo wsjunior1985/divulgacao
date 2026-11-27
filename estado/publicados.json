@@ -26323,7 +26323,28 @@
         "em": "2026-11-27T11:01:46.093Z",
         "erro": null
       }
+    },
+    "carrossel-rifazinha-premium-recursos-2026-11-27": {
+      "instagram": {
+        "status": "ok",
+        "id": "17921354931466970",
+        "url": "https://www.instagram.com/p/17921354931466970",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "rifazinha",
+        "temaId": "premium-recursos",
+        "landingUrl": "https://rifazinha.waldeapps.systems",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-rifazinha-premium-recursos"
+        },
+        "em": "2026-11-27T12:02:15.835Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-27T11:01:46.093Z"
+  "atualizadoEm": "2026-11-27T12:02:15.835Z"
 }

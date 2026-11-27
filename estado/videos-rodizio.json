@@ -3230,7 +3230,89 @@
         },
         "em": "2026-11-27T15:02:33.674Z"
       }
+    },
+    "2026-11-27-p1-vdq-1": {
+      "instagram": {
+        "status": "ok",
+        "id": "18019846337993099",
+        "url": "https://www.instagram.com/reel/18019846337993099",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-vdq-1",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-vdq-1"
+        },
+        "em": "2026-11-27T22:01:14.462Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "2419744998559971",
+        "url": "https://www.facebook.com/2419744998559971",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-vdq-1",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-vdq-1"
+        },
+        "em": "2026-11-27T22:01:20.503Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18029817470866611",
+        "url": "https://www.threads.net/@me/post/18029817470866611",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-vdq-1",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-vdq-1"
+        },
+        "em": "2026-11-27T22:01:56.798Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n3d6voeuus2s",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n3d6voeuus2s",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-vdq-1",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-vdq-1"
+        },
+        "em": "2026-11-27T22:02:28.952Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b09fdf7eada83daa6a0d181",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-vdq-1",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-vdq-1"
+        },
+        "em": "2026-11-27T22:02:31.510Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "Hyq4J84Vfng",
+        "url": "https://www.youtube.com/shorts/Hyq4J84Vfng",
+        "landingUrl": "https://vaidarquanto.com.br/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-vdq-1",
+        "privacidade": "public",
+        "playlistId": "PLHBwGrIM2lDk",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-vdq-1"
+        },
+        "em": "2026-11-27T22:02:33.459Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-27T15:02:33.674Z"
+  "atualizadoEm": "2026-11-27T22:02:33.459Z"
 }

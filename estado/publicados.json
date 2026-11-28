@@ -27166,7 +27166,28 @@
         "em": "2026-11-28T20:01:56.788Z",
         "erro": null
       }
+    },
+    "carrossel-remedin-antibiotico-2026-11-28": {
+      "instagram": {
+        "status": "ok",
+        "id": "18111654713205372",
+        "url": "https://www.instagram.com/p/18111654713205372",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "remedin",
+        "temaId": "antibiotico",
+        "landingUrl": "https://remedin.app.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-remedin-antibiotico"
+        },
+        "em": "2026-11-28T21:02:02.808Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-28T20:01:56.788Z"
+  "atualizadoEm": "2026-11-28T21:02:02.809Z"
 }

@@ -27087,7 +27087,28 @@
         "em": "2026-11-28T18:31:47.676Z",
         "erro": null
       }
+    },
+    "carrossel-gasonol-indique-2026-11-28": {
+      "instagram": {
+        "status": "ok",
+        "id": "17944812984384163",
+        "url": "https://www.instagram.com/p/17944812984384163",
+        "formato": "carrossel",
+        "slides": 7,
+        "tipo": "carrossel",
+        "appId": "gasonol",
+        "temaId": "indique",
+        "landingUrl": "https://gasonol.com.br",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "divulgacao-2026-11",
+          "content": "carrossel-gasonol-indique"
+        },
+        "em": "2026-11-28T19:02:08.102Z",
+        "erro": null
+      }
     }
   },
-  "atualizadoEm": "2026-11-28T18:31:47.676Z"
+  "atualizadoEm": "2026-11-28T19:02:08.102Z"
 }

@@ -3312,7 +3312,89 @@
         },
         "em": "2026-11-27T22:02:33.459Z"
       }
+    },
+    "2026-11-28-p0-opalpiteiro": {
+      "instagram": {
+        "status": "ok",
+        "id": "17948406486381045",
+        "url": "https://www.instagram.com/reel/17948406486381045",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=instagram&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "instagram",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-28T15:01:34.110Z"
+      },
+      "facebook": {
+        "status": "ok",
+        "id": "1767121831056616",
+        "url": "https://www.facebook.com/1767121831056616",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=facebook&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "facebook",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-28T15:01:40.031Z"
+      },
+      "threads": {
+        "status": "ok",
+        "id": "18360664990221463",
+        "url": "https://www.threads.net/@me/post/18360664990221463",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=threads&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "threads",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-28T15:02:36.759Z"
+      },
+      "bluesky": {
+        "status": "ok",
+        "id": "at://did:plc:2zjket3tcn5gp65iip7sx6ng/app.bsky.feed.post/3n3exvytu622x",
+        "url": "https://bsky.app/profile/waldeapps.bsky.social/post/3n3exvytu622x",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=bluesky&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "bluesky",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-28T15:02:42.418Z"
+      },
+      "x": {
+        "status": "ok",
+        "id": "6b0aed158e7dd71de79a8d4d",
+        "url": "https://publish.buffer.com/",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=x&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-opalpiteiro",
+        "utm": {
+          "source": "x",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-28T15:02:45.241Z"
+      },
+      "youtube": {
+        "status": "ok",
+        "id": "Fou5J5iGq0g",
+        "url": "https://www.youtube.com/shorts/Fou5J5iGq0g",
+        "landingUrl": "https://opalpiteiro.app.br/?utm_source=youtube&utm_medium=social&utm_campaign=reels-ciclo-2&utm_content=video-9x16-opalpiteiro",
+        "privacidade": "public",
+        "playlistId": "PLbr6RENNSz-0",
+        "utm": {
+          "source": "youtube",
+          "medium": "social",
+          "campaign": "reels-ciclo-2",
+          "content": "video-9x16-opalpiteiro"
+        },
+        "em": "2026-11-28T15:02:48.003Z"
+      }
     }
   },
-  "atualizadoEm": "2026-11-27T22:02:33.459Z"
+  "atualizadoEm": "2026-11-28T15:02:48.003Z"
 }
